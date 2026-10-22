@@ -11,8 +11,8 @@
   "local": "현지 교통·전문 가이드",
   "etc": "여행자보험·기타"
  },
- "feeLabel": "인솔비 (준준 동행)",
- "feeDesc": "준준이 처음부터 끝까지 함께 다니며 일정 기획, 맛집·입장 예약, 현지 이동과 안전을 챙깁니다.",
+ "feeLabel": "동행비 (준준 함께)",
+ "feeDesc": "준준은 인솔자나 전문 가이드가 아니라 함께 배우며 걷는 동행자예요. 일정 기획과 맛집·입장 예약을 맡고, 여행 내내 같이 다닙니다.",
  "packages": [
   {
    "id": "xian4",
@@ -148,7 +148,33 @@
     "local": 60000,
     "etc": 20000
    },
-   "total": 1440000
+   "total": 1440000,
+   "photos": [
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Terracotta_Army%2C_View_of_Pit_1.jpg/1280px-Terracotta_Army%2C_View_of_Pit_1.jpg",
+     "by": "Jmhullot · CC BY 3.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Terracotta_Army%2C_View_of_Pit_1.jpg",
+     "cap": "병마용 1호갱 — 끝없이 이어지는 흙의 군대"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Xi%27an_city_walls_%2859626%29.jpg/1280px-Xi%27an_city_walls_%2859626%29.jpg",
+     "by": "Ideophagous · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Xi%27an_city_walls_%2859626%29.jpg",
+     "cap": "시안 성벽 — 둘레 약 14km, 위를 자전거로 달릴 수 있다"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Giant_Wild_Goose_Pagoda.jpg/1280px-Giant_Wild_Goose_Pagoda.jpg",
+     "by": "Alex Kwok · CC BY-SA 3.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Giant_Wild_Goose_Pagoda.jpg",
+     "cap": "대안탑 — 현장법사가 인도에서 가져온 경전을 보관한 탑"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Xi%27an_Muslim_Quarter.jpg/1280px-Xi%27an_Muslim_Quarter.jpg",
+     "by": "Qianeal · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Xi%27an_Muslim_Quarter.jpg",
+     "cap": "회족거리 — 해가 지면 김이 오르는 시안의 밤 골목"
+    }
+   ]
   },
   {
    "id": "xian5",
@@ -301,7 +327,33 @@
     "local": 80000,
     "etc": 20000
    },
-   "total": 1640000
+   "total": 1640000,
+   "photos": [
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/The_Chess_Pavilion%2C_Huashan%2C_China.jpg/1280px-The_Chess_Pavilion%2C_Huashan%2C_China.jpg",
+     "by": "May Wung · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:The_Chess_Pavilion%2C_Huashan%2C_China.jpg",
+     "cap": "화산(華山) — 절벽 위 바둑 정자, 중국 오악 중 가장 험한 산"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Terracotta_Army%2C_View_of_Pit_1.jpg/1280px-Terracotta_Army%2C_View_of_Pit_1.jpg",
+     "by": "Jmhullot · CC BY 3.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Terracotta_Army%2C_View_of_Pit_1.jpg",
+     "cap": "병마용 1호갱 — 끝없이 이어지는 흙의 군대"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Apart_from_humans%2C_there_are_terracotta_horses_too_%2835519047822%29.jpg/1280px-Apart_from_humans%2C_there_are_terracotta_horses_too_%2835519047822%29.jpg",
+     "by": "shankar s. · CC BY 2.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Apart_from_humans%2C_there_are_terracotta_horses_too_%2835519047822%29.jpg",
+     "cap": "병마용의 말 — 병사만이 아니라 말과 전차도 함께 묻혔다"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Xi%27an_city_walls_%2859626%29.jpg/1280px-Xi%27an_city_walls_%2859626%29.jpg",
+     "by": "Ideophagous · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Xi%27an_city_walls_%2859626%29.jpg",
+     "cap": "시안 성벽 — 둘레 약 14km, 위를 자전거로 달릴 수 있다"
+    }
+   ]
   },
   {
    "id": "kyoto4",
@@ -449,7 +501,33 @@
     "local": 60000,
     "etc": 20000
    },
-   "total": 1540000
+   "total": 1540000,
+   "photos": [
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg/1280px-Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg",
+     "by": "Martin Falbisoner · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg",
+     "cap": "기요미즈데라 — 못 하나 쓰지 않은 나무 무대"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/KyotoFushimiInariLarge.jpg/1280px-KyotoFushimiInariLarge.jpg",
+     "by": "Paul Vlaar · CC BY-SA 3.0",
+     "link": "https://commons.wikimedia.org/wiki/File:KyotoFushimiInariLarge.jpg",
+     "cap": "후시미 이나리 — 산을 따라 이어지는 붉은 도리이"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Todai-ji_Daibutsuden_front_view_in_2011.jpg/1280px-Todai-ji_Daibutsuden_front_view_in_2011.jpg",
+     "by": "ONO Masanobu · CC0",
+     "link": "https://commons.wikimedia.org/wiki/File:Todai-ji_Daibutsuden_front_view_in_2011.jpg",
+     "cap": "도다이지 대불전 — 오랫동안 세계 최대 목조 건물로 꼽혔던 곳"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nara_Todai-ji_Daibutsuden_Interior_Daibutsu_05.jpg/1280px-Nara_Todai-ji_Daibutsuden_Interior_Daibutsu_05.jpg",
+     "by": "Zairon · CC BY 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Nara_Todai-ji_Daibutsuden_Interior_Daibutsu_05.jpg",
+     "cap": "도다이지 대불 — 8세기에 처음 만들어진 거대한 청동 불상"
+    }
+   ]
   },
   {
    "id": "kyoto5",
@@ -610,7 +688,33 @@
     "local": 80000,
     "etc": 20000
    },
-   "total": 1810000
+   "total": 1810000,
+   "photos": [
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Horyu-ji%2C_November_2016.jpg/1280px-Horyu-ji%2C_November_2016.jpg",
+     "by": "Martin Falbisoner · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Horyu-ji%2C_November_2016.jpg",
+     "cap": "호류지 — 현존하는 가장 오래된 목조 건축군 중 하나"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Ishibutai-kofun_Asuka_Nara_pref05n4592.jpg/1280px-Ishibutai-kofun_Asuka_Nara_pref05n4592.jpg",
+     "by": "663highland · CC BY 2.5",
+     "link": "https://commons.wikimedia.org/wiki/File:Ishibutai-kofun_Asuka_Nara_pref05n4592.jpg",
+     "cap": "아스카 이시부타이 고분 — 거대한 돌로 짠 석실"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nara_Todai-ji_Daibutsuden_Interior_Daibutsu_05.jpg/1280px-Nara_Todai-ji_Daibutsuden_Interior_Daibutsu_05.jpg",
+     "by": "Zairon · CC BY 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Nara_Todai-ji_Daibutsuden_Interior_Daibutsu_05.jpg",
+     "cap": "도다이지 대불 — 8세기에 처음 만들어진 거대한 청동 불상"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg/1280px-Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg",
+     "by": "Martin Falbisoner · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg",
+     "cap": "기요미즈데라 — 못 하나 쓰지 않은 나무 무대"
+    }
+   ]
   },
   {
    "id": "hue5",
@@ -755,7 +859,39 @@
     "local": 60000,
     "etc": 20000
    },
-   "total": 1240000
+   "total": 1240000,
+   "photos": [
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Lanterns_in_Hoi_An_6.jpg/1280px-Lanterns_in_Hoi_An_6.jpg",
+     "by": "Christophe95 · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Lanterns_in_Hoi_An_6.jpg",
+     "cap": "호이안의 밤 — 골목마다 켜지는 비단 등"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/H%E1%BB%99i_An%2C_Ch%C3%B9a_C%E1%BA%A7u%2C_2020-01_CN-03.jpg/1280px-H%E1%BB%99i_An%2C_Ch%C3%B9a_C%E1%BA%A7u%2C_2020-01_CN-03.jpg",
+     "by": "Steffen Schmitz · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:H%E1%BB%99i_An%2C_Ch%C3%B9a_C%E1%BA%A7u%2C_2020-01_CN-03.jpg",
+     "cap": "내원교(일본교) — 16세기 말 일본 상인들이 지은 다리"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meridian_Gate%2C_Hue_%28I%29.jpg/1280px-Meridian_Gate%2C_Hue_%28I%29.jpg",
+     "by": "Supanut Arunoprayote · CC BY 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Meridian_Gate%2C_Hue_%28I%29.jpg",
+     "cap": "후에 황성 오문 — 응우옌 왕조의 정문"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/2024_-_M%E1%BB%B9_S%C6%A1n_Sanctuary_Temple_E7_-_img_01.jpg/1280px-2024_-_M%E1%BB%B9_S%C6%A1n_Sanctuary_Temple_E7_-_img_01.jpg",
+     "by": "Chainwit. · CC BY 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:2024_-_M%E1%BB%B9_S%C6%A1n_Sanctuary_Temple_E7_-_img_01.jpg",
+     "cap": "미선 유적 — 참파 왕국의 붉은 벽돌 사원"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/1/18/Cao_l%E1%BA%A7u_%28144854_994%29.jpg",
+     "by": "Baoothersks · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Cao_l%E1%BA%A7u_%28144854_994%29.jpg",
+     "cap": "까오러우 — 호이안에서만 제맛이 난다는 국수"
+    }
+   ]
   },
   {
    "id": "angkor5",
@@ -897,7 +1033,27 @@
     "local": 80000,
     "etc": 60000
    },
-   "total": 1650000
+   "total": 1650000,
+   "photos": [
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Angkor_Wat_at_sunrise_5.jpg/1280px-Angkor_Wat_at_sunrise_5.jpg",
+     "by": "Christophe95 · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Angkor_Wat_at_sunrise_5.jpg",
+     "cap": "앙코르와트 일출 — 연못에 비친 다섯 개의 탑"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Angkor_-_Bayon_-_004_Tower_Faces_%288581824754%29.jpg/1280px-Angkor_-_Bayon_-_004_Tower_Faces_%288581824754%29.jpg",
+     "by": "Photo Dharma · CC BY 2.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Angkor_-_Bayon_-_004_Tower_Faces_%288581824754%29.jpg",
+     "cap": "바이욘 — 탑마다 미소 짓는 거대한 얼굴"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Ta_Prohm_under_a_tree.jpg/1280px-Ta_Prohm_under_a_tree.jpg",
+     "by": "Devajyoti Sarkar · CC BY 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Ta_Prohm_under_a_tree.jpg",
+     "cap": "타프롬 — 나무뿌리가 사원을 끌어안은 곳"
+    }
+   ]
   },
   {
    "id": "istanbul8",
@@ -1088,7 +1244,27 @@
     "local": 80000,
     "etc": 30000
    },
-   "total": 2890000
+   "total": 2890000,
+   "photos": [
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Interior_of_Hagia_Sophia_%287%29_-_Istanbul_%282022%29.jpg/1280px-Interior_of_Hagia_Sophia_%287%29_-_Istanbul_%282022%29.jpg",
+     "by": "ImanFakhri · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Interior_of_Hagia_Sophia_%287%29_-_Istanbul_%282022%29.jpg",
+     "cap": "아야 소피아 — 천오백 년 가까이 이어진 거대한 돔 아래"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Hot_air_balloon_in_Cappadocia_02.jpg/1280px-Hot_air_balloon_in_Cappadocia_02.jpg",
+     "by": "Bernard Gagnon · CC BY-SA 3.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Hot_air_balloon_in_Cappadocia_02.jpg",
+     "cap": "카파도키아 — 새벽 하늘을 채우는 열기구"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Exterior_of_Sultan_Ahmed_I_Mosque_in_Istanbul%2C_Turkey_002.jpg/1280px-Exterior_of_Sultan_Ahmed_I_Mosque_in_Istanbul%2C_Turkey_002.jpg",
+     "by": "Moonik · CC BY-SA 3.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Exterior_of_Sultan_Ahmed_I_Mosque_in_Istanbul%2C_Turkey_002.jpg",
+     "cap": "술탄 아흐메트 모스크(블루 모스크)"
+    }
+   ]
   },
   {
    "id": "georgia9",
@@ -1295,7 +1471,21 @@
     "local": 150000,
     "etc": 30000
    },
-   "total": 2670000
+   "total": 2670000,
+   "photos": [
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Fortress_and_Old_Town_of_Tbilisi_at_dusk%2C_Tbilisi%2C_Georgia.jpg/1280px-Fortress_and_Old_Town_of_Tbilisi_at_dusk%2C_Tbilisi%2C_Georgia.jpg",
+     "by": "LeontinaVarlamonva · CC0",
+     "link": "https://commons.wikimedia.org/wiki/File:Fortress_and_Old_Town_of_Tbilisi_at_dusk%2C_Tbilisi%2C_Georgia.jpg",
+     "cap": "트빌리시 — 나리칼라 요새와 구시가의 저녁"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Monasterio_de_Geghard%2C_Armenia%2C_2016-10-02%2C_DD_63.jpg/1280px-Monasterio_de_Geghard%2C_Armenia%2C_2016-10-02%2C_DD_63.jpg",
+     "by": "Diego Delso · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Monasterio_de_Geghard%2C_Armenia%2C_2016-10-02%2C_DD_63.jpg",
+     "cap": "아르메니아 게가르드 수도원 — 바위를 파서 만든 교회"
+    }
+   ]
   },
   {
    "id": "rome8",
@@ -1489,7 +1679,27 @@
     "local": 150000,
     "etc": 80000
    },
-   "total": 3190000
+   "total": 3190000,
+   "photos": [
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg/1280px-Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+     "by": "Diliff · CC BY-SA 2.5",
+     "link": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+     "cap": "콜로세움 — 5만 관중이 함성을 지르던 원형 경기장"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pompeii_Ruins_Forum_%28City_Business_Center%29_%26_Mt._Vesuvius_%2848440863097%29.jpg/1280px-Pompeii_Ruins_Forum_%28City_Business_Center%29_%26_Mt._Vesuvius_%2848440863097%29.jpg",
+     "by": "Gary Todd · Public domain",
+     "link": "https://commons.wikimedia.org/wiki/File:Pompeii_Ruins_Forum_%28City_Business_Center%29_%26_Mt._Vesuvius_%2848440863097%29.jpg",
+     "cap": "폼페이 포룸과 베수비오 화산 — 79년, 화산재 아래 멈춘 도시"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg/1280px-Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg",
+     "by": "Wolfgang Moroder · CC BY-SA 3.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg",
+     "cap": "나폴리 항구와 베수비오"
+    }
+   ]
   },
   {
    "id": "iberia9",
@@ -1703,7 +1913,27 @@
     "local": 250000,
     "etc": 30000
    },
-   "total": 3420000
+   "total": 3420000,
+   "photos": [
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Alhambra_in_the_evening.jpg/1280px-Alhambra_in_the_evening.jpg",
+     "by": "Jebulon · Public domain",
+     "link": "https://commons.wikimedia.org/wiki/File:Alhambra_in_the_evening.jpg",
+     "cap": "알람브라 — 그라나다 언덕 위 나스르 왕조의 궁전"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Arches_in_the_Mezquita%2C_Cordoba%2C_Spain_%283318182296%29.jpg/1280px-Arches_in_the_Mezquita%2C_Cordoba%2C_Spain_%283318182296%29.jpg",
+     "by": "Frank Kovalchek · CC BY 2.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Arches_in_the_Mezquita%2C_Cordoba%2C_Spain_%283318182296%29.jpg",
+     "cap": "코르도바 메스키타 — 끝없이 반복되는 붉은 줄무늬 아치"
+    },
+    {
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Le_tram_28.jpg/1280px-Le_tram_28.jpg",
+     "by": "Yvesdebxl · CC BY-SA 4.0",
+     "link": "https://commons.wikimedia.org/wiki/File:Le_tram_28.jpg",
+     "cap": "리스본 28번 트램 — 언덕의 골목을 오르내리는 노란 전차"
+    }
+   ]
   }
  ]
 }
