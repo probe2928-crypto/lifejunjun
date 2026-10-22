@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F3F4F1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23C8261C'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='white' font-family='serif' font-weight='900'%3E준%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<title>인생준준 커뮤니티 — 여행 추천 · 후기 · 문의</title>
+<meta name="description" content="여행지를 추천하고, 후기를 나누고, 궁금한 걸 묻는 인생준준 게시판.">
+<meta property="og:title" content="인생준준 커뮤니티 — 여행 추천 · 후기 · 문의">
+<meta property="og:description" content="여행지를 추천하고, 후기를 나누고, 궁금한 걸 묻는 인생준준 게시판.">
+</head>
+<body>
+<div class="notice" role="note"><div class="wrap"><span>2027 첫 시즌 동행 신청을 받고 있어요. 가격은 원가 그대로, 동행비만 따로 공개합니다.</span><a href="index.html#contact">문의하기 →</a></div></div>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="인생준준 처음으로">
+      <span class="seal" aria-hidden="true">인생<br>준준</span>
+      <span><b>인생준준</b><small>LIFE JUNJUN · TRAVELLING THROUGH TIME</small></span>
+    </a>
+    <nav class="main" aria-label="주요 메뉴"><a href="index.html#trips">여행 프로그램</a><a href="index.html#price">경비 이야기</a><a href="column.html">칼럼</a><a href="community.html" aria-current="page">커뮤니티</a><a href="index.html#about">주인장 소개</a><a href="index.html#faq">자주 묻는 질문</a></nav>
+    <div class="hacts"><a class="cta ghost" href="index.html#contact">문의하기</a><a class="cta" href="index.html#apply">동행 신청</a></div>
+  </div>
+  <nav class="mnav" aria-label="모바일 메뉴"><div class="wrap"><a href="index.html#trips">여행 프로그램</a><a href="index.html#price">경비 이야기</a><a href="column.html">칼럼</a><a href="community.html" aria-current="page">커뮤니티</a><a href="index.html#about">주인장 소개</a><a href="index.html#faq">자주 묻는 질문</a></div></nav>
+</header>
+<main id="top">
+  <section class="wrap mag-hero">
+    <div class="kicker mono"><span>Community</span><span>여행 추천 · 여행 후기 · 여행 문의</span></div>
+    <h1>여행 이야기는<br><em>같이.</em></h1>
+    <p class="lede">가고 싶은 곳을 추천하고, 다녀온 여행을 남기고, 궁금한 걸 물어보세요. 좋은 추천은 다음 인생준준 여행 코스가 됩니다.</p>
+  </section>
+  <section class="wrap board-wrap">
+    <div class="board-main">
+      <div class="frow" id="b-tabs" role="tablist" aria-label="게시판"></div>
+      <ul class="board" id="board"><li class="small">글을 불러오는 중입니다.</li></ul>
+    </div>
+    <aside class="board-side">
+      <form id="post" name="community" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="community">
+        <p hidden><label>비워 두세요<input name="bot-field"></label></p>
+        <b style="font-family:var(--serif);font-size:22px">글쓰기</b>
+        <label for="p-board">게시판 *<select id="p-board" name="board" required><option value="rec">여행 추천</option><option value="review">여행 후기</option><option value="qna">여행 문의</option></select></label>
+        <label for="p-nick">닉네임 *<input id="p-nick" name="nickname" maxlength="20" required></label>
+        <label for="p-title">제목 *<input id="p-title" name="title" maxlength="60" required></label>
+        <label for="p-body">내용 *<textarea id="p-body" name="body" maxlength="2000" required placeholder="추천하는 곳, 다녀온 이야기, 궁금한 점을 자유롭게"></textarea></label>
+        <label for="p-contact">답변 받을 연락처 <span class="small" style="font-weight:400">(선택 · 공개되지 않아요)</span><input id="p-contact" name="contact" placeholder="인스타 아이디, 이메일 또는 전화번호"></label>
+        <label class="agree"><input type="checkbox" name="agree" value="yes" required> 닉네임과 글 내용이 게시판에 공개되는 데 동의해요</label>
+        <button class="cta" type="submit" style="min-height:52px">글 올리기</button>
+        <p class="small" id="p-msg" role="status"></p>
+        <p class="small">스팸을 막기 위해 글은 준준이 확인한 뒤 게시돼요. 문의 글은 답변과 함께 올라가고, 급한 건 <a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">인스타 DM</a>이 가장 빨라요.</p>
+      </form>
+    </aside>
+  </section>
+</main>
+
+<a class="cta red float" href="index.html#contact" aria-label="문의하기">문의하기</a>
+<footer>
+  <div class="wrap">
+    <div class="fw">
+      <div><p class="big">인생준준</p><p style="margin-top:14px;max-width:26em">잔잔하게, 깊게, 맛있게. 역사를 공부하는 여행자와 함께 떠나는 3인 이상 출발 동행 여행.</p></div>
+      <div class="col"><span class="mono" style="color:#9FA09A">Explore</span><a href="index.html#trips">여행 프로그램</a><a href="column.html">칼럼</a><a href="community.html">커뮤니티</a><a href="index.html#about">주인장 소개</a><a href="index.html#faq">자주 묻는 질문</a></div>
+      <div class="col"><span class="mono" style="color:#9FA09A">Contact</span><a href="index.html#contact">문의하기</a><a href="index.html#apply">동행 신청</a><a href="community.html?b=qna">여행 문의 게시판</a><a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">인스타그램 DM</a></div>
+      <div class="col"><span class="mono" style="color:#9FA09A">Follow</span><a href="https://www.youtube.com/@kaniwast" target="_blank" rel="noopener">유튜브 · 인생준준</a><a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">인스타그램 @lifejunjun</a><span>lifejunjun.com</span></div>
+    </div>
+    <div class="legal"><span>© 2026 인생준준</span><span>[상호 · 대표자 · 사업자등록번호]</span><span>[관광사업(여행업) 등록번호 또는 제휴 여행사 정보]</span><span>[주소]</span></div>
+  </div>
+</footer>
+<script>
+function el(tag,attrs={},...kids){const n=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(v==null)continue;if(k==="class")n.className=v;else if(k==="style")n.setAttribute("style",v);else if(k.startsWith("on"))n.addEventListener(k.slice(2),v);else n.setAttribute(k,v);}for(const c of kids.flat()){if(c==null)continue;n.append(c.nodeType?c:document.createTextNode(c));}return n;}
+const BOARDS=[{id:"all",name:"전체"},{id:"notice",name:"공지"},{id:"rec",name:"여행 추천"},{id:"review",name:"여행 후기"},{id:"qna",name:"여행 문의"}];
+const EMPTY={review:"첫 동행 여행은 2027년에 출발해요. 혼자 다녀온 여행 이야기도 좋아요. 첫 후기의 주인공이 되어 주세요.",qna:"아직 올라온 문의가 없어요. 궁금한 건 편하게 남겨 주세요. 자주 묻는 질문은 홈의 FAQ에도 있어요.",rec:"아직 추천 글이 없어요. 첫 추천을 남겨 주세요.",notice:"공지가 없어요.",all:"아직 글이 없어요."};
+let POSTS=[], b=new URLSearchParams(location.search).get("b")||"all";
+if(!BOARDS.some(x=>x.id===b))b="all";
+const bname=id=>BOARDS.find(x=>x.id===id)?.name||"";
+const fmt=s=>s.replaceAll("-",".");
+function render(){
+  const tabs=document.getElementById("b-tabs"); tabs.textContent="";
+  BOARDS.forEach(x=>{const n=x.id==="all"?POSTS.length:POSTS.filter(p=>p.board===x.id).length;
+    tabs.append(el("button",{class:"chip",type:"button",role:"tab","aria-selected":String(x.id===b),"aria-pressed":String(x.id===b),onclick:()=>{b=x.id;history.replaceState(null,"",x.id==="all"?"community.html":`?b=${x.id}`);render();if(x.id!=="all"&&x.id!=="notice")document.getElementById("p-board").value=x.id;}},x.name,el("span",{class:"n"},String(n))));});
+  const list=document.getElementById("board"); list.textContent="";
+  const ps=POSTS.filter(p=>b==="all"||p.board===b).sort((x,y)=>(y.pinned?1:0)-(x.pinned?1:0)||y.date.localeCompare(x.date));
+  if(!ps.length){list.append(el("li",{class:"empty"},EMPTY[b]));return;}
+  ps.forEach(p=>list.append(el("li",{},el("details",{},
+    el("summary",{},el("span",{class:"tagb tagb-"+p.board},bname(p.board)),el("b",{},p.title),
+      el("span",{class:"by"},p.host?el("span",{class:"host"},"주인장"):null,p.author," · ",fmt(p.date))),
+    el("div",{class:"post-body"},...p.body.split("\n\n").map(t=>el("p",{},t)),
+      p.reply?el("div",{class:"reply"},el("b",{},"주인장 답변"),el("p",{},p.reply)):null)))));
+}
+fetch("posts.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{POSTS=d.posts;render();})
+  .catch(()=>{document.getElementById("board").innerHTML='<li class="small">글을 불러오지 못했어요. 새로고침해 주세요.</li>';});
+if(b!=="all"&&b!=="notice")document.getElementById("p-board").value=b;
+
+document.getElementById("post").addEventListener("submit",e=>{
+  e.preventDefault();
+  const f=e.target, m=document.getElementById("p-msg");
+  if(!f.nickname.value.trim()||!f.title.value.trim()||!f.body.value.trim()){m.textContent="닉네임, 제목, 내용을 채워 주세요.";return;}
+  if(!f.agree.checked){m.textContent="공개 동의에 체크해 주세요.";return;}
+  m.textContent="보내는 중…";
+  fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(f)).toString()})
+    .then(r=>{if(!r.ok)throw 0;f.reset();m.textContent="고마워요! 준준이 확인한 뒤 게시판에 올릴게요.";})
+    .catch(()=>{m.textContent="전송이 안 됐어요. 잠시 후 다시 시도하거나 인스타 DM으로 보내 주세요.";});
+});
+
+</script>
+</body>
+</html>
