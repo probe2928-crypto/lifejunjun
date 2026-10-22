@@ -51,6 +51,7 @@
   </div>
 </footer>
 <script>
+function getJSON(n){const raw="https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/"+n+"?t="+Math.floor(Date.now()/3e5);const local=()=>fetch(n,{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();});const live=/netlify\.app$|lifejunjun\.com$/.test(location.hostname);return live?fetch(raw).then(r=>{if(!r.ok)throw 0;return r.json();}).catch(local):local();}
 function el(tag,attrs={},...kids){const n=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(v==null)continue;if(k==="class")n.className=v;else if(k==="style")n.setAttribute("style",v);else if(k.startsWith("on"))n.addEventListener(k.slice(2),v);else n.setAttribute(k,v);}for(const c of kids.flat()){if(c==null)continue;n.append(c.nodeType?c:document.createTextNode(c));}return n;}
 const fmtDate=s=>{const [y,m,d]=s.split("-");return `${y}.${m}.${d}`;};
 const vol=n=>"Vol."+String(n).padStart(2,"0");
@@ -97,7 +98,7 @@ function go(id,push=true){
   window.scrollTo(0,0);
 }
 addEventListener("popstate",e=>go(new URLSearchParams(location.search).get("id"),false));
-fetch("columns.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
+getJSON("columns.json").then(d=>{
   ISSUES=d.issues.sort((a,b)=>b.date.localeCompare(a.date)||b.vol-a.vol);
   go(new URLSearchParams(location.search).get("id"),false);
 }).catch(()=>{document.getElementById("mag-list").innerHTML='<p class="small">칼럼을 불러오지 못했어요. 새로고침해 주세요.</p>';});

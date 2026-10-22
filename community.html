@@ -70,6 +70,7 @@
   </div>
 </footer>
 <script>
+function getJSON(n){const raw="https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/"+n+"?t="+Math.floor(Date.now()/3e5);const local=()=>fetch(n,{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();});const live=/netlify\.app$|lifejunjun\.com$/.test(location.hostname);return live?fetch(raw).then(r=>{if(!r.ok)throw 0;return r.json();}).catch(local):local();}
 function el(tag,attrs={},...kids){const n=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(v==null)continue;if(k==="class")n.className=v;else if(k==="style")n.setAttribute("style",v);else if(k.startsWith("on"))n.addEventListener(k.slice(2),v);else n.setAttribute(k,v);}for(const c of kids.flat()){if(c==null)continue;n.append(c.nodeType?c:document.createTextNode(c));}return n;}
 const BOARDS=[{id:"all",name:"전체"},{id:"notice",name:"공지"},{id:"rec",name:"여행 추천"},{id:"review",name:"여행 후기"},{id:"qna",name:"여행 문의"}];
 const EMPTY={review:"첫 동행 여행은 2027년에 출발해요. 혼자 다녀온 여행 이야기도 좋아요. 첫 후기의 주인공이 되어 주세요.",qna:"아직 올라온 문의가 없어요. 궁금한 건 편하게 남겨 주세요. 자주 묻는 질문은 홈의 FAQ에도 있어요.",rec:"아직 추천 글이 없어요. 첫 추천을 남겨 주세요.",notice:"공지가 없어요.",all:"아직 글이 없어요."};
@@ -90,7 +91,7 @@ function render(){
     el("div",{class:"post-body"},...p.body.split("\n\n").map(t=>el("p",{},t)),
       p.reply?el("div",{class:"reply"},el("b",{},"주인장 답변"),el("p",{},p.reply)):null)))));
 }
-fetch("posts.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{POSTS=d.posts;render();})
+getJSON("posts.json").then(d=>{POSTS=d.posts;render();})
   .catch(()=>{document.getElementById("board").innerHTML='<li class="small">글을 불러오지 못했어요. 새로고침해 주세요.</li>';});
 if(b!=="all"&&b!=="notice")document.getElementById("p-board").value=b;
 

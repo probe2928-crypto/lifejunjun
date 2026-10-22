@@ -312,6 +312,7 @@
 </footer>
 
 <script>
+function getJSON(n){const raw="https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/"+n+"?t="+Math.floor(Date.now()/3e5);const local=()=>fetch(n,{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();});const live=/netlify\.app$|lifejunjun\.com$/.test(location.hostname);return live?fetch(raw).then(r=>{if(!r.ok)throw 0;return r.json();}).catch(local):local();}
 const REGIONS=[{id:"all",name:"전체"},{id:"europe",name:"유럽"},{id:"turkiye",name:"튀르키예"},{id:"caucasus",name:"조지아·코카서스"},{id:"sea",name:"동남아"},{id:"china",name:"중국"},{id:"japan",name:"일본"}];
 const LENS=[{id:"all",name:"전체",test:()=>true},{id:"s",name:"4~5일",test:p=>p.days<=5},{id:"l",name:"8~9일",test:p=>p.days>=8}];
 const COLORS={air:"#1F3A8A",hotel:"#0E6E6A",meal:"#A8641C",ticket:"#7A1F3D",local:"#5A5A55",etc:"#A9AAA4"};
@@ -461,7 +462,7 @@ document.getElementById("copy").addEventListener("click",()=>{
   try{navigator.clipboard.writeText(text).then(()=>{ok.hidden=false;ok.textContent="복사됐어요. 인스타그램 DM 창에 붙여넣기 하면 됩니다.";},fallback);}catch(e){fallback();}
 });
 
-fetch("packages.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();}).then(d=>{
+getJSON("packages.json").then(d=>{
   DATA=d;
   document.getElementById("basis").textContent=`가격 기준: ${d.basis} · 최종 업데이트 ${d.updated.replaceAll("-",".")}`;
   document.getElementById("sg").textContent=d.smallGroupNote;
@@ -484,7 +485,7 @@ document.querySelectorAll(".yt .yt-play").forEach(b=>b.addEventListener("click",
   b.replaceWith(ifr);
 }));
 const fmtDate=s=>{const d=dt(s);return `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,"0")}.${String(d.getDate()).padStart(2,"0")}`;};
-fetch("columns.json",{cache:"no-store"}).then(r=>r.json()).then(c=>{
+getJSON("columns.json").then(c=>{
   const host=document.getElementById("mag-teaser"); host.textContent="";
   c.issues.slice(0,3).forEach(i=>host.append(el("a",{class:"mag-card",href:`column.html?id=${i.id}`},
     el("div",{class:"mag-cover",style:`background:${i.color}`},el("span",{class:"mono"},`Vol.${String(i.vol).padStart(2,"0")} · ${i.cat}`),el("span",{class:"glyph","aria-hidden":"true"},i.glyph),el("b",{},i.title)),

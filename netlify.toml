@@ -1,5 +1,7 @@
 [build]
   publish = "."
+  # 데이터(json)만 바뀐 커밋은 배포하지 않음 — 사이트가 GitHub에서 직접 최신 json을 읽어서 크레딧 절약
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)*.json'"
 [[headers]]
   for = "/*.json"
   [headers.values]
