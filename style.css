@@ -436,3 +436,6 @@ h1,h2,h3,b,p,.q{word-break:keep-all;overflow-wrap:break-word}
 .art-fig figcaption{font-family:var(--sans);font-size:13.5px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;padding:0 4px}
 .art-fig figcaption span{font-weight:700}
 @media (max-width:860px){.art-fig{margin:1em 0}}
+nav.main{gap:20px;white-space:nowrap;font-size:14px}
+@media (max-width:1280px){.brand small{display:none}}
+@media (max-width:1180px){nav.main{display:none}.mnav{display:block}}
