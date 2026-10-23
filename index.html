@@ -104,6 +104,18 @@
     <div class="basis"><span id="basis"></span><span id="sg"></span><span id="var"></span><span>최종 경비는 출발 인원이 모이면 확정합니다.</span></div>
   </section>
 
+
+  <!-- RUN & TREK -->
+  <section class="block wrap" id="runtrek" style="padding-top:24px">
+    <div class="sec-head">
+      <span class="mono">New · Run &amp; Trek</span>
+      <h2>함께 달리고,<br>함께 걷는 세계.</h2>
+      <p>돌로미티 트레일, 몽블랑 일주, 앙코르와트 10K, 천 년 순례길까지. 해외 러닝·트레킹 대회에 3~10명이 같이 나가고, 대회가 끝나면 그 동네를 같이 여행해요. 경비는 거의 원가 + 운영비 20만 원.</p>
+    </div>
+    <div class="rt-grid" id="rt-home"><p class="small">대회 정보를 불러오는 중입니다.</p></div>
+    <div class="socials" style="margin-top:24px"><a class="cta" href="run.html">대회 전체 보기 · 코스 미리 걷기 →</a></div>
+  </section>
+
   <!-- PRICE -->
   <section class="block wrap" id="price" style="padding-top:24px">
     <div class="sec-head">
@@ -458,6 +470,7 @@ function setupForm(){
   getJSON("races.json").then(r=>{RACES=r.races||[];const g=el("optgroup",{label:"RUN & TREK — 해외 러닝·트레킹"});
     RACES.forEach(x=>g.append(el("option",{value:"run:"+x.id},`[RUN & TREK] ${x.title} · ${x.city} (예상 1인 ${man(x.total)})`)));
     sel.insertBefore(g,sel.lastElementChild);
+    renderRunHome();
     const want=new URLSearchParams(location.search).get("trip");if(want&&[...sel.options].some(o=>o.value===want))sel.value=want;
   }).catch(()=>{});
 }
@@ -506,6 +519,21 @@ getJSON("packages.json").then(d=>{
   billFor(sample,document.getElementById("bill"));
 }).catch(()=>{document.getElementById("grid").innerHTML='<p class="small">여행 정보를 불러오지 못했어요. 새로고침하거나 <a href="#contact">문의하기</a>로 연락 주세요.</p>';});
 
+
+function renderRunHome(){
+  const host=document.getElementById("rt-home");if(!host)return;
+  const order={"접수 중":0,"예약 중":0,"마감 임박":0,"접수 예정":1,"상시":2,"발표 예정":3,"마감":4};
+  const km=r=>{const a=Math.min(...r.dist.map(d=>d[1])),b=Math.max(...r.dist.map(d=>d[1]));const f=x=>(Math.round(x*10)/10).toString();return a===b?f(a):f(a)+"–"+f(b);};
+  const list=[...RACES].sort((a,b)=>(order[a.status]??5)-(order[b.status]??5)||a.date.localeCompare(b.date)).slice(0,3);
+  host.innerHTML="";
+  list.forEach(r=>host.append(el("a",{class:"rt-card",href:`run.html?id=${r.id}`},
+    el("div",{class:"rt-poster",style:`background:${r.color}`},
+      el("div",{class:"top"},el("span",{},r.country.toUpperCase()),el("span",{class:"st st-"+r.status.replace(/\s/g,"")},r.status)),
+      el("div",{},el("div",{class:"km"},km(r),el("small",{},"km")),el("div",{class:"mono",style:"position:relative;z-index:1;margin-top:6px;opacity:.9"},(/^\d{4}-\d{2}-\d{2}$/.test(r.date)?r.date.replace(/-/g,"."):r.date.split("-")[0]+"년 "+(+r.date.split("-")[1])+"월")+(Math.max(...r.dist.map(d=>d[2]||0))?` · ↑${Math.max(...r.dist.map(d=>d[2]||0)).toLocaleString()}m`:""))),
+      el("span",{class:"glyph","aria-hidden":"true"},r.glyph)),
+    el("div",{class:"rt-body"},el("h3",{},r.title),el("p",{class:"where"},`${r.sub} · ${r.city}`),
+      el("div",{class:"row"},el("span",{class:"small"},r.cats.join(" · ")),el("b",{},`${Math.round(r.total/10000).toLocaleString()}만 원`))))));
+}
 // --- v3: 신청서는 FormSubmit으로 준준의 메일에 전달 (GitHub Pages에는 서버가 없어서) ---
 function sendForm(subject,text,fields){
   return fetch("https://formsubmit.co/ajax/probe2928@gmail.com",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},
