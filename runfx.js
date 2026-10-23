@@ -104,8 +104,9 @@
       await preload(scenes.slice(0,3).map(s=>s.img));
       requestAnimationFrame(()=>root.classList.add("on"));
       const total=scenes.reduce((a,s)=>a+(s.d||1700),0);let t0=performance.now(),idx=-1,timer=null,raf=null,done=false;
-      function count(el){const n=el.querySelector(".fx-count");if(!n)return;const to=parseFloat(n.dataset.to),dec=(n.dataset.to.split(".")[1]||"").length,s0=performance.now();
-        const step=t=>{const k=Math.min(1,(t-s0)/900);const e=1-Math.pow(1-k,3);n.textContent=(to*e).toLocaleString("en-US",{minimumFractionDigits:dec,maximumFractionDigits:dec});if(k<1&&!done)requestAnimationFrame(step);};requestAnimationFrame(step);}
+      function count(el){el.querySelectorAll(".fx-count").forEach(n=>{const to=parseFloat(n.dataset.to),dec=(n.dataset.to.split(".")[1]||"").length,s0=performance.now();
+        const fin=()=>{n.textContent=to.toLocaleString("en-US",{minimumFractionDigits:dec,maximumFractionDigits:dec});};
+        const step=t=>{const k=Math.min(1,(t-s0)/900);const e=1-Math.pow(1-k,3);n.textContent=(to*e).toLocaleString("en-US",{minimumFractionDigits:dec,maximumFractionDigits:dec});if(k<1&&!done)requestAnimationFrame(step);else fin();};requestAnimationFrame(step);setTimeout(fin,1000);});}
       function show(i){els.forEach((e,j)=>e.classList.toggle("on",j===i));count(els[i]);}
       function next(){idx++;if(idx>=els.length){finish();return;}show(idx);timer=setTimeout(next,scenes[idx].d||1700);}
       function tick(){prog.style.width=Math.min(100,(performance.now()-t0)/total*100)+"%";if(!done)raf=requestAnimationFrame(tick);}
