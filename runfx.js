@@ -19,6 +19,7 @@
   .fx-scene.alt.on .fx-img{animation-name:fxkb2}
   @keyframes fxkb{from{transform:scale(1.22) translate3d(-2%,1%,0)}to{transform:scale(1.04) translate3d(1%,-1%,0)}}
   @keyframes fxkb2{from{transform:scale(1.04) translate3d(2%,-1%,0)}to{transform:scale(1.2) translate3d(-1%,1%,0)}}
+  .fx-scene.dark .fx-shade{background:radial-gradient(ellipse at center,rgba(0,0,0,.55),rgba(0,0,0,.35) 70%)}
   .fx-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.05) 35%,rgba(0,0,0,.55) 100%)}
   .fx-grain{position:absolute;inset:-50%;pointer-events:none;opacity:.14;mix-blend-mode:overlay;
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
@@ -57,6 +58,7 @@
   .fx-play.light{background:rgba(255,255,255,.14);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.5)}
   .fx-photo{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
   .fx-tint{position:absolute;inset:0}
+  .fx-photo,.fx-tint{position:absolute!important;inset:0!important;z-index:0!important}
   a:hover .fx-photo{transform:scale(1.07)}
   .fx-gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
   @media (max-width:700px){.fx-gal{grid-template-columns:minmax(0,1fr)}}
@@ -83,7 +85,7 @@
       const prog=h("div","fx-prog");const skip=h("button","fx-skip","건너뛰기 ✕");skip.type="button";
       root.append(prog,skip);
       const els=scenes.map((s,i)=>{
-        const sc=h("div","fx-scene"+(i%2?" alt":""));sc.style.setProperty("--d",(s.d||1700)+"ms");
+        const sc=h("div","fx-scene"+(i%2?" alt":"")+(s.center?" dark":""));sc.style.setProperty("--d",(s.d||1700)+"ms");
         const img=h("div","fx-img");img.style.background=s.img?`url("${s.img}") center/cover, ${s.color||"#111"}`:(s.color||"#111");
         sc.append(img,h("div","fx-shade"));
         if(s.speed){const sp=h("div","fx-speed");for(let k=0;k<9;k++){const l=h("i");l.style.top=(8+Math.random()*84)+"%";l.style.width=(18+Math.random()*30)+"vw";l.style.animationDelay=(-Math.random()*.7)+"s";l.style.animationDuration=(.45+Math.random()*.5)+"s";sp.append(l);}sc.append(sp);}
@@ -125,7 +127,7 @@
 
   function introScenes(races){
     const pick=[...races].filter(r=>r.photos&&r.photos.length).sort((a,b)=>(b.level||0)-(a.level||0));
-    const order=["lavaredo10k","tmb","angkor10k","kumano","jungfrau","poonhill","miut17","medoc"];
+    const order=["lavaredo10k","poonhill","angkor10k","miut17","jungfrau","tmb","kumano","medoc"];
     const sel=order.map(id=>pick.find(r=>r.id===id)).filter(Boolean).concat(pick).filter((r,i,a)=>a.indexOf(r)===i).slice(0,7);
     const S=[];
     const p0=ph(sel[0],0);
