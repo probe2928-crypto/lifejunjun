@@ -260,7 +260,7 @@
         <div class="ch"><span>답장 시간</span><span>평일·주말 오전 10시~밤 10시</span></div>
         <a class="cta red" href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener" style="align-self:flex-start">인스타 DM으로 문의</a>
       </div>
-      <form id="form" name="apply" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <form id="form" name="apply" method="POST" novalidate>
         <input type="hidden" name="form-name" value="apply"><p hidden><label>비워 두세요<input name="bot-field"></label></p>
         <div class="f2">
           <label for="a-name">이름 *<input id="a-name" name="name" autocomplete="name" required></label>
@@ -286,7 +286,7 @@
         <button class="cta" type="submit" style="align-self:flex-start;min-height:52px;padding:0 26px">동행 신청 보내기 →</button>
         <p class="small" id="err" role="alert" hidden></p>
         <div class="out" id="out" aria-live="polite">
-          <b>신청 내용을 정리했어요! 아래 메시지를 복사해서 인스타그램 DM으로 보내 주시면 접수 완료예요. 준준이 바로 답장드릴게요.</b>
+          <b id="out-b">신청서를 보내는 중이에요…</b>
           <pre id="msg"></pre>
           <div style="display:flex;flex-wrap:wrap;gap:10px">
             <button class="cta" type="button" id="copy">메시지 복사</button>
@@ -455,7 +455,13 @@ function setupForm(){
   sel.append(el("option",{value:""},"골라 주세요"));
   DATA.packages.forEach(p=>p.departures.forEach(d=>sel.append(el("option",{value:p.id+"|"+d},`${p.sub} · ${range(p,d)} 출발 (1인 ${man(cost(p))} + α)`))));
   sel.append(el("option",{value:"any"},"아직 못 정했어요, 다음 모집 알려주세요"));
+  getJSON("races.json").then(r=>{RACES=r.races||[];const g=el("optgroup",{label:"RUN & TREK — 해외 러닝·트레킹"});
+    RACES.forEach(x=>g.append(el("option",{value:"run:"+x.id},`[RUN & TREK] ${x.title} · ${x.city} (예상 1인 ${man(x.total)})`)));
+    sel.insertBefore(g,sel.lastElementChild);
+    const want=new URLSearchParams(location.search).get("trip");if(want&&[...sel.options].some(o=>o.value===want))sel.value=want;
+  }).catch(()=>{});
 }
+let RACES=[];
 document.getElementById("form").addEventListener("submit",e=>{
   e.preventDefault();
   const f=e.target.elements, err=document.getElementById("err");
@@ -463,18 +469,22 @@ document.getElementById("form").addEventListener("submit",e=>{
   if(!name||!phone||!trip){err.hidden=false;err.textContent="이름, 연락처, 관심 있는 여행을 채워 주세요.";return;}
   err.hidden=true;
   const [tid,tdep]=trip.split("|");const p=DATA&&DATA.packages.find(x=>x.id===tid);
+  const rr=trip.startsWith("run:")?RACES.find(x=>"run:"+x.id===trip):null;
   const wants=[...e.target.querySelectorAll('input[name="want"]:checked')].map(x=>x.value).join(", ")||"-";
   const text=`[인생준준 동행 신청]
 이름: ${name}
 연락처: ${phone}
 인스타그램: ${f.ig.value.trim()||"-"}
 나이대: ${f.age.value}
-관심 여행: ${p?`${p.sub} — ${p.title}, ${range(p,tdep)} 출발 (1인 ${man(cost(p))} + α)`:"다음 모집 알림 희망"}
+관심 여행: ${rr?`[RUN & TREK] ${rr.title} — ${rr.sub}, ${rr.city} (예상 1인 ${man(rr.total)})`:p?`${p.sub} — ${p.title}, ${range(p,tdep)} 출발 (1인 ${man(cost(p))} + α)`:"다음 모집 알림 희망"}
 함께 신청하는 인원: ${f.size.value}
 가능한 시기: ${f.when.value.trim()||"-"}
 기대하는 것: ${wants}
 한마디: ${f.msg.value.trim()||"-"}`;
-  postForm(e.target,{trip:p?`${p.sub} ${tdep}`:"다음 모집 알림",want:wants});
+  const outB=document.getElementById("out-b");outB.textContent="신청서를 보내는 중이에요…";
+  sendForm(rr?`[RUN & TREK 신청] ${name} · ${rr.title}`:`[동행 신청] ${name} · ${p?p.sub:"다음 모집"}`,text,{이름:name,연락처:phone,인스타그램:f.ig.value.trim()||"-"})
+    .then(()=>{outB.textContent="신청서가 준준에게 전달됐어요! 1~2일 안에 연락드릴게요. 더 빨리 이야기하고 싶다면 아래 메시지를 인스타그램 DM으로도 보내 주세요.";})
+    .catch(()=>{outB.textContent="신청서 전송이 잠깐 안 됐어요. 아래 메시지를 복사해서 인스타그램 DM으로 보내 주시면 바로 접수돼요.";});
   document.getElementById("msg").textContent=text;
   document.getElementById("out").classList.add("show");
   document.getElementById("copied").hidden=true;
@@ -496,12 +506,11 @@ getJSON("packages.json").then(d=>{
   billFor(sample,document.getElementById("bill"));
 }).catch(()=>{document.getElementById("grid").innerHTML='<p class="small">여행 정보를 불러오지 못했어요. 새로고침하거나 <a href="#contact">문의하기</a>로 연락 주세요.</p>';});
 
-// --- v2: Netlify Forms, YouTube lazy embeds, magazine teaser ---
-function postForm(form,extra){
-  try{
-    const fd=new FormData(form); fd.delete("want"); fd.set("trip",extra.trip); fd.set("want",extra.want);
-    fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(fd).toString()}).catch(()=>{});
-  }catch(e){}
+// --- v3: 신청서는 FormSubmit으로 준준의 메일에 전달 (GitHub Pages에는 서버가 없어서) ---
+function sendForm(subject,text,fields){
+  return fetch("https://formsubmit.co/ajax/probe2928@gmail.com",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},
+    body:JSON.stringify(Object.assign({_subject:subject,_template:"box",_captcha:"false",내용:text},fields||{}))})
+    .then(r=>r.json()).then(j=>{if(!(j&&(j.success===true||j.success==="true")))throw 0;return j;});
 }
 document.querySelectorAll(".yt .yt-play").forEach(b=>b.addEventListener("click",()=>{
   const f=b.closest(".yt"), id=f.dataset.id;

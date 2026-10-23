@@ -240,7 +240,7 @@ function openDetail(id,push){
     el("p",{class:"small",style:"margin-top:6px"},r.costNote));
   const right=el("div",{},el("div",{class:"rt-sec",style:"border-top:0;padding-top:0"},bill),
     el("div",{class:"rt-sec"},el("span",{class:"mono"},"Join"),el("h2",{},"같이 갈래요?"),el("p",{style:"color:var(--soft)"},"3명이 모이면 출발을 확정해요. 대회 접수는 각자 하고, 항공·숙소·일정은 같이 맞춰요."),
-      el("div",{class:"links2"},el("a",{class:"cta red",href:"index.html#apply"},"동행 신청"),el("a",{class:"cta ghost",href:"https://www.instagram.com/lifejunjun/",target:"_blank",rel:"noopener"},"인스타 DM으로 물어보기"))));
+      el("div",{class:"links2"},el("a",{class:"cta red",href:`index.html?trip=run:${r.id}#apply`},"이 대회 동행 신청"),el("a",{class:"cta ghost",href:"https://www.instagram.com/lifejunjun/",target:"_blank",rel:"noopener"},"인스타 DM으로 물어보기"))));
 
   const cx=el("section",{class:"cx",id:"cx","aria-label":"코스 미리 걷기"},
     el("div",{class:"cx-wrap"},el("div",{id:"cxmap",role:"region","aria-label":"코스 지도"}),

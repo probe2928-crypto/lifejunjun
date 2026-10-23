@@ -39,7 +39,7 @@
       <ul class="board" id="board"><li class="small">글을 불러오는 중입니다.</li></ul>
     </div>
     <aside class="board-side">
-      <form id="post" name="community" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <form id="post" name="community" method="POST" novalidate>
         <input type="hidden" name="form-name" value="community">
         <p hidden><label>비워 두세요<input name="bot-field"></label></p>
         <b style="font-family:var(--serif);font-size:22px">글쓰기</b>
@@ -101,8 +101,10 @@ document.getElementById("post").addEventListener("submit",e=>{
   if(!f.nickname.value.trim()||!f.title.value.trim()||!f.body.value.trim()){m.textContent="닉네임, 제목, 내용을 채워 주세요.";return;}
   if(!f.agree.checked){m.textContent="공개 동의에 체크해 주세요.";return;}
   m.textContent="보내는 중…";
-  fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(f)).toString()})
-    .then(r=>{if(!r.ok)throw 0;f.reset();m.textContent="고마워요! 준준이 확인한 뒤 게시판에 올릴게요.";})
+  const names={rec:"여행 추천",review:"여행 후기",qna:"여행 문의"};
+  fetch("https://formsubmit.co/ajax/probe2928@gmail.com",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},
+    body:JSON.stringify({_subject:`[커뮤니티 ${names[f.board.value]||""}] ${f.title.value.trim()}`,_template:"box",_captcha:"false",게시판:names[f.board.value]||f.board.value,닉네임:f.nickname.value.trim(),제목:f.title.value.trim(),내용:f.body.value.trim(),연락처:f.contact.value.trim()||"-"})})
+    .then(r=>r.json()).then(j=>{if(!(j&&(j.success===true||j.success==="true")))throw 0;f.reset();m.textContent="고마워요! 준준이 확인한 뒤 게시판에 올릴게요.";})
     .catch(()=>{m.textContent="전송이 안 됐어요. 잠시 후 다시 시도하거나 인스타 DM으로 보내 주세요.";});
 });
 
