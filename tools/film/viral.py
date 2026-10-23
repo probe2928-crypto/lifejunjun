@@ -8,11 +8,17 @@ countdown list (save/send-worthy info), bold Korean sans captions in the upper t
 fast punch-in on every cut, whip-pan transitions with motion blur + whoosh, 120 BPM beat,
 1-beat silence before #1, CTA that asks people to SEND it, ending that loops to the start.
 
+Typography follows the 인생준준 homepage: Noto Serif KR Black titles, Noto Sans KR body,
+IBM Plex Mono labels (tools/film/fonts), seal red #C8261C accents, soft shadows, no outlines.
+
 spec: {"id","out","bpm":120,
-       "hook": {"img","kb":[s0,s1,cx,cy], "title":"…", "sub":"…", "beats":4},
-       "items":[{"rank":5,"img","kb":[s0,s1,cx,cy],"name":"…","place":"…","fact":"…","beats":5}, …],
-       "cta": {"img","kb":[…],"line1":"…","line2":"…","beats":5},
-       "caption":"…"}
+       "hook": {"img","kb":[s0,s1,cx,cy], "kicker":"LIFEJUNJUN · RUN & TREK · TOP 5",
+                "title":"line1\nline2", "sub":"red pill text", "beats":4},
+       "items":[{"rank":5,"img","kb":[s0,s1,cx,cy],"name":"한글 이름","place":"나라 도시",
+                 "en":"City, Country","fact":"red pill fact","meta":"10 KM  ·  +300 M","beats":5}, …],
+       "cta": {"img","kb":[…],"line1":"serif line(\n ok)","line2":"sans line","beats":6},
+       "caption":"…", "link": "optional site link for the caption/comment"}
+kb: s0 = start zoom (punch-in from), s1 = settle zoom (≥1), cx/cy = subject position 0..1 in the photo.
 """
 import json, os, subprocess, sys, wave
 import numpy as np
@@ -20,12 +26,17 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 W, H, FPS = 1080, 1920, 30
-SANS_B = "/usr/share/fonts/opentype/noto/NotoSansCJK-Black.ttc"
+SANS_B = "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"
+SERIF_K = "/usr/share/fonts/opentype/noto/NotoSerifCJK-Black.ttc"      # = Noto Serif KR 900 (homepage h1)
+SERIF_SB = "/usr/share/fonts/opentype/noto/NotoSerifCJK-SemiBold.ttc"
+FDIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
+MONO = os.path.join(FDIR, "IBMPlexMono-Medium.ttf")                    # homepage mono labels
+MONO_SB = os.path.join(FDIR, "IBMPlexMono-SemiBold.ttf")
 SANS_M = "/usr/share/fonts/opentype/noto/NotoSansCJK-Medium.ttc"
 SANS_R = "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
 SERIF_B = "/usr/share/fonts/opentype/noto/NotoSerifCJK-Black.ttc"
 
-def font(p, s): return ImageFont.truetype(p, s, index=1)
+def font(p, s): return ImageFont.truetype(p, s, index=1) if p.endswith(".ttc") else ImageFont.truetype(p, s)
 
 def ease(x): x = min(max(x, 0.), 1.); return x * x * (3 - 2 * x)
 def eout(x): x = min(max(x, 0.), 1.); return 1 - (1 - x) ** 3
@@ -51,6 +62,37 @@ def text_img(lines, maxw=980):
     if out.width > maxw:
         k = maxw / out.width; out = out.resize((maxw, int(out.height * k)), Image.LANCZOS)
     return np.asarray(out).astype(np.float32) / 255
+
+
+def tline(txt, fp, size, fill=(255, 255, 255, 255), track=0.0):
+    """one line with letter-spacing, soft editorial shadow (no outline)."""
+    f = font(fp, size); sp = size * track
+    ws = [f.getlength(c) for c in txt]; asc, desc = f.getmetrics()
+    tw = int(sum(ws) + sp * max(len(txt) - 1, 0)) + 60; th = asc + desc + 60
+    im = Image.new("RGBA", (tw, th), (0, 0, 0, 0)); d = ImageDraw.Draw(im); x = 30
+    for c, w in zip(txt, ws):
+        d.text((x, 30), c, font=f, fill=fill); x += w + sp
+    a = im.getchannel("A")
+    sh = Image.new("RGBA", im.size, (0, 0, 0, 0)); sh.putalpha(a.filter(ImageFilter.GaussianBlur(max(6, size * .16))).point(lambda v: min(255, v * .75)))
+    sh2 = Image.new("RGBA", im.size, (0, 0, 0, 0)); sh2.putalpha(a.filter(ImageFilter.GaussianBlur(2)).point(lambda v: v * .35))
+    out = Image.alpha_composite(Image.alpha_composite(sh, sh2), im)
+    return np.asarray(out).astype(np.float32) / 255
+
+def pill(txt, fp, size, bg=(200, 38, 28), fg=(255, 255, 255, 255), track=.08, padx=26, pady=14):
+    f = font(fp, size); sp = size * track; ws = [f.getlength(c) for c in txt]
+    bb = f.getbbox("Hg가"); tw = int(sum(ws) + sp * max(len(txt) - 1, 0)); th = bb[3] - bb[1]
+    im = Image.new("RGBA", (tw + 2 * padx, th + 2 * pady), bg + (255,)); d = ImageDraw.Draw(im); x = padx
+    for c, w in zip(txt, ws):
+        d.text((x, pady - bb[1]), c, font=f, fill=fg); x += w + sp
+    return np.asarray(im).astype(np.float32) / 255
+
+def fit(L, maxw=990):
+    if L.shape[1] <= maxw: return L
+    k = maxw / L.shape[1]; im = Image.fromarray((L * 255).astype(np.uint8))
+    return np.asarray(im.resize((maxw, int(L.shape[0] * k)), Image.LANCZOS)).astype(np.float32) / 255
+
+def rule(w=120, h=4, col=(200, 38, 28)):
+    a = np.zeros((h, w, 4), np.float32); a[..., :3] = np.array(col) / 255; a[..., 3] = 1; return a
 
 def seal(px):
     im = Image.new("RGBA", (px, px), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
@@ -88,19 +130,27 @@ class Reel:
                 k = 2400 / max(im.size); im = im.resize((int(im.width * k), int(im.height * k)), Image.LANCZOS)
             im = ImageEnhance.Color(im).enhance(1.18); im = ImageEnhance.Contrast(im).enhance(1.07)
             s["_im"] = im.filter(ImageFilter.UnsharpMask(2, 80, 2))
+            n = len(spec["items"])
             if s["kind"] == "hook":
-                s["_txt"] = text_img([(l, SANS_B, 104, (255, 255, 255, 255), 6) for l in s["title"].split("\n")] + ([(s["sub"], SANS_B, 64, (255, 214, 10, 255), 5)] if s.get("sub") else []))
+                s["_kick"] = tline(s.get("kicker", "LIFEJUNJUN  ·  RUN & TREK"), MONO, 26, (255, 255, 255, 230), .32)
+                s["_title"] = [fit(tline(l, SERIF_K, 116, track=-.01)) for l in s["title"].split("\n")]
+                s["_sub"] = pill(s["sub"], SANS_B, 40, track=.02) if s.get("sub") else None
             elif s["kind"] == "item":
-                s["_num"] = text_img([(str(s["rank"]), SANS_B, 230, (255, 214, 10, 255), 8)])
-                s["_txt"] = text_img([(s["name"], SANS_B, 84, (255, 255, 255, 255), 5), (s["place"], SANS_M, 46, (255, 255, 255, 255), 4)])
-                s["_fact"] = text_img([(s["fact"], SANS_B, 50, (20, 20, 20, 255), 0)])
+                s["_kick"] = tline(f"N° {s['rank']:02d} / {n:02d}   —   {s.get('en', '').upper()}", MONO, 26, (255, 255, 255, 235), .28)
+                s["_num"] = tline(f"{s['rank']:02d}", SERIF_K, 210, (255, 255, 255, 255), -.02)
+                s["_name"] = fit(tline(s["name"], SERIF_K, 96, track=-.01))
+                s["_place"] = tline(s["place"], SANS_M, 40, (255, 255, 255, 235), .04)
+                s["_fact"] = pill(s["fact"], SANS_B, 38, track=.02)
+                s["_meta"] = tline(s.get("meta", ""), MONO, 24, (255, 255, 255, 220), .22) if s.get("meta") else None
             else:
-                s["_txt"] = text_img([(s["line1"], SANS_B, 84, (255, 255, 255, 255), 5), (s["line2"], SANS_B, 58, (255, 214, 10, 255), 4)])
-                s["_brand"] = text_img([("인생준준  RUN & TREK", SANS_B, 40, (255, 255, 255, 255), 3), ("여백의 지도에서 더 보기 — 프로필 링크", SANS_M, 32, (255, 255, 255, 255), 3)])
-        self.S = segs; self.T = t; self.SEAL = seal(96); self.SEAL_BIG = seal(150)
+                s["_title"] = [fit(tline(l, SERIF_K, 92, track=-.01)) for l in s["line1"].split("\n")]
+                s["_sub"] = tline(s["line2"], SANS_M, 44, (255, 255, 255, 240), .03)
+                s["_brand"] = tline("LIFEJUNJUN  ·  @lifejunjun", MONO, 26, (255, 255, 255, 230), .3)
+                s["_brand2"] = tline("여백의 지도에서 더 보기 — 프로필 링크", SANS_M, 32, (255, 255, 255, 230), .03)
+        self.S = segs; self.T = t; self.SEAL = seal(84); self.SEAL_BIG = seal(150); self.RULE = rule()
         self.CUTS = [s["start"] for s in segs[1:]]
         yy = np.mgrid[0:H, 0:W][0].astype(np.float32) / H
-        self.TOPSHADE = (1 - .42 * np.clip((.42 - yy) / .42, 0, 1) ** 1.4 - .25 * np.clip((yy - .82) / .18, 0, 1))[..., None]
+        self.TOPSHADE = (1 - .5 * np.clip((.45 - yy) / .45, 0, 1) ** 1.3 - .25 * np.clip((yy - .82) / .18, 0, 1))[..., None]
 
     def shot(self, s, lt):
         im = s["_im"]; iw, ih = im.size; s0, s1, cx, cy = s["kb"]
@@ -113,23 +163,32 @@ class Reel:
 
     def overlay(self, f, s, lt):
         k = s["kind"]
+        up = lambda d, dur=.35: (ease((lt - d) / dur), (1 - eout((lt - d) / dur)) * .012)   # (alpha, rise)
         if k == "hook":
-            place(f, s["_txt"], .5, .26, 1.0, 1 + .12 * (1 - eout(lt / .18)))
+            a, r = up(0, .2); place(f, s["_kick"], .5, .135 + r, a)
+            place(f, self.RULE, .5, .165, ease(lt / .3))
+            for j, L in enumerate(s["_title"]):
+                a, r = up(.05 + j * .08, .3); place(f, L, .5, .215 + j * .062 + r, a)
+            if s["_sub"] is not None:
+                a, r = up(.35, .25); place(f, s["_sub"], .5, .215 + len(s["_title"]) * .062 + .02 + r, a)
         elif k == "item":
-            pop = lambda d: 1 + .14 * (1 - eout((lt - d) / .16))
-            place(f, s["_num"], .5, .14, min(1, lt / .05), pop(0))
-            if lt > .12: place(f, s["_txt"], .5, .27, min(1, (lt - .12) / .08), pop(.12))
-            if lt > .55:
-                L = s["_fact"]; lh, lw = L.shape[:2]
-                pad = np.zeros((lh + 24, lw + 56, 4), np.float32); pad[..., :3] = [1, .84, .04]; pad[..., 3] = 1
-                pad[12:12 + lh, 28:28 + lw] = pad[12:12 + lh, 28:28 + lw] * (1 - L[..., 3:4]) + np.concatenate([L[..., :3], np.ones_like(L[..., 3:4])], 2) * L[..., 3:4]
-                place(f, pad, .5, .355, min(1, (lt - .55) / .08), pop(.55))
-            place(f, self.SEAL, .09, .055, .95)
+            a, r = up(0, .2); place(f, s["_kick"], .5, .085 + r, a)
+            a, r = up(0, .25); place(f, s["_num"], .5, .155 + r, a, 1 + .06 * (1 - eout(lt / .3)))
+            place(f, self.RULE, .5, .208, ease((lt - .1) / .3))
+            a, r = up(.12, .3); place(f, s["_name"], .5, .25 + r, a)
+            a, r = up(.25, .3); place(f, s["_place"], .5, .292 + r, a)
+            a, r = up(.5, .25); place(f, s["_fact"], .5, .337 + r, a)
+            if s["_meta"] is not None:
+                a, r = up(.7, .3); place(f, s["_meta"], .5, .375 + r, a)
+            place(f, self.SEAL, .085, .05, .95)
         else:
-            place(f, s["_txt"], .5, .27, min(1, lt / .1), 1 + .1 * (1 - eout(lt / .18)))
-            if lt > .5:
-                place(f, self.SEAL_BIG, .5, .58, min(1, (lt - .5) / .06), 1 + .25 * (1 - eout((lt - .5) / .15)))
-                place(f, s["_brand"], .5, .68, ease((lt - .8) / .3))
+            for j, L in enumerate(s["_title"]):
+                a, r = up(j * .08, .3); place(f, L, .5, .235 + j * .055 + r, a)
+            a, r = up(.25, .3); place(f, s["_sub"], .5, .235 + len(s["_title"]) * .055 + .015 + r, a)
+            if lt > .6:
+                place(f, self.SEAL_BIG, .5, .56, min(1, (lt - .6) / .06), 1 + .25 * (1 - eout((lt - .6) / .15)))
+                place(f, s["_brand"], .5, .64, ease((lt - .9) / .3))
+                place(f, s["_brand2"], .5, .672, ease((lt - 1.1) / .3))
 
     def render_seg(self, i, t):
         s = self.S[i]; lt = min(max(t - s["start"], 0), s["dur"] - 1e-3)

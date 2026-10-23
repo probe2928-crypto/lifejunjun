@@ -2,14 +2,112 @@
   "id": "viral-01-top5-runs",
   "out": "media/viral01-top5-runs.mp4",
   "bpm": 120,
-  "hook": {"img": "media/photos/jungfrau-2.jpg", "kb": [1.35, 1.12, 0.55, 0.45], "title": "죽기 전에 꼭\n달려봐야 할 코스", "sub": "TOP 5 · 1위 보고 소름 주의", "beats": 4},
+  "hook": {
+    "img": "media/photos/jungfrau-2.jpg",
+    "kb": [
+      1.35,
+      1.12,
+      0.55,
+      0.45
+    ],
+    "title": "죽기 전에 꼭\n달려봐야 할 코스",
+    "sub": "TOP 5 · 1위 보고 소름 주의",
+    "beats": 4,
+    "kicker": "LIFEJUNJUN  ·  RUN & TREK  ·  TOP 5"
+  },
   "items": [
-    {"rank": 5, "img": "media/photos/angkor10k-0.jpg", "kb": [1.3, 1.1, 0.5, 0.5], "name": "앙코르와트 10K", "place": "캄보디아 시엠레아프", "fact": "사원 앞이 출발선", "beats": 5},
-    {"rank": 4, "img": "media/photos/taroko-0.jpg", "kb": [1.3, 1.1, 0.45, 0.5], "name": "타이루거 협곡 마라톤", "place": "대만 화롄", "fact": "대리석 절벽 사이 42.195km", "beats": 5},
-    {"rank": 3, "img": "media/photos/tmb-0.jpg", "kb": [1.3, 1.1, 0.42, 0.58], "name": "몽블랑 일주 TMB", "place": "프랑스 · 이탈리아 · 스위스", "fact": "3개국을 걷는 165km", "beats": 5},
-    {"rank": 2, "img": "media/photos/jungfrau-0.jpg", "kb": [1.35, 1.12, 0.22, 0.55], "name": "융프라우 마라톤", "place": "스위스 인터라켄", "fact": "오르막만 1,953m", "beats": 5},
-    {"rank": 1, "img": "media/photos/lavaredo10k-0.jpg", "kb": [1.3, 1.08, 0.5, 0.5], "name": "돌로미티 선셋 10K", "place": "이탈리아 코르티나 담페초", "fact": "해 질 녘, 트레 치메를 향해", "beats": 6}
+    {
+      "rank": 5,
+      "img": "media/photos/angkor10k-0.jpg",
+      "kb": [
+        1.3,
+        1.1,
+        0.5,
+        0.5
+      ],
+      "name": "앙코르와트 10K",
+      "place": "캄보디아 시엠레아프",
+      "fact": "사원 앞이 출발선",
+      "beats": 5,
+      "en": "Siem Reap, Cambodia",
+      "meta": "10 KM  ·  FLAT  ·  SUNRISE"
+    },
+    {
+      "rank": 4,
+      "img": "media/photos/taroko-0.jpg",
+      "kb": [
+        1.3,
+        1.1,
+        0.45,
+        0.5
+      ],
+      "name": "타이루거 협곡 마라톤",
+      "place": "대만 화롄",
+      "fact": "대리석 절벽 사이 42.195km",
+      "beats": 5,
+      "en": "Hualien, Taiwan",
+      "meta": "42.195 KM  ·  +550 M"
+    },
+    {
+      "rank": 3,
+      "img": "media/photos/tmb-0.jpg",
+      "kb": [
+        1.3,
+        1.1,
+        0.42,
+        0.58
+      ],
+      "name": "몽블랑 일주 TMB",
+      "place": "프랑스 · 이탈리아 · 스위스",
+      "fact": "3개국을 걷는 165km",
+      "beats": 5,
+      "en": "Chamonix, Alps",
+      "meta": "165 KM  ·  +10,600 M  ·  3 COUNTRIES"
+    },
+    {
+      "rank": 2,
+      "img": "media/photos/jungfrau-0.jpg",
+      "kb": [
+        1.35,
+        1.12,
+        0.22,
+        0.55
+      ],
+      "name": "융프라우 마라톤",
+      "place": "스위스 인터라켄",
+      "fact": "오르막만 1,953m",
+      "beats": 5,
+      "en": "Interlaken, Switzerland",
+      "meta": "42.195 KM  ·  +1,953 M"
+    },
+    {
+      "rank": 1,
+      "img": "media/photos/lavaredo10k-0.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.5,
+        0.5
+      ],
+      "name": "돌로미티 선셋 10K",
+      "place": "이탈리아 코르티나 담페초",
+      "fact": "해 질 녘, 트레 치메를 향해",
+      "beats": 6,
+      "en": "Cortina, Italy",
+      "meta": "10 KM  ·  +300 M  ·  SUNSET"
+    }
   ],
-  "cta": {"img": "media/photos/poonhill-1.jpg", "kb": [1.25, 1.08, 0.45, 0.45], "line1": "같이 달릴 사람한테 보내기", "line2": "너의 1위는 몇 번? 댓글로 ↓", "beats": 6},
+  "cta": {
+    "img": "media/photos/poonhill-1.jpg",
+    "kb": [
+      1.25,
+      1.08,
+      0.45,
+      0.45
+    ],
+    "line1": "같이 달릴 사람에게\n보내기",
+    "line2": "너의 1위는 몇 번? 댓글로 알려줘",
+    "beats": 6
+  },
   "caption": "죽기 전에 꼭 달려봐야 할 코스 TOP 5 🏃‍♂️\n\n5 앙코르와트 10K 🇰🇭\n4 타이루거 협곡 마라톤 🇹🇼\n3 몽블랑 일주 TMB 🇫🇷🇮🇹🇨🇭\n2 융프라우 마라톤 🇨🇭\n1 돌로미티 선셋 10K 🇮🇹\n\n같이 달릴 사람 태그하거나 보내줘 👟\n너의 1위는 몇 번? 댓글로 알려줘\n\n인생준준 RUN & TREK — 3~10명이 함께 가는 해외 러닝·트레킹 여행\n\n#인생준준 #RUNandTREK #해외러닝 #러닝여행 #마라톤 #트레일러닝 #버킷리스트 #러닝크루"
 }
