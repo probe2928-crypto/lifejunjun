@@ -1,0 +1,147 @@
+{
+  "id": "film-03-ascent",
+  "title": "Ascent",
+  "out": "media/film03-ascent.mp4",
+  "bpm": 100,
+  "grade": "mono2color",
+  "tag_ko": "함께 달리고, 함께 걷는 세계 — RUN & TREK",
+  "shots": [
+    {
+      "img": "media/photos/lavaredo10k-0.jpg",
+      "beats": 5,
+      "kb": [
+        1.35,
+        1.15,
+        0.5,
+        0.5,
+        0.5,
+        0.48
+      ],
+      "focus": [
+        0.45,
+        0.5
+      ],
+      "dof": 10,
+      "band": 0.3,
+      "line": "Ascent",
+      "corner": [
+        "Dolomites",
+        "2,999 M"
+      ]
+    },
+    {
+      "img": "media/photos/jungfrau-0.jpg",
+      "beats": 3,
+      "kb": [
+        1.5,
+        1.3,
+        0.18,
+        0.22,
+        0.55,
+        0.55
+      ],
+      "focus": [
+        0.7,
+        0.5
+      ],
+      "dof": 18,
+      "ko": "한 걸음, 또 한 걸음.",
+      "corner": [
+        "Jungfrau",
+        "Switzerland"
+      ]
+    },
+    {
+      "img": "media/photos/lavaredo10k-2.jpg",
+      "beats": 2,
+      "kb": [
+        1.3,
+        1.18,
+        0.3,
+        0.33,
+        0.42,
+        0.45
+      ],
+      "dof": 14,
+      "word": "CLIMB."
+    },
+    {
+      "img": "media/photos/tmb-0.jpg",
+      "beats": 2,
+      "kb": [
+        1.25,
+        1.12,
+        0.42,
+        0.44,
+        0.62,
+        0.6
+      ],
+      "dof": 12,
+      "word": "BREATHE."
+    },
+    {
+      "img": "media/photos/poonhill-0.jpg",
+      "beats": 2,
+      "kb": [
+        1.5,
+        1.35,
+        0.25,
+        0.28,
+        0.5,
+        0.5
+      ],
+      "dof": 14,
+      "word": "RISE."
+    },
+    {
+      "img": "media/photos/nijmegen-0.jpg",
+      "beats": 3,
+      "kb": [
+        1.45,
+        1.25,
+        0.5,
+        0.48,
+        0.55,
+        0.55
+      ],
+      "focus": [
+        0.6,
+        0.55
+      ],
+      "dof": 16,
+      "ko": "혼자가 아니라, 함께.",
+      "corner": [
+        "Nijmegen",
+        "4 Days March"
+      ]
+    },
+    {
+      "img": "media/photos/jungfrau-2.jpg",
+      "beats": 3,
+      "kb": [
+        1.5,
+        1.2,
+        0.62,
+        0.58,
+        0.45,
+        0.42
+      ],
+      "dof": 8,
+      "band": 0.35
+    }
+  ],
+  "final": {
+    "img": "media/photos/poonhill-1.jpg",
+    "seconds": 6.6,
+    "kb": [
+      1.25,
+      1.08,
+      0.45,
+      0.47,
+      0.45,
+      0.45
+    ],
+    "line": "Together, higher."
+  },
+  "caption": "FILM 03 — Ascent\n\n한 걸음, 또 한 걸음.\n혼자가 아니라, 함께 오르는 길.\n\n돌로미티, 융프라우, 몽블랑, 안나푸르나 —\n인생준준 RUN & TREK\n\n#인생준준 #RUNandTREK #트레일러닝 #해외러닝 #트레킹여행 #러닝여행 #함께걷는여행"
+}

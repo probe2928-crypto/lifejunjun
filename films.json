@@ -1,10 +1,5 @@
 {
   "updated": "2026-10-24",
-  "instagram": {
-    "enabled": true,
-    "businessAccountId": "ACCOUNT_ID_HERE",
-    "accessToken": "TOKEN_HERE"
-  },
   "films": [
     {
       "id": "film-01-silence",
@@ -92,14 +87,20 @@
           "d": 1800,
           "tag": "MARATHON ENERGY",
           "big": "Move",
-          "corner": ["PARIS", "MARATHON"]
+          "corner": [
+            "PARIS",
+            "MARATHON"
+          ]
         },
         {
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Mont-Blanc_-_2007-08-02.jpg/1280px-Mont-Blanc_-_2007-08-02.jpg",
           "credit": "Rama · CC BY-SA 3.0",
           "d": 1800,
           "small": "정상에서만 느껴지는 것들이 있다.",
-          "corner": ["MONT-BLANC", "ALPS"]
+          "corner": [
+            "MONT-BLANC",
+            "ALPS"
+          ]
         },
         {
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Great_Wall_of_China_-_panoramio.jpg/1280px-Great_Wall_of_China_-_panoramio.jpg",
@@ -107,7 +108,10 @@
           "d": 1800,
           "big": "Stronger.",
           "small": "한 발 한 발이 우리를 만든다.",
-          "corner": ["GREAT WALL", "CHINA"]
+          "corner": [
+            "GREAT WALL",
+            "CHINA"
+          ]
         },
         {
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Table_Mountain_from_Signal_Hill%2C_Cape_Town.jpg/1280px-Table_Mountain_from_Signal_Hill%2C_Cape_Town.jpg",
@@ -133,14 +137,20 @@
           "d": 2800,
           "tag": "FILM 03 · ALTITUDE",
           "big": "Above the *clouds*",
-          "corner": ["MATTERHORN", "4478M"]
+          "corner": [
+            "MATTERHORN",
+            "4478M"
+          ]
         },
         {
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Kilimanjaro_12.14.26.jpg/1280px-Kilimanjaro_12.14.26.jpg",
           "credit": "Soren Andersen · CC BY-SA 3.0",
           "d": 2800,
           "small": "밤새 걷고, 새벽빛 속에 도착한다.",
-          "corner": ["KILIMANJARO", "TANZANIA"]
+          "corner": [
+            "KILIMANJARO",
+            "TANZANIA"
+          ]
         },
         {
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/20191230_Elbrus_North_Slope.jpg/1280px-20191230_Elbrus_North_Slope.jpg",
@@ -149,7 +159,10 @@
           "color_on": true,
           "big": "Summit",
           "small": "세상의 꼭대기는 생각보다 조용하다.",
-          "corner": ["ELBRUS", "5642M"]
+          "corner": [
+            "ELBRUS",
+            "5642M"
+          ]
         },
         {
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mont_Everest_as_seen_from_Drukair2_PLW_edit.jpg/1280px-Mont_Everest_as_seen_from_Drukair2_PLW_edit.jpg",

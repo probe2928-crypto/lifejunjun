@@ -1,0 +1,17 @@
+{
+  "note": "인생준준 릴스 게시 대기열 — 사용자 PC의 'Lifejunjun Reels' 작업(월·수·금 10:00)이 아직 안 올린 항목을 위에서부터 하나씩 게시",
+  "items": [
+    {
+      "id": "film-01-silence",
+      "video": "media/film01-silence.mp4",
+      "caption": "FILM 01 — Silence",
+      "created": "2026-10-24"
+    },
+    {
+      "id": "film-02-roots",
+      "video": "media/film02-roots.mp4",
+      "caption": "FILM 02 — Roots",
+      "created": "2026-10-24"
+    }
+  ]
+}
