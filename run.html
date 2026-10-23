@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F3F4F1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23C8261C'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='white' font-family='serif' font-weight='900'%3E준%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+<title>RUN & TREK — 인생준준</title>
+<meta name="description" content="해외 러닝·트레일·트레킹·걷기 대회를 3~10명이 함께 가는 여행. 공식 신청 방법, 코스, 난이도, 예상 경비를 매주 업데이트합니다.">
+<meta property="og:title" content="RUN & TREK — 함께 달리고, 함께 걷는 세계">
+<meta property="og:description" content="해외 러닝·트레킹 대회를 거의 원가로, 같이 가요.">
+<style>
+.rt-hero{padding-block:56px 32px}
+.rt-hero .kicker{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--soft)}
+.rt-hero h1{font-size:clamp(52px,9vw,128px);font-weight:900;letter-spacing:-.05em;line-height:.95;margin-top:18px}
+.rt-hero h1 em{font-style:normal;color:var(--seal)}
+.rt-hero .lede{max-width:40em;font-size:clamp(17px,1.6vw,20px);color:var(--soft);margin-top:24px}
+.rt-model{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink);margin-top:36px}
+.rt-model div{padding:16px 18px 0 0;display:flex;flex-direction:column;gap:2px}
+.rt-model div+div{padding-left:18px;border-left:1px solid var(--rule)}
+.rt-model b{font-family:var(--serif);font-size:clamp(22px,2.4vw,30px);font-weight:900;letter-spacing:-.02em}
+.rt-model span{font-size:14px;color:var(--soft)}
+@media (max-width:760px){.rt-model{grid-template-columns:1fr}.rt-model div+div{padding-left:0;border-left:0;border-top:1px solid var(--rule);margin-top:14px}}
+.rt-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px}
+@media (max-width:1000px){.rt-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.rt-grid{grid-template-columns:minmax(0,1fr)}}
+.rt-card{display:flex;flex-direction:column;background:var(--sheet);border:1px solid var(--rule);text-decoration:none;transition:transform .2s,box-shadow .2s}
+.rt-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(0,0,0,.35)}
+.rt-poster{aspect-ratio:5/4;position:relative;overflow:hidden;color:#fff;padding:18px;display:flex;flex-direction:column;justify-content:space-between}
+.rt-poster .top{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;position:relative;z-index:1}
+.rt-poster .km{font-family:var(--serif);font-weight:900;font-size:clamp(54px,6vw,78px);line-height:.9;letter-spacing:-.05em;position:relative;z-index:1}
+.rt-poster .km small{font-size:.32em;letter-spacing:0;margin-left:4px}
+.rt-poster .glyph{position:absolute;right:-4%;bottom:-8%;font-family:var(--serif);font-weight:900;font-size:220px;line-height:.8;opacity:.16;pointer-events:none}
+.rt-poster svg.ridge{position:absolute;left:0;right:0;bottom:0;width:100%;height:46%;opacity:.28}
+.rt-body{padding:16px 18px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.rt-body h3{font-size:22px;font-weight:900;letter-spacing:-.02em}
+.rt-body .where{font-size:13.5px;color:var(--soft)}
+.rt-body .row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:auto;padding-top:12px;border-top:1px solid var(--rule)}
+.rt-body .row b{font-family:var(--serif);font-size:20px;font-weight:900}
+.st{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:3px;white-space:nowrap}
+.st-접수중{background:var(--seal);color:#fff}.st-예약중{background:var(--seal);color:#fff}
+.st-접수예정{background:#DCE3F6;color:#1F3A8A}.st-발표예정{background:#E4E5E0;color:#3F403B}.st-상시{background:#D3F2E6;color:#0D5C43}.st-마감임박{background:#131313;color:#fff}.st-마감{background:#ECECEC;color:#777}
+.lv{display:inline-flex;gap:3px;vertical-align:middle}.lv i{width:9px;height:9px;border-radius:50%;border:1.5px solid currentColor;display:inline-block}.lv i.on{background:currentColor}
+.cats{display:flex;flex-wrap:wrap;gap:6px}.cats span{font-size:11.5px;border:1px solid var(--rule);padding:1px 7px;border-radius:999px;color:var(--soft)}
+/* detail */
+.rt-detail{padding-block:28px 72px}
+.rt-back{font-size:14px;text-decoration:none;color:var(--soft)}
+.rt-head{margin-top:18px;color:#fff;padding:clamp(22px,4vw,44px);position:relative;overflow:hidden;min-height:340px;display:flex;flex-direction:column;justify-content:space-between}
+.rt-head h1{font-size:clamp(36px,6vw,76px);font-weight:900;letter-spacing:-.045em;line-height:1.02;position:relative;z-index:1;margin-top:24px}
+.rt-head .sub{position:relative;z-index:1;font-size:16px;opacity:.9;margin-top:8px}
+.rt-head .line{position:relative;z-index:1;max-width:36em;margin-top:18px;font-size:17px}
+.rt-head svg.ridge{position:absolute;left:0;right:0;bottom:0;width:100%;height:38%;opacity:.16;pointer-events:none}
+.rt-head .glyph{position:absolute;right:-2%;bottom:-10%;font-family:var(--serif);font-weight:900;font-size:clamp(240px,36vw,460px);line-height:.8;opacity:.14;pointer-events:none}
+.rt-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid var(--rule);background:var(--sheet)}
+.rt-facts div{padding:16px 18px;display:flex;flex-direction:column;gap:2px;border-left:1px solid var(--rule)}
+.rt-facts div:first-child{border-left:0}
+.rt-facts span{font-size:12.5px;color:var(--soft)}
+.rt-facts b{font-family:var(--serif);font-size:20px;font-weight:900;line-height:1.3}
+@media (max-width:760px){.rt-facts{grid-template-columns:repeat(2,minmax(0,1fr))}.rt-facts div:nth-child(3){border-left:0}.rt-facts div:nth-child(n+3){border-top:1px solid var(--rule)}}
+.rt-cols{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;margin-top:44px;align-items:start}
+@media (max-width:900px){.rt-cols{grid-template-columns:minmax(0,1fr)}}
+.rt-sec{border-top:2px solid var(--ink);padding-top:14px;margin-bottom:40px}
+.rt-sec h2{font-size:clamp(24px,2.6vw,32px);font-weight:900;letter-spacing:-.03em;margin-bottom:14px}
+.rt-sec .mono{color:var(--seal);display:block;margin-bottom:6px}
+.steps2{counter-reset:s;list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.steps2 li{counter-increment:s;display:grid;grid-template-columns:32px 1fr;gap:10px;align-items:start}
+.steps2 li::before{content:counter(s);font-family:var(--mono);font-size:13px;width:28px;height:28px;display:grid;place-items:center;border:1.5px solid var(--ink);border-radius:50%}
+.dtable{width:100%;border-collapse:collapse;font-size:15px}
+.dtable th,.dtable td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--rule)}
+.dtable th{font-size:12.5px;color:var(--soft);font-weight:500}
+.dtable td.num{font-family:var(--mono)}
+.plan2{list-style:none;padding:0;margin:0}
+.plan2 li{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--rule)}
+.plan2 li span{font-family:var(--mono);font-size:12.5px;color:var(--seal);padding-top:2px}
+.gear{display:flex;flex-wrap:wrap;gap:8px}.gear span{background:var(--wash);padding:5px 11px;border-radius:999px;font-size:14px}
+.bill2{background:var(--sheet);border:1px solid var(--rule);padding:20px}
+.bill2 .r{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dashed var(--rule);font-size:14.5px}
+.bill2 .r b{font-family:var(--mono);font-weight:500}
+.bill2 .r.lead{color:var(--soft)}
+.bill2 .r.fee{color:var(--seal);font-weight:700}
+.bill2 .tot{display:flex;justify-content:space-between;align-items:baseline;padding-top:14px}
+.bill2 .tot b{font-family:var(--serif);font-size:32px;font-weight:900;letter-spacing:-.03em}
+.links2{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+/* course experience */
+.cx{background:var(--night);color:#E9EAE5;margin-top:8px}
+.cx-wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);min-height:480px}
+@media (max-width:900px){.cx-wrap{grid-template-columns:minmax(0,1fr)}}
+#cxmap{min-height:420px;height:100%;background:#0B1330}
+.cx-side{padding:20px;display:flex;flex-direction:column;gap:14px}
+.cx-side .now{font-family:var(--mono);font-size:12px;color:var(--aurora);letter-spacing:.08em}
+.cx-side h3{font-size:26px;font-weight:900;color:#fff;letter-spacing:-.02em}
+.cx-side p{font-size:15px;color:#C9CBD6}
+.cx-ctrl{display:flex;flex-wrap:wrap;gap:8px}
+.cx-ctrl button{appearance:none;border:1.5px solid #E9EAE5;background:transparent;color:#fff;min-height:42px;padding:0 14px;font:700 14px var(--sans);cursor:pointer;border-radius:999px}
+.cx-ctrl button.on,.cx-ctrl button:hover{background:#fff;color:var(--night)}
+.cx-dots{display:flex;gap:6px;flex-wrap:wrap}
+.cx-dots button{width:30px;height:30px;border-radius:50%;border:1.5px solid #5A6380;background:transparent;color:#C9CBD6;font:500 12px var(--mono);cursor:pointer}
+.cx-dots button[aria-current="true"]{background:var(--aurora);border-color:var(--aurora);color:var(--night)}
+.cx-side a{color:var(--aurora)}
+.cx-note{font-size:12px;color:#8F96AE}
+.leaflet-container{font-family:var(--sans)}
+.runner{width:18px;height:18px;border-radius:50%;background:var(--seal);border:3px solid #fff;box-shadow:0 0 0 6px rgba(200,38,28,.35)}
+.cp{width:24px;height:24px;border-radius:50%;background:#fff;color:#0B1330;font:700 12px var(--mono);display:grid;place-items:center;border:2px solid #0B1330}
+.rt-foot{margin-top:56px;background:var(--sheet);border:1px solid var(--rule);padding:24px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+.rt-foot p{max-width:40em}
+</style>
+</head>
+<body>
+<div class="notice" role="note"><div class="wrap"><span>NEW · RUN & TREK — 해외 대회를 거의 원가로 같이 가요. 매주 업데이트.</span><a href="index.html#contact">문의하기 →</a></div></div>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="인생준준 처음으로">
+      <span class="seal" aria-hidden="true">인생<br>준준</span>
+      <span><b>인생준준</b><small>LIFE JUNJUN · TRAVELLING THROUGH TIME</small></span>
+    </a>
+    <nav class="main" aria-label="주요 메뉴"><a href="index.html#trips">여행 프로그램</a><a href="run.html" aria-current="page">RUN & TREK</a><a href="index.html#price">경비 이야기</a><a href="column.html">칼럼</a><a href="community.html">커뮤니티</a><a href="index.html#about">주인장 소개</a></nav>
+    <div class="hacts"><a class="cta ghost" href="index.html#contact">문의하기</a><a class="cta" href="index.html#apply">동행 신청</a></div>
+  </div>
+  <nav class="mnav" aria-label="모바일 메뉴"><div class="wrap"><a href="index.html#trips">여행 프로그램</a><a href="run.html" aria-current="page">RUN & TREK</a><a href="index.html#price">경비 이야기</a><a href="column.html">칼럼</a><a href="community.html">커뮤니티</a><a href="index.html#about">주인장 소개</a></div></nav>
+</header>
+
+<main>
+  <section class="wrap rt-hero" id="list-view">
+    <div class="kicker mono"><span>Run &amp; Trek</span><span>3~10명 소규모</span><span id="upd"></span></div>
+    <h1>RUN<br>&amp; <em>TREK</em></h1>
+    <p class="lede">함께 달리고, 함께 걷는 세계. 해외 러닝·트레일·트레킹·걷기 대회에 3~10명이 같이 나가고, 대회가 끝나면 그 동네를 같이 여행해요. 접수는 각자 공식 사이트에서, 준비와 여행은 함께.</p>
+    <div class="rt-model">
+      <div><b>거의 원가</b><span>항공·숙박·참가비·식사·현지비를 그대로 공개</span></div>
+      <div><b>+ 준준 몫 나눔</b><span>같이 가는 준준의 항공·숙박·참가비를 6명 기준으로 나눠요</span></div>
+      <div><b>+ 운영비 20만 원</b><span>일정 짜기, 숙소·교통 예약, 대회 접수 도움</span></div>
+    </div>
+    <div class="filters" style="margin-top:36px">
+      <div class="frow" id="f-cat" role="group" aria-label="종목"></div>
+      <div class="frow" id="f-st" role="group" aria-label="접수 상태"></div>
+    </div>
+    <div class="rt-grid" id="grid"><p class="small">대회 정보를 불러오는 중입니다.</p></div>
+    <p class="small" id="note" style="margin-top:24px"></p>
+  </section>
+  <section class="wrap rt-detail" id="detail" hidden></section>
+</main>
+
+<a class="cta red float" href="index.html#contact" aria-label="문의하기">문의하기</a>
+<footer>
+  <div class="wrap">
+    <div class="fw">
+      <div><p class="big">인생준준</p><p style="margin-top:14px;max-width:26em">잔잔하게, 깊게, 맛있게. 역사를 공부하는 여행자와 함께 떠나는 3인 이상 출발 동행 여행. 이제 달리고 걷는 여행도.</p></div>
+      <div class="col"><span class="mono" style="color:#9FA09A">Explore</span><a href="index.html#trips">여행 프로그램</a><a href="run.html">RUN &amp; TREK</a><a href="column.html">칼럼</a><a href="community.html">커뮤니티</a><a href="index.html#about">주인장 소개</a></div>
+      <div class="col"><span class="mono" style="color:#9FA09A">Contact</span><a href="index.html#contact">문의하기</a><a href="index.html#apply">동행 신청</a><a href="community.html?b=qna">여행 문의 게시판</a><a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">인스타그램 DM</a></div>
+      <div class="col"><span class="mono" style="color:#9FA09A">Follow</span><a href="https://www.youtube.com/@kaniwast" target="_blank" rel="noopener">유튜브 · 인생준준</a><a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">인스타그램 @lifejunjun</a><span>lifejunjun.com</span></div>
+    </div>
+    <div class="legal"><span>© 2026 인생준준</span><span>[상호 · 대표자 · 사업자등록번호]</span><span>[관광사업(여행업) 등록번호 또는 제휴 여행사 정보]</span><span>[주소]</span></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+function getJSON(n){const raw="https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/"+n+"?t="+Math.floor(Date.now()/3e5);const local=()=>fetch(n,{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();});const live=/netlify\.app$|lifejunjun\.com$/.test(location.hostname);return live?fetch(raw).then(r=>{if(!r.ok)throw 0;return r.json();}).catch(local):local();}
+function el(tag,attrs={},...kids){const n=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(v==null)continue;if(k==="class")n.className=v;else if(k==="style")n.setAttribute("style",v);else if(k.startsWith("on"))n.addEventListener(k.slice(2),v);else n.setAttribute(k,v);}for(const c of kids.flat()){if(c==null||c===false)continue;n.append(c.nodeType?c:document.createTextNode(c));}return n;}
+const won=n=>n.toLocaleString("ko-KR")+"원";
+const man=n=>(Math.round(n/10000)).toLocaleString("ko-KR")+"만 원";
+const stCls=s=>"st st-"+s.replace(/\s/g,"");
+function fmtDate(r){const d=r.date;if(/^\d{4}-\d{2}-\d{2}$/.test(d)){const[y,m,dd]=d.split("-");return `${y}.${m}.${dd}`;}const[y,m]=d.split("-");return `${y}년 ${+m}월`;}
+function maxKm(r){return r.dist.reduce((a,d)=>Math.max(a,d[1]),0);}
+function minKm(r){return r.dist.reduce((a,d)=>Math.min(a,d[1]),1e9);}
+function kmLabel(r){const a=minKm(r),b=maxKm(r);const f=x=>(Math.round(x*10)/10).toString().replace(/\.0$/,"");return a===b?f(a):f(a)+"–"+f(b);}
+function maxGain(r){return r.dist.reduce((a,d)=>Math.max(a,d[2]||0),0);}
+function lv(n){const s=el("span",{class:"lv","aria-label":`체력 난이도 5단계 중 ${n}`});for(let i=1;i<=5;i++)s.append(el("i",{class:i<=n?"on":""}));return s;}
+function ridge(seed){let p="M0,100 ";const pts=9;for(let i=0;i<=pts;i++){const x=i*(100/pts);const y=30+((Math.sin(seed*7.3+i*1.9)+1)/2)*55;p+=`L${x.toFixed(1)},${y.toFixed(1)} `;}p+="L100,100 Z";const s=document.createElementNS("http://www.w3.org/2000/svg","svg");s.setAttribute("viewBox","0 0 100 100");s.setAttribute("preserveAspectRatio","none");s.setAttribute("class","ridge");s.setAttribute("aria-hidden","true");const path=document.createElementNS("http://www.w3.org/2000/svg","path");path.setAttribute("d",p);path.setAttribute("fill","#fff");s.append(path);return s;}
+
+let DATA=null, cat="전체", st="전체";
+function card(r,i){
+  const poster=el("div",{class:"rt-poster",style:`background:${r.color}`},
+    ridge(i+1),
+    el("div",{class:"top"},el("span",{},r.country.toUpperCase()),el("span",{class:stCls(r.status)},r.status)),
+    el("div",{},el("div",{class:"km"},kmLabel(r),el("small",{},"km")),el("div",{class:"mono",style:"position:relative;z-index:1;margin-top:6px;opacity:.9"},fmtDate(r)+(maxGain(r)?` · ↑${maxGain(r).toLocaleString()}m`:""))),
+    el("span",{class:"glyph","aria-hidden":"true"},r.glyph));
+  return el("a",{class:"rt-card",href:`run.html?id=${r.id}`,onclick:e=>{e.preventDefault();openDetail(r.id,true);}},
+    poster,
+    el("div",{class:"rt-body"},
+      el("div",{class:"cats"},r.cats.map(c=>el("span",{},c))),
+      el("h3",{},r.title),
+      el("p",{class:"where"},`${r.sub} · ${r.city}`),
+      el("div",{class:"row"},el("span",{class:"small"},"난이도 ",lv(r.level)),el("span",{},el("span",{class:"small"},"예상 "),el("b",{},man(r.total))))));
+}
+function chipRow(host,items,cur,set){host.innerHTML="";host.append(el("span",{class:"lbl"},host.id==="f-cat"?"종목":"상태"));items.forEach(([v,n])=>host.append(el("button",{class:"chip",type:"button","aria-pressed":String(v===cur),onclick:()=>{set(v);renderList();}},v,el("span",{class:"n"},n))));}
+function renderList(){
+  const R=DATA.races;
+  const cats=[["전체",R.length],...DATA.cats.map(c=>[c,R.filter(r=>r.cats.includes(c)).length])];
+  const sts=["전체",...new Set(R.map(r=>r.status))].map(s=>[s,s==="전체"?R.length:R.filter(r=>r.status===s).length]);
+  chipRow(document.getElementById("f-cat"),cats,cat,v=>cat=v);
+  chipRow(document.getElementById("f-st"),sts,st,v=>st=v);
+  const order={"접수 중":0,"예약 중":0,"마감 임박":0,"접수 예정":1,"상시":2,"발표 예정":3,"마감":4};
+  const list=R.filter(r=>(cat==="전체"||r.cats.includes(cat))&&(st==="전체"||r.status===st)).sort((a,b)=>(order[a.status]??5)-(order[b.status]??5)||a.date.localeCompare(b.date));
+  const g=document.getElementById("grid");g.innerHTML="";
+  if(!list.length){g.append(el("p",{class:"small"},"조건에 맞는 대회가 아직 없어요. 매주 새 대회를 추가합니다."));return;}
+  list.forEach(r=>g.append(card(r,R.indexOf(r))));
+}
+
+let MAP=null, anim=null;
+function openDetail(id,push){
+  const r=DATA.races.find(x=>x.id===id);if(!r){showList(false);return;}
+  if(push)history.pushState({id},"",`run.html?id=${id}`);
+  document.getElementById("list-view").hidden=true;
+  const d=document.getElementById("detail");d.hidden=false;d.innerHTML="";
+  document.title=`${r.title} — RUN & TREK · 인생준준`;
+  const L=DATA.costLabels;
+  const head=el("div",{class:"rt-head",style:`background:${r.color}`},ridge(3),
+    el("div",{style:"position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px;align-items:center"},el("span",{class:stCls(r.status)},r.status),el("span",{class:"mono",style:"opacity:.9"},`${r.country} · ${r.city}`)),
+    el("div",{},el("h1",{},r.title),el("p",{class:"sub"},r.sub),el("p",{class:"line"},r.line)),
+    el("span",{class:"glyph","aria-hidden":"true"},r.glyph));
+  const facts=el("div",{class:"rt-facts"},
+    el("div",{},el("span",{},"날짜"),el("b",{},fmtDate(r)),el("span",{},r.dateNote)),
+    el("div",{},el("span",{},"거리"),el("b",{},kmLabel(r)+" km"),el("span",{},r.dist.map(x=>x[0]).join(" · "))),
+    el("div",{},el("span",{},"최대 상승고도"),el("b",{},maxGain(r)?`↑ ${maxGain(r).toLocaleString()} m`:"거의 평지"),el("span",{},"제한시간 "+r.cutoff)),
+    el("div",{},el("span",{},"체력 난이도"),el("b",{},lv(r.level)),el("span",{},["","산책하듯","가볍게 뛰는 사람","꾸준히 달리는 사람","산 경험 필요","마라톤 경험자"][r.level])));
+
+  const dtab=el("table",{class:"dtable"},el("thead",{},el("tr",{},el("th",{},"종목"),el("th",{},"거리"),el("th",{},"상승고도"))),
+    el("tbody",{},r.dist.map(x=>el("tr",{},el("td",{},x[0]),el("td",{class:"num"},x[1]+" km"),el("td",{class:"num"},x[2]?`↑ ${x[2].toLocaleString()} m`:"—")))));
+
+  const left=el("div",{},
+    el("div",{class:"rt-sec"},el("span",{class:"mono"},"How to enter"),el("h2",{},"신청 방법"),
+      el("p",{class:"small",style:"margin-bottom:12px"},r.statusNote),
+      el("ol",{class:"steps2"},r.howto.map(h=>el("li",{},h))),
+      el("div",{class:"links2"},el("a",{class:"cta",href:r.official,target:"_blank",rel:"noopener"},"공식 신청·안내 페이지 →"),el("a",{class:"cta ghost",href:r.course,target:"_blank",rel:"noopener"},"공식 코스 지도·GPX"))),
+    el("div",{class:"rt-sec"},el("span",{class:"mono"},"Course"),el("h2",{},"거리와 고도"),dtab),
+    el("div",{class:"rt-sec"},el("span",{class:"mono"},"Itinerary"),el("h2",{},"같이 가는 일정"),el("ol",{class:"plan2"},r.plan.map((p,i)=>el("li",{},el("span",{},`DAY ${i+1}`),el("div",{},p[0]))))),
+    el("div",{class:"rt-sec"},el("span",{class:"mono"},"Pack"),el("h2",{},"준비물"),el("div",{class:"gear"},r.gear.map(g=>el("span",{},g)))));
+
+  const bill=el("div",{class:"bill2"},el("p",{class:"mono",style:"color:var(--seal);margin-bottom:8px"},"예상 경비 · 1인"),
+    Object.entries(r.cost).filter(([,v])=>v>0).map(([k,v])=>el("div",{class:"r"},el("span",{},L[k]||k),el("b",{},won(v)))),
+    el("div",{class:"r lead"},el("span",{},DATA.leaderLabel),el("b",{},won(r.leader))),
+    el("div",{class:"r fee"},el("span",{},DATA.feeLabel),el("b",{},won(r.fee))),
+    el("div",{class:"tot"},el("span",{},"합계(예상)"),el("b",{},won(r.total))),
+    el("p",{class:"small",style:"margin-top:10px"},DATA.basis),
+    el("p",{class:"small",style:"margin-top:6px"},r.costNote));
+  const right=el("div",{},el("div",{class:"rt-sec",style:"border-top:0;padding-top:0"},bill),
+    el("div",{class:"rt-sec"},el("span",{class:"mono"},"Join"),el("h2",{},"같이 갈래요?"),el("p",{style:"color:var(--soft)"},"3명이 모이면 출발을 확정해요. 대회 접수는 각자 하고, 항공·숙소·일정은 같이 맞춰요."),
+      el("div",{class:"links2"},el("a",{class:"cta red",href:"index.html#apply"},"동행 신청"),el("a",{class:"cta ghost",href:"https://www.instagram.com/lifejunjun/",target:"_blank",rel:"noopener"},"인스타 DM으로 물어보기"))));
+
+  const cx=el("section",{class:"cx",id:"cx","aria-label":"코스 미리 걷기"},
+    el("div",{class:"cx-wrap"},el("div",{id:"cxmap",role:"region","aria-label":"코스 지도"}),
+      el("div",{class:"cx-side"},
+        el("span",{class:"mono",style:"color:var(--aurora)"},"Virtual course · 코스 미리 걷기"),
+        el("span",{class:"now",id:"cx-now"}),
+        el("h3",{id:"cx-t"}),el("p",{id:"cx-d"}),
+        el("p",{},el("a",{id:"cx-sv",href:"#",target:"_blank",rel:"noopener"},"이 지점 거리뷰로 보기 ↗")),
+        el("div",{class:"cx-dots",id:"cx-dots"}),
+        el("div",{class:"cx-ctrl"},
+          el("button",{type:"button",id:"cx-play"},"▶ 코스 따라가기"),
+          el("button",{type:"button",id:"cx-prev"},"← 이전"),
+          el("button",{type:"button",id:"cx-next"},"다음 →"),
+          el("button",{type:"button",id:"cx-sat",class:"on","aria-pressed":"true"},"위성")),
+        el("p",{class:"cx-note"},"주요 지점을 이은 미리보기예요. 실제 대회 코스는 공식 코스 지도·GPX로 확인하세요."))));
+
+  d.append(el("a",{class:"rt-back",href:"run.html",onclick:e=>{e.preventDefault();showList(true);}},"← RUN & TREK 전체"),head,facts,
+    el("div",{class:"rt-sec",style:"margin-top:44px;margin-bottom:0;border-top:0;padding-top:0"},el("span",{class:"mono",style:"color:var(--seal)"},"Preview"),el("h2",{style:"font-size:clamp(24px,2.6vw,32px);font-weight:900;letter-spacing:-.03em"},"코스 미리 걷기")),
+    cx,el("div",{class:"rt-cols"},left,right),
+    el("div",{class:"rt-foot"},el("p",{class:"small"},DATA.note),el("a",{class:"cta ghost",href:"run.html",onclick:e=>{e.preventDefault();showList(true);}},"다른 대회 보기")));
+  window.scrollTo(0,0);
+  initMap(r);
+}
+function initMap(r){
+  if(anim){cancelAnimationFrame(anim);anim=null;}
+  if(MAP){MAP.remove();MAP=null;}
+  if(typeof L==="undefined"){document.getElementById("cxmap").innerHTML='<p style="padding:20px">지도를 불러오지 못했어요.</p>';return;}
+  const pts=r.points.map(p=>[p[1],p[2]]);
+  MAP=L.map("cxmap",{scrollWheelZoom:false,zoomControl:true});
+  const sat=L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:18,attribution:"Imagery © Esri"});
+  const osm=L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"© OpenStreetMap"});
+  sat.addTo(MAP);
+  const line=L.polyline(pts,{color:"#5BE3B5",weight:4,opacity:.9,dashArray:"8 8"}).addTo(MAP);
+  r.points.forEach((p,i)=>L.marker([p[1],p[2]],{icon:L.divIcon({className:"",html:`<div class="cp">${i+1}</div>`,iconSize:[24,24],iconAnchor:[12,12]}),title:p[0]}).addTo(MAP).on("click",()=>go(i)));
+  const runner=L.marker(pts[0],{icon:L.divIcon({className:"",html:'<div class="runner"></div>',iconSize:[18,18],iconAnchor:[9,9]}),interactive:false,zIndexOffset:1000}).addTo(MAP);
+  MAP.fitBounds(line.getBounds(),{padding:[40,40]});
+  let idx=0,playing=false;
+  const dots=document.getElementById("cx-dots");dots.innerHTML="";
+  r.points.forEach((p,i)=>dots.append(el("button",{type:"button","aria-label":`${i+1}. ${p[0]}`,onclick:()=>{stop();go(i);}},String(i+1))));
+  function show(i){const p=r.points[i];document.getElementById("cx-now").textContent=`CHECKPOINT ${i+1} / ${r.points.length}`;document.getElementById("cx-t").textContent=p[0];document.getElementById("cx-d").textContent=p[3];
+    document.getElementById("cx-sv").href=`https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p[1]},${p[2]}`;
+    [...dots.children].forEach((b,j)=>b.setAttribute("aria-current",String(j===i)));}
+  function go(i){idx=i;runner.setLatLng(pts[i]);MAP.flyTo(pts[i],Math.max(MAP.getZoom(),13),{duration:.8});show(i);}
+  function stop(){playing=false;if(anim)cancelAnimationFrame(anim);anim=null;document.getElementById("cx-play").textContent="▶ 코스 따라가기";}
+  function leg(from,to,done){const a=pts[from],b=pts[to];const t0=performance.now();const dur=2600;
+    const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+    if(reduce){runner.setLatLng(b);done();return;}
+    MAP.flyToBounds(L.latLngBounds([a,b]),{padding:[60,60],duration:.8});
+    const step=t=>{const k=Math.min(1,(t-t0)/dur);const e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;runner.setLatLng([a[0]+(b[0]-a[0])*e,a[1]+(b[1]-a[1])*e]);if(k<1&&playing)anim=requestAnimationFrame(step);else if(playing)done();};anim=requestAnimationFrame(step);}
+  function play(){if(playing){stop();return;}playing=true;document.getElementById("cx-play").textContent="❚❚ 멈춤";if(idx>=pts.length-1){go(0);}
+    const next=()=>{if(!playing)return;if(idx>=pts.length-1){stop();return;}const f=idx;leg(f,f+1,()=>{idx=f+1;show(idx);setTimeout(next,1400);});};setTimeout(next,600);}
+  document.getElementById("cx-play").onclick=play;
+  document.getElementById("cx-prev").onclick=()=>{stop();go(Math.max(0,idx-1));};
+  document.getElementById("cx-next").onclick=()=>{stop();go(Math.min(pts.length-1,idx+1));};
+  const sb=document.getElementById("cx-sat");sb.onclick=()=>{const on=MAP.hasLayer(sat);if(on){MAP.removeLayer(sat);osm.addTo(MAP);}else{MAP.removeLayer(osm);sat.addTo(MAP);}sb.classList.toggle("on",!on);sb.setAttribute("aria-pressed",String(!on));};
+  show(0);
+  setTimeout(()=>MAP.invalidateSize(),200);
+}
+function showList(push){if(anim)cancelAnimationFrame(anim);if(MAP){MAP.remove();MAP=null;}if(push)history.pushState({},"","run.html");document.getElementById("detail").hidden=true;document.getElementById("list-view").hidden=false;document.title="RUN & TREK — 인생준준";}
+window.addEventListener("popstate",()=>{const id=new URLSearchParams(location.search).get("id");id?openDetail(id,false):showList(false);});
+getJSON("races.json").then(d=>{DATA=d;
+  document.getElementById("upd").textContent="업데이트 "+d.updated.replace(/-/g,".");
+  document.getElementById("note").textContent=d.note;
+  renderList();
+  const id=new URLSearchParams(location.search).get("id");if(id)openDetail(id,false);
+}).catch(()=>{document.getElementById("grid").innerHTML='<p class="small">대회 정보를 불러오지 못했어요. 새로고침해 주세요.</p>';});
+</script>
+</body>
+</html>
