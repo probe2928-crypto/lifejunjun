@@ -158,7 +158,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>window.RUNFX={key:"lifejunjun",filmsPath:"films.json",brand:"RUN & TREK",brandHtml:"RUN &amp; <em>TREK</em>",tagline:"함께 달리고, 함께 걷는 세계. — 인생준준",accent:"#C8261C",onAccent:"#fff",words:["RUN.","CLIMB.","BREATHE.","TOGETHER."]};</script>
-<script src="runfx.js"></script>
+<script src="runfx.js?v=20261024c"></script>
 <script>
 function getJSON(n){const raw="https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/"+n+"?t="+Math.floor(Date.now()/3e5);const local=()=>fetch(n,{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();});const live=/netlify\.app$|lifejunjun\.com$/.test(location.hostname);return live?fetch(raw).then(r=>{if(!r.ok)throw 0;return r.json();}).catch(local):local();}
 function el(tag,attrs={},...kids){const n=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(v==null)continue;if(k==="class")n.className=v;else if(k==="style")n.setAttribute("style",v);else if(k.startsWith("on"))n.addEventListener(k.slice(2),v);else n.setAttribute(k,v);}for(const c of kids.flat()){if(c==null||c===false)continue;n.append(c.nodeType?c:document.createTextNode(c));}return n;}
@@ -311,8 +311,8 @@ getJSON("races.json").then(d=>{DATA=d;
   document.getElementById("note").textContent=d.note;
   renderList();
   const id=new URLSearchParams(location.search).get("id");if(id)openDetail(id,false);
-  if(window.RunFX){const k=document.querySelector("#list-view .kicker");const wrap=el("div",{style:"margin-top:22px"});wrap.append(RunFX.playButton("최신 필름 보기",()=>RunFX.playIntro(d.races,true)));RunFX.reel(wrap,d.races);(document.querySelector("#list-view .lede")||k).after(wrap);
-    if(!id)RunFX.playIntro(d.races);}
+  try{if(window.RunFX){const k=document.querySelector("#list-view .kicker");const wrap=el("div",{style:"margin-top:22px"});wrap.append(RunFX.playButton("최신 필름 보기",()=>RunFX.playIntro(d.races,true)));if(RunFX.reel)RunFX.reel(wrap,d.races);(document.querySelector("#list-view .lede")||k).after(wrap);
+    if(!id)RunFX.playIntro(d.races);}}catch(e){console.warn(e);}
 }).catch(()=>{document.getElementById("grid").innerHTML='<p class="small">대회 정보를 불러오지 못했어요. 새로고침해 주세요.</p>';});
 </script>
 </body>
