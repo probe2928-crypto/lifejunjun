@@ -215,7 +215,7 @@ function openDetail(id,push){
     el("div",{style:"position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px;align-items:center"},el("span",{class:stCls(r.status)},r.status),el("span",{class:"mono",style:"opacity:.9"},`${r.country} · ${r.city}`)),
     el("div",{},el("h1",{},r.title),el("p",{class:"sub"},r.sub),el("p",{class:"line"},r.line)),
     el("span",{class:"glyph","aria-hidden":"true"},r.glyph));
-  if(window.RunFX){RunFX.poster(head,r,0);const hb=el("div",{style:"position:relative;z-index:2;margin-top:22px"});hb.append(RunFX.playButton("코스 필름 보기",()=>RunFX.playCourse(r),true));head.querySelector(".line").after(hb);const rg=head.querySelector("svg.ridge");if(rg&&r.photos&&r.photos.length)rg.remove();}
+  if(window.RunFX){RunFX.poster(head,r,0,true);const hb=el("div",{style:"position:relative;z-index:2;margin-top:22px"});hb.append(RunFX.playButton("코스 필름 보기",()=>RunFX.playCourse(r),true));head.querySelector(".line").after(hb);const rg=head.querySelector("svg.ridge");if(rg&&r.photos&&r.photos.length)rg.remove();}
   const facts=el("div",{class:"rt-facts"},
     el("div",{},el("span",{},"날짜"),el("b",{},fmtDate(r)),el("span",{},r.dateNote)),
     el("div",{},el("span",{},"거리"),el("b",{},kmLabel(r)+" km"),el("span",{},r.dist.map(x=>x[0]).join(" · "))),

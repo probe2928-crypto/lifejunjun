@@ -159,8 +159,8 @@
     playIntro(races,force){if(!force&&seenIntro())return Promise.resolve();markIntro();return film(introScenes(races),{label:CFG.brand+" 소개 영상"});},
     playCourse(r){return film(courseScenes(r),{label:r.title+" 코스 영상"});},
     playButton(label,onClick,light){const b=document.createElement("button");b.type="button";b.className="fx-play"+(light?" light":"");b.innerHTML="<b>▶</b>"+esc(label);b.onclick=onClick;return b;},
-    poster(el,r,i){const p=ph(r,0);if(!p)return;const bg=h("div","fx-photo");bg.style.backgroundImage=`url("${p.src}")`;bg.setAttribute("aria-hidden","true");
-      const tint=h("div","fx-tint");tint.style.background=`linear-gradient(180deg,${r.color}55 0%,${r.color}22 40%,${r.color}EE 100%)`;el.prepend(bg,tint);},
+    poster(el,r,i,strong){const p=ph(r,0);if(!p)return;const bg=h("div","fx-photo");bg.style.backgroundImage=`url("${p.src}")`;bg.setAttribute("aria-hidden","true");
+      const tint=h("div","fx-tint");tint.style.background=strong?`linear-gradient(90deg,${r.color}F2 0%,${r.color}B3 40%,${r.color}33 75%,${r.color}11 100%),linear-gradient(0deg,rgba(0,0,0,.35),transparent 50%)`:`linear-gradient(180deg,${r.color}55 0%,${r.color}22 40%,${r.color}EE 100%)`;el.prepend(bg,tint);},
     gallery(r){const g=h("div","fx-gal");(r.photos||[]).forEach(p=>{const f=h("figure");const im=document.createElement("img");im.src=p.src;im.alt=p.cap;im.loading="lazy";
       const c=h("figcaption",null,esc(p.cap)+`<a href="${esc(p.link)}" target="_blank" rel="noopener">사진 · ${esc(p.by)} · Wikimedia Commons</a>`);f.append(im,c);g.append(f);});return g;}
   };
