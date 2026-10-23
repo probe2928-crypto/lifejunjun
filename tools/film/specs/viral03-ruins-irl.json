@@ -1,0 +1,114 @@
+{
+  "id": "viral-03-ruins-irl",
+  "out": "media/viral03-ruins-irl.mp4",
+  "bpm": 120,
+  "hook": {
+    "img": "media/photos/bank/machu-0.jpg",
+    "kb": [
+      1.3,
+      1.08,
+      0.35,
+      0.4
+    ],
+    "kicker": "LIFEJUNJUN  ·  HISTORY TRIP  ·  TOP 5",
+    "title": "사진보다 실물이\n더 미친 유적 TOP 5",
+    "sub": "TOP 5 · 1위 보고 소름 주의",
+    "beats": 4
+  },
+  "items": [
+    {
+      "rank": 5,
+      "img": "media/photos/bank/taprohm-2.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.55,
+        0.5
+      ],
+      "name": "타 프롬",
+      "place": "캄보디아 시엠레아프",
+      "en": "Siem Reap, Cambodia",
+      "fact": "나무가 집어삼킨 1186년 사원",
+      "meta": "AD 1186  ·  JAYAVARMAN VII",
+      "beats": 5
+    },
+    {
+      "rank": 4,
+      "img": "media/photos/bank/pantheon-0.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.5,
+        0.5
+      ],
+      "name": "판테온",
+      "place": "이탈리아 로마",
+      "en": "Rome, Italy",
+      "fact": "철근 없이 버틴 43.3m 돔",
+      "meta": "AD 120  ·  DOME 43.3 M  ·  OCULUS 8.7 M",
+      "beats": 5
+    },
+    {
+      "rank": 3,
+      "img": "media/photos/bank/xian-terracotta-0.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.55,
+        0.55
+      ],
+      "name": "진시황 병마용",
+      "place": "중국 시안",
+      "en": "Xi'an, China",
+      "fact": "우물 파다 찾은 8,000 군대",
+      "meta": "FOUND 1974  ·  8,000 SOLDIERS",
+      "beats": 5
+    },
+    {
+      "rank": 2,
+      "img": "media/photos/bank/hagia-sophia-1.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.5,
+        0.45
+      ],
+      "name": "하기아 소피아",
+      "place": "튀르키예 이스탄불",
+      "en": "Istanbul, Türkiye",
+      "fact": "537년, 55.6m 높이의 돔",
+      "meta": "AD 537  ·  DOME 55.6 M",
+      "beats": 5
+    },
+    {
+      "rank": 1,
+      "img": "media/photos/bank/petra-0.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.5,
+        0.5
+      ],
+      "name": "페트라 알카즈네",
+      "place": "요르단 페트라",
+      "en": "Petra, Jordan",
+      "fact": "바위를 통째로 깎은 40m",
+      "meta": "~40 M  ·  CARVED IN ROCK  ·  1ST C.",
+      "beats": 6
+    }
+  ],
+  "cta": {
+    "img": "media/photos/bank/registan-1.jpg",
+    "kb": [
+      1.25,
+      1.08,
+      0.5,
+      0.55
+    ],
+    "line1": "같이 갈 사람에게\n보내기",
+    "line2": "너의 1위는 어디? 댓글로 알려줘",
+    "beats": 6
+  },
+  "caption": "사진보다 실물이 더 미친 유적 TOP 5 🏛️\n\n5 타 프롬 🇰🇭\n4 판테온 🇮🇹\n3 진시황 병마용 🇨🇳\n2 하기아 소피아 🇹🇷\n1 페트라 알카즈네 🇯🇴\n\n같이 갈 사람한테 보내줘 ✈️\n너의 1위는 어디? 댓글로 알려줘\n\n인생준준 — 먼저 공부해 온 길동무와 3~10명이 함께 가는 역사 여행\n\n#인생준준 #역사여행 #유적지 #세계여행 #버킷리스트 #페트라 #판테온 #병마용 #하기아소피아",
+  "link": "https://probe2928-crypto.github.io/lifejunjun/yeobaek/"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "viral-02-life-treks",
+  "out": "media/viral02-life-treks.mp4",
+  "bpm": 120,
+  "hook": {
+    "img": "media/photos/bank/fitzroy-0.jpg",
+    "kb": [
+      1.3,
+      1.08,
+      0.56,
+      0.45
+    ],
+    "kicker": "LIFEJUNJUN  ·  RUN & TREK  ·  TOP 5",
+    "title": "다녀오면 평생 자랑하는\n인생 트레킹 TOP 5",
+    "sub": "TOP 5 · 1위는 진짜 버킷리스트",
+    "beats": 4
+  },
+  "items": [
+    {
+      "rank": 5,
+      "img": "media/photos/bank/kumano-0.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.48,
+        0.5
+      ],
+      "name": "구마노 고도 나카헤치",
+      "place": "일본 와카야마",
+      "en": "Wakayama, Japan",
+      "fact": "천 년 된 순례길 40km",
+      "meta": "40 KM  ·  2 DAYS  ·  PILGRIM ROUTE",
+      "beats": 5
+    },
+    {
+      "rank": 4,
+      "img": "media/photos/poonhill-0.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.5,
+        0.4
+      ],
+      "name": "푼힐 일출 트레킹",
+      "place": "네팔 포카라",
+      "en": "Pokhara, Nepal",
+      "fact": "해발 3,210m에서 보는 일출",
+      "meta": "3,210 M  ·  SUNRISE  ·  ANNAPURNA",
+      "beats": 5
+    },
+    {
+      "rank": 3,
+      "img": "media/photos/bank/landmannalaugar-2.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.5,
+        0.55
+      ],
+      "name": "라우가베구르 트레일",
+      "place": "아이슬란드 란드만나라우가르",
+      "en": "Landmannalaugar, Iceland",
+      "fact": "무지개 산을 걷는 54km",
+      "meta": "54 KM  ·  4 DAYS  ·  HOT SPRINGS",
+      "beats": 5
+    },
+    {
+      "rank": 2,
+      "img": "media/photos/bank/torres-paine-0.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.42,
+        0.6
+      ],
+      "name": "토레스 델 파이네 W트렉",
+      "place": "칠레 파타고니아",
+      "en": "Patagonia, Chile",
+      "fact": "세 개의 화강암 탑 아래로",
+      "meta": "80 KM  ·  5 DAYS  ·  PATAGONIA",
+      "beats": 5
+    },
+    {
+      "rank": 1,
+      "img": "media/photos/bank/everest-trail-1.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.52,
+        0.55
+      ],
+      "name": "에베레스트 베이스캠프",
+      "place": "네팔 쿰부",
+      "en": "Khumbu, Nepal",
+      "fact": "세계의 지붕 아래 5,364m",
+      "meta": "130 KM  ·  5,364 M  ·  KHUMBU",
+      "beats": 6
+    }
+  ],
+  "cta": {
+    "img": "media/photos/bank/annapurna-0.jpg",
+    "kb": [
+      1.25,
+      1.08,
+      0.4,
+      0.55
+    ],
+    "line1": "같이 걸을 사람에게\n보내기",
+    "line2": "너는 몇 개 가봤어? 댓글로 알려줘",
+    "beats": 6
+  },
+  "caption": "다녀오면 평생 자랑하는 인생 트레킹 TOP 5 🥾\n\n5 구마노 고도 나카헤치 🇯🇵\n4 푼힐 일출 트레킹 🇳🇵\n3 라우가베구르 트레일 🇮🇸\n2 토레스 델 파이네 W트렉 🇨🇱\n1 에베레스트 베이스캠프 🇳🇵\n\n같이 걸을 사람한테 보내줘 👟\n너는 몇 개 가봤어? 댓글로 알려줘\n\n인생준준 RUN & TREK — 3~10명이 함께 가는 해외 러닝·트레킹 여행\n\n#인생준준 #RUNandTREK #해외트레킹 #트레킹여행 #버킷리스트 #에베레스트 #파타고니아 #구마노고도 #푼힐",
+  "link": "https://probe2928-crypto.github.io/lifejunjun/yeobaek/run.html"
+}
