@@ -1,0 +1,78 @@
+{
+  "updated": "2026-10-24",
+  "films": [
+    {
+      "id": "film-01-silence",
+      "date": "2026-10-24",
+      "title": "FILM 01 · Silence",
+      "style": "luxe",
+      "brand": "both",
+      "scenes": [
+        {
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg/1280px-Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg",
+          "credit": "Wolfgang Moroder · CC BY-SA 3.0",
+          "d": 2600,
+          "tag": "FILM 01 · SILENCE",
+          "big": "Before the *first* step",
+          "corner": [
+            "DOLOMITES",
+            "2027.06"
+          ]
+        },
+        {
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Torii_at_Oyunohara_02.jpg/1280px-Torii_at_Oyunohara_02.jpg",
+          "credit": "Douglas Perkins · CC BY 4.0",
+          "d": 2600,
+          "small": "천 년 동안 같은 길을 걸은 사람들이 있었다.",
+          "corner": [
+            "KUMANO KODO",
+            "JAPAN"
+          ]
+        },
+        {
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Poon_hill_sunrise.jpg/1280px-Poon_hill_sunrise.jpg",
+          "credit": "Thapaliyashreeram · CC BY-SA 4.0",
+          "d": 2600,
+          "color_on": true,
+          "big": "Breathe.",
+          "small": "해발 3,210m, 해가 산을 넘어오는 순간.",
+          "corner": [
+            "POON HILL",
+            "NEPAL"
+          ]
+        },
+        {
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Chamonix_-_Lac_Blanc_4.jpg/1280px-Chamonix_-_Lac_Blanc_4.jpg",
+          "credit": "Tiia Monto · CC BY-SA 3.0",
+          "d": 2600,
+          "small": "숨이 차오를 때, 풍경은 가장 조용해진다.",
+          "corner": [
+            "LAC BLANC",
+            "CHAMONIX"
+          ]
+        },
+        {
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Angkor_Wat_Sunrise_%28209237385%29.jpeg/1280px-Angkor_Wat_Sunrise_%28209237385%29.jpeg",
+          "credit": "Reinhard Onasch · CC BY-SA 3.0",
+          "d": 2600,
+          "color_on": true,
+          "big": "Run *slowly*.",
+          "small": "빨리 가려면 혼자, 멀리 가려면 함께.",
+          "corner": [
+            "ANGKOR WAT",
+            "CAMBODIA"
+          ]
+        },
+        {
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Vista_desde_el_pico_de_Arieiro%2C_Madeira%2C_Portugal%2C_2019-05-30%2C_DD_147-153_PAN.jpg/1280px-Vista_desde_el_pico_de_Arieiro%2C_Madeira%2C_Portugal%2C_2019-05-30%2C_DD_147-153_PAN.jpg",
+          "credit": "Diego Delso · CC BY-SA 4.0",
+          "d": 3400,
+          "center": true,
+          "tag": "RUN & TREK · MARGIN ATLAS",
+          "big": "Together, *further*.",
+          "small": "함께 달리고, 함께 걷는 세계."
+        }
+      ]
+    }
+  ]
+}

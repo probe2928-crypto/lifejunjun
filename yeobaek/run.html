@@ -153,7 +153,7 @@ footer .inner{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-be
 <a class="float" href="index.html#contact">문의</a>
 <footer><div class="wrap inner"><span>여백의 지도 · MARGIN ATLAS — 함께 떠나는 작은 여행</span><span><a href="https://open.kakao.com/o/gzvyLFTi" target="_blank" rel="noopener">카카오톡 공지방</a> · <a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">Instagram</a> · <a href="index.html">홈</a></span></div></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script>window.RUNFX={brand:"RUN THE MAP",brandHtml:"RUN THE <em>MAP</em>",tagline:"지도 위를 달리는 여행. — 여백의 지도",accent:"#b8df4c",onAccent:"#1e2725",words:["RUN.","WANDER.","BREATHE.","TOGETHER."]};</script>
+<script>window.RUNFX={key:"yeobaek",filmsPath:"../films.json",brand:"RUN THE MAP",brandHtml:"RUN THE <em>MAP</em>",tagline:"지도 위를 달리는 여행. — 여백의 지도",accent:"#b8df4c",onAccent:"#1e2725",words:["RUN.","WANDER.","BREATHE.","TOGETHER."]};</script>
 <script src="../runfx.js"></script>
 <script>
 function getJSON(n){const raw="https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/"+n.replace("../","")+"?t="+Math.floor(Date.now()/3e5);const local=()=>fetch(n,{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();});const live=/netlify\.app$|lifejunjun\.com$/.test(location.hostname);return live?fetch(raw).then(r=>{if(!r.ok)throw 0;return r.json();}).catch(local):local();}
@@ -307,7 +307,7 @@ getJSON("../races.json").then(d=>{DATA=d;
   document.getElementById("note").textContent=d.note;
   renderList();
   const id=new URLSearchParams(location.search).get("id");if(id)openDetail(id,false);
-  if(window.RunFX){const k=document.querySelector("#list-view .kicker");const wrap=el("div",{style:"margin-top:22px"});wrap.append(RunFX.playButton("필름 보기",()=>RunFX.playIntro(d.races,true)));(document.querySelector("#list-view .lede")||k).after(wrap);
+  if(window.RunFX){const k=document.querySelector("#list-view .kicker");const wrap=el("div",{style:"margin-top:22px"});wrap.append(RunFX.playButton("최신 필름 보기",()=>RunFX.playIntro(d.races,true)));RunFX.reel(wrap,d.races);(document.querySelector("#list-view .lede")||k).after(wrap);
     if(!id)RunFX.playIntro(d.races);}
 }).catch(()=>{document.getElementById("grid").innerHTML='<p class="small">대회 정보를 불러오지 못했어요. 새로고침해 주세요.</p>';});
 </script>

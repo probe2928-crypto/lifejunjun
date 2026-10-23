@@ -157,7 +157,7 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script>window.RUNFX={brand:"RUN & TREK",brandHtml:"RUN &amp; <em>TREK</em>",tagline:"함께 달리고, 함께 걷는 세계. — 인생준준",accent:"#C8261C",onAccent:"#fff",words:["RUN.","CLIMB.","BREATHE.","TOGETHER."]};</script>
+<script>window.RUNFX={key:"lifejunjun",filmsPath:"films.json",brand:"RUN & TREK",brandHtml:"RUN &amp; <em>TREK</em>",tagline:"함께 달리고, 함께 걷는 세계. — 인생준준",accent:"#C8261C",onAccent:"#fff",words:["RUN.","CLIMB.","BREATHE.","TOGETHER."]};</script>
 <script src="runfx.js"></script>
 <script>
 function getJSON(n){const raw="https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/"+n+"?t="+Math.floor(Date.now()/3e5);const local=()=>fetch(n,{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();});const live=/netlify\.app$|lifejunjun\.com$/.test(location.hostname);return live?fetch(raw).then(r=>{if(!r.ok)throw 0;return r.json();}).catch(local):local();}
@@ -311,7 +311,7 @@ getJSON("races.json").then(d=>{DATA=d;
   document.getElementById("note").textContent=d.note;
   renderList();
   const id=new URLSearchParams(location.search).get("id");if(id)openDetail(id,false);
-  if(window.RunFX){const k=document.querySelector("#list-view .kicker");const wrap=el("div",{style:"margin-top:22px"});wrap.append(RunFX.playButton("필름 보기",()=>RunFX.playIntro(d.races,true)));(document.querySelector("#list-view .lede")||k).after(wrap);
+  if(window.RunFX){const k=document.querySelector("#list-view .kicker");const wrap=el("div",{style:"margin-top:22px"});wrap.append(RunFX.playButton("최신 필름 보기",()=>RunFX.playIntro(d.races,true)));RunFX.reel(wrap,d.races);(document.querySelector("#list-view .lede")||k).after(wrap);
     if(!id)RunFX.playIntro(d.races);}
 }).catch(()=>{document.getElementById("grid").innerHTML='<p class="small">대회 정보를 불러오지 못했어요. 새로고침해 주세요.</p>';});
 </script>

@@ -8,7 +8,7 @@
 
   // fonts + styles
   const f=document.createElement("link");f.rel="stylesheet";
-  f.href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&display=swap";document.head.append(f);
+  f.href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bodoni+Moda:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap";document.head.append(f);
   const css=`
   .fx-film{position:fixed;inset:0;z-index:9999;background:#000;color:#fff;overflow:hidden;opacity:0;transition:opacity .35s ease}
   .fx-film.on{opacity:1}.fx-film.out{opacity:0;transition:opacity .6s ease}
@@ -52,6 +52,30 @@
   .fx-scene.on .fx-flash{animation:fxflash .35s ease-out}
   @keyframes fxflash{0%{opacity:.55}100%{opacity:0}}
   .fx-count{font-variant-numeric:tabular-nums}
+
+  /* LUXE preset — slow, monochrome, serif, crossfades */
+  .fx-film.luxe .fx-scene{transition:opacity 1.1s ease}
+  .fx-film.luxe .fx-img{filter:grayscale(1) contrast(1.18) brightness(.92)}
+  .fx-film.luxe .fx-scene.color .fx-img{filter:saturate(.75) contrast(1.1) brightness(.9)}
+  .fx-film.luxe .fx-scene.on .fx-img{animation:fxlux var(--d,2600ms) linear forwards}
+  @keyframes fxlux{from{transform:scale(1.12)}to{transform:scale(1.0)}}
+  .fx-film.luxe .fx-shade{background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.1) 40%,rgba(0,0,0,.6))}
+  .fx-film.luxe .fx-big{font-family:"Bodoni Moda",Didot,"Times New Roman",serif;font-weight:400;font-style:italic;text-transform:none;font-size:clamp(46px,9vw,140px);letter-spacing:-.02em;line-height:1}
+  .fx-film.luxe .fx-scene.on .fx-big{animation:fxluxin 1.6s cubic-bezier(.2,.7,.1,1) both}
+  @keyframes fxluxin{from{opacity:0;letter-spacing:.12em;filter:blur(6px)}to{opacity:1;letter-spacing:-.02em;filter:blur(0)}}
+  .fx-film.luxe .fx-mid{font-family:"Bodoni Moda",Didot,serif;font-weight:400;text-transform:none;font-size:clamp(36px,6vw,92px)}
+  .fx-film.luxe .fx-small{font-family:"Cormorant Garamond","Noto Serif KR",serif;font-weight:300;font-size:clamp(16px,1.7vw,24px);letter-spacing:.06em}
+  .fx-film.luxe .fx-scene.on .fx-small{animation:fxup 1.2s .6s ease forwards}
+  .fx-film.luxe .fx-tag{background:transparent;color:#fff;border-top:1px solid rgba(255,255,255,.7);border-bottom:1px solid rgba(255,255,255,.7);padding:9px 2px;letter-spacing:.42em;font-weight:500;font-size:11px}
+  .fx-film.luxe .fx-corner{letter-spacing:.42em;font-weight:400;opacity:.7}
+  .fx-film.luxe .fx-flash,.fx-film.luxe .fx-speed{display:none}
+  .fx-film.luxe.fx-bars:before,.fx-film.luxe.fx-bars:after{height:11vh}
+  .fx-film.luxe .fx-prog{background:#fff;height:1px}
+  .fx-film.luxe .fx-grain{opacity:.2}
+  .fx-reel{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .fx-reel button{appearance:none;cursor:pointer;border:1px solid currentColor;background:transparent;color:inherit;border-radius:99px;padding:8px 14px;font:600 12px "Noto Sans KR",sans-serif;opacity:.85}
+  .fx-reel button:hover{opacity:1;background:rgba(127,127,127,.12)}
+  .fx-reel small{opacity:.6;margin-left:6px;font-weight:500}
   .fx-play{display:inline-flex;align-items:center;gap:10px;appearance:none;border:0;cursor:pointer;background:#000;color:#fff;font:800 13px "Noto Sans KR",sans-serif;letter-spacing:.12em;padding:12px 18px 12px 14px;border-radius:99px;text-transform:uppercase}
   .fx-play b{width:26px;height:26px;border-radius:50%;background:var(--fx-accent);display:grid;place-items:center;font-size:10px;color:var(--fx-on-accent)}
   .fx-play:hover{transform:translateY(-1px)}
@@ -81,11 +105,11 @@
     if(reduce()||!scenes.length)return Promise.resolve();
     if(active)active.stop();
     return new Promise(async resolve=>{
-      const root=h("div","fx-film fx-bars");root.setAttribute("role","dialog");root.setAttribute("aria-label",opts.label||"소개 영상");
+      const root=h("div","fx-film fx-bars"+(opts.style==="luxe"?" luxe":""));root.setAttribute("role","dialog");root.setAttribute("aria-label",opts.label||"소개 영상");
       const prog=h("div","fx-prog");const skip=h("button","fx-skip","건너뛰기 ✕");skip.type="button";
       root.append(prog,skip);
       const els=scenes.map((s,i)=>{
-        const sc=h("div","fx-scene"+(i%2?" alt":"")+(s.center?" dark":""));sc.style.setProperty("--d",(s.d||1700)+"ms");
+        const sc=h("div","fx-scene"+(i%2?" alt":"")+(s.center?" dark":"")+(s.color_on?" color":""));sc.style.setProperty("--d",(s.d||1700)+"ms");
         const img=h("div","fx-img");img.style.background=s.img?`url("${s.img}") center/cover, ${s.color||"#111"}`:(s.color||"#111");
         sc.append(img,h("div","fx-shade"));
         if(s.speed){const sp=h("div","fx-speed");for(let k=0;k<9;k++){const l=h("i");l.style.top=(8+Math.random()*84)+"%";l.style.width=(18+Math.random()*30)+"vw";l.style.animationDelay=(-Math.random()*.7)+"s";l.style.animationDuration=(.45+Math.random()*.5)+"s";sp.append(l);}sc.append(sp);}
@@ -155,9 +179,21 @@
   function seenIntro(){try{return sessionStorage.getItem("fx-intro")==="1";}catch(e){return false;}}
   function markIntro(){try{sessionStorage.setItem("fx-intro","1");}catch(e){}}
 
+  let FILMS=null;
+  function loadFilms(){if(FILMS)return Promise.resolve(FILMS);const path=CFG.filmsPath||"films.json";
+    return fetch(path+"?t="+Math.floor(Date.now()/3e5),{cache:"no-store"}).then(r=>r.ok?r.json():{films:[]}).catch(()=>({films:[]})).then(d=>{
+      FILMS=(d.films||[]).filter(f=>!f.brand||f.brand==="both"||f.brand===CFG.key).sort((a,b)=>b.date.localeCompare(a.date));return FILMS;});}
+  function filmScenes(fm){return fm.scenes.map(s=>Object.assign({},s,{big:s.big?esc(s.big).replace(/\*(.+?)\*/g,"<em>$1</em>"):null,mid:s.mid?esc(s.mid):null}));}
   window.RunFX={
     film,introScenes,courseScenes,
-    playIntro(races,force){if(!force&&seenIntro())return Promise.resolve();markIntro();return film(introScenes(races),{label:CFG.brand+" 소개 영상"});},
+    playIntro(races,force){if(!force&&seenIntro())return Promise.resolve();markIntro();
+      return loadFilms().then(fs=>fs.length?film(filmScenes(fs[0]),{label:fs[0].title,style:fs[0].style}):film(introScenes(races),{label:CFG.brand+" 소개 영상"}));},
+    playFilm(fm){return film(filmScenes(fm),{label:fm.title,style:fm.style});},
+    playDefault(races){return film(introScenes(races),{label:CFG.brand+" 소개 영상"});},
+    reel(host,races){loadFilms().then(fs=>{const box=h("div","fx-reel");
+      fs.slice(0,4).forEach(fm=>{const b=document.createElement("button");b.type="button";b.innerHTML="▶ "+esc(fm.title)+"<small>"+esc(fm.date.slice(5).replace("-","."))+"</small>";b.onclick=()=>RunFX.playFilm(fm);box.append(b);});
+      const d=document.createElement("button");d.type="button";d.innerHTML="▶ RUN · CLIMB · BREATHE<small>기본</small>";d.onclick=()=>RunFX.playDefault(races);box.append(d);
+      host.append(box);});},
     playCourse(r){return film(courseScenes(r),{label:r.title+" 코스 영상"});},
     playButton(label,onClick,light){const b=document.createElement("button");b.type="button";b.className="fx-play"+(light?" light":"");b.innerHTML="<b>▶</b>"+esc(label);b.onclick=onClick;return b;},
     poster(el,r,i,strong){const p=ph(r,0);if(!p)return;const bg=h("div","fx-photo");bg.style.backgroundImage=`url("${p.src}")`;bg.setAttribute("aria-hidden","true");
