@@ -239,6 +239,7 @@ dialog::backdrop{background:rgba(10,12,20,.62)}
 .dlg .side .poster{aspect-ratio:auto;min-height:260px;flex:1}
 @media (max-width:760px){.dlg{grid-template-columns:minmax(0,1fr);overflow:auto}.dlg .side .poster{min-height:180px}}
 .dlg .body{padding:26px;display:flex;flex-direction:column;gap:18px;overflow:auto}
+@media (min-width:761px){.dlg .body{max-height:calc(100dvh - 24px);overscroll-behavior:contain}}
 .dlg h3{font-size:28px;font-weight:900;letter-spacing:-.03em}
 .days{margin:0;padding:0}
 .days li{list-style:none;display:grid;grid-template-columns:62px minmax(0,1fr);gap:12px;padding-block:10px;border-top:1px solid var(--rule)}
