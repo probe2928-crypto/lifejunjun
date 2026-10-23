@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-24",
   "basis": "1인 기준 · 6명 출발 시 · 2인 1실 · 환율 2026-10-22 (USD 1,326원 / EUR 1,490원 / 100엔 838원)",
-  "model": "원가(항공·숙박·참가비·식사·현지비) + 준준 경비 나눔(준준의 항공·숙박·참가비를 6명이 나눔) + RUN & TREK 운영비 20만 원",
+  "model": "원가(항공·숙박·참가비·식사·현지비) + 공동 준비·운영비",
   "note": "날짜·참가비는 공식 발표에 따라 바뀌어요. 매주 한 번 공식 사이트를 다시 확인해 업데이트합니다. 접수는 각자 공식 사이트에서 직접 하고, 여행 준비는 함께 해요.",
   "costLabels": {
     "air": "항공 (인천 왕복)",
@@ -11,8 +11,7 @@
     "local": "현지 교통·입장료",
     "etc": "여행자보험·기타"
   },
-  "leaderLabel": "준준 경비 나눔 (6인 기준)",
-  "feeLabel": "RUN & TREK 운영비",
+  "feeLabel": "공동 준비·운영비",
   "cats": [
     "5~10km 러닝",
     "하프·마라톤",
@@ -115,7 +114,27 @@
       ],
       "leader": 430000,
       "fee": 200000,
-      "total": 3210000
+      "total": 3210000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg/1280px-Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg",
+          "by": "Wolfgang Moroder · CC BY-SA 3.0",
+          "cap": "트레 치메 디 라바레도 — 돌로미티의 세 봉우리"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Faloria_Cortina_d%27Ampezzo_29.jpg/1280px-Faloria_Cortina_d%27Ampezzo_29.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Faloria_Cortina_d%27Ampezzo_29.jpg",
+          "by": "kallerna · CC BY-SA 4.0",
+          "cap": "코르티나 담페초 — 대회가 열리는 산악 마을"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Lavaredo_Ultra_Trail_2021-_Sul_sentiero_del_rifugio_Auronzo_IAG.jpg/1280px-Lavaredo_Ultra_Trail_2021-_Sul_sentiero_del_rifugio_Auronzo_IAG.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Lavaredo_Ultra_Trail_2021-_Sul_sentiero_del_rifugio_Auronzo_IAG.jpg",
+          "by": "Anthospace · CC BY-SA 4.0",
+          "cap": "라바레도 울트라 트레일 — 아우론초 산장 가는 길"
+        }
+      ]
     },
     {
       "id": "dxt11k",
@@ -209,7 +228,27 @@
       ],
       "leader": 390000,
       "fee": 200000,
-      "total": 2920000
+      "total": 2920000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Monte_Pelmo_1.jpg/1280px-Monte_Pelmo_1.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Monte_Pelmo_1.jpg",
+          "by": "kallerna · CC BY-SA 4.0",
+          "cap": "몬테 펠모 — 돌로미티의 왕좌"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Monte_Civetta%2C_3220_m_und_Val_di_Zoldo.jpg/1280px-Monte_Civetta%2C_3220_m_und_Val_di_Zoldo.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Monte_Civetta,_3220_m_und_Val_di_Zoldo.jpg",
+          "by": "2015 Michael 2015 · CC BY-SA 4.0",
+          "cap": "몬테 치베타와 졸도 계곡"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Civetta_Monte_Pore_Marmolada.jpg/1280px-Civetta_Monte_Pore_Marmolada.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Civetta_Monte_Pore_Marmolada.jpg",
+          "by": "Wolfgang Moroder · CC BY-SA 3.0",
+          "cap": "치베타 북서벽"
+        }
+      ]
     },
     {
       "id": "angkor10k",
@@ -310,7 +349,21 @@
       ],
       "leader": 190000,
       "fee": 200000,
-      "total": 1540000
+      "total": 1540000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Angkor_Wat_Sunrise_%28209237385%29.jpeg/1280px-Angkor_Wat_Sunrise_%28209237385%29.jpeg",
+          "link": "https://commons.wikimedia.org/wiki/File:Angkor_Wat_Sunrise_(209237385).jpeg",
+          "by": "Reinhard Onasch · CC BY-SA 3.0",
+          "cap": "앙코르와트 일출 — 출발선 바로 앞"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Faces_Of_Bayon_%2821538245%29.jpeg/1280px-Faces_Of_Bayon_%2821538245%29.jpeg",
+          "link": "https://commons.wikimedia.org/wiki/File:Faces_Of_Bayon_(21538245).jpeg",
+          "by": "Pedro Figueiredo · CC BY-SA 3.0",
+          "cap": "바이욘 사원의 미소"
+        }
+      ]
     },
     {
       "id": "athens10k",
@@ -411,7 +464,21 @@
       ],
       "leader": 350000,
       "fee": 200000,
-      "total": 2660000
+      "total": 2660000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Panathenaic_Stadium%2C_Athens%2C_20240601_1007_0050.jpg/1280px-Panathenaic_Stadium%2C_Athens%2C_20240601_1007_0050.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Panathenaic_Stadium,_Athens,_20240601_1007_0050.jpg",
+          "by": "Jakub Hałun · CC BY 4.0",
+          "cap": "파나티나이코 경기장 — 대리석 결승선"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg/1280px-Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
+          "by": "A.Savin · CC BY-SA 3.0",
+          "cap": "아크로폴리스 언덕"
+        }
+      ]
     },
     {
       "id": "taroko",
@@ -515,7 +582,15 @@
       ],
       "leader": 140000,
       "fee": 200000,
-      "total": 1160000
+      "total": 1160000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Taroko-Gorge_Hualien_Taiwan_Pudu-Bridge-at-Taroko-National-Park-01.jpg/1280px-Taroko-Gorge_Hualien_Taiwan_Pudu-Bridge-at-Taroko-National-Park-01.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Taroko-Gorge_Hualien_Taiwan_Pudu-Bridge-at-Taroko-National-Park-01.jpg",
+          "by": "CEphoto, Uwe Aranas · CC BY-SA 3.0",
+          "cap": "타이루거 협곡 — 대리석 절벽 사이"
+        }
+      ]
     },
     {
       "id": "jungfrau",
@@ -619,7 +694,27 @@
       ],
       "leader": 560000,
       "fee": 200000,
-      "total": 4130000
+      "total": 4130000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Jungfrau-Marathon_2006_031.jpg/1280px-Jungfrau-Marathon_2006_031.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Jungfrau-Marathon_2006_031.jpg",
+          "by": "Simon Mannweiler · CC BY-SA 4.0",
+          "cap": "융프라우 마라톤 — 아이거를 향한 마지막 오르막"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/KleineScheidegg.JPG/1280px-KleineScheidegg.JPG",
+          "link": "https://commons.wikimedia.org/wiki/File:KleineScheidegg.JPG",
+          "by": "Markus.gaisbauer · Public domain",
+          "cap": "클라이네 샤이데크"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Lauterbrunnen-valley.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Lauterbrunnen-valley.jpg",
+          "by": "Keith Halstead · CC BY-SA 3.0",
+          "cap": "라우터브루넨 계곡"
+        }
+      ]
     },
     {
       "id": "medoc",
@@ -711,7 +806,27 @@
       ],
       "leader": 440000,
       "fee": 200000,
-      "total": 3250000
+      "total": 3250000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Marathon_du_Medoc_%285026204842%29.jpg/1280px-Marathon_du_Medoc_%285026204842%29.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Marathon_du_Medoc_(5026204842).jpg",
+          "by": "Jan · CC BY-SA 2.0",
+          "cap": "메독 마라톤 — 코스튬 러너들"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Ch%C3%A2teau_Lafite-Rothschild_%28Pauillac%29.jpg/1280px-Ch%C3%A2teau_Lafite-Rothschild_%28Pauillac%29.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_Lafite-Rothschild_(Pauillac).jpg",
+          "by": "Giogo · CC BY-SA 4.0",
+          "cap": "샤토 라피트 로칠드, 포이악"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Ch%C3%A2teau_Lafite_Rothschild_-_Charles_Lallemand.jpg/1280px-Ch%C3%A2teau_Lafite_Rothschild_-_Charles_Lallemand.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_Lafite_Rothschild_-_Charles_Lallemand.jpg",
+          "by": "Charles Lallemand · CC0",
+          "cap": "19세기 판화 속 샤토 라피트"
+        }
+      ]
     },
     {
       "id": "kumano",
@@ -817,7 +932,27 @@
       ],
       "leader": 140000,
       "fee": 200000,
-      "total": 1190000
+      "total": 1190000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Kumano_Kodo_pilgrimage_route_Nakahechi_From_Gyuba-Dojiguchi_To_Chikatsuyu_World_heritage_%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93_%E4%B8%AD%E8%BE%BA%E8%B7%AF_%E7%89%9B%E9%A6%AC%E7%AB%A5%E5%AD%90%E5%8F%A3%EF%BD%9E%E8%BF%91%E9%9C%B202.JPG/1280px-Kumano_Kodo_pilgrimage_route_Nakahechi_From_Gyuba-Dojiguchi_To_Chikatsuyu_World_heritage_%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93_%E4%B8%AD%E8%BE%BA%E8%B7%AF_%E7%89%9B%E9%A6%AC%E7%AB%A5%E5%AD%90%E5%8F%A3%EF%BD%9E%E8%BF%91%E9%9C%B202.JPG",
+          "link": "https://commons.wikimedia.org/wiki/File:Kumano_Kodo_pilgrimage_route_Nakahechi_From_Gyuba-Dojiguchi_To_Chikatsuyu_World_heritage_%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93_%E4%B8%AD%E8%BE%BA%E8%B7%AF_%E7%89%9B%E9%A6%AC%E7%AB%A5%E5%AD%90%E5%8F%A3%EF%BD%9E%E8%BF%91%E9%9C%B202.JPG",
+          "by": "Nekosuki · CC BY-SA 4.0",
+          "cap": "나카헤치 숲길 — 지카쓰유 가는 길"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Torii_at_Oyunohara_02.jpg/1280px-Torii_at_Oyunohara_02.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Torii_at_Oyunohara_02.jpg",
+          "by": "Douglas Perkins · CC BY 4.0",
+          "cap": "오유노하라 대도리이"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Inside_the_Kumano_Hongu_Taisha.jpg/1280px-Inside_the_Kumano_Hongu_Taisha.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Inside_the_Kumano_Hongu_Taisha.jpg",
+          "by": "Tim Notari · CC BY-SA 2.0",
+          "cap": "구마노 혼구 대사"
+        }
+      ]
     },
     {
       "id": "tmb",
@@ -924,7 +1059,21 @@
       ],
       "leader": 460000,
       "fee": 200000,
-      "total": 3390000
+      "total": 3390000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Chamonix_-_Lac_Blanc_4.jpg/1280px-Chamonix_-_Lac_Blanc_4.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Chamonix_-_Lac_Blanc_4.jpg",
+          "by": "Tiia Monto · CC BY-SA 3.0",
+          "cap": "락 블랑에서 본 몽블랑"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chamonix_-_Lac_Blanc_6.jpg/1280px-Chamonix_-_Lac_Blanc_6.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Chamonix_-_Lac_Blanc_6.jpg",
+          "by": "Tiia Monto · CC BY-SA 3.0",
+          "cap": "샤모니 락 블랑"
+        }
+      ]
     },
     {
       "id": "nijmegen",
@@ -1022,7 +1171,601 @@
       ],
       "leader": 430000,
       "fee": 200000,
-      "total": 3190000
+      "total": 3190000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Aankomst_deelnemers_van_de_Vierdaagse_Nijmegen_2019_op_de_Sint_Anna_straat_St_Annastraat_Via_Gladiola.jpg/1280px-Aankomst_deelnemers_van_de_Vierdaagse_Nijmegen_2019_op_de_Sint_Anna_straat_St_Annastraat_Via_Gladiola.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Aankomst_deelnemers_van_de_Vierdaagse_Nijmegen_2019_op_de_Sint_Anna_straat_St_Annastraat_Via_Gladiola.jpg",
+          "by": "Roger Veringmeier · CC BY-SA 4.0",
+          "cap": "비아 글라디올라 — 마지막 날 결승 퍼레이드"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Nijmegen_Waalbrug_R01.jpg/1280px-Nijmegen_Waalbrug_R01.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Nijmegen_Waalbrug_R01.jpg",
+          "by": "Marc Ryckaert (MJJR) · CC BY-SA 3.0 nl",
+          "cap": "바알 강 다리"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Kamp_Heumensoord._Nijmeegse_Vierdaagse_2024_Ingang._Nijmegen._Provincie_Gelderland.jpg/1280px-Kamp_Heumensoord._Nijmeegse_Vierdaagse_2024_Ingang._Nijmegen._Provincie_Gelderland.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Kamp_Heumensoord._Nijmeegse_Vierdaagse_2024_Ingang._Nijmegen._Provincie_Gelderland.jpg",
+          "by": "Roger Veringmeier · CC BY 4.0",
+          "cap": "포데이스 마치 캠프"
+        }
+      ]
+    },
+    {
+      "id": "chiangmai",
+      "title": "치앙마이 새벽 10K",
+      "sub": "치앙마이 마라톤 · 10K/하프/풀",
+      "country": "태국",
+      "city": "치앙마이",
+      "cats": [
+        "5~10km 러닝",
+        "하프·마라톤"
+      ],
+      "color": "#A0522D",
+      "glyph": "寺",
+      "date": "2026-12-20",
+      "dateNote": "일요일 새벽 (풀 3시, 하프 4시, 10K 5시 출발)",
+      "status": "마감 임박",
+      "statusNote": "접수 11월 20일 마감 · 얼리버드 10월 31일까지",
+      "official": "https://worldsmarathons.com/marathon/chiang-mai-marathon",
+      "course": "https://worldsmarathons.com/marathon/chiang-mai-marathon",
+      "howto": [
+        "공식 접수 페이지에서 종목 선택 (10K는 만 15세 이상, 하프·풀은 18세 이상)",
+        "10월 31일까지 얼리버드 · 11월 20일 접수 마감",
+        "환불 규정이 페이지마다 달라서 결제 전 공식 사이트에서 꼭 확인"
+      ],
+      "dist": [
+        [
+          "10K",
+          10,
+          0
+        ],
+        [
+          "하프",
+          21.1,
+          0
+        ],
+        [
+          "풀",
+          42.195,
+          0
+        ]
+      ],
+      "level": 2,
+      "cutoff": "공식 안내 확인",
+      "line": "해 뜨기 전 타패 게이트에서 출발해 도이수텝을 바라보며 달려요. 12월 치앙마이 새벽은 14~20도, 달리기 딱 좋은 날씨.",
+      "gear": [
+        "러닝화",
+        "헤드램프 또는 반사 밴드(새벽 출발)",
+        "얇은 긴팔",
+        "사원 방문용 무릎 덮는 옷"
+      ],
+      "plan": [
+        [
+          "치앙마이 도착 · 님만해민 저녁"
+        ],
+        [
+          "올드시티 사원 산책 · 배번 수령"
+        ],
+        [
+          "대회일 새벽 레이스 · 오후 타이 마사지"
+        ],
+        [
+          "도이수텝 · 일요 야시장"
+        ],
+        [
+          "귀국"
+        ]
+      ],
+      "cost": {
+        "air": 450000,
+        "hotel": 250000,
+        "entry": 30000,
+        "meal": 100000,
+        "local": 80000,
+        "etc": 30000
+      },
+      "costNote": "참가비는 정가 기준 대략(10K €22). 연말 항공은 빨리 잡을수록 쌈.",
+      "points": [
+        [
+          "타패 게이트 출발",
+          18.7877,
+          98.9933,
+          "치앙마이 올드시티 동문. 새벽 3~5시에 출발해요."
+        ],
+        [
+          "치앙마이 나이트 사파리",
+          18.7438,
+          98.9171,
+          "코스가 이 앞을 지나요. (위치 대략)"
+        ],
+        [
+          "도이수텝 방향",
+          18.8048,
+          98.9216,
+          "달리는 내내 보이는 산 위의 사원 도이수텝. (위치 대략)"
+        ],
+        [
+          "나레수안 대왕 기념비 결승",
+          18.92,
+          98.94,
+          "매림 지역 결승. (위치 대략)"
+        ]
+      ],
+      "leader": 160000,
+      "fee": 200000,
+      "total": 1300000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/20171105_Tha_Phae_Gate_Chiang_Mai_9784_DxO.jpg/1280px-20171105_Tha_Phae_Gate_Chiang_Mai_9784_DxO.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:20171105_Tha_Phae_Gate_Chiang_Mai_9784_DxO.jpg",
+          "by": "Jakub Hałun · CC BY-SA 4.0",
+          "cap": "타패 게이트 — 새벽 출발선"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Phra_That_Doi_Suthep_01.jpg/1280px-Phra_That_Doi_Suthep_01.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Phra_That_Doi_Suthep_01.jpg",
+          "by": "Wikimedia Thailand contributor · CC BY 3.0",
+          "cap": "도이수텝 사원"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Chiang_Mai_sunday_evening_walking_street.jpg/1280px-Chiang_Mai_sunday_evening_walking_street.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Chiang_Mai_sunday_evening_walking_street.jpg",
+          "by": "Takeaway · CC BY-SA 4.0",
+          "cap": "일요 야시장"
+        }
+      ]
+    },
+    {
+      "id": "rome2027",
+      "title": "로마를 달리다",
+      "sub": "런 로마 더 마라톤",
+      "country": "이탈리아",
+      "city": "로마",
+      "cats": [
+        "하프·마라톤"
+      ],
+      "color": "#8C2F1B",
+      "glyph": "羅",
+      "date": "2027-03-14",
+      "dateNote": "일요일 · 토요일엔 펀런도 열려요",
+      "status": "접수 중",
+      "statusNote": "2027 접수 진행 중 · 2026은 넉 달 전에 매진",
+      "official": "https://sport.quotidiano.net/en/ultimaora/atletica-maratona-di-roma-il-67a3dbc0",
+      "course": "https://running.life/en/event/run-rome-the-marathon",
+      "howto": [
+        "공식 사이트에서 마라톤 등록 (작년엔 넉 달 전 매진 — 빨리)",
+        "이탈리아 대회는 의료 확인서 요구가 많으니 신청 화면 확인",
+        "펀런(토요일)은 가볍게 같이 뛰는 옵션 — 거리·접수는 공식 안내로"
+      ],
+      "dist": [
+        [
+          "풀",
+          42.195,
+          0
+        ]
+      ],
+      "level": 4,
+      "cutoff": "공식 안내 확인",
+      "line": "콜로세움 앞에서 출발해 2천 년 도시를 한 바퀴. 풀코스가 부담되면 토요일 펀런으로 같이 가요.",
+      "gear": [
+        "러닝화",
+        "얇은 바람막이(3월 아침)",
+        "에너지 젤",
+        "유적용 편한 신발"
+      ],
+      "plan": [
+        [
+          "로마 도착 · 트라스테베레 저녁"
+        ],
+        [
+          "콜로세움 · 포로 로마노"
+        ],
+        [
+          "배번 수령 · 바티칸 박물관"
+        ],
+        [
+          "대회일"
+        ],
+        [
+          "보르게세 미술관 · 젤라토"
+        ],
+        [
+          "귀국"
+        ]
+      ],
+      "cost": {
+        "air": 1200000,
+        "hotel": 520000,
+        "entry": 150000,
+        "meal": 220000,
+        "local": 100000,
+        "etc": 50000
+      },
+      "costNote": "참가비는 공식 금액 확인 전이라 예상치.",
+      "points": [
+        [
+          "콜로세움",
+          41.8902,
+          12.4922,
+          "출발·결승 근처. 로마 마라톤의 상징."
+        ],
+        [
+          "치르코 마시모",
+          41.8861,
+          12.4851,
+          "고대 전차 경기장 자리."
+        ],
+        [
+          "나보나 광장",
+          41.8992,
+          12.4731,
+          "바로크 분수가 있는 광장."
+        ],
+        [
+          "성 베드로 광장",
+          41.9022,
+          12.4539,
+          "바티칸 앞을 지나는 구간. (코스 위치 대략)"
+        ]
+      ],
+      "leader": 370000,
+      "fee": 200000,
+      "total": 2810000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Colosseum_of_Rome_and_Roman_forum.jpg/1280px-Colosseum_of_Rome_and_Roman_forum.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome_and_Roman_forum.jpg",
+          "by": "Wilfredor · CC0",
+          "cap": "콜로세움과 포로 로마노"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Piazza_Navona_1.jpg/1280px-Piazza_Navona_1.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Piazza_Navona_1.jpg",
+          "by": "Myrabella · CC BY-SA 3.0",
+          "cap": "나보나 광장"
+        }
+      ]
+    },
+    {
+      "id": "sagamisakura",
+      "title": "벚꽃 아래 10K",
+      "sub": "사가미호 사쿠라 런",
+      "country": "일본",
+      "city": "사가미하라 (도쿄 근교)",
+      "cats": [
+        "5~10km 러닝",
+        "걷기·비경쟁"
+      ],
+      "color": "#C2577A",
+      "glyph": "櫻",
+      "date": "2027-03",
+      "dateNote": "3월 말 예정 (정확한 날짜 발표 전)",
+      "status": "접수 중",
+      "statusNote": "온라인 접수 열림 · 해외 참가 방법은 공식 확인",
+      "official": "https://en.japantravel.com/kanagawa/lake-sagami-sakura-run/71314",
+      "course": "https://en.japantravel.com/kanagawa/lake-sagami-sakura-run/71314",
+      "howto": [
+        "공식 사이트(sagamiko-resort.jp/sakurarun)에서 종목 선택",
+        "10K(중학생 이상) 또는 2.5km 펀런&워크",
+        "비가 와도 진행 · 당일 아침 접수 시간 확인"
+      ],
+      "dist": [
+        [
+          "펀런&워크",
+          2.5,
+          0
+        ],
+        [
+          "10K",
+          10,
+          0
+        ]
+      ],
+      "level": 1,
+      "cutoff": "공식 안내 확인",
+      "line": "벚꽃 터널과 숲 캠핑장을 달리는 10K. 걷기 코스엔 디저트 스테이션까지 있어요. 도쿄에서 당일로도 가는 거리.",
+      "gear": [
+        "러닝화(언덕·흙길 있음)",
+        "얇은 바람막이",
+        "돗자리(꽃놀이용)"
+      ],
+      "plan": [
+        [
+          "도쿄 도착 · 신주쿠"
+        ],
+        [
+          "사가미호로 이동 · 대회일 아침 레이스 · 온천"
+        ],
+        [
+          "가마쿠라 또는 하코네 당일치기"
+        ],
+        [
+          "귀국"
+        ]
+      ],
+      "cost": {
+        "air": 300000,
+        "hotel": 250000,
+        "entry": 20000,
+        "meal": 120000,
+        "local": 80000,
+        "etc": 30000
+      },
+      "costNote": "참가비 미확인으로 예상치. 벚꽃 시즌 도쿄 숙소는 일찍 마감.",
+      "points": [
+        [
+          "사가미호 MORI MORI",
+          35.6011,
+          139.2069,
+          "대회장. 벚꽃 길과 숲 캠핑장. (위치 대략)"
+        ],
+        [
+          "사가미코역",
+          35.6156,
+          139.1897,
+          "버스로 약 8분. (위치 대략)"
+        ]
+      ],
+      "leader": 130000,
+      "fee": 200000,
+      "total": 1130000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Shimada_city_Sakura_tunnel_2020_April.jpg/1280px-Shimada_city_Sakura_tunnel_2020_April.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Shimada_city_Sakura_tunnel_2020_April.jpg",
+          "by": "N832KF4095 · CC BY-SA 4.0",
+          "cap": "벚꽃 터널 (분위기 사진 · 시마다)"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Lake_Sagami_%40_Hike_to_Mount_Mikuni%2C_Mount_Shoutou_and_Mount_Jinba_%2815079620237%29.jpg/1280px-Lake_Sagami_%40_Hike_to_Mount_Mikuni%2C_Mount_Shoutou_and_Mount_Jinba_%2815079620237%29.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Lake_Sagami_@_Hike_to_Mount_Mikuni,_Mount_Shoutou_and_Mount_Jinba_(15079620237).jpg",
+          "by": "Guilhem Vellut · CC BY 2.0",
+          "cap": "사가미호"
+        }
+      ]
+    },
+    {
+      "id": "miut17",
+      "title": "대서양 위의 트레일",
+      "sub": "마데이라 아일랜드 울트라 트레일 · 17K/40K",
+      "country": "포르투갈",
+      "city": "마데이라 섬",
+      "cats": [
+        "트레일러닝"
+      ],
+      "color": "#1F5C4A",
+      "glyph": "島",
+      "date": "2027-04",
+      "dateNote": "4월 말 예상 (2027 날짜 공식 발표 전)",
+      "status": "접수 예정",
+      "statusNote": "2027 접수는 10~11월 오픈 예상 · ITRA ID 필요",
+      "official": "https://miutmadeira.com/regulations/",
+      "course": "https://reference-trail.fr/miut-madeira-trail-2027-quand-et-comment-sinscrire/",
+      "howto": [
+        "ITRA ID 먼저 만들기 (모든 참가자 필수)",
+        "공식 사이트 뉴스레터로 접수 오픈 알림 받기",
+        "입문은 Starter 17km, 한 단계 위는 Marathon 40km"
+      ],
+      "dist": [
+        [
+          "Starter",
+          17,
+          510
+        ],
+        [
+          "Marathon",
+          40,
+          0
+        ]
+      ],
+      "level": 3,
+      "cutoff": "공식 안내 확인",
+      "line": "대서양 한가운데 화산섬, 구름 위 능선과 레바다 수로길. 17km 입문 코스로 시작해요.",
+      "gear": [
+        "트레일 러닝화",
+        "방수 재킷(산 위 날씨 급변)",
+        "물 1L",
+        "ITRA ID"
+      ],
+      "plan": [
+        [
+          "리스본 경유 마데이라 도착 · 푼샬"
+        ],
+        [
+          "레바다 수로길 가벼운 하이킹"
+        ],
+        [
+          "피코 두 아리에이루 일출"
+        ],
+        [
+          "대회일"
+        ],
+        [
+          "푼샬 구시가 · 마데이라 와인"
+        ],
+        [
+          "귀국"
+        ]
+      ],
+      "cost": {
+        "air": 1500000,
+        "hotel": 450000,
+        "entry": 60000,
+        "meal": 200000,
+        "local": 150000,
+        "etc": 50000
+      },
+      "costNote": "날짜·참가비 미발표로 예상치. 현지 이동은 렌터카 나눠 타기 기준.",
+      "points": [
+        [
+          "푼샬",
+          32.65,
+          -16.9083,
+          "섬의 중심 도시. 숙소 거점. (위치 대략)"
+        ],
+        [
+          "피코 두 아리에이루",
+          32.7353,
+          -16.9286,
+          "해발 1,818m 구름 위 전망대."
+        ],
+        [
+          "피코 루이부",
+          32.759,
+          -16.9423,
+          "섬 최고봉."
+        ],
+        [
+          "마시쿠",
+          32.7186,
+          -16.7667,
+          "대회 결승 마을. (위치 대략)"
+        ]
+      ],
+      "leader": 400000,
+      "fee": 200000,
+      "total": 3010000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Vista_desde_el_pico_de_Arieiro%2C_Madeira%2C_Portugal%2C_2019-05-30%2C_DD_147-153_PAN.jpg/1280px-Vista_desde_el_pico_de_Arieiro%2C_Madeira%2C_Portugal%2C_2019-05-30%2C_DD_147-153_PAN.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Vista_desde_el_pico_de_Arieiro,_Madeira,_Portugal,_2019-05-30,_DD_147-153_PAN.jpg",
+          "by": "Diego Delso · CC BY-SA 4.0",
+          "cap": "피코 두 아리에이루 — 구름 위 능선"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Pico_Ruivo%2C_Madeira%2C_Gipfelbereich.jpg/1280px-Pico_Ruivo%2C_Madeira%2C_Gipfelbereich.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Pico_Ruivo,_Madeira,_Gipfelbereich.jpg",
+          "by": "GerritR · CC BY-SA 4.0",
+          "cap": "피코 루이부 정상부"
+        }
+      ]
+    },
+    {
+      "id": "poonhill",
+      "title": "히말라야 일출 트레킹",
+      "sub": "푼힐 트레킹 5일",
+      "country": "네팔",
+      "city": "포카라",
+      "cats": [
+        "산악 트레킹·하이킹"
+      ],
+      "color": "#3B4F7A",
+      "glyph": "峯",
+      "date": "2027-03",
+      "dateNote": "대회 아님 · 10~5월 출발 (3~4월은 랄리구라스 시즌)",
+      "status": "상시",
+      "statusNote": "대회 없음 · 입산허가(ACAP)와 TIMS 필요",
+      "official": "https://www.nomadasaurus.com/poon-hill-trek-nepal/",
+      "course": "https://www.nomadasaurus.com/poon-hill-trek-nepal/",
+      "howto": [
+        "대회 신청 없음 — 포카라나 카트만두에서 ACAP 입산허가·TIMS 카드 발급",
+        "산장(티하우스)은 현지에서 함께 예약",
+        "고산 경험 없어도 가능한 코스, 천천히 걸어요"
+      ],
+      "dist": [
+        [
+          "푼힐 5~6일",
+          40,
+          3200
+        ]
+      ],
+      "level": 3,
+      "cutoff": "없음",
+      "line": "해발 3,210m 푼힐에서 안나푸르나·다울라기리 일출을 봐요. 히말라야 입문으로 가장 많이 걷는 길.",
+      "gear": [
+        "발목 트레킹화",
+        "다운 재킷(새벽 영하)",
+        "침낭",
+        "헤드램프",
+        "트레킹 폴"
+      ],
+      "plan": [
+        [
+          "카트만두 도착 → 포카라"
+        ],
+        [
+          "힐레 → 울레리"
+        ],
+        [
+          "울레리 → 고레파니 (약 1,350m 오르막)"
+        ],
+        [
+          "새벽 푼힐 일출 → 간드룩"
+        ],
+        [
+          "간드룩 → 포카라 · 페와 호수"
+        ],
+        [
+          "귀국"
+        ]
+      ],
+      "cost": {
+        "air": 900000,
+        "hotel": 250000,
+        "entry": 50000,
+        "meal": 150000,
+        "local": 150000,
+        "etc": 80000
+      },
+      "costNote": "거리·상승고도는 대략치(구간마다 다름). 기타에 고산 보장 여행자보험 포함.",
+      "points": [
+        [
+          "포카라",
+          28.2096,
+          83.9856,
+          "트레킹 출발 도시, 페와 호수."
+        ],
+        [
+          "울레리",
+          28.36,
+          83.74,
+          "첫날 숙박 마을. (위치 대략)"
+        ],
+        [
+          "고레파니",
+          28.4,
+          83.7,
+          "푼힐 아래 산장 마을. (위치 대략)"
+        ],
+        [
+          "푼힐 3,210m",
+          28.4,
+          83.69,
+          "안나푸르나 일출 전망대. (위치 대략)"
+        ],
+        [
+          "간드룩",
+          28.37,
+          83.81,
+          "구룽족 돌집 마을. (위치 대략)"
+        ]
+      ],
+      "leader": 260000,
+      "fee": 200000,
+      "total": 2040000,
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Poon_hill_sunrise.jpg/1280px-Poon_hill_sunrise.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Poon_hill_sunrise.jpg",
+          "by": "Thapaliyashreeram · CC BY-SA 4.0",
+          "cap": "푼힐 일출"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Annapurna_South%2C_Himchuli%2C_Machapuchare_Himal-3794.jpg/1280px-Annapurna_South%2C_Himchuli%2C_Machapuchare_Himal-3794.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Annapurna_South,_Himchuli,_Machapuchare_Himal-3794.jpg",
+          "by": "Bijay Chaurasia · CC BY-SA 4.0",
+          "cap": "안나푸르나 사우스 · 마차푸차레"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Panorama_from_poonhill-2019-BJ.jpg/1280px-Panorama_from_poonhill-2019-BJ.jpg",
+          "link": "https://commons.wikimedia.org/wiki/File:Panorama_from_poonhill-2019-BJ.jpg",
+          "by": "Bijay Chaurasia · CC BY-SA 4.0",
+          "cap": "푼힐 파노라마"
+        }
+      ]
     }
   ]
 }

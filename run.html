@@ -19,7 +19,7 @@
 .rt-hero h1{font-size:clamp(52px,9vw,128px);font-weight:900;letter-spacing:-.05em;line-height:.95;margin-top:18px}
 .rt-hero h1 em{font-style:normal;color:var(--seal)}
 .rt-hero .lede{max-width:40em;font-size:clamp(17px,1.6vw,20px);color:var(--soft);margin-top:24px}
-.rt-model{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink);margin-top:36px}
+.rt-model{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:2px solid var(--ink);margin-top:36px}
 .rt-model div{padding:16px 18px 0 0;display:flex;flex-direction:column;gap:2px}
 .rt-model div+div{padding-left:18px;border-left:1px solid var(--rule)}
 .rt-model b{font-family:var(--serif);font-size:clamp(22px,2.4vw,30px);font-weight:900;letter-spacing:-.02em}
@@ -131,8 +131,7 @@
     <p class="lede">함께 달리고, 함께 걷는 세계. 해외 러닝·트레일·트레킹·걷기 대회에 3~10명이 같이 나가고, 대회가 끝나면 그 동네를 같이 여행해요. 접수는 각자 공식 사이트에서, 준비와 여행은 함께.</p>
     <div class="rt-model">
       <div><b>거의 원가</b><span>항공·숙박·참가비·식사·현지비를 그대로 공개</span></div>
-      <div><b>+ 준준 몫 나눔</b><span>같이 가는 준준의 항공·숙박·참가비를 6명 기준으로 나눠요</span></div>
-      <div><b>+ 운영비 20만 원</b><span>일정 짜기, 숙소·교통 예약, 대회 접수 도움</span></div>
+      <div><b>+ 공동 준비·운영비</b><span>일정 짜기, 숙소·교통 예약, 대회 접수 도움, 현장 운영까지 (6명 출발 기준)</span></div>
     </div>
     <div class="filters" style="margin-top:36px">
       <div class="frow" id="f-cat" role="group" aria-label="종목"></div>
@@ -158,6 +157,8 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>window.RUNFX={brand:"RUN & TREK",brandHtml:"RUN &amp; <em>TREK</em>",tagline:"함께 달리고, 함께 걷는 세계. — 인생준준",accent:"#C8261C",onAccent:"#fff",words:["RUN.","CLIMB.","BREATHE.","TOGETHER."]};</script>
+<script src="runfx.js"></script>
 <script>
 function getJSON(n){const raw="https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/"+n+"?t="+Math.floor(Date.now()/3e5);const local=()=>fetch(n,{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();});const live=/netlify\.app$|lifejunjun\.com$/.test(location.hostname);return live?fetch(raw).then(r=>{if(!r.ok)throw 0;return r.json();}).catch(local):local();}
 function el(tag,attrs={},...kids){const n=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(v==null)continue;if(k==="class")n.className=v;else if(k==="style")n.setAttribute("style",v);else if(k.startsWith("on"))n.addEventListener(k.slice(2),v);else n.setAttribute(k,v);}for(const c of kids.flat()){if(c==null||c===false)continue;n.append(c.nodeType?c:document.createTextNode(c));}return n;}
@@ -179,6 +180,7 @@ function card(r,i){
     el("div",{class:"top"},el("span",{},r.country.toUpperCase()),el("span",{class:stCls(r.status)},r.status)),
     el("div",{},el("div",{class:"km"},kmLabel(r),el("small",{},"km")),el("div",{class:"mono",style:"position:relative;z-index:1;margin-top:6px;opacity:.9"},fmtDate(r)+(maxGain(r)?` · ↑${maxGain(r).toLocaleString()}m`:""))),
     el("span",{class:"glyph","aria-hidden":"true"},r.glyph));
+  if(window.RunFX){RunFX.poster(poster,r,i);const rg=poster.querySelector("svg.ridge");if(rg&&r.photos&&r.photos.length)rg.remove();}
   return el("a",{class:"rt-card",href:`run.html?id=${r.id}`,onclick:e=>{e.preventDefault();openDetail(r.id,true);}},
     poster,
     el("div",{class:"rt-body"},
@@ -213,6 +215,7 @@ function openDetail(id,push){
     el("div",{style:"position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px;align-items:center"},el("span",{class:stCls(r.status)},r.status),el("span",{class:"mono",style:"opacity:.9"},`${r.country} · ${r.city}`)),
     el("div",{},el("h1",{},r.title),el("p",{class:"sub"},r.sub),el("p",{class:"line"},r.line)),
     el("span",{class:"glyph","aria-hidden":"true"},r.glyph));
+  if(window.RunFX){RunFX.poster(head,r,0);const hb=el("div",{style:"position:relative;z-index:2;margin-top:22px"});hb.append(RunFX.playButton("코스 필름 보기",()=>RunFX.playCourse(r),true));head.querySelector(".line").after(hb);const rg=head.querySelector("svg.ridge");if(rg&&r.photos&&r.photos.length)rg.remove();}
   const facts=el("div",{class:"rt-facts"},
     el("div",{},el("span",{},"날짜"),el("b",{},fmtDate(r)),el("span",{},r.dateNote)),
     el("div",{},el("span",{},"거리"),el("b",{},kmLabel(r)+" km"),el("span",{},r.dist.map(x=>x[0]).join(" · "))),
@@ -233,8 +236,7 @@ function openDetail(id,push){
 
   const bill=el("div",{class:"bill2"},el("p",{class:"mono",style:"color:var(--seal);margin-bottom:8px"},"예상 경비 · 1인"),
     Object.entries(r.cost).filter(([,v])=>v>0).map(([k,v])=>el("div",{class:"r"},el("span",{},L[k]||k),el("b",{},won(v)))),
-    el("div",{class:"r lead"},el("span",{},DATA.leaderLabel),el("b",{},won(r.leader))),
-    el("div",{class:"r fee"},el("span",{},DATA.feeLabel),el("b",{},won(r.fee))),
+    el("div",{class:"r fee"},el("span",{},DATA.feeLabel),el("b",{},won(r.fee+(r.leader||0)))),
     el("div",{class:"tot"},el("span",{},"합계(예상)"),el("b",{},won(r.total))),
     el("p",{class:"small",style:"margin-top:10px"},DATA.basis),
     el("p",{class:"small",style:"margin-top:6px"},r.costNote));
@@ -259,10 +261,13 @@ function openDetail(id,push){
 
   d.append(el("a",{class:"rt-back",href:"run.html",onclick:e=>{e.preventDefault();showList(true);}},"← RUN & TREK 전체"),head,facts,
     el("div",{class:"rt-sec",style:"margin-top:44px;margin-bottom:0;border-top:0;padding-top:0"},el("span",{class:"mono",style:"color:var(--seal)"},"Preview"),el("h2",{style:"font-size:clamp(24px,2.6vw,32px);font-weight:900;letter-spacing:-.03em"},"코스 미리 걷기")),
-    cx,el("div",{class:"rt-cols"},left,right),
+    cx,
+    (r.photos&&r.photos.length&&window.RunFX)?el("div",{class:"rt-sec",style:"margin-top:44px;border-top:0;padding-top:0;margin-bottom:0"},el("span",{class:"mono"},"Scenes"),el("h2",{},"이런 풍경을 달려요"),RunFX.gallery(r)):null,
+    el("div",{class:"rt-cols"},left,right),
     el("div",{class:"rt-foot"},el("p",{class:"small"},DATA.note),el("a",{class:"cta ghost",href:"run.html",onclick:e=>{e.preventDefault();showList(true);}},"다른 대회 보기")));
   window.scrollTo(0,0);
   initMap(r);
+  if(push&&window.RunFX)RunFX.playCourse(r);
 }
 function initMap(r){
   if(anim){cancelAnimationFrame(anim);anim=null;}
@@ -306,6 +311,8 @@ getJSON("races.json").then(d=>{DATA=d;
   document.getElementById("note").textContent=d.note;
   renderList();
   const id=new URLSearchParams(location.search).get("id");if(id)openDetail(id,false);
+  if(window.RunFX){const k=document.querySelector("#list-view .kicker");const wrap=el("div",{style:"margin-top:22px"});wrap.append(RunFX.playButton("필름 보기",()=>RunFX.playIntro(d.races,true)));(document.querySelector("#list-view .lede")||k).after(wrap);
+    if(!id)RunFX.playIntro(d.races);}
 }).catch(()=>{document.getElementById("grid").innerHTML='<p class="small">대회 정보를 불러오지 못했어요. 새로고침해 주세요.</p>';});
 </script>
 </body>

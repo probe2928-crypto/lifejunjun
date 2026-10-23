@@ -110,7 +110,7 @@
     <div class="sec-head">
       <span class="mono">New · Run &amp; Trek</span>
       <h2>함께 달리고,<br>함께 걷는 세계.</h2>
-      <p>돌로미티 트레일, 몽블랑 일주, 앙코르와트 10K, 천 년 순례길까지. 해외 러닝·트레킹 대회에 3~10명이 같이 나가고, 대회가 끝나면 그 동네를 같이 여행해요. 경비는 거의 원가 + 운영비 20만 원.</p>
+      <p>돌로미티 트레일, 몽블랑 일주, 앙코르와트 10K, 천 년 순례길까지. 해외 러닝·트레킹 대회에 3~10명이 같이 나가고, 대회가 끝나면 그 동네를 같이 여행해요. 경비는 거의 원가 그대로.</p>
     </div>
     <div class="rt-grid" id="rt-home"><p class="small">대회 정보를 불러오는 중입니다.</p></div>
     <div class="socials" style="margin-top:24px"><a class="cta" href="run.html">대회 전체 보기 · 코스 미리 걷기 →</a></div>
@@ -530,7 +530,8 @@ function renderRunHome(){
     el("div",{class:"rt-poster",style:`background:${r.color}`},
       el("div",{class:"top"},el("span",{},r.country.toUpperCase()),el("span",{class:"st st-"+r.status.replace(/\s/g,"")},r.status)),
       el("div",{},el("div",{class:"km"},km(r),el("small",{},"km")),el("div",{class:"mono",style:"position:relative;z-index:1;margin-top:6px;opacity:.9"},(/^\d{4}-\d{2}-\d{2}$/.test(r.date)?r.date.replace(/-/g,"."):r.date.split("-")[0]+"년 "+(+r.date.split("-")[1])+"월")+(Math.max(...r.dist.map(d=>d[2]||0))?` · ↑${Math.max(...r.dist.map(d=>d[2]||0)).toLocaleString()}m`:""))),
-      el("span",{class:"glyph","aria-hidden":"true"},r.glyph)),
+      el("span",{class:"glyph","aria-hidden":"true"},r.glyph),
+      r.photos&&r.photos[0]?el("div",{class:"rt-ph",style:`background:linear-gradient(180deg,${r.color}55,${r.color}22 40%,${r.color}EE),url("${r.photos[0].src}") center/cover`,"aria-hidden":"true"}):null),
     el("div",{class:"rt-body"},el("h3",{},r.title),el("p",{class:"where"},`${r.sub} · ${r.city}`),
       el("div",{class:"row"},el("span",{class:"small"},r.cats.join(" · ")),el("b",{},`${Math.round(r.total/10000).toLocaleString()}만 원`))))));
 }

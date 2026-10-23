@@ -459,3 +459,4 @@ nav.main{gap:20px;white-space:nowrap;font-size:14px}
 .rt-body .row b{font-family:var(--serif);font-size:20px;font-weight:900;white-space:nowrap}
 .st{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:3px;white-space:nowrap}
 .st-접수중,.st-예약중{background:var(--seal);color:#fff}.st-접수예정{background:#DCE3F6;color:#1F3A8A}.st-발표예정{background:#E4E5E0;color:#3F403B}.st-상시{background:#D3F2E6;color:#0D5C43}.st-마감임박{background:#131313;color:#fff}.st-마감{background:#ECECEC;color:#777}
+.rt-poster .rt-ph{position:absolute;inset:0;z-index:0;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}.rt-card:hover .rt-ph{transform:scale(1.07)}.rt-poster .top,.rt-poster>div{position:relative;z-index:1}
