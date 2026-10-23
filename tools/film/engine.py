@@ -109,6 +109,7 @@ class Film:
         self.WORD = text_layer("인생준준", F_KO_BLACK, 104, .06)
         self.TAG2 = text_layer(spec.get("tag_ko", "함께 달리고, 함께 걷는 역사 여행"), F_KO, 34, .04, .9)
         self.TAG1 = text_layer("LIFE JUNJUN  ·  TRAVELLING THROUGH TIME", F_MED, 22, .32, .85)
+        self.TAG3 = text_layer(spec.get("site_line", "여백의 지도에서 더 보기 — 프로필 링크"), F_KO, 30, .04, .9)
 
     # ---- picture ----
     def grade(self, a, s, p):
@@ -180,6 +181,7 @@ class Film:
             self.place(f, self.WORD, .5, .545, ease((k - .35) / .6))
             self.place(f, self.TAG2, .5, .60, ease((k - .75) / .6))
             self.place(f, self.TAG1, .5, .64, ease((k - 1.0) / .6))
+            self.place(f, self.TAG3, .5, .80, ease((k - 1.5) / .6))
         if not last and s is not self.S[0]:
             self.place(f, self.MINI, .085, .095, .92)
         lc = self.S[-1]["start"]; st = lc + self.STAMP
