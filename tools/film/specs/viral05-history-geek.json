@@ -1,0 +1,120 @@
+{
+  "id": "viral-05-history-geek",
+  "out": "media/viral05-history-geek.mp4",
+  "bpm": 120,
+  "hook": {
+    "img": "yeobaek/images/tulou.jpg",
+    "kb": [
+      1.3,
+      1.08,
+      0.4,
+      0.5
+    ],
+    "kicker": "LIFEJUNJUN  ·  MARGIN ATLAS  ·  TOP 5",
+    "title": "한 번 가면\n역사 덕후 되는 곳",
+    "sub": "TOP 5 · 3위 아는 사람 손",
+    "beats": 4
+  },
+  "items": [
+    {
+      "rank": 5,
+      "img": "yeobaek/images/tainan-roofs.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.5,
+        0.4
+      ],
+      "name": "타이난",
+      "place": "대만 타이난",
+      "en": "Tainan, Taiwan",
+      "fact": "1624년 요새가 남은 옛 도시",
+      "meta": "SINCE 1624  ·  FORT ZEELANDIA",
+      "beats": 5
+    },
+    {
+      "rank": 4,
+      "img": "yeobaek/images/tulou-life.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.5,
+        0.5
+      ],
+      "name": "푸젠 토루",
+      "place": "중국 푸젠",
+      "en": "Fujian, China",
+      "fact": "흙으로 지은 둥근 마을",
+      "meta": "UNESCO 2008  ·  46 TULOU",
+      "beats": 5
+    },
+    {
+      "rank": 3,
+      "img": "yeobaek/images/armenia.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.48,
+        0.6
+      ],
+      "name": "노라방크 수도원",
+      "place": "아르메니아 예게그나조르",
+      "en": "Yeghegnadzor, Armenia",
+      "fact": "붉은 협곡 속 13세기 수도원",
+      "meta": "13TH C.  ·  AD 301 FIRST CHRISTIAN STATE",
+      "beats": 5
+    },
+    {
+      "rank": 2,
+      "img": "media/photos/bank/hue-1.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.5,
+        0.5
+      ],
+      "name": "후에 황성",
+      "place": "베트남 후에",
+      "en": "Hue, Vietnam",
+      "fact": "마지막 왕조의 143년 수도",
+      "meta": "1802–1945  ·  UNESCO 1993",
+      "beats": 5
+    },
+    {
+      "rank": 1,
+      "img": "yeobaek/images/samarkand.jpg",
+      "kb": [
+        1.3,
+        1.08,
+        0.6,
+        0.5
+      ],
+      "name": "사마르칸트 레기스탄",
+      "place": "우즈베키스탄 사마르칸트",
+      "en": "Samarkand, Uzbekistan",
+      "fact": "2,750년 된 실크로드 도시",
+      "meta": "2,750 YEARS  ·  MADRASAHS 1420–1660",
+      "beats": 6
+    }
+  ],
+  "cta": {
+    "img": "yeobaek/images/oman.jpg",
+    "kb": [
+      1.25,
+      1.08,
+      0.35,
+      0.5
+    ],
+    "line1": "같이 갈 역사 덕후에게\n보내기",
+    "line2": "여기 중 가본 곳 있어? 댓글로",
+    "beats": 6
+  },
+  "cover": {
+    "word": "Margin",
+    "statement": "이름만 들어봤다면",
+    "img": "yeobaek/images/tulou.jpg",
+    "style": "noir"
+  },
+  "caption": "한 번 가면 역사 덕후 되는 곳 TOP 5 🗺️\n\n5 타이난 🇹🇼\n4 푸젠 토루 🇨🇳\n3 노라방크 수도원 🇦🇲\n2 후에 황성 🇻🇳\n1 사마르칸트 레기스탄 🇺🇿\n\n같이 갈 역사 덕후한테 보내줘 ✈️\n여기 중 가본 곳 있어? 댓글로 알려줘\n\n여백의 지도 by 인생준준 — 먼저 공부해 온 길동무와 3~10명이 함께 걷는 역사 여행\n\n#인생준준 #여백의지도 #역사여행 #사마르칸트 #타이난 #후에 #아르메니아 #세계여행 #버킷리스트",
+  "link": "https://probe2928-crypto.github.io/lifejunjun/yeobaek/"
+}
