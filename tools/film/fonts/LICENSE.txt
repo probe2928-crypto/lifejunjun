@@ -1,1 +1,4 @@
-IBM Plex Mono — SIL Open Font License 1.1 (https://openfontlicense.org), © IBM Corp. Same family the 인생준준 homepage uses for its mono labels.
+All fonts in this folder are from Google Fonts (github.com/google/fonts, ofl/) under the SIL Open Font License 1.1
+(https://openfontlicense.org): IBM Plex Mono, IBM Plex Sans KR, Bodoni Moda, Playfair Display, Cormorant Garamond,
+Instrument Serif, DM Serif Display, Anton, Archivo Black, Bebas Neue, Space Grotesk, Nanum Myeongjo, Gowun Batang,
+Black Han Sans, Gothic A1. Used to render 인생준준 reel covers and films.
