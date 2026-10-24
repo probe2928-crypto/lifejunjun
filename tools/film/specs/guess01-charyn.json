@@ -1,0 +1,20 @@
+{
+  "id": "guess-01-charyn",
+  "out": "media/guess01-charyn.mp4",
+  "bpm": 100,
+  "n": 1,
+  "hook": "AI 아니고 실제 장소임",
+  "ask": "어딘지 맞혀봐 — 댓글로",
+  "shots": [
+    {"img": "media/photos/bank/charyn-0.jpg", "kb": [1.22, 1.1, 0.46, 0.6], "beats": 4},
+    {"img": "media/photos/bank/charyn-1.jpg", "kb": [1.3, 1.18, 0.72, 0.55], "hint": "힌트 1 — 그랜드캐니언 아님", "beats": 3},
+    {"img": "media/photos/bank/charyn-2.jpg", "kb": [1.3, 1.18, 0.42, 0.5], "hint": "힌트 2 — 깊이 최대 300m", "beats": 3},
+    {"img": "media/photos/bank/charyn-1.jpg", "kb": [1.35, 1.2, 0.3, 0.55], "hint": "힌트 3 — 중앙아시아", "beats": 3}
+  ],
+  "end": "정답은 댓글에 (스포 주의)",
+  "tag": "같이 갈 사람 태그해",
+  "answer": "차른 캐니언 (카자흐스탄)",
+  "comment": "🟥 정답: 차른 캐니언 🇰🇿 카자흐스탄 — 알마티에서 동쪽으로 약 200km, 깊이 150~300m 협곡이에요. 여백의 지도 첫 여행지 후보 → https://probe2928-crypto.github.io/lifejunjun/yeobaek/",
+  "caption": "AI 아니고 실제 장소임 🏜️\n여기 어딘지 아는 사람? 댓글로 맞혀봐\n\n정답은 댓글에 (스포 주의)\n같이 갈 사람 태그해 👇\n\n여백의 지도 × 인생준준 — 인스타에 거의 없는 여행지\n\n#어디게 #여행퀴즈 #버킷리스트 #숨은여행지 #중앙아시아여행 #인생준준 #여백의지도",
+  "link": "https://probe2928-crypto.github.io/lifejunjun/yeobaek/"
+}
