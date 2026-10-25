@@ -1,0 +1,18 @@
+{
+ "id": "tip-03-longrun-spike",
+ "music": "lfm_work",
+ "scenes": [
+  {"kind": "hook", "clip": "mixkit:722", "ss": 2, "beats": 6, "cx": 0.5,
+   "kicker": "런린이 부상 예방", "lines": ["주간 10% 법칙보다"], "hl": "중요한 숫자 하나", "sub": "5,205명 18개월 추적 결과"},
+  {"kind": "tip", "clip": "mixkit:32808", "ss": 1, "beats": 8, "n": 1, "of": 4,
+   "lines": ["오늘 뛸 거리는"], "hl": "최근 최장 +10%까지", "body": ["최근 30일 최장거리 기준", "넘기면 부상률 1.64배"], "src": "BJSM 2025 · 5,205명"},
+  {"kind": "tip", "clip": "mixkit:723", "ss": 2, "beats": 8, "n": 2, "of": 4, "cx": 0.82,
+   "lines": ["한 번에 2배 넘게"], "hl": "부상률 2.28배", "body": ["10km 뛰던 사람이", "갑자기 하프 21km 뛰면"], "src": "BJSM 2025"},
+  {"kind": "tip", "clip": "mixkit:52135", "ss": 1, "beats": 8, "n": 3, "of": 4, "cx": 0.38,
+   "lines": ["주간 증가율 자체는"], "hl": "뚜렷한 관련 없음", "body": ["문제는 '한 번의 무리'", "롱런 거리부터 체크"], "src": "같은 연구"},
+  {"kind": "tip", "clip": "mixkit:32792", "ss": 1.5, "beats": 8, "n": 4, "of": 4, "cx": 0.55,
+   "lines": ["보폭은 짧고 빠르게"], "hl": "케이던스 +5~10%", "body": ["무릎 부담 20~34%↓", "속도는 그대로, 발만 빨리"], "src": "Heiderscheit 2011 · 45명"},
+  {"kind": "cta", "clip": "mixkit:40881", "ss": 2, "beats": 7, "cx": 0.5,
+   "lines": ["롱런 전에 다시 보게"], "hl": "저장해두기", "sub": "대회 준비하는 친구한테 보내기"}
+ ]
+}
