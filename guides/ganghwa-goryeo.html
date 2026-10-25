@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F3F4F1">
+<title>강화도 고려 왕도 반나절 코스 — 인생준준 셀프투어 가이드 No.01</title>
+<meta name="description" content="38년 동안 고려의 수도였던 강화도. 고려궁지·강화산성·홍릉·선원사지·가릉을 반나절에 잇는 역사 셀프투어 가이드(웹 지도 + PDF).">
+<meta property="og:title" content="강화도 고려 왕도 반나절 코스 — 인생준준 셀프투어 가이드">
+<meta property="og:description" content="38년 동안 수도였던 섬을 반나절에. 웹 지도 + PDF 셀프투어 가이드 No.01">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://probe2928-crypto.github.io/lifejunjun/guides/ganghwa-goryeo.html">
+<meta property="og:image" content="https://probe2928-crypto.github.io/lifejunjun/media/og/guide-ganghwa.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23C8261C'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='white' font-family='serif' font-weight='900'%3E준%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../style.css">
+<style>
+.pg{word-break:keep-all}
+.hero-g{display:grid;grid-template-columns:1.05fr .95fr;gap:0;background:var(--night);color:#fff;margin-top:28px}
+.hero-g .ph{position:relative;min-height:520px;background:#0b1330 center/cover no-repeat}
+.hero-g .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0b133000 55%,#0b1330)}
+.hero-g .ph .cr{position:absolute;left:14px;bottom:12px;z-index:1;font:500 10px var(--mono);opacity:.75}
+.hero-g .tx{padding:46px 44px;display:flex;flex-direction:column;justify-content:center}
+.hero-g .no{display:flex;align-items:center;gap:10px}
+.hero-g h1{font-size:clamp(34px,4.4vw,56px);font-weight:900;line-height:1.15;margin:18px 0 14px}
+.hero-g h1 em{font-style:normal;color:#C9AB66}
+.hero-g .sub{font:500 18px/1.6 var(--serif);opacity:.9}
+.pack{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:8px}
+.pack li{display:flex;gap:10px;font-size:15px;opacity:.92}.pack li:before{content:"✓";color:#C9AB66;font-weight:700}
+.buy{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:28px;padding-top:22px;border-top:1px solid #ffffff2e}
+.gprice{font:900 34px/1.1 var(--serif);display:flex;flex-direction:column}.gprice small{display:block;font:500 11px var(--mono);letter-spacing:.1em;opacity:.7;margin-top:4px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:14px 22px;border:1px solid currentColor}
+.btn.red{background:var(--seal);border-color:var(--seal);color:#fff}
+.btn.ghost{color:#fff}
+.sec{padding:76px 0}
+.sec-h{display:flex;align-items:baseline;gap:14px;border-top:2px solid var(--ink);padding-top:14px;margin-bottom:28px}
+.sec-h h2{font-size:clamp(26px,3.4vw,38px);font-weight:900}
+.sec-h .mono{color:var(--soft)}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.why div{background:var(--sheet);border:1px solid var(--rule);padding:22px}
+.why b{display:block;font:900 20px var(--serif);margin-bottom:8px}
+.why p{color:var(--soft);font-size:15px}
+.stops{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.stops li{display:grid;grid-template-columns:64px 56px 1fr auto;gap:12px;align-items:center;padding:16px 0;border-bottom:1px solid var(--rule)}
+.stops .t{font:500 14px var(--mono);color:var(--soft)}.stops .n{font:900 22px var(--serif);color:var(--seal)}
+.stops .nm{font:700 18px var(--serif)}.stops .nm small{display:block;font:400 14px var(--sans);color:var(--soft);margin-top:2px}
+.stops .st{font:500 11px var(--mono);letter-spacing:.08em;padding:5px 8px;border:1px solid var(--rule);white-space:nowrap}
+.stops .st.free{background:var(--seal);color:#fff;border-color:var(--seal)}
+.sample{display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:start}
+.sample .story p{font:400 17px/2 var(--serif);margin-bottom:16px}
+.sample figure{margin:0 0 22px}.sample figure img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.sample figcaption{font:500 10.5px var(--mono);color:var(--soft);margin-top:6px}
+.lockbox{position:relative;margin-top:8px;padding:22px;border:1px dashed var(--soft);color:var(--soft);font-size:15px}
+.look{background:var(--sheet);border:1px solid var(--rule);padding:20px}
+.look h4{margin:0 0 10px;font:500 11.5px var(--mono);letter-spacing:.12em;color:var(--seal)}
+.look dt{font-weight:700;margin-top:12px}.look dd{margin:2px 0 0;color:var(--soft);font-size:14px}
+.inside{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.inside div{border-top:2px solid var(--ink);padding-top:12px}
+.inside b{font:900 30px var(--serif);display:block}
+.inside span{color:var(--soft);font-size:14px}
+.faq details{border-bottom:1px solid var(--rule);padding:16px 0}
+.faq summary{font:700 17px var(--serif);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary:after{content:"+";font-weight:400}.faq details[open] summary:after{content:"−"}
+.faq p{margin-top:10px;color:var(--soft)}
+.next{background:var(--night);color:#fff;padding:70px 0}
+.next h2{font-size:clamp(28px,4vw,46px);font-weight:900;line-height:1.25}
+.next p{opacity:.85;margin-top:14px;max-width:36em}
+.next .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+@media(max-width:860px){.hero-g{grid-template-columns:1fr}.hero-g .ph{min-height:300px}.hero-g .ph:after{background:linear-gradient(180deg,#0b133000 50%,#0b1330)}.hero-g .tx{padding:28px 22px 34px}.why,.sample{grid-template-columns:1fr}.inside{grid-template-columns:repeat(2,1fr)}.stops li{grid-template-columns:50px 40px 1fr}.stops .st{grid-column:3;justify-self:start}}
+</style>
+</head>
+<body class="pg">
+<div class="notice" role="note"><div class="wrap"><span>인생준준 셀프투어 가이드 No.01 출시 — 혼자, 또는 둘이서 먼저 걸어보세요.</span><a href="#buy">구매 안내 →</a></div></div>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html" aria-label="인생준준 처음으로">
+      <span class="seal" aria-hidden="true">인생<br>준준</span>
+      <span><b>인생준준</b><small>LIFE JUNJUN · TRAVELLING THROUGH TIME</small></span>
+    </a>
+    <nav class="main" aria-label="주요 메뉴"><a href="../index.html#trips">여행 프로그램</a><a href="../run.html">RUN &amp; TREK</a><a href="./">셀프 가이드</a><a href="../column.html">칼럼</a><a href="../community.html">커뮤니티</a><a href="../index.html#about">주인장 소개</a></nav>
+    <div class="hacts"><a class="cta ghost" href="../index.html#contact">문의하기</a><a class="cta" href="#buy">가이드 구매</a></div>
+  </div>
+  <nav class="mnav" aria-label="모바일 메뉴"><div class="wrap"><a href="../index.html#trips">여행 프로그램</a><a href="../run.html">RUN &amp; TREK</a><a href="./">셀프 가이드</a><a href="../column.html">칼럼</a><a href="../community.html">커뮤니티</a></div></nav>
+</header>
+<main id="top">
+<div class="wrap">
+  <section class="hero-g" aria-labelledby="t">
+    <div class="ph" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/%EA%B0%95%ED%99%94%EC%82%B0%EC%84%B1_%EB%8F%99%EB%AC%B8_%281%29.jpg/1280px-%EA%B0%95%ED%99%94%EC%82%B0%EC%84%B1_%EB%8F%99%EB%AC%B8_%281%29.jpg')"><span class="cr">PHOTO · 강화산성 동문 — Jocelyndurrey · CC BY-SA 4.0</span></div>
+    <div class="tx">
+      <div class="no"><span class="seal" aria-hidden="true" style="width:36px;height:36px;font-size:11px">인생<br>준준</span><span class="mono">Self-tour guide No.01 · Ganghwa</span></div>
+      <h1 id="t">강화도<br><em>고려 왕도</em><br>반나절 코스</h1>
+      <p class="sub">38년 동안 고려의 수도였던 섬.<br>궁궐터에서 왕릉까지, 반나절에 잇는 길.</p>
+      <ul class="pack">
+        <li>휴대폰으로 보는 웹 지도 가이드 — 장소마다 카카오맵 길찾기 연결</li>
+        <li>인쇄·보관용 PDF (A4)</li>
+        <li>6곳 + 옵션 2곳, 시간표·이동시간·관람정보·사진</li>
+      </ul>
+      <div class="buy"><div class="gprice">6,900원<small>출시가 · 1회 구매</small></div><a class="btn red" href="#buy">구매하기</a><a class="btn ghost" href="#sample">무료 미리보기</a></div>
+    </div>
+  </section>
+</div>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><span class="mono">Why this guide</span><h2>패키지도, 해설사도 없이</h2></div>
+  <div class="why">
+    <div><b>순서가 있는 이야기</b><p>천도 → 성 → 왕 → 대장경 → 왕실 가족. 장소를 옮길 때마다 이야기가 이어지도록 동선을 짰어요.</p></div>
+    <div><b>현장에서 바로</b><p>장소마다 '여기서 볼 것' 세 가지, 운영시간·요금·주차, 카카오맵 길찾기 버튼까지 한 화면에.</p></div>
+    <div><b>사실만, 출처와 함께</b><p>백과사전·지자체·연구 기사로 확인한 내용만 썼고, 논쟁 중인 부분은 논쟁 중이라고 적었어요.</p></div>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec-h"><span class="mono">Course · 약 5시간</span><h2>오늘 걷는 곳</h2></div>
+  <ol class="stops">
+    <li><span class="t">09:30</span><span class="n">01</span><span class="nm">고려궁지<small>38년 동안 고려의 수도였던 언덕</small></span><span class="st free">무료 미리보기</span></li>
+    <li><span class="t">10:15</span><span class="n">02</span><span class="nm">강화산성 북문 진송루<small>세 겹의 성, 그리고 허물어야 했던 성</small></span><span class="st">가이드에서</span></li>
+    <li><span class="t">11:10</span><span class="n">03</span><span class="nm">홍릉<small>46년 왕위, 피난 수도에서 잠든 왕</small></span><span class="st">가이드에서</span></li>
+    <li><span class="t">12:05</span><span class="n">食</span><span class="nm">점심 · 강화풍물시장<small>오후 코스 전 장보기</small></span><span class="st">가이드에서</span></li>
+    <li><span class="t">13:15</span><span class="n">04</span><span class="nm">선원사지<small>팔만대장경을 모셨다는 빈 터</small></span><span class="st">가이드에서</span></li>
+    <li><span class="t">14:05</span><span class="n">05</span><span class="nm">가릉<small>충렬왕의 어머니가 잠든 곳</small></span><span class="st">가이드에서</span></li>
+    <li><span class="t">+45분</span><span class="n">+</span><span class="nm">옵션 · 곤릉과 석릉<small>남한에 단 다섯 기, 고려 왕릉 이야기의 마지막 조각</small></span><span class="st">가이드에서</span></li>
+  </ol>
+</div></section>
+
+<section class="sec" id="sample" style="padding-top:0"><div class="wrap">
+  <div class="sec-h"><span class="mono">Free preview · 01</span><h2>고려궁지, 미리 읽기</h2></div>
+  <div class="sample">
+    <div class="story">
+      <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Goryeo_Palace_20181013_02.jpg/1280px-Goryeo_Palace_20181013_02.jpg" alt="고려궁지 명위헌으로 오르는 계단" loading="lazy"><figcaption>PHOTO · Mobius6 · CC BY-SA 4.0</figcaption></figure>
+      <p>언덕에 올라서면 먼저 알아둘 것이 있어요. 여기서 고려 시대 건물은 볼 수 없습니다. 1270년 개경으로 돌아갈 때 몽골의 요구로 궁궐을 모두 허물었기 때문이에요. 지금 보이는 건물은 조선 시대 강화유수부 관아입니다.</p>
+      <p>가운데 건물은 외규장각. 정조 때인 1782년 왕실 책과 의궤를 보관하려고 세웠고, 1866년 병인양요 때 프랑스군이 불을 지르고 의궤를 가져갔습니다. 빼앗겼던 의궤는 2011년, 145년 만에 한국으로 돌아왔어요.</p>
+      <p>재미있는 반전도 하나. 발굴해 보니 이곳에서 고려 유구가 거의 나오지 않아서, 근처 '궁골' 일대가 진짜 궁궐터였을 거라는 견해가 많습니다…</p>
+      <div class="lockbox">이어지는 이야기와 02~05번, 옵션 코스는 가이드에서 볼 수 있어요.</div>
+    </div>
+    <div>
+      <div class="look"><h4>여기서 볼 것</h4><dl><dt>승평문</dt><dd>입구의 문. 고려 강화 궁궐 정문의 이름을 이어받았어요.</dd><dt>명위헌 현판</dt><dd>조선 서예가 윤순의 글씨로 전해집니다.</dd><dt>강화동종</dt><dd>종각의 종은 복제품. 원본은 강화역사박물관에 있어요.</dd></dl></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec-h"><span class="mono">What's inside</span><h2>가이드 구성</h2></div>
+  <div class="inside">
+    <div><b>8</b><span>장소별 이야기 (본 코스 6 + 옵션 2)</span></div>
+    <div><b>16</b><span>쪽 분량 A4 PDF</span></div>
+    <div><b>1</b><span>코스 지도 (웹 인터랙티브 + 인쇄용 약도)</span></div>
+    <div><b>8</b><span>참고 자료 출처 · 사진 크레딧 전체</span></div>
+  </div>
+</div></section>
+
+<section class="sec" id="buy" style="padding-top:0"><div class="wrap">
+  <div class="sec-h"><span class="mono">How to buy</span><h2>구매 안내</h2></div>
+  <div class="faq">
+    <details open><summary>어떻게 구매하나요?</summary><p>지금은 카카오톡 오픈채팅이나 이메일로 '강화 가이드 구매'라고 남겨주시면 결제 방법을 안내해 드려요. 결제가 확인되면 웹 가이드 링크와 PDF를 바로 보내드립니다.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px"><a class="btn red" href="https://open.kakao.com/o/g2VCOFTi" target="_blank" rel="noopener">카톡으로 구매하기</a><a class="btn" href="mailto:probe2928@gmail.com?subject=%EA%B0%95%ED%99%94%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%EA%B5%AC%EB%A7%A4">이메일로 구매하기</a></div></details>
+    <details><summary>휴대폰으로 볼 수 있나요?</summary><p>네. 웹 가이드는 휴대폰에 맞춰 만들었고, 장소마다 카카오맵 길찾기와 네이버 지도 버튼이 있어요. 종이로 들고 다니고 싶다면 PDF를 인쇄하세요.</p></details>
+    <details><summary>차가 없어도 되나요?</summary><p>고려궁지·북문·풍물시장은 강화읍 안이라 걸어서 다닐 수 있어요. 홍릉·선원사지·왕릉은 차가 편하고, 대중교통이라면 택시를 섞는 걸 추천해요. 가이드에 3시간 단축 코스도 있어요.</p></details>
+    <details><summary>환불되나요?</summary><p>가이드 링크와 PDF를 받기 전이라면 전액 환불해 드려요. 받은 뒤에는 디지털 콘텐츠 특성상 환불이 어려워요.</p></details>
+    <details><summary>공유해도 되나요?</summary><p>같이 가는 일행과 보는 건 괜찮아요. 다만 링크·파일을 공개적으로 올리거나 다시 파는 건 안 돼요.</p></details>
+  </div>
+</div></section>
+
+<section class="next"><div class="wrap">
+  <span class="mono" style="color:#9aa3c4">Next</span>
+  <h2>혼자 걸어본 길,<br>다음엔 같이 걸어요.</h2>
+  <p>인생준준은 역사를 먼저 공부해 온 길동무와 3~10명이 함께 떠나는 여행이에요. 셀프 가이드로 시작한 질문을 실크로드, 이스탄불, 교토까지 이어가 보세요.</p>
+  <div class="btns"><a class="btn red" href="../index.html#trips">함께 가는 여행 보기</a><a class="btn ghost" href="./">다른 셀프 가이드</a></div>
+</div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="legal"><span>© 2026 인생준준</span><span>사진: Wikimedia Commons 자유 라이선스(작가·라이선스 표기)</span><span>문의 <a href="mailto:probe2928@gmail.com">probe2928@gmail.com</a></span><a href="../privacy.html"><b>개인정보처리방침</b></a></div>
+  </div>
+</footer>
+</body>
+</html>

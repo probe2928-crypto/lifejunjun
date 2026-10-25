@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0B1330">
+<title>강화도 고려 왕도 반나절 코스 — 인생준준 셀프투어 가이드</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23C8261C'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='white' font-family='serif' font-weight='900'%3E준%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700;900&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{--paper:#F3F4F1;--sheet:#fff;--ink:#131313;--soft:#4A4B47;--rule:#D5D6D1;--seal:#C8261C;--night:#0B1330;--wash:#E9EAE5;--gold:#B89A5A;
+--serif:"Noto Serif KR","Nanum Myeongjo",Batang,serif;--sans:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:inherit}img{display:block;max-width:100%}
+.mono{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--serif);margin:0;letter-spacing:-.02em;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+/* cover */
+.cover{position:relative;min-height:100vh;min-height:100svh;color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:28px 0 36px;overflow:hidden;background:var(--night)}
+.cover img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.78}
+.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0b1330cc 0%,#0b133022 38%,#0b1330ee 100%)}
+.cover>*{position:relative;z-index:1}
+.cover>.wrap{width:100%}.cover .top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.seal{display:inline-grid;place-items:center;width:42px;height:42px;background:var(--seal);color:#fff;font:900 13px/1.05 var(--serif);text-align:center}
+.cover h1{font-size:clamp(40px,7.4vw,92px);font-weight:900;line-height:1.08;margin:18px 0 22px}
+.cover h1 em{font-style:normal;color:var(--gold)}
+.cover .kick{font:500 clamp(17px,2.2vw,22px)/1.5 var(--serif);opacity:.92}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chip{border:1px solid #ffffff66;padding:7px 12px;font-size:13px;backdrop-filter:blur(4px)}
+.credit{font:500 10px/1.4 var(--mono);opacity:.7;margin-top:18px}
+.credit a{text-decoration:none}
+/* sections */
+section{padding:72px 0}
+.lede p{font:400 18px/2 var(--serif);margin-bottom:18px;max-width:40em}
+.lede p:first-of-type:first-letter{font-size:3.2em;float:left;line-height:.9;margin:6px 10px 0 0;color:var(--seal);font-weight:900}
+.sec-h{display:flex;align-items:baseline;gap:14px;border-top:2px solid var(--ink);padding-top:14px;margin-bottom:28px}
+.sec-h h2{font-size:clamp(26px,3.6vw,38px);font-weight:900}
+.sec-h .mono{color:var(--soft)}
+/* timeline */
+.tl{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.tl li{display:grid;grid-template-columns:70px 44px 1fr auto;gap:10px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--rule)}
+.tl .t{font:500 14px var(--mono)}.tl .n{font:900 18px var(--serif);color:var(--seal)}.tl .nm{font:700 17px var(--serif)}.tl .mv{font-size:13px;color:var(--soft);text-align:right}
+.mapbox{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:30px}
+#map{height:430px;border:1px solid var(--rule);background:var(--wash)}
+.schem{background:var(--night);color:#fff;padding:18px;border:1px solid var(--night)}
+.schem svg{width:100%;height:auto;display:block}
+.schem .mono{color:#9aa3c4}
+/* stops */
+.stop{padding:70px 0;border-top:1px solid var(--rule)}
+.stop-head{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:end;margin-bottom:26px}
+.bign{font:900 clamp(64px,10vw,120px)/.8 var(--serif);color:var(--seal)}
+.stop h3{font-size:clamp(28px,4.2vw,46px);font-weight:900;line-height:1.15}
+.stop .tag{font:500 17px/1.5 var(--serif);color:var(--soft);margin-top:8px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.meta span{background:var(--sheet);border:1px solid var(--rule);padding:5px 10px;font-size:13px}
+.meta span b{color:var(--seal);font-weight:700;margin-right:6px}
+figure{margin:0}
+.ph{position:relative;background:var(--wash);overflow:hidden}
+.ph img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.ph figcaption{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--soft);padding:8px 0 0}
+.ph figcaption a{text-decoration:none;font-family:var(--mono);font-size:10.5px}
+.pair{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:28px}
+.body{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:start}
+.story p{font:400 17px/2 var(--serif);margin-bottom:16px}
+.look{background:var(--sheet);border:1px solid var(--rule);padding:20px}
+.look h4{margin:0 0 10px;font:500 11.5px var(--mono);letter-spacing:.12em;color:var(--seal)}
+.look dl{margin:0}.look dt{font-weight:700;font-size:15px;margin-top:12px}.look dd{margin:2px 0 0;font-size:14px;color:var(--soft);line-height:1.7}
+.info{margin-top:16px;border-top:2px solid var(--ink)}
+.info div{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:9px 0;border-bottom:1px solid var(--rule);font-size:14px}
+.info b{font:500 11px var(--mono);letter-spacing:.08em;color:var(--soft);padding-top:3px}
+.nav{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.nav a{flex:1;text-align:center;text-decoration:none;font-size:13px;font-weight:700;padding:11px 10px;border:1px solid var(--ink)}
+.nav a.k{background:#FEE500;border-color:#FEE500}
+.lunch{background:var(--wash);padding:46px 0;border-top:0}
+.lunch .bign{font-size:56px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.opt{background:var(--sheet);border:1px solid var(--rule)}
+.opt .in{padding:18px}
+.opt h3{font-size:26px}.opt .tag{font:500 15px var(--serif);color:var(--soft);margin:4px 0 10px}
+.opt p{font-size:15px;line-height:1.85}
+.pr{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.pr b{font:700 15px var(--serif)}
+.src li{margin:6px 0;font-size:14px}.src a{color:var(--soft)}
+.credits{font-size:12.5px;color:var(--soft);columns:2;column-gap:28px}
+.credits div{break-inside:avoid;margin-bottom:6px}
+.end{background:var(--night);color:#fff;padding:80px 0}
+.end h2{font-size:clamp(30px,4.6vw,52px);font-weight:900;line-height:1.2}
+.end p{opacity:.85;margin-top:16px;max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btns a{text-decoration:none;font-weight:700;padding:14px 20px;border:1px solid #fff}
+.btns a.red{background:var(--seal);border-color:var(--seal)}
+.fine{font-size:12px;opacity:.6;margin-top:40px}
+.printbar{position:fixed;right:16px;bottom:16px;z-index:999;display:flex;gap:8px}
+.printbar button{font:700 13px var(--sans);padding:12px 16px;border:0;background:var(--ink);color:#fff;cursor:pointer}
+@media(max-width:760px){
+  .mapbox,.body,.opts{grid-template-columns:1fr}
+  #map{height:340px}
+  .tl li{grid-template-columns:52px 30px 1fr}.tl .mv{grid-column:3;text-align:left;margin-top:-6px}
+  .stop-head{grid-template-columns:1fr;gap:6px}
+  .pr{grid-template-columns:1fr;gap:4px}
+  .credits{columns:1}
+  section,.stop{padding:54px 0}
+}
+@media print{
+  @page{size:A4;margin:14mm 14mm 16mm}
+  html,body{background:#fff}
+  body{font-size:10.5pt}
+  .printbar,.nav,#map,.noprint{display:none!important}
+  .cover{min-height:auto;height:267mm;padding:14mm 12mm;break-after:page;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .wrap{max-width:none;padding:0}
+  .mapbox{grid-template-columns:1fr}
+  .schem,.end,.lunch,.seal,.nav a.k{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section,.stop{padding:0;margin:0}
+  .intro-s{break-after:page}
+  .route-s{break-after:page}
+  .stop{break-before:page;border:0}
+  .lunch{break-before:auto;padding:10mm 8mm;margin-top:8mm}
+  .stop-head{margin-bottom:14px}
+  .bign{font-size:64pt}
+  .stop h3{font-size:24pt}
+  .story p{font-size:11pt;line-height:1.9}
+  .ph img{aspect-ratio:2/1}
+  .body{grid-template-columns:1.3fr .7fr;gap:20px}
+  .opt-s,.prac-s{break-before:page}
+  .end{break-before:page;padding:20mm 12mm}
+  .look,.info,.opt,.pr{break-inside:avoid}
+  a{text-decoration:none}
+}
+</style>
+</head>
+<body>
+<div class="printbar noprint"><button type="button" onclick="window.print()">PDF로 저장 · 인쇄</button></div>
+<header class="cover" id="cover"></header>
+<main>
+  <section class="intro-s"><div class="wrap">
+    <div class="sec-h"><span class="mono">Before you go</span><h2>이 섬이 수도였던 시간</h2></div>
+    <div class="lede" id="intro"></div>
+  </div></section>
+  <section class="route-s" style="padding-top:0"><div class="wrap">
+    <div class="sec-h"><span class="mono">Route</span><h2>오늘의 동선</h2></div>
+    <ol class="tl" id="tl"></ol>
+    <div class="mapbox"><div id="map" aria-label="코스 지도"></div><div class="schem" id="schem"></div></div>
+  </div></section>
+  <div id="stops"></div>
+  <section class="opt-s"><div class="wrap">
+    <div class="sec-h"><span class="mono">Option · +45 min</span><h2>시간이 남는다면, 양도면의 두 왕릉</h2></div>
+    <div class="opts" id="opts"></div>
+  </div></section>
+  <section class="prac-s"><div class="wrap">
+    <div class="sec-h"><span class="mono">Practical</span><h2>알아두면 좋은 것</h2></div>
+    <div id="prac"></div>
+    <div class="sec-h" style="margin-top:46px"><span class="mono">Sources</span><h2>참고한 자료</h2></div>
+    <ul class="src" id="src"></ul>
+    <div class="sec-h" style="margin-top:40px"><span class="mono">Photo credits</span><h2>사진 출처</h2></div>
+    <div class="credits" id="credits"></div>
+  </div></section>
+  <section class="end"><div class="wrap">
+    <span class="mono" style="color:#9aa3c4">Next · 인생준준</span>
+    <h2>다음엔, 이 길을<br>같이 걸어요.</h2>
+    <p>인생준준은 역사를 먼저 공부해 온 길동무와 3~10명이 함께 떠나는 여행이에요. 강화에서 시작한 질문을 실크로드, 이스탄불, 교토까지 이어가 보세요.</p>
+    <div class="btns"><a class="red" href="https://probe2928-crypto.github.io/lifejunjun/#trips">함께 가는 여행 보기</a><a href="https://open.kakao.com/o/g2VCOFTi" target="_blank" rel="noopener">카톡 오픈채팅 들어오기</a></div>
+    <p class="fine" id="fine"></p>
+  </div></section>
+</main>
+<script src="ganghwa-goryeo.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function(){
+const G=window.GUIDE,$=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fig=(p,cls)=>p?`<figure class="ph ${cls||""}"><img src="${p.src}" alt="${esc(p.cap)}" loading="eager" decoding="async"><figcaption><span>${esc(p.cap)}</span><a href="${p.link}" target="_blank" rel="noopener">PHOTO · ${esc(p.by)}</a></figcaption></figure>`:"";
+// cover
+$("cover").innerHTML=`<img class="bg" src="${G.cover.src}" alt="">
+<div class="wrap top"><a class="brand" href="https://probe2928-crypto.github.io/lifejunjun/"><span class="seal">인생<br>준준</span><span class="mono" style="color:#fff">Self-tour guide ${G.no}</span></a><span class="mono">Ganghwa · 1232–1270</span></div>
+<div class="wrap"><p class="kick">${esc(G.kicker)}</p><h1>강화도<br><em>고려 왕도</em><br>반나절 코스</h1>
+<div class="chips">${G.summary.map(s=>`<span class="chip">${esc(s)}</span>`).join("")}</div>
+<p class="credit">COVER · ${esc(G.cover.cap)} — <a href="${G.cover.link}" target="_blank" rel="noopener">${esc(G.cover.by)}</a></p></div>`;
+$("intro").innerHTML=G.intro.map(p=>`<p>${esc(p)}</p>`).join("");
+$("tl").innerHTML=G.timeline.map(r=>`<li><span class="t">${r[0]}</span><span class="n">${r[1]}</span><span class="nm">${esc(r[2])}</span><span class="mv">${esc(r[3])}</span></li>`).join("");
+// schematic map (always visible, prints well)
+const pts=[...G.stops,...G.options];
+const lats=pts.map(p=>p.lat),lngs=pts.map(p=>p.lng);
+const minLa=Math.min(...lats),maxLa=Math.max(...lats),minLo=Math.min(...lngs),maxLo=Math.max(...lngs);
+const W=360,H=420,pad=34,kx=Math.cos(37.7*Math.PI/180);
+const sx=(W-2*pad)/((maxLo-minLo)*kx),sy=(H-2*pad)/(maxLa-minLa),s=Math.min(sx,sy);
+const X=lng=>pad+(lng-minLo)*kx*s+((W-2*pad)-(maxLo-minLo)*kx*s)/2,Y=lat=>pad+(maxLa-lat)*s;
+const main=G.stops.map(p=>`${X(p.lng).toFixed(1)},${Y(p.lat).toFixed(1)}`).join(" ");
+const opt=[G.stops[G.stops.length-1],...G.options].map(p=>`${X(p.lng).toFixed(1)},${Y(p.lat).toFixed(1)}`).join(" ");
+const LB={gungji:["고려궁지",14,14,"start"],north:["북문 진송루",14,-6,"start"],hong:["홍릉",-14,4,"end"],lunch:["풍물시장",12,16,"start"],seonwon:["선원사지",14,4,"start"],ga:["가릉",-14,4,"end"],gon:["곤릉",12,-8,"start"],seok:["석릉",12,14,"start"]};
+const label=p=>{const x=X(p.lng),y=Y(p.lat),r=p.lunch?5:9,num=p.n==="—"?"":p.n;const l=LB[p.id]||[p.name,14,4,"start"];
+return `<g><circle cx="${x}" cy="${y}" r="${r}" fill="${p.lunch?'#9aa3c4':p.n==='+'?'#0B1330':'#C8261C'}" stroke="#fff" stroke-width="1.5"/>${num?`<text x="${x}" y="${y+3.5}" text-anchor="middle" font-size="9" font-weight="700" fill="#fff" font-family="IBM Plex Mono,monospace">${num}</text>`:''}<text x="${x+l[1]}" y="${y+l[2]}" text-anchor="${l[3]}" font-size="12.5" fill="#fff" font-family="Noto Serif KR,serif" font-weight="700">${esc(l[0])}</text></g>`;};
+$("schem").innerHTML=`<span class="mono">Course sketch · 실제 도로가 아닌 위치 관계</span><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="코스 위치 관계도"><polyline points="${main}" fill="none" stroke="#B89A5A" stroke-width="2" stroke-dasharray="1 0"/><polyline points="${opt}" fill="none" stroke="#9aa3c4" stroke-width="1.5" stroke-dasharray="4 4"/>${pts.map(label).join("")}<text x="${W-pad}" y="${H-10}" text-anchor="end" font-size="10" fill="#9aa3c4" font-family="IBM Plex Mono,monospace">N ↑</text></svg>`;
+// stops
+const nav=p=>`<div class="nav"><a class="k" href="https://map.kakao.com/link/to/${encodeURIComponent(p.q)},${p.lat},${p.lng}" target="_blank" rel="noopener">카카오맵 길찾기</a><a href="https://map.naver.com/p/search/${encodeURIComponent(p.q)}" target="_blank" rel="noopener">네이버 지도</a></div>`;
+const info=p=>p.info?`<div class="info">${p.info.map(r=>`<div><b>${esc(r[0])}</b><span>${esc(r[1])}</span></div>`).join("")}</div>`:"";
+$("stops").innerHTML=G.stops.map(p=>{
+ if(p.lunch)return `<section class="stop lunch" id="${p.id}"><div class="wrap"><div class="stop-head"><span class="bign">食</span><div><span class="mono">${p.time} · ${esc(p.stay)} · ${esc(p.move||"")}</span><h3>${esc(p.name)}</h3><p class="tag">${esc(p.tag)}</p></div></div><div class="body"><div class="story">${p.story.map(t=>`<p>${esc(t)}</p>`).join("")}</div><div>${info(p)}${nav(p)}</div></div></div></section>`;
+ return `<section class="stop" id="${p.id}"><div class="wrap">
+ <div class="stop-head"><span class="bign">${p.n}</span><div><span class="mono">${esc(p.en)}</span><h3>${esc(p.name)}</h3><p class="tag">${esc(p.tag)}</p></div></div>
+ <div class="meta"><span><b>도착</b>${p.time}</span><span><b>머무는 시간</b>${esc(p.stay)}</span>${p.move?`<span><b>이동</b>${esc(p.move)}</span>`:""}</div>
+ <div class="pair">${fig(p.photo)}</div>
+ <div class="body"><div class="story">${p.story.map(t=>`<p>${esc(t)}</p>`).join("")}${p.photo2?fig(p.photo2):""}</div>
+ <div><div class="look"><h4>여기서 볼 것</h4><dl>${(p.look||[]).map(l=>`<dt>${esc(l[0])}</dt><dd>${esc(l[1])}</dd>`).join("")}</dl></div>${info(p)}${nav(p)}</div></div>
+ </div></section>`;}).join("");
+$("opts").innerHTML=G.options.map(p=>`<article class="opt" id="${p.id}">${fig(p.photo)}<div class="in"><h3>${esc(p.name)}</h3><p class="tag">${esc(p.tag)}</p><p>${esc(p.text)}</p>${nav(p)}</div></article>`).join("");
+$("prac").innerHTML=G.practical.map(r=>`<div class="pr"><b>${esc(r[0])}</b><p>${esc(r[1])}</p></div>`).join("");
+$("src").innerHTML=G.sources.map(s=>`<li><a href="${s[1]}" target="_blank" rel="noopener">${esc(s[0])}</a></li>`).join("");
+const photos=[G.cover,...G.stops.flatMap(p=>[p.photo,p.photo2]),...G.options.map(p=>p.photo)].filter(Boolean);
+$("credits").innerHTML=photos.map(p=>`<div>${esc(p.cap)} — <a href="${p.link}" target="_blank" rel="noopener">${esc(p.by)}</a></div>`).join("");
+$("fine").textContent=`인생준준 셀프투어 가이드 ${G.no} · 정보 기준 ${G.updated} · 개인 이용 목적으로만 사용해 주세요. 무단 배포·재판매 금지. 문의 probe2928@gmail.com`;
+// interactive map
+try{if(window.L){const m=L.map("map",{scrollWheelZoom:false});L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:"© OpenStreetMap"}).addTo(m);
+ const icon=(t,c)=>L.divIcon({className:"",html:`<div style="width:28px;height:28px;border-radius:50%;background:${c};color:#fff;border:2px solid #fff;display:grid;place-items:center;font:700 12px IBM Plex Mono,monospace;box-shadow:0 2px 8px #0005">${t}</div>`,iconSize:[28,28],iconAnchor:[14,14]});
+ const ll=pts.map(p=>[p.lat,p.lng]);
+ L.polyline(G.stops.map(p=>[p.lat,p.lng]),{color:"#C8261C",weight:3,opacity:.75}).addTo(m);
+ L.polyline([G.stops[G.stops.length-1],...G.options].map(p=>[p.lat,p.lng]),{color:"#0B1330",weight:2,dashArray:"5 6"}).addTo(m);
+ pts.forEach(p=>L.marker([p.lat,p.lng],{icon:icon(p.n==="—"?"食":p.n,p.n==="+"?"#0B1330":p.lunch?"#4A4B47":"#C8261C")}).addTo(m).bindPopup(`<b>${esc(p.name)}</b><br><a href="#${p.id}">본문으로</a>`));
+ m.fitBounds(ll,{padding:[24,24]});}}catch(e){console.warn(e);}
+})();
+</script>
+</body>
+</html>
