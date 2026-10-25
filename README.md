@@ -6,4 +6,4 @@
 - `packages.json` 여행 상품·경비 (매일 아침 업데이트)
 - `columns.json` 칼럼 (월·목 업데이트) · `posts.json` 게시판 글 (검토 후 게시)
 - `races.json` RUN & TREK 해외 러닝·트레킹 대회 (매주 업데이트)
-- `yeobaek/` 여백의 지도 (MARGIN ATLAS) — unseenscene.netlify.app에서 옮겨온 별도 브랜드 사이트. 게시판·저널은 yeobaek/community.json, yeobaek/journal.json. 자세한 구조는 yeobaek/README.md (전용 개인정보처리방침·runfx.js 복사본 포함, 폴더만 떼어내도 동작)
+- `yeobaek/` 여백의 지도(MARGIN ATLAS)는 별도 저장소 probe2928-crypto/yeobaek로 이전됨 → https://probe2928-crypto.github.io/yeobaek/ . 이 폴더에는 옛 주소 이동용 페이지와 릴스 제작용 사진(images/)만 남김

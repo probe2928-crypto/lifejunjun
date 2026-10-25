@@ -1,5 +1,5 @@
 /* RUN & TREK cinematic layer — intro film, course films, photo posters.
-   Shared by run.html (인생준준) and yeobaek/run.html (여백의 지도).
+   Shared by run.html (인생준준) and a copy in the probe2928-crypto/yeobaek repo (여백의 지도).
    Page sets window.RUNFX = {brand, tagline, accent, ink, words:[...]} before loading. */
 (function(){
   const CFG=Object.assign({brand:"RUN & TREK",tagline:"함께 달리고, 함께 걷는 세계.",accent:"#C8261C",ink:"#0b0b0b",
@@ -101,6 +101,11 @@
   function preload(urls){return Promise.all(urls.filter(Boolean).map(u=>new Promise(r=>{const i=new Image();i.onload=i.onerror=()=>r();i.src=u;setTimeout(r,2500);})));}
 
   let active=null;
+  // 사진 주소가 깨져도 검은 화면이 되지 않도록: 실패한 장면은 검증된 대회 사진(POOL)으로 대체
+  let POOL=[];let poolIdx=0;
+  function setPool(races){const u=(races||[]).flatMap(r=>(r.photos||[]).map(p=>p&&p.src)).filter(Boolean);if(u.length)POOL=u;}
+  function check(u){return new Promise(r=>{if(!u)return r(false);const i=new Image();const t=setTimeout(()=>r(true),6000);i.onload=()=>{clearTimeout(t);r(true);};i.onerror=()=>{clearTimeout(t);r(false);};i.src=u;});}
+  function nextPool(){if(!POOL.length)return null;const u=POOL[poolIdx%POOL.length];poolIdx+=3;return u;}
   function film(scenes,opts={}){
     if(reduce()||!scenes.length)return Promise.resolve();
     if(active)active.stop();
@@ -125,7 +130,9 @@
         root.append(sc);return sc;});
       root.append(h("div","fx-grain"));
       document.body.append(root);document.body.style.overflow="hidden";
-      await preload(scenes.slice(0,3).map(s=>s.img));
+      const imgDivs=els.map(e=>e.querySelector(".fx-img"));
+      const verify=scenes.map((s,i)=>check(s.img).then(ok=>{if(ok||!s.img)return;const alt=nextPool();imgDivs[i].style.background=alt?`url("${alt}") center/cover, ${s.color||"#111"}`:`radial-gradient(120% 90% at 30% 20%, ${CFG.accent}33, transparent 60%), ${s.color||"#151a19"}`;const cr=els[i].querySelector(".fx-credit");if(cr)cr.textContent="PHOTO · Wikimedia Commons";}));
+      await Promise.race([Promise.all(verify.slice(0,3)),new Promise(r=>setTimeout(r,2500))]);
       requestAnimationFrame(()=>root.classList.add("on"));
       const total=scenes.reduce((a,s)=>a+(s.d||1700),0);let t0=performance.now(),idx=-1,timer=null,raf=null,done=false;
       function count(el){el.querySelectorAll(".fx-count").forEach(n=>{const to=parseFloat(n.dataset.to),dec=(n.dataset.to.split(".")[1]||"").length,s0=performance.now();
@@ -186,11 +193,11 @@
   function filmScenes(fm){return fm.scenes.map(s=>Object.assign({},s,{big:s.big?esc(s.big).replace(/\*(.+?)\*/g,"<em>$1</em>"):null,mid:s.mid?esc(s.mid):null}));}
   window.RunFX={
     film,introScenes,courseScenes,
-    playIntro(races,force){if(!force&&seenIntro())return Promise.resolve();markIntro();
+    playIntro(races,force){setPool(races);if(!force&&seenIntro())return Promise.resolve();markIntro();
       return loadFilms().then(fs=>fs.length?film(filmScenes(fs[0]),{label:fs[0].title,style:fs[0].style}):film(introScenes(races),{label:CFG.brand+" 소개 영상"}));},
     playFilm(fm){return film(filmScenes(fm),{label:fm.title,style:fm.style});},
-    playDefault(races){return film(introScenes(races),{label:CFG.brand+" 소개 영상"});},
-    reel(host,races){loadFilms().then(fs=>{const box=h("div","fx-reel");
+    playDefault(races){setPool(races);return film(introScenes(races),{label:CFG.brand+" 소개 영상"});},
+    reel(host,races){setPool(races);loadFilms().then(fs=>{const box=h("div","fx-reel");
       fs.slice(0,4).forEach(fm=>{const b=document.createElement("button");b.type="button";b.innerHTML="▶ "+esc(fm.title)+"<small>"+esc(fm.date.slice(5).replace("-","."))+"</small>";b.onclick=()=>RunFX.playFilm(fm);box.append(b);});
       const d=document.createElement("button");d.type="button";d.innerHTML="▶ RUN · CLIMB · BREATHE<small>기본</small>";d.onclick=()=>RunFX.playDefault(races);box.append(d);
       host.append(box);});},
