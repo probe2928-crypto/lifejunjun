@@ -45,6 +45,11 @@
   .fx-txt.center .fx-tag{align-self:center}
   .fx-corner{position:absolute;z-index:6;top:calc(7vh + 18px);left:6vw;right:6vw;display:flex;justify-content:space-between;font:600 11px/1.4 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
   .fx-credit{position:absolute;z-index:6;right:6vw;bottom:calc(7vh + 10px);font:500 10px/1.3 ui-monospace,Menlo,monospace;opacity:.6;max-width:60vw;text-align:right}
+  .fx-snd{position:absolute;z-index:8;left:20px;top:calc(7vh + 50px);appearance:none;border:1px solid rgba(255,255,255,.6);background:rgba(0,0,0,.25);color:#fff;font:700 12px "Noto Sans KR",sans-serif;letter-spacing:.08em;padding:10px 16px;border-radius:99px;cursor:pointer;backdrop-filter:blur(6px);display:inline-flex;align-items:center;gap:8px}
+  .fx-snd .eq{display:inline-flex;gap:2px;align-items:flex-end;height:11px}.fx-snd .eq i{width:2px;background:currentColor;height:30%;animation:fxeq .9s ease-in-out infinite}.fx-snd .eq i:nth-child(2){animation-delay:-.3s}.fx-snd .eq i:nth-child(3){animation-delay:-.6s}
+  .fx-snd.off .eq i{animation:none;height:2px}
+  @keyframes fxeq{0%,100%{height:25%}50%{height:100%}}
+  .fx-mcredit{position:absolute;z-index:6;left:6vw;bottom:calc(7vh + 10px);font:500 10px/1.3 ui-monospace,Menlo,monospace;opacity:.6;max-width:40vw}
   .fx-prog{position:absolute;z-index:7;top:0;left:0;height:3px;background:var(--fx-accent);width:0}
   .fx-skip{position:absolute;z-index:8;right:20px;top:calc(7vh + 50px);appearance:none;border:1px solid rgba(255,255,255,.6);background:rgba(0,0,0,.25);color:#fff;font:700 12px "Noto Sans KR",sans-serif;letter-spacing:.08em;padding:10px 16px;border-radius:99px;cursor:pointer;backdrop-filter:blur(6px)}
   .fx-skip:hover{background:#fff;color:#000}
@@ -101,6 +106,27 @@
   function preload(urls){return Promise.all(urls.filter(Boolean).map(u=>new Promise(r=>{const i=new Image();i.onload=i.onerror=()=>r();i.src=u;setTimeout(r,2500);})));}
 
   let active=null;
+  // 필름 음악: Wikimedia Commons 자유 라이선스 곡을 스트리밍, 페이드 인·아웃
+  const DEFAULT_MUSIC={src:"https://upload.wikimedia.org/wikipedia/commons/transcoded/1/11/Scott_Buckley_-_Pathfinder.oga/Scott_Buckley_-_Pathfinder.oga.mp3",start:150,credit:"Scott Buckley — Pathfinder (CC BY 4.0)"};
+  const soundPref={get(){try{return localStorage.getItem("fx-sound")!=="off";}catch(e){return true;}},set(v){try{localStorage.setItem("fx-sound",v?"on":"off");}catch(e){}}};
+  function makeSound(m){
+    const a=new Audio();a.crossOrigin="anonymous";a.preload="auto";a.src=m.src+(m.start?"#t="+m.start:"");
+    let ctx=null,g=null;
+    try{const AC=window.AudioContext||window.webkitAudioContext;if(AC){ctx=new AC();g=ctx.createGain();g.gain.value=0;ctx.createMediaElementSource(a).connect(g).connect(ctx.destination);}}catch(e){ctx=null;g=null;}
+    if(!g)a.volume=0;
+    let fadeT=null;
+    function fade(v,sec){if(g){const t=ctx.currentTime;g.gain.cancelScheduledValues(t);g.gain.setValueAtTime(g.gain.value,t);g.gain.linearRampToValueAtTime(v,t+sec);return;}
+      clearInterval(fadeT);const from=a.volume,t0=performance.now();fadeT=setInterval(()=>{const k=Math.min(1,(performance.now()-t0)/(sec*1000));try{a.volume=from+(v-from)*k;}catch(e){}if(k>=1)clearInterval(fadeT);},40);}
+    let on=false;
+    return{
+      play(offset){if(ctx&&ctx.state==="suspended")ctx.resume().catch(()=>{});
+        if(offset&&a.readyState>0){try{a.currentTime=(m.start||0)+offset;}catch(e){}}
+        return a.play().then(()=>{on=true;fade(.85,1.4);return true;}).catch(()=>false);},
+      pause(){on=false;fade(0,.4);setTimeout(()=>{if(!on)a.pause();},450);},
+      stop(){on=false;fade(0,.7);setTimeout(()=>{a.pause();a.removeAttribute("src");try{a.load();}catch(e){}if(ctx)ctx.close().catch(()=>{});},800);},
+      get on(){return on;}
+    };
+  }
   // 사진 주소가 깨져도 검은 화면이 되지 않도록: 실패한 장면은 검증된 대회 사진(POOL)으로 대체
   let POOL=[];let poolIdx=0;
   function setPool(races){const u=(races||[]).flatMap(r=>(r.photos||[]).map(p=>p&&p.src)).filter(Boolean);if(u.length)POOL=u;}
@@ -113,6 +139,12 @@
       const root=h("div","fx-film fx-bars"+(opts.style==="luxe"?" luxe":""));root.setAttribute("role","dialog");root.setAttribute("aria-label",opts.label||"소개 영상");
       const prog=h("div","fx-prog");const skip=h("button","fx-skip","건너뛰기 ✕");skip.type="button";
       root.append(prog,skip);
+      const mus=opts.music||(opts.music===false?null:DEFAULT_MUSIC);let snd=null,sndBtn=null;const tStart=performance.now();
+      if(mus&&mus.src){snd=makeSound(mus);sndBtn=h("button","fx-snd off",'<span class="eq"><i></i><i></i><i></i></span><span class="lb">사운드 켜기</span>');sndBtn.type="button";sndBtn.setAttribute("aria-pressed","false");root.append(sndBtn);
+        if(mus.credit)root.append(h("div","fx-mcredit","MUSIC · "+esc(mus.credit)));
+        const ui=v=>{sndBtn.classList.toggle("off",!v);sndBtn.querySelector(".lb").textContent=v?"사운드 끄기":"사운드 켜기";sndBtn.setAttribute("aria-pressed",String(v));};
+        sndBtn.onclick=()=>{if(snd.on){snd.pause();soundPref.set(false);ui(false);}else{soundPref.set(true);snd.play((performance.now()-tStart)/1000).then(ok=>ui(ok));}};
+        if(soundPref.get())snd.play(0).then(ok=>ui(ok));}
       const els=scenes.map((s,i)=>{
         const sc=h("div","fx-scene"+(i%2?" alt":"")+(s.center?" dark":"")+(s.color_on?" color":""));sc.style.setProperty("--d",(s.d||1700)+"ms");
         const img=h("div","fx-img");img.style.background=s.img?`url("${s.img}") center/cover, ${s.color||"#111"}`:(s.color||"#111");
@@ -141,7 +173,7 @@
       function show(i){els.forEach((e,j)=>e.classList.toggle("on",j===i));count(els[i]);}
       function next(){idx++;if(idx>=els.length){finish();return;}show(idx);timer=setTimeout(next,scenes[idx].d||1700);}
       function tick(){prog.style.width=Math.min(100,(performance.now()-t0)/total*100)+"%";if(!done)raf=requestAnimationFrame(tick);}
-      function finish(){if(done)return;done=true;clearTimeout(timer);cancelAnimationFrame(raf);root.classList.add("out");document.body.style.overflow="";
+      function finish(){if(done)return;done=true;if(snd)snd.stop();clearTimeout(timer);cancelAnimationFrame(raf);root.classList.add("out");document.body.style.overflow="";
         document.removeEventListener("keydown",key);setTimeout(()=>{root.remove();},650);active=null;resolve();}
       const key=e=>{if(e.key==="Escape")finish();};
       skip.onclick=finish;document.addEventListener("keydown",key);
@@ -194,8 +226,8 @@
   window.RunFX={
     film,introScenes,courseScenes,
     playIntro(races,force){setPool(races);if(!force&&seenIntro())return Promise.resolve();markIntro();
-      return loadFilms().then(fs=>fs.length?film(filmScenes(fs[0]),{label:fs[0].title,style:fs[0].style}):film(introScenes(races),{label:CFG.brand+" 소개 영상"}));},
-    playFilm(fm){return film(filmScenes(fm),{label:fm.title,style:fm.style});},
+      return loadFilms().then(fs=>fs.length?film(filmScenes(fs[0]),{label:fs[0].title,style:fs[0].style,music:fs[0].music}):film(introScenes(races),{label:CFG.brand+" 소개 영상"}));},
+    playFilm(fm){return film(filmScenes(fm),{label:fm.title,style:fm.style,music:fm.music});},
     playDefault(races){setPool(races);return film(introScenes(races),{label:CFG.brand+" 소개 영상"});},
     reel(host,races){setPool(races);loadFilms().then(fs=>{const box=h("div","fx-reel");
       fs.slice(0,4).forEach(fm=>{const b=document.createElement("button");b.type="button";b.innerHTML="▶ "+esc(fm.title)+"<small>"+esc(fm.date.slice(5).replace("-","."))+"</small>";b.onclick=()=>RunFX.playFilm(fm);box.append(b);});

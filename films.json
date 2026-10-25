@@ -7,6 +7,12 @@
       "title": "FILM 01 · Silence",
       "style": "luxe",
       "brand": "both",
+      "music": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/95/Scott_Buckley_%E2%80%93_The_Long_Dark_%28Ambient_Neoclassical_Piano%29.ogg/Scott_Buckley_%E2%80%93_The_Long_Dark_%28Ambient_Neoclassical_Piano%29.ogg.mp3",
+        "start": 362,
+        "credit": "Scott Buckley — The Long Dark (CC BY 3.0)",
+        "link": "https://commons.wikimedia.org/wiki/File:Scott_Buckley_%E2%80%93_The_Long_Dark_(Ambient_Neoclassical_Piano).ogg"
+      },
       "scenes": [
         {
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg/1280px-Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg",
@@ -80,6 +86,12 @@
       "title": "FILM 02 · MOMENTUM",
       "style": "sport",
       "brand": "both",
+      "music": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Rafael_Krux_-_Uplifting_Blockbuster_%28cc-by%29_%28filmmusic%29.mp3",
+        "start": 92,
+        "credit": "Rafael Krux — Uplifting Blockbuster (CC BY 4.0)",
+        "link": "https://commons.wikimedia.org/wiki/File:Rafael_Krux_-_Uplifting_Blockbuster_(cc-by)_(filmmusic).mp3"
+      },
       "scenes": [
         {
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Runners_%40_Marathon_de_Paris_%40_Seine_%40_Paris_%2826142179811%29.jpg/1280px-Runners_%40_Marathon_de_Paris_%40_Seine_%40_Paris_%2826142179811%29.jpg",
@@ -130,6 +142,12 @@
       "title": "FILM 03 · ALTITUDE",
       "style": "luxe",
       "brand": "both",
+      "music": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/cd/Scott_Buckley_-_Born_Of_The_Sky.oga/Scott_Buckley_-_Born_Of_The_Sky.oga.mp3",
+        "start": 122,
+        "credit": "Scott Buckley — Born Of The Sky (CC BY 4.0)",
+        "link": "https://commons.wikimedia.org/wiki/File:Scott_Buckley_-_Born_Of_The_Sky.oga"
+      },
       "scenes": [
         {
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/CH.VS.Zermatt_2021-10-17_Matterhorn_8726.jpg/1280px-CH.VS.Zermatt_2021-10-17_Matterhorn_8726.jpg",
