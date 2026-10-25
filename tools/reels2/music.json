@@ -1,0 +1,56 @@
+{
+ "infraction_dance": {
+  "title": "Infraction - Dance (Upbeat Creative Future Pop)",
+  "credit": "음악: Infraction - Dance (CC BY 3.0)",
+  "license": "CC BY 3.0",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Infraction_-_Dance_%28Upbeat_Creative_Future_Pop%29.ogg",
+  "bpm": 140.0,
+  "loud_start": 104.14,
+  "mood": "밝고 빠른 퓨처팝 — 러닝"
+ },
+ "bugden_blackheat": {
+  "title": "Ross Bugden - Black Heat",
+  "credit": "음악: Ross Bugden - Black Heat (CC BY 4.0)",
+  "license": "CC BY 4.0",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Black_Heat_WAV_by_Ross_Bugden.wav",
+  "bpm": 126.5,
+  "loud_start": 84.01,
+  "mood": "웅장한 일렉트로닉 — 산·트레킹"
+ },
+ "lfm_shoepop": {
+  "title": "Loyalty Freak Music - Shoepop",
+  "credit": "음악: Loyalty Freak Music - Shoepop (CC0)",
+  "license": "CC0",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Loyalty_Freak_Music_-_09_-_Shoepop.ogg",
+  "bpm": 98.0,
+  "loud_start": 111.6,
+  "mood": "경쾌한 인디팝 — 여행·일상"
+ },
+ "lfm_work": {
+  "title": "Loyalty Freak Music - Work",
+  "credit": "음악: Loyalty Freak Music - Work (CC0)",
+  "license": "CC0",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Loyalty_Freak_Music_-_13_-_Work.ogg",
+  "bpm": 160.0,
+  "loud_start": 107.21,
+  "mood": "빠른 비트 — 러닝"
+ },
+ "raspberry_lofi": {
+  "title": "Raspberrymusic - Lofi Hip Hop Upbeat",
+  "credit": "음악: raspberrymusic - Lofi Hip Hop Upbeat (CC BY 4.0)",
+  "license": "CC BY 4.0",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Raspberrymusic_-_Lofi_Hip_Hop_Upbeat.ogg",
+  "bpm": 89.25,
+  "loud_start": 20.67,
+  "mood": "로파이 — 긍정학개론·역사"
+ },
+ "magma_masterday": {
+  "title": "MagmaMusic - Master the day",
+  "credit": "음악: MagmaMusic - Master the day (CC BY-SA 4.0)",
+  "license": "CC BY-SA 4.0",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Master_the_day.ogg",
+  "bpm": 126.5,
+  "loud_start": 36.94,
+  "mood": "동기부여 — 긍정학개론"
+ }
+}

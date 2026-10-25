@@ -1,0 +1,99 @@
+{
+ "id": "tip-02-altitude",
+ "music": "bugden_blackheat",
+ "scenes": [
+  {
+   "kind": "hook",
+   "clip": "mixkit:43150",
+   "ss": 3,
+   "cx": 0.5,
+   "beats": 5,
+   "kicker": "해외 트레킹 전 필독",
+   "lines": [
+    "고산병,"
+   ],
+   "hl": "체력 좋아도 걸려요",
+   "sub": "미국 CDC 공식 가이드 기준"
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:51689",
+   "ss": 4,
+   "beats": 8,
+   "n": 1,
+   "of": 4,
+   "cx": 0.55,
+   "lines": [
+    "3,000m를 넘으면"
+   ],
+   "hl": "하루 +500m까지만",
+   "body": [
+    "‘잠자는 고도’ 기준이에요"
+   ],
+   "src": "CDC Yellow Book"
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:43153",
+   "ss": 3,
+   "beats": 8,
+   "n": 2,
+   "of": 4,
+   "cx": 0.5,
+   "lines": [
+    "1,000m 올라갈 때마다"
+   ],
+   "hl": "하루 더 적응",
+   "body": [
+    "같은 고도에서 하룻밤 더 자기"
+   ],
+   "src": "CDC Yellow Book"
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:41579",
+   "ss": 1,
+   "beats": 8,
+   "n": 3,
+   "of": 4,
+   "cx": 0.25,
+   "lines": [
+    "고지대 도착 후 48시간"
+   ],
+   "hl": "술은 참기",
+   "body": [
+    "커피는 평소만큼은 괜찮아요"
+   ],
+   "src": "CDC Yellow Book"
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:114",
+   "ss": 5,
+   "beats": 8,
+   "n": 4,
+   "of": 4,
+   "cx": 0.5,
+   "lines": [
+    "두통 · 메스꺼움이 오면"
+   ],
+   "hl": "더 오르지 않기",
+   "body": [
+    "심해지면 300m 이상 내려가기"
+   ],
+   "src": "CDC Yellow Book"
+  },
+  {
+   "kind": "cta",
+   "clip": "mixkit:34566",
+   "ss": 2,
+   "beats": 7,
+   "cx": 0.45,
+   "lines": [
+    "같이 갈 사람한테"
+   ],
+   "hl": "보내주기",
+   "sub": "저장해두고 출발 전에 다시 보기"
+  }
+ ]
+}
