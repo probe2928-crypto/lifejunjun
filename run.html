@@ -165,7 +165,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>window.RUNFX={key:"lifejunjun",filmsPath:"films.json",brand:"RUN & TREK",brandHtml:"RUN &amp; <em>TREK</em>",tagline:"함께 달리고, 함께 걷는 세계. — 인생준준",accent:"#C8261C",onAccent:"#fff",words:["RUN.","CLIMB.","BREATHE.","TOGETHER."]};</script>
-<script src="runfx.js?v=20261024c"></script>
+<script src="runfx.js?v=20261026b"></script>
 <script>
 function getJSON(n){const raw="https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/"+n+"?t="+Math.floor(Date.now()/3e5);const local=()=>fetch(n,{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();});const live=/netlify\.app$|lifejunjun\.com$/.test(location.hostname);return live?fetch(raw).then(r=>{if(!r.ok)throw 0;return r.json();}).catch(local):local();}
 function el(tag,attrs={},...kids){const n=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(v==null)continue;if(k==="class")n.className=v;else if(k==="style")n.setAttribute("style",v);else if(k.startsWith("on"))n.addEventListener(k.slice(2),v);else n.setAttribute(k,v);}for(const c of kids.flat()){if(c==null||c===false)continue;n.append(c.nodeType?c:document.createTextNode(c));}return n;}
