@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """인생준준 tip reel v2 — native Korean info-reel look (real footage, Pretendard, highlight boxes).
 
-usage: python reel2.py spec.json [--sheet]
+usage: python reel2.py spec.json [--sheet]      full render (needs local clips + music file)
+       python reel2.py spec.json --layout out.jpg  text-layout check only (no footage needed; grey stand-in)
   writes spec["out"] (mp4) + spec["cover"] (jpg, hook frame) [+ <out>_sheet.jpg]
+
+In the repo, specs use "clip":"mixkit:<id>" (see tools/reels2/clips.json + catsheets/) and "music":"<key of
+tools/reels2/music.json>"; Sejun's PC (post_queue.py) downloads those, fills bpm/music_ss, renders and posts.
+Text budget (fits one line at full size): lines ≤ 13 chars, hl ≤ 12 chars, body ≤ 16 chars, max 2 body lines.
 
 spec: {"id","out","cover","bpm":100,
        "music": "music/x.mp3", "music_ss": 0.0,
@@ -19,7 +24,8 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 W, H, FPS = 1080, 1920, 30
-FD = os.environ.get("LJ_FONTS", os.path.join(HERE, "pret", "public", "static"))
+FD = os.environ.get("LJ_FONTS") or next((p for p in (os.path.join(HERE, "fonts"), os.path.join(HERE, "pret", "public", "static"))
+                                          if os.path.exists(os.path.join(p, "Pretendard-Black.otf"))), os.path.join(HERE, "fonts"))
 LIME = (214, 255, 64, 255); INK = (14, 14, 14, 255); WHITE = (255, 255, 255, 255)
 SOFT = (255, 255, 255, 215)
 
@@ -40,6 +46,9 @@ def shadowed(im, blur=14, op=.62, dy=5):
     return out
 
 
+def meas_size(rows, txt): return next(r[2].size for r in rows if r[1] == txt)
+
+
 def text_block(rows, align="center", pad=40):
     """rows: list of (kind, text, font, fill, extra). kind 'txt' or 'hl' (highlight box) or 'pill'.
     returns RGBA image (width W) and list of (y0,y1) per row for staggered reveal."""
@@ -48,6 +57,7 @@ def text_block(rows, align="center", pad=40):
         room = 940 if kind == "hl" else 980
         while f.getbbox(txt)[2] - f.getbbox(txt)[0] + (44 if kind == "hl" else 0) > room and f.size > 30:
             f = f.font_variant(size=f.size - 4)
+        if f.size < meas_size(rows, txt): print(f"  shrunk to {f.size}px: {txt}")
         bb = f.getbbox(txt); tw, th = bb[2] - bb[0], f.size
         if kind == "hl": bw, bh = tw + 44, int(th * 1.32)
         elif kind == "pill": bw, bh = tw + 36, int(th * 1.55)
@@ -190,7 +200,25 @@ def sheet(spec, out, total):
     p = os.path.splitext(out)[0] + "_sheet.jpg"; S.save(p, quality=85); print("sheet", p)
 
 
+def layout(spec, path):
+    """Text overlays of every scene on a grey stand-in frame (reports any row the auto-fit had to shrink)."""
+    yy = np.linspace(0, 1, H)[:, None, None]
+    grad = (0.50 * np.clip(1 - (yy - .12) / .55, 0, 1) ** 1.4 + 0.10).astype(np.float32)
+    ims = []
+    for sc in spec["scenes"]:
+        fr = np.full((H, W, 3), .55, np.float32) * (1 - grad)
+        lay, spans, top = layers_for(sc)
+        h = min(lay.shape[0], H - top); al = lay[:h, :, 3:4]
+        fr[top:top + h] = fr[top:top + h] * (1 - al) + lay[:h, :, :3] * al
+        ims.append(Image.fromarray((fr * 255).astype(np.uint8)).resize((360, 640)))
+    S = Image.new("RGB", (360 * len(ims), 640))
+    for k, im in enumerate(ims): S.paste(im, (360 * k, 0))
+    S.save(path, quality=85); print("layout", path)
+
+
 if __name__ == "__main__":
     spec = json.load(open(sys.argv[1], encoding="utf-8"))
+    if "--layout" in sys.argv:
+        layout(spec, sys.argv[sys.argv.index("--layout") + 1]); sys.exit(0)
     o, tot = render(spec)
     if "--sheet" in sys.argv: sheet(spec, o, tot)
