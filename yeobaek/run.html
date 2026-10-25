@@ -159,12 +159,12 @@ footer .inner{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-be
   <section class="wrap rt-detail" id="detail" hidden></section>
 </main>
 <a class="float" href="index.html#contact">문의</a>
-<footer><div class="wrap inner"><span>여백의 지도 · MARGIN ATLAS — 함께 떠나는 작은 여행</span><span><a href="https://open.kakao.com/o/gzvyLFTi" target="_blank" rel="noopener">카카오톡 공지방</a> · <a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">Instagram</a> · <a href="index.html">홈</a> · <a href="../privacy.html">개인정보처리방침</a></span></div></footer>
+<footer><div class="wrap inner"><span>여백의 지도 · MARGIN ATLAS — 함께 떠나는 작은 여행</span><span><a href="https://open.kakao.com/o/gzvyLFTi" target="_blank" rel="noopener">카카오톡 공지방</a> · <a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">Instagram</a> · <a href="index.html">홈</a> · <a href="privacy.html">개인정보처리방침</a></span></div></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script>window.RUNFX={key:"yeobaek",filmsPath:"../films.json",brand:"RUN THE MAP",brandHtml:"RUN THE <em>MAP</em>",tagline:"지도 위를 달리는 여행. — 여백의 지도",accent:"#b8df4c",onAccent:"#1e2725",words:["RUN.","WANDER.","BREATHE.","TOGETHER."]};</script>
-<script src="../runfx.js?v=20261024c"></script>
+<script>window.RUNFX={key:"yeobaek",filmsPath:(/\/lifejunjun\//.test(location.pathname)?"../films.json":"https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/films.json"),brand:"RUN THE MAP",brandHtml:"RUN THE <em>MAP</em>",tagline:"지도 위를 달리는 여행. — 여백의 지도",accent:"#b8df4c",onAccent:"#1e2725",words:["RUN.","WANDER.","BREATHE.","TOGETHER."]};</script>
+<script src="runfx.js?v=20261026"></script>
 <script>
-function getJSON(n){const raw="https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/"+n.replace("../","")+"?t="+Math.floor(Date.now()/3e5);const local=()=>fetch(n,{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();});const live=/netlify\.app$|lifejunjun\.com$/.test(location.hostname);return live?fetch(raw).then(r=>{if(!r.ok)throw 0;return r.json();}).catch(local):local();}
+function getJSON(n){const raw="https://raw.githubusercontent.com/probe2928-crypto/lifejunjun/main/"+n.replace("../","")+"?t="+Math.floor(Date.now()/3e5);const local=()=>fetch(n,{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();});const live=/netlify\.app$|lifejunjun\.com$/.test(location.hostname);const remote=()=>fetch(raw).then(r=>{if(!r.ok)throw 0;return r.json();});return live?remote().catch(local):local().catch(remote);}
 function el(tag,attrs={},...kids){const n=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(v==null)continue;if(k==="class")n.className=v;else if(k==="style")n.setAttribute("style",v);else if(k.startsWith("on"))n.addEventListener(k.slice(2),v);else n.setAttribute(k,v);}for(const c of kids.flat()){if(c==null||c===false)continue;n.append(c.nodeType?c:document.createTextNode(c));}return n;}
 const won=n=>n.toLocaleString("ko-KR")+"원";
 const man=n=>(Math.round(n/10000)).toLocaleString("ko-KR")+"만 원";
