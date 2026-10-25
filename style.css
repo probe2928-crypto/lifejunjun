@@ -35,11 +35,13 @@ nav.main a{text-decoration:none}
 nav.main a:hover{color:var(--seal)}
 .hacts{display:flex;gap:8px}
 .cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:14.5px;border:0;cursor:pointer;font-family:var(--sans)}
-.cta:hover{background:var(--seal)}
-.cta.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
-.cta.ghost:hover{background:var(--ink);color:#fff}
-.cta.red{background:var(--seal)}
-.cta.red:hover{background:var(--ink)}
+/* 버튼 호버: 브랜드 색이 왼쪽에서 오른쪽으로 차오름 */
+.cta{background-image:linear-gradient(var(--seal),var(--seal));background-repeat:no-repeat;background-size:0% 100%;background-position:left center;transition:background-size .38s cubic-bezier(.2,.7,.2,1),color .2s,box-shadow .2s}
+.cta:hover{background-size:100% 100%}
+.cta.ghost{background-color:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink);background-image:linear-gradient(var(--ink),var(--ink))}
+.cta.ghost:hover{color:#fff}
+.cta.red{background-color:var(--seal);background-image:linear-gradient(var(--ink),var(--ink))}
+.cta.red:hover{background-size:100% 100%}
 @media (max-width:980px){nav.main{display:none}}
 @media (max-width:520px){.hacts .ghost{display:none}}
 
@@ -460,3 +462,41 @@ nav.main{gap:20px;white-space:nowrap;font-size:14px}
 .st{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:3px;white-space:nowrap}
 .st-접수중,.st-예약중{background:var(--seal);color:#fff}.st-접수예정{background:#DCE3F6;color:#1F3A8A}.st-발표예정{background:#E4E5E0;color:#3F403B}.st-상시{background:#D3F2E6;color:#0D5C43}.st-마감임박{background:#131313;color:#fff}.st-마감{background:#ECECEC;color:#777}
 .rt-poster .rt-ph{position:absolute;inset:0;z-index:0;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}.rt-card:hover .rt-ph{transform:scale(1.07)}.rt-poster .top,.rt-poster>div:not(.fx-photo):not(.fx-tint):not(.rt-ph){position:relative;z-index:1}
+
+
+/* ── 2026-10-25 고도화 ───────────────────────────── */
+/* 히어로: 가장 빠른 출발 칩 */
+.nextdep a{display:inline-flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
+.nextdep a:hover{color:var(--seal)}
+.nextdep i{width:8px;height:8px;border-radius:50%;background:var(--seal);box-shadow:0 0 0 0 rgba(200,38,28,.5);animation:nd-pulse 2s infinite}
+@keyframes nd-pulse{0%{box-shadow:0 0 0 0 rgba(200,38,28,.45)}70%{box-shadow:0 0 0 9px rgba(200,38,28,0)}100%{box-shadow:0 0 0 0 rgba(200,38,28,0)}}
+
+/* RUN & TREK: 접수 중 대회 티커 */
+.rt-ticker{margin-top:36px;background:var(--ink);color:#fff;overflow:hidden;position:relative;border-radius:2px}
+.rt-ticker::before,.rt-ticker::after{content:"";position:absolute;top:0;bottom:0;width:48px;z-index:1;pointer-events:none}
+.rt-ticker::before{left:0;background:linear-gradient(90deg,var(--ink),transparent)}
+.rt-ticker::after{right:0;background:linear-gradient(-90deg,var(--ink),transparent)}
+.rt-ticker-track{display:flex;width:max-content;animation:tk-move var(--tk-dur,36s) linear infinite}
+.rt-ticker:hover .rt-ticker-track,.rt-ticker:focus-within .rt-ticker-track{animation-play-state:paused}
+.tk-run{display:flex}
+.tk{appearance:none;border:0;background:none;color:inherit;font:inherit;cursor:pointer;display:inline-flex;align-items:center;gap:10px;padding:14px 28px 14px 0;white-space:nowrap;font-size:14.5px}
+.tk::after{content:"◆";font-size:7px;opacity:.4;margin-left:18px}
+.tk b{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;font-weight:500;padding:3px 8px;border:1px solid rgba(255,255,255,.5);border-radius:2px}
+.tk.urgent b{background:var(--seal);border-color:var(--seal)}
+.tk span{font-family:var(--serif);font-weight:900;font-size:17px;letter-spacing:-.01em}
+.tk em{font-style:normal;color:#B9BAB4;font-size:13.5px}
+.tk:hover span{text-decoration:underline;text-underline-offset:4px}
+@keyframes tk-move{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.rt-ticker-track{animation:none;width:auto;flex-wrap:wrap}.rt-ticker-track>[aria-hidden]{display:none}.tk-run{flex-wrap:wrap}.tk{padding:12px 18px}.rt-ticker::before,.rt-ticker::after{display:none}}
+
+/* 스크롤 진입 모션: 지원 브라우저에서만, 느리고 조용하게 */
+@supports (animation-timeline: view()){
+  @media (prefers-reduced-motion:no-preference){
+    .sec-head,.for article,.ingr article,.rg-card,.facts3>div,.rt-card,.trip,.col-card{animation:rv-up linear both;animation-timeline:view();animation-range:entry 0% entry 38%}
+  }
+}
+@keyframes rv-up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+
+/* 카드 사진 미세 줌 */
+.rg-card img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.rg-card:hover img{transform:scale(1.045)}

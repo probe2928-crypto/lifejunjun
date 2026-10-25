@@ -37,7 +37,7 @@
 
 <main id="top">
   <section class="wrap hero">
-    <div class="kicker mono"><span>Small-group history travel</span><span>3인 이상 출발 · 함께 가는 역사 여행</span><span>lifejunjun.com</span></div>
+    <div class="kicker mono"><span>Small-group history travel</span><span>3인 이상 출발 · 함께 가는 역사 여행</span><span id="nextdep" class="nextdep" hidden></span></div>
     <h1>잔잔하게, 깊게,<br><em>맛있게.</em></h1>
     <p class="lede">혼자 떠나기엔 조금 무섭고, 마흔 명 단체 패키지는 싫은 사람들을 위한 여행. 역사를 공부하는 여행자 준준과 3명 이상 모이면 함께 떠납니다. 준준은 인솔자도, 전문 가이드도 아닙니다. 먼저 공부해 온 길동무로서 같이 유적을 걷고, 박물관에서 함께 배우고, 현지 맛집에서 오늘을 먹습니다. 중간중간 심장이 뛰는 순간도 넣었습니다.</p>
     <div class="acts">
@@ -114,7 +114,7 @@
     <div class="sec-head">
       <span class="mono">New · Run &amp; Trek</span>
       <h2>함께 달리고,<br>함께 걷는 세계.</h2>
-      <p>돌로미티 트레일, 몽블랑 일주, 앙코르와트 10K, 천 년 순례길까지. 해외 러닝·트레킹 대회에 3~10명이 같이 나가고, 대회가 끝나면 그 동네를 같이 여행해요. 경비는 거의 원가 그대로.</p>
+      <p>돌로미티 트레일, 몽블랑 일주, 앙코르와트 10K, 구마노 고도 순례길까지. 해외 러닝·트레킹 대회에 3~10명이 같이 나가고, 대회가 끝나면 그 동네를 같이 여행해요. 경비는 거의 원가 그대로.</p>
     </div>
     <div class="rt-grid" id="rt-home"><p class="small">대회 정보를 불러오는 중입니다.</p></div>
     <div class="socials" style="margin-top:24px"><a class="cta" href="run.html">대회 전체 보기 · 코스 미리 걷기 →</a></div>
@@ -345,7 +345,7 @@
       <div class="col"><span class="mono" style="color:#9FA09A">Contact</span><a href="index.html#contact">문의하기</a><a href="index.html#apply">동행 신청</a><a href="community.html?b=qna">여행 문의 게시판</a><a href="https://open.kakao.com/o/g2VCOFTi" target="_blank" rel="noopener">카톡 오픈채팅</a><a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">인스타그램 DM</a></div>
       <div class="col"><span class="mono" style="color:#9FA09A">Follow</span><a href="https://www.youtube.com/@kaniwast" target="_blank" rel="noopener">유튜브 · 인생준준</a><a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">인스타그램 @lifejunjun</a><span>lifejunjun.com</span></div>
     </div>
-    <div class="legal"><span>© 2026 인생준준</span><span>[상호 · 대표자 · 사업자등록번호]</span><span>[관광사업(여행업) 등록번호 또는 제휴 여행사 정보]</span><span>[주소]</span></div>
+    <div class="legal"><span>© 2026 인생준준</span><span>국내외여행업 등록 준비 중 — 지금은 관심·동행 신청만 받고, 결제와 계약은 등록 후 진행해요</span><span>문의 <a href="mailto:probe2928@gmail.com">probe2928@gmail.com</a></span></div>
   </div>
 </footer>
 
@@ -521,6 +521,13 @@ getJSON("packages.json").then(d=>{
   document.getElementById("sg").textContent=d.smallGroupNote;
   document.getElementById("var").textContent=d.varianceNote;
   renderPins();renderFilters();renderGrid();setupForm();
+  // 가장 빠른 출발 칩: 오늘 이후 첫 출발일을 히어로 키커에 표시
+  (()=>{const now=new Date();now.setHours(0,0,0,0);let best=null;
+    d.packages.forEach(p=>p.departures.forEach(s=>{const x=dt(s);if(x>=now&&(!best||x<best.x))best={p,x};}));
+    const c=document.getElementById("nextdep");if(!best||!c)return;
+    const dd=Math.round((best.x-now)/864e5);
+    c.innerHTML="";c.append(el("a",{href:"#trip-"+best.p.id,onclick:e=>{e.preventDefault();const k=document.getElementById("trip-"+best.p.id);if(k)k.scrollIntoView({block:"center"});openTrip(best.p);}},
+      el("i",{"aria-hidden":"true"}),`가장 빠른 출발 ${md(best.x)} ${best.p.sub.replace(/\s*\d+일$/,"")} · D-${dd}`));c.hidden=false;})();
   const sample=d.packages.find(p=>p.id==="kyoto4")||d.packages[0];
   billFor(sample,document.getElementById("bill"));
   // deep link from reels.html: index.html#trip-<id> scrolls to that trip and opens it

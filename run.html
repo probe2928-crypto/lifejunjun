@@ -139,7 +139,8 @@
       <div><b>거의 원가</b><span>항공·숙박·참가비·식사·현지비를 그대로 공개</span></div>
       <div><b>+ 공동 준비·운영비</b><span>일정 짜기, 숙소·교통 예약, 대회 접수 도움, 현장 운영까지 (6명 출발 기준)</span></div>
     </div>
-    <div class="filters" style="margin-top:36px">
+    <div class="rt-ticker" id="ticker" hidden aria-label="지금 접수 중인 대회"><div class="rt-ticker-track" id="ticker-track"></div></div>
+    <div class="filters" style="margin-top:28px">
       <div class="frow" id="f-cat" role="group" aria-label="종목"></div>
       <div class="frow" id="f-st" role="group" aria-label="접수 상태"></div>
     </div>
@@ -158,7 +159,7 @@
       <div class="col"><span class="mono" style="color:#9FA09A">Contact</span><a href="index.html#contact">문의하기</a><a href="index.html#apply">동행 신청</a><a href="community.html?b=qna">여행 문의 게시판</a><a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">인스타그램 DM</a></div>
       <div class="col"><span class="mono" style="color:#9FA09A">Follow</span><a href="https://www.youtube.com/@kaniwast" target="_blank" rel="noopener">유튜브 · 인생준준</a><a href="https://www.instagram.com/lifejunjun/" target="_blank" rel="noopener">인스타그램 @lifejunjun</a><span>lifejunjun.com</span></div>
     </div>
-    <div class="legal"><span>© 2026 인생준준</span><span>[상호 · 대표자 · 사업자등록번호]</span><span>[관광사업(여행업) 등록번호 또는 제휴 여행사 정보]</span><span>[주소]</span></div>
+    <div class="legal"><span>© 2026 인생준준</span><span>국내외여행업 등록 준비 중 — 지금은 관심·동행 신청만 받고, 결제와 계약은 등록 후 진행해요</span><span>문의 <a href="mailto:probe2928@gmail.com">probe2928@gmail.com</a></span></div>
   </div>
 </footer>
 
@@ -207,6 +208,17 @@ function renderList(){
   const g=document.getElementById("grid");g.innerHTML="";
   if(!list.length){g.append(el("p",{class:"small"},"조건에 맞는 대회가 아직 없어요. 매주 새 대회를 추가합니다."));return;}
   list.forEach(r=>g.append(card(r,R.indexOf(r))));
+}
+
+function renderTicker(){
+  const pri={"마감 임박":0,"접수 중":1,"예약 중":1};
+  const hot=DATA.races.filter(r=>r.status in pri).sort((a,b)=>pri[a.status]-pri[b.status]||a.date.localeCompare(b.date));
+  const box=document.getElementById("ticker"),tr=document.getElementById("ticker-track");if(!hot.length||!box)return;
+  const item=r=>el("button",{type:"button",class:"tk"+(r.status==="마감 임박"?" urgent":""),onclick:()=>openDetail(r.id,true)},
+    el("b",{},r.status),el("span",{},`${r.title} · ${fmtDate(r)}`),el("em",{},r.statusNote));
+  const run=el("div",{class:"tk-run"},hot.map(item));
+  const copy=run.cloneNode(true);copy.setAttribute("aria-hidden","true");copy.querySelectorAll("button").forEach((b,i)=>{b.tabIndex=-1;b.onclick=()=>openDetail(hot[i].id,true);});
+  tr.innerHTML="";tr.append(run,copy);tr.style.setProperty("--tk-dur",Math.max(24,hot.length*9)+"s");box.hidden=false;
 }
 
 let MAP=null, anim=null;
@@ -314,6 +326,7 @@ function showList(push){if(anim)cancelAnimationFrame(anim);if(MAP){MAP.remove();
 window.addEventListener("popstate",()=>{const id=new URLSearchParams(location.search).get("id");id?openDetail(id,false):showList(false);});
 getJSON("races.json").then(d=>{DATA=d;
   document.getElementById("upd").textContent="업데이트 "+d.updated.replace(/-/g,".");
+  renderTicker();
   document.getElementById("note").textContent=d.note;
   renderList();
   const id=new URLSearchParams(location.search).get("id");if(id)openDetail(id,false);
