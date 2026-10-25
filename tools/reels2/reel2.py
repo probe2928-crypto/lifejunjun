@@ -161,7 +161,8 @@ def render(spec):
         out = (np.clip(fr, 0, 1) * 255).astype(np.uint8)
         if i == int(.9 * FPS): cover_frame = out.copy()
         enc.stdin.write(out.tobytes())
-    enc.stdin.close(); enc.wait(); dec.wait()
+    enc.stdin.close(); enc.wait()
+    dec.stdout.close(); dec.kill(); dec.wait()   # base may hold a few extra frames: never block on them
     # audio: music trimmed, faded, loudness-normalised
     out = spec["out"]; os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     if spec.get("music"):
