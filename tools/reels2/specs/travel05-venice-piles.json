@@ -1,0 +1,16 @@
+{
+ "id": "travel-05-venice-piles",
+ "music": "raspberry_lofi",
+ "scenes": [
+  {"kind": "hook", "clip": "mixkit:4646", "ss": 1, "beats": 6, "cx": 0.5,
+   "kicker": "이탈리아 베네치아", "lines": ["이 도시는 사실"], "hl": "나무 기둥 위에 있어요", "sub": "물에 떠 있는 게 아니에요"},
+  {"kind": "tip", "clip": "mixkit:4600", "ss": 1, "beats": 8, "n": 1, "of": 3, "cx": 0.5,
+   "lines": ["진흙 바닥 속으로"], "hl": "나무 말뚝 수천 개", "body": ["단단한 점토층까지 박고", "그 위에 판자 · 돌 · 건물"]},
+  {"kind": "tip", "clip": "mixkit:4646", "ss": 6, "beats": 8, "n": 2, "of": 3, "cx": 0.2,
+   "lines": ["리알토 다리 하나에"], "hl": "말뚝 약 1만 4천 개", "body": ["기록으로 전해지는 숫자"]},
+  {"kind": "tip", "clip": "mixkit:4600", "ss": 5, "beats": 8, "n": 3, "of": 3, "cx": 0.75,
+   "lines": ["잘 안 썩는 이유"], "hl": "산소가 없어서", "body": ["물과 진흙 속에선", "나무가 아주 천천히 썩어요"]},
+  {"kind": "cta", "clip": "mixkit:4646", "ss": 10, "beats": 7, "cx": 0.8,
+   "lines": ["베네치아 가면"], "hl": "다리 밑을 보기", "sub": "이탈리아 가는 친구한테 보내기", "brand": "인생준준 · 역사 여행"}
+ ]
+}

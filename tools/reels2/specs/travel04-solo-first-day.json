@@ -1,0 +1,18 @@
+{
+ "id": "travel-04-solo-first-day",
+ "music": "lfm_shoepop",
+ "scenes": [
+  {"kind": "hook", "clip": "mixkit:4642", "ss": 1, "beats": 6, "cx": 0.5,
+   "kicker": "혼자 해외여행 처음이면", "lines": ["첫날은"], "hl": "이것만 하세요", "sub": "공항부터 숙소까지 4가지"},
+  {"kind": "tip", "clip": "mixkit:40102", "ss": 4, "beats": 8, "n": 1, "of": 4, "cx": 0.6,
+   "lines": ["비행기 내리기 전"], "hl": "숙소 가는 길 캡처", "body": ["와이파이 없어도 보이게", "주소는 현지어로도"]},
+  {"kind": "tip", "clip": "mixkit:1623", "ss": 2, "beats": 8, "n": 2, "of": 4, "cx": 0.5,
+   "lines": ["공항에서 바로"], "hl": "유심 · eSIM 개통", "body": ["출국 전 eSIM이면 더 편해요", "도착하자마자 지도 켜기"]},
+  {"kind": "tip", "clip": "mixkit:3429", "ss": 2, "beats": 8, "n": 3, "of": 4, "cx": 0.5,
+   "lines": ["첫날 밤은"], "hl": "숙소 근처만", "body": ["시차 적응이 먼저", "밤길 동선은 낮에 확인"]},
+  {"kind": "tip", "clip": "mixkit:4600", "ss": 2, "beats": 8, "n": 4, "of": 4, "cx": 0.5,
+   "lines": ["여권은"], "hl": "숙소 금고에", "body": ["사본은 폰 · 메일에", "현금은 두 군데로 나눠"]},
+  {"kind": "cta", "clip": "mixkit:5015", "ss": 2, "beats": 7, "cx": 0.5,
+   "lines": ["첫 혼자 여행 전에"], "hl": "저장해두기", "sub": "혼자 떠나는 친구한테 보내기", "brand": "인생준준 · 역사 여행"}
+ ]
+}
