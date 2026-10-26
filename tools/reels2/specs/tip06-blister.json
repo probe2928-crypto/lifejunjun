@@ -1,0 +1,18 @@
+{
+ "id": "tip-06-blister",
+ "music": "bugden_blackheat",
+ "scenes": [
+  {"kind": "hook", "clip": "mixkit:50561", "ss": 2, "beats": 6, "cx": 0.5,
+   "kicker": "트레킹 상식 체크", "lines": ["트레킹 물집,"], "hl": "아프면 이미 늦어요", "sub": "멈춰야 할 신호 + 예방 3가지"},
+  {"kind": "tip", "clip": "mixkit:86", "ss": 4, "beats": 8, "n": 1, "of": 4, "cx": 0.55,
+   "lines": ["빨갛고 화끈하면"], "hl": "그 자리에서 멈춤", "body": ["‘핫스팟’ = 물집 직전 신호", "테이프 붙이고 다시 출발"], "src": "NOLS · 미국하이킹협회"},
+  {"kind": "tip", "clip": "mixkit:43138", "ss": 1, "beats": 8, "n": 2, "of": 4, "cx": 0.6,
+   "lines": ["잘 까지는 자리엔"], "hl": "종이테이프 미리", "body": ["물집 63% → 23%", "울트라마라톤 128명 실험"], "src": "스탠퍼드 의대 · 2016"},
+  {"kind": "tip", "clip": "mixkit:44351", "ss": 2, "beats": 8, "n": 3, "of": 4, "cx": 0.45,
+   "lines": ["젖은 양말은"], "hl": "마찰을 키워요", "body": ["여분 양말 1켤레 필수", "젖은 건 배낭 밖에 말리기"], "src": "미국하이킹협회"},
+  {"kind": "tip", "clip": "mixkit:43147", "ss": 3, "beats": 8, "n": 4, "of": 4, "cx": 0.45,
+   "lines": ["양말은 두 겹"], "hl": "얇은 것 + 두꺼운 것", "body": ["마찰이 피부 대신", "양말 사이에서 생겨요"], "src": "NOLS · Wilderness Medicine"},
+  {"kind": "cta", "clip": "mixkit:43152", "ss": 4, "beats": 7, "cx": 0.55,
+   "lines": ["같이 산 타는 친구한테"], "hl": "보내주기", "sub": "저장해두고 출발 전에 다시 보기"}
+ ]
+}
