@@ -1,0 +1,16 @@
+{
+ "id": "travel-03-alhambra-motto",
+ "music": "raspberry_lofi",
+ "scenes": [
+  {"kind": "hook", "clip": "mixkit:4014", "ss": 1, "beats": 6, "cx": 0.5,
+   "kicker": "스페인 그라나다", "lines": ["알함브라 벽마다"], "hl": "반복해 새긴 한 문장", "sub": "뜻을 알면 다르게 보여요"},
+  {"kind": "tip", "clip": "mixkit:4013", "ss": 1, "beats": 8, "n": 1, "of": 3, "cx": 0.5,
+   "lines": ["왈라 갈리바 일랄라"], "hl": "신 외에 승자는 없다", "body": ["나스르 왕조의 좌우명", "기둥 · 창틀 · 타일 곳곳에"]},
+  {"kind": "tip", "clip": "mixkit:4014", "ss": 6, "beats": 8, "n": 2, "of": 3, "cx": 0.2,
+   "lines": ["전해지는 이야기"], "hl": "'승리자!' 환호에", "body": ["왕은 이렇게 답했대요", "\"승자는 오직 신뿐\""]},
+  {"kind": "tip", "clip": "mixkit:4013", "ss": 5, "beats": 8, "n": 3, "of": 3, "cx": 0.75,
+   "lines": ["그리고 1492년"], "hl": "마지막 왕국의 끝", "body": ["그라나다는 결국 함락", "문장만 벽에 남았어요"]},
+  {"kind": "cta", "clip": "mixkit:4014", "ss": 9, "beats": 7, "cx": 0.8,
+   "lines": ["안달루시아 가면"], "hl": "벽을 천천히 보기", "sub": "같이 갈 사람한테 보내기", "brand": "인생준준 · 역사 여행"}
+ ]
+}

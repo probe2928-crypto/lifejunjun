@@ -1,0 +1,16 @@
+{
+ "id": "travel-02-sensoji-hidden",
+ "music": "raspberry_lofi",
+ "scenes": [
+  {"kind": "hook", "clip": "mixkit:4404", "ss": 0.5, "beats": 6, "cx": 0.5,
+   "kicker": "도쿄 아사쿠사", "lines": ["1,300년 넘게"], "hl": "아무도 못 본 불상", "sub": "센소지에 숨겨진 이야기"},
+  {"kind": "tip", "clip": "mixkit:4403", "ss": 1, "beats": 8, "n": 1, "of": 3, "cx": 0.7,
+   "lines": ["628년, 스미다강"], "hl": "어부 형제의 그물", "body": ["걸려 올라온 건 물고기 대신", "작은 관음상 하나"], "src": "센소지 창건 전설"},
+  {"kind": "tip", "clip": "mixkit:4405", "ss": 1, "beats": 8, "n": 2, "of": 3, "cx": 0.5,
+   "lines": ["645년부터"], "hl": "비공개 불상, 비불", "body": ["한 번도 공개된 적 없어요", "약 5.5cm 금불상이라고만"]},
+  {"kind": "tip", "clip": "mixkit:4404", "ss": 3, "beats": 8, "n": 3, "of": 3, "cx": 0.25,
+   "lines": ["1945년 공습으로"], "hl": "본당은 불탔지만", "body": ["1958년 다시 세운 본당", "불상은 지금도 비공개"]},
+  {"kind": "cta", "clip": "mixkit:4403", "ss": 4, "beats": 7, "cx": 0.3,
+   "lines": ["아사쿠사 가면"], "hl": "본당 앞에서 멈추기", "sub": "같이 갈 사람한테 보내기", "brand": "인생준준 · 역사 여행"}
+ ]
+}
