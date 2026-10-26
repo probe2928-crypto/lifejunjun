@@ -1,0 +1,18 @@
+{
+ "id": "tip-04-first-overseas-race",
+ "music": "infraction_dance",
+ "scenes": [
+  {"kind": "hook", "clip": "mixkit:588", "ss": 1, "beats": 6, "cx": 0.5,
+   "kicker": "해외 마라톤 처음이면", "lines": ["이거 모르고 가면"], "hl": "현지에서 망해요", "sub": "첫 해외 대회 체크 4가지"},
+  {"kind": "tip", "clip": "mixkit:608", "ss": 2, "beats": 8, "n": 1, "of": 4, "cx": 0.5,
+   "lines": ["배번은 대회 전날까지"], "hl": "엑스포 수령 필수", "body": ["당일 수령 안 되는 대회 많음", "항공권보다 먼저 확인"]},
+  {"kind": "tip", "clip": "mixkit:40102", "ss": 3, "beats": 8, "n": 2, "of": 4, "cx": 0.5,
+   "lines": ["시차 있는 곳이면"], "hl": "최소 2일 전 도착", "body": ["수면 리듬부터 맞추기", "전날 도착은 도박"]},
+  {"kind": "tip", "clip": "mixkit:52125", "ss": 2, "beats": 8, "n": 3, "of": 4, "cx": 0.5,
+   "lines": ["출발 시간 기온 체크"], "hl": "새벽 출발 많아요", "body": ["더운 나라는 새벽 출발", "버릴 겉옷 하나 챙기기"]},
+  {"kind": "tip", "clip": "mixkit:4851", "ss": 2, "beats": 8, "n": 4, "of": 4, "cx": 0.5,
+   "lines": ["대회 날 신발·옷·젤"], "hl": "새것 금지", "body": ["최소 3번 신고 뛴 것만", "젤·간식도 먹어본 것만"]},
+  {"kind": "cta", "clip": "mixkit:40881", "ss": 2, "beats": 7, "cx": 0.5,
+   "lines": ["첫 해외 대회 전에"], "hl": "저장해두기", "sub": "같이 나갈 친구한테 보내기"}
+ ]
+}

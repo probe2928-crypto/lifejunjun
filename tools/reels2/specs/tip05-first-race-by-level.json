@@ -1,0 +1,20 @@
+{
+ "id": "tip-05-first-race-by-level",
+ "music": "lfm_shoepop",
+ "scenes": [
+  {"kind": "hook", "clip": "mixkit:32799", "ss": 1, "beats": 6, "cx": 0.5,
+   "kicker": "RUN & TREK", "lines": ["레벨별"], "hl": "첫 해외 러닝 대회", "sub": "저장하고 내 레벨 찾기"},
+  {"kind": "tip", "clip": "mixkit:52125", "ss": 3, "beats": 7, "n": 1, "of": 5, "cx": 0.5,
+   "lines": ["이제 막 10K"], "hl": "치앙마이 10K", "body": ["태국 · 2026.12.20", "새벽에 달리는 10K"]},
+  {"kind": "tip", "clip": "mixkit:1944", "ss": 8, "beats": 7, "n": 2, "of": 5, "cx": 0.5,
+   "lines": ["풍경이 먼저라면"], "hl": "앙코르와트 10K", "body": ["캄보디아 · 2027.12.05", "사원 앞을 달리는 코스"]},
+  {"kind": "tip", "clip": "mixkit:40881", "ss": 5, "beats": 7, "n": 3, "of": 5, "cx": 0.5,
+   "lines": ["축제처럼 즐기려면"], "hl": "사가미호 사쿠라 런", "body": ["도쿄 근교 · 2027.03", "벚꽃 아래 10K"]},
+  {"kind": "tip", "clip": "mixkit:4132", "ss": 2, "beats": 7, "n": 4, "of": 5, "cx": 0.5,
+   "lines": ["트레일 입문이면"], "hl": "돌로미티 10K", "body": ["이탈리아 · 2027.06.23", "누적 상승 약 300m"]},
+  {"kind": "tip", "clip": "mixkit:109", "ss": 3, "beats": 7, "n": 5, "of": 5, "cx": 0.5,
+   "lines": ["달리기 말고 걷기"], "hl": "구마노 고도 2일", "body": ["와카야마 · 2027.04", "천 년 순례길 트레킹"]},
+  {"kind": "cta", "clip": "mixkit:44361", "ss": 2, "beats": 7, "cx": 0.5,
+   "lines": ["내 레벨은 몇 번?"], "hl": "댓글로 알려주기", "sub": "같이 갈 사람 모아요"}
+ ]
+}
