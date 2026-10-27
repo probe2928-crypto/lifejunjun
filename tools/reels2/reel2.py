@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""인생준준 tip reel v2 — native Korean info-reel look (real footage, Pretendard, highlight boxes).
+"""인생준준 tip reel v2 — real footage + documentary lower-third text (style "doc", default) or the old highlight-box look (style "box").
 
 usage: python reel2.py spec.json [--sheet]      full render (needs local clips + music file)
        python reel2.py spec.json --layout out.jpg  text-layout check only (no footage needed; grey stand-in)
@@ -80,7 +80,75 @@ def text_block(rows, align="center", pad=40):
     return im, spans
 
 
+# ---------- "doc" style (default since 2026-10-27): documentary lower-third, no boxes ----------
+DOC_X, DOC_ROOM = 84, 860          # keep clear of Instagram's right-hand buttons
+DOC_BOTTOM = 1590                  # keep clear of Instagram's caption area
+
+
+def _fit(txt, f, room):
+    while f.getlength(txt) > room and f.size > 26: f = f.font_variant(size=f.size - 2)
+    return f
+
+
+def doc_layers(sc):
+    k = sc["kind"]; rows = []   # (kind, text, font, rgba, gap_after)
+    tag = sc.get("tag") or sc.get("_tag") or (sc.get("kicker") if k == "hook" else "")
+    if k == "tip": tag = (tag + "   " if tag else "") + f"{sc['n']:02d} / {sc['of']:02d}"
+    if tag: rows.append(("track", tag.upper(), F("SemiBold", 30), (255, 255, 255, 205), 30))
+    if sc.get("big"): rows.append(("txt", sc["big"], F("Medium", 230), WHITE, 18))
+    for ln in sc.get("lines", []) + ([sc["hl"]] if sc.get("hl") else []):
+        rows.append(("txt", ln, F("Bold", 68), WHITE, 14))
+    if rows and rows[-1][4] == 14: rows[-1] = rows[-1][:4] + (30,)
+    for ln in sc.get("body", []) + ([sc["sub"]] if sc.get("sub") else []):
+        rows.append(("txt", ln, F("Medium", 42), (255, 255, 255, 215), 12))
+    if sc.get("src"): rows.append(("txt", "출처 · " + sc["src"], F("Medium", 28), (255, 255, 255, 150), 0))
+    if k == "cta": rows.append(("rule", "인생준준 · 직접 다녀온 여행" if "brand" not in sc else sc["brand"], F("SemiBold", 28), (255, 255, 255, 185), 0))
+    meas = []
+    for kind, txt, f, fill, gap in rows:
+        if kind == "track":
+            w = sum(f.getlength(c) + 6 for c in txt)
+            while w > DOC_ROOM and f.size > 20:
+                f = f.font_variant(size=f.size - 2); w = sum(f.getlength(c) + 6 for c in txt)
+        else:
+            f0 = f; f = _fit(txt, f, DOC_ROOM - (56 if kind == "rule" else 0))
+            if f.size < f0.size: print(f"  shrunk to {f.size}px: {txt}")
+        asc, desc = f.getmetrics(); meas.append((kind, txt, f, fill, gap, asc + desc))
+    pad = 40; total = sum(m[5] + m[4] for m in meas) + pad * 2
+    im = Image.new("RGBA", (W, total), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    y = pad; spans = []
+    for kind, txt, f, fill, gap, h in meas:
+        x = DOC_X
+        if kind == "track":
+            for c in txt: d.text((x, y), c, font=f, fill=fill); x += f.getlength(c) + 6
+        elif kind == "rule":
+            d.rectangle((x, y + h // 2 - 2, x + 40, y + h // 2 + 1), fill=fill); d.text((x + 56, y), txt, font=f, fill=fill)
+        else:
+            d.text((x - (8 if f.size > 150 else 0), y), txt, font=f, fill=fill)
+        spans.append((y, y + h)); y += h + gap
+    im = shadowed(im, blur=16, op=.55, dy=4)
+    top = int(sc.get("bottom", DOC_BOTTOM)) - (total - pad)
+    return np.asarray(im).astype(np.float32) / 255, spans, top
+
+
+def grad_for(style):
+    yy = np.linspace(0, 1, H)[:, None, None]
+    if style == "box":
+        return (0.50 * np.clip(1 - (yy - .12) / .55, 0, 1) ** 1.4 + 0.10).astype(np.float32)
+    return (0.80 * np.clip((yy - .40) / .60, 0, 1) ** 1.5 + 0.04).astype(np.float32)
+
+
+def prep_style(spec):
+    tag = spec.get("tag", "")
+    for sc in spec["scenes"]:
+        sc["_style"] = spec.get("style", "doc"); sc.setdefault("_tag", tag)
+
+
 def layers_for(sc):
+    if sc.get("_style", "doc") != "box": return doc_layers(sc)
+    return box_layers(sc)
+
+
+def box_layers(sc):
     k = sc["kind"]; rows = []
     if k == "hook":
         if sc.get("kicker"): rows.append(("pill", sc["kicker"], F("Bold", 38), LIME, 26))
@@ -134,10 +202,10 @@ def render(spec):
     starts, t = [], 0.
     for sc in spec["scenes"]: starts.append(t); t += sc["_dur"]
     total = t; N = int(round(total * FPS))
-    L = [layers_for(sc) for sc in spec["scenes"]]
+    prep_style(spec); L = [layers_for(sc) for sc in spec["scenes"]]
     # legibility gradient: dark top 65 % fading out
     yy = np.linspace(0, 1, H)[:, None, None]
-    grad = (0.50 * np.clip(1 - (yy - .12) / .55, 0, 1) ** 1.4 + 0.10).astype(np.float32)
+    prep_style(spec); grad = grad_for(spec.get("style", "doc"))
     dec = subprocess.Popen(["ffmpeg", "-v", "error", "-i", base, "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
     vid = os.path.join(work, "video.mp4")
     enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
@@ -159,8 +227,8 @@ def render(spec):
         lay, spans, top = L[k]; kind = spec["scenes"][k]["kind"]
         # staggered row reveal (hook row 0..n visible from frame 0 so the first frame already hooks)
         for r, (y0, y1) in enumerate(spans):
-            delay = 0 if kind == "hook" and r < 3 else .06 + r * .09
-            a = ease((lt - delay) / .16) if not (kind == "hook" and r < 3) else 1.
+            delay = 0 if kind == "hook" else .06 + r * .09
+            a = ease((lt - delay) / .16) if kind != "hook" else 1.
             if a <= 0: continue
             off = int((1 - a) * 28); pad = 40
             ys, ye = max(0, y0 - pad + 0), min(lay.shape[0], y1 + pad)
@@ -203,7 +271,7 @@ def sheet(spec, out, total):
 def layout(spec, path):
     """Text overlays of every scene on a grey stand-in frame (reports any row the auto-fit had to shrink)."""
     yy = np.linspace(0, 1, H)[:, None, None]
-    grad = (0.50 * np.clip(1 - (yy - .12) / .55, 0, 1) ** 1.4 + 0.10).astype(np.float32)
+    prep_style(spec); grad = grad_for(spec.get("style", "doc"))
     ims = []
     for sc in spec["scenes"]:
         fr = np.full((H, W, 3), .55, np.float32) * (1 - grad)

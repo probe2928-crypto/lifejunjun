@@ -1,0 +1,87 @@
+{
+ "id": "own-04-singapore-chope",
+ "music": "raspberry_lofi",
+ "scenes": [
+  {
+   "kind": "hook",
+   "clip": "mixkit:own_sg_hawker",
+   "ss": 0.3,
+   "beats": 6,
+   "cx": 0.45,
+   "big": "CHOPE",
+   "lines": [
+    "테이블 위 휴지 한 통,"
+   ],
+   "hl": "치우면 안 돼요",
+   "sub": "싱가포르 호커센터 규칙"
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_sg_nasi",
+   "ss": 1.5,
+   "beats": 8,
+   "n": 1,
+   "of": 3,
+   "cx": 0.6,
+   "lines": [
+    "휴지 = 자리 찜"
+   ],
+   "hl": "'초프'라고 불러요",
+   "body": [
+    "줄 서기 전에 휴지·우산을",
+    "올려 자리부터 맡아요"
+   ]
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_sg_trays",
+   "ss": 1.5,
+   "beats": 8,
+   "n": 2,
+   "of": 3,
+   "cx": 0.5,
+   "big": "S$300",
+   "lines": [
+    "다 먹은 쟁반을 두고 가면"
+   ],
+   "hl": "벌금이에요",
+   "body": [
+    "2021년 9월부터 단속",
+    "두 번째 적발부터 벌금"
+   ]
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_sg_menu",
+   "ss": 0,
+   "beats": 8,
+   "n": 3,
+   "of": 3,
+   "cx": 0.5,
+   "speed": 0.6,
+   "big": "2020",
+   "lines": [
+    "이 식문화 자체가"
+   ],
+   "hl": "유네스코 무형유산",
+   "body": [
+    "길거리 노점에서 시작된",
+    "싱가포르의 부엌"
+   ]
+  },
+  {
+   "kind": "cta",
+   "clip": "mixkit:own_sg_puffs",
+   "ss": 1,
+   "beats": 7,
+   "cx": 0.5,
+   "lines": [
+    "싱가포르에 가면"
+   ],
+   "hl": "휴지부터 챙기세요",
+   "sub": "싱가포르 가는 친구한테 보내기",
+   "brand": "인생준준 · 직접 다녀온 여행"
+  }
+ ],
+ "tag": "SINGAPORE · HAWKER CENTRE"
+}

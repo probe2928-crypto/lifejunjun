@@ -1,0 +1,87 @@
+{
+ "id": "own-05-singapore-hdb-cat",
+ "music": "raspberry_lofi",
+ "scenes": [
+  {
+   "kind": "hook",
+   "clip": "mixkit:own_sg_cat",
+   "ss": 0.2,
+   "beats": 6,
+   "cx": 0.4,
+   "big": "35년",
+   "lines": [
+    "싱가포르 아파트에서"
+   ],
+   "hl": "고양이는 불법이었어요",
+   "sub": "공공아파트 HDB 이야기"
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_sg_hdb",
+   "ss": 0,
+   "beats": 8,
+   "n": 1,
+   "of": 3,
+   "cx": 0.5,
+   "big": "1989",
+   "lines": [
+    "이때부터"
+   ],
+   "hl": "HDB 고양이 금지",
+   "body": [
+    "싱가포르 공공아파트",
+    "HDB에선 못 키웠어요"
+   ]
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_sg_shop",
+   "ss": 1,
+   "beats": 8,
+   "n": 2,
+   "of": 3,
+   "cx": 0.35,
+   "big": "2024",
+   "lines": [
+    "9월부터"
+   ],
+   "hl": "한 집 2마리까지 OK",
+   "body": [
+    "마이크로칩 심고 등록하면",
+    "합법이 됐어요"
+   ]
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_sg_cat",
+   "ss": 5,
+   "beats": 8,
+   "n": 3,
+   "of": 3,
+   "cx": 0.5,
+   "big": "11만+",
+   "lines": [
+    "2년 유예가 끝난 지금"
+   ],
+   "hl": "등록된 고양이",
+   "body": [
+    "숨어 살던 고양이들이",
+    "등록을 마친 셈이에요"
+   ]
+  },
+  {
+   "kind": "cta",
+   "clip": "mixkit:own_sg_bikes",
+   "ss": 1,
+   "beats": 7,
+   "cx": 0.5,
+   "lines": [
+    "싱가포르 단지에 가면"
+   ],
+   "hl": "고양이를 찾아보세요",
+   "sub": "고양이 좋아하는 친구한테 보내기",
+   "brand": "인생준준 · 직접 다녀온 여행"
+  }
+ ],
+ "tag": "SINGAPORE · HDB"
+}
