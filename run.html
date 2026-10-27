@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>/* 방문 집계 (화면 표시 없음) */(function(){try{var S="ljj",N="lifejunjun-stats",A="https://abacus.jasoncameron.dev/hit/"+N+"/",d=new Date(Date.now()+324e5).toISOString().slice(0,10).replace(/-/g,"");function h(k){try{fetch(A+S+"_"+k,{keepalive:true}).catch(function(){})}catch(e){}}var q=location.search,r=document.referrer||"",u=navigator.userAgent||"",sns=/fbclid=|utm_source=(facebook|instagram|ig|meta|fb)/i.test(q)||/instagram\.com|facebook\.com/i.test(r)||/Instagram|FBAN|FBAV/.test(u),seen=null;try{seen=localStorage.getItem("_v"+S)}catch(e){}h("pv_"+d);if(seen!==d){h("uv_"+d);if(sns)h("sns_"+d);try{localStorage.setItem("_v"+S,d)}catch(e){}}var F=window.fetch;window.fetch=function(x){var p=F.apply(this,arguments);try{if(String(x&&x.url||x).indexOf("formsubmit.co")>-1)p.then(function(res){res.clone().json().then(function(j){if(j&&(j.success===true||j.success==="true"))h("apply_"+d)}).catch(function(){})}).catch(function(){})}catch(e){}return p}}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#F3F4F1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23C8261C'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='white' font-family='serif' font-weight='900'%3E준%3C/text%3E%3C/svg%3E">

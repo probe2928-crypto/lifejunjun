@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>/* 방문 집계 (화면 표시 없음) */(function(){try{var S="ljj",N="lifejunjun-stats",A="https://abacus.jasoncameron.dev/hit/"+N+"/",d=new Date(Date.now()+324e5).toISOString().slice(0,10).replace(/-/g,"");function h(k){try{fetch(A+S+"_"+k,{keepalive:true}).catch(function(){})}catch(e){}}var q=location.search,r=document.referrer||"",u=navigator.userAgent||"",sns=/fbclid=|utm_source=(facebook|instagram|ig|meta|fb)/i.test(q)||/instagram\.com|facebook\.com/i.test(r)||/Instagram|FBAN|FBAV/.test(u),seen=null;try{seen=localStorage.getItem("_v"+S)}catch(e){}h("pv_"+d);if(seen!==d){h("uv_"+d);if(sns)h("sns_"+d);try{localStorage.setItem("_v"+S,d)}catch(e){}}var F=window.fetch;window.fetch=function(x){var p=F.apply(this,arguments);try{if(String(x&&x.url||x).indexOf("formsubmit.co")>-1)p.then(function(res){res.clone().json().then(function(j){if(j&&(j.success===true||j.success==="true"))h("apply_"+d)}).catch(function(){})}).catch(function(){})}catch(e){}return p}}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>릴스에서 본 그곳 — 인생준준</title>
 <meta name="description" content="인생준준 릴스에 나온 TOP 5 코스와 여행지를 한곳에. 마음에 든 곳을 누르면 대회·여행 정보로 바로 이어집니다.">
