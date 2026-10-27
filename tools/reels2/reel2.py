@@ -209,7 +209,7 @@ def render(spec):
     dec = subprocess.Popen(["ffmpeg", "-v", "error", "-i", base, "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
     vid = os.path.join(work, "video.mp4")
     enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
-                            "-i", "-", "-c:v", "libx264", "-crf", "16", "-preset", "slow", "-profile:v", "high",
+                            "-i", "-", "-c:v", "libx264", "-crf", "19", "-maxrate", "8M", "-bufsize", "16M", "-preset", "slow", "-profile:v", "high",
                             "-pix_fmt", "yuv420p", vid], stdin=subprocess.PIPE)
     cover_frame = None
     for i in range(N):
