@@ -1,0 +1,290 @@
+{
+ "id": "dolma_v9",
+ "shots": [
+  {
+   "clip": "/home/claude/own/clips/own_dol2_p5b.mp4",
+   "dur": 4.52,
+   "vf": "hqdn3d=2:2:6:6,eq=brightness=0.03:contrast=1.06,colorbalance=rs=-0.06:bs=0.06:rh=-0.05:bh=0.05,curves=all='0/0 0.75/0.70 1/0.92',unsharp=5:5:0.6"
+  },
+  {
+   "clip": "/home/claude/own/clips/own_tr_src.mp4",
+   "dur": 1.1,
+   "ss": 18.78
+  },
+  {
+   "clip": "/home/claude/own/clips/own_tr_src.mp4",
+   "dur": 1.71,
+   "ss": 19.86
+  },
+  {
+   "clip": "/home/claude/own/clips/own_dol2_p2.mp4",
+   "dur": 2.16,
+   "vf": "hqdn3d=2:2:6:6,eq=brightness=0.03:contrast=1.06"
+  },
+  {
+   "clip": "/home/claude/own/clips/own_dol2_p3.mp4",
+   "dur": 4.31,
+   "vf": "hqdn3d=2:2:6:6,eq=brightness=0.03:contrast=1.06"
+  },
+  {
+   "clip": "/home/claude/own/clips/own_dol2_p4.mp4",
+   "dur": 2.65,
+   "vf": "hqdn3d=2:2:6:6,eq=brightness=0.03:contrast=1.06"
+  },
+  {
+   "clip": "/home/claude/own/clips/own_dol2_p5c.mp4",
+   "dur": 3.76,
+   "vf": "hqdn3d=2:2:6:6,eq=brightness=0.03:contrast=1.06"
+  },
+  {
+   "clip": "/home/claude/own/clips/own_siren_ist.mp4",
+   "dur": 5.38,
+   "ss": 4.0
+  },
+  {
+   "clip": "/home/claude/own/clips/own_siren_ist2.mp4",
+   "dur": 3.64,
+   "ss": 3.0,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "zy": 0.55
+  },
+  {
+   "clip": "/home/claude/own/clips/own_tr_src.mp4",
+   "dur": 6.01,
+   "ss": 42.15,
+   "freeze": 0.55,
+   "freeze_sat": 1.0,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "zy": 0.35
+  }
+ ],
+ "audio": {
+  "music": "/home/claude/r3/raspberry_lofi.m4a",
+  "music_ss": 20.67,
+  "music_vol": 0.18,
+  "duck": [
+   [
+    20.2,
+    30.3,
+    0.25
+   ]
+  ],
+  "voice": "/home/claude/r3/voice_dolma5.wav",
+  "voice_delay": 0.15,
+  "sfx": [
+   {
+    "path": "/mnt/user-data/uploads/out/S_53032875.webm",
+    "t": 20.21,
+    "ss": 4.2,
+    "dur": 10.0,
+    "vol": 1.0,
+    "fo": 0.3,
+    "env": [
+     [
+      0,
+      0.35
+     ],
+     [
+      2.0,
+      0.35
+     ],
+     [
+      2.25,
+      2.6
+     ],
+     [
+      3.45,
+      2.6
+     ],
+     [
+      3.7,
+      0.9
+     ],
+     [
+      8.5,
+      0.9
+     ],
+     [
+      9.5,
+      0.0
+     ]
+    ]
+   }
+  ]
+ },
+ "cover_t": 1.0,
+ "layout": "full",
+ "style": {
+  "sub_font": "BlackHanSans-Regular.ttf",
+  "sub_size": 104,
+  "sub_y": 0.36,
+  "stroke": 9,
+  "shadow": 0.55,
+  "vignette": 0.2,
+  "end_font": "BlackHanSans-Regular.ttf",
+  "small_font": "Pretendard-Bold.otf",
+  "room": 800
+ },
+ "subs": [
+  {
+   "t0": 0.0,
+   "t1": 2.09,
+   "text": "매년 아침\n[9시 5분]",
+   "y": 0.33
+  },
+  {
+   "t0": 2.09,
+   "t1": 4.52,
+   "text": "튀르키예 거리가\n[멈추는] 이유, 아세요?",
+   "y": 0.33
+  },
+  {
+   "t0": 4.52,
+   "t1": 7.33,
+   "text": "그 이유가\n[이스탄불]의 이 궁전에"
+  },
+  {
+   "t0": 7.33,
+   "t1": 9.49,
+   "text": "[1938년 11월 10일]"
+  },
+  {
+   "t0": 9.49,
+   "t1": 11.61,
+   "text": "튀르키예의 국부\n[아타튀르크]가"
+  },
+  {
+   "t0": 11.61,
+   "t1": 13.8,
+   "text": "이 방에서\n세상을 떠났습니다"
+  },
+  {
+   "t0": 13.8,
+   "t1": 16.45,
+   "text": "그때 시각이\n아침 [9시 5분]"
+  },
+  {
+   "t0": 16.45,
+   "t1": 17.51,
+   "text": "그래서\n이 방 시계는"
+  },
+  {
+   "t0": 17.51,
+   "t1": 20.21,
+   "text": "지금도\n[9시 5분]에 멈춰 있어요"
+  },
+  {
+   "t0": 20.21,
+   "t1": 23.81,
+   "text": "그리고 매년 그날\n그 시각이 되면"
+  },
+  {
+   "t0": 23.81,
+   "t1": 25.59,
+   "text": "전국에\n[사이렌]이 울리고"
+  },
+  {
+   "t0": 25.59,
+   "t1": 27.33,
+   "text": "거리의 사람도\n차도"
+  },
+  {
+   "t0": 27.33,
+   "t1": 29.23,
+   "text": "그 자리에\n[멈춰 섭니다]"
+  },
+  {
+   "t0": 32.46,
+   "t1": 35.24,
+   "text": "가시면 이 시계를\n꼭 찾아보세요",
+   "y": 0.7
+  }
+ ],
+ "overlays": [
+  {
+   "type": "text",
+   "t0": 0.0,
+   "t1": 4.52,
+   "text": "[9시 5분]에 멈춘 시계",
+   "size": 100,
+   "yc": 0.19,
+   "stroke": 8,
+   "room": 920
+  },
+  {
+   "type": "ring",
+   "t0": 0.0,
+   "t1": 4.52,
+   "cx": 550,
+   "cy": 965,
+   "r": 180,
+   "width": 12
+  },
+  {
+   "type": "ring",
+   "t0": 16.6,
+   "t1": 20.21,
+   "cx": 540,
+   "cy": 960,
+   "r": 300,
+   "width": 12
+  },
+  {
+   "type": "tag",
+   "t0": 20.21,
+   "t1": 29.23,
+   "text": "실제 영상 · 2016.11.10 09:05 이스탄불",
+   "size": 38,
+   "x": 60,
+   "y": 240
+  },
+  {
+   "type": "tag",
+   "t0": 20.21,
+   "t1": 29.23,
+   "text": "영상·음원: VikiPicture / Wikimedia Commons · CC BY-SA 4.0",
+   "size": 26,
+   "x": 40,
+   "y": 1490,
+   "bg": [
+    0,
+    0,
+    0,
+    110
+   ]
+  },
+  {
+   "type": "endcard",
+   "t0": 29.23,
+   "t1": 35.3,
+   "lines": [
+    "돌마바흐체 궁전"
+   ],
+   "sub": "튀르키예 · 이스탄불",
+   "size": 128,
+   "sub_size": 60,
+   "yc": 0.27,
+   "panel": false
+  }
+ ],
+ "out": "/home/claude/r3/dolma_v9.mp4",
+ "cover": "/home/claude/r3/dolma_v9.jpg",
+ "sheet_t": [
+  0.0,
+  3.0,
+  6.0,
+  8.5,
+  12.5,
+  18.5,
+  22.8,
+  27.0,
+  31.0,
+  34.5
+ ]
+}
