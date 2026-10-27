@@ -1,0 +1,11 @@
+{"id":"own-01-dolmabahce-905","music":"raspberry_lofi","scenes":[
+ {"kind":"hook","clip":"mixkit:own_dolma_hook","ss":0,"beats":6,"cx":0.5,
+  "kicker":"튀르키예 이스탄불","lines":["이 궁전 시계 하나는"],"hl":"9시 5분에 멈춤","sub":"돌마바흐체 궁전 이야기"},
+ {"kind":"tip","clip":"mixkit:own_dolma_t1","ss":0,"beats":8,"n":1,"of":3,"cx":0.5,
+  "lines":["1856년 완공"],"hl":"술탄의 새 궁전","body":["천장 금박만 14톤이라는","유럽식 오스만 궁전"]},
+ {"kind":"tip","clip":"mixkit:own_dolma_t2","ss":0,"beats":8,"n":2,"of":3,"cx":0.5,
+  "lines":["1938년 11월 10일"],"hl":"아타튀르크 서거","body":["튀르키예 건국의 아버지가","이 궁전에서 오전 9시 5분"]},
+ {"kind":"tip","clip":"mixkit:own_dolma_t3","ss":0,"beats":8,"n":3,"of":3,"cx":0.5,
+  "lines":["그 방 시계는"],"hl":"지금도 9시 5분","body":["매년 11월 10일 9시 5분","전국에 사이렌, 모두 멈춰요"]},
+ {"kind":"cta","clip":"mixkit:own_dolma_cta","ss":0,"beats":7,"cx":0.5,
+  "lines":["돌마바흐체 가면"],"hl":"그 방 시계 보기","sub":"이스탄불 가는 친구한테 보내기","brand":"인생준준 · 직접 다녀온 역사 여행"}]}

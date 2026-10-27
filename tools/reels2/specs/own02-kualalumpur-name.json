@@ -1,0 +1,85 @@
+{
+ "id": "own-02-kualalumpur-name",
+ "music": "raspberry_lofi",
+ "scenes": [
+  {
+   "kind": "hook",
+   "clip": "mixkit:own_kl_night",
+   "ss": 0.3,
+   "beats": 6,
+   "cx": 0.5,
+   "kicker": "말레이시아 쿠알라룸푸르",
+   "lines": [
+    "이 도시 이름 뜻은"
+   ],
+   "hl": "진흙탕 합류점",
+   "sub": "강 두 개가 만나는 곳"
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_kl_night",
+   "ss": 5,
+   "beats": 8,
+   "n": 1,
+   "of": 3,
+   "cx": 0.5,
+   "lines": [
+    "1857년 주석 찾아"
+   ],
+   "hl": "광부 87명",
+   "body": [
+    "클랑강과 곰박강이",
+    "만나는 진흙 강가로"
+   ]
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_kl_petaling",
+   "ss": 0.4,
+   "beats": 8,
+   "n": 2,
+   "of": 3,
+   "cx": 0.2,
+   "lines": [
+    "광산 마을을 키운"
+   ],
+   "hl": "얍아로이",
+   "body": [
+    "1869년 중국인 캡틴이 되어",
+    "마을 질서를 세웠어요"
+   ],
+   "speed": 0.75
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_kl_petaling",
+   "ss": 0,
+   "beats": 8,
+   "n": 3,
+   "of": 3,
+   "cx": 0.68,
+   "lines": [
+    "광산 가던 그 길이"
+   ],
+   "hl": "지금 페탈링 거리",
+   "body": [
+    "별명은 '타피오카 방앗간 길'",
+    "지금은 차이나타운"
+   ],
+   "speed": 0.65
+  },
+  {
+   "kind": "cta",
+   "clip": "mixkit:own_kl_night",
+   "ss": 11,
+   "beats": 7,
+   "cx": 0.5,
+   "lines": [
+    "쿠알라룸푸르 가면"
+   ],
+   "hl": "페탈링 거리부터",
+   "sub": "KL 가는 친구한테 보내기",
+   "brand": "인생준준 · 직접 다녀온 역사 여행"
+  }
+ ]
+}

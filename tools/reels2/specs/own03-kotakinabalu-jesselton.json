@@ -1,0 +1,85 @@
+{
+ "id": "own-03-kotakinabalu-jesselton",
+ "music": "raspberry_lofi",
+ "scenes": [
+  {
+   "kind": "hook",
+   "clip": "mixkit:own_kk_sunset",
+   "ss": 0.3,
+   "beats": 6,
+   "cx": 0.5,
+   "kicker": "말레이시아 코타키나발루",
+   "lines": [
+    "이 도시는 80년 전"
+   ],
+   "hl": "거의 다 불탔어요",
+   "sub": "원래 이름은 제셀턴"
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_kk_river",
+   "ss": 0.5,
+   "beats": 8,
+   "n": 1,
+   "of": 3,
+   "cx": 0.5,
+   "lines": [
+    "1899년 항구 도시"
+   ],
+   "hl": "제셀턴",
+   "body": [
+    "영국 북보르네오 회사가",
+    "임원 이름을 붙였어요"
+   ]
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_kk_rain",
+   "ss": 6,
+   "beats": 8,
+   "n": 2,
+   "of": 3,
+   "cx": 0.92,
+   "lines": [
+    "1944~45년"
+   ],
+   "hl": "연합군 폭격",
+   "body": [
+    "일본군이 점령한 도시라",
+    "거의 다 무너졌어요"
+   ],
+   "speed": 0.7
+  },
+  {
+   "kind": "tip",
+   "clip": "mixkit:own_kk_city",
+   "ss": 7,
+   "beats": 8,
+   "n": 3,
+   "of": 3,
+   "cx": 0.46,
+   "lines": [
+    "살아남은 건물"
+   ],
+   "hl": "딱 3곳",
+   "body": [
+    "1905년 앳킨슨 시계탑도",
+    "그중 하나예요"
+   ],
+   "speed": 0.9
+  },
+  {
+   "kind": "cta",
+   "clip": "mixkit:own_kk_sunset",
+   "ss": 4.0,
+   "beats": 7,
+   "cx": 0.5,
+   "lines": [
+    "코타키나발루 가면"
+   ],
+   "hl": "시계탑부터 보기",
+   "sub": "보르네오 가는 친구한테 보내기",
+   "brand": "인생준준 · 직접 다녀온 역사 여행"
+  }
+ ]
+}
