@@ -29,10 +29,14 @@ for j in jobs:
             (OUT / f"{j['name']}.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
             for pid, p in (data.get("query", {}).get("pages", {}) or {}).items():
                 ii = p["imageinfo"][0]
-                src = ii.get("thumburl") if "image" in ii.get("mime", "") else None
-                if src:
-                    with urllib.request.urlopen(urllib.request.Request(src, headers=UA), timeout=120) as r:
+                mime = ii.get("mime", "")
+                if "image" in mime and ii.get("thumburl"):
+                    with urllib.request.urlopen(urllib.request.Request(ii["thumburl"], headers=UA), timeout=120) as r:
                         (OUT / f"{j['name']}_{pid}.jpg").write_bytes(r.read())
+                elif ("video" in mime or "ogg" in mime) and ii.get("size", 0) < 60_000_000:
+                    ext = ii["url"].split("?")[0].rsplit(".", 1)[-1]
+                    with urllib.request.urlopen(urllib.request.Request(ii["url"], headers=UA), timeout=300) as r:
+                        (OUT / f"{j['name']}_{pid}.{ext}").write_bytes(r.read())
             log.append(f"commons {j['name']} ok")
     except Exception as e:
         log.append(f"FAIL {j.get('name')} {e!r}"); traceback.print_exc()
