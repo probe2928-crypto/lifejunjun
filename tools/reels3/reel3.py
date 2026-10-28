@@ -126,9 +126,9 @@ def build_base(spec, work, bw, bh):
     for k, s in enumerate(spec["shots"]):
         out = os.path.join(work, f"shot{k:02d}.mp4"); segs_.append(out)
         cx, cy = s.get("cx", .5), s.get("cy", .5)
-        vf = (f"scale={bw}:{bh}:force_original_aspect_ratio=increase:flags=lanczos,"
+        vf = ((s["pre"] + ",") if s.get("pre") else "") + (f"scale={bw}:{bh}:force_original_aspect_ratio=increase:flags=lanczos,"
               f"crop={bw}:{bh}:(iw-{bw})*{cx}:(ih-{bh})*{cy},fps={FPS},eq=contrast=1.04:saturation=1.08"
-              + ("," + s["vf"] if s.get("vf") else "") + ",format=yuv420p")
+              + ("," + s["vf"] if s.get("vf") else "") + f",tpad=stop_mode=clone:stop_duration={s['dur'] + 1:.2f},format=yuv420p")
         run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", str(s.get("ss", 0)), "-t", f"{s['dur'] + .2:.3f}", "-i", s["clip"],
              "-vf", vf, "-t", f"{s['dur']:.3f}", "-an", "-c:v", "libx264", "-crf", "14", "-preset", "fast", out])
     lst = os.path.join(work, "list.txt")
@@ -211,6 +211,10 @@ def render(spec):
                              stroke=o.get("stroke", st.get("stroke", 7)), gap=8, room=o.get("room", st.get("room", 800)),
                              accent=tuple(st.get("accent", (255, 214, 64, 255))), shadow=.55)
             o.setdefault("x", 0); o.setdefault("y", int(o.get("yc", .2) * H) - im.height // 2)
+        elif o["type"] == "flash":
+            im = Image.new("RGBA", (W, H), (255, 255, 255, 255)); o["x"] = 0; o["y"] = 0
+        elif o["type"] == "counter":  # number counting up: {to, dur, prefix, suffix, size, yc}
+            im = None
         elif o["type"] == "magnify":
             im = magnifier(o["src"], o["box"], o.get("r", 250), tuple(o.get("ring", (235, 40, 40, 255))))
             o.setdefault("x", int(o.get("cx", W / 2) - im.width / 2)); o.setdefault("y", int(o.get("cy", H * .72) - im.height / 2))
@@ -254,7 +258,7 @@ def render(spec):
     enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                             "-i", "-", "-c:v", "libx264", "-crf", "19", "-maxrate", "8M", "-bufsize", "16M", "-preset", "slow",
                             "-pix_fmt", "yuv420p", vid], stdin=subprocess.PIPE)
-    cover = None; held = {}
+    cover = None; held = {}; _cnt = {}
     for i in range(N):
         raw = dec.stdout.read(bw * bh * 3)
         if len(raw) < bw * bh * 3: break
@@ -289,6 +293,15 @@ def render(spec):
                 bob = 14 * math.sin(lt2 * 7)
                 ang = math.radians(o.get("angle", 0)); x -= bob * math.cos(ang); y += bob * math.sin(ang)
             if o["type"] == "endcard": y += int((1 - a) * 30)
+            if o["type"] == "flash": a = max(0.0, 1 - lt2 / max(o["t1"] - o["t0"], .01)) * o.get("peak", .85)
+            if o["type"] == "counter":
+                v = int(round(o["to"] * (1 - (1 - min(lt2 / o.get("dur", 1.6), 1)) ** 3)))
+                s_ = o.get("prefix", "") + f"{v:,}" + (o.get("suffix", "") if v >= o["to"] else "")
+                key = ("cnt", s_)
+                if key not in _cnt:
+                    _cnt[key], _ = text_img([s_], o.get("font", st.get("sub_font", "Pretendard-Black.otf")), o.get("size", 170),
+                                            fill=tuple(o.get("color", (255, 214, 64, 255))), stroke=o.get("stroke", 10), shadow=.6, room=1000)
+                im = _cnt[key]; x = 0; y = int(o.get("yc", .55) * H) - im.height // 2; a = 1.0
             paste(canvas, im, x, y, alpha=a)
         for t0, t1, im, y, pop in caps:
             if t0 <= tt < t1:
