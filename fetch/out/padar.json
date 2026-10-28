@@ -1,0 +1,387 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 8,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "175635479": {
+    "pageid": 175635479,
+    "ns": 6,
+    "title": "File:Padar Island, Komodo National Park, Indonesia, 20250822 0908 2633.jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 22039852,
+      "width": 5292,
+      "height": 3509,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0908_2633.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0908_2633.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1061,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0908_2633.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0908_2633.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0908_2633.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0908_2633.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1061,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0908_2633.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0908_2633.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0908_2633.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Padar_Island,_Komodo_National_Park,_Indonesia,_20250822_0908_2633.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175635479",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "View of Padar Island from the southern viewpoint, Komodo National Park, Indonesia",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jakubhal\" title=\"User:Jakubhal\">Jakub Hałun</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "175635478": {
+    "pageid": 175635478,
+    "ns": 6,
+    "title": "File:Padar Island, Komodo National Park, Indonesia, 20250822 0911 2638.jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 22671758,
+      "width": 5608,
+      "height": 3720,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0911_2638.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0911_2638.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1061,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0911_2638.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0911_2638.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0911_2638.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0911_2638.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1061,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0911_2638.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0911_2638.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0911_2638.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Padar_Island,_Komodo_National_Park,_Indonesia,_20250822_0911_2638.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175635478",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "View of Padar Island from the southern viewpoint, Komodo National Park, Indonesia",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jakubhal\" title=\"User:Jakubhal\">Jakub Hałun</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "175635484": {
+    "pageid": 175635484,
+    "ns": 6,
+    "title": "File:Padar Island, Komodo National Park, Indonesia, 20250822 0913 2640.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 24019909,
+      "width": 5857,
+      "height": 3884,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0913_2640.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0913_2640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1061,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0913_2640.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0913_2640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0913_2640.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0913_2640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1061,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0913_2640.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0913_2640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0913_2640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Padar_Island,_Komodo_National_Park,_Indonesia,_20250822_0913_2640.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175635484",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "View of Padar Island from the southern viewpoint, Komodo National Park, Indonesia",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jakubhal\" title=\"User:Jakubhal\">Jakub Hałun</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "175969753": {
+    "pageid": 175969753,
+    "ns": 6,
+    "title": "File:Padar Island, Komodo National Park, Indonesia, 20250822 0929 2659.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 23574188,
+      "width": 5800,
+      "height": 3872,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0929_2659.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0929_2659.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1068,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0929_2659.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0929_2659.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0929_2659.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0929_2659.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1068,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0929_2659.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0929_2659.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0929_2659.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Padar_Island,_Komodo_National_Park,_Indonesia,_20250822_0929_2659.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175969753",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "View of Padar Island from the southern viewpoint, Komodo National Park, Indonesia",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jakubhal\" title=\"User:Jakubhal\">Jakub Hałun</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "175969761": {
+    "pageid": 175969761,
+    "ns": 6,
+    "title": "File:Padar Island, Komodo National Park, Indonesia, 20250822 0934 2664.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 22437144,
+      "width": 5764,
+      "height": 3828,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0934_2664.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0934_2664.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1063,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0934_2664.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0934_2664.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0934_2664.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0934_2664.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1063,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0934_2664.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0934_2664.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0934_2664.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Padar_Island,_Komodo_National_Park,_Indonesia,_20250822_0934_2664.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175969761",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "View of Padar Island from the southern viewpoint, Komodo National Park, Indonesia",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jakubhal\" title=\"User:Jakubhal\">Jakub Hałun</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "175969758": {
+    "pageid": 175969758,
+    "ns": 6,
+    "title": "File:Padar Island, Komodo National Park, Indonesia, 20250822 0942 2668.jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 11178273,
+      "width": 4573,
+      "height": 3038,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0942_2668.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0942_2668.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1063,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0942_2668.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0942_2668.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0942_2668.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0942_2668.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1063,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0942_2668.jpg/3840px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0942_2668.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0942_2668.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Padar_Island,_Komodo_National_Park,_Indonesia,_20250822_0942_2668.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175969758",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "View of Padar Island from the southern viewpoint, Komodo National Park, Indonesia",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jakubhal\" title=\"User:Jakubhal\">Jakub Hałun</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "175801788": {
+    "pageid": 175801788,
+    "ns": 6,
+    "title": "File:Padar Island, Komodo National Park, Indonesia, 20250822 0948 2670.jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 24731118,
+      "width": 3557,
+      "height": 5327,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0948_2670.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0948_2670.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2396,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/3/36/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0948_2670.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0948_2670.jpg/1920px-Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0948_2670.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2396,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/3/36/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0948_2670.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Padar_Island%2C_Komodo_National_Park%2C_Indonesia%2C_20250822_0948_2670.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Padar_Island,_Komodo_National_Park,_Indonesia,_20250822_0948_2670.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175801788",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Trekking path on Padar Island, Komodo National Park, Indonesia",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jakubhal\" title=\"User:Jakubhal\">Jakub Hałun</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "118492773": {
+    "pageid": 118492773,
+    "ns": 6,
+    "title": "File:Pulau Padar 1.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2198212,
+      "width": 3000,
+      "height": 2000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Pulau_Padar_1.jpg/1920px-Pulau_Padar_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Pulau_Padar_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Pulau_Padar_1.jpg/1920px-Pulau_Padar_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Pulau_Padar_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Pulau_Padar_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Pulau_Padar_1.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=118492773",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/Padar,_Indonesia\" class=\"extiw\" title=\"w:Padar, Indonesia\">Padar</a>, one of several islands scattered in the Komodo National Park area. This island has a shape with several bays, white and reddish beaches and several hilltops.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Abiyyu_Lingga&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Abiyyu Lingga (page does not exist)\">YUS JULIADI</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -8,7 +8,8 @@ async def tts(j):
     import edge_tts
     for i, t in enumerate(j["texts"]):
         f = OUT / f"{j['name']}_{i:02d}.mp3"
-        await edge_tts.Communicate(t, j.get("voice", "ko-KR-HyunsuMultilingualNeural"), rate=j.get("rate", "+8%")).save(str(f))
+        r = (j.get("rates") or [None] * len(j["texts"]))[i] or j.get("rate", "+8%")
+        await edge_tts.Communicate(t, j.get("voice", "ko-KR-HyunsuMultilingualNeural"), rate=r).save(str(f))
     log.append(f"tts {j['name']} {len(j['texts'])}")
 for j in jobs:
     try:
