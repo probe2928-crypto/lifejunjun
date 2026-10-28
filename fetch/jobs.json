@@ -1,39 +1,21 @@
 [
  {
   "type": "tts",
-  "name": "kom_hy",
+  "name": "kom2_hy",
   "voice": "ko-KR-HyunsuMultilingualNeural",
   "rate": "+8%",
   "texts": [
-   "평생 한 번은 봐야 할 장면, 코모도에 다 있어요.",
+   "평생 한 번은 봐야 할 코모도 장면, 세 가지.",
    "세 번째.",
-   "지구에서 이 섬들에만 사는, 코모도왕도마뱀.",
-   "몸길이가 최대 삼 미터예요.",
-   "두 번째.",
-   "만타가오리를 만날 수 있는 바다, 만타 포인트.",
-   "첫 번째.",
    "붉은 산호 조각이 섞여 분홍빛이 도는 해변, 핑크비치.",
+   "두 번째.",
+   "만타가오리를 만날 수 있는 바다, 코모도 국립공원.",
+   "첫 번째.",
+   "코모도 일대 섬에만 사는, 코모도왕도마뱀.",
+   "몸길이가 최대 삼 미터예요.",
    "인생준준이 코모도 원정을 준비하고 있어요.",
-   "먼저 공부해 온 길동무와, 열 명 이하로 함께 가요.",
+   "열 명 이하 소규모로 함께 가요.",
    "같이 가고 싶다면 댓글에 코모도를 남겨주세요. 일정이 나오면 먼저 알려드릴게요."
   ]
- },
- {
-  "type": "commons_search",
-  "name": "vkomodo",
-  "q": "filetype:video Komodo dragon",
-  "n": 8
- },
- {
-  "type": "commons_search",
-  "name": "vmanta",
-  "q": "filetype:video manta ray",
-  "n": 8
- },
- {
-  "type": "commons_search",
-  "name": "vlabuan",
-  "q": "filetype:video Labuan Bajo OR Komodo National Park",
-  "n": 6
  }
 ]
