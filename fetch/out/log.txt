@@ -1,4 +1,1 @@
-tts kom_hy 11
-commons vkomodo ok
-commons vmanta ok
-commons vlabuan ok
+tts kom2_hy 11
