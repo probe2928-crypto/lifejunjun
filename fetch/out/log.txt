@@ -1,0 +1,6 @@
+tts cat_hy 13
+tts cat_ij 13
+commons komodo ok
+commons manta ok
+commons pinkbeach ok
+commons padar ok
