@@ -63,14 +63,17 @@ def text_img(lines, fpath, size, fill=(255, 255, 255, 255), accent=(255, 214, 64
     im = Image.new("RGBA", (width, total), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     y = pad; spans = []; wcount = 0
     for ln, f, h in rows:
+        newword = True
         sg = segs(ln); tw = sum(f.getlength(t) for t, _ in sg)
         x = (width - tw) / 2 if align == "center" else pad
         for t, em in sg:
             for piece in re.split(r"( )", t):  # word-level so captions can reveal word by word
                 if piece == "":
                     continue
-                if piece != " ":
-                    wcount += 1
+                if piece == " ":
+                    newword = True
+                elif newword:  # words split by spaces only: "[만타가오리]를" is one word
+                    wcount += 1; newword = False
                 if upto is None or (piece != " " and wcount <= upto):
                     d.text((x, y + stroke), piece, font=f, fill=accent if em else fill, stroke_width=stroke, stroke_fill=stroke_fill)
                 x += f.getlength(piece)
@@ -126,9 +129,9 @@ def trans_fx(img, mode, p, bw, bh):
     """p in 0..1 = strength (1 at the cut). mode 'zoom' (zoom-through) or 'whip' (fast pan)."""
     if p <= 0.001: return img
     if mode == "zoom":
-        s = 1 + .35 * p * p; cw, ch = int(bw / s), int(bh / s)
+        s = 1 + .6 * p ** 1.6; cw, ch = int(bw / s), int(bh / s)
         img = img.crop(((bw - cw) // 2, (bh - ch) // 2, (bw - cw) // 2 + cw, (bh - ch) // 2 + ch)).resize((bw, bh), Image.BILINEAR)
-        return img.filter(ImageFilter.GaussianBlur(6 * p)) if p > .15 else img
+        return img.filter(ImageFilter.GaussianBlur(12 * p * p)) if p > .2 else img
     if mode == "whip":
         sh = int(p * p * bw * .4); a = np.asarray(img)
         a = np.pad(a, ((0, 0), (sh, 0), (0, 0)), mode="edge")[:, :bw] if sh else a
@@ -145,7 +148,12 @@ def paste(canvas, im, x, y, alpha=1.0, scale=1.0):
         x += (im.width / scale - im.width) / 2 if False else 0
     if alpha < 1.0:
         a = im.getchannel("A").point(lambda v: int(v * alpha)); im = im.copy(); im.putalpha(a)
-    canvas.alpha_composite(im, (int(x), int(y)))
+    x, y = int(x), int(y)
+    if x < 0 or y < 0:  # crop off-canvas parts (alpha_composite needs a non-negative dest)
+        im = im.crop((max(0, -x), max(0, -y), im.width, im.height)); x, y = max(x, 0), max(y, 0)
+    if x >= canvas.width or y >= canvas.height or im.width == 0 or im.height == 0: return
+    im = im.crop((0, 0, min(im.width, canvas.width - x), min(im.height, canvas.height - y)))
+    canvas.alpha_composite(im, (x, y))
 
 
 # ---------------- base footage ----------------
@@ -158,12 +166,31 @@ def build_base(spec, work, bw, bh):
               f"crop={bw}:{bh}:(iw-{bw})*{cx}:(ih-{bh})*{cy},fps={FPS},eq=contrast=1.04:saturation=1.08"
               + ("," + s["vf"] if s.get("vf") else "") + f",tpad=stop_mode=clone:stop_duration={s['dur'] + 1:.2f},format=yuv420p")
         run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", str(s.get("ss", 0)), "-t", f"{s['dur'] + .2:.3f}", "-i", s["clip"],
-             "-vf", vf, "-t", f"{s['dur']:.3f}", "-an", "-c:v", "libx264", "-crf", "14", "-preset", "fast", out])
+             "-vf", vf, "-frames:v", str(int(round(s['dur'] * FPS))), "-an", "-c:v", "libx264", "-crf", "14", "-preset", "fast", out])
     lst = os.path.join(work, "list.txt")
     open(lst, "w").writelines(f"file '{os.path.abspath(x)}'\n" for x in segs_)
     base = os.path.join(work, "base.mp4")
     run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", base])
     return base
+
+
+def snap_timeline(spec):
+    """Shot lengths in whole frames; caption/overlay times on the frame grid, glued to cuts within 2 frames."""
+    acc = 0; starts = []
+    for s in spec["shots"]:
+        n = max(1, int(round(s["dur"] * FPS))); starts.append(acc); s["dur"] = n / FPS; acc += n
+    cutt = [n / FPS for n in starts] + [acc / FPS]
+    def sn(x):
+        n = int(round(x * FPS))
+        for c in cutt:
+            if abs(c - x) <= 2.01 / FPS: return c
+        return n / FPS
+    for c in spec.get("subs", []):
+        c["t0"] = sn(c["t0"]); c["t1"] = sn(c["t1"])
+        if c.get("wt"): c["wt"] = [round(w * FPS) / FPS for w in c["wt"]]
+    for o in spec.get("overlays", []):
+        if "t0" in o: o["t0"] = sn(o["t0"])
+        if "t1" in o: o["t1"] = sn(o["t1"])
 
 
 def render(spec):
@@ -172,6 +199,7 @@ def render(spec):
     work = os.path.join(spec.get("workdir", "/tmp"), "r3_" + spec["id"]); os.makedirs(work, exist_ok=True)
     st = spec.get("style", {})
     lay = spec.get("layout", "full")
+    snap_timeline(spec)
     if lay == "letterbox":
         box = spec.get("box", [0, 440, 1080, 1080])
     else:
@@ -180,7 +208,7 @@ def render(spec):
     base = build_base(spec, work, bw, bh)
     total = sum(s["dur"] for s in spec["shots"]); N = int(round(total * FPS))
     shot_starts = []; t = 0
-    for s in spec["shots"]: shot_starts.append(t); t += s["dur"]
+    for s in spec["shots"]: shot_starts.append(round(t * FPS) / FPS); t += s["dur"]
 
     # static layers
     static = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -216,12 +244,13 @@ def render(spec):
             y = int(H * c.get("y", st.get("sub_y", .40))) - im.height // 2
         frames = None
         if lay != "letterbox" and st.get("word_reveal", False) and c.get("reveal", True):
-            nw = sum(len([w for w in re.split(r"( )", tx) if w.strip()]) for ln in c["text"].split("\n") for tx, _ in segs(ln))
+            nw = sum(len([w for w in ln.replace("[", "").replace("]", "").split(" ") if w]) for ln in c["text"].split("\n"))
+            if c.get("wt"): assert len(c["wt"]) == nw, (c["text"], len(c["wt"]), nw)
             if nw > 1:
                 frames = [text_img(c["text"].split("\n"), f, size, stroke=st.get("stroke", 7), gap=10, room=st.get("room", 980),
                                    accent=tuple(st.get("accent", (255, 214, 64, 255))), shadow=st.get("shadow", .5), upto=k)[0]
                           for k in range(1, nw + 1)]
-        caps.append((c["t0"], c["t1"], im, y, c.get("pop", True), frames))
+        caps.append((c["t0"], c["t1"], im, y, c.get("pop", True), frames, c.get("wt")))
     ovs = []
     for o in spec.get("overlays", []):
         if o["type"] == "arrow":
@@ -311,11 +340,11 @@ def render(spec):
         if sk.get("zoom"):  # slow push-in [z0, z1] around (zx, zy)
             z0, z1 = sk["zoom"]; z *= z0 + (z1 - z0) * min(lt / sk["dur"], 1)
         img = Image.fromarray(fr)
-        Tt = spec.get("trans_dur", .16)
+        Tt = spec.get("trans_dur", .2); tmode = None
         nxt = spec["shots"][k + 1].get("trans") if k < len(spec["shots"]) - 1 else None
         rem = sk["dur"] - lt
-        if nxt and rem < Tt: img = trans_fx(img, nxt, 1 - rem / Tt, bw, bh)
-        elif k > 0 and sk.get("trans") and lt < Tt: img = trans_fx(img, sk["trans"], 1 - lt / Tt, bw, bh)
+        if nxt and rem < Tt: tmode, tp = nxt, 1 - rem / Tt
+        elif k > 0 and sk.get("trans") and lt < Tt: tmode, tp = sk["trans"], 1 - lt / Tt
         if z > 1.001:
             cw, ch = int(bw / z), int(bh / z); zx, zy = sk.get("zx", .5), sk.get("zy", .5)
             x0 = int(min(max(zx * bw - cw / 2, 0), bw - cw)); y0 = int(min(max(zy * bh - ch / 2, 0), bh - ch))
@@ -333,6 +362,11 @@ def render(spec):
                 bob = 14 * math.sin(lt2 * 7)
                 ang = math.radians(o.get("angle", 0)); x -= bob * math.cos(ang); y += bob * math.sin(ang)
             if o["type"] == "endcard": y += int((1 - a) * 30)
+            if o.get("slam"):  # hard slam: full opacity, scale 1.6 -> 1.0 over 5 frames
+                a = 1.0; sc = 1 + .6 * (1 - ease(lt2 / (5 / FPS)))
+                if sc > 1.001:
+                    im = im.resize((int(im.width * sc), int(im.height * sc)), Image.BICUBIC)
+                    x -= (im.width - im.width / sc) / 2; y -= (im.height - im.height / sc) / 2
             if o["type"] == "flash": a = max(0.0, 1 - lt2 / max(o["t1"] - o["t0"], .01)) * o.get("peak", .85)
             if o["type"] == "counter":
                 v = int(round(o["to"] * (1 - (1 - min(lt2 / o.get("dur", 1.6), 1)) ** 3)))
@@ -343,10 +377,13 @@ def render(spec):
                                             fill=tuple(o.get("color", (255, 214, 64, 255))), stroke=o.get("stroke", 10), shadow=.6, room=1000)
                 im = _cnt[key]; x = 0; y = int(o.get("yc", .55) * H) - im.height // 2; a = 1.0
             paste(canvas, im, x, y, alpha=a)
-        for t0, t1, im, y, pop, frames in caps:
+        for t0, t1, im, y, pop, frames, wt in caps:
             if t0 <= tt < t1:
                 lt3 = tt - t0
-                if frames:  # reveal words across the first 55% of the caption (max 1.4s)
+                if frames and wt:  # word k appears when it is spoken (wt = absolute times per word)
+                    kk = sum(1 for w in wt if w <= tt + 1e-6)
+                    if kk < len(wt): im = frames[max(kk, 1) - 1]
+                elif frames:  # fallback: reveal across the first 55% of the caption (max 1.4s)
                     span = min((t1 - t0) * .55, 1.4)
                     if lt3 < span: im = frames[min(len(frames) - 1, int(lt3 / max(span, .01) * len(frames)))]
                 if pop and lt3 < .14:
@@ -355,6 +392,7 @@ def render(spec):
                     canvas.alpha_composite(im2, (int((W - im2.width) / 2), int(y + (im.height - im2.height) / 2)))
                 else:
                     canvas.alpha_composite(im, (0, y))
+        if tmode: canvas = trans_fx(canvas.convert("RGB"), tmode, tp, W, H).convert("RGBA")
         out = np.asarray(canvas.convert("RGB"))
         if i == int(spec.get("cover_t", 1.0) * FPS): cover = out.copy()
         enc.stdin.write(out.tobytes())
@@ -364,7 +402,12 @@ def render(spec):
     ins = ["-i", vid]; fc = []; n = 1
     if au.get("music"):
         ins += ["-ss", str(au.get("music_ss", 0)), "-i", au["music"]]
-        duck = "".join(f",volume=enable='between(t,{a},{b})':volume={v}" for a, b, v in au.get("duck", []))
+        duck = ""
+        for d_ in au.get("duck", []):  # [a, b, v(, ramp)]: smooth dip to v between a..b, ramps in/out
+            a, b_, v = d_[:3]; r = d_[3] if len(d_) > 3 else .15
+            ex = (f"if(lt(t\\,{a - r})\\,1\\,if(lt(t\\,{a})\\,1-(1-{v})*(t-{a - r})/{r}\\,if(lt(t\\,{b_})\\,{v}\\,"
+                  f"if(lt(t\\,{b_ + r})\\,{v}+(1-{v})*(t-{b_})/{r}\\,1))))")
+            duck += f",volume=eval=frame:volume='{ex}'"
         fc.append(f"[{n}:a]atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume={au.get('music_vol', .22)}{duck},afade=t=in:d=0.3,afade=t=out:st={total - 1:.3f}:d=1[m]"); n += 1
     if au.get("voice"):
         d = int(au.get("voice_delay", .2) * 1000)
@@ -375,6 +418,10 @@ def render(spec):
         for kk, cst in enumerate(shot_starts[1:], start=1):
             if spec["shots"][kk].get("trans"):
                 sfx_list.append({"path": au["whoosh"], "t": max(0, cst - .15), "dur": .5, "vol": au.get("whoosh_vol", .15), "fo": .2})
+    if au.get("hit"):
+        for kk, cst in enumerate(shot_starts[1:], start=1):
+            if spec["shots"][kk].get("hit"):
+                sfx_list.append({"path": au["hit"], "t": max(0, cst - .02), "dur": 1.2, "vol": au.get("hit_vol", .5), "fo": .3})
     for j, sx in enumerate(sfx_list):  # extra sounds: {path, t, ss, dur, vol}
         d = int(sx["t"] * 1000)
         ins += ["-ss", str(sx.get("ss", 0)), "-t", str(sx.get("dur", 3)), "-i", sx["path"]]
