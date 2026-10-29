@@ -251,6 +251,10 @@ def render(spec):
                                    accent=tuple(st.get("accent", (255, 214, 64, 255))), shadow=st.get("shadow", .5), upto=k)[0]
                           for k in range(1, nw + 1)]
         caps.append((c["t0"], c["t1"], im, y, c.get("pop", True), frames, c.get("wt")))
+    for t0, t1, im, y, *_ in caps:
+        bb = im.getbbox()
+        if bb and (y + bb[3] > H - 670 or y + bb[1] < 270):
+            print(f"[safe-zone] caption {t0:.2f}-{t1:.2f}s spans y {y + bb[1]}..{y + bb[3]} (keep 270..{H - 670})")
     ovs = []
     for o in spec.get("overlays", []):
         if o["type"] == "arrow":
@@ -310,6 +314,12 @@ def render(spec):
             o.setdefault("x", 0); o.setdefault("y", int(H * o.get("yc", .42)) - im.height // 2)
         ovs.append((o, im))
 
+    for o, im in ovs:
+        if im is None or o["type"] in ("flash", "image", "ring", "magnify", "arrow"): continue
+        bb = im.getbbox()
+        if bb and (o.get("y", 0) + bb[3] > H - 670 or o.get("y", 0) + bb[1] < 270):
+            print(f"[safe-zone] {o['type']} '{str(o.get('text', o.get('lines', '')))[:16]}' {o['t0']:.2f}s spans y {o.get('y', 0) + bb[1]}..{o.get('y', 0) + bb[3]}")
+    if os.environ.get("LINT_ONLY"): return None, total
     # gradient for full layout legibility
     grad = None
     if lay == "full" and st.get("vignette", .35):
@@ -394,6 +404,11 @@ def render(spec):
                     canvas.alpha_composite(im, (0, y))
         if tmode: canvas = trans_fx(canvas.convert("RGB"), tmode, tp, W, H).convert("RGBA")
         out = np.asarray(canvas.convert("RGB"))
+        if i == 0: first = out.copy()
+        Lt = spec.get("loop_tail", 0)
+        if Lt and tt > total - Lt:  # dissolve into frame 0 -> seamless replay
+            a_ = ease((tt - (total - Lt)) / Lt)
+            out = (out.astype(np.float32) * (1 - a_) + first.astype(np.float32) * a_).astype(np.uint8)
         if i == int(spec.get("cover_t", 1.0) * FPS): cover = out.copy()
         enc.stdin.write(out.tobytes())
     enc.stdin.close(); enc.wait(); dec.stdout.close(); dec.kill(); dec.wait()
