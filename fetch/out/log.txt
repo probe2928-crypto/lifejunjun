@@ -1,0 +1,6 @@
+stats ok
+mixkit mx_komodo 0
+mixkit mx_manta 0
+mixkit mx_singapore 8
+mixkit mx_cat 6
+mixkit mx_whoosh 1
