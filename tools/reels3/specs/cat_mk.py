@@ -32,6 +32,7 @@ clips=[(C+"own_sg_cat.mp4",{"ss":0.2,"cx":0.55,"zoom":[1.0,1.06],"zy":0.55,"vf":
        (C+"own_sg_hdb.mp4",{"ss":5.4,"pre":ROT,"cx":0.62,"zoom":[1.0,1.06],"zy":0.45}),                    # P11 end title
        (C+"own_sg_cat.mp4",{"ss":0.0,"cx":0.55,"pre":SL(2.0),"vf":SH})]                                    # P12 CTA over eye contact (loops)
 shots=[dict(clip=c,dur=round(cuts[i+1]-cuts[i],2),**kw) for i,(c,kw) in enumerate(clips)]
+for i in (4,7): shots[i]["trans"]="zoom"
 subs=[]
 for i,p in enumerate(P):
     if not p["cap"]: continue
@@ -44,7 +45,6 @@ G=[40,170,90,240]; R=[230,45,45,240]; K=[0,0,0,170]
 ov=[{"type":"text","t0":0.0,"t1":st(1),"text":"싱가포르 아파트,\n고양이 키우면 [불법]?","size":120,"yc":0.30,"stroke":10,"room":800},
     {"type":"tag","t0":st(3)+0.25,"t1":st(4),"text":"소형견 1마리  허용","size":64,"x":90,"y":1100,"bg":G},
     {"type":"tag","t0":st(3)+1.0,"t1":st(4),"text":"고양이  금지","size":64,"x":90,"y":1220,"bg":R},
-    {"type":"flash","t0":st(6),"t1":st(6)+0.18},
     {"type":"tag","t0":st(8),"t1":st(9),"text":"한 집에 최대 2마리","size":64,"x":90,"y":1000,"bg":G},
     {"type":"tag","t0":st(8)+0.7,"t1":st(9),"text":"마이크로칩","size":64,"x":90,"y":1120,"bg":G},
     {"type":"tag","t0":st(8)+1.4,"t1":st(9),"text":"정식 등록","size":64,"x":90,"y":1240,"bg":G},
@@ -52,10 +52,10 @@ ov=[{"type":"text","t0":0.0,"t1":st(1),"text":"싱가포르 아파트,\n고양�
     {"type":"tag","t0":st(10)+0.4,"t1":st(11),"text":"2026년 8월 31일 기준","size":60,"x":250,"y":1150,"bg":K},
     {"type":"endcard","t0":st(11),"t1":st(12),"lines":["싱가포르 HDB"],"sub":"고양이 허용 2년째","sub_pill":False,"sub_size":64,"size":128,"yc":0.25,"panel":False}]
 spec={"id":f"cat_{tag}","fontdir":"/home/claude/r3/fonts","workdir":"/home/claude/r3/work","shots":shots,
- "audio":{"music":"/home/claude/r3/raspberry_lofi.m4a","music_ss":20.67,"music_vol":0.16,"voice":voice,"voice_delay":0.0},
+ "audio":{"whoosh":"/home/claude/r3/whoosh.wav","whoosh_vol":0.15,"music":"/home/claude/r3/raspberry_lofi.m4a","music_ss":20.67,"music_vol":0.16,"voice":voice,"voice_delay":0.0},
  "cover_t":0.8,"layout":"full",
  "style":{"sub_font":"BlackHanSans-Regular.ttf","sub_size":104,"sub_y":0.36,"stroke":9,"shadow":0.55,"vignette":0.2,
-          "end_font":"BlackHanSans-Regular.ttf","small_font":"Pretendard-Bold.otf","room":800,"tag_font":"Pretendard-Bold.otf"},
+          "end_font":"BlackHanSans-Regular.ttf","small_font":"Pretendard-Bold.otf","room":800,"tag_font":"Pretendard-Bold.otf","word_reveal":True},
  "subs":subs,"overlays":ov,"out":f"/home/claude/r3/cat/cat_{tag}.mp4","cover":f"/home/claude/r3/cat/cat_{tag}.jpg",
  "sheet_t":[0.05,1.0,round(st(1)+.5,2),round(st(2)+.5,2),round(st(3)+1.5,2),round(st(6)+.3,2),round(st(8)+.5,2),round(st(10)+2.2,2),round(st(11)+1,2),round(end-0.8,2)]}
 json.dump(spec,open(f"/home/claude/r3/cat/cat_{tag}.json","w"),ensure_ascii=False,indent=1)

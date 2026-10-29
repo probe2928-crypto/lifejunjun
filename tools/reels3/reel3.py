@@ -10,7 +10,7 @@ Text markup : wrap words in [brackets] to colour them with the accent colour.
 
 usage: python reel3.py spec.json [--sheet]
 """
-import json, os, subprocess, sys, math
+import json, os, subprocess, sys, math, re
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
@@ -51,7 +51,7 @@ def fit(f, txt, room, path):
 
 
 def text_img(lines, fpath, size, fill=(255, 255, 255, 255), accent=(255, 214, 64, 255), stroke=0, stroke_fill=(0, 0, 0, 255),
-             gap=12, room=980, shadow=0.0, align="center", width=W):
+             gap=12, room=980, shadow=0.0, align="center", width=W, upto=None):
     """Render lines (with [accent] markup) into an RGBA image of width `width`. returns (img, row_spans)."""
     rows = []
     for ln in lines:
@@ -61,13 +61,19 @@ def text_img(lines, fpath, size, fill=(255, 255, 255, 255), accent=(255, 214, 64
     pad = 30 + stroke
     total = sum(r[2] for r in rows) + gap * (len(rows) - 1) + pad * 2
     im = Image.new("RGBA", (width, total), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    y = pad; spans = []
+    y = pad; spans = []; wcount = 0
     for ln, f, h in rows:
         sg = segs(ln); tw = sum(f.getlength(t) for t, _ in sg)
         x = (width - tw) / 2 if align == "center" else pad
         for t, em in sg:
-            d.text((x, y + stroke), t, font=f, fill=accent if em else fill, stroke_width=stroke, stroke_fill=stroke_fill)
-            x += f.getlength(t)
+            for piece in re.split(r"( )", t):  # word-level so captions can reveal word by word
+                if piece == "":
+                    continue
+                if piece != " ":
+                    wcount += 1
+                if upto is None or (piece != " " and wcount <= upto):
+                    d.text((x, y + stroke), piece, font=f, fill=accent if em else fill, stroke_width=stroke, stroke_fill=stroke_fill)
+                x += f.getlength(piece)
         spans.append((y, y + h)); y += h + gap
     if shadow:
         a = im.getchannel("A").filter(ImageFilter.GaussianBlur(10)).point(lambda v: int(v * shadow))
@@ -106,6 +112,28 @@ def magnifier(src, box, r, ring):
     im.paste(s, (pad, pad), m)
     ImageDraw.Draw(im).ellipse((pad - 6, pad - 6, pad + 2 * r + 6, pad + 2 * r + 6), outline=ring, width=14)
     return im
+
+
+def hblur(a, r):
+    """horizontal box blur of HxWx3 uint8 array with radius r (motion blur for whip pans)."""
+    r = int(r)
+    if r < 1: return a
+    f = a.astype(np.float32); c = np.cumsum(np.pad(f, ((0, 0), (r + 1, r), (0, 0)), mode="edge"), axis=1)
+    return ((c[:, 2 * r + 1:] - c[:, :-2 * r - 1]) / (2 * r + 1)).clip(0, 255).astype(np.uint8)
+
+
+def trans_fx(img, mode, p, bw, bh):
+    """p in 0..1 = strength (1 at the cut). mode 'zoom' (zoom-through) or 'whip' (fast pan)."""
+    if p <= 0.001: return img
+    if mode == "zoom":
+        s = 1 + .35 * p * p; cw, ch = int(bw / s), int(bh / s)
+        img = img.crop(((bw - cw) // 2, (bh - ch) // 2, (bw - cw) // 2 + cw, (bh - ch) // 2 + ch)).resize((bw, bh), Image.BILINEAR)
+        return img.filter(ImageFilter.GaussianBlur(6 * p)) if p > .15 else img
+    if mode == "whip":
+        sh = int(p * p * bw * .4); a = np.asarray(img)
+        a = np.pad(a, ((0, 0), (sh, 0), (0, 0)), mode="edge")[:, :bw] if sh else a
+        return Image.fromarray(hblur(a, 50 * p))
+    return img
 
 
 def ease(x): x = min(max(x, 0.), 1.); return 1 - (1 - x) ** 3
@@ -186,7 +214,14 @@ def render(spec):
             im, _ = text_img(c["text"].split("\n"), f, size, stroke=st.get("stroke", 7), gap=10, room=st.get("room", 980),
                              accent=tuple(st.get("accent", (255, 214, 64, 255))), shadow=st.get("shadow", .5))
             y = int(H * c.get("y", st.get("sub_y", .40))) - im.height // 2
-        caps.append((c["t0"], c["t1"], im, y, c.get("pop", True)))
+        frames = None
+        if lay != "letterbox" and st.get("word_reveal", False) and c.get("reveal", True):
+            nw = sum(len([w for w in re.split(r"( )", tx) if w.strip()]) for ln in c["text"].split("\n") for tx, _ in segs(ln))
+            if nw > 1:
+                frames = [text_img(c["text"].split("\n"), f, size, stroke=st.get("stroke", 7), gap=10, room=st.get("room", 980),
+                                   accent=tuple(st.get("accent", (255, 214, 64, 255))), shadow=st.get("shadow", .5), upto=k)[0]
+                          for k in range(1, nw + 1)]
+        caps.append((c["t0"], c["t1"], im, y, c.get("pop", True), frames))
     ovs = []
     for o in spec.get("overlays", []):
         if o["type"] == "arrow":
@@ -276,6 +311,11 @@ def render(spec):
         if sk.get("zoom"):  # slow push-in [z0, z1] around (zx, zy)
             z0, z1 = sk["zoom"]; z *= z0 + (z1 - z0) * min(lt / sk["dur"], 1)
         img = Image.fromarray(fr)
+        Tt = spec.get("trans_dur", .16)
+        nxt = spec["shots"][k + 1].get("trans") if k < len(spec["shots"]) - 1 else None
+        rem = sk["dur"] - lt
+        if nxt and rem < Tt: img = trans_fx(img, nxt, 1 - rem / Tt, bw, bh)
+        elif k > 0 and sk.get("trans") and lt < Tt: img = trans_fx(img, sk["trans"], 1 - lt / Tt, bw, bh)
         if z > 1.001:
             cw, ch = int(bw / z), int(bh / z); zx, zy = sk.get("zx", .5), sk.get("zy", .5)
             x0 = int(min(max(zx * bw - cw / 2, 0), bw - cw)); y0 = int(min(max(zy * bh - ch / 2, 0), bh - ch))
@@ -303,9 +343,12 @@ def render(spec):
                                             fill=tuple(o.get("color", (255, 214, 64, 255))), stroke=o.get("stroke", 10), shadow=.6, room=1000)
                 im = _cnt[key]; x = 0; y = int(o.get("yc", .55) * H) - im.height // 2; a = 1.0
             paste(canvas, im, x, y, alpha=a)
-        for t0, t1, im, y, pop in caps:
+        for t0, t1, im, y, pop, frames in caps:
             if t0 <= tt < t1:
                 lt3 = tt - t0
+                if frames:  # reveal words across the first 55% of the caption (max 1.4s)
+                    span = min((t1 - t0) * .55, 1.4)
+                    if lt3 < span: im = frames[min(len(frames) - 1, int(lt3 / max(span, .01) * len(frames)))]
                 if pop and lt3 < .14:
                     s = .9 + .1 * ease(lt3 / .14)
                     im2 = im.resize((int(im.width * s), int(im.height * s)), Image.BICUBIC)
@@ -327,7 +370,12 @@ def render(spec):
         d = int(au.get("voice_delay", .2) * 1000)
         ins += ["-ss", str(au.get("voice_ss", 0)), "-i", au["voice"]]; fc.append(f"[{n}:a]adelay={d}|{d},volume=1.0[v]"); n += 1
     labels = []
-    for j, sx in enumerate(au.get("sfx", [])):  # extra sounds: {path, t, ss, dur, vol}
+    sfx_list = list(au.get("sfx", []))
+    if au.get("whoosh"):
+        for kk, cst in enumerate(shot_starts[1:], start=1):
+            if spec["shots"][kk].get("trans"):
+                sfx_list.append({"path": au["whoosh"], "t": max(0, cst - .15), "dur": .5, "vol": au.get("whoosh_vol", .15), "fo": .2})
+    for j, sx in enumerate(sfx_list):  # extra sounds: {path, t, ss, dur, vol}
         d = int(sx["t"] * 1000)
         ins += ["-ss", str(sx.get("ss", 0)), "-t", str(sx.get("dur", 3)), "-i", sx["path"]]
         vol = sx.get("vol", .6)
