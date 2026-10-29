@@ -281,6 +281,16 @@ def render(spec):
             o.setdefault("x", 0); o.setdefault("y", int(o.get("yc", .2) * H) - im.height // 2)
         elif o["type"] == "flash":
             im = Image.new("RGBA", (W, H), (255, 255, 255, 255)); o["x"] = 0; o["y"] = 0
+        elif o["type"] == "chip":  # keyword chip for the voice-led opening: dark rounded box, one short phrase
+            f_ = font(o.get("font", st.get("tag_font", "Pretendard-Bold.otf")), o.get("size", 72))
+            sg = segs(o["text"]); tw = sum(f_.getlength(s_) for s_, _ in sg)
+            asc, desc = f_.getmetrics(); px, py = o.get("padx", 28), o.get("pady", 18)
+            im = Image.new("RGBA", (int(tw + 2 * px), asc + desc + 2 * py), (0, 0, 0, 0)); d_ = ImageDraw.Draw(im)
+            d_.rounded_rectangle((0, 0, im.width - 1, im.height - 1), radius=o.get("radius", 24), fill=tuple(o.get("bg", (0, 0, 0, 170))))
+            xx = px
+            for s_, em in sg:
+                d_.text((xx, py), s_, font=f_, fill=tuple(o.get("accent", (255, 212, 0, 255))) if em else (255, 255, 255, 255)); xx += f_.getlength(s_)
+            o.setdefault("x", int(W / 2 - im.width / 2)); o.setdefault("y", int(H * o.get("yc", .30) - im.height / 2))
         elif o["type"] == "counter":  # number counting up: {to, dur, prefix, suffix, size, yc}
             im = None
         elif o["type"] == "magnify":
@@ -372,6 +382,13 @@ def render(spec):
                 bob = 14 * math.sin(lt2 * 7)
                 ang = math.radians(o.get("angle", 0)); x -= bob * math.cos(ang); y += bob * math.sin(ang)
             if o["type"] == "endcard": y += int((1 - a) * 30)
+            if o["type"] == "chip":  # 4-frame pop in (alpha + scale .92->1), 6-frame fade out
+                a = ease(lt2 / (4 / FPS)) if o["t0"] > 0 or lt2 > 0 else 1.0
+                a = min(a if lt2 < 4 / FPS else 1.0, max(0.0, (o["t1"] - tt) / (6 / FPS)))
+                sc = .92 + .08 * ease(lt2 / (4 / FPS))
+                if sc < .999:
+                    im = im.resize((int(im.width * sc), int(im.height * sc)), Image.BICUBIC)
+                    x += (im.width / sc - im.width) / 2; y += (im.height / sc - im.height) / 2
             if o.get("slam"):  # hard slam: full opacity, scale 1.6 -> 1.0 over 5 frames
                 a = 1.0; sc = 1 + .6 * (1 - ease(lt2 / (5 / FPS)))
                 if sc > 1.001:
