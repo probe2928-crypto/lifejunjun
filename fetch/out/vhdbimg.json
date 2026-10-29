@@ -1,0 +1,445 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 10,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "145451949": {
+    "pageid": 145451949,
+    "ns": 6,
+    "title": "File:(SGP-Singapore) Kallang Horizon HDB blocks under construction 2024-02-16.jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3061000,
+      "width": 3776,
+      "height": 3021,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/%28SGP-Singapore%29_Kallang_Horizon_HDB_blocks_under_construction_2024-02-16.jpg/1920px-%28SGP-Singapore%29_Kallang_Horizon_HDB_blocks_under_construction_2024-02-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1280,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/4/4b/%28SGP-Singapore%29_Kallang_Horizon_HDB_blocks_under_construction_2024-02-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/%28SGP-Singapore%29_Kallang_Horizon_HDB_blocks_under_construction_2024-02-16.jpg/1920px-%28SGP-Singapore%29_Kallang_Horizon_HDB_blocks_under_construction_2024-02-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1280,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/4/4b/%28SGP-Singapore%29_Kallang_Horizon_HDB_blocks_under_construction_2024-02-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/%28SGP-Singapore%29_Kallang_Horizon_HDB_blocks_under_construction_2024-02-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:(SGP-Singapore)_Kallang_Horizon_HDB_blocks_under_construction_2024-02-16.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=145451949",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "HDB blocks of the Kallang Horizon estate under construction on 2024/2/16.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:S5A-0043\" title=\"User:S5A-0043\">S5A-0043</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Attribution",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "144539077": {
+    "pageid": 144539077,
+    "ns": 6,
+    "title": "File:(SGP-Singapore) Kempas Residences HDB blocks under construction 2024-01-25.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2002118,
+      "width": 2528,
+      "height": 3160,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/%28SGP-Singapore%29_Kempas_Residences_HDB_blocks_under_construction_2024-01-25.jpg/1920px-%28SGP-Singapore%29_Kempas_Residences_HDB_blocks_under_construction_2024-01-25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2000,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/b/bd/%28SGP-Singapore%29_Kempas_Residences_HDB_blocks_under_construction_2024-01-25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/%28SGP-Singapore%29_Kempas_Residences_HDB_blocks_under_construction_2024-01-25.jpg/1920px-%28SGP-Singapore%29_Kempas_Residences_HDB_blocks_under_construction_2024-01-25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2000,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/b/bd/%28SGP-Singapore%29_Kempas_Residences_HDB_blocks_under_construction_2024-01-25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/%28SGP-Singapore%29_Kempas_Residences_HDB_blocks_under_construction_2024-01-25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:(SGP-Singapore)_Kempas_Residences_HDB_blocks_under_construction_2024-01-25.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=144539077",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "HDB blocks of the Kempas Residences estate under construction on 2024/1/25.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "S5A-0043",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Attribution",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "156625499": {
+    "pageid": 156625499,
+    "ns": 6,
+    "title": "File:HDB Annual Report 1994-1995.pdf",
+    "index": 10,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 31181843,
+      "width": 1393,
+      "height": 1564,
+      "pagecount": 118,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/HDB_Annual_Report_1994-1995.pdf/page1-1280px-HDB_Annual_Report_1994-1995.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1796,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/HDB_Annual_Report_1994-1995.pdf/page1-1280px-HDB_Annual_Report_1994-1995.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1796
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/HDB_Annual_Report_1994-1995.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:HDB_Annual_Report_1994-1995.pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=156625499",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<div class=\"description\">\nAnnual report of HDB (1994/1995)</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "156625444": {
+    "pageid": 156625444,
+    "ns": 6,
+    "title": "File:HDB Annual Report 1995-1996.pdf",
+    "index": 9,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 38447073,
+      "width": 2243,
+      "height": 1558,
+      "pagecount": 140,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/HDB_Annual_Report_1995-1996.pdf/page1-1920px-HDB_Annual_Report_1995-1996.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1111,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/HDB_Annual_Report_1995-1996.pdf/page1-1920px-HDB_Annual_Report_1995-1996.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1111
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/HDB_Annual_Report_1995-1996.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:HDB_Annual_Report_1995-1996.pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=156625444",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<div class=\"description\">\nAnnual report of HDB (1995/1996)</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "156625224": {
+    "pageid": 156625224,
+    "ns": 6,
+    "title": "File:HDB Annual Report 1999-2000.pdf",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 31738041,
+      "width": 1387,
+      "height": 1558,
+      "pagecount": 124,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/HDB_Annual_Report_1999-2000.pdf/page1-1280px-HDB_Annual_Report_1999-2000.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1797,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/HDB_Annual_Report_1999-2000.pdf/page1-1280px-HDB_Annual_Report_1999-2000.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1797
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/HDB_Annual_Report_1999-2000.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:HDB_Annual_Report_1999-2000.pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=156625224",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<div class=\"description\">\nAnnual report of HDB (1999/2000)</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "16611912": {
+    "pageid": 16611912,
+    "ns": 6,
+    "title": "File:HDB Woodlands Notice Boards.jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 18412,
+      "width": 400,
+      "height": 300,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/4/46/HDB_Woodlands_Notice_Boards.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/4/46/HDB_Woodlands_Notice_Boards.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/HDB_Woodlands_Notice_Boards.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:HDB_Woodlands_Notice_Boards.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=16611912",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Photo taken at a Woodlands HDB Estate.\nDetails at <a rel=\"nofollow\" class=\"external free\" href=\"http://www.advertisings.biz/2011/05/post-your-ads-at-notice-boards-in.html\">http://www.advertisings.biz/2011/05/post-your-ads-at-notice-boards-in.html</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Alanchow76&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Alanchow76 (page does not exist)\">Alanchow76</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "190419210": {
+    "pageid": 190419210,
+    "ns": 6,
+    "title": "File:HDB flats in Jurong West Central 2025.JPG",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 13208599,
+      "width": 6167,
+      "height": 4045,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/HDB_flats_in_Jurong_West_Central_2025.JPG/1920px-HDB_flats_in_Jurong_West_Central_2025.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1049,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/HDB_flats_in_Jurong_West_Central_2025.JPG/3840px-HDB_flats_in_Jurong_West_Central_2025.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/HDB_flats_in_Jurong_West_Central_2025.JPG/1920px-HDB_flats_in_Jurong_West_Central_2025.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1049,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/HDB_flats_in_Jurong_West_Central_2025.JPG/3840px-HDB_flats_in_Jurong_West_Central_2025.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/HDB_flats_in_Jurong_West_Central_2025.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:HDB_flats_in_Jurong_West_Central_2025.JPG",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=190419210",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "HDB blocks along Jurong West Central 3, Singapore, with River Valley High School and Boon Lay estate in the background",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/User:Brhb25\" class=\"extiw\" title=\"w:User:Brhb25\">Brhb25</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "16611911": {
+    "pageid": 16611911,
+    "ns": 6,
+    "title": "File:Notice board in a Housing and Development Board estate in Marsiling, Singapore - 20110921.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 16964,
+      "width": 400,
+      "height": 300,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Notice_board_in_a_Housing_and_Development_Board_estate_in_Marsiling%2C_Singapore_-_20110921.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Notice_board_in_a_Housing_and_Development_Board_estate_in_Marsiling%2C_Singapore_-_20110921.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Notice_board_in_a_Housing_and_Development_Board_estate_in_Marsiling%2C_Singapore_-_20110921.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Notice_board_in_a_Housing_and_Development_Board_estate_in_Marsiling,_Singapore_-_20110921.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=16611911",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "A notice board on a wall next to shops on the ground floor of a block of <a href=\"https://en.wikipedia.org/wiki/Housing_and_Development_Board\" class=\"extiw\" title=\"w:Housing and Development Board\">Housing and Development Board</a> (HDB) flats in <a href=\"https://en.wikipedia.org/wiki/Marsiling\" class=\"extiw\" title=\"w:Marsiling\">Marsiling</a>, Singapore.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Alanchow76&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Alanchow76 (page does not exist)\">Alanchow76</a>.",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "121528131": {
+    "pageid": 121528131,
+    "ns": 6,
+    "title": "File:Sin Ming Court HDB estate with Central Catchment Area Nature Reserve in background - 2022-07-23.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 7724014,
+      "width": 4032,
+      "height": 3024,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Sin_Ming_Court_HDB_estate_with_Central_Catchment_Area_Nature_Reserve_in_background_-_2022-07-23.jpg/1920px-Sin_Ming_Court_HDB_estate_with_Central_Catchment_Area_Nature_Reserve_in_background_-_2022-07-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Sin_Ming_Court_HDB_estate_with_Central_Catchment_Area_Nature_Reserve_in_background_-_2022-07-23.jpg/3840px-Sin_Ming_Court_HDB_estate_with_Central_Catchment_Area_Nature_Reserve_in_background_-_2022-07-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Sin_Ming_Court_HDB_estate_with_Central_Catchment_Area_Nature_Reserve_in_background_-_2022-07-23.jpg/1920px-Sin_Ming_Court_HDB_estate_with_Central_Catchment_Area_Nature_Reserve_in_background_-_2022-07-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Sin_Ming_Court_HDB_estate_with_Central_Catchment_Area_Nature_Reserve_in_background_-_2022-07-23.jpg/3840px-Sin_Ming_Court_HDB_estate_with_Central_Catchment_Area_Nature_Reserve_in_background_-_2022-07-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Sin_Ming_Court_HDB_estate_with_Central_Catchment_Area_Nature_Reserve_in_background_-_2022-07-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sin_Ming_Court_HDB_estate_with_Central_Catchment_Area_Nature_Reserve_in_background_-_2022-07-23.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=121528131",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Sin Ming Court HDB estate with Central Catchment Area Nature Reserve in background",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Wzhkevin\" title=\"User:Wzhkevin\">Wzhkevin</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "148402064": {
+    "pageid": 148402064,
+    "ns": 6,
+    "title": "File:Singapore Improvement Trust - Annual Reports 1955-1959.pdf",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 23316135,
+      "width": 922,
+      "height": 1493,
+      "pagecount": 489,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Singapore_Improvement_Trust_-_Annual_Reports_1955-1959.pdf/page1-500px-Singapore_Improvement_Trust_-_Annual_Reports_1955-1959.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2591,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Singapore_Improvement_Trust_-_Annual_Reports_1955-1959.pdf/page1-500px-Singapore_Improvement_Trust_-_Annual_Reports_1955-1959.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2591
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Singapore_Improvement_Trust_-_Annual_Reports_1955-1959.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Singapore_Improvement_Trust_-_Annual_Reports_1955-1959.pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=148402064",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<div class=\"description\">\nThis is a collection of annual reports published by Singapore Improvement Trust (SIT) after the end of the Second World War. They shed light on the Master Plan (housing policies), maps, statistics, land usage, finance information, illustrations of different types of housing development, staff strength and etc, in the period leading up to the self-governance of Singapore in 1959. The annual reports help us understand the changes and pace of housing development in Singapore before 1965.</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   }
+  }
+ }
+}

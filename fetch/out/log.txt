@@ -1,6 +1,10 @@
-stats ok
-mixkit mx_komodo 0
-mixkit mx_manta 0
-mixkit mx_singapore 8
-mixkit mx_cat 6
-mixkit mx_whoosh 1
+tts kom4_hy 11
+tts cat3_hy 13
+mixkit mx_ray 3
+mixkit mx_cat2 10
+mixkit mx_bld 8
+commons vmanta2 ok
+commons vkom2 ok
+commons vrinca ok
+FAIL vhdb <HTTPError 429: 'Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)'>
+FAIL vhdbimg <HTTPError 429: 'Your bot is making too many requests. Please reduce your request rate or contact bot-traffic@wikimedia.org (f263c81)'>
