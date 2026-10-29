@@ -1,0 +1,111 @@
+{
+ "id": "hawker_short",
+ "fontdir": "/home/claude/r3/fonts",
+ "workdir": "/home/claude/r3/work",
+ "shots": [
+  {
+   "clip": "/home/claude/own/clips/hw3_hook.mp4",
+   "dur": 3.2
+  },
+  {
+   "clip": "/home/claude/own/clips/hw4_push.mp4",
+   "dur": 2.9
+  },
+  {
+   "clip": "/home/claude/own/clips/own_sg_hawker.mp4",
+   "ss": 1.0,
+   "cx": 0.15,
+   "dur": 2.9,
+   "vf": "unsharp=5:5:0.5",
+   "zoom": [
+    1.05,
+    1.15
+   ]
+  }
+ ],
+ "layout": "full",
+ "loop_tail": 0,
+ "audio": {
+  "music": "/home/claude/r3/raspberry_lofi.m4a",
+  "music_ss": 20.67,
+  "music_vol": 0.9,
+  "music_fo": 0
+ },
+ "cover_t": 0.3,
+ "style": {
+  "sub_font": "BlackHanSans-Regular.ttf",
+  "sub_size": 104,
+  "stroke": 9,
+  "shadow": 0.55,
+  "vignette": 0.2,
+  "room": 900,
+  "tag_font": "Pretendard-Bold.otf",
+  "end_font": "BlackHanSans-Regular.ttf"
+ },
+ "subs": [],
+ "overlays": [
+  {
+   "type": "text",
+   "t0": 0,
+   "t1": 3.2,
+   "text": "싱가포르에서\n이 휴지 보이면",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "chip",
+   "t0": 0.6,
+   "t1": 3.2,
+   "text": "[절대] 앉지 마세요",
+   "size": 80,
+   "yc": 0.47
+  },
+  {
+   "type": "text",
+   "t0": 3.2,
+   "t1": 6.1,
+   "text": "휴지 한 팩 =\n['여기 자리 있어요']",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "text",
+   "t0": 6.1,
+   "t1": 9.0,
+   "text": "모르고 앉으면\n[눈총] 받아요",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "chip",
+   "t0": 6.6,
+   "t1": 9.0,
+   "text": "싱가포르 가는 친구한테 [공유]",
+   "size": 60,
+   "yc": 0.5
+  },
+  {
+   "type": "tag",
+   "t0": 0,
+   "t1": 6.1,
+   "text": "※ 휴지는 연출",
+   "size": 40,
+   "x": 60,
+   "y": 1150,
+   "bg": [
+    0,
+    0,
+    0,
+    170
+   ]
+  }
+ ],
+ "out": "/home/claude/r3/short/hawker_short_v1.mp4",
+ "cover": "/home/claude/r3/short/hawker_short_v1.jpg"
+}
