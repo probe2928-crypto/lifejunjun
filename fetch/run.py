@@ -15,6 +15,36 @@ for j in jobs:
     try:
         if j["type"] == "tts":
             asyncio.run(tts(j))
+        elif j["type"] == "mixkit":
+            import re
+            html = urllib.request.urlopen(urllib.request.Request("https://mixkit.co/free-stock-video/%s/" % j["q"], headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read().decode("utf-8", "ignore")
+            items = []
+            for m in re.finditer(r'href="/free-stock-video/([a-z0-9-]+)-(\d+)/"', html):
+                if m.group(2) not in [i[1] for i in items]: items.append((m.group(1), m.group(2)))
+            items = items[: j.get("n", 8)]
+            (OUT / f"{j['name']}.txt").write_text("\n".join(f"{i} {s}" for s, i in items), encoding="utf-8")
+            for slug, vid in items:
+                for q in ("1080", "720"):
+                    try:
+                        with urllib.request.urlopen(urllib.request.Request(f"https://assets.mixkit.co/videos/{vid}/{vid}-{q}.mp4", headers={"User-Agent": "Mozilla/5.0"}), timeout=180) as r:
+                            (OUT / f"{j['name']}_{vid}.mp4").write_bytes(r.read()); break
+                    except Exception: pass
+            log.append(f"mixkit {j['name']} {len(items)}")
+        elif j["type"] == "stats":
+            import datetime
+            out = {}
+            today = datetime.datetime.utcnow() + datetime.timedelta(hours=9)
+            for site in ("ljj", "yb"):
+                for k in range(j.get("days", 3)):
+                    d = (today - datetime.timedelta(days=k)).strftime("%Y%m%d")
+                    for m in ("pv", "uv", "sns", "apply"):
+                        key = f"{site}_{m}_{d}"
+                        try:
+                            with urllib.request.urlopen(f"https://abacus.jasoncameron.dev/get/lifejunjun-stats/{key}", timeout=20) as r:
+                                out[key] = json.loads(r.read()).get("value", 0)
+                        except Exception: out[key] = 0
+            (OUT / "stats.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
+            log.append("stats ok")
         elif j["type"] == "url":
             req = urllib.request.Request(j["url"], headers=UA)
             with urllib.request.urlopen(req, timeout=300) as r:

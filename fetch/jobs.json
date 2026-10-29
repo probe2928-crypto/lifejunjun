@@ -1,21 +1,36 @@
 [
  {
-  "type": "tts",
-  "name": "kom3_hy",
-  "voice": "ko-KR-HyunsuMultilingualNeural",
-  "rate": "+16%",
-  "texts": [
-   "평생 한 번은 봐야 할 코모도 장면, 세 가지.",
-   "세 번째.",
-   "붉은 산호 조각이 섞여 분홍빛이 도는 해변, 핑크비치.",
-   "두 번째.",
-   "만타가오리를 만날 수 있는 바다, 코모도 국립공원.",
-   "첫 번째.",
-   "코모도 일대 섬에만 사는, 코모도왕도마뱀.",
-   "몸길이가 최대 삼 미터예요.",
-   "인생준준이 코모도 원정을 준비하고 있어요.",
-   "열 명 이하 소규모로 함께 가요.",
-   "같이 가고 싶다면 댓글에 코모도를 남겨주세요. 일정이 나오면 먼저 알려드릴게요."
-  ]
+  "type": "stats",
+  "days": 3
+ },
+ {
+  "type": "mixkit",
+  "name": "mx_komodo",
+  "q": "komodo",
+  "n": 6
+ },
+ {
+  "type": "mixkit",
+  "name": "mx_manta",
+  "q": "manta-ray",
+  "n": 6
+ },
+ {
+  "type": "mixkit",
+  "name": "mx_singapore",
+  "q": "singapore",
+  "n": 8
+ },
+ {
+  "type": "mixkit",
+  "name": "mx_cat",
+  "q": "black-cat",
+  "n": 6
+ },
+ {
+  "type": "mixkit",
+  "name": "mx_whoosh",
+  "q": "transition",
+  "n": 1
  }
 ]
