@@ -1,0 +1,282 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "90826038": {
+    "pageid": 90826038,
+    "ns": 6,
+    "title": "File:A Flying Manta ray.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2738063,
+      "width": 3648,
+      "height": 2361,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/A_Flying_Manta_ray.jpg/1920px-A_Flying_Manta_ray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1036,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/8/81/A_Flying_Manta_ray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/A_Flying_Manta_ray.jpg/1920px-A_Flying_Manta_ray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1036,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/8/81/A_Flying_Manta_ray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/A_Flying_Manta_ray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:A_Flying_Manta_ray.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=90826038",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "A manta ray is filtering plankton by swimming against the current in Manta Point, Komodo National Park.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Siharaditia&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Siharaditia (page does not exist)\">Siharaditia</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "60246358": {
+    "pageid": 60246358,
+    "ns": 6,
+    "title": "File:KomodoNationalPark MantaRay.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 173717,
+      "width": 640,
+      "height": 480,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/KomodoNationalPark_MantaRay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/KomodoNationalPark_MantaRay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/KomodoNationalPark_MantaRay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:KomodoNationalPark_MantaRay.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=60246358",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Manta Ray can be seen in Komodo National Park waters.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Danadi_Sutjianto&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Danadi Sutjianto (page does not exist)\">Danadi Sutjianto</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "90333027": {
+    "pageid": 90333027,
+    "ns": 6,
+    "title": "File:Manta .jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2112300,
+      "width": 2545,
+      "height": 1440,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Manta_.jpg/1920px-Manta_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 905,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Manta_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Manta_.jpg/1920px-Manta_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 905,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Manta_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Manta_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Manta_.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=90333027",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Manta Ray in Komodo Islands",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Jonathangarryh&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Jonathangarryh (page does not exist)\">Jonathangarryh</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "24402238": {
+    "pageid": 24402238,
+    "ns": 6,
+    "title": "File:Manta ray.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4376215,
+      "width": 2249,
+      "height": 1687,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Manta_ray.jpg/1920px-Manta_ray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/8/87/Manta_ray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Manta_ray.jpg/1920px-Manta_ray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/8/87/Manta_ray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Manta_ray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Manta_ray.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=24402238",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "A mobula ray in the Komodo national park",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:P.Lindgren\" title=\"User:P.Lindgren\">Petter Lindgren</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "32572201": {
+    "pageid": 32572201,
+    "ns": 6,
+    "title": "File:Manta ray silhouette at Manta Alley.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1297403,
+      "width": 2329,
+      "height": 3105,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Manta_ray_silhouette_at_Manta_Alley.jpg/1920px-Manta_ray_silhouette_at_Manta_Alley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2133,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Manta_ray_silhouette_at_Manta_Alley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Manta_ray_silhouette_at_Manta_Alley.jpg/1920px-Manta_ray_silhouette_at_Manta_Alley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2133,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Manta_ray_silhouette_at_Manta_Alley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Manta_ray_silhouette_at_Manta_Alley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Manta_ray_silhouette_at_Manta_Alley.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=32572201",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Manta ray <i>(Manta sp.)</i> silhouette at Manta Alley (near Komodo, Indonesia)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Alex.vasenin\" title=\"User:Alex.vasenin\">Alexander Vasenin</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "168191699": {
+    "pageid": 168191699,
+    "ns": 6,
+    "title": "File:OJ C 318 of 2016 - ES Spanish.pdf",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1006319,
+      "width": 1239,
+      "height": 1752,
+      "pagecount": 36,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/OJ_C_318_of_2016_-_ES_Spanish.pdf/page1-960px-OJ_C_318_of_2016_-_ES_Spanish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2262,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/OJ_C_318_of_2016_-_ES_Spanish.pdf/page1-960px-OJ_C_318_of_2016_-_ES_Spanish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2262
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/OJ_C_318_of_2016_-_ES_Spanish.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:OJ_C_318_of_2016_-_ES_Spanish.pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=168191699",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Official Journal of the European Union - C 318 of 30 August 2016 - Spanish edition <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:OJ_C_318_of_2016_-_ES_Spanish.pdf#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/en:Publications_Office_of_the_European_Union\" class=\"extiw\" title=\"w:en:Publications Office of the European Union\"><span title=\"academic publisher\">Publications Office of the European Union</span></a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   }
+  }
+ }
+}

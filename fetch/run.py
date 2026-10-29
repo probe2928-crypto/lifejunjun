@@ -4,6 +4,7 @@ OUT = pathlib.Path("fetch/out"); OUT.mkdir(parents=True, exist_ok=True)
 jobs = json.load(open("fetch/jobs.json", encoding="utf-8"))
 UA = {"User-Agent": "lifejunjun-film/1.0 (probe2928@gmail.com)"}
 log = []
+KEEP = {f.name for f in OUT.iterdir()}
 async def tts(j):
     import edge_tts
     allb = {}
@@ -34,7 +35,7 @@ for j in jobs:
             items = items[: j.get("n", 8)]
             (OUT / f"{j['name']}.txt").write_text("\n".join(f"{i} {s}" for s, i in items), encoding="utf-8")
             for slug, vid in items:
-                for q in ("1080", "720"):
+                for q in ("720", "1080"):
                     try:
                         with urllib.request.urlopen(urllib.request.Request(f"https://assets.mixkit.co/videos/{vid}/{vid}-{q}.mp4", headers={"User-Agent": "Mozilla/5.0"}), timeout=180) as r:
                             (OUT / f"{j['name']}_{vid}.mp4").write_bytes(r.read()); break
@@ -74,12 +75,15 @@ for j in jobs:
                 if "image" in mime and ii.get("thumburl"):
                     with urllib.request.urlopen(urllib.request.Request(ii["thumburl"], headers=UA), timeout=120) as r:
                         (OUT / f"{j['name']}_{pid}.jpg").write_bytes(r.read())
-                elif ("video" in mime or "ogg" in mime) and ii.get("size", 0) < 60_000_000:
+                elif ("video" in mime or "ogg" in mime) and ii.get("size", 0) < 40_000_000:
                     ext = ii["url"].split("?")[0].rsplit(".", 1)[-1]
                     with urllib.request.urlopen(urllib.request.Request(ii["url"], headers=UA), timeout=300) as r:
                         (OUT / f"{j['name']}_{pid}.{ext}").write_bytes(r.read())
             log.append(f"commons {j['name']} ok")
     except Exception as e:
         log.append(f"FAIL {j.get('name')} {e!r}"); traceback.print_exc()
+for f in OUT.iterdir():  # GitHub rejects files over 100MB; keep the push small
+    if f.stat().st_size > 45_000_000 and f.name not in KEEP:
+        log.append(f"drop {f.name} {f.stat().st_size // 1_000_000}MB"); f.unlink()
 (OUT / "log.txt").write_text("\n".join(log), encoding="utf-8")
 print("\n".join(log))

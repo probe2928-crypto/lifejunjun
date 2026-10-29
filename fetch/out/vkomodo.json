@@ -1,0 +1,315 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 8,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "67056831": {
+    "pageid": 67056831,
+    "ns": 6,
+    "title": "File:Komodo Dragon.webm",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 25347062,
+      "width": 1920,
+      "height": 1080,
+      "duration": 6.28,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Komodo_Dragon.webm/1920px--Komodo_Dragon.webm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+      "thumbwidth": 1600,
+      "thumbheight": 900,
+      "thumbattribs": [],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Komodo_Dragon.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Komodo_Dragon.webm",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=67056831",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Komodo Dragon in Lisbon Zoo, Portugal",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Joseolgon\" title=\"User:Joseolgon\">Joseolgon</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "video/webm"
+     }
+    ]
+   },
+   "4117284": {
+    "pageid": 4117284,
+    "ns": 6,
+    "title": "File:Komodo dragons video.ogv",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 10621771,
+      "width": 472,
+      "height": 316,
+      "duration": 65.23183333333334,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Komodo_dragons_video.ogv/330px--Komodo_dragons_video.ogv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+      "thumbwidth": 472,
+      "thumbheight": 316,
+      "thumbattribs": [],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Komodo_dragons_video.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Komodo_dragons_video.ogv",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4117284",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/Komodo_dragon\" class=\"extiw\" title=\"en:Komodo dragon\">Komodo dragon</a> (<i>Varanus komodoensis</i>) from the <a href=\"https://en.wikipedia.org/wiki/Komodo_(island)\" class=\"extiw\" title=\"en:Komodo (island)\">Komodo island</a> charging the cameramen.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/site/thebrockeninglory/\">Brocken Inaglory</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/ogg"
+     }
+    ]
+   },
+   "4248605": {
+    "pageid": 4248605,
+    "ns": 6,
+    "title": "File:Komodo dragons video 2 Part 1.ogv",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4670252,
+      "width": 400,
+      "height": 304,
+      "duration": 70.06670170000001,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Komodo_dragons_video_2_Part_1.ogv/330px--Komodo_dragons_video_2_Part_1.ogv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+      "thumbwidth": 400,
+      "thumbheight": 304,
+      "thumbattribs": [],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Komodo_dragons_video_2_Part_1.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Komodo_dragons_video_2_Part_1.ogv",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4248605",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/Komodo_dragon\" class=\"extiw\" title=\"en:Komodo dragon\">Komodo dragon</a>, <i>Varanus komodoensis</i> charging us at the <a href=\"https://en.wikipedia.org/wiki/Komodo_(island)\" class=\"extiw\" title=\"en:Komodo (island)\">Komodo island</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<ul><li>Original <a href=\"//commons.wikimedia.org/wiki/File:Komodo_dragons_video.wmv.OGG\" class=\"mw-redirect\" title=\"File:Komodo dragons video.wmv.OGG\">Komodo_dragons_video.wmv.OGG</a> by <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/site/thebrockeninglory/\">Brocken Inaglory</a></li>\n<li>This derivative work by <a href=\"//commons.wikimedia.org/wiki/User:Dhatfield\" title=\"User:Dhatfield\">Dhatfield</a> (<a href=\"//commons.wikimedia.org/wiki/User_talk:Dhatfield\" title=\"User talk:Dhatfield\">talk</a>)</li></ul>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/ogg"
+     }
+    ]
+   },
+   "4248625": {
+    "pageid": 4248625,
+    "ns": 6,
+    "title": "File:Komodo dragons video 2 Part 2.ogv",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 656879,
+      "width": 400,
+      "height": 304,
+      "duration": 10.133338400000001,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Komodo_dragons_video_2_Part_2.ogv/330px--Komodo_dragons_video_2_Part_2.ogv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+      "thumbwidth": 400,
+      "thumbheight": 304,
+      "thumbattribs": [],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Komodo_dragons_video_2_Part_2.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Komodo_dragons_video_2_Part_2.ogv",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4248625",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/Komodo_dragon\" class=\"extiw\" title=\"w:Komodo dragon\">Komodo dragon</a>, <i>Varanus komodoensis</i> charging us at the <a href=\"https://en.wikipedia.org/wiki/Komodo_(island)\" class=\"extiw\" title=\"w:Komodo (island)\">Komodo (island)</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<ul><li>Original <a href=\"//commons.wikimedia.org/wiki/File:Komodo_dragons_video.wmv.OGG\" class=\"mw-redirect\" title=\"File:Komodo dragons video.wmv.OGG\">Komodo_dragons_video.wmv.OGG</a> by <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/site/thebrockeninglory/\">Brocken Inaglory</a></li>\n<li>This derivative by <a href=\"//commons.wikimedia.org/wiki/User:Dhatfield\" title=\"User:Dhatfield\">Dhatfield</a> (<a href=\"//commons.wikimedia.org/wiki/User_talk:Dhatfield\" title=\"User talk:Dhatfield\">talk</a>) 13:54, 20 June 2008 (UTC)</li></ul>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/ogg"
+     }
+    ]
+   },
+   "4258567": {
+    "pageid": 4258567,
+    "ns": 6,
+    "title": "File:Komodo dragons video 3 Part 1.ogv",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2815311,
+      "width": 400,
+      "height": 304,
+      "duration": 35.035035,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Komodo_dragons_video_3_Part_1.ogv/330px--Komodo_dragons_video_3_Part_1.ogv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+      "thumbwidth": 400,
+      "thumbheight": 304,
+      "thumbattribs": [],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Komodo_dragons_video_3_Part_1.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Komodo_dragons_video_3_Part_1.ogv",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4258567",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/Komodo_dragon\" class=\"extiw\" title=\"w:Komodo dragon\">Komodo dragon</a>, <i>Varanus komodoensis</i> charging us at the <a href=\"https://en.wikipedia.org/wiki/Komodo_(island)\" class=\"extiw\" title=\"w:Komodo (island)\">Komodo (island)</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<ul><li>Original <a href=\"//commons.wikimedia.org/wiki/File:Komodo_dragons_video.wmv.OGG\" class=\"mw-redirect\" title=\"File:Komodo dragons video.wmv.OGG\">Komodo_dragons_video.wmv.OGG</a> by <a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/site/thebrockeninglory/\">Brocken Inaglory</a></li>\n<li>This derivative work by <a href=\"//commons.wikimedia.org/wiki/User:Dhatfield\" title=\"User:Dhatfield\">Dhatfield</a> (<a href=\"//commons.wikimedia.org/wiki/User_talk:Dhatfield\" title=\"User talk:Dhatfield\">talk</a>)</li></ul>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/ogg"
+     }
+    ]
+   },
+   "4243944": {
+    "pageid": 4243944,
+    "ns": 6,
+    "title": "File:Komodo dragons video with no audio.wmv.ogv",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4110204,
+      "width": 384,
+      "height": 288,
+      "duration": 65.19846666666666,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Komodo_dragons_video_with_no_audio.wmv.ogv/330px--Komodo_dragons_video_with_no_audio.wmv.ogv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+      "thumbwidth": 384,
+      "thumbheight": 288,
+      "thumbattribs": [],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Komodo_dragons_video_with_no_audio.wmv.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Komodo_dragons_video_with_no_audio.wmv.ogv",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4243944",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/Komodo_dragon\" class=\"extiw\" title=\"w:Komodo dragon\">Komodo dragon</a>, <i>Varanus komodoensis</i> charging us at the <a href=\"https://en.wikipedia.org/wiki/Komodo_(island)\" class=\"extiw\" title=\"w:Komodo (island)\">Komodo (island)</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/site/thebrockeninglory/\">Brocken Inaglory</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/ogg"
+     }
+    ]
+   },
+   "153046256": {
+    "pageid": 153046256,
+    "ns": 6,
+    "title": "File:The Dragon & the Professor Where Were The Parents- Wild Thornberrys - NickRewind.webm",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 171921216,
+      "width": 1920,
+      "height": 1080,
+      "duration": 332.421,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/The_Dragon_%26_the_Professor_Where_Were_The_Parents-_Wild_Thornberrys_-_NickRewind.webm/1920px--The_Dragon_%26_the_Professor_Where_Were_The_Parents-_Wild_Thornberrys_-_NickRewind.webm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+      "thumbwidth": 1600,
+      "thumbheight": 900,
+      "thumbattribs": [],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/The_Dragon_%26_the_Professor_Where_Were_The_Parents-_Wild_Thornberrys_-_NickRewind.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_Dragon_%26_the_Professor_Where_Were_The_Parents-_Wild_Thornberrys_-_NickRewind.webm",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=153046256",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "We all know parenting’s tough, but if you DON’T let your kid chase a komodo dragon…you’re already doing better than the Thornberrys!\n<p>Watch more of your favorite shows on Nick!\n</p><p>►► Subscribe for More: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/NickRewindSubscribe\">https://at.nick.com/NickRewindSubscribe</a>\n►► Watch More from NickRewind: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/NewRewindVideos\">https://at.nick.com/NewRewindVideos</a>\n►► All That on YouTube: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/AllThat\">https://at.nick.com/AllThat</a>\n►► Nickelodeon on YouTube: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/Nick\">https://at.nick.com/Nick</a>\n►► What’s On TV? : <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/TVSchedule\">https://at.nick.com/TVSchedule</a>\n</p>\n<ol><li>WildThornberrys #Nick #NickRewind</li></ol>\n<p>GET MORE NICKREWIND:\nLike NickRewind: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/NickRewindFacebook\">https://at.nick.com/NickRewindFacebook</a>\nFollow NickRewind: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/NickRewindTwitter\">https://at.nick.com/NickRewindTwitter</a>\nNickRewind Instagram: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/NickRewindIG\">https://at.nick.com/NickRewindIG</a>\nLike All That: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/AllThatFacebook\">https://at.nick.com/AllThatFacebook</a>\nFollow All That: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/AllThatIG\">https://at.nick.com/AllThatIG</a>\nLike Nick: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/Facebook\">https://at.nick.com/Facebook</a>\nFollow Nick: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/Twitter\">https://at.nick.com/Twitter</a>\nNick Instagram: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/NickIG\">https://at.nick.com/NickIG</a>\nNick Snapchat: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/NickSnapchat\">https://at.nick.com/NickSnapchat</a>  \nNick Tumblr: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/Tumblr\">https://at.nick.com/Tumblr</a>\nPin Nick: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/Pinterest\">https://at.nick.com/Pinterest</a>\nVisit the Official Site: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/Official\">https://at.nick.com/Official</a>\nGet the App: <a rel=\"nofollow\" class=\"external free\" href=\"https://at.nick.com/App\">https://at.nick.com/App</a> \n</p>\nThe NickRewind channel is the OFFICIAL home of your favorite ‘80s, ‘90s, and ‘00s cartoons and shows. That’s right—we’re talking all of your slime-covered Nickelodeon childhood dreams come true! Tune in every Monday, Wednesday, and Friday for exclusive digital content from all of your throwback favorites like Rugrats, Hey Arnold, iCarly, Victorious, Kenan &amp; Kel, CatDog, Doug, Rocko’s Modern Life, The Amanda Show, Clarissa Explains It All, Ren &amp; Stimpy, Are You Afraid of the Dark, and so much more!",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/@Nicktoons\">Nicktoons</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "video/webm"
+     }
+    ]
+   },
+   "86778397": {
+    "pageid": 86778397,
+    "ns": 6,
+    "title": "File:Varanidae - Varanus komodoensis - Komodo Dragon.webm",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 13099722,
+      "width": 960,
+      "height": 720,
+      "duration": 67.523,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Varanidae_-_Varanus_komodoensis_-_Komodo_Dragon.webm/960px--Varanidae_-_Varanus_komodoensis_-_Komodo_Dragon.webm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+      "thumbwidth": 960,
+      "thumbheight": 720,
+      "thumbattribs": [],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Varanidae_-_Varanus_komodoensis_-_Komodo_Dragon.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Varanidae_-_Varanus_komodoensis_-_Komodo_Dragon.webm",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=86778397",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Varanus komodoensis in San Diego Zoo. Video clip",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Hectonichus\" title=\"User:Hectonichus\">Hectonichus</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "video/webm"
+     }
+    ]
+   }
+  }
+ }
+}
