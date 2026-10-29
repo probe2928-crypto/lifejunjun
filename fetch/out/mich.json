@@ -1,0 +1,261 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 6,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "134411655": {
+    "pageid": 134411655,
+    "ns": 6,
+    "title": "File:FamousHawkerChan 09.jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 23786126,
+      "width": 5914,
+      "height": 3943,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/FamousHawkerChan_09.jpg/1920px-FamousHawkerChan_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/FamousHawkerChan_09.jpg/3840px-FamousHawkerChan_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/FamousHawkerChan_09.jpg/1920px-FamousHawkerChan_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/FamousHawkerChan_09.jpg/3840px-FamousHawkerChan_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/FamousHawkerChan_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:FamousHawkerChan_09.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=134411655",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "First Hawker Michelin Star Stall (Hawker Chan)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Phoesics&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Phoesics (page does not exist)\">Phoebe</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "57616467": {
+    "pageid": 57616467,
+    "ns": 6,
+    "title": "File:Hong Kong Soya Sauce Chicken Rice and Noodle - Singapore - March 28 2017.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5824512,
+      "width": 4608,
+      "height": 3072,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Hong_Kong_Soya_Sauce_Chicken_Rice_and_Noodle_-_Singapore_-_March_28_2017.jpg/1920px-Hong_Kong_Soya_Sauce_Chicken_Rice_and_Noodle_-_Singapore_-_March_28_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Hong_Kong_Soya_Sauce_Chicken_Rice_and_Noodle_-_Singapore_-_March_28_2017.jpg/3840px-Hong_Kong_Soya_Sauce_Chicken_Rice_and_Noodle_-_Singapore_-_March_28_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Hong_Kong_Soya_Sauce_Chicken_Rice_and_Noodle_-_Singapore_-_March_28_2017.jpg/1920px-Hong_Kong_Soya_Sauce_Chicken_Rice_and_Noodle_-_Singapore_-_March_28_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Hong_Kong_Soya_Sauce_Chicken_Rice_and_Noodle_-_Singapore_-_March_28_2017.jpg/3840px-Hong_Kong_Soya_Sauce_Chicken_Rice_and_Noodle_-_Singapore_-_March_28_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Hong_Kong_Soya_Sauce_Chicken_Rice_and_Noodle_-_Singapore_-_March_28_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hong_Kong_Soya_Sauce_Chicken_Rice_and_Noodle_-_Singapore_-_March_28_2017.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=57616467",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Hong Kong Soya Sauce Chicken Rice and Noodle is a street food stall in Singapore.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Nesnad",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "157445914": {
+    "pageid": 157445914,
+    "ns": 6,
+    "title": "File:Philippines First Michelin Star Stall Hawker Chan interior dining5.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1903116,
+      "width": 4096,
+      "height": 3072,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Philippines_First_Michelin_Star_Stall_Hawker_Chan_interior_dining5.jpg/1920px-Philippines_First_Michelin_Star_Stall_Hawker_Chan_interior_dining5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Philippines_First_Michelin_Star_Stall_Hawker_Chan_interior_dining5.jpg/3840px-Philippines_First_Michelin_Star_Stall_Hawker_Chan_interior_dining5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Philippines_First_Michelin_Star_Stall_Hawker_Chan_interior_dining5.jpg/1920px-Philippines_First_Michelin_Star_Stall_Hawker_Chan_interior_dining5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Philippines_First_Michelin_Star_Stall_Hawker_Chan_interior_dining5.jpg/3840px-Philippines_First_Michelin_Star_Stall_Hawker_Chan_interior_dining5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Philippines_First_Michelin_Star_Stall_Hawker_Chan_interior_dining5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Philippines_First_Michelin_Star_Stall_Hawker_Chan_interior_dining5.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=157445914",
+      "extmetadata": {
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "157445912": {
+    "pageid": 157445912,
+    "ns": 6,
+    "title": "File:Philippines Michelin Star Stall Hawker Chan roastings4.jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1553110,
+      "width": 3612,
+      "height": 2994,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Philippines_Michelin_Star_Stall_Hawker_Chan_roastings4.jpg/1920px-Philippines_Michelin_Star_Stall_Hawker_Chan_roastings4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1326,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/4/45/Philippines_Michelin_Star_Stall_Hawker_Chan_roastings4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Philippines_Michelin_Star_Stall_Hawker_Chan_roastings4.jpg/1920px-Philippines_Michelin_Star_Stall_Hawker_Chan_roastings4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1326,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/4/45/Philippines_Michelin_Star_Stall_Hawker_Chan_roastings4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Philippines_Michelin_Star_Stall_Hawker_Chan_roastings4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Philippines_Michelin_Star_Stall_Hawker_Chan_roastings4.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=157445912",
+      "extmetadata": {
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "157445909": {
+    "pageid": 157445909,
+    "ns": 6,
+    "title": "File:Philippines Michelin Star Stall Hawker Chan soya sauce chiken pork3.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1382880,
+      "width": 4096,
+      "height": 2796,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Philippines_Michelin_Star_Stall_Hawker_Chan_soya_sauce_chiken_pork3.jpg/1920px-Philippines_Michelin_Star_Stall_Hawker_Chan_soya_sauce_chiken_pork3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1092,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Philippines_Michelin_Star_Stall_Hawker_Chan_soya_sauce_chiken_pork3.jpg/3840px-Philippines_Michelin_Star_Stall_Hawker_Chan_soya_sauce_chiken_pork3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Philippines_Michelin_Star_Stall_Hawker_Chan_soya_sauce_chiken_pork3.jpg/1920px-Philippines_Michelin_Star_Stall_Hawker_Chan_soya_sauce_chiken_pork3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1092,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Philippines_Michelin_Star_Stall_Hawker_Chan_soya_sauce_chiken_pork3.jpg/3840px-Philippines_Michelin_Star_Stall_Hawker_Chan_soya_sauce_chiken_pork3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Philippines_Michelin_Star_Stall_Hawker_Chan_soya_sauce_chiken_pork3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Philippines_Michelin_Star_Stall_Hawker_Chan_soya_sauce_chiken_pork3.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=157445909",
+      "extmetadata": {
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "157445917": {
+    "pageid": 157445917,
+    "ns": 6,
+    "title": "File:Philippines Michelin Star Stall Hawker Chan wall6.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1491068,
+      "width": 3912,
+      "height": 2862,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Philippines_Michelin_Star_Stall_Hawker_Chan_wall6.jpg/1920px-Philippines_Michelin_Star_Stall_Hawker_Chan_wall6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1171,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Philippines_Michelin_Star_Stall_Hawker_Chan_wall6.jpg/3840px-Philippines_Michelin_Star_Stall_Hawker_Chan_wall6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Philippines_Michelin_Star_Stall_Hawker_Chan_wall6.jpg/1920px-Philippines_Michelin_Star_Stall_Hawker_Chan_wall6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1171,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Philippines_Michelin_Star_Stall_Hawker_Chan_wall6.jpg/3840px-Philippines_Michelin_Star_Stall_Hawker_Chan_wall6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Philippines_Michelin_Star_Stall_Hawker_Chan_wall6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Philippines_Michelin_Star_Stall_Hawker_Chan_wall6.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=157445917",
+      "extmetadata": {
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

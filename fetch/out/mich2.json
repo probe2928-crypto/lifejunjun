@@ -1,0 +1,97 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "51194120": {
+    "pageid": 51194120,
+    "ns": 6,
+    "title": "File:Bak-chor-mee.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 245399,
+      "width": 1200,
+      "height": 800,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bak-chor-mee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bak-chor-mee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bak-chor-mee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bak-chor-mee.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=51194120",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Bak chor mee at Hill Street Tai Hwa Pork Noodle in Singapore.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Foodforflywill&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Foodforflywill (page does not exist)\">JB Macatulad</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "72993168": {
+    "pageid": 72993168,
+    "ns": 6,
+    "title": "File:Hill Street Tai Hwa Pork Noodle.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2276649,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Hill_Street_Tai_Hwa_Pork_Noodle.jpg/1920px-Hill_Street_Tai_Hwa_Pork_Noodle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Hill_Street_Tai_Hwa_Pork_Noodle.jpg/3840px-Hill_Street_Tai_Hwa_Pork_Noodle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Hill_Street_Tai_Hwa_Pork_Noodle.jpg/1920px-Hill_Street_Tai_Hwa_Pork_Noodle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Hill_Street_Tai_Hwa_Pork_Noodle.jpg/3840px-Hill_Street_Tai_Hwa_Pork_Noodle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Hill_Street_Tai_Hwa_Pork_Noodle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hill_Street_Tai_Hwa_Pork_Noodle.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=72993168",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "IMG_4645",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/50178625@N00\">Ken Marshall</a> from Absecon, New Jersey, USA",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

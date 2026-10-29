@@ -1,1 +1,4 @@
-tts hwk_hy 12
+tts hwk2_hy 12
+url woodleigh_orig.jpg ok
+commons mich ok
+commons mich2 ok
