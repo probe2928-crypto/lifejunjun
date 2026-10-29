@@ -1,0 +1,451 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 10,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "95244709": {
+    "pageid": 95244709,
+    "ns": 6,
+    "title": "File:A free lance of to-day - a novel (IA freelanceoftoday00clifrich).pdf",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 17825479,
+      "width": 858,
+      "height": 1341,
+      "pagecount": 332,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/A_free_lance_of_to-day_-_a_novel_%28IA_freelanceoftoday00clifrich%29.pdf/page1-500px-A_free_lance_of_to-day_-_a_novel_%28IA_freelanceoftoday00clifrich%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2501,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/A_free_lance_of_to-day_-_a_novel_%28IA_freelanceoftoday00clifrich%29.pdf/page1-500px-A_free_lance_of_to-day_-_a_novel_%28IA_freelanceoftoday00clifrich%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2501
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/A_free_lance_of_to-day_-_a_novel_%28IA_freelanceoftoday00clifrich%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:A_free_lance_of_to-day_-_a_novel_(IA_freelanceoftoday00clifrich).pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=95244709",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\nClifford, Hugh Charles, Sir, 1866-1941</div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\nSubjects:</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "97833377": {
+    "pageid": 97833377,
+    "ns": 6,
+    "title": "File:A magician in many lands (IA cu31924023252467).pdf",
+    "index": 9,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 8044440,
+      "width": 714,
+      "height": 1097,
+      "pagecount": 346,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/A_magician_in_many_lands_%28IA_cu31924023252467%29.pdf/page1-500px-A_magician_in_many_lands_%28IA_cu31924023252467%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2458,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/A_magician_in_many_lands_%28IA_cu31924023252467%29.pdf/page1-500px-A_magician_in_many_lands_%28IA_cu31924023252467%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2458
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/A_magician_in_many_lands_%28IA_cu31924023252467%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:A_magician_in_many_lands_(IA_cu31924023252467).pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=97833377",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\nBertram, Charles</div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\n<p>The metadata below describe the original scanning. Follow the \"All Files: HTTP\" link in the \"View the book\" box to the left to find XML files that contain more metadata about the original images and the derived formats (OCR results, PDF etc.). See also the <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/about/faqs.php#140\">What is the directory structure for the texts?</a> FAQ for information about file content and naming conventions.\n</p>\n<br>Subjects: Voyages around the world</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "94882928": {
+    "pageid": 94882928,
+    "ns": 6,
+    "title": "File:By-ways of Bombay (IA bywaysofbombay00edwa).pdf",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 6970918,
+      "width": 995,
+      "height": 1410,
+      "pagecount": 158,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/By-ways_of_Bombay_%28IA_bywaysofbombay00edwa%29.pdf/page1-960px-By-ways_of_Bombay_%28IA_bywaysofbombay00edwa%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2267,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/By-ways_of_Bombay_%28IA_bywaysofbombay00edwa%29.pdf/page1-960px-By-ways_of_Bombay_%28IA_bywaysofbombay00edwa%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2267
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/By-ways_of_Bombay_%28IA_bywaysofbombay00edwa%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:By-ways_of_Bombay_(IA_bywaysofbombay00edwa).pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=94882928",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\n<dl><dd>Edwardes, S. M. (Stephen Meredyth), 1873-1927</dd>\n<dd>Dhurandhar, M. V., ill</dd></dl></div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\nSubjects: Bombay (India) -- Social life and customs</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "94914002": {
+    "pageid": 94914002,
+    "ns": 6,
+    "title": "File:Ceylon, the paradise of Adam; the record of seven years' residence in the island (IA ceylonparadiseof00corn).pdf",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 16507620,
+      "width": 850,
+      "height": 1327,
+      "pagecount": 400,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Ceylon%2C_the_paradise_of_Adam%3B_the_record_of_seven_years%27_residence_in_the_island_%28IA_ceylonparadiseof00corn%29.pdf/page1-500px-Ceylon%2C_the_paradise_of_Adam%3B_the_record_of_seven_years%27_residence_in_the_island_%28IA_ceylonparadiseof00corn%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2498,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Ceylon%2C_the_paradise_of_Adam%3B_the_record_of_seven_years%27_residence_in_the_island_%28IA_ceylonparadiseof00corn%29.pdf/page1-500px-Ceylon%2C_the_paradise_of_Adam%3B_the_record_of_seven_years%27_residence_in_the_island_%28IA_ceylonparadiseof00corn%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2498
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Ceylon%2C_the_paradise_of_Adam%3B_the_record_of_seven_years%27_residence_in_the_island_%28IA_ceylonparadiseof00corn%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ceylon,_the_paradise_of_Adam;_the_record_of_seven_years%27_residence_in_the_island_(IA_ceylonparadiseof00corn).pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=94914002",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\nCorner, Caroline, Mrs.d</div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\nSubjects: Sri Lanka -- Description and travel</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "97842486": {
+    "pageid": 97842486,
+    "ns": 6,
+    "title": "File:Ceylon, the paradise of Adam - the record of seven years' residence in the island (IA cu31924024121323).pdf",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 7441275,
+      "width": 756,
+      "height": 1218,
+      "pagecount": 398,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Ceylon%2C_the_paradise_of_Adam_-_the_record_of_seven_years%27_residence_in_the_island_%28IA_cu31924024121323%29.pdf/page1-500px-Ceylon%2C_the_paradise_of_Adam_-_the_record_of_seven_years%27_residence_in_the_island_%28IA_cu31924024121323%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2578,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Ceylon%2C_the_paradise_of_Adam_-_the_record_of_seven_years%27_residence_in_the_island_%28IA_cu31924024121323%29.pdf/page1-500px-Ceylon%2C_the_paradise_of_Adam_-_the_record_of_seven_years%27_residence_in_the_island_%28IA_cu31924024121323%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2578
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Ceylon%2C_the_paradise_of_Adam_-_the_record_of_seven_years%27_residence_in_the_island_%28IA_cu31924024121323%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ceylon,_the_paradise_of_Adam_-_the_record_of_seven_years%27_residence_in_the_island_(IA_cu31924024121323).pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=97842486",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\nCorner, Caroline</div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\n<p>The metadata below describe the original scanning. Follow the \"All Files: HTTP\" link in the \"View the book\" box to the left to find XML files that contain more metadata about the original images and the derived formats (OCR results, PDF etc.). See also the <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/about/faqs.php#140\">What is the directory structure for the texts?</a> FAQ for information about file content and naming conventions.\n</p>\n<br>Subjects:</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "95517617": {
+    "pageid": 95517617,
+    "ns": 6,
+    "title": "File:In the Far East; letters from Geraldine Guinness in China. (Now Mrs. Howard Taylor) (IA infareastletters00taylrich).pdf",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 16754994,
+      "width": 1043,
+      "height": 1435,
+      "pagecount": 210,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/In_the_Far_East%3B_letters_from_Geraldine_Guinness_in_China._%28Now_Mrs._Howard_Taylor%29_%28IA_infareastletters00taylrich%29.pdf/page1-960px-In_the_Far_East%3B_letters_from_Geraldine_Guinness_in_China._%28Now_Mrs._Howard_Taylor%29_%28IA_infareastletters00taylrich%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2201,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/In_the_Far_East%3B_letters_from_Geraldine_Guinness_in_China._%28Now_Mrs._Howard_Taylor%29_%28IA_infareastletters00taylrich%29.pdf/page1-960px-In_the_Far_East%3B_letters_from_Geraldine_Guinness_in_China._%28Now_Mrs._Howard_Taylor%29_%28IA_infareastletters00taylrich%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2201
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/In_the_Far_East%3B_letters_from_Geraldine_Guinness_in_China._%28Now_Mrs._Howard_Taylor%29_%28IA_infareastletters00taylrich%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:In_the_Far_East;_letters_from_Geraldine_Guinness_in_China._(Now_Mrs._Howard_Taylor)_(IA_infareastletters00taylrich).pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=95517617",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\n<dl><dd>Taylor, Howard, Mrs</dd>\n<dd>Broomhall, Marshall</dd></dl></div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\nSubjects: Missions -- China; China -- Description and travel</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "97834084": {
+    "pageid": 97834084,
+    "ns": 6,
+    "title": "File:Orient and Occident- a journey east from Lahore to Liverpool (IA cu31924023257185).pdf",
+    "index": 10,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 10894953,
+      "width": 650,
+      "height": 1014,
+      "pagecount": 568,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Orient_and_Occident-_a_journey_east_from_Lahore_to_Liverpool_%28IA_cu31924023257185%29.pdf/page1-500px-Orient_and_Occident-_a_journey_east_from_Lahore_to_Liverpool_%28IA_cu31924023257185%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2496,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Orient_and_Occident-_a_journey_east_from_Lahore_to_Liverpool_%28IA_cu31924023257185%29.pdf/page1-500px-Orient_and_Occident-_a_journey_east_from_Lahore_to_Liverpool_%28IA_cu31924023257185%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2496
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Orient_and_Occident-_a_journey_east_from_Lahore_to_Liverpool_%28IA_cu31924023257185%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Orient_and_Occident-_a_journey_east_from_Lahore_to_Liverpool_(IA_cu31924023257185).pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=97834084",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\nMitford, Reginald Colville William Reveley</div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\n<p>The metadata below describe the original scanning. Follow the \"All Files: HTTP\" link in the \"View the book\" box to the left to find XML files that contain more metadata about the original images and the derived formats (OCR results, PDF etc.). See also the <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/about/faqs.php#140\">What is the directory structure for the texts?</a> FAQ for information about file content and naming conventions.\n</p>\n<br>Subjects: Voyages and travels</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "96799934": {
+    "pageid": 96799934,
+    "ns": 6,
+    "title": "File:Things Chinese - being notes on various subjects connected with China (IA thingschinesebei00balliala).pdf",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 40032581,
+      "width": 810,
+      "height": 1266,
+      "pagecount": 454,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Things_Chinese_-_being_notes_on_various_subjects_connected_with_China_%28IA_thingschinesebei00balliala%29.pdf/page1-500px-Things_Chinese_-_being_notes_on_various_subjects_connected_with_China_%28IA_thingschinesebei00balliala%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2501,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Things_Chinese_-_being_notes_on_various_subjects_connected_with_China_%28IA_thingschinesebei00balliala%29.pdf/page1-500px-Things_Chinese_-_being_notes_on_various_subjects_connected_with_China_%28IA_thingschinesebei00balliala%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2501
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Things_Chinese_-_being_notes_on_various_subjects_connected_with_China_%28IA_thingschinesebei00balliala%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Things_Chinese_-_being_notes_on_various_subjects_connected_with_China_(IA_thingschinesebei00balliala).pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=96799934",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\nBall, J. Dyer (James Dyer), 1847-1919</div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\nSubjects:</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "96881505": {
+    "pageid": 96881505,
+    "ns": 6,
+    "title": "File:Travels and adventures of an officer's wife in India, China, and New Zealand (IA travelsadventure02muteiala).pdf",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 11571227,
+      "width": 725,
+      "height": 1158,
+      "pagecount": 344,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Travels_and_adventures_of_an_officer%27s_wife_in_India%2C_China%2C_and_New_Zealand_%28IA_travelsadventure02muteiala%29.pdf/page1-500px-Travels_and_adventures_of_an_officer%27s_wife_in_India%2C_China%2C_and_New_Zealand_%28IA_travelsadventure02muteiala%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2556,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Travels_and_adventures_of_an_officer%27s_wife_in_India%2C_China%2C_and_New_Zealand_%28IA_travelsadventure02muteiala%29.pdf/page1-500px-Travels_and_adventures_of_an_officer%27s_wife_in_India%2C_China%2C_and_New_Zealand_%28IA_travelsadventure02muteiala%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2556
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Travels_and_adventures_of_an_officer%27s_wife_in_India%2C_China%2C_and_New_Zealand_%28IA_travelsadventure02muteiala%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Travels_and_adventures_of_an_officer%27s_wife_in_India,_China,_and_New_Zealand_(IA_travelsadventure02muteiala).pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=96881505",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\nMuter, Elizabeth McMullin, \"Mrs. D. D. Muter</div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\nSubjects: India -- Description and travel; China -- Description and travel; New Zealand -- Description and travel</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   },
+   "96883789": {
+    "pageid": 96883789,
+    "ns": 6,
+    "title": "File:Travels in the Far East (IA travelsinfareast00peck).pdf",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 28741599,
+      "width": 775,
+      "height": 1231,
+      "pagecount": 730,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Travels_in_the_Far_East_%28IA_travelsinfareast00peck%29.pdf/page1-500px-Travels_in_the_Far_East_%28IA_travelsinfareast00peck%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2541,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Travels_in_the_Far_East_%28IA_travelsinfareast00peck%29.pdf/page1-500px-Travels_in_the_Far_East_%28IA_travelsinfareast00peck%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2541
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Travels_in_the_Far_East_%28IA_travelsinfareast00peck%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Travels_in_the_Far_East_(IA_travelsinfareast00peck).pdf",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=96883789",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\nPeck, Ellen Mary Hayes</div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\nSubjects: East Asia -- Description and travel; Egypt -- Description and travel</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "application/pdf"
+     }
+    ]
+   }
+  }
+ }
+}
