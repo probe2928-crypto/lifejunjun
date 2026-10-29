@@ -1,4 +1,3 @@
-commons chope ok
-commons trayret ok
-commons hawker ok
-stats ok
+commons chope2 ok
+commons tray2 ok
+commons hawk2 ok

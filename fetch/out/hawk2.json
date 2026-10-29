@@ -1,0 +1,571 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 12,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "182075404": {
+    "pageid": 182075404,
+    "ns": 6,
+    "title": "File:Bukit Canberra Hawker Centre (83435).jpg",
+    "index": 9,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5967410,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Bukit_Canberra_Hawker_Centre_%2883435%29.jpg/1920px-Bukit_Canberra_Hawker_Centre_%2883435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Bukit_Canberra_Hawker_Centre_%2883435%29.jpg/3840px-Bukit_Canberra_Hawker_Centre_%2883435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Bukit_Canberra_Hawker_Centre_%2883435%29.jpg/1920px-Bukit_Canberra_Hawker_Centre_%2883435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Bukit_Canberra_Hawker_Centre_%2883435%29.jpg/3840px-Bukit_Canberra_Hawker_Centre_%2883435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Bukit_Canberra_Hawker_Centre_%2883435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bukit_Canberra_Hawker_Centre_(83435).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=182075404",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Bukit Canberra Hawker Centre, a hawker centre in Singapore.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kbseah\" title=\"User:Kbseah\">Kbseah</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "177034525": {
+    "pageid": 177034525,
+    "ns": 6,
+    "title": "File:Margaret Drive Hawker Centre, exterior.jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3937338,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Margaret_Drive_Hawker_Centre%2C_exterior.jpg/1920px-Margaret_Drive_Hawker_Centre%2C_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Margaret_Drive_Hawker_Centre%2C_exterior.jpg/3840px-Margaret_Drive_Hawker_Centre%2C_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Margaret_Drive_Hawker_Centre%2C_exterior.jpg/1920px-Margaret_Drive_Hawker_Centre%2C_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Margaret_Drive_Hawker_Centre%2C_exterior.jpg/3840px-Margaret_Drive_Hawker_Centre%2C_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Margaret_Drive_Hawker_Centre%2C_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Margaret_Drive_Hawker_Centre,_exterior.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=177034525",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Margaret Drive Hawker Centre, a hawker centre in Singapore",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kbseah\" title=\"User:Kbseah\">Kbseah</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "177034532": {
+    "pageid": 177034532,
+    "ns": 6,
+    "title": "File:Margaret Drive Hawker Centre, exterior (32492).jpg",
+    "index": 10,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3116451,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Margaret_Drive_Hawker_Centre%2C_exterior_%2832492%29.jpg/1920px-Margaret_Drive_Hawker_Centre%2C_exterior_%2832492%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Margaret_Drive_Hawker_Centre%2C_exterior_%2832492%29.jpg/3840px-Margaret_Drive_Hawker_Centre%2C_exterior_%2832492%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Margaret_Drive_Hawker_Centre%2C_exterior_%2832492%29.jpg/1920px-Margaret_Drive_Hawker_Centre%2C_exterior_%2832492%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Margaret_Drive_Hawker_Centre%2C_exterior_%2832492%29.jpg/3840px-Margaret_Drive_Hawker_Centre%2C_exterior_%2832492%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Margaret_Drive_Hawker_Centre%2C_exterior_%2832492%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Margaret_Drive_Hawker_Centre,_exterior_(32492).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=177034532",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Margaret Drive Hawker Centre, a hawker centre in Singapore",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kbseah\" title=\"User:Kbseah\">Kbseah</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "177034544": {
+    "pageid": 177034544,
+    "ns": 6,
+    "title": "File:Margaret Drive Hawker Centre, ground floor.jpg",
+    "index": 11,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4161556,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Margaret_Drive_Hawker_Centre%2C_ground_floor.jpg/1920px-Margaret_Drive_Hawker_Centre%2C_ground_floor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Margaret_Drive_Hawker_Centre%2C_ground_floor.jpg/3840px-Margaret_Drive_Hawker_Centre%2C_ground_floor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Margaret_Drive_Hawker_Centre%2C_ground_floor.jpg/1920px-Margaret_Drive_Hawker_Centre%2C_ground_floor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Margaret_Drive_Hawker_Centre%2C_ground_floor.jpg/3840px-Margaret_Drive_Hawker_Centre%2C_ground_floor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Margaret_Drive_Hawker_Centre%2C_ground_floor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Margaret_Drive_Hawker_Centre,_ground_floor.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=177034544",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Margaret Drive Hawker Centre, a hawker centre in Singapore",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kbseah\" title=\"User:Kbseah\">Kbseah</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "177034536": {
+    "pageid": 177034536,
+    "ns": 6,
+    "title": "File:Margaret Drive Hawker Centre, interior, second floor.jpg",
+    "index": 12,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3370767,
+      "width": 3000,
+      "height": 4000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Margaret_Drive_Hawker_Centre%2C_interior%2C_second_floor.jpg/1920px-Margaret_Drive_Hawker_Centre%2C_interior%2C_second_floor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2133,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Margaret_Drive_Hawker_Centre%2C_interior%2C_second_floor.jpg/1920px-Margaret_Drive_Hawker_Centre%2C_interior%2C_second_floor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2133
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Margaret_Drive_Hawker_Centre%2C_interior%2C_second_floor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Margaret_Drive_Hawker_Centre,_interior,_second_floor.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=177034536",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Margaret Drive Hawker Centre, a hawker centre in Singapore",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kbseah\" title=\"User:Kbseah\">Kbseah</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "185400404": {
+    "pageid": 185400404,
+    "ns": 6,
+    "title": "File:One Punggol Hawker Centre (57892).jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3853982,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/One_Punggol_Hawker_Centre_%2857892%29.jpg/1920px-One_Punggol_Hawker_Centre_%2857892%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/One_Punggol_Hawker_Centre_%2857892%29.jpg/3840px-One_Punggol_Hawker_Centre_%2857892%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/One_Punggol_Hawker_Centre_%2857892%29.jpg/1920px-One_Punggol_Hawker_Centre_%2857892%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/One_Punggol_Hawker_Centre_%2857892%29.jpg/3840px-One_Punggol_Hawker_Centre_%2857892%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/One_Punggol_Hawker_Centre_%2857892%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:One_Punggol_Hawker_Centre_(57892).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=185400404",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "One Punggol Hawker Centre, a hawker centre located in a multipurpose community building in Singapore",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kbseah\" title=\"User:Kbseah\">Kbseah</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "134037727": {
+    "pageid": 134037727,
+    "ns": 6,
+    "title": "File:Singapore-Hawker Centre-1973-74-WUS08221.jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 11730590,
+      "width": 5745,
+      "height": 3830,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Singapore-Hawker_Centre-1973-74-WUS08221.jpg/1920px-Singapore-Hawker_Centre-1973-74-WUS08221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Singapore-Hawker_Centre-1973-74-WUS08221.jpg/3840px-Singapore-Hawker_Centre-1973-74-WUS08221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Singapore-Hawker_Centre-1973-74-WUS08221.jpg/1920px-Singapore-Hawker_Centre-1973-74-WUS08221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Singapore-Hawker_Centre-1973-74-WUS08221.jpg/3840px-Singapore-Hawker_Centre-1973-74-WUS08221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Singapore-Hawker_Centre-1973-74-WUS08221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Singapore-Hawker_Centre-1973-74-WUS08221.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=134037727",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Singapore-Hawker Centre in 1973/74",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Rainer_Halama\" title=\"User:Rainer Halama\">Rainer Halama</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "133927382": {
+    "pageid": 133927382,
+    "ns": 6,
+    "title": "File:Singapore-Hawker Centre.1973-74-WUS08151.jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 22330086,
+      "width": 5859,
+      "height": 3906,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Singapore-Hawker_Centre.1973-74-WUS08151.jpg/1920px-Singapore-Hawker_Centre.1973-74-WUS08151.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Singapore-Hawker_Centre.1973-74-WUS08151.jpg/3840px-Singapore-Hawker_Centre.1973-74-WUS08151.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Singapore-Hawker_Centre.1973-74-WUS08151.jpg/1920px-Singapore-Hawker_Centre.1973-74-WUS08151.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Singapore-Hawker_Centre.1973-74-WUS08151.jpg/3840px-Singapore-Hawker_Centre.1973-74-WUS08151.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Singapore-Hawker_Centre.1973-74-WUS08151.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Singapore-Hawker_Centre.1973-74-WUS08151.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=133927382",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Singapore - Hawker Centre - 1973/74",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Rainer_Halama\" title=\"User:Rainer Halama\">Rainer Halama</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "134755033": {
+    "pageid": 134755033,
+    "ns": 6,
+    "title": "File:Singapore Hawker Alexandra Food Centre.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2908346,
+      "width": 4000,
+      "height": 1800,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Singapore_Hawker_Alexandra_Food_Centre.jpg/1920px-Singapore_Hawker_Alexandra_Food_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 720,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Singapore_Hawker_Alexandra_Food_Centre.jpg/3840px-Singapore_Hawker_Alexandra_Food_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Singapore_Hawker_Alexandra_Food_Centre.jpg/1920px-Singapore_Hawker_Alexandra_Food_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 720,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Singapore_Hawker_Alexandra_Food_Centre.jpg/3840px-Singapore_Hawker_Alexandra_Food_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Singapore_Hawker_Alexandra_Food_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Singapore_Hawker_Alexandra_Food_Centre.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=134755033",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Singapore Hawker Alexandra Food Centre",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Exec8\" title=\"User:Exec8\">Exec8</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "175110294": {
+    "pageid": 175110294,
+    "ns": 6,
+    "title": "File:Woodleigh Village Hawker Centre, exterior.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3625738,
+      "width": 3885,
+      "height": 2914,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Woodleigh_Village_Hawker_Centre%2C_exterior.jpg/1920px-Woodleigh_Village_Hawker_Centre%2C_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Woodleigh_Village_Hawker_Centre%2C_exterior.jpg/3840px-Woodleigh_Village_Hawker_Centre%2C_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Woodleigh_Village_Hawker_Centre%2C_exterior.jpg/1920px-Woodleigh_Village_Hawker_Centre%2C_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Woodleigh_Village_Hawker_Centre%2C_exterior.jpg/3840px-Woodleigh_Village_Hawker_Centre%2C_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Woodleigh_Village_Hawker_Centre%2C_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Woodleigh_Village_Hawker_Centre,_exterior.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175110294",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Woodleigh Village Hawker Centre, located in a mixed use building in Woodleigh, Singapore, viewed from across pedestrian bridge",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kbseah\" title=\"User:Kbseah\">Kbseah</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "175110326": {
+    "pageid": 175110326,
+    "ns": 6,
+    "title": "File:Woodleigh Village Hawker Centre, exterior (46714).jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3675754,
+      "width": 3833,
+      "height": 2875,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Woodleigh_Village_Hawker_Centre%2C_exterior_%2846714%29.jpg/1920px-Woodleigh_Village_Hawker_Centre%2C_exterior_%2846714%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/5/57/Woodleigh_Village_Hawker_Centre%2C_exterior_%2846714%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Woodleigh_Village_Hawker_Centre%2C_exterior_%2846714%29.jpg/1920px-Woodleigh_Village_Hawker_Centre%2C_exterior_%2846714%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/5/57/Woodleigh_Village_Hawker_Centre%2C_exterior_%2846714%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Woodleigh_Village_Hawker_Centre%2C_exterior_%2846714%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Woodleigh_Village_Hawker_Centre,_exterior_(46714).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175110326",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Woodleigh Village Hawker Centre, located in a mixed use building in Woodleigh, Singapore, viewed from across pedestrian bridge",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kbseah\" title=\"User:Kbseah\">Kbseah</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "175110262": {
+    "pageid": 175110262,
+    "ns": 6,
+    "title": "File:Woodleigh Village Hawker Centre, interior.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3795768,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Woodleigh_Village_Hawker_Centre%2C_interior.jpg/1920px-Woodleigh_Village_Hawker_Centre%2C_interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Woodleigh_Village_Hawker_Centre%2C_interior.jpg/3840px-Woodleigh_Village_Hawker_Centre%2C_interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Woodleigh_Village_Hawker_Centre%2C_interior.jpg/1920px-Woodleigh_Village_Hawker_Centre%2C_interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Woodleigh_Village_Hawker_Centre%2C_interior.jpg/3840px-Woodleigh_Village_Hawker_Centre%2C_interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Woodleigh_Village_Hawker_Centre%2C_interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Woodleigh_Village_Hawker_Centre,_interior.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175110262",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Food stalls at Woodleigh Village Hawker Centre, located in a mixed use building in Woodleigh, Singapore",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kbseah\" title=\"User:Kbseah\">Kbseah</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}
