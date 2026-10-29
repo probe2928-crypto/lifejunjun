@@ -43,6 +43,9 @@ def segs(line):
     return out
 
 
+UNIFORM_LINES = True
+
+
 def fit(f, txt, room, path):
     s = f.size
     while f.getlength(txt) > room and s > 24:
@@ -58,6 +61,9 @@ def text_img(lines, fpath, size, fill=(255, 255, 255, 255), accent=(255, 214, 64
         plain = ln.replace("[", "").replace("]", "")
         f = fit(font(fpath, size), plain, room, fpath)
         asc, desc = f.getmetrics(); rows.append((ln, f, asc + desc + stroke * 2))
+    if UNIFORM_LINES and len(rows) > 1:  # every line at the size of the most-shrunk one, so lines never mismatch
+        sm = min(r[1].size for r in rows); f2 = font(fpath, sm); a2, d2 = f2.getmetrics()
+        rows = [(r[0], f2, a2 + d2 + stroke * 2) for r in rows]
     pad = 30 + stroke
     total = sum(r[2] for r in rows) + gap * (len(rows) - 1) + pad * 2
     im = Image.new("RGBA", (width, total), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
@@ -161,6 +167,13 @@ def build_base(spec, work, bw, bh):
     segs_ = []
     for k, s in enumerate(spec["shots"]):
         out = os.path.join(work, f"shot{k:02d}.mp4"); segs_.append(out)
+        try:
+            cd = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", s["clip"]],
+                                      capture_output=True, text=True).stdout)
+            m = re.search(r"setpts=([0-9.]+)\*PTS", s.get("pre", "")); sp = float(m.group(1)) if m else 1.0
+            need = s.get("ss", 0) + s["dur"] / sp
+            if need > cd + 0.05: print(f"[freeze] shot {k} needs {need:.2f}s of {os.path.basename(s['clip'])} ({cd:.2f}s) -> {need - cd:.2f}s frozen")
+        except Exception: pass
         cx, cy = s.get("cx", .5), s.get("cy", .5)
         vf = ((s["pre"] + ",") if s.get("pre") else "") + (f"scale={bw}:{bh}:force_original_aspect_ratio=increase:flags=lanczos,"
               f"crop={bw}:{bh}:(iw-{bw})*{cx}:(ih-{bh})*{cy},fps={FPS},eq=contrast=1.04:saturation=1.08"
@@ -365,6 +378,8 @@ def render(spec):
         rem = sk["dur"] - lt
         if nxt and rem < Tt: tmode, tp = nxt, 1 - rem / Tt
         elif k > 0 and sk.get("trans") and lt < Tt: tmode, tp = sk["trans"], 1 - lt / Tt
+        if tmode and spec.get("trans_scope", "footage") == "footage":  # captions stay crisp, only the picture zooms
+            img = trans_fx(img, tmode, tp, bw, bh); tmode = None
         if z > 1.001:
             cw, ch = int(bw / z), int(bh / z); zx, zy = sk.get("zx", .5), sk.get("zy", .5)
             x0 = int(min(max(zx * bw - cw / 2, 0), bw - cw)); y0 = int(min(max(zy * bh - ch / 2, 0), bh - ch))
@@ -396,8 +411,9 @@ def render(spec):
                     x -= (im.width - im.width / sc) / 2; y -= (im.height - im.height / sc) / 2
             if o["type"] == "flash": a = max(0.0, 1 - lt2 / max(o["t1"] - o["t0"], .01)) * o.get("peak", .85)
             if o["type"] == "counter":
-                v = int(round(o["to"] * (1 - (1 - min(lt2 / o.get("dur", 1.6), 1)) ** 3)))
-                s_ = o.get("prefix", "") + f"{v:,}" + (o.get("suffix", "") if v >= o["to"] else "")
+                fr0 = o.get("from", 0)
+                v = int(round(fr0 + (o["to"] - fr0) * (1 - (1 - min(lt2 / o.get("dur", 1.6), 1)) ** 3)))
+                s_ = o.get("prefix", "") + f"{v:,}" + (o.get("suffix", "") if v >= o["to"] or o.get("suffix_always") else "")
                 key = ("cnt", s_)
                 if key not in _cnt:
                     _cnt[key], _ = text_img([s_], o.get("font", st.get("sub_font", "Pretendard-Black.otf")), o.get("size", 170),
@@ -440,7 +456,7 @@ def render(spec):
             ex = (f"if(lt(t\\,{a - r})\\,1\\,if(lt(t\\,{a})\\,1-(1-{v})*(t-{a - r})/{r}\\,if(lt(t\\,{b_})\\,{v}\\,"
                   f"if(lt(t\\,{b_ + r})\\,{v}+(1-{v})*(t-{b_})/{r}\\,1))))")
             duck += f",volume=eval=frame:volume='{ex}'"
-        fc.append(f"[{n}:a]atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume={au.get('music_vol', .22)}{duck},afade=t=in:d=0.3,afade=t=out:st={total - 1:.3f}:d=1[m]"); n += 1
+        fc.append(f"[{n}:a]atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume={au.get('music_vol', .22)}{duck},afade=t=in:d=0.3," + (f"afade=t=out:st={total - au.get('music_fo', 1.0):.3f}:d={au.get('music_fo', 1.0)}" if au.get("music_fo", 1.0) > 0 else "anull") + "[m]"); n += 1
     if au.get("voice"):
         d = int(au.get("voice_delay", .2) * 1000)
         ins += ["-ss", str(au.get("voice_ss", 0)), "-i", au["voice"]]; fc.append(f"[{n}:a]adelay={d}|{d},volume=1.0[v]"); n += 1
@@ -453,7 +469,7 @@ def render(spec):
     if au.get("hit"):
         for kk, cst in enumerate(shot_starts[1:], start=1):
             if spec["shots"][kk].get("hit"):
-                sfx_list.append({"path": au["hit"], "t": max(0, cst - .02), "dur": 1.2, "vol": au.get("hit_vol", .5), "fo": .3})
+                sfx_list.append({"path": au["hit"], "t": max(0, cst - au.get("hit_lead", .02)), "dur": 1.2, "vol": au.get("hit_vol", .5), "fo": .3})
     for j, sx in enumerate(sfx_list):  # extra sounds: {path, t, ss, dur, vol}
         d = int(sx["t"] * 1000)
         ins += ["-ss", str(sx.get("ss", 0)), "-t", str(sx.get("dur", 3)), "-i", sx["path"]]

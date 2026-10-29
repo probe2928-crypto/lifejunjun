@@ -22,7 +22,7 @@ for i,p in enumerate(P):
 open("/tmp/h_list.txt","w").writelines(f"file '{x}'\n" for x in parts)
 voice=f"/home/claude/r3/hawker/voice_{tag}.wav"
 subprocess.run(["ffmpeg","-nostdin","-v","error","-y","-f","concat","-safe","0","-i","/tmp/h_list.txt","-c:a","pcm_s16le",voice],check=True)
-end=round(T[-1][1]+0.7,3); st=lambda i: T[i][0]
+end=round(T[-1][1]+0.25,3); st=lambda i: T[i][0]
 def wt(i, word):  # absolute time a word starts being spoken in phrase i
     tp=TEMPO*P[i].get("tempo",1)
     for x in WB[f"{i:02d}"]:
@@ -30,18 +30,22 @@ def wt(i, word):  # absolute time a word starts being spoken in phrase i
     raise SystemExit(f"word {word} not in phrase {i}")
 C="/home/claude/own/clips/"
 SH="unsharp=5:5:0.5"
-plan=[(0,          C+"hw_hook.mp4",{}),
-      (st(1),      C+"hw_hook2.mp4",{}),
-      (st(2),      C+"own_sg_hawker.mp4",{"ss":1.2,"cx":0.15,"vf":SH,"zoom":[1.05,1.12]}),
-      (st(3),      C+"own_sg_hawker.mp4",{"ss":4.6,"cx":0.62,"vf":SH}),
-      (st(4),      C+"hw_1973.mp4",{"trans":"zoom","hit":True}),
-      (st(5),      C+"own_sg_trays.mp4",{"ss":2.4,"cx":0.5,"vf":SH}),
-      (wt(5,"미쉐린"),C+"own_sg_trays.mp4",{"ss":10.6,"cx":0.45,"vf":SH,"zoom":[1.0,1.08]}),
-      (st(6),      C+"hw_tray1.mp4",{"trans":"zoom","hit":True}),
-      (st(8),      C+"hw_tray2.mp4",{}),
-      (st(9),      C+"hw_punggol.mp4",{}),
-      (st(10),     C+"hw_end.mp4",{}),
-      (st(11),     C+"own_sg_hawker.mp4",{"ss":6.8,"cx":0.55,"vf":SH,"zoom":[1.0,1.06]})]
+plan=[(0,                C+"hw3_hook.mp4",{}),
+      (st(1),            C+"hw4_insert.mp4",{}),
+      (st(2),            C+"hw3_chope.mp4",{}),
+      (wt(2,"휴지"),      C+"hw4_push.mp4",{}),
+      (st(3),            C+"own_sg_hawker.mp4",{"ss":5.0,"cx":0.62,"vf":SH}),
+      (st(4),            C+"hw3_punggol.mp4",{"trans":"zoom","hit":True}),
+      (wt(4,"싱가포르의"), C+"hw3_md_ex.mp4",{}),
+      (st(5),            C+"hw3_taihwa.mp4",{}),
+      (wt(5,"미쉐린"),    C+"hw3_hkchicken.mp4",{}),
+      (st(6),            C+"hw3_tray1.mp4",{"trans":"zoom"}),
+      (st(7),            C+"hw3_trayzone.mp4",{}),
+      (st(8),            C+"hw3_tray2.mp4",{}),
+      (wt(8,"처음엔"),    C+"hw4_crow.mp4",{}),
+      (st(9),            C+"hw4_canberra.mp4",{}),
+      (st(10),           C+"own_sg_hawker.mp4",{"ss":0.3,"cx":0.15,"vf":SH,"zoom":[1.05,1.12]}),
+      (st(11),           C+"hw3_end.mp4",{})]
 shots=[]
 for k,(t0,clip,kw) in enumerate(plan):
     t1=plan[k+1][0] if k+1<len(plan) else end
@@ -53,20 +57,22 @@ for i,p in enumerate(P):
     tp=TEMPO*p.get("tempo",1)
     s={"t0":round(t0,3),"t1":round(t1,3),"text":p["cap"],"wt":caption_times(p["cap"],WB[f"{i:02d}"],st(i),LEAD[i],tp,t0)}
     if i==9: s["y"]=0.33
+    if i==4: s["y"]=0.58
     if i==11: s.update(y=0.47,t1=end)
     subs.append(s)
 K=[0,0,0,170]; R=[230,45,45,240]
-ov=[{"type":"chip","t0":0.0,"t1":3.0,"text":"이 [휴지], 뭐지?","size":76,"yc":0.30},
-    {"type":"tag","t0":0.0,"t1":st(2),"text":"※ 휴지는 이해를 돕기 위한 연출","size":34,"x":60,"y":290,"bg":K},
-    {"type":"tag","t0":st(4)+0.2,"t1":st(5),"text":"1973년 싱가포르 호커센터","size":48,"x":60,"y":1080,"bg":K},
-    {"type":"tag","t0":st(8)+0.3,"t1":st(9),"text":"2021년 9월 1일부터 단속","size":52,"x":60,"y":1080,"bg":R},
-    {"type":"counter","t0":st(9),"t1":st(10),"to":93,"suffix":"%","dur":1.2,"size":220,"yc":0.50},
-    {"type":"tag","t0":st(9)+0.4,"t1":st(10),"text":"2024년 4월 · NEA","size":48,"x":330,"y":1110,"bg":K},
-    {"type":"endcard","t0":st(11),"t1":end+0.1,"lines":["싱가포르 호커센터"],"sub":"자리는 휴지로, 쟁반은 내가","sub_pill":False,"sub_size":58,"size":112,"yc":0.245,"panel":True}]
-spec={"id":f"hawker_{tag}","fontdir":"/home/claude/r3/fonts","workdir":"/home/claude/r3/work","shots":shots,"trans_dur":0.2,"loop_tail":0.4,
- "audio":{"whoosh":"/home/claude/r3/whoosh.wav","whoosh_vol":0.5,"hit":"/home/claude/r3/hit.wav","hit_vol":0.45,
-          "music":"/home/claude/r3/raspberry_lofi.m4a","music_ss":14.0,"music_vol":0.15,
-          "duck":[[round(st(6)-0.35,2),round(st(6)+0.02,2),0.15,0.15]],"voice":voice,"voice_delay":0.0},
+ov=[{"type":"chip","t0":0.0,"t1":st(1),"text":"[절대] 앉지 마세요","size":80,"yc":0.30},
+    {"type":"tag","t0":0.0,"t1":st(1),"text":"※ 휴지는 이해를 돕기 위한 연출","size":40,"x":60,"y":300,"bg":K},
+    {"type":"tag","t0":st(1),"t1":st(3),"text":"※ 연출","size":40,"x":60,"y":300,"bg":K},
+    {"type":"tag","t0":st(11),"t1":end+0.1,"text":"※ 연출","size":40,"x":60,"y":1150,"bg":K},
+    {"type":"counter","t0":round(wt(9,"구십삼")-0.45,2),"t1":st(10),"from":65,"to":93,"suffix":"%","suffix_always":True,"dur":1.2,"size":220,"yc":0.50},
+    {"type":"text","t0":st(9),"t1":round(wt(9,"구십삼")-0.45,2),"text":"[65%]","size":220,"yc":0.50,"stroke":12,"room":900},
+    {"type":"tag","t0":st(9)+0.4,"t1":st(10),"text":"2021.8 → 2024.4 · NEA","size":48,"x":300,"y":1110,"bg":K},
+    {"type":"endcard","t0":st(11),"t1":end+0.1,"lines":["싱가포르 호커센터"],"size":112,"yc":0.245,"panel":True}]
+spec={"id":f"hawker_{tag}","fontdir":"/home/claude/r3/fonts","workdir":"/home/claude/r3/work","shots":shots,"trans_dur":0.2,"loop_tail":0,
+ "audio":{"whoosh":"/home/claude/r3/whoosh.wav","whoosh_vol":0.3,"hit":"/home/claude/r3/hit.wav","hit_vol":0.3,"hit_lead":0.11,
+          "music":"/home/claude/r3/raspberry_lofi.m4a","music_ss":14.0,"music_vol":0.15,"music_fo":0,
+          "duck":[[round(st(6)-0.4,2),round(st(6)+0.65,2),0.0,0.06]],"voice":voice,"voice_delay":0.0},
  "cover_t":0.4,"layout":"full",
  "style":{"sub_font":"BlackHanSans-Regular.ttf","sub_size":104,"sub_y":0.36,"stroke":9,"shadow":0.55,"vignette":0.2,"word_reveal":True,
           "end_font":"BlackHanSans-Regular.ttf","small_font":"Pretendard-Bold.otf","room":800,"tag_font":"Pretendard-Bold.otf"},
