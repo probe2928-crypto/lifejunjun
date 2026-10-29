@@ -6,10 +6,20 @@ UA = {"User-Agent": "lifejunjun-film/1.0 (probe2928@gmail.com)"}
 log = []
 async def tts(j):
     import edge_tts
+    allb = {}
     for i, t in enumerate(j["texts"]):
         f = OUT / f"{j['name']}_{i:02d}.mp3"
         r = (j.get("rates") or [None] * len(j["texts"]))[i] or j.get("rate", "+8%")
-        await edge_tts.Communicate(t, j.get("voice", "ko-KR-HyunsuMultilingualNeural"), rate=r).save(str(f))
+        v = j.get("voice", "ko-KR-HyunsuMultilingualNeural")
+        try: c = edge_tts.Communicate(t, v, rate=r, boundary="WordBoundary")
+        except TypeError: c = edge_tts.Communicate(t, v, rate=r)
+        b = []
+        with open(f, "wb") as fh:
+            async for ch in c.stream():
+                if ch["type"] == "audio": fh.write(ch["data"])
+                elif ch["type"] == "WordBoundary": b.append({"w": ch["text"], "s": ch["offset"] / 1e7, "e": (ch["offset"] + ch["duration"]) / 1e7})
+        allb[f"{i:02d}"] = b
+    (OUT / f"{j['name']}_words.json").write_text(json.dumps(allb, ensure_ascii=False, indent=0), encoding="utf-8")
     log.append(f"tts {j['name']} {len(j['texts'])}")
 for j in jobs:
     try:

@@ -1,36 +1,102 @@
 [
  {
-  "type": "stats",
-  "days": 3
+  "type": "tts",
+  "name": "kom4_hy",
+  "texts": [
+   "코모도, 이 세 장면은 꼭 봐야 해요.",
+   "세 번째.",
+   "붉은 산호 조각이 섞여 분홍빛이 도는 해변, 핑크비치.",
+   "두 번째.",
+   "만타가오리를 만날 수 있는 바다, 코모도 국립공원.",
+   "첫 번째.",
+   "코모도 일대 섬에만 사는, 코모도왕도마뱀.",
+   "몸길이가 최대 삼 미터예요.",
+   "인생준준이 코모도 원정을 준비하고 있어요.",
+   "열 명 이하 소규모로 함께 가요.",
+   "같이 가고 싶다면, 댓글에 코모도를 남겨주세요."
+  ],
+  "rate": "+16%"
+ },
+ {
+  "type": "tts",
+  "name": "cat3_hy",
+  "texts": [
+   "싱가포르 아파트에서 고양이를 키우면, 불법일까요?",
+   "고양이 키우는 게, 삼십 년 넘게 금지였어요.",
+   "국민 대부분이 사는 공공아파트, 에이치디비.",
+   "작은 개 한 마리는 되는데, 고양이는 안 됐어요.",
+   "털이 빠지고, 밤에 울고,",
+   "아무 데나 볼일을 본다는 이유였죠.",
+   "그런데 이천이십사 년 구월,",
+   "한 집에 두 마리까지,",
+   "마이크로칩을 심고 정식 등록하면, 키울 수 있게 됐어요.",
+   "이 년의 유예기간이 끝난 이천이십육 년 팔월 말,",
+   "싱가포르에 정식 등록된 반려묘는, 십일만 마리를 넘었어요.",
+   "싱가포르, 에이치디비 아파트.",
+   "여러분 아파트는 고양이 키울 수 있나요? 댓글로 알려주세요."
+  ],
+  "rates": [
+   "+22%",
+   "+22%",
+   "+22%",
+   "+22%",
+   "+22%",
+   "+10%",
+   "+22%",
+   "+22%",
+   "+22%",
+   "+22%",
+   "+22%",
+   "+22%",
+   "+22%"
+  ]
  },
  {
   "type": "mixkit",
-  "name": "mx_komodo",
-  "q": "komodo",
+  "name": "mx_ray",
+  "q": "stingray",
   "n": 6
  },
  {
   "type": "mixkit",
-  "name": "mx_manta",
-  "q": "manta-ray",
-  "n": 6
+  "name": "mx_cat2",
+  "q": "cat",
+  "n": 10
  },
  {
   "type": "mixkit",
-  "name": "mx_singapore",
-  "q": "singapore",
+  "name": "mx_bld",
+  "q": "apartment",
   "n": 8
  },
  {
-  "type": "mixkit",
-  "name": "mx_cat",
-  "q": "black-cat",
-  "n": 6
+  "type": "commons_search",
+  "name": "vmanta2",
+  "q": "manta ray filetype:video",
+  "n": 10
  },
  {
-  "type": "mixkit",
-  "name": "mx_whoosh",
-  "q": "transition",
-  "n": 1
+  "type": "commons_search",
+  "name": "vkom2",
+  "q": "Komodo National Park filetype:video",
+  "n": 10
+ },
+ {
+  "type": "commons_search",
+  "name": "vrinca",
+  "q": "Rinca filetype:video",
+  "n": 8
+ },
+ {
+  "type": "commons_search",
+  "name": "vhdb",
+  "q": "HDB Singapore filetype:video",
+  "n": 8
+ },
+ {
+  "type": "commons_search",
+  "name": "vhdbimg",
+  "q": "HDB flats Singapore estate",
+  "n": 10
  }
 ]
