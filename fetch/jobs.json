@@ -1,24 +1,20 @@
 [
  {
   "type": "commons_search",
-  "name": "chope",
-  "q": "chope tissue Singapore hawker",
+  "name": "chope2",
+  "q": "chope tissue filetype:bitmap",
   "n": 8
  },
  {
   "type": "commons_search",
-  "name": "trayret",
-  "q": "tray return hawker centre Singapore",
+  "name": "tray2",
+  "q": "tray return Singapore filetype:bitmap",
   "n": 8
  },
  {
   "type": "commons_search",
-  "name": "hawker",
-  "q": "hawker centre Singapore crowd",
-  "n": 10
- },
- {
-  "type": "stats",
-  "days": 3
+  "name": "hawk2",
+  "q": "hawker centre Singapore filetype:bitmap",
+  "n": 12
  }
 ]
