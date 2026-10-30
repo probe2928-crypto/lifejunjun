@@ -391,7 +391,7 @@ def render(spec):
         canvas.alpha_composite(static)
         for o, im in ovs:
             if not (o["t0"] <= tt < o["t1"]): continue
-            lt2 = tt - o["t0"]; a = 1.0 if o["t0"] <= 0 else ease(lt2 / .2)
+            lt2 = tt - o["t0"]; a = 1.0 if (o["t0"] <= 0 or not o.get("fade", True)) else ease(lt2 / .2)
             x, y = o.get("x", 0), o.get("y", 0)
             if o["type"] == "arrow":
                 bob = 14 * math.sin(lt2 * 7)
@@ -456,7 +456,8 @@ def render(spec):
             ex = (f"if(lt(t\\,{a - r})\\,1\\,if(lt(t\\,{a})\\,1-(1-{v})*(t-{a - r})/{r}\\,if(lt(t\\,{b_})\\,{v}\\,"
                   f"if(lt(t\\,{b_ + r})\\,{v}+(1-{v})*(t-{b_})/{r}\\,1))))")
             duck += f",volume=eval=frame:volume='{ex}'"
-        fc.append(f"[{n}:a]atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume={au.get('music_vol', .22)}{duck},afade=t=in:d=0.3," + (f"afade=t=out:st={total - au.get('music_fo', 1.0):.3f}:d={au.get('music_fo', 1.0)}" if au.get("music_fo", 1.0) > 0 else "anull") + "[m]"); n += 1
+        fi_ = au.get("music_fi", 0.3); fo_ = au.get("music_fo", 1.0)
+        fc.append(f"[{n}:a]atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume={au.get('music_vol', .22)}{duck}" + (f",afade=t=in:d={fi_}" if fi_ > 0 else "") + (f",afade=t=out:st={total - fo_:.3f}:d={fo_}" if fo_ > 0 else "") + "[m]"); n += 1
     if au.get("voice"):
         d = int(au.get("voice_delay", .2) * 1000)
         ins += ["-ss", str(au.get("voice_ss", 0)), "-i", au["voice"]]; fc.append(f"[{n}:a]adelay={d}|{d},volume=1.0[v]"); n += 1

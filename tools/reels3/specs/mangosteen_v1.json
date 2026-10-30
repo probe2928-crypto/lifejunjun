@@ -1,0 +1,104 @@
+{
+ "id": "mangosteen_v1",
+ "fontdir": "/home/claude/r3/fonts",
+ "workdir": "/home/claude/r3/work",
+ "shots": [
+  {
+   "clip": "/home/claude/own/clips/own_kk_mangosteen.mp4",
+   "ss": 0.0,
+   "cx": 0.35,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.5",
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "clip": "/home/claude/own/clips/own_kk_mangosteen.mp4",
+   "ss": 1.9,
+   "cx": 0.55,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.5",
+   "zoom": [
+    1.35,
+    1.45
+   ],
+   "zy": 0.35
+  },
+  {
+   "clip": "/home/claude/own/clips/own_kk_mangosteen.mp4",
+   "ss": 0.2,
+   "cx": 0.4,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.5",
+   "zoom": [
+    1.7,
+    1.9
+   ],
+   "zy": 0.6
+  }
+ ],
+ "layout": "full",
+ "loop_tail": 0,
+ "audio": {
+  "music": "/home/claude/r3/raspberry_lofi.m4a",
+  "music_ss": 40.0,
+  "music_vol": 0.9,
+  "music_fo": 0
+ },
+ "cover_t": 0.3,
+ "style": {
+  "sub_font": "BlackHanSans-Regular.ttf",
+  "sub_size": 104,
+  "stroke": 9,
+  "shadow": 0.55,
+  "vignette": 0.2,
+  "room": 900,
+  "tag_font": "Pretendard-Bold.otf",
+  "end_font": "BlackHanSans-Regular.ttf"
+ },
+ "subs": [],
+ "overlays": [
+  {
+   "type": "text",
+   "t0": 0,
+   "t1": 3,
+   "text": "두리안이 [과일의 왕]이면\n여왕은?",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "text",
+   "t0": 3,
+   "t1": 6,
+   "text": "[망고스틴]\n동남아 '과일의 여왕'",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "text",
+   "t0": 6,
+   "t1": 9,
+   "text": "껍질 진액은 옷에 물들어요\n흰 옷이면 [조심]",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "chip",
+   "t0": 6.5,
+   "t1": 9,
+   "text": "동남아 가는 친구한테 [공유]",
+   "size": 60,
+   "yc": 0.5
+  }
+ ],
+ "out": "/home/claude/r3/short/mangosteen_v1.mp4",
+ "cover": "/home/claude/r3/short/mangosteen_v1.jpg"
+}

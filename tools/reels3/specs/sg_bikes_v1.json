@@ -1,0 +1,92 @@
+{
+ "id": "sg_bikes_v1",
+ "fontdir": "/home/claude/r3/fonts",
+ "workdir": "/home/claude/r3/work",
+ "layout": "full",
+ "loop_tail": 0,
+ "shots": [
+  {
+   "clip": "/home/claude/own/clips/own_sg_bikes.mp4",
+   "ss": 0.3,
+   "dur": 2.7,
+   "vf": "unsharp=5:5:0.25"
+  },
+  {
+   "clip": "/home/claude/own/clips/own_sg_bikes.mp4",
+   "ss": 3.0,
+   "dur": 2.8,
+   "vf": "unsharp=5:5:0.25"
+  },
+  {
+   "clip": "/home/claude/own/clips/own_sg_bikes.mp4",
+   "ss": 5.8,
+   "dur": 2.9,
+   "vf": "unsharp=5:5:0.25",
+   "zoom": [
+    1.0,
+    1.05
+   ]
+  }
+ ],
+ "audio": {
+  "music": "/home/claude/r3/raspberry_lofi.m4a",
+  "music_ss": 52.0,
+  "music_vol": 0.9,
+  "music_fo": 0.3,
+  "music_fi": 0
+ },
+ "cover_t": 0.3,
+ "style": {
+  "sub_font": "BlackHanSans-Regular.ttf",
+  "sub_size": 104,
+  "stroke": 9,
+  "shadow": 0.55,
+  "vignette": 0.2,
+  "room": 900,
+  "tag_font": "Pretendard-Bold.otf",
+  "end_font": "BlackHanSans-Regular.ttf"
+ },
+ "subs": [],
+ "overlays": [
+  {
+   "type": "text",
+   "t0": 0,
+   "t1": 2.7,
+   "text": "싱가포르 공유자전거\n[아무 데나] 세우면 안 돼요",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "text",
+   "t0": 2.7,
+   "t1": 5.5,
+   "text": "[지정 주차구역]에 세우고\nQR 찍어야 반납 끝",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "text",
+   "t0": 5.5,
+   "t1": 8.4,
+   "text": "안 하면 추가요금 [S$5]\n1년에 3번이면 [이용 정지]",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "chip",
+   "t0": 6.0,
+   "t1": 8.4,
+   "text": "싱가포르 가는 친구한테 [공유]",
+   "size": 60,
+   "yc": 0.5
+  }
+ ],
+ "out": "/home/claude/r3/short/sg_bikes_v1.mp4",
+ "cover": "/home/claude/r3/short/sg_bikes_v1.jpg"
+}

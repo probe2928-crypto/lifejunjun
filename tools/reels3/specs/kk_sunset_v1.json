@@ -1,0 +1,103 @@
+{
+ "id": "kk_sunset_v1",
+ "fontdir": "/home/claude/r3/fonts",
+ "workdir": "/home/claude/r3/work",
+ "shots": [
+  {
+   "clip": "/home/claude/own/clips/own_kk_sunset.mp4",
+   "ss": 0.2,
+   "cx": 0.45,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.5",
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "clip": "/home/claude/own/clips/own_kk_sunset.mp4",
+   "ss": 4.0,
+   "cx": 0.5,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.5",
+   "zoom": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "clip": "/home/claude/own/clips/own_kk_sunset.mp4",
+   "ss": 5.8,
+   "cx": 0.5,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.5",
+   "zoom": [
+    1.12,
+    1.22
+   ],
+   "zy": 0.45
+  }
+ ],
+ "layout": "full",
+ "loop_tail": 0,
+ "audio": {
+  "music": "/home/claude/r3/raspberry_lofi.m4a",
+  "music_ss": 30.0,
+  "music_vol": 0.9,
+  "music_fo": 0
+ },
+ "cover_t": 0.3,
+ "style": {
+  "sub_font": "BlackHanSans-Regular.ttf",
+  "sub_size": 104,
+  "stroke": 9,
+  "shadow": 0.55,
+  "vignette": 0.2,
+  "room": 900,
+  "tag_font": "Pretendard-Bold.otf",
+  "end_font": "BlackHanSans-Regular.ttf"
+ },
+ "subs": [],
+ "overlays": [
+  {
+   "type": "text",
+   "t0": 0,
+   "t1": 3,
+   "text": "코타키나발루 노을\n[이 시간] 놓치면 끝",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "text",
+   "t0": 3,
+   "t1": 6,
+   "text": "해 지는 시간\n1년 내내 [오후 6시 전후]",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "text",
+   "t0": 6,
+   "t1": 9,
+   "text": "[5시 반]까지 도착\n노을은 해 진 뒤 20분 더",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900
+  },
+  {
+   "type": "chip",
+   "t0": 6.5,
+   "t1": 9,
+   "text": "[저장]해두고 그 시간에",
+   "size": 60,
+   "yc": 0.5
+  }
+ ],
+ "out": "/home/claude/r3/short/kk_sunset_v1.mp4",
+ "cover": "/home/claude/r3/short/kk_sunset_v1.jpg"
+}

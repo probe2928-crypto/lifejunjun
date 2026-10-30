@@ -1,0 +1,158 @@
+{
+ "id": "dolma_short_v2",
+ "fontdir": "/home/claude/r3/fonts",
+ "workdir": "/home/claude/r3/work",
+ "layout": "full",
+ "loop_tail": 0,
+ "shots": [
+  {
+   "clip": "/mnt/user-data/uploads/out/S_53032875.webm",
+   "ss": 6.0,
+   "dur": 2.8,
+   "vf": "unsharp=5:5:0.25",
+   "zoom": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "clip": "/home/claude/own/clips/own_dol2_s1.mp4",
+   "ss": 0.3,
+   "dur": 2.8,
+   "vf": "unsharp=5:5:0.25"
+  },
+  {
+   "clip": "/mnt/user-data/uploads/out/S_53032875.webm",
+   "ss": 10.0,
+   "dur": 2.8,
+   "vf": "unsharp=5:5:0.25",
+   "zoom": [
+    1.15,
+    1.25
+   ],
+   "zy": 0.55
+  }
+ ],
+ "audio": {
+  "music": "/home/claude/r3/raspberry_lofi.m4a",
+  "music_ss": 20.67,
+  "music_vol": 0.12,
+  "music_fo": 0.3,
+  "music_fi": 0,
+  "sfx": [
+   {
+    "path": "/mnt/user-data/uploads/out/S_53032875.webm",
+    "t": 0,
+    "ss": 6.0,
+    "dur": 8.4,
+    "vol": 1.0,
+    "fo": 0.3
+   }
+  ]
+ },
+ "cover_t": 0.3,
+ "style": {
+  "sub_font": "BlackHanSans-Regular.ttf",
+  "sub_size": 104,
+  "stroke": 9,
+  "shadow": 0.55,
+  "vignette": 0.2,
+  "room": 900,
+  "tag_font": "Pretendard-Bold.otf",
+  "end_font": "BlackHanSans-Regular.ttf"
+ },
+ "subs": [],
+ "overlays": [
+  {
+   "type": "text",
+   "t0": 0,
+   "t1": 2.8,
+   "text": "매년 11월 10일 9시 5분\n튀르키예가 [멈춰요]",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900,
+   "fade": false
+  },
+  {
+   "type": "text",
+   "t0": 2.8,
+   "t1": 5.6,
+   "text": "국부 아타튀르크가 떠난 시각\n[1938년] 돌마바흐체 궁전",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900,
+   "fade": false
+  },
+  {
+   "type": "text",
+   "t0": 5.6,
+   "t1": 8.4,
+   "text": "사이렌이 울리면\n사람도 차도 [그 자리에]",
+   "size": 104,
+   "yc": 0.3,
+   "stroke": 10,
+   "room": 900,
+   "fade": false
+  },
+  {
+   "type": "tag",
+   "t0": 0,
+   "t1": 2.8,
+   "text": "실제 2016.11.10 09:05 영상",
+   "size": 40,
+   "x": 60,
+   "y": 1150,
+   "bg": [
+    0,
+    0,
+    0,
+    170
+   ],
+   "fade": false
+  },
+  {
+   "type": "tag",
+   "t0": 5.6,
+   "t1": 8.4,
+   "text": "실제 2016.11.10 09:05 영상",
+   "size": 40,
+   "x": 60,
+   "y": 1150,
+   "bg": [
+    0,
+    0,
+    0,
+    170
+   ],
+   "fade": false
+  },
+  {
+   "type": "chip",
+   "t0": 6.0,
+   "t1": 8.4,
+   "text": "올해 11월 10일 이스탄불이라면 [9시 5분]",
+   "size": 56,
+   "yc": 0.5
+  },
+  {
+   "type": "tag",
+   "t0": 0,
+   "t1": 2.8,
+   "text": "소리 켜고 보세요",
+   "size": 40,
+   "x": 60,
+   "y": 300,
+   "bg": [
+    0,
+    0,
+    0,
+    170
+   ],
+   "fade": false
+  }
+ ],
+ "out": "/home/claude/r3/short/dolma_short_v2.mp4",
+ "cover": "/home/claude/r3/short/dolma_short_v2.jpg"
+}
