@@ -59,7 +59,7 @@ for j in jobs:
                     with urllib.request.urlopen(f"https://abacus.jasoncameron.dev/get/lifejunjun-stats/{key}", timeout=20) as r:
                         return json.loads(r.read()).get("value", 0)
                 except Exception: return 0
-            for slug in j.get("trips", ["tainan", "oman", "uzbekistan"]):
+            for slug in j.get("trips", ["hub", "tainan", "oman", "uzbekistan"]):
                 for k in range(j.get("days", 3)):
                     d = (today - datetime.timedelta(days=k)).strftime("%Y%m%d")
                     for m in ("pv", "uv", "apply"):
