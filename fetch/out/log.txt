@@ -1,1 +1,4 @@
+commons afr_mural ok
+commons afr_koguryo ok
+commons hdb_sg ok
 stats ok

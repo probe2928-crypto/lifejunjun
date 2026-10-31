@@ -1,0 +1,551 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 12,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "21437830": {
+    "pageid": 21437830,
+    "ns": 6,
+    "title": "File:Afrasiab - details from The Ambassadors' Painting 3 - great procession.JPG",
+    "index": 9,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 7657992,
+      "width": 4752,
+      "height": 3168,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Afrasiab_-_details_from_The_Ambassadors%27_Painting_3_-_great_procession.JPG/1920px-Afrasiab_-_details_from_The_Ambassadors%27_Painting_3_-_great_procession.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Afrasiab_-_details_from_The_Ambassadors%27_Painting_3_-_great_procession.JPG/3840px-Afrasiab_-_details_from_The_Ambassadors%27_Painting_3_-_great_procession.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Afrasiab_-_details_from_The_Ambassadors%27_Painting_3_-_great_procession.JPG/1920px-Afrasiab_-_details_from_The_Ambassadors%27_Painting_3_-_great_procession.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Afrasiab_-_details_from_The_Ambassadors%27_Painting_3_-_great_procession.JPG/3840px-Afrasiab_-_details_from_The_Ambassadors%27_Painting_3_-_great_procession.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Afrasiab_-_details_from_The_Ambassadors%27_Painting_3_-_great_procession.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Afrasiab_-_details_from_The_Ambassadors%27_Painting_3_-_great_procession.JPG",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=21437830",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\n<table cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><td><a href=\"https://www.wikidata.org/wiki/Q4233718\" class=\"extiw\" title=\"d:Q4233718\"><span title='unknown creator of a work (do not use as value of P50; use \"unknown value\" instead)'>anonymous</span></a></td><td valign=\"top\"> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q4689441#P170\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span></td></tr></tbody></table></div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "The Ambassordors' Painting, found in the hall of the ruin of an aristocratic house in Afrasiab, commissioned by the king of Samarkand, Varkhuman <br>\nDescription from <a rel=\"nofollow\" class=\"external free\" href=\"http://www.iranicaonline.org/articles/afrasiab-ii-wall-paintings-2\">http://www.iranicaonline.org/articles/afrasiab-ii-wall-paintings-2</a> :\"The wall painting  shows four geese and, more remarkably, an un-mounted horse, accompanied by men wearing the padām, the traditional face mask of Mazdean priests, and two men with sacrificial maces, sitting atop a camel. This scene could be interpreted as a parade of priests and sacrificial animals, which is, moreover, followed by a larger horse with a large rider.\"",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "85847040": {
+    "pageid": 85847040,
+    "ns": 6,
+    "title": "File:Afrasiab - details from The Ambassadors' Painting cropped.jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1398579,
+      "width": 2091,
+      "height": 2095,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Afrasiab_-_details_from_The_Ambassadors%27_Painting_cropped.jpg/1920px-Afrasiab_-_details_from_The_Ambassadors%27_Painting_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1603,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/4/40/Afrasiab_-_details_from_The_Ambassadors%27_Painting_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Afrasiab_-_details_from_The_Ambassadors%27_Painting_cropped.jpg/1920px-Afrasiab_-_details_from_The_Ambassadors%27_Painting_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1603,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/4/40/Afrasiab_-_details_from_The_Ambassadors%27_Painting_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Afrasiab_-_details_from_The_Ambassadors%27_Painting_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Afrasiab_-_details_from_The_Ambassadors%27_Painting_cropped.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=85847040",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Details of a copy of mural called The Ambassordors' Painting, found in the hall of the ruin of an aristocratic house in Afrasiab, commissioned by the king of Samarkand, Varkhuman (ca. 650)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "126359896": {
+    "pageid": 126359896,
+    "ns": 6,
+    "title": "File:Afrasiyab mural.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2978382,
+      "width": 2561,
+      "height": 944,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Afrasiyab_mural.jpg/1920px-Afrasiyab_mural.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 590,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/5/52/Afrasiyab_mural.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Afrasiyab_mural.jpg/1920px-Afrasiyab_mural.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 590,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/5/52/Afrasiyab_mural.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Afrasiyab_mural.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Afrasiyab_mural.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=126359896",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Afrasiyab mural. Painting of the ambassadors, 7th century CE.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "ALFGRN",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "95580042": {
+    "pageid": 95580042,
+    "ns": 6,
+    "title": "File:Ambassador from Chaganiyan, Asafriab paintings, 648-651 CE.jpg",
+    "index": 11,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 740513,
+      "width": 614,
+      "height": 1326,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Ambassador_from_Chaganiyan%2C_Asafriab_paintings%2C_648-651_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 3455,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Ambassador_from_Chaganiyan%2C_Asafriab_paintings%2C_648-651_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 3455
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Ambassador_from_Chaganiyan%2C_Asafriab_paintings%2C_648-651_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ambassador_from_Chaganiyan,_Asafriab_paintings,_648-651_CE.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=95580042",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Ambassador from Chaganiyan, Asafriab paintings, 648-651 CE",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<p>Mural: 7th century CE artist\n</p>\nPhotographer: undetermined",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "95323559": {
+    "pageid": 95323559,
+    "ns": 6,
+    "title": "File:Ambassadors from Chaganian (central figure, inscription of the neck), and Chach (modern Tashkent) to king Varkhuman of Samarkand. 648-651 CE, Afrasiyab Museum, Samarkand, Uzbekistan.jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1879804,
+      "width": 1518,
+      "height": 1597,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ambassadors_from_Chaganian_%28central_figure%2C_inscription_of_the_neck%29%2C_and_Chach_%28modern_Tashkent%29_to_king_Varkhuman_of_Samarkand._648-651_CE%2C_Afrasiyab_Museum%2C_Samarkand%2C_Uzbekistan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1683,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ambassadors_from_Chaganian_%28central_figure%2C_inscription_of_the_neck%29%2C_and_Chach_%28modern_Tashkent%29_to_king_Varkhuman_of_Samarkand._648-651_CE%2C_Afrasiyab_Museum%2C_Samarkand%2C_Uzbekistan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1683
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ambassadors_from_Chaganian_%28central_figure%2C_inscription_of_the_neck%29%2C_and_Chach_%28modern_Tashkent%29_to_king_Varkhuman_of_Samarkand._648-651_CE%2C_Afrasiyab_Museum%2C_Samarkand%2C_Uzbekistan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ambassadors_from_Chaganian_(central_figure,_inscription_of_the_neck),_and_Chach_(modern_Tashkent)_to_king_Varkhuman_of_Samarkand._648-651_CE,_Afrasiyab_Museum,_Samarkand,_Uzbekistan.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=95323559",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Ambassadors from Chaganian (central figure, inscription of the neck), and Chach (modern Tashkent) to king Varkhuman of Samarkand. 648-651 CE, Afrasiyab Museum, Samarkand, Uzbekistan",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Photographer: undetermined",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "81880729": {
+    "pageid": 81880729,
+    "ns": 6,
+    "title": "File:Ambassadors from Chaganian (central figure, inscription of the neck), and Chach (modern Tashkent) to king Varkhuman of Samarkand. 648-651 CE, Afrasiyab murals, Samarkand.jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 964625,
+      "width": 870,
+      "height": 782,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Ambassadors_from_Chaganian_%28central_figure%2C_inscription_of_the_neck%29%2C_and_Chach_%28modern_Tashkent%29_to_king_Varkhuman_of_Samarkand._648-651_CE%2C_Afrasiyab_murals%2C_Samarkand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1438,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Ambassadors_from_Chaganian_%28central_figure%2C_inscription_of_the_neck%29%2C_and_Chach_%28modern_Tashkent%29_to_king_Varkhuman_of_Samarkand._648-651_CE%2C_Afrasiyab_murals%2C_Samarkand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1438
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Ambassadors_from_Chaganian_%28central_figure%2C_inscription_of_the_neck%29%2C_and_Chach_%28modern_Tashkent%29_to_king_Varkhuman_of_Samarkand._648-651_CE%2C_Afrasiyab_murals%2C_Samarkand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ambassadors_from_Chaganian_(central_figure,_inscription_of_the_neck),_and_Chach_(modern_Tashkent)_to_king_Varkhuman_of_Samarkand._648-651_CE,_Afrasiyab_murals,_Samarkand.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=81880729",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Ambassadors from Chaganian (central figure, inscription of the neck), and <a href=\"//commons.wikimedia.org/w/index.php?title=Chach&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Chach (page does not exist)\">Chach</a> (modern <a href=\"//commons.wikimedia.org/wiki/Tashkent\" class=\"mw-redirect\" title=\"Tashkent\">Tashkent</a>) to king <a href=\"//commons.wikimedia.org/w/index.php?title=Varkhuman&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Varkhuman (page does not exist)\">Varkhuman</a> of <a href=\"//commons.wikimedia.org/wiki/Samarkand\" title=\"Samarkand\">Samarkand</a>. 648-651 CE, <a href=\"//commons.wikimedia.org/w/index.php?title=Afrasiyab_(Samarkand)&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Afrasiyab (Samarkand) (page does not exist)\">Afrasiyab murals</a>, Samarkand.<sup id=\"cite_ref-1\" class=\"reference\"><a href=\"#cite_note-1\"><span class=\"cite-bracket\">[</span>1<span class=\"cite-bracket\">]</span></a></sup><sup id=\"cite_ref-SW_2-0\" class=\"reference\"><a href=\"#cite_note-SW-2\"><span class=\"cite-bracket\">[</span>2<span class=\"cite-bracket\">]</span></a></sup>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<p>Frescoe: 6th century CE unkown artist.<br>\n</p>\nPhotographer: unspecified.",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "89020577": {
+    "pageid": 89020577,
+    "ns": 6,
+    "title": "File:Ambassadors painting Afrasiyab 01.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 10624950,
+      "width": 5184,
+      "height": 3456,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ambassadors_painting_Afrasiyab_01.jpg/1920px-Ambassadors_painting_Afrasiyab_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ambassadors_painting_Afrasiyab_01.jpg/3840px-Ambassadors_painting_Afrasiyab_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ambassadors_painting_Afrasiyab_01.jpg/1920px-Ambassadors_painting_Afrasiyab_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ambassadors_painting_Afrasiyab_01.jpg/3840px-Ambassadors_painting_Afrasiyab_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ambassadors_painting_Afrasiyab_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ambassadors_painting_Afrasiyab_01.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=89020577",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "A copy of mural called The Ambassordors' Painting, found in the hall of the ruin of an aristocratic house in Afrasiab, commissioned by the king of Samarkand, Varkhuman (ca. 650)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nassima_Chahboun\" title=\"User:Nassima Chahboun\">Nassima Chahboun</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "89020581": {
+    "pageid": 89020581,
+    "ns": 6,
+    "title": "File:Ambassadors painting Afrasiyab 02.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 15103372,
+      "width": 5184,
+      "height": 3456,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Ambassadors_painting_Afrasiyab_02.jpg/1920px-Ambassadors_painting_Afrasiyab_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Ambassadors_painting_Afrasiyab_02.jpg/3840px-Ambassadors_painting_Afrasiyab_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Ambassadors_painting_Afrasiyab_02.jpg/1920px-Ambassadors_painting_Afrasiyab_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Ambassadors_painting_Afrasiyab_02.jpg/3840px-Ambassadors_painting_Afrasiyab_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Ambassadors_painting_Afrasiyab_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ambassadors_painting_Afrasiyab_02.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=89020581",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "A copy of mural called The Ambassordors' Painting, found in the hall of the ruin of an aristocratic house in Afrasiab, commissioned by the king of Samarkand, Varkhuman (ca. 650)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nassima_Chahboun\" title=\"User:Nassima Chahboun\">Nassima Chahboun</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "89020585": {
+    "pageid": 89020585,
+    "ns": 6,
+    "title": "File:Ambassadors painting Afrasiyab 03.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 12879454,
+      "width": 5184,
+      "height": 3456,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Ambassadors_painting_Afrasiyab_03.jpg/1920px-Ambassadors_painting_Afrasiyab_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Ambassadors_painting_Afrasiyab_03.jpg/3840px-Ambassadors_painting_Afrasiyab_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Ambassadors_painting_Afrasiyab_03.jpg/1920px-Ambassadors_painting_Afrasiyab_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Ambassadors_painting_Afrasiyab_03.jpg/3840px-Ambassadors_painting_Afrasiyab_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Ambassadors_painting_Afrasiyab_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ambassadors_painting_Afrasiyab_03.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=89020585",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "A copy of mural called The Ambassordors' Painting, found in the hall of the ruin of an aristocratic house in Afrasiab, commissioned by the king of Samarkand, Varkhuman (ca. 650)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nassima_Chahboun\" title=\"User:Nassima Chahboun\">Nassima Chahboun</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "95912901": {
+    "pageid": 95912901,
+    "ns": 6,
+    "title": "File:Delegate from Chaganian in the Afrasiab murals 650 CE.jpg",
+    "index": 10,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1837549,
+      "width": 1244,
+      "height": 2704,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Delegate_from_Chaganian_in_the_Afrasiab_murals_650_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 3478,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Delegate_from_Chaganian_in_the_Afrasiab_murals_650_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 3478
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Delegate_from_Chaganian_in_the_Afrasiab_murals_650_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Delegate_from_Chaganian_in_the_Afrasiab_murals_650_CE.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=95912901",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Delegate from Chaganian in the Afrasiab murals 650 CE",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Painting: Unknown 7th century artist.<br>Photographer: undetermined",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "95912662": {
+    "pageid": 95912662,
+    "ns": 6,
+    "title": "File:Delegate with Simurgh design on his dress in the Afrasiab murals 648-651 CE.jpg",
+    "index": 12,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1398589,
+      "width": 1508,
+      "height": 1339,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Delegate_with_Simurgh_design_on_his_dress_in_the_Afrasiab_murals_648-651_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1421,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Delegate_with_Simurgh_design_on_his_dress_in_the_Afrasiab_murals_648-651_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1421
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Delegate_with_Simurgh_design_on_his_dress_in_the_Afrasiab_murals_648-651_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Delegate_with_Simurgh_design_on_his_dress_in_the_Afrasiab_murals_648-651_CE.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=95912662",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Delegate with Simurgh design on his dress in the Afrasiab murals 648-651 CE",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Painting: Unknown 7th century artist.<br>Photographer: undetermined",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "95395212": {
+    "pageid": 95395212,
+    "ns": 6,
+    "title": "File:Tang Dynasty emissaries at the court of Varkhuman in Samarkand carrying silk and a string of silkworm cocoons, 648-651 CE, Afrasiyab murals, Samarkand.jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1399342,
+      "width": 773,
+      "height": 896,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tang_Dynasty_emissaries_at_the_court_of_Varkhuman_in_Samarkand_carrying_silk_and_a_string_of_silkworm_cocoons%2C_648-651_CE%2C_Afrasiyab_murals%2C_Samarkand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1855,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tang_Dynasty_emissaries_at_the_court_of_Varkhuman_in_Samarkand_carrying_silk_and_a_string_of_silkworm_cocoons%2C_648-651_CE%2C_Afrasiyab_murals%2C_Samarkand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1855
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tang_Dynasty_emissaries_at_the_court_of_Varkhuman_in_Samarkand_carrying_silk_and_a_string_of_silkworm_cocoons%2C_648-651_CE%2C_Afrasiyab_murals%2C_Samarkand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tang_Dynasty_emissaries_at_the_court_of_Varkhuman_in_Samarkand_carrying_silk_and_a_string_of_silkworm_cocoons,_648-651_CE,_Afrasiyab_murals,_Samarkand.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=95395212",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Tang Dynasty emissaries at the court of Varkhuman in Samarkand carrying silk and a string of silkworm cocoons, 648-651 CE, Afrasiyab murals, Samarkand",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "NORTHEAST ASIAN HISTORY FOUNDATION",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

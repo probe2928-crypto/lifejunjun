@@ -1,0 +1,54 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "21437443": {
+    "pageid": 21437443,
+    "ns": 6,
+    "title": "File:Afrasiab - details from The Ambassadors' Painting 2.JPG",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 7176013,
+      "width": 4752,
+      "height": 3168,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Afrasiab_-_details_from_The_Ambassadors%27_Painting_2.JPG/1920px-Afrasiab_-_details_from_The_Ambassadors%27_Painting_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Afrasiab_-_details_from_The_Ambassadors%27_Painting_2.JPG/3840px-Afrasiab_-_details_from_The_Ambassadors%27_Painting_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Afrasiab_-_details_from_The_Ambassadors%27_Painting_2.JPG/1920px-Afrasiab_-_details_from_The_Ambassadors%27_Painting_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Afrasiab_-_details_from_The_Ambassadors%27_Painting_2.JPG/3840px-Afrasiab_-_details_from_The_Ambassadors%27_Painting_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Afrasiab_-_details_from_The_Ambassadors%27_Painting_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Afrasiab_-_details_from_The_Ambassadors%27_Painting_2.JPG",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=21437443",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\n<a href=\"//commons.wikimedia.org/wiki/User:Faqscl\" class=\"mw-redirect\" title=\"User:Faqscl\">Faqscl</a></div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "Musée d'Afrasyab : Envoyés des principautés voisines portant des rouleaux de soie et des colliers (voir schéma sur autre image : \"Afrasiab - details from The Ambassadors' Painting 21 - western wall drawing\")",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}
