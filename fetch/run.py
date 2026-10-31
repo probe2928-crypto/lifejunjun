@@ -54,6 +54,21 @@ for j in jobs:
                             with urllib.request.urlopen(f"https://abacus.jasoncameron.dev/get/lifejunjun-stats/{key}", timeout=20) as r:
                                 out[key] = json.loads(r.read()).get("value", 0)
                         except Exception: out[key] = 0
+            def _get(key):
+                try:
+                    with urllib.request.urlopen(f"https://abacus.jasoncameron.dev/get/lifejunjun-stats/{key}", timeout=20) as r:
+                        return json.loads(r.read()).get("value", 0)
+                except Exception: return 0
+            for slug in j.get("trips", ["tainan", "oman", "uzbekistan"]):
+                for k in range(j.get("days", 3)):
+                    d = (today - datetime.timedelta(days=k)).strftime("%Y%m%d")
+                    for m in ("pv", "uv", "apply"):
+                        out[f"go_{slug}_{m}_{d}"] = _get(f"go_{slug}_{m}_{d}")
+            for tag in j.get("reels", []):  # reel tags used as ?r=<tag> (source ig)
+                for pre in ("r_ig-", "ra_ig-"):
+                    out[pre + tag] = _get(pre + tag)
+            for key in j.get("keys", []):
+                out[key] = _get(key)
             (OUT / "stats.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
             log.append("stats ok")
         elif j["type"] == "url":
