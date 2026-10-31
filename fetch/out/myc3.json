@@ -1,0 +1,53 @@
+{
+ "continue": {
+  "iistart": "2006-03-26T17:34:26Z",
+  "continue": "||"
+ },
+ "query": {
+  "pages": {
+   "661242": {
+    "pageid": 661242,
+    "ns": 6,
+    "title": "File:Goguryeo tomb mural.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 136575,
+      "width": 740,
+      "height": 611,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/5/54/Goguryeo_tomb_mural.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1321,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Goguryeo_tomb_mural.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1321
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Goguryeo_tomb_mural.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Goguryeo_tomb_mural.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=661242",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Tomb of the Hunters, Goguryeo mural",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}
