@@ -399,7 +399,9 @@ def render(spec):
             if o["type"] == "endcard": y += int((1 - a) * 30)
             if o["type"] == "chip":  # 4-frame pop in (alpha + scale .92->1), 6-frame fade out
                 a = ease(lt2 / (4 / FPS)) if o["t0"] > 0 or lt2 > 0 else 1.0
-                a = min(a if lt2 < 4 / FPS else 1.0, max(0.0, (o["t1"] - tt) / (6 / FPS)))
+                a = a if lt2 < 4 / FPS else 1.0
+                if o.get("fade", True) and o["t1"] < total - 1e-3:  # no fade-out on the last card (clean loop)
+                    a = min(a, max(0.0, (o["t1"] - tt) / (6 / FPS)))
                 sc = .92 + .08 * ease(lt2 / (4 / FPS))
                 if sc < .999:
                     im = im.resize((int(im.width * sc), int(im.height * sc)), Image.BICUBIC)

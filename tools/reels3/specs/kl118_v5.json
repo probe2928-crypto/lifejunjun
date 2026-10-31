@@ -1,0 +1,110 @@
+{
+ "id": "kl118_v5",
+ "fontdir": "/home/claude/r3/fonts",
+ "workdir": "/home/claude/r3/work",
+ "shots": [
+  {
+   "clip": "/home/claude/own/clips/own_kl_night.mp4",
+   "ss": 4.9,
+   "dur": 2.8,
+   "vf": "unsharp=5:5:0.25",
+   "zoom": [
+    1.45,
+    1.52
+   ],
+   "zx": 0.46,
+   "zy": 0.5
+  },
+  {
+   "clip": "/home/claude/own/clips/own_kl_night.mp4",
+   "ss": 3.0,
+   "dur": 2.8,
+   "vf": "unsharp=5:5:0.25",
+   "zoom": [
+    1.25,
+    1.32
+   ],
+   "zx": 0.55,
+   "zy": 0.45
+  },
+  {
+   "clip": "/home/claude/own/clips/own_kl_night.mp4",
+   "ss": 8.0,
+   "dur": 2.0,
+   "vf": "unsharp=5:5:0.25",
+   "zoom": [
+    1.48,
+    1.55
+   ],
+   "zx": 0.7,
+   "zy": 0.5
+  }
+ ],
+ "layout": "full",
+ "loop_tail": 0,
+ "audio": {
+  "music": "/home/claude/r3/raspberry_lofi.m4a",
+  "music_ss": 44.0,
+  "music_vol": 0.9,
+  "music_fo": 0,
+  "music_fi": 0
+ },
+ "cover_t": 0.4,
+ "style": {
+  "sub_font": "BlackHanSans-Regular.ttf",
+  "sub_size": 104,
+  "stroke": 9,
+  "shadow": 0.55,
+  "vignette": 0.2,
+  "room": 900,
+  "tag_font": "Pretendard-Bold.otf",
+  "end_font": "BlackHanSans-Regular.ttf"
+ },
+ "subs": [],
+ "overlays": [
+  {
+   "type": "text",
+   "t0": 0,
+   "t1": 2.8,
+   "text": "롯데월드타워보다\n[124m] 더 높은 빌딩",
+   "size": 96,
+   "yc": 0.217,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "text",
+   "t0": 2.8,
+   "t1": 5.6,
+   "text": "쿠알라룸푸르 메르데카 118\n'메르데카' = [독립]",
+   "size": 96,
+   "yc": 0.217,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "text",
+   "t0": 5.6,
+   "t1": 7.6,
+   "text": "678.9m, 118층\n세계 [2위]",
+   "size": 96,
+   "yc": 0.217,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "chip",
+   "t0": 5.8,
+   "t1": 7.6,
+   "text": "KL 가면 [밤]에 꼭 올려다보기",
+   "size": 58,
+   "yc": 0.315,
+   "fade": false
+  }
+ ],
+ "out": "/home/claude/r3/short/kl118_v5.mp4",
+ "cover": "/home/claude/r3/short/kl118_v5.jpg"
+}

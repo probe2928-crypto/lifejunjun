@@ -23,7 +23,7 @@
 - 홈페이지 숨김 집계(인생준준 ljj / 여백의 지도 yb, 지표 pv·uv·sns·apply): fetch 브랜치로 받는다(웹에서 직접은 막힘). `git fetch origin fetch:refs/remotes/origin/fetch` → `git worktree add /tmp/fw origin/fetch` → `/tmp/fw/fetch/jobs.json`을 `[{"type":"stats","days":3}]`로 덮어써 커밋 → `git push origin HEAD:fetch` → 2분 뒤 다시 fetch → `git show origin/fetch:fetch/out/stats.json` (키 예: yb_apply_20261030). 실패하면 `gh run list -b fetch -L 3`.
 - 신청 메일: Gmail `from:submissions@formsubmit.co` 또는 제목에 '여백의 지도'·'관심 신청'. 읽기만.
 - 리포트 문서: Claude Docs '인생준준 릴스 리포트' doc id adb4187d-0877-4bfe-bb5b-a0b7609c59a9 (https://claude.ai/artifact/NT5cq3ortyeZkfMAvoJCFA). 운영 계획 문서는 `ops/BRIEF.md` 맨 아래 링크 참고. Docs 쓰기 전 `mcp__Claude_Docs__guide(topic.index, topic.editing)`.
-- vidIQ: `vidiq_instagram_tiktok_outlier_search`, `vidiq_ig_profile_reels`, `vidiq_watch_shortform_content` (크레딧 아껴서, 하루 검색 3회 이내).
+- vidIQ: `vidiq_instagram_tiktok_outlier_search` 등 — **10/31 기준 크레딧 0(11/22 갱신 예정)**. 크레딧 없으면 WebSearch로 '인스타 릴스 + 키워드 + 조회수' 기사·랭킹을 찾고, 제작팀(저녁)은 세준 컴퓨터의 내장 브라우저로 인스타 키워드 검색(읽기만, 요청 1.6초 간격)을 한다.
 - 사이트: 여백의 지도 https://probe2928-crypto.github.io/yeobaek/ (저장소 probe2928-crypto/yeobaek — 세준 OK(10/31)로 여행별 신청 페이지 운영. 디자인·구조 큰 변경은 실무이사만, 직원은 문구 제안만), 카톡 공지방 https://open.kakao.com/o/gzvyLFTi.
 - **허브(프로필 링크용)**: `https://probe2928-crypto.github.io/yeobaek/go/?r=bio` — 여행 3개 카드. 인생준준 사이트 맨 위 카드는 태그 `ljj-home`.
 - **여행별 신청 페이지(2칸 폼 + 유입 추적)**: `.../yeobaek/go/tainan/`, `/go/oman/`, `/go/uzbekistan/`. 링크에 `?r=<릴스태그>` 를 붙이면 어떤 릴스에서 왔는지 집계·신청 메일 '유입' 칸에 남는다. 릴스태그 = 영문 소문자·숫자·-만, 릴스마다 고유(예: hawker9, kk-sunset, tn-why1). 첫 댓글·ManyChat DM·프로필 링크에 이 형식으로. 신청 메일 제목 `[여백의 지도 관심 신청] <여행> · <이름>`.
