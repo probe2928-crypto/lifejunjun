@@ -38,6 +38,11 @@
 </header>
 
 <main id="top">
+  <section class="wrap nowrec" aria-labelledby="nr-h">
+    <style>.nowrec{padding-top:22px}.nowrec .nr-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:2px solid var(--ink);padding-top:12px;margin-bottom:12px}.nowrec h2{font-family:var(--serif);font-size:clamp(20px,3.4vw,28px);margin:0;letter-spacing:-.02em}.nr-grid{display:grid;gap:10px;grid-template-columns:repeat(3,minmax(0,1fr))}.nr-card{display:flex;flex-direction:column;gap:6px;background:var(--sheet);border:1px solid var(--rule);padding:16px 16px 14px;text-decoration:none;color:var(--ink);min-width:0;transition:border-color .15s}.nr-card:hover,.nr-card:focus-visible{border-color:var(--ink)}.nr-card b{font-family:var(--serif);font-size:24px;letter-spacing:-.02em}.nr-line{font-size:14px;color:var(--soft)}.nr-date{font-family:var(--mono);font-size:11.5px;color:var(--soft)}.nr-go{margin-top:4px;font-weight:700;font-size:14px;color:var(--seal)}@media(max-width:760px){.nr-head .mono{display:none}.nr-grid{grid-template-columns:1fr}.nr-card{flex-direction:row;flex-wrap:wrap;align-items:baseline;column-gap:10px}.nr-card .mono{display:none}.nr-line{flex-basis:100%}}</style>
+    <div class="nr-head"><h2 id="nr-h">지금 관심 신청 받는 여행</h2><span class="mono">Now recruiting · 결제 아님</span></div>
+    <div class="nr-grid"><a class="nr-card" href="https://probe2928-crypto.github.io/yeobaek/go/tainan/?r=ljj-home&amp;utm_source=ljj"><span class="mono">TAIWAN</span><b>타이난</b><span class="nr-line">대만에서 가장 오래된 도시, 사원과 골목</span><span class="nr-date">2026.11.24 — 11.27 · 3박 4일 · 후보일</span><span class="nr-go">관심 신청 →</span></a><a class="nr-card" href="https://probe2928-crypto.github.io/yeobaek/go/oman/?r=ljj-home&amp;utm_source=ljj"><span class="mono">OMAN</span><b>오만</b><span class="nr-line">요새의 그림자와 사막의 밤</span><span class="nr-date">2026.12.05 — 12.11 · 5박 7일 · 후보일</span><span class="nr-go">관심 신청 →</span></a><a class="nr-card" href="https://probe2928-crypto.github.io/yeobaek/go/uzbekistan/?r=ljj-home&amp;utm_source=ljj"><span class="mono">UZBEKISTAN</span><b>우즈베키스탄</b><span class="nr-line">사마르칸트·부하라, 실크로드의 한가운데</span><span class="nr-date">2027.03.18 — 03.24 · 5박 7일 · 후보일</span><span class="nr-go">관심 신청 →</span></a></div>
+  </section>
   <section class="wrap hero">
     <div class="kicker mono"><span>Small-group history travel</span><span>3인 이상 출발 · 함께 가는 역사 여행</span><span id="nextdep" class="nextdep" hidden></span></div>
     <h1>잔잔하게, 깊게,<br><em>맛있게.</em></h1>
@@ -529,7 +534,7 @@ getJSON("packages.json").then(d=>{
     const c=document.getElementById("nextdep");if(!best||!c)return;
     const dd=Math.round((best.x-now)/864e5);
     c.innerHTML="";c.append(el("a",{href:"#trip-"+best.p.id,onclick:e=>{e.preventDefault();const k=document.getElementById("trip-"+best.p.id);if(k)k.scrollIntoView({block:"center"});openTrip(best.p);}},
-      el("i",{"aria-hidden":"true"}),`가장 빠른 출발 ${md(best.x)} ${best.p.sub.replace(/\s*\d+일$/,"")} · D-${dd}`));c.hidden=false;})();
+      el("i",{"aria-hidden":"true"}),`가장 빠른 출발 후보일 ${md(best.x)} ${best.p.sub.replace(/\s*\d+일$/,"")} · D-${dd}`));c.hidden=false;})();
   const sample=d.packages.find(p=>p.id==="kyoto4")||d.packages[0];
   billFor(sample,document.getElementById("bill"));
   // deep link from reels.html: index.html#trip-<id> scrolls to that trip and opens it
