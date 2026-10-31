@@ -17,4 +17,4 @@
 
 **세준 대기 결정:** 여행업 등록 상태 / 타이난 11/24 연기 여부 / 여백의 지도 사이트 수정 OK / 이스탄불 여행 추가 / 얼굴 영상 주 1~2개 / 프로필 소개 변경(세준이 하기로 함)
 
-운영 계획: ops/PLAN_2026-11.md
+운영 계획: ops/PLAN_2026-11.md · 문서 https://claude.ai/artifact/S48qAGKVruFvrna8XrikdT
