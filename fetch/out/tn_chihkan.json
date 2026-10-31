@@ -1,0 +1,293 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 6,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "147334236": {
+    "pageid": 147334236,
+    "ns": 6,
+    "title": "File:Chihkan Tower 54507-Tainan (43946438085).jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1860582,
+      "width": 3000,
+      "height": 2000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Chihkan_Tower_54507-Tainan_%2843946438085%29.jpg/1920px-Chihkan_Tower_54507-Tainan_%2843946438085%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Chihkan_Tower_54507-Tainan_%2843946438085%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Chihkan_Tower_54507-Tainan_%2843946438085%29.jpg/1920px-Chihkan_Tower_54507-Tainan_%2843946438085%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Chihkan_Tower_54507-Tainan_%2843946438085%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Chihkan_Tower_54507-Tainan_%2843946438085%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chihkan_Tower_54507-Tainan_(43946438085).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=147334236",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "54507-Tainan",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/7138083@N04\">xiquinhosilva</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "147334233": {
+    "pageid": 147334233,
+    "ns": 6,
+    "title": "File:Chihkan Tower 54510-Tainan (44807297992).jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3123333,
+      "width": 3000,
+      "height": 2003,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Chihkan_Tower_54510-Tainan_%2844807297992%29.jpg/1920px-Chihkan_Tower_54510-Tainan_%2844807297992%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1068,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chihkan_Tower_54510-Tainan_%2844807297992%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Chihkan_Tower_54510-Tainan_%2844807297992%29.jpg/1920px-Chihkan_Tower_54510-Tainan_%2844807297992%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1068,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chihkan_Tower_54510-Tainan_%2844807297992%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chihkan_Tower_54510-Tainan_%2844807297992%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chihkan_Tower_54510-Tainan_(44807297992).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=147334233",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "54510-Tainan",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/7138083@N04\">xiquinhosilva</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "147334241": {
+    "pageid": 147334241,
+    "ns": 6,
+    "title": "File:Chihkan Tower 54515-Tainan (30984681738).jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2062854,
+      "width": 3000,
+      "height": 2000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chihkan_Tower_54515-Tainan_%2830984681738%29.jpg/1920px-Chihkan_Tower_54515-Tainan_%2830984681738%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chihkan_Tower_54515-Tainan_%2830984681738%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chihkan_Tower_54515-Tainan_%2830984681738%29.jpg/1920px-Chihkan_Tower_54515-Tainan_%2830984681738%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chihkan_Tower_54515-Tainan_%2830984681738%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chihkan_Tower_54515-Tainan_%2830984681738%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chihkan_Tower_54515-Tainan_(30984681738).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=147334241",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "54515-Tainan",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/7138083@N04\">xiquinhosilva</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "147334234": {
+    "pageid": 147334234,
+    "ns": 6,
+    "title": "File:Chihkan Tower 54527-Tainan (44807305842).jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1643825,
+      "width": 3000,
+      "height": 2000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Chihkan_Tower_54527-Tainan_%2844807305842%29.jpg/1920px-Chihkan_Tower_54527-Tainan_%2844807305842%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Chihkan_Tower_54527-Tainan_%2844807305842%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Chihkan_Tower_54527-Tainan_%2844807305842%29.jpg/1920px-Chihkan_Tower_54527-Tainan_%2844807305842%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Chihkan_Tower_54527-Tainan_%2844807305842%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Chihkan_Tower_54527-Tainan_%2844807305842%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chihkan_Tower_54527-Tainan_(44807305842).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=147334234",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "54527-Tainan",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/7138083@N04\">xiquinhosilva</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "5780640": {
+    "pageid": 5780640,
+    "ns": 6,
+    "title": "File:Chihkan Tower night.JPG",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2153357,
+      "width": 3264,
+      "height": 2448,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Chihkan_Tower_night.JPG/1920px-Chihkan_Tower_night.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/d/de/Chihkan_Tower_night.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Chihkan_Tower_night.JPG/1920px-Chihkan_Tower_night.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/d/de/Chihkan_Tower_night.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Chihkan_Tower_night.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chihkan_Tower_night.JPG",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=5780640",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Chihkan Tower(赤崁樓) in Tainan, Taiwan",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Koika\" title=\"User:Koika\">Koika</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "46528611": {
+    "pageid": 46528611,
+    "ns": 6,
+    "title": "File:Tainan Taiwan Fort-Provintia-01.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 12238838,
+      "width": 5032,
+      "height": 3355,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Tainan_Taiwan_Fort-Provintia-01.jpg/1920px-Tainan_Taiwan_Fort-Provintia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Tainan_Taiwan_Fort-Provintia-01.jpg/3840px-Tainan_Taiwan_Fort-Provintia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Tainan_Taiwan_Fort-Provintia-01.jpg/1920px-Tainan_Taiwan_Fort-Provintia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Tainan_Taiwan_Fort-Provintia-01.jpg/3840px-Tainan_Taiwan_Fort-Provintia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Tainan_Taiwan_Fort-Provintia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tainan_Taiwan_Fort-Provintia-01.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=46528611",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Tainan, Taiwan: The Chihkan Tower of the former Dutch Fort Provintia in Tainan, the old capital of Taiwan. It was built in 1653. The nine steles in front of the building commemorate the crushing of the Lin-Shuangwen uprise in 1788. They are mounted on the back of sculptures of turtles, the symbol of longevity.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Cccefalon\" title=\"User:Cccefalon\">CEphoto, Uwe Aranas</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}
