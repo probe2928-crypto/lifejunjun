@@ -1,4 +1,4 @@
-[{"type":"commons_search","name":"afr_mural","q":"Afrasiyab mural ambassadors filetype:bitmap","n":12},
- {"type":"commons_search","name":"afr_koguryo","q":"Afrasiab painting Korean envoys filetype:bitmap","n":8},
- {"type":"commons_search","name":"hdb_sg","q":"HDB flats Singapore public housing filetype:bitmap","n":8},
- {"type":"stats","days":2,"reels":["kk-sunset","tr-905","bio","ljj-home"]}]
+[{"type":"commons_search","name":"afr_kr","q":"Afrasiab Korean envoys Goguryeo filetype:bitmap","n":10},
+ {"type":"commons_search","name":"afr_kr2","q":"Samarkand mural Korean ambassadors feather filetype:bitmap","n":10},
+ {"type":"commons_search","name":"tn_fort","q":"Anping Fort Tainan filetype:bitmap","n":8},
+ {"type":"commons_search","name":"tn_chihkan","q":"Chihkan Tower Tainan filetype:bitmap","n":6}]
