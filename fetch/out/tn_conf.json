@@ -1,0 +1,383 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 8,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "138511146": {
+    "pageid": 138511146,
+    "ns": 6,
+    "title": "File:55089-Minglun Hall, Tainan Confucius Temple (49027124717).jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1917919,
+      "width": 3000,
+      "height": 2281,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/55089-Minglun_Hall%2C_Tainan_Confucius_Temple_%2849027124717%29.jpg/1920px-55089-Minglun_Hall%2C_Tainan_Confucius_Temple_%2849027124717%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1217,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/b/b7/55089-Minglun_Hall%2C_Tainan_Confucius_Temple_%2849027124717%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/55089-Minglun_Hall%2C_Tainan_Confucius_Temple_%2849027124717%29.jpg/1920px-55089-Minglun_Hall%2C_Tainan_Confucius_Temple_%2849027124717%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1217,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/b/b7/55089-Minglun_Hall%2C_Tainan_Confucius_Temple_%2849027124717%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/55089-Minglun_Hall%2C_Tainan_Confucius_Temple_%2849027124717%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:55089-Minglun_Hall,_Tainan_Confucius_Temple_(49027124717).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=138511146",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "55089-Tainan",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/7138083@N04\">xiquinhosilva</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "70029288": {
+    "pageid": 70029288,
+    "ns": 6,
+    "title": "File:Buildings of Tainan Confucius Temple 03.jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1070985,
+      "width": 2816,
+      "height": 2112,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Buildings_of_Tainan_Confucius_Temple_03.jpg/1920px-Buildings_of_Tainan_Confucius_Temple_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Buildings_of_Tainan_Confucius_Temple_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Buildings_of_Tainan_Confucius_Temple_03.jpg/1920px-Buildings_of_Tainan_Confucius_Temple_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Buildings_of_Tainan_Confucius_Temple_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Buildings_of_Tainan_Confucius_Temple_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Buildings_of_Tainan_Confucius_Temple_03.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=70029288",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "as shown.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Dquai\" title=\"User:Dquai\">Dquai</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "70029293": {
+    "pageid": 70029293,
+    "ns": 6,
+    "title": "File:Buildings of Tainan Confucius Temple 05.jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1063136,
+      "width": 2816,
+      "height": 2112,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Buildings_of_Tainan_Confucius_Temple_05.jpg/1920px-Buildings_of_Tainan_Confucius_Temple_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/8/81/Buildings_of_Tainan_Confucius_Temple_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Buildings_of_Tainan_Confucius_Temple_05.jpg/1920px-Buildings_of_Tainan_Confucius_Temple_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/8/81/Buildings_of_Tainan_Confucius_Temple_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Buildings_of_Tainan_Confucius_Temple_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Buildings_of_Tainan_Confucius_Temple_05.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=70029293",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "​臺南孔廟崇聖祠。",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Dquai\" title=\"User:Dquai\">Dquai</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "75463088": {
+    "pageid": 75463088,
+    "ns": 6,
+    "title": "File:Exterior of Tainan Confucius Temple in November 2017.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 6285943,
+      "width": 4608,
+      "height": 3456,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Exterior_of_Tainan_Confucius_Temple_in_November_2017.jpg/1920px-Exterior_of_Tainan_Confucius_Temple_in_November_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Exterior_of_Tainan_Confucius_Temple_in_November_2017.jpg/3840px-Exterior_of_Tainan_Confucius_Temple_in_November_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Exterior_of_Tainan_Confucius_Temple_in_November_2017.jpg/1920px-Exterior_of_Tainan_Confucius_Temple_in_November_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Exterior_of_Tainan_Confucius_Temple_in_November_2017.jpg/3840px-Exterior_of_Tainan_Confucius_Temple_in_November_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Exterior_of_Tainan_Confucius_Temple_in_November_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Exterior_of_Tainan_Confucius_Temple_in_November_2017.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=75463088",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Front view of the Ta Cheng Hall, central hall of the <a href=\"https://en.wikipedia.org/wiki/Taiwan_Confucian_Temple\" class=\"extiw\" title=\"en:Taiwan Confucian Temple\">Confucius Temple</a>, Tainan, <a href=\"https://en.wikipedia.org/wiki/Taiwan\" class=\"extiw\" title=\"en:Taiwan\">Taiwan</a>. The temple was first completed in 1665 by <a href=\"https://en.wikipedia.org/wiki/Zheng_Jing\" class=\"extiw\" title=\"en:Zheng Jing\">Cheng Ching</a> but has since been enlarged and renovated many times.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nick-D\" title=\"User:Nick-D\">Nick-D</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "91841984": {
+    "pageid": 91841984,
+    "ns": 6,
+    "title": "File:Ta Cheng Palace, Tainan Confucius Temple 20130905.jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3046021,
+      "width": 3872,
+      "height": 2592,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Ta_Cheng_Palace%2C_Tainan_Confucius_Temple_20130905.jpg/1920px-Ta_Cheng_Palace%2C_Tainan_Confucius_Temple_20130905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1071,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Ta_Cheng_Palace%2C_Tainan_Confucius_Temple_20130905.jpg/3840px-Ta_Cheng_Palace%2C_Tainan_Confucius_Temple_20130905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Ta_Cheng_Palace%2C_Tainan_Confucius_Temple_20130905.jpg/1920px-Ta_Cheng_Palace%2C_Tainan_Confucius_Temple_20130905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1071,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Ta_Cheng_Palace%2C_Tainan_Confucius_Temple_20130905.jpg/3840px-Ta_Cheng_Palace%2C_Tainan_Confucius_Temple_20130905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Ta_Cheng_Palace%2C_Tainan_Confucius_Temple_20130905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ta_Cheng_Palace,_Tainan_Confucius_Temple_20130905.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=91841984",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Ta Cheng Palace, Tainan Confucius Temple",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Suicasmo\" title=\"User:Suicasmo\">Suicasmo</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "61404960": {
+    "pageid": 61404960,
+    "ns": 6,
+    "title": "File:Tainan Confucius Temple art works.jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3428539,
+      "width": 1920,
+      "height": 2560,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Tainan_Confucius_Temple_art_works.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 2133,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Tainan_Confucius_Temple_art_works.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2133
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Tainan_Confucius_Temple_art_works.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tainan_Confucius_Temple_art_works.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=61404960",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "​臺南孔子廟的長椅",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Tze_Chiang_Hao&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tze Chiang Hao (page does not exist)\">Tze Chiang Hao</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "48896482": {
+    "pageid": 48896482,
+    "ns": 6,
+    "title": "File:Tainan Taiwan Confucius-Temple-01.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 8990222,
+      "width": 4590,
+      "height": 3060,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Tainan_Taiwan_Confucius-Temple-01.jpg/1920px-Tainan_Taiwan_Confucius-Temple-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Tainan_Taiwan_Confucius-Temple-01.jpg/3840px-Tainan_Taiwan_Confucius-Temple-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Tainan_Taiwan_Confucius-Temple-01.jpg/1920px-Tainan_Taiwan_Confucius-Temple-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Tainan_Taiwan_Confucius-Temple-01.jpg/3840px-Tainan_Taiwan_Confucius-Temple-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Tainan_Taiwan_Confucius-Temple-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tainan_Taiwan_Confucius-Temple-01.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48896482",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Tainan, Taiwan: The Tainan Confucius Temple",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Cccefalon\" title=\"User:Cccefalon\">CEphoto, Uwe Aranas</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "175805680": {
+    "pageid": 175805680,
+    "ns": 6,
+    "title": "File:Temple de Confucius à Tainan 02.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3261814,
+      "width": 2972,
+      "height": 3963,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Temple_de_Confucius_%C3%A0_Tainan_02.jpg/1920px-Temple_de_Confucius_%C3%A0_Tainan_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2134,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/1/11/Temple_de_Confucius_%C3%A0_Tainan_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Temple_de_Confucius_%C3%A0_Tainan_02.jpg/1920px-Temple_de_Confucius_%C3%A0_Tainan_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2134,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/1/11/Temple_de_Confucius_%C3%A0_Tainan_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Temple_de_Confucius_%C3%A0_Tainan_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Temple_de_Confucius_%C3%A0_Tainan_02.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175805680",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "La façade sud du temple Da Cheng (大成殿) du complexe du temple de Confucius à Tainan, Taïwan",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Zhuge_buLiang\" title=\"User:Zhuge buLiang\">Zhuge buLiang</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}
