@@ -25,8 +25,9 @@
 - 리포트 문서: Claude Docs '인생준준 릴스 리포트' doc id adb4187d-0877-4bfe-bb5b-a0b7609c59a9 (https://claude.ai/artifact/NT5cq3ortyeZkfMAvoJCFA). 운영 계획 문서는 `ops/BRIEF.md` 맨 아래 링크 참고. Docs 쓰기 전 `mcp__Claude_Docs__guide(topic.index, topic.editing)`.
 - vidIQ: `vidiq_instagram_tiktok_outlier_search`, `vidiq_ig_profile_reels`, `vidiq_watch_shortform_content` (크레딧 아껴서, 하루 검색 3회 이내).
 - 사이트: 여백의 지도 https://probe2928-crypto.github.io/yeobaek/ (저장소 probe2928-crypto/yeobaek — 세준 OK(10/31)로 여행별 신청 페이지 운영. 디자인·구조 큰 변경은 실무이사만, 직원은 문구 제안만), 카톡 공지방 https://open.kakao.com/o/gzvyLFTi.
+- **허브(프로필 링크용)**: `https://probe2928-crypto.github.io/yeobaek/go/?r=bio` — 여행 3개 카드. 인생준준 사이트 맨 위 카드는 태그 `ljj-home`.
 - **여행별 신청 페이지(2칸 폼 + 유입 추적)**: `.../yeobaek/go/tainan/`, `/go/oman/`, `/go/uzbekistan/`. 링크에 `?r=<릴스태그>` 를 붙이면 어떤 릴스에서 왔는지 집계·신청 메일 '유입' 칸에 남는다. 릴스태그 = 영문 소문자·숫자·-만, 릴스마다 고유(예: hawker9, kk-sunset, tn-why1). 첫 댓글·ManyChat DM·프로필 링크에 이 형식으로. 신청 메일 제목 `[여백의 지도 관심 신청] <여행> · <이름>`.
-- 유입 집계 키: 여행별 `go_<slug>_pv|uv|apply_<YYYYMMDD>`, 릴스별 누적 방문 `r_ig-<태그>`·신청 `ra_ig-<태그>`. stats job에 `{"type":"stats","days":3,"reels":["hawker9",...]}` 로 요청(여행별 키는 자동 포함).
+- 유입 집계 키: 여행별 `go_<slug>_pv|uv|apply_<YYYYMMDD>` (slug: hub·tainan·oman·uzbekistan), 릴스별 누적 방문 `r_ig-<태그>`·신청 `ra_ig-<태그>`. stats job에 `{"type":"stats","days":3,"reels":["hawker9",...]}` 로 요청(여행별 키는 자동 포함).
 
 ## 3. 절대 규칙
 - 문구: 가이드·인솔·해설 표현, 동행비·여행 상품 가격 숫자, 지어낸 사실·후기·숫자, 긴급성("마감 임박") 금지. 사실은 원문 확인한 것만, 출처 링크.
