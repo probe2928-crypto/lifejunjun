@@ -1,1 +1,4 @@
-[{"type":"stats","days":3}]
+[{"type":"commons_search","name":"afr_mural","q":"Afrasiyab mural ambassadors filetype:bitmap","n":12},
+ {"type":"commons_search","name":"afr_koguryo","q":"Afrasiab painting Korean envoys filetype:bitmap","n":8},
+ {"type":"commons_search","name":"hdb_sg","q":"HDB flats Singapore public housing filetype:bitmap","n":8},
+ {"type":"stats","days":2,"reels":["kk-sunset","tr-905","bio","ljj-home"]}]
