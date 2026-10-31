@@ -1,3 +1,5 @@
-[{"type":"commons_search","name":"afr_var","q":"emissaries court of Varkhuman Samarkand","n":12},
- {"type":"commons_search","name":"afr_kog","q":"Koguryo Afrasiab","n":10},
+[{"type":"url","name":"tn_chihkan_night.jpg","url":"https://upload.wikimedia.org/wikipedia/commons/d/de/Chihkan_Tower_night.JPG"},
+ {"type":"url","name":"tn_provintia.jpg","url":"https://upload.wikimedia.org/wikipedia/commons/0/09/Tainan_Taiwan_Fort-Provintia-01.jpg"},
+ {"type":"url","name":"tn_anping_sunset.jpg","url":"https://upload.wikimedia.org/wikipedia/commons/b/b3/Anping_Small_Fort%2C_Sunset%2C_Anping_District%2C_Tainan_City_%28Taiwan%29.jpg"},
+ {"type":"commons_search","name":"afr_var","q":"emissaries court of Varkhuman Samarkand","n":12},
  {"type":"commons_search","name":"afr_kor","q":"Afrasiab Korea","n":12}]
