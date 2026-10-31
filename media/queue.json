@@ -2,6 +2,16 @@
  "note": "인생준준 릴스 게시 대기열 — 사용자 PC의 'Lifejunjun Reels' 작업(월·수·금 10:00)이 아직 안 올린 항목을 위에서부터 하나씩 게시",
  "items": [
   {
+   "id": "own-11-tainan-oldest",
+   "video": "media/own11-tainan-oldest.mp4",
+   "cover": "media/own11-tainan-oldest.jpg",
+   "caption": "(저장•공유) 대만에서 가장 오래된 도시, 타이베이 아니에요 🏯\n\n타이난 — '대만의 경주'\n📌 1624년부터 1887년까지, 263년 동안 대만의 수도\n📌 적감루 — 옛 네덜란드 요새 자리에 선 누각\n📌 타이난 공자묘 — 1665년에 세운 대만 첫 공자묘\n\n사원 앞에서 멈추고 골목 끝에서 한 끼, 느리게 걷는 3박 4일.\n타이난 같이 갈 사람 → 프로필 링크 (관심 신청은 결제 아니에요)\n\n출처: Wikipedia 'Tainan', Islands.com\n사진: Koika(적감루, CC BY-SA 3.0), Zhuge buLiang(공자묘, CC BY-SA 4.0), Mk2010(안핑 소포대, CC BY-SA 4.0) / Wikimedia Commons — 자르고 글자 넣음\n음악: raspberrymusic - Lofi Hip Hop Upbeat (CC BY 4.0)\n이 릴스는 CC BY-SA 4.0으로 공유돼요.\n인생준준 — 먼저 공부해 온 길동무와 3~10명이 함께 가는 역사 여행\n\n#타이난 #타이난여행 #대만여행 #대만소도시 #역사여행 #인생준준",
+   "link": "https://probe2928-crypto.github.io/yeobaek/go/tainan/?r=tn-oldest",
+   "created": "2026-10-31",
+   "skip": true,
+   "note": "tag=tn-oldest · 검토 7.5/10 · Metricool 예약 2026-11-01 18:30"
+  },
+  {
    "id": "own-10-kl-merdeka118",
    "video": "media/own10-kl-merdeka118.mp4",
    "cover": "media/own10-kl-merdeka118.jpg",

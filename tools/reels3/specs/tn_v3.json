@@ -1,0 +1,92 @@
+{
+ "id": "tn_v3",
+ "fontdir": "/home/claude/r3/fonts",
+ "workdir": "/home/claude/r3/work",
+ "shots": [
+  {
+   "clip": "/home/claude/r3/afr/c_tn1.mp4",
+   "ss": 0.0,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.2,eq=brightness=-0.05:saturation=0.95"
+  },
+  {
+   "clip": "/home/claude/r3/afr/c_tn_conf2.mp4",
+   "ss": 0.0,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.2,eq=saturation=1.15:brightness=0.03,colorbalance=rs=0.04:bs=-0.04:rm=0.03:bm=-0.03"
+  },
+  {
+   "clip": "/home/claude/r3/afr/c_tn3.mp4",
+   "ss": 0.0,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.2"
+  }
+ ],
+ "layout": "full",
+ "loop_tail": 0,
+ "audio": {
+  "music": "/home/claude/r3/raspberry_lofi.m4a",
+  "music_ss": 44.0,
+  "music_vol": 0.9,
+  "music_fo": 0,
+  "music_fi": 0
+ },
+ "cover_t": 0.4,
+ "style": {
+  "sub_font": "BlackHanSans-Regular.ttf",
+  "sub_size": 104,
+  "stroke": 9,
+  "shadow": 0.55,
+  "vignette": 0.2,
+  "room": 900,
+  "tag_font": "Pretendard-Bold.otf",
+  "end_font": "BlackHanSans-Regular.ttf"
+ },
+ "subs": [],
+ "overlays": [
+  {
+   "type": "text",
+   "t0": 0,
+   "t1": 3,
+   "text": "대만에서 가장 오래된 도시\n[타이베이 아니에요]",
+   "size": 96,
+   "yc": 0.217,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "text",
+   "t0": 3,
+   "t1": 6,
+   "text": "[대만의 경주] 타이난\n1887년까지 대만의 수도",
+   "size": 96,
+   "yc": 0.217,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "text",
+   "t0": 6,
+   "t1": 9,
+   "text": "요새와 사원 사이를\n[느리게] 걷는 3박 4일",
+   "size": 96,
+   "yc": 0.217,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "chip",
+   "t0": 6.3,
+   "t1": 9.0,
+   "text": "소규모로 같이 갈 사람 → [프로필 링크]",
+   "size": 56,
+   "yc": 0.33,
+   "fade": false
+  }
+ ],
+ "out": "/home/claude/r3/short/tn_v3.mp4",
+ "cover": "/home/claude/r3/short/tn_v3.jpg"
+}

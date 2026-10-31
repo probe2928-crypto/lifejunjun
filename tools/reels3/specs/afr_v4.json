@@ -1,0 +1,125 @@
+{
+ "id": "afr_v4",
+ "fontdir": "/home/claude/r3/fonts",
+ "workdir": "/home/claude/r3/work",
+ "shots": [
+  {
+   "clip": "/home/claude/r3/afr/c_afr3.mp4",
+   "ss": 0.0,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.2"
+  },
+  {
+   "clip": "/home/claude/r3/afr/c_afr_w.mp4",
+   "ss": 0.0,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.2"
+  },
+  {
+   "clip": "/home/claude/r3/afr/c_myc.mp4",
+   "ss": 0.0,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.2"
+  }
+ ],
+ "layout": "full",
+ "loop_tail": 0,
+ "audio": {
+  "music": "/home/claude/r3/raspberry_lofi.m4a",
+  "music_ss": 75.0,
+  "music_vol": 0.9,
+  "music_fo": 0,
+  "music_fi": 0
+ },
+ "cover_t": 0.4,
+ "style": {
+  "sub_font": "BlackHanSans-Regular.ttf",
+  "sub_size": 104,
+  "stroke": 9,
+  "shadow": 0.55,
+  "vignette": 0.2,
+  "room": 900,
+  "tag_font": "Pretendard-Bold.otf",
+  "end_font": "BlackHanSans-Regular.ttf"
+ },
+ "subs": [],
+ "overlays": [
+  {
+   "type": "text",
+   "t0": 0,
+   "t1": 3,
+   "text": "우즈베키스탄 궁전 벽화에\n[고구려 사람]이 있다?",
+   "size": 94,
+   "yc": 0.213,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "text",
+   "t0": 3,
+   "t1": 6,
+   "text": "약 1,380년 전 사마르칸트\n[각국 사신]이 그려진 벽화",
+   "size": 94,
+   "yc": 0.213,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "tag",
+   "t0": 3.3,
+   "t1": 6.0,
+   "text": "이 사람들은 다른 나라 사신",
+   "size": 40,
+   "x": 60,
+   "y": 1170
+  },
+  {
+   "type": "text",
+   "t0": 6,
+   "t1": 9,
+   "text": "이런 [깃털 모자] 쓴 두 사람\n고구려 사신으로 추정",
+   "size": 94,
+   "yc": 0.213,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "ring",
+   "t0": 6.2,
+   "t1": 9.0,
+   "cx": 875,
+   "cy": 728,
+   "r": 72,
+   "width": 9
+  },
+  {
+   "type": "tag",
+   "t0": 6.0,
+   "t1": 9.0,
+   "text": "참고: 고구려 고분 벽화의 깃털 모자",
+   "size": 38,
+   "x": 60,
+   "y": 1170,
+   "bg": [
+    30,
+    30,
+    30,
+    220
+   ]
+  },
+  {
+   "type": "chip",
+   "t0": 6.4,
+   "t1": 9.0,
+   "text": "우즈베키스탄 같이 갈 사람 → [프로필 링크]",
+   "size": 52,
+   "yc": 0.322,
+   "fade": false
+  }
+ ],
+ "out": "/home/claude/r3/short/afr_v4.mp4",
+ "cover": "/home/claude/r3/short/afr_v4.jpg"
+}
