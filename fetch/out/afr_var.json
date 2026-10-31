@@ -1,0 +1,50 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "95395212": {
+    "pageid": 95395212,
+    "ns": 6,
+    "title": "File:Tang Dynasty emissaries at the court of Varkhuman in Samarkand carrying silk and a string of silkworm cocoons, 648-651 CE, Afrasiyab murals, Samarkand.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1399342,
+      "width": 773,
+      "height": 896,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tang_Dynasty_emissaries_at_the_court_of_Varkhuman_in_Samarkand_carrying_silk_and_a_string_of_silkworm_cocoons%2C_648-651_CE%2C_Afrasiyab_murals%2C_Samarkand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1855,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tang_Dynasty_emissaries_at_the_court_of_Varkhuman_in_Samarkand_carrying_silk_and_a_string_of_silkworm_cocoons%2C_648-651_CE%2C_Afrasiyab_murals%2C_Samarkand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1855
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tang_Dynasty_emissaries_at_the_court_of_Varkhuman_in_Samarkand_carrying_silk_and_a_string_of_silkworm_cocoons%2C_648-651_CE%2C_Afrasiyab_murals%2C_Samarkand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tang_Dynasty_emissaries_at_the_court_of_Varkhuman_in_Samarkand_carrying_silk_and_a_string_of_silkworm_cocoons,_648-651_CE,_Afrasiyab_murals,_Samarkand.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=95395212",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Tang Dynasty emissaries at the court of Varkhuman in Samarkand carrying silk and a string of silkworm cocoons, 648-651 CE, Afrasiyab murals, Samarkand",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "NORTHEAST ASIAN HISTORY FOUNDATION",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

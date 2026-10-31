@@ -1,4 +1,5 @@
-commons afr_kr ok
-commons afr_kr2 ok
-commons tn_fort ok
-commons tn_chihkan ok
+url tn_chihkan_night.jpg ok
+url tn_provintia.jpg ok
+url tn_anping_sunset.jpg ok
+commons afr_var ok
+commons afr_kor ok
