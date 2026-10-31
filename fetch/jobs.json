@@ -1,4 +1,3 @@
-[{"type":"commons_search","name":"afr_kr","q":"Afrasiab Korean envoys Goguryeo filetype:bitmap","n":10},
- {"type":"commons_search","name":"afr_kr2","q":"Samarkand mural Korean ambassadors feather filetype:bitmap","n":10},
- {"type":"commons_search","name":"tn_fort","q":"Anping Fort Tainan filetype:bitmap","n":8},
- {"type":"commons_search","name":"tn_chihkan","q":"Chihkan Tower Tainan filetype:bitmap","n":6}]
+[{"type":"commons_search","name":"afr_var","q":"emissaries court of Varkhuman Samarkand","n":12},
+ {"type":"commons_search","name":"afr_kog","q":"Koguryo Afrasiab","n":10},
+ {"type":"commons_search","name":"afr_kor","q":"Afrasiab Korea","n":12}]
