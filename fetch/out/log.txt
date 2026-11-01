@@ -1,1 +1,3 @@
-stats ok
+commons om_bahla ok
+commons om_nizwa ok
+commons om_wahiba ok

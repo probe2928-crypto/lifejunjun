@@ -1,0 +1,387 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 8,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "169257908": {
+    "pageid": 169257908,
+    "ns": 6,
+    "title": "File:Nizwa Fort, Oman 2024 14.jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 13433172,
+      "width": 5878,
+      "height": 3919,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Nizwa_Fort%2C_Oman_2024_14.jpg/1920px-Nizwa_Fort%2C_Oman_2024_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Nizwa_Fort%2C_Oman_2024_14.jpg/3840px-Nizwa_Fort%2C_Oman_2024_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Nizwa_Fort%2C_Oman_2024_14.jpg/1920px-Nizwa_Fort%2C_Oman_2024_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Nizwa_Fort%2C_Oman_2024_14.jpg/3840px-Nizwa_Fort%2C_Oman_2024_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Nizwa_Fort%2C_Oman_2024_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Nizwa_Fort,_Oman_2024_14.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=169257908",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Nizwa Fort, Oman",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "dconvertini",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "169257848": {
+    "pageid": 169257848,
+    "ns": 6,
+    "title": "File:Nizwa Fort, Oman 2024 3.jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 15096558,
+      "width": 6000,
+      "height": 4000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Nizwa_Fort%2C_Oman_2024_3.jpg/1920px-Nizwa_Fort%2C_Oman_2024_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Nizwa_Fort%2C_Oman_2024_3.jpg/3840px-Nizwa_Fort%2C_Oman_2024_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Nizwa_Fort%2C_Oman_2024_3.jpg/1920px-Nizwa_Fort%2C_Oman_2024_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Nizwa_Fort%2C_Oman_2024_3.jpg/3840px-Nizwa_Fort%2C_Oman_2024_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Nizwa_Fort%2C_Oman_2024_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Nizwa_Fort,_Oman_2024_3.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=169257848",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Nizwa Fort, Oman",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "dconvertini",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "96192372": {
+    "pageid": 96192372,
+    "ns": 6,
+    "title": "File:Nizwa Fort - Oman.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 9645638,
+      "width": 2848,
+      "height": 4288,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Nizwa_Fort_-_Oman.jpg/1920px-Nizwa_Fort_-_Oman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2409,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Nizwa_Fort_-_Oman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Nizwa_Fort_-_Oman.jpg/1920px-Nizwa_Fort_-_Oman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2409,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Nizwa_Fort_-_Oman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Nizwa_Fort_-_Oman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Nizwa_Fort_-_Oman.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=96192372",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Nizawa Fort, Oman",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Indies1\" title=\"User:Indies1\">P. Hughes</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "39086371": {
+    "pageid": 39086371,
+    "ns": 6,
+    "title": "File:Nizwa Fort Detail.JPG",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 12840462,
+      "width": 3884,
+      "height": 4875,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nizwa_Fort_Detail.JPG/1920px-Nizwa_Fort_Detail.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2008,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nizwa_Fort_Detail.JPG/3840px-Nizwa_Fort_Detail.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nizwa_Fort_Detail.JPG/1920px-Nizwa_Fort_Detail.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2008,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nizwa_Fort_Detail.JPG/3840px-Nizwa_Fort_Detail.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Nizwa_Fort_Detail.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Nizwa_Fort_Detail.JPG",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=39086371",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Detail of <a href=\"https://en.wikipedia.org/wiki/Nizwa_Fort\" class=\"extiw\" title=\"en:Nizwa Fort\">Nizwa Fort</a>, Oman.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<bdi>Martin Falbisoner</bdi>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "39086368": {
+    "pageid": 39086368,
+    "ns": 6,
+    "title": "File:Nizwa Fort Entrance.JPG",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 9242583,
+      "width": 3816,
+      "height": 4039,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Nizwa_Fort_Entrance.JPG/1920px-Nizwa_Fort_Entrance.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1694,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Nizwa_Fort_Entrance.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Nizwa_Fort_Entrance.JPG/1920px-Nizwa_Fort_Entrance.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1694,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Nizwa_Fort_Entrance.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Nizwa_Fort_Entrance.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Nizwa_Fort_Entrance.JPG",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=39086368",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Nizwa Fort, Oman: Entrance",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Martin_Falbisoner\" title=\"User:Martin Falbisoner\">Martin Falbisoner</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "39086370": {
+    "pageid": 39086370,
+    "ns": 6,
+    "title": "File:Nizwa Fort and Minaret of Friday Mosque.JPG",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 15066544,
+      "width": 5441,
+      "height": 3594,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Nizwa_Fort_and_Minaret_of_Friday_Mosque.JPG/1920px-Nizwa_Fort_and_Minaret_of_Friday_Mosque.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1057,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Nizwa_Fort_and_Minaret_of_Friday_Mosque.JPG/3840px-Nizwa_Fort_and_Minaret_of_Friday_Mosque.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Nizwa_Fort_and_Minaret_of_Friday_Mosque.JPG/1920px-Nizwa_Fort_and_Minaret_of_Friday_Mosque.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1057,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Nizwa_Fort_and_Minaret_of_Friday_Mosque.JPG/3840px-Nizwa_Fort_and_Minaret_of_Friday_Mosque.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Nizwa_Fort_and_Minaret_of_Friday_Mosque.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Nizwa_Fort_and_Minaret_of_Friday_Mosque.JPG",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=39086370",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "The minaret of Friday Mosque as seen from <a href=\"https://en.wikipedia.org/wiki/Nizwa_Fort\" class=\"extiw\" title=\"en:Nizwa Fort\">Nizwa Fort</a>, <a href=\"https://en.wikipedia.org/wiki/Nizwa\" class=\"extiw\" title=\"en:Nizwa\">Nizwa</a>, <a href=\"https://en.wikipedia.org/wiki/Oman\" class=\"extiw\" title=\"en:Oman\">Oman</a>.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<bdi>Martin Falbisoner</bdi>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "177395218": {
+    "pageid": 177395218,
+    "ns": 6,
+    "title": "File:Oman, Nizwa, Fort Nizwa.jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1244848,
+      "width": 5184,
+      "height": 3456,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Oman%2C_Nizwa%2C_Fort_Nizwa.jpg/1920px-Oman%2C_Nizwa%2C_Fort_Nizwa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Oman%2C_Nizwa%2C_Fort_Nizwa.jpg/3840px-Oman%2C_Nizwa%2C_Fort_Nizwa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Oman%2C_Nizwa%2C_Fort_Nizwa.jpg/1920px-Oman%2C_Nizwa%2C_Fort_Nizwa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Oman%2C_Nizwa%2C_Fort_Nizwa.jpg/3840px-Oman%2C_Nizwa%2C_Fort_Nizwa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Oman%2C_Nizwa%2C_Fort_Nizwa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Oman,_Nizwa,_Fort_Nizwa.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=177395218",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Oman: <a href=\"https://en.wikipedia.org/wiki/Nizwa_Fort\" class=\"extiw\" title=\"en:Nizwa Fort\">Nizwa Fort</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Dr._Thomas_Liptak\" title=\"User:Dr. Thomas Liptak\">Dr. Thomas Liptak</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "177395219": {
+    "pageid": 177395219,
+    "ns": 6,
+    "title": "File:Oman, Nizwa, Fort Nizwa (at night).jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1095291,
+      "width": 5078,
+      "height": 3405,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Oman%2C_Nizwa%2C_Fort_Nizwa_%28at_night%29.jpg/1920px-Oman%2C_Nizwa%2C_Fort_Nizwa_%28at_night%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1073,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Oman%2C_Nizwa%2C_Fort_Nizwa_%28at_night%29.jpg/3840px-Oman%2C_Nizwa%2C_Fort_Nizwa_%28at_night%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Oman%2C_Nizwa%2C_Fort_Nizwa_%28at_night%29.jpg/1920px-Oman%2C_Nizwa%2C_Fort_Nizwa_%28at_night%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1073,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Oman%2C_Nizwa%2C_Fort_Nizwa_%28at_night%29.jpg/3840px-Oman%2C_Nizwa%2C_Fort_Nizwa_%28at_night%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Oman%2C_Nizwa%2C_Fort_Nizwa_%28at_night%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Oman,_Nizwa,_Fort_Nizwa_(at_night).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=177395219",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Oman: <a href=\"https://en.wikipedia.org/wiki/Nizwa_Fort\" class=\"extiw\" title=\"en:Nizwa Fort\">Nizwa Fort</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Dr._Thomas_Liptak\" title=\"User:Dr. Thomas Liptak\">Dr. Thomas Liptak</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

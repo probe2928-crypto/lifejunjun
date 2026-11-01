@@ -1,0 +1,387 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 8,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "115809176": {
+    "pageid": 115809176,
+    "ns": 6,
+    "title": "File:Bahla Fort, Oman, 12th-15th centuries (1).jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4057688,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%281%29.jpg/1920px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%281%29.jpg/3840px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%281%29.jpg/1920px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%281%29.jpg/3840px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bahla_Fort,_Oman,_12th-15th_centuries_(1).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=115809176",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Bahla Fort, Oman",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/43714545@N06\">Richard Mortel</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "115809146": {
+    "pageid": 115809146,
+    "ns": 6,
+    "title": "File:Bahla Fort, Oman, 12th-15th centuries (31).jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3291835,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%2831%29.jpg/1920px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%2831%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%2831%29.jpg/3840px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%2831%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%2831%29.jpg/1920px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%2831%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%2831%29.jpg/3840px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%2831%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%2831%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bahla_Fort,_Oman,_12th-15th_centuries_(31).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=115809146",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Bahla Fort, Oman",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/43714545@N06\">Richard Mortel</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "115809082": {
+    "pageid": 115809082,
+    "ns": 6,
+    "title": "File:Bahla Fort, Oman, 12th-15th centuries (6).jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3389117,
+      "width": 4000,
+      "height": 2780,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%286%29.jpg/1920px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1112,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%286%29.jpg/3840px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%286%29.jpg/1920px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1112,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%286%29.jpg/3840px-Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Bahla_Fort%2C_Oman%2C_12th-15th_centuries_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bahla_Fort,_Oman,_12th-15th_centuries_(6).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=115809082",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Bahla Fort, Oman",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/43714545@N06\">Richard Mortel</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "66931073": {
+    "pageid": 66931073,
+    "ns": 6,
+    "title": "File:Bahla Fort, Oman (36323872573).jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5230515,
+      "width": 4608,
+      "height": 3456,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Bahla_Fort%2C_Oman_%2836323872573%29.jpg/1920px-Bahla_Fort%2C_Oman_%2836323872573%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Bahla_Fort%2C_Oman_%2836323872573%29.jpg/3840px-Bahla_Fort%2C_Oman_%2836323872573%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Bahla_Fort%2C_Oman_%2836323872573%29.jpg/1920px-Bahla_Fort%2C_Oman_%2836323872573%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Bahla_Fort%2C_Oman_%2836323872573%29.jpg/3840px-Bahla_Fort%2C_Oman_%2836323872573%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Bahla_Fort%2C_Oman_%2836323872573%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bahla_Fort,_Oman_(36323872573).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=66931073",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Bahla, Oman.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63503049@N03\">Fabio Achilli</a> from Milano, Italy",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "66931049": {
+    "pageid": 66931049,
+    "ns": 6,
+    "title": "File:Bahla Fort, Oman (36948538196).jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5244910,
+      "width": 4608,
+      "height": 3456,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Bahla_Fort%2C_Oman_%2836948538196%29.jpg/1920px-Bahla_Fort%2C_Oman_%2836948538196%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Bahla_Fort%2C_Oman_%2836948538196%29.jpg/3840px-Bahla_Fort%2C_Oman_%2836948538196%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Bahla_Fort%2C_Oman_%2836948538196%29.jpg/1920px-Bahla_Fort%2C_Oman_%2836948538196%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Bahla_Fort%2C_Oman_%2836948538196%29.jpg/3840px-Bahla_Fort%2C_Oman_%2836948538196%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bahla_Fort%2C_Oman_%2836948538196%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bahla_Fort,_Oman_(36948538196).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=66931049",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Bahla, Oman.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63503049@N03\">Fabio Achilli</a> from Milano, Italy",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "66931054": {
+    "pageid": 66931054,
+    "ns": 6,
+    "title": "File:Bahla Fort, Oman (36966110322).jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5099542,
+      "width": 4608,
+      "height": 3456,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Bahla_Fort%2C_Oman_%2836966110322%29.jpg/1920px-Bahla_Fort%2C_Oman_%2836966110322%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Bahla_Fort%2C_Oman_%2836966110322%29.jpg/3840px-Bahla_Fort%2C_Oman_%2836966110322%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Bahla_Fort%2C_Oman_%2836966110322%29.jpg/1920px-Bahla_Fort%2C_Oman_%2836966110322%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Bahla_Fort%2C_Oman_%2836966110322%29.jpg/3840px-Bahla_Fort%2C_Oman_%2836966110322%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Bahla_Fort%2C_Oman_%2836966110322%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bahla_Fort,_Oman_(36966110322).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=66931054",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Bahla, Oman.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63503049@N03\">Fabio Achilli</a> from Milano, Italy",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "66931060": {
+    "pageid": 66931060,
+    "ns": 6,
+    "title": "File:Bahla Fort, Oman (36966120572).jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5323881,
+      "width": 4608,
+      "height": 3456,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Bahla_Fort%2C_Oman_%2836966120572%29.jpg/1920px-Bahla_Fort%2C_Oman_%2836966120572%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Bahla_Fort%2C_Oman_%2836966120572%29.jpg/3840px-Bahla_Fort%2C_Oman_%2836966120572%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Bahla_Fort%2C_Oman_%2836966120572%29.jpg/1920px-Bahla_Fort%2C_Oman_%2836966120572%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Bahla_Fort%2C_Oman_%2836966120572%29.jpg/3840px-Bahla_Fort%2C_Oman_%2836966120572%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Bahla_Fort%2C_Oman_%2836966120572%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bahla_Fort,_Oman_(36966120572).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=66931060",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Bahla, Oman.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63503049@N03\">Fabio Achilli</a> from Milano, Italy",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "68651055": {
+    "pageid": 68651055,
+    "ns": 6,
+    "title": "File:Bahla fort and mountais.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4096000,
+      "width": 4912,
+      "height": 3264,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Bahla_fort_and_mountais.jpg/1920px-Bahla_fort_and_mountais.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1063,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Bahla_fort_and_mountais.jpg/3840px-Bahla_fort_and_mountais.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Bahla_fort_and_mountais.jpg/1920px-Bahla_fort_and_mountais.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1063,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Bahla_fort_and_mountais.jpg/3840px-Bahla_fort_and_mountais.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Bahla_fort_and_mountais.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bahla_fort_and_mountais.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=68651055",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Bahla Fort, Oman",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Albinfo\" title=\"User:Albinfo\">Albinfo</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}
