@@ -45,20 +45,25 @@ for j in jobs:
             import datetime
             out = {}
             today = datetime.datetime.utcnow() + datetime.timedelta(hours=9)
+            import time, urllib.error
+            errs = []
+            def _get(key):  # 404 = key never counted = 0; other errors (rate limit etc.) are listed in _err
+                for attempt in range(3):
+                    try:
+                        time.sleep(0.25)
+                        with urllib.request.urlopen(f"https://abacus.jasoncameron.dev/get/lifejunjun-stats/{key}", timeout=20) as r:
+                            return json.loads(r.read()).get("value", 0)
+                    except urllib.error.HTTPError as e:
+                        if e.code == 404: return 0
+                    except Exception: pass
+                    time.sleep(2 * (attempt + 1))
+                errs.append(key); return 0
             for site in ("ljj", "yb"):
                 for k in range(j.get("days", 3)):
                     d = (today - datetime.timedelta(days=k)).strftime("%Y%m%d")
                     for m in ("pv", "uv", "sns", "apply"):
                         key = f"{site}_{m}_{d}"
-                        try:
-                            with urllib.request.urlopen(f"https://abacus.jasoncameron.dev/get/lifejunjun-stats/{key}", timeout=20) as r:
-                                out[key] = json.loads(r.read()).get("value", 0)
-                        except Exception: out[key] = 0
-            def _get(key):
-                try:
-                    with urllib.request.urlopen(f"https://abacus.jasoncameron.dev/get/lifejunjun-stats/{key}", timeout=20) as r:
-                        return json.loads(r.read()).get("value", 0)
-                except Exception: return 0
+                        out[key] = _get(key)
             for slug in j.get("trips", ["hub", "tainan", "oman", "uzbekistan"]):
                 for k in range(j.get("days", 3)):
                     d = (today - datetime.timedelta(days=k)).strftime("%Y%m%d")
@@ -69,6 +74,7 @@ for j in jobs:
                     out[pre + tag] = _get(pre + tag)
             for key in j.get("keys", []):
                 out[key] = _get(key)
+            out["_err"] = errs
             (OUT / "stats.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
             log.append("stats ok")
         elif j["type"] == "url":
