@@ -1,0 +1,127 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:BH;src:url(../fonts/BlackHanSans-Regular.ttf)}
+@font-face{font-family:PB;src:url(../fonts/Pretendard-Black.otf)}
+@font-face{font-family:PS;src:url(../fonts/Pretendard-SemiBold.otf)}
+:root{--lime:#c8ff2e;--ink:#0b0d0a;--w:#f4f6ef}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--ink)}
+#stage{position:absolute;inset:0;overflow:hidden;perspective:1400px}
+.bg{position:absolute;inset:-200px;background:
+ radial-gradient(ellipse at 50% 40%,rgba(200,255,46,.10),transparent 55%),
+ repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 120px),
+ repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 120px),#0b0d0a}
+.grain{position:absolute;inset:0;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+.abs{position:absolute;left:0;right:0;text-align:center;white-space:nowrap;transform-origin:50% 50%}
+.mono{font-family:PS;font-size:30px;letter-spacing:6px;color:rgba(244,246,239,.7)}
+.hl{background:var(--lime);color:var(--ink);padding:2px 10px}
+.big{font-family:BH;color:var(--w);line-height:1}
+.lime{color:var(--lime);text-shadow:0 0 40px rgba(200,255,46,.45)}
+.ch{display:inline-block;transform-origin:50% 100%}
+.bar{position:absolute;height:14px;background:var(--lime);box-shadow:0 0 30px rgba(200,255,46,.7)}
+.streak{position:absolute;width:2400px;height:10px;left:-660px;top:900px;background:linear-gradient(90deg,transparent,var(--lime) 45%,#fff 50%,var(--lime) 55%,transparent);filter:blur(1px);box-shadow:0 0 40px var(--lime)}
+.node{position:absolute;width:34px;height:34px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 10px rgba(200,255,46,.18),0 0 40px var(--lime)}
+.card{position:absolute;border:3px solid var(--lime);border-radius:14px;padding:22px 30px;font-family:PS;color:var(--w);font-size:46px;line-height:1.35;background:rgba(11,13,10,.75);text-align:left}
+.card b{font-family:PB;color:var(--lime)}
+.flash{position:absolute;inset:0;background:var(--lime)}
+.tag{display:inline-block;font-family:PB;font-size:34px;color:var(--ink);background:var(--lime);padding:8px 18px;border-radius:8px}
+</style></head>
+<body><div id="stage">
+<div class="bg" id="bg"></div>
+
+<!-- S1 매년 11월 10일 -->
+<div class="abs mono" id="s1lab" style="top:560px">EVERY YEAR · <span class="hl">TÜRKİYE</span></div>
+<div class="abs big" id="s1a" style="top:650px;font-size:200px">11월 10일</div>
+<div class="bar" id="s1bar" style="left:150px;top:930px;width:780px"></div>
+
+<!-- S2 counter -->
+<div class="abs mono" id="s2lab" style="top:560px">오전</div>
+<div class="abs big lime" id="s2num" style="top:680px;font-size:205px;font-variant-numeric:tabular-nums">09:04:57</div>
+<div class="flash" id="s2flash"></div>
+
+<!-- S3 거리가 멈춘다 -->
+<div class="abs big" id="s3a" style="top:520px;font-size:120px">튀르키예 거리가</div>
+<div class="abs big lime" id="s3b" style="top:700px;font-size:330px">멈춘다</div>
+<div class="streak" id="s3streak"></div>
+
+<!-- S4 timeline -->
+<div class="abs mono" id="s4lab" style="top:420px">WHY <span class="hl">09:05</span></div>
+<div class="bar" id="s4line" style="left:120px;top:800px;width:840px;height:6px"></div>
+<div class="node" id="s4n1" style="left:180px;top:786px"></div>
+<div class="node" id="s4n2" style="left:860px;top:786px"></div>
+<div class="card" id="s4c1" style="left:70px;top:500px;width:620px"><b>1938.11.10 09:05</b><br>국부 아타튀르크<br>세상을 떠난 시각</div>
+<div class="card" id="s4c2" style="left:330px;top:860px;width:680px"><b>돌마바흐체 궁전</b><br>이스탄불 · 마지막을 맞은 곳</div>
+
+<!-- S5 kinetic stack -->
+<div class="abs big" id="s5a" style="top:470px;font-size:130px">그 시각</div>
+<div class="abs big lime" id="s5b" style="top:640px;font-size:150px">사이렌이 울리고</div>
+<div class="abs big" id="s5c" style="top:830px;font-size:120px">사람도 차도</div>
+<div class="abs big" id="s5d" style="top:980px;font-size:120px">그 자리에 <span class="lime">STOP</span></div>
+
+<!-- S6 end -->
+<div class="abs mono" id="s6lab" style="top:470px">올해 <span class="hl">11.10</span> 이스탄불에 있다면</div>
+<div class="abs big lime" id="s6num" style="top:560px;font-size:330px">09:05</div>
+<div class="abs big" id="s6b" style="top:910px;font-size:110px">거리를 보세요</div>
+<div class="abs" id="s6tag" style="top:1120px"><span class="tag">저장해두고 그날 꺼내 보기</span></div>
+<div class="abs mono" id="brand" style="top:1180px;font-size:28px">인생준준 · 역사 여행</div>
+
+<div class="grain"></div>
+</div>
+<script src="mg.js"></script>
+<script>
+const {T,set,split}=MG;
+split('#s1a');split('#s3b');split('#s5b');
+// camera drift on bg
+T('#bg',0,15,{scale:[1.08,1.0],rotate:[-1.5,1.5]},'lin');
+
+// S1 0.0–2.3
+T('#s1lab',0.05,0.4,{opacity:[0,1],y:[20,0],clipR:[100,0]},'out');
+T('#s1a .ch',0.15,0.55,{y:[-260,0],opacity:[0,1],blur:[24,0],scaleY:[1.8,1]},'back',0.05);
+T('#s1bar',0.75,0.45,{clipR:[100,0]},'out5');
+T(['#s1lab','#s1a','#s1bar'],2.05,0.25,{opacity:[1,0],scale:[1,1.25],blur:[0,18]},'in');
+
+// S2 2.3–4.6  (counter driven in onSeek)
+T('#s2lab',2.3,0.3,{opacity:[0,1]},'out');
+T('#s2num',2.3,0.45,{scale:[0.6,1],opacity:[0,1],blur:[20,0]},'out5');
+T('#s2num',3.55,0.35,{scaleY:[2.2,1],scaleX:[0.85,1]},'back');
+T('#s2flash',3.55,0.35,{opacity:[0.85,0]},'out');
+set('#s2flash',0,{opacity:0});
+T(['#s2lab','#s2num'],4.4,0.25,{opacity:[1,0],y:[0,-200],blur:[0,16]},'in');
+
+// S3 4.6–6.9
+T('#s3a',4.6,0.4,{opacity:[0,1],x:[-300,0],skewX:[-20,0]},'out5');
+T('#s3b .ch',4.9,0.5,{scaleY:[3.2,1],opacity:[0,1],y:[120,0]},'back',0.08);
+T('#s3streak',5.35,0.5,{x:[-1400,1400],rotate:[-28,-28],opacity:[1,1]},'inOut');
+T('#s3b',5.6,0.9,{scale:[1,1.06]},'lin');
+T(['#s3a','#s3b'],6.65,0.25,{opacity:[1,0],scaleX:[1,2.4],blur:[0,20]},'in');
+
+// S4 6.9–9.7
+T('#s4lab',6.9,0.35,{opacity:[0,1],clipR:[100,0]},'out');
+T('#s4line',7.0,0.6,{clipR:[100,0]},'inOut');
+T('#s4n1',7.25,0.35,{scale:[0,1]},'back');
+T('#s4c1',7.4,0.45,{opacity:[0,1],y:[40,0],clipB:[100,0]},'out5');
+T('#s4n2',8.1,0.35,{scale:[0,1]},'back');
+T('#s4c2',8.25,0.45,{opacity:[0,1],y:[40,0],clipB:[100,0]},'out5');
+T(['#s4lab','#s4line','#s4n1','#s4n2','#s4c1','#s4c2'],9.45,0.25,{opacity:[1,0],y:[0,120]},'in');
+
+// S5 9.7–12.4
+T('#s5a',9.7,0.35,{opacity:[0,1],scale:[1.6,1],blur:[14,0]},'out5');
+T('#s5b .ch',10.15,0.35,{opacity:[0,1],y:[80,0],rotateX:[90,0]},'out5',0.04);
+T('#s5c',10.85,0.35,{opacity:[0,1],x:[260,0]},'out5');
+T('#s5d',11.25,0.35,{opacity:[0,1],scale:[2.2,1]},'back');
+T(['#s5a','#s5b','#s5c','#s5d'],12.15,0.25,{opacity:[1,0],y:[0,-160],blur:[0,16]},'in');
+
+// S6 12.4–15.0
+T('#s6lab',12.4,0.35,{opacity:[0,1],clipR:[100,0]},'out');
+T('#s6num',12.55,0.5,{opacity:[0,1],scaleY:[2.4,1],blur:[18,0]},'back');
+T('#s6b',13.0,0.4,{opacity:[0,1],y:[60,0]},'out5');
+T('#s6tag',13.4,0.35,{opacity:[0,1],scale:[0.7,1]},'back');
+T('#brand',13.6,0.4,{opacity:[0,1]},'out');
+
+MG.init();
+const num=document.getElementById('s2num');
+window.onSeek=t=>{ // count 09:04:57 -> 09:05:00, ticking per second-ish (compressed)
+  if(t<2.3) return; const steps=['09:04:57','09:04:58','09:04:59','09:05:00'];
+  const k=Math.min(3,Math.max(0,Math.floor((t-2.45)/0.37))); num.textContent=steps[k];};
+window.__seek=MG.seek; MG.seek(0);
+</script></body></html>
