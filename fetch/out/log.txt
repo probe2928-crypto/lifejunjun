@@ -1,3 +1,1 @@
-commons myc3 ok
-commons myc4 ok
-commons myc5 ok
+stats ok
