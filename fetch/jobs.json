@@ -1,18 +1,2 @@
-[
- {
-  "type": "tts",
-  "name": "gum_hy",
-  "texts": [
-   "싱가포르 편의점에선 절대 못 사는 게 있어요.",
-   "바로 껌이에요.",
-   "천구백구십이 년부터, 껌은 파는 것도 들여오는 것도 금지예요.",
-   "지하철 문 센서에 붙은 껌 때문에, 열차가 멈추는 일이 생겼거든요.",
-   "껌을 팔다 걸리면, 벌금이 최대 이천 싱가포르달러예요.",
-   "그런데 씹는 것 자체는 불법이 아니에요.",
-   "이천사 년부터는 치과용이나 금연 껌만, 약국에서 살 수 있어요.",
-   "대신 아무 데나 뱉으면 벌금이에요.",
-   "싱가포르 가는 친구한테 꼭 보내주세요."
-  ],
-  "rate": "+18%"
- }
-]
+[{"type":"commons_search","name":"gum_img","q":"chewing gum sticks pack filetype:bitmap","n":8},
+ {"type":"commons_search","name":"mrt_door","q":"Singapore MRT train doors platform screen filetype:bitmap","n":8}]
