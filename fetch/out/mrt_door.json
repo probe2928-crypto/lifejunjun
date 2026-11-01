@@ -1,0 +1,289 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "54748892": {
+    "pageid": 54748892,
+    "ns": 6,
+    "title": "File:Changi Airport MRT Station platform 20161202.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3630732,
+      "width": 4896,
+      "height": 2752,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Changi_Airport_MRT_Station_platform_20161202.jpg/1920px-Changi_Airport_MRT_Station_platform_20161202.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 899,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Changi_Airport_MRT_Station_platform_20161202.jpg/3840px-Changi_Airport_MRT_Station_platform_20161202.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Changi_Airport_MRT_Station_platform_20161202.jpg/1920px-Changi_Airport_MRT_Station_platform_20161202.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 899,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Changi_Airport_MRT_Station_platform_20161202.jpg/3840px-Changi_Airport_MRT_Station_platform_20161202.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Changi_Airport_MRT_Station_platform_20161202.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Changi_Airport_MRT_Station_platform_20161202.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=54748892",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "The platforms at Changi Airport MRT Station in Singapore",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:DAJF\" title=\"User:DAJF\">DAJF</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "63425096": {
+    "pageid": 63425096,
+    "ns": 6,
+    "title": "File:Cross platform interchange of Bayfront station.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2810106,
+      "width": 3000,
+      "height": 1131,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Cross_platform_interchange_of_Bayfront_station.jpg/1920px-Cross_platform_interchange_of_Bayfront_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 603,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Cross_platform_interchange_of_Bayfront_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Cross_platform_interchange_of_Bayfront_station.jpg/1920px-Cross_platform_interchange_of_Bayfront_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 603,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Cross_platform_interchange_of_Bayfront_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Cross_platform_interchange_of_Bayfront_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cross_platform_interchange_of_Bayfront_station.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=63425096",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "This photo depicts the cross platform interchange between the Circle Line on the left and Downtown Line on the right at Bayfront MRT Station in Singapore.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Seloloving\" title=\"User:Seloloving\">Seloloving</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "156551858": {
+    "pageid": 156551858,
+    "ns": 6,
+    "title": "File:EW7 Eunos MRT Station exterior 202412.jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4599694,
+      "width": 3604,
+      "height": 2292,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/EW7_Eunos_MRT_Station_exterior_202412.jpg/1920px-EW7_Eunos_MRT_Station_exterior_202412.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1018,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/0/0e/EW7_Eunos_MRT_Station_exterior_202412.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/EW7_Eunos_MRT_Station_exterior_202412.jpg/1920px-EW7_Eunos_MRT_Station_exterior_202412.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1018,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/0/0e/EW7_Eunos_MRT_Station_exterior_202412.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/EW7_Eunos_MRT_Station_exterior_202412.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:EW7_Eunos_MRT_Station_exterior_202412.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=156551858",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "A photograph of Eunos MRT station's exterior, which features a Malay-style roof. The platform screen doors for the station's platforms and a train exiting the station are visible.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Fanz226&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Fanz226 (page does not exist)\">Fanz226</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "54748887": {
+    "pageid": 54748887,
+    "ns": 6,
+    "title": "File:Kovan MRT Station platform 20161203.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 6589812,
+      "width": 4896,
+      "height": 2752,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Kovan_MRT_Station_platform_20161203.jpg/1920px-Kovan_MRT_Station_platform_20161203.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 899,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Kovan_MRT_Station_platform_20161203.jpg/3840px-Kovan_MRT_Station_platform_20161203.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Kovan_MRT_Station_platform_20161203.jpg/1920px-Kovan_MRT_Station_platform_20161203.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 899,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Kovan_MRT_Station_platform_20161203.jpg/3840px-Kovan_MRT_Station_platform_20161203.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Kovan_MRT_Station_platform_20161203.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Kovan_MRT_Station_platform_20161203.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=54748887",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "The platform at Kovan MRT Station on the North East Line in Singapore",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:DAJF\" title=\"User:DAJF\">DAJF</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "54748890": {
+    "pageid": 54748890,
+    "ns": 6,
+    "title": "File:Marina Bay MRT Station platform 20161204.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5400540,
+      "width": 4896,
+      "height": 2752,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Marina_Bay_MRT_Station_platform_20161204.jpg/1920px-Marina_Bay_MRT_Station_platform_20161204.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 899,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Marina_Bay_MRT_Station_platform_20161204.jpg/3840px-Marina_Bay_MRT_Station_platform_20161204.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Marina_Bay_MRT_Station_platform_20161204.jpg/1920px-Marina_Bay_MRT_Station_platform_20161204.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 899,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Marina_Bay_MRT_Station_platform_20161204.jpg/3840px-Marina_Bay_MRT_Station_platform_20161204.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Marina_Bay_MRT_Station_platform_20161204.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Marina_Bay_MRT_Station_platform_20161204.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=54748890",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "North South Line platforms 4 and 5 at Marina Bay MRT Station in Singapore",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:DAJF\" title=\"User:DAJF\">DAJF</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "396046": {
+    "pageid": 396046,
+    "ns": 6,
+    "title": "File:NS26 rafflesplace.jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 827830,
+      "width": 2048,
+      "height": 1536,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/NS26_rafflesplace.jpg/1920px-NS26_rafflesplace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/2/26/NS26_rafflesplace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/NS26_rafflesplace.jpg/1920px-NS26_rafflesplace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/2/26/NS26_rafflesplace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/NS26_rafflesplace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:NS26_rafflesplace.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=396046",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<p>This is the South Bound Train platform at Raffles Place Station, located in the heart of Singapore's financial district.\nCreated/Taken by Calvin Teo\n</p>\nOctober 2005",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "No machine-readable author provided. <a href=\"//commons.wikimedia.org/wiki/User:Calvin_Teo\" title=\"User:Calvin Teo\">Calvin Teo</a> assumed (based on copyright claims).",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.5",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

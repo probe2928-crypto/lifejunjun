@@ -1,0 +1,97 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "71471941": {
+    "pageid": 71471941,
+    "ns": 6,
+    "title": "File:Fruit-Stipe-Gum-Sticks.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3418745,
+      "width": 4440,
+      "height": 2080,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Fruit-Stipe-Gum-Sticks.jpg/1920px-Fruit-Stipe-Gum-Sticks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 750,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Fruit-Stipe-Gum-Sticks.jpg/3840px-Fruit-Stipe-Gum-Sticks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Fruit-Stipe-Gum-Sticks.jpg/1920px-Fruit-Stipe-Gum-Sticks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 750,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Fruit-Stipe-Gum-Sticks.jpg/3840px-Fruit-Stipe-Gum-Sticks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Fruit-Stipe-Gum-Sticks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fruit-Stipe-Gum-Sticks.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=71471941",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "An array of Fruit Stripe gum flavors, which includes all five flavors in each pack of gum: melon, cherry, lemon, orange and peach.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Evan-Amos\" title=\"User:Evan-Amos\">Evan-Amos</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "23133432": {
+    "pageid": 23133432,
+    "ns": 6,
+    "title": "File:USMC-050810-M-0502E-015.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1255262,
+      "width": 1612,
+      "height": 2636,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/USMC-050810-M-0502E-015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 2616,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/USMC-050810-M-0502E-015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2616
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/USMC-050810-M-0502E-015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:USMC-050810-M-0502E-015.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=23133432",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "FALLUJAH, Iraq - An insurgent's packs of \"shock\" fake chewing gum lie on the ground here Aug. 10, after Iraqi policemen with the Public Order Brigade found them in the terrorist's pockets. Terrorists use these devices to torture their prisoners, forcing them to bite down on the sticks. Along with capturing the insurgent carrying this fake gum, Iraqi Security Forces and U.S. Marines apprehended a total of four suspected terrorists for weapons possession, emplacing roadside bombs, and possible involvement in a nearby firefight.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Cpl Mike Escobar",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

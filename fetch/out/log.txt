@@ -1,1 +1,2 @@
-tts gum_hy 9
+commons gum_img ok
+commons mrt_door ok
