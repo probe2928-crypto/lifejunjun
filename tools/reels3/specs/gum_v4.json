@@ -1,0 +1,293 @@
+{
+ "id": "gum_v4",
+ "fontdir": "/home/claude/r3/fonts",
+ "workdir": "/home/claude/r3/work",
+ "shots": [
+  {
+   "clip": "/home/claude/own/clips/own_sg_shop.mp4",
+   "dur": 2.999,
+   "ss": 1.2,
+   "cx": 0.5,
+   "vf": "unsharp=5:5:0.35",
+   "zoom": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "clip": "/home/claude/r3/gum/c_gum.mp4",
+   "dur": 1.118,
+   "trans": "zoom",
+   "hit": true
+  },
+  {
+   "clip": "/home/claude/own/clips/mx_singapore_19088.mp4",
+   "dur": 4.132,
+   "ss": 1.0
+  },
+  {
+   "clip": "/home/claude/r3/gum/c_mrt.mp4",
+   "dur": 4.444
+  },
+  {
+   "clip": "/home/claude/own/clips/own_sg_shop.mp4",
+   "dur": 4.009,
+   "ss": 3.0,
+   "cx": 0.55,
+   "vf": "unsharp=5:5:0.35",
+   "zoom": [
+    1.05,
+    1.12
+   ]
+  },
+  {
+   "clip": "/home/claude/own/clips/mx_singapore_20177.mp4",
+   "dur": 2.532,
+   "ss": 0.8,
+   "cx": 0.5
+  },
+  {
+   "clip": "/home/claude/own/clips/mx_singapore_28635.mp4",
+   "dur": 4.28,
+   "ss": 1.0,
+   "cx": 0.5
+  },
+  {
+   "clip": "/home/claude/own/clips/mx_singapore_20174.mp4",
+   "dur": 2.259,
+   "ss": 0.5,
+   "cx": 0.45
+  },
+  {
+   "clip": "/home/claude/own/clips/own_sg_shop.mp4",
+   "dur": 2.682,
+   "ss": 0.4,
+   "cx": 0.5,
+   "vf": "unsharp=5:5:0.35",
+   "zoom": [
+    1.0,
+    1.05
+   ]
+  }
+ ],
+ "trans_dur": 0.2,
+ "loop_tail": 0,
+ "audio": {
+  "whoosh": "/home/claude/r3/whoosh.wav",
+  "whoosh_vol": 0.3,
+  "hit": "/home/claude/r3/hit.wav",
+  "hit_vol": 0.3,
+  "hit_lead": 0.11,
+  "music": "/home/claude/r3/raspberry_lofi.m4a",
+  "music_ss": 120.0,
+  "music_vol": 0.15,
+  "music_fo": 0,
+  "duck": [
+   [
+    16.3,
+    17.3,
+    0.0,
+    0.06
+   ]
+  ],
+  "voice": "/home/claude/r3/gum/voice_v4.wav",
+  "voice_delay": 0.0
+ },
+ "cover_t": 0.4,
+ "layout": "full",
+ "style": {
+  "sub_font": "BlackHanSans-Regular.ttf",
+  "sub_size": 104,
+  "sub_y": 0.36,
+  "stroke": 9,
+  "shadow": 0.55,
+  "vignette": 0.2,
+  "word_reveal": true,
+  "end_font": "BlackHanSans-Regular.ttf",
+  "small_font": "Pretendard-Bold.otf",
+  "room": 800,
+  "tag_font": "Pretendard-Bold.otf"
+ },
+ "subs": [
+  {
+   "t0": 2.999,
+   "t1": 4.118,
+   "text": "바로 [껌]",
+   "wt": [
+    2.999,
+    3.235
+   ]
+  },
+  {
+   "t0": 4.118,
+   "t1": 8.249,
+   "text": "1992년부터\n[판매, 수입] 금지",
+   "wt": [
+    4.118,
+    6.096,
+    6.636,
+    7.367
+   ]
+  },
+  {
+   "t0": 8.249,
+   "t1": 12.694,
+   "text": "문 센서에 붙은 껌\n[열차 멈춤]",
+   "wt": [
+    8.249,
+    8.745,
+    9.169,
+    9.466,
+    10.578,
+    11.542
+   ]
+  },
+  {
+   "t0": 12.694,
+   "t1": 16.702,
+   "text": "팔다 걸리면\n벌금 최대 [S$2,000]",
+   "wt": [
+    12.694,
+    13.148,
+    14.037,
+    14.567,
+    15.536
+   ]
+  },
+  {
+   "t0": 16.702,
+   "t1": 19.235,
+   "text": "씹는 건\n[불법 아님]",
+   "wt": [
+    16.702,
+    17.352,
+    18.001,
+    18.61
+   ]
+  },
+  {
+   "t0": 19.235,
+   "t1": 23.515,
+   "text": "2004년부터\n치과용, 금연 껌만 [약국]",
+   "wt": [
+    19.235,
+    20.219,
+    20.812,
+    21.172,
+    21.924
+   ]
+  },
+  {
+   "t0": 23.515,
+   "t1": 25.774,
+   "text": "아무 데나 뱉으면\n[벌금]",
+   "wt": [
+    23.515,
+    24.039,
+    24.262,
+    24.749
+   ]
+  },
+  {
+   "t0": 25.774,
+   "t1": 28.456,
+   "text": "싱가포르 가는 친구한테\n[보내주세요]",
+   "wt": [
+    25.774,
+    26.22,
+    26.602,
+    27.513
+   ]
+  }
+ ],
+ "overlays": [
+  {
+   "type": "text",
+   "t0": 0.0,
+   "t1": 2.999458,
+   "text": "싱가포르 편의점에선\n[절대] 못 사는 것",
+   "size": 104,
+   "yc": 0.22,
+   "stroke": 10,
+   "room": 900,
+   "fade": false
+  },
+  {
+   "type": "tag",
+   "t0": 2.999458,
+   "t1": 4.117708,
+   "text": "자료 사진",
+   "size": 38,
+   "x": 60,
+   "y": 1150,
+   "bg": [
+    0,
+    0,
+    0,
+    170
+   ]
+  },
+  {
+   "type": "tag",
+   "t0": 4.117708,
+   "t1": 8.24925,
+   "text": "자료 영상",
+   "size": 38,
+   "x": 60,
+   "y": 1150,
+   "bg": [
+    0,
+    0,
+    0,
+    170
+   ]
+  },
+  {
+   "type": "tag",
+   "t0": 8.24925,
+   "t1": 12.693625,
+   "text": "자료 사진 · 싱가포르 MRT",
+   "size": 38,
+   "x": 60,
+   "y": 1150,
+   "bg": [
+    0,
+    0,
+    0,
+    170
+   ]
+  },
+  {
+   "type": "tag",
+   "t0": 16.702375,
+   "t1": 23.515,
+   "text": "자료 영상",
+   "size": 38,
+   "x": 60,
+   "y": 1150,
+   "bg": [
+    0,
+    0,
+    0,
+    170
+   ]
+  },
+  {
+   "type": "tag",
+   "t0": 23.515,
+   "t1": 25.774417,
+   "text": "자료 영상",
+   "size": 38,
+   "x": 60,
+   "y": 1150,
+   "bg": [
+    0,
+    0,
+    0,
+    170
+   ]
+  }
+ ],
+ "out": "/home/claude/r3/gum/gum_v4.mp4",
+ "cover": "/home/claude/r3/gum/gum_v4.jpg"
+}

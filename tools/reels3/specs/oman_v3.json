@@ -1,0 +1,137 @@
+{
+ "id": "oman_v3",
+ "fontdir": "/home/claude/r3/fonts",
+ "workdir": "/home/claude/r3/work",
+ "shots": [
+  {
+   "clip": "/home/claude/r3/oman/c1.mp4",
+   "ss": 0.0,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.2"
+  },
+  {
+   "clip": "/home/claude/r3/oman/c2.mp4",
+   "ss": 0.0,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.2"
+  },
+  {
+   "clip": "/home/claude/r3/oman/c3.mp4",
+   "ss": 0.0,
+   "dur": 3.0,
+   "vf": "unsharp=5:5:0.2"
+  }
+ ],
+ "layout": "full",
+ "loop_tail": 0,
+ "audio": {
+  "music": "/home/claude/r3/raspberry_lofi.m4a",
+  "music_ss": 90.0,
+  "music_vol": 1.25,
+  "music_fo": 0,
+  "music_fi": 0
+ },
+ "cover_t": 0.4,
+ "style": {
+  "sub_font": "BlackHanSans-Regular.ttf",
+  "sub_size": 104,
+  "stroke": 9,
+  "shadow": 0.55,
+  "vignette": 0.2,
+  "room": 900,
+  "tag_font": "Pretendard-Bold.otf",
+  "end_font": "BlackHanSans-Regular.ttf"
+ },
+ "subs": [],
+ "overlays": [
+  {
+   "type": "text",
+   "t0": 0,
+   "t1": 3,
+   "text": "두바이 옆 나라 [오만]\n비자 없이 14일",
+   "size": 96,
+   "yc": 0.217,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "tag",
+   "t0": 0.3,
+   "t1": 3.0,
+   "text": "한국 여권 기준",
+   "size": 46,
+   "x": 60,
+   "y": 1085,
+   "bg": [
+    0,
+    0,
+    0,
+    200
+   ]
+  },
+  {
+   "type": "tag",
+   "t0": 0.3,
+   "t1": 3.0,
+   "text": "왕복 항공권·숙소·보험·여권 6개월↑",
+   "size": 46,
+   "x": 60,
+   "y": 1160,
+   "bg": [
+    0,
+    0,
+    0,
+    200
+   ]
+  },
+  {
+   "type": "text",
+   "t0": 3,
+   "t1": 6,
+   "text": "흙으로 쌓은 [바흘라 요새]\n오만 첫 유네스코 유산 (1987)",
+   "size": 96,
+   "yc": 0.217,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "text",
+   "t0": 6,
+   "t1": 9,
+   "text": "요새 도시의 밤\n[5박 7일] 같이 갈래요?",
+   "size": 96,
+   "yc": 0.217,
+   "stroke": 10,
+   "room": 940,
+   "fade": false
+  },
+  {
+   "type": "tag",
+   "t0": 6.0,
+   "t1": 9.0,
+   "text": "니즈와 요새",
+   "size": 42,
+   "x": 60,
+   "y": 1150,
+   "bg": [
+    0,
+    0,
+    0,
+    170
+   ]
+  },
+  {
+   "type": "chip",
+   "t0": 6.0,
+   "t1": 9.0,
+   "text": "오만 관심 신청 → [프로필 링크]",
+   "size": 56,
+   "yc": 0.33,
+   "fade": false
+  }
+ ],
+ "out": "/home/claude/r3/short/oman_v3.mp4",
+ "cover": "/home/claude/r3/short/oman_v3.jpg"
+}
