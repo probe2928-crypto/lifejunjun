@@ -1,1 +1,3 @@
-[{"type":"stats","days":7,"reels":["hawker9","kk-sunset","tr-905","kl-118","tn-oldest","uz-goguryeo","bio","ljj-home"],"run":2}]
+[{"type":"commons_search","name":"om_bahla","q":"Bahla Fort Oman filetype:bitmap","n":8},
+ {"type":"commons_search","name":"om_nizwa","q":"Nizwa Fort Oman filetype:bitmap","n":8},
+ {"type":"commons_search","name":"om_wahiba","q":"Wahiba Sands Oman dunes filetype:bitmap","n":6}]
