@@ -15,12 +15,13 @@
 | 23:23 | 품질 점검 | `ops/LOG.md` 기록, 필요시 예약 수정 | 문제 있을 때만 |
 | 일 19:07 | 주간 보고 | Docs 리포트 주간 섹션 | 주간 보고 1통 |
 세준은 다른 사업 알림도 많이 받는다. 정해진 보고 외에는 메시지를 보내지 않는다.
+- **2026-11 유지 모드:** 아침 데이터 브리핑은 일요일 주간 보고에 흡수(`ops/BRIEF.md`·`ops/metrics.csv`는 주 1회 교체). 신청자 응대·새 신청 알림은 '매일 사업 체크' 작업 담당. 주간 보고는 세준 할 일·결정·장애가 있을 때만 메시지.
 
 ## 2. 저장소·도구
 - 저장소 probe2928-crypto/lifejunjun (main). 시작: `mcp__claude-code-remote__add_repo(owner=probe2928-crypto, repo=lifejunjun, access=push)` → `git clone --depth 30 https://github.com/probe2928-crypto/lifejunjun lj`. 끝: 내 파일만 `git add`, 한국어 커밋 + 시스템이 주는 attribution 줄, `git pull --rebase origin main && git push origin main` (최대 3회, 남의 변경 지우지 않기). `tools/reels2/work/` 같은 남의 미추적 파일은 커밋하지 않는다.
 - 릴스 제작 규칙: `tools/reels3/PLAYBOOK.md`. 게시 기록: `media/queue.json`.
 - Metricool: brand 7580610 (blogId). 지표 IGRE02 날짜, IGRE23 조회, IGRE24 평균 시청(초), IGRE28 3초 시청률, IGRE12 저장, IGRE21 공유. 예약 확인 getScheduledPosts.
-- 홈페이지 숨김 집계(인생준준 ljj / 여백의 지도 yb, 지표 pv·uv·sns·apply): fetch 브랜치로 받는다(웹에서 직접은 막힘). `git fetch origin fetch:refs/remotes/origin/fetch` → `git worktree add /tmp/fw origin/fetch` → `/tmp/fw/fetch/jobs.json`을 `[{"type":"stats","days":3}]`로 덮어써 커밋 → `git push origin HEAD:fetch` → 2분 뒤 다시 fetch → `git show origin/fetch:fetch/out/stats.json` (키 예: yb_apply_20261030). 실패하면 `gh run list -b fetch -L 3`.
+- 홈페이지 숨김 집계(인생준준 ljj / 여백의 지도 yb, 지표 pv·uv·sns·apply): fetch 브랜치로 받는다(웹에서 직접은 막힘). `git fetch origin fetch:refs/remotes/origin/fetch` → `git worktree add /tmp/fw origin/fetch` → `/tmp/fw/fetch/jobs.json`을 `[{"type":"stats","days":3}]`로 덮어써 커밋 → `git push origin HEAD:fetch` → 2분 뒤 다시 fetch → `git show origin/fetch:fetch/out/stats.json` (키 예: yb_apply_20261030). 실패하면 `gh run list -b fetch -L 3`. **결과의 `_err` 목록(11/1부터)**: 재시도해도 못 읽은 키 — 그 키의 0은 '0명'이 아니라 '모름'. 11/1 이전 job은 오류를 0으로 적어 여백의 지도 방문이 0으로 보인 적 있음(실제 7일 15명).
 - 신청 메일: Gmail `from:submissions@formsubmit.co` 또는 제목에 '여백의 지도'·'관심 신청'. 읽기만.
 - 리포트 문서: Claude Docs '인생준준 릴스 리포트' doc id adb4187d-0877-4bfe-bb5b-a0b7609c59a9 (https://claude.ai/artifact/NT5cq3ortyeZkfMAvoJCFA). 운영 계획 문서는 `ops/BRIEF.md` 맨 아래 링크 참고. Docs 쓰기 전 `mcp__Claude_Docs__guide(topic.index, topic.editing)`.
 - vidIQ: `vidiq_instagram_tiktok_outlier_search` 등 — **10/31 기준 크레딧 0(11/22 갱신 예정)**. 크레딧 없으면 WebSearch로 '인스타 릴스 + 키워드 + 조회수' 기사·랭킹을 찾고, 제작팀(저녁)은 세준 컴퓨터의 내장 브라우저로 인스타 키워드 검색(읽기만, 요청 1.6초 간격)을 한다.
@@ -47,3 +48,11 @@
 
 ## 5. 세준 실사 소재 (제작팀 컨테이너 /home/claude/own/clips, 백업은 lifejunjun 저장소 `assets` 브랜치 — 720p 압축본 + 음악·효과음, 복구법은 그 브랜치 README)
 튀르키예(돌마바흐체·9시5분), 싱가포르(호커센터·고양이·거리), 코모도(배·도마뱀·다이빙), 코타키나발루(노을), 쿠알라룸푸르. 이미 쓴 장면은 `media/queue.json`·`tools/reels3/specs` 확인.
+
+## 6. 작업 방식 변경 (주간 보고에서 갱신, 최신이 위)
+### 2026-11-01 주간 보고 (근거: 10/26~11/1 Metricool)
+- **저녁 릴스 루프 3편 비율:** 정보형 40~50초 1(12:30) + 9초 훅형 1 + 여행 연결형 1. 근거: 같은 호커 주제 48초판 1,218 조회·3초 70.7%·평균 11.5초 vs 9초판 192·58.6% — 1쌍뿐이라 확정 아님, 2주 짝 실험으로 판단.
+- **첫 화면 훅:** '하지 마세요/이유' 금지·주의·질문형만. 풍경·분위기형("이 시간 놓치면 끝") 금지 — 노을 7초 3초 시청률 13.7%, 10/30~31 금지·질문형 3편 56~71%.
+- **48시간 판정:** 게시 48시간 뒤 3초 시청률 50% 미만인 형식·훅은 다음 주 제작에서 뺀다(주간 보고가 metrics.csv로 판정).
+- **주제:** 인생준준 역사여행·여행 실용만. 러닝·트레킹·다른 브랜드(QURATOR 등) 게시 금지 — 10/26 해당 게시물 3초 시청률 9~28%, 신청 연결 없음.
+
