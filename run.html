@@ -127,7 +127,7 @@
       <span><b>인생준준</b><small>LIFE JUNJUN · TRAVELLING THROUGH TIME</small></span>
     </a>
     <nav class="main" aria-label="주요 메뉴"><a href="index.html#trips">여행 프로그램</a><a href="run.html" aria-current="page">RUN & TREK</a><a href="index.html#price">경비 이야기</a><a href="column.html">칼럼</a><a href="community.html">커뮤니티</a><a href="index.html#about">주인장 소개</a></nav>
-    <div class="hacts"><a class="cta ghost" href="index.html#contact">문의하기</a><a class="cta" href="index.html#apply">동행 신청</a></div>
+    <div class="hacts"><span class="auth-slot" data-auth-slot hidden></span><a class="cta ghost" href="index.html#contact">문의하기</a><a class="cta" href="index.html#apply">동행 신청</a></div>
   </div>
   <nav class="mnav" aria-label="모바일 메뉴"><div class="wrap"><a href="index.html#trips">여행 프로그램</a><a href="run.html" aria-current="page">RUN & TREK</a><a href="index.html#price">경비 이야기</a><a href="column.html">칼럼</a><a href="community.html">커뮤니티</a><a href="index.html#about">주인장 소개</a></div></nav>
 </header>
@@ -337,5 +337,6 @@ getJSON("races.json").then(d=>{DATA=d;
 }).catch(()=>{document.getElementById("grid").innerHTML='<p class="small">대회 정보를 불러오지 못했어요. 새로고침해 주세요.</p>';});
 </script>
 <script src="https://probe2928-crypto.github.io/chainbrief/network.js" data-site="lifejunjun" defer></script>
+<script src="auth-config.js" defer></script>
 </body>
 </html>
