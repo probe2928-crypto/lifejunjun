@@ -1,0 +1,83 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "53032875": {
+    "pageid": 53032875,
+    "ns": 6,
+    "title": "File:Atatürk'ü anma - 10 Kasım 2016 saat 9.05 siren sesleri.webm",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5698347,
+      "width": 1080,
+      "height": 1920,
+      "duration": 21.226,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Atat%C3%BCrk%27%C3%BC_anma_-_10_Kas%C4%B1m_2016_saat_9.05_siren_sesleri.webm/960px--Atat%C3%BCrk%27%C3%BC_anma_-_10_Kas%C4%B1m_2016_saat_9.05_siren_sesleri.webm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+      "thumbwidth": 1080,
+      "thumbheight": 1920,
+      "thumbattribs": [],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Atat%C3%BCrk%27%C3%BC_anma_-_10_Kas%C4%B1m_2016_saat_9.05_siren_sesleri.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Atat%C3%BCrk%27%C3%BC_anma_-_10_Kas%C4%B1m_2016_saat_9.05_siren_sesleri.webm",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=53032875",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Turkey remembers Mustafa Kemal Atatürk on his death anniversary. Daily life stopped for two minutes on November 10, beginning at 9:05 a.m., the time of Atatürk’s death. Sirens wailed throughout Turkey and people observed two minutes of silence.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:VikiPicture\" title=\"User:VikiPicture\">VikiPicture</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "video/webm"
+     }
+    ]
+   },
+   "53033021": {
+    "pageid": 53033021,
+    "ns": 6,
+    "title": "File:Atatürk'ü anma - 10 Kasım 2016 saat 9.05 siren sesleri 2.webm",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2545574,
+      "width": 1080,
+      "height": 1920,
+      "duration": 9.479000000000001,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Atat%C3%BCrk%27%C3%BC_anma_-_10_Kas%C4%B1m_2016_saat_9.05_siren_sesleri_2.webm/960px--Atat%C3%BCrk%27%C3%BC_anma_-_10_Kas%C4%B1m_2016_saat_9.05_siren_sesleri_2.webm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+      "thumbwidth": 1080,
+      "thumbheight": 1920,
+      "thumbattribs": [],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Atat%C3%BCrk%27%C3%BC_anma_-_10_Kas%C4%B1m_2016_saat_9.05_siren_sesleri_2.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Atat%C3%BCrk%27%C3%BC_anma_-_10_Kas%C4%B1m_2016_saat_9.05_siren_sesleri_2.webm",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=53033021",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Turkey remembers Mustafa Kemal Atatürk on his death anniversary. Daily life stopped for two minutes on November 10, beginning at 9:05 a.m., the time of Atatürk’s death. Sirens wailed throughout Turkey and people observed two minutes of silence.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:VikiPicture\" title=\"User:VikiPicture\">VikiPicture</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "video/webm"
+     }
+    ]
+   }
+  }
+ }
+}
