@@ -1,0 +1,4 @@
+# GitHub Pages(Jekyll) 빌드에서 내부 문서 제외 — 사이트 화면과 무관
+# (.claude/ 같은 점 폴더는 Jekyll이 기본으로 제외)
+exclude:
+  - PRODUCT.md
