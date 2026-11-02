@@ -357,6 +357,26 @@
       "created": "2026-11-02",
       "skip": true,
       "note": "모션그래픽 음성판, 독립 검토 6.6→7.6, 태그 tr905m, Metricool 예약 2026-11-10 12:30"
+    },
+    {
+      "id": "own-16-komodo-alone",
+      "video": "media/own16-komodo-alone.mp4",
+      "cover": "media/own16-komodo-alone.jpg",
+      "spec": "tools/reels3/specs/komodo_alone_mk.py",
+      "link": "https://probe2928-crypto.github.io/yeobaek/go/?r=kom-alone",
+      "created": "2026-11-02",
+      "skip": true,
+      "note": "tag=kom-alone · 검토 6.8→7.6 · Metricool 예약 2026-11-03 12:30"
+    },
+    {
+      "id": "own-17-uz-non",
+      "video": "media/own17-uz-non.mp4",
+      "cover": "media/own17-uz-non.jpg",
+      "spec": "tools/mg/specs/uz_non.html",
+      "link": "https://probe2928-crypto.github.io/yeobaek/go/uzbekistan/?r=uz-non",
+      "created": "2026-11-02",
+      "skip": true,
+      "note": "tag=uz-non · 모션그래픽 · 검토 6.9→7.3→필수 수정 반영(7.7 예상) · Metricool 예약 2026-11-03 21:30"
     }
   ]
 }
