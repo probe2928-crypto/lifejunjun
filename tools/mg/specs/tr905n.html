@@ -1,0 +1,159 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:BH;src:url(../../fonts/BlackHanSans-Regular.ttf)}
+@font-face{font-family:PB;src:url(../../fonts/Pretendard-Black.otf)}
+@font-face{font-family:PS;src:url(../../fonts/Pretendard-SemiBold.otf)}
+:root{--lime:#c8ff2e;--ink:#0b0d0a;--w:#f6f7f1}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transparent}
+#stage{position:absolute;inset:0;overflow:hidden;perspective:1400px}
+.shade{position:absolute;inset:0;background:
+ linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.25) 45%,rgba(0,0,0,.55) 75%,rgba(0,0,0,.8) 100%),
+ radial-gradient(ellipse at 50% 42%,rgba(0,0,0,.05),rgba(0,0,0,.55) 75%)}
+.grid{position:absolute;inset:0;background:
+ repeating-linear-gradient(0deg,rgba(255,255,255,.04) 0 1px,transparent 1px 120px),
+ repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 1px,transparent 1px 120px)}
+#dark{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,#1a2110,#0b0d0a 60%)}
+.grain{position:absolute;inset:0;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+.abs{position:absolute;left:0;right:0;text-align:center;white-space:nowrap;transform-origin:50% 50%}
+.mono{font-family:PS;font-size:32px;letter-spacing:6px;color:rgba(246,247,241,.85);text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.hl{background:var(--lime);color:var(--ink);padding:2px 10px;text-shadow:none}
+.big{font-family:BH;color:var(--w);line-height:1;text-shadow:0 6px 30px rgba(0,0,0,.65)}
+.pb{font-family:PB;color:var(--w);line-height:1.1;text-shadow:0 4px 24px rgba(0,0,0,.7)}
+.lime{color:var(--lime);text-shadow:0 0 40px rgba(200,255,46,.5),0 6px 24px rgba(0,0,0,.5)}
+.box{display:inline-block;background:var(--lime);color:var(--ink);padding:10px 26px 4px;text-shadow:none}
+.ch{display:inline-block;transform-origin:50% 100%}
+.bar{position:absolute;height:12px;background:var(--lime);box-shadow:0 0 30px rgba(200,255,46,.7)}
+.streak{position:absolute;width:2600px;height:12px;left:-760px;top:940px;background:linear-gradient(90deg,transparent,var(--lime) 44%,#fff 50%,var(--lime) 56%,transparent);box-shadow:0 0 50px var(--lime)}
+.flash{position:absolute;inset:0;background:var(--lime)}
+.tag{display:inline-block;font-family:PB;font-size:40px;color:var(--ink);background:var(--lime);padding:10px 24px;border-radius:10px}
+#wave{position:absolute;left:240px;width:600px;top:1100px;height:90px;display:flex;gap:9px;align-items:center}
+#wave i{flex:1;background:var(--lime);border-radius:4px;box-shadow:0 0 14px rgba(200,255,46,.6)}
+.dot{display:inline-block;width:20px;height:20px;border-radius:50%;background:#ff3b30;margin-right:14px;vertical-align:2px;box-shadow:0 0 16px #ff3b30}
+</style></head>
+<body><div id="stage">
+<div class="shade"></div><div class="grid"></div>
+<div id="dark"></div>
+
+<!-- A 0–4.65 hook (fully composed on frame 0) -->
+<div class="abs big" id="a1" style="top:370px;font-size:110px">11월 10일 튀르키예</div>
+<div class="abs mono" id="a3" style="top:520px;font-size:52px">아침</div>
+<div class="abs big lime" id="a4" style="top:590px;font-size:300px">09:05</div>
+<div class="abs big" id="a5" style="top:930px;font-size:130px"><span class="box">놀라지 마세요</span></div>
+
+<!-- B 4.65–12.85 siren -->
+<div class="abs big lime" id="b1" style="top:480px;font-size:150px">사이렌이 울리고</div>
+<div class="abs big" id="b2" style="top:700px;font-size:120px">거리의 사람도</div>
+<div class="abs big" id="b3" style="top:860px;font-size:120px">차들도</div>
+<div class="abs big" id="b4" style="top:540px;font-size:120px">그 자리에</div>
+<div class="abs big lime" id="b5" style="top:720px;font-size:210px">멈춰 섭니다</div>
+<div class="abs mono" id="b6" style="top:840px;font-size:66px;letter-spacing:2px;line-height:1.4"><span class="dot"></span>실제 소리<br><span style="font-size:44px">2016.11.10 09:05 이스탄불</span></div>
+<div id="wave"></div>
+
+<!-- C 12.85–17.05 dark counter -->
+<div class="abs big" id="c1" style="top:520px;font-size:180px">1938.11.10</div>
+<div class="abs mono" id="c0" style="top:750px;font-size:50px">오전</div>
+<div class="abs big lime" id="c2" style="top:830px;font-size:205px">09:04:57</div>
+<div class="flash" id="cflash"></div>
+
+<!-- D 17.05–23.35 -->
+<div class="abs pb" id="d1" style="top:520px;font-size:76px">튀르키예 공화국을 세운</div>
+<div class="abs big lime" id="d2" style="top:650px;font-size:230px">아타튀르크</div>
+<div class="abs mono" id="d3a" style="top:600px;font-size:44px">이스탄불</div>
+<div class="abs pb" id="d3" style="top:670px;font-size:100px">돌마바흐체 궁전</div>
+<div class="bar" id="d3bar" style="left:200px;top:800px;width:680px;height:8px"></div>
+<div class="abs big" id="d4" style="top:880px;font-size:120px">세상을 떠난 시각</div>
+
+<!-- E 23.35–28.55 -->
+<div class="abs big" id="e1" style="top:500px;font-size:110px"><span class="w">매년</span> <span class="w">이날</span> <span class="w">이 시각</span></div>
+<div class="abs big" id="e2" style="top:680px;font-size:110px">튀르키예는</div>
+<div class="abs big lime" id="e3" style="top:820px;font-size:170px">잠깐 멈춰서</div>
+<div class="abs big" id="e4" style="top:1040px;font-size:110px">그를 기억합니다</div>
+
+<!-- F 28.55–37.3 -->
+<div class="abs mono" id="f0" style="top:330px;font-size:40px"><span class="hl">튀르키예 여행 전에 저장</span></div>
+<div class="abs mono" id="f1" style="top:450px;font-size:52px">한국 시간으론</div>
+<div class="abs big lime" id="f2" style="top:550px;font-size:205px">오후 3:05</div>
+<div class="abs pb" id="f3" style="top:850px;font-size:70px">11월 10일 튀르키예에 있다면</div>
+<div class="abs big" id="f4" style="top:960px;font-size:100px">같이 멈춰서</div>
+<div class="abs big" id="f5" style="top:1085px;font-size:120px"><span class="box">거리를 보세요</span></div>
+
+<div class="streak" id="sk"></div>
+<div class="grain"></div>
+</div>
+<script src="../mg.js"></script>
+<script>
+const {T,set,split}=MG;
+const wave=document.getElementById('wave'); for(let i=0;i<24;i++) wave.appendChild(document.createElement('i'));
+split('#b1');split('#c1');split('#b5');split('#d2');
+const OUT=(els,t,d=0.22)=>T(els,t,d,{opacity:[1,0],scale:[1,1.15],blur:[0,16]},'in');
+set('#dark',0,{opacity:0}); T('#dark',12.75,0.15,{opacity:[0,1]},'lin'); T('#dark',16.9,0.2,{opacity:[1,0]},'lin');
+set('#cflash',0,{opacity:0});
+const SK=t=>T('#sk',t,0.45,{x:[-1500,1500],rotate:[-28,-28],opacity:[1,1]},'inOut');
+set('#sk',0,{opacity:0}); [4.5,16.9,23.2,28.4].forEach(SK);
+
+// A — everything on screen at t=0; beats re-punch it
+set(['#a1','#a3','#a4','#a5'],0,{opacity:1,scaleY:1,scale:1,rotate:-2});
+set(['#a1','#a3','#a4'],0,{rotate:0});
+T('#a1',0.05,0.3,{scale:[1.12,1]},'out5');
+T('#a4',2.5,0.4,{scaleY:[1.7,1]},'back');
+T('#a5',3.3,0.35,{scale:[1.35,1]},'back');
+OUT(['#a1','#a3','#a4','#a5'],4.45);
+
+// B
+T('#b1 .ch',4.72,0.32,{opacity:[0,1],y:[80,0],rotateX:[90,0]},'out5',0.035);
+T('#b2',6.17,0.35,{opacity:[0,1],x:[300,0],skewX:[-18,0]},'out5');
+T('#b3',7.02,0.3,{opacity:[0,1],scale:[2,1]},'back');
+T(['#b1','#b2','#b3'],7.52,0.18,{opacity:[1,0],blur:[0,14]},'in');
+T('#b4',7.6,0.3,{opacity:[0,1],y:[-40,0]},'out5');
+T('#b5 .ch',8.1,0.45,{opacity:[0,1],scaleY:[3.2,1],y:[100,0]},'back',0.06);
+T('#b5',8.7,0.6,{scale:[1,1.05]},'lin');
+T(['#b4','#b5'],9.3,0.4,{opacity:[1,0],y:[0,-60],blur:[0,10]},'in');
+T('#b6',9.45,0.35,{opacity:[0,1],clipR:[100,0]},'out');
+T('#wave',9.45,0.35,{opacity:[0,1],scaleY:[0,1]},'out5');
+OUT(['#b6','#wave'],12.6);
+
+// C
+T('#c1 .ch',12.92,0.4,{y:[-240,0],opacity:[0,1],blur:[20,0],scaleY:[1.8,1]},'back',0.04);
+T('#c0',13.8,0.3,{opacity:[0,1]},'out');
+T('#c2',13.85,0.4,{opacity:[0,1],scale:[0.6,1],blur:[18,0]},'out5');
+set('#c2',0,{scaleY:1,scaleX:1});
+T('#c2',15.25,0.4,{scaleY:[2.4,1],scaleX:[0.85,1]},'back');
+T('#cflash',15.25,0.35,{opacity:[0.8,0]},'out');
+OUT(['#c1','#c0','#c2'],16.75);
+
+// D
+T('#d1',17.12,0.35,{opacity:[0,1],clipR:[100,0]},'out5');
+T('#d2 .ch',18.38,0.4,{opacity:[0,1],scaleY:[3,1],y:[80,0]},'back',0.05);
+T(['#d1','#d2'],19.35,0.2,{opacity:[1,0],blur:[0,14]},'in');
+T('#d3a',19.5,0.3,{opacity:[0,1],y:[20,0]},'out');
+T('#d3',20.15,0.4,{opacity:[0,1],y:[40,0]},'out5');
+T('#d3bar',20.8,0.5,{clipR:[100,0]},'inOut');
+T('#d4',21.5,0.35,{opacity:[0,1],x:[-260,0]},'out5');
+OUT(['#d3a','#d3','#d3bar','#d4'],23.1);
+
+// E
+T('#e1 .w',23.98,0.3,{opacity:[0,1],y:[50,0]},'out5',0.32);
+T('#e2',25.3,0.3,{opacity:[0,1],x:[200,0]},'out5');
+T('#e3',26.0,0.45,{opacity:[0,1],scaleX:[2.2,1],blur:[14,0]},'out5');
+T('#e4',26.9,0.35,{opacity:[0,1],y:[60,0]},'out5');
+OUT(['#e1','#e2','#e3','#e4'],28.3);
+
+// F
+T('#f1',28.72,0.35,{opacity:[0,1],clipR:[100,0]},'out');
+T('#f2',29.72,0.5,{opacity:[0,1],scaleY:[2.6,1],blur:[20,0]},'back');
+T('#f2',30.3,7,{scale:[1,1.05]},'lin');
+T('#f3',31.28,0.35,{opacity:[0,1],y:[40,0]},'out5');
+T('#f4',33.42,0.3,{opacity:[0,1],y:[40,0]},'out5');
+T('#f5',34.28,0.35,{opacity:[0,1],scale:[1.8,1]},'back');
+T('#f0',33.4,0.35,{opacity:[0,1],scale:[0.7,1]},'back');
+
+MG.init();
+const c2=document.getElementById('c2'), bars=[...wave.children];
+window.onSeek=t=>{
+  const steps=['09:04:57','09:04:58','09:04:59','09:05:00'];
+  c2.textContent=steps[Math.min(3,Math.max(0,Math.floor((t-14.14)/0.37)))];
+  bars.forEach((b,i)=>{const h=18+70*Math.abs(Math.sin(t*7+i*.7)*Math.sin(t*3.1+i*1.3));b.style.height=h+'px';});
+};
+window.__seek=MG.seek; MG.seek(0);
+</script></body></html>
