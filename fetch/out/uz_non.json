@@ -1,0 +1,469 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 10,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "163008803": {
+    "pageid": 163008803,
+    "ns": 6,
+    "title": "File:11T 20240408 202006.jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2808688,
+      "width": 2835,
+      "height": 1813,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/11T_20240408_202006.jpg/1920px-11T_20240408_202006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1023,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/7/79/11T_20240408_202006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/11T_20240408_202006.jpg/1920px-11T_20240408_202006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1023,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/7/79/11T_20240408_202006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/11T_20240408_202006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:11T_20240408_202006.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=163008803",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "non, a traditional Uzbek bread served in Tashkent",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:BeshevI&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:BeshevI (page does not exist)\">BeshevI</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "71408240": {
+    "pageid": 71408240,
+    "ns": 6,
+    "title": "File:Bread Vendor (220641945).jpeg",
+    "index": 10,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 999168,
+      "width": 2048,
+      "height": 1362,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Bread_Vendor_%28220641945%29.jpeg/1920px-Bread_Vendor_%28220641945%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1064,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/5/50/Bread_Vendor_%28220641945%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Bread_Vendor_%28220641945%29.jpeg/1920px-Bread_Vendor_%28220641945%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1064,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/5/50/Bread_Vendor_%28220641945%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Bread_Vendor_%28220641945%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bread_Vendor_(220641945).jpeg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=71408240",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/franciscoanzola\">Francisco Anzola</a></div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\n500px provided description: Bread Vendor [#city ,#two ,#people ,#street ,#road ,#woman ,#adult ,#man ,#market ,#child ,#pavement ,#shop ,#basket ,#group ,#shopping ,#stock ,#cart ,#sell ,#wear ,#commerce]</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "78895422": {
+    "pageid": 78895422,
+    "ns": 6,
+    "title": "File:Making Uzbek bread, obi non, lepyoshka.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 9968166,
+      "width": 4335,
+      "height": 3076,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Making_Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg/1920px-Making_Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1135,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Making_Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg/3840px-Making_Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Making_Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg/1920px-Making_Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1135,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Making_Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg/3840px-Making_Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Making_Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Making_Uzbek_bread,_obi_non,_lepyoshka.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=78895422",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Uzbek nan bread is stamped",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Benjamin_Goetzinger\" title=\"User:Benjamin Goetzinger\">Benjamin Goetzinger</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "197285877": {
+    "pageid": 197285877,
+    "ns": 6,
+    "title": "File:Non yopish kuragi (nondoz) va non o'rtalagich.png",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1883033,
+      "width": 1920,
+      "height": 1080,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Non_yopish_kuragi_%28nondoz%29_va_non_o%27rtalagich.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 900,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Non_yopish_kuragi_%28nondoz%29_va_non_o%27rtalagich.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 900
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Non_yopish_kuragi_%28nondoz%29_va_non_o%27rtalagich.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Non_yopish_kuragi_(nondoz)_va_non_o%27rtalagich.png",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=197285877",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "This is a traditional wooden bread peel (nondoz) used in the preparation of bread, particularly for placing and removing bread and dough products from a tandoor.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:AIDEPCUL&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:AIDEPCUL (page does not exist)\">AIDEPCUL</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/png"
+     }
+    ]
+   },
+   "149389925": {
+    "pageid": 149389925,
+    "ns": 6,
+    "title": "File:Piyozli non.jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 6102025,
+      "width": 3614,
+      "height": 3655,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Piyozli_non.jpg/1920px-Piyozli_non.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1618,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Piyozli_non.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Piyozli_non.jpg/1920px-Piyozli_non.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1618,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Piyozli_non.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Piyozli_non.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Piyozli_non.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=149389925",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Bread with onions.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Xkmvch\" title=\"User:Xkmvch\">Xkmvch</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "82851711": {
+    "pageid": 82851711,
+    "ns": 6,
+    "title": "File:Samarkand Non.jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 116044,
+      "width": 864,
+      "height": 648,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/1/19/Samarkand_Non.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Samarkand_Non.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Samarkand_Non.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Samarkand_Non.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=82851711",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Seafarer/Blogger/Traveler Rudolph.A.Furtado holding the trade mark food of Samarkand , the \"Samarkand Naan (Bread)\".A giant sized bread.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Rudolph.A.furtado&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Rudolph.A.furtado (page does not exist)\">Rudolph.A.furtado</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "197532164": {
+    "pageid": 197532164,
+    "ns": 6,
+    "title": "File:Tandirda non pishirish jarayoni.jpg",
+    "index": 9,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4365383,
+      "width": 3648,
+      "height": 5472,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Tandirda_non_pishirish_jarayoni.jpg/1920px-Tandirda_non_pishirish_jarayoni.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2400,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Tandirda_non_pishirish_jarayoni.jpg/1920px-Tandirda_non_pishirish_jarayoni.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2400
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Tandirda_non_pishirish_jarayoni.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tandirda_non_pishirish_jarayoni.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=197532164",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Round Uzbek breads bake on the inner wall of a traditional clay tandoor. The dark oven mouth, open flame and rows of golden loaves document high-heat breadmaking technique and a central element of everyday food culture in Uzbekistan.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:AIDEPCUL&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:AIDEPCUL (page does not exist)\">AIDEPCUL</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "78895426": {
+    "pageid": 78895426,
+    "ns": 6,
+    "title": "File:Uzbek bread, obi non, lepyoshka.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 21116762,
+      "width": 5184,
+      "height": 3456,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg/1920px-Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg/3840px-Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg/1920px-Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg/3840px-Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Uzbek_bread%2C_obi_non%2C_lepyoshka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Uzbek_bread,_obi_non,_lepyoshka.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=78895426",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Uzbek nan bread on display in Chorsu market, Tashkent, Uzbekistan",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Benjamin_Goetzinger\" title=\"User:Benjamin Goetzinger\">Benjamin Goetzinger</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "78895421": {
+    "pageid": 78895421,
+    "ns": 6,
+    "title": "File:Uzbek bread, obi non, lepyoshka in tandyr oven.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 14109864,
+      "width": 3456,
+      "height": 5184,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Uzbek_bread%2C_obi_non%2C_lepyoshka_in_tandyr_oven.jpg/1920px-Uzbek_bread%2C_obi_non%2C_lepyoshka_in_tandyr_oven.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2400,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/5/50/Uzbek_bread%2C_obi_non%2C_lepyoshka_in_tandyr_oven.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Uzbek_bread%2C_obi_non%2C_lepyoshka_in_tandyr_oven.jpg/1920px-Uzbek_bread%2C_obi_non%2C_lepyoshka_in_tandyr_oven.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2400,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/5/50/Uzbek_bread%2C_obi_non%2C_lepyoshka_in_tandyr_oven.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Uzbek_bread%2C_obi_non%2C_lepyoshka_in_tandyr_oven.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Uzbek_bread,_obi_non,_lepyoshka_in_tandyr_oven.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=78895421",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Uzbek nan bread is being baked in a typical tandyr oven in Tashkent, Uzbekistan",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Benjamin_Goetzinger\" title=\"User:Benjamin Goetzinger\">Benjamin Goetzinger</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "35800820": {
+    "pageid": 35800820,
+    "ns": 6,
+    "title": "File:Uzbek bread (Nonvoy non).jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1951356,
+      "width": 2560,
+      "height": 1920,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Uzbek_bread_%28Nonvoy_non%29.jpg/1920px-Uzbek_bread_%28Nonvoy_non%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Uzbek_bread_%28Nonvoy_non%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Uzbek_bread_%28Nonvoy_non%29.jpg/1920px-Uzbek_bread_%28Nonvoy_non%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Uzbek_bread_%28Nonvoy_non%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Uzbek_bread_%28Nonvoy_non%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Uzbek_bread_(Nonvoy_non).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=35800820",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Хлеб испеченный в тандыре, Узбекистан 2014 год",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Shvann\" title=\"User:Shvann\">Shvann</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

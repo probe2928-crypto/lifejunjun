@@ -1,0 +1,93 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "196953963": {
+    "pageid": 196953963,
+    "ns": 6,
+    "title": "File:Chekich.png",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2021756,
+      "width": 1920,
+      "height": 1080,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Chekich.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 900,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Chekich.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 900
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Chekich.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chekich.png",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=196953963",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "This wooden chekich is a traditional bread stamp with a carved handle and metal pins arranged in floral or geometric patterns. It decorates and perforates dough, helping bread keep its form, while reflecting Uzbek baking traditions and craftsmanship.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:AIDEPCUL&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:AIDEPCUL (page does not exist)\">AIDEPCUL</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/png"
+     }
+    ]
+   },
+   "196781811": {
+    "pageid": 196781811,
+    "ns": 6,
+    "title": "File:Non chakich 01.png",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1823344,
+      "width": 1920,
+      "height": 1080,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Non_chakich_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 900,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Non_chakich_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 900
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Non_chakich_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Non_chakich_01.png",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=196781811",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "This non chekich is a traditional Uzbek wooden bread stamp with a round head and handle. Metal pins form geometric and floral motifs that leave decorative marks on dough. Its useful form reflects craftsmanship, folk aesthetics, and respect for bread.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:AIDEPCUL&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:AIDEPCUL (page does not exist)\">AIDEPCUL</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/png"
+     }
+    ]
+   }
+  }
+ }
+}

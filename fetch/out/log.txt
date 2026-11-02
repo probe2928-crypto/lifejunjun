@@ -1,1 +1,6 @@
-stats ok
+tts kw 9
+tts uzb 7
+commons uz_non ok
+commons uz_chekich ok
+commons uz_tandir ok
+commons uz_bazaar ok
