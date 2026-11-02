@@ -1,0 +1,97 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "71701793": {
+    "pageid": 71701793,
+    "ns": 6,
+    "title": "File:Good Morning (138497089).jpeg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1033334,
+      "width": 2048,
+      "height": 1356,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Good_Morning_%28138497089%29.jpeg/1920px-Good_Morning_%28138497089%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1059,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Good_Morning_%28138497089%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Good_Morning_%28138497089%29.jpeg/1920px-Good_Morning_%28138497089%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1059,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Good_Morning_%28138497089%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Good_Morning_%28138497089%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Good_Morning_(138497089).jpeg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=71701793",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/ArnasGold\">Arnas Goldberg</a></div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<div class=\"description\">\n500px provided description: A shot of a Komodo dragon in the main island of Komodo National Park. The ranger said that only lucky people get to see a yawing dragon, so I felt more than lucky getting a chance to capture it. [#sea ,#water ,#nature ,#travel ,#island ,#animals ,#animal ,#indonesia ,#wildlife ,#dragon ,#lizard ,#wild ,#flores ,#reptile ,#national park ,#wilderness ,#mouth ,#komodo ,#komodo dragon]</div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "537234": {
+    "pageid": 537234,
+    "ns": 6,
+    "title": "File:Warane1.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 19564,
+      "width": 600,
+      "height": 128,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Warane1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 341,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Warane1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 341
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Warane1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Warane1.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=537234",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<p><b>pt:</b> Dragão de Comôdo\nDe: <a class=\"external autonumber\" data-mw-original-href=\"http://en.wikipedia.org/wiki/Image:Warane1.jpg\" href=\"https://en.wikipedia.org/wiki/Image:Warane1.jpg\">[1]</a>\n<b>en:</b> Two komodo dragons at the komodo ranger station.\n</p>\nFrom :<a class=\"external autonumber\" data-mw-original-href=\"http://en.wikipedia.org/wiki/Image:Warane1.jpg\" href=\"https://en.wikipedia.org/wiki/Image:Warane1.jpg\">[2]</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "No machine-readable author provided. <a href=\"//commons.wikimedia.org/wiki/User:Thiago90ap\" title=\"User:Thiago90ap\">Thiago90ap</a> assumed (based on copyright claims).",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

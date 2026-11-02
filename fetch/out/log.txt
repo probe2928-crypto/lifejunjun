@@ -1,2 +1,4 @@
-commons kom_ranger ok
-commons kom_ranger2 ok
+tts fix3 2
+commons kr1 ok
+commons kr2 ok
+commons kd ok
