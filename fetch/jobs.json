@@ -1,11 +1,1 @@
-[
- {
-  "type": "tts",
-  "name": "tr905n",
-  "texts": [
-   "사이렌이 울리고, 거리의 사람도 차들도 그 자리에 멈춰 섭니다.",
-   "한국 시간으론 오후 3시 5분. 11월 10일 튀르키예에 있다면, 같이 멈춰서 거리를 보세요."
-  ],
-  "rate": "+18%"
- }
-]
+[{"type":"stats","days":3,"reels":["kl-118","tn-oldest","uz-goguryeo","sg-gum","om-visa","kk-sunset","tr-905","bio","ljj-home","hawker9"]}]
