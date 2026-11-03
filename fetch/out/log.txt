@@ -1,4 +1,7 @@
-tts fix3 2
-commons kr1 ok
-commons kr2 ok
-commons kd ok
+tts kls 10
+tts tnk 7
+commons burj ok
+commons petro ok
+commons koxinga ok
+commons anping ok
+commons hirado ok

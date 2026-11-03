@@ -1,0 +1,191 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 4,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "97786614": {
+    "pageid": 97786614,
+    "ns": 6,
+    "title": "File:Hirado Strait, Hirado Nagasaki Aerial photograph.2013.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 21822834,
+      "width": 7440,
+      "height": 10128,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Hirado_Strait%2C_Hirado_Nagasaki_Aerial_photograph.2013.jpg/1920px-Hirado_Strait%2C_Hirado_Nagasaki_Aerial_photograph.2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2178,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Hirado_Strait%2C_Hirado_Nagasaki_Aerial_photograph.2013.jpg/3840px-Hirado_Strait%2C_Hirado_Nagasaki_Aerial_photograph.2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Hirado_Strait%2C_Hirado_Nagasaki_Aerial_photograph.2013.jpg/1920px-Hirado_Strait%2C_Hirado_Nagasaki_Aerial_photograph.2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2178,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Hirado_Strait%2C_Hirado_Nagasaki_Aerial_photograph.2013.jpg/3840px-Hirado_Strait%2C_Hirado_Nagasaki_Aerial_photograph.2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Hirado_Strait%2C_Hirado_Nagasaki_Aerial_photograph.2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hirado_Strait,_Hirado_Nagasaki_Aerial_photograph.2013.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=97786614",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Hirado Strait, Hirado Nagasaki Aerial photograph.2013",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "国土地理院",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Attribution",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "89131384": {
+    "pageid": 89131384,
+    "ns": 6,
+    "title": "File:Takashima Island, Hirado Nagasaki Aerial photograph.2017.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1599174,
+      "width": 2509,
+      "height": 1882,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Takashima_Island%2C_Hirado_Nagasaki_Aerial_photograph.2017.jpg/1920px-Takashima_Island%2C_Hirado_Nagasaki_Aerial_photograph.2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/4/48/Takashima_Island%2C_Hirado_Nagasaki_Aerial_photograph.2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Takashima_Island%2C_Hirado_Nagasaki_Aerial_photograph.2017.jpg/1920px-Takashima_Island%2C_Hirado_Nagasaki_Aerial_photograph.2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/4/48/Takashima_Island%2C_Hirado_Nagasaki_Aerial_photograph.2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Takashima_Island%2C_Hirado_Nagasaki_Aerial_photograph.2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Takashima_Island,_Hirado_Nagasaki_Aerial_photograph.2017.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=89131384",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Takashima Island, Hirado Nagasaki Aerial photograph.2017",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "国土地理院",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Attribution",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "106742437": {
+    "pageid": 106742437,
+    "ns": 6,
+    "title": "File:View of Hirado Strait from Hirado castle Nagasaki,JAPAN.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 368992,
+      "width": 1024,
+      "height": 768,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/View_of_Hirado_Strait_from_Hirado_castle_Nagasaki%2CJAPAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a3/View_of_Hirado_Strait_from_Hirado_castle_Nagasaki%2CJAPAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/View_of_Hirado_Strait_from_Hirado_castle_Nagasaki%2CJAPAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:View_of_Hirado_Strait_from_Hirado_castle_Nagasaki,JAPAN.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=106742437",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "View of Hirado from the castle of Hirado (<a href=\"https://en.wikipedia.org/wiki/Hirado\" class=\"extiw\" title=\"en:Hirado\">Hirado</a>, Japan)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/ja:User:Si-take.\" class=\"extiw\" title=\"w:ja:User:Si-take.\">Si-take.</a> at <a href=\"https://en.wikipedia.org/wiki/ja:\" class=\"extiw\" title=\"w:ja:\">Japanese Wikipedia</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "183721955": {
+    "pageid": 183721955,
+    "ns": 6,
+    "title": "File:View of Hirado Strait from Hirado castle Nagasaki,JAPAN banner.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 44721,
+      "width": 1024,
+      "height": 146,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/3/32/View_of_Hirado_Strait_from_Hirado_castle_Nagasaki%2CJAPAN_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 228,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/3/32/View_of_Hirado_Strait_from_Hirado_castle_Nagasaki%2CJAPAN_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 228
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/View_of_Hirado_Strait_from_Hirado_castle_Nagasaki%2CJAPAN_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:View_of_Hirado_Strait_from_Hirado_castle_Nagasaki,JAPAN_banner.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=183721955",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Wikivoyage banner for Hirado-shi, Nagasaki",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Si-take",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,375 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 8,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "5522802": {
+    "pageid": 5522802,
+    "ns": 6,
+    "title": "File:Petronas Panorama II.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1542790,
+      "width": 1215,
+      "height": 2000,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Petronas_Panorama_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 2634,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Petronas_Panorama_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2634
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Petronas_Panorama_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Petronas_Panorama_II.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=5522802",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "The Petronas Towers in Kuala Lumpur at night.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Someformofhuman\" title=\"User:Someformofhuman\">Someformofhuman</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "5545753": {
+    "pageid": 5545753,
+    "ns": 6,
+    "title": "File:Petronas Towers at Night - from the base upwards.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 8492419,
+      "width": 2848,
+      "height": 4288,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Petronas_Towers_at_Night_-_from_the_base_upwards.jpg/1920px-Petronas_Towers_at_Night_-_from_the_base_upwards.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2409,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/4/44/Petronas_Towers_at_Night_-_from_the_base_upwards.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Petronas_Towers_at_Night_-_from_the_base_upwards.jpg/1920px-Petronas_Towers_at_Night_-_from_the_base_upwards.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2409,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/4/44/Petronas_Towers_at_Night_-_from_the_base_upwards.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Petronas_Towers_at_Night_-_from_the_base_upwards.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Petronas_Towers_at_Night_-_from_the_base_upwards.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=5545753",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Petronas Towers, Kuala Lumpur, Malaysia. Photo taken at night from the base of one of the towers looking up towards the other tower. One of the large Malaysian flags on one of the towers is clearly visible and illuminated at the bottom centre of the shot.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Dcubillas\" title=\"User:Dcubillas\">Dcubillas</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "174377903": {
+    "pageid": 174377903,
+    "ns": 6,
+    "title": "File:Petronas Towers at night, Kuala Lumpur, 20250818 1954 1607.jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 16459160,
+      "width": 5207,
+      "height": 3452,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Petronas_Towers_at_night%2C_Kuala_Lumpur%2C_20250818_1954_1607.jpg/1920px-Petronas_Towers_at_night%2C_Kuala_Lumpur%2C_20250818_1954_1607.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1061,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Petronas_Towers_at_night%2C_Kuala_Lumpur%2C_20250818_1954_1607.jpg/3840px-Petronas_Towers_at_night%2C_Kuala_Lumpur%2C_20250818_1954_1607.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Petronas_Towers_at_night%2C_Kuala_Lumpur%2C_20250818_1954_1607.jpg/1920px-Petronas_Towers_at_night%2C_Kuala_Lumpur%2C_20250818_1954_1607.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1061,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Petronas_Towers_at_night%2C_Kuala_Lumpur%2C_20250818_1954_1607.jpg/3840px-Petronas_Towers_at_night%2C_Kuala_Lumpur%2C_20250818_1954_1607.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Petronas_Towers_at_night%2C_Kuala_Lumpur%2C_20250818_1954_1607.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Petronas_Towers_at_night,_Kuala_Lumpur,_20250818_1954_1607.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=174377903",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Petronas Towers at night, Kuala Lumpur",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jakubhal\" title=\"User:Jakubhal\">Jakub Hałun</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "148671312": {
+    "pageid": 148671312,
+    "ns": 6,
+    "title": "File:Petronas Towers at night from Helipad.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 971124,
+      "width": 1536,
+      "height": 2048,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Petronas_Towers_at_night_from_Helipad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 2133,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Petronas_Towers_at_night_from_Helipad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2133
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Petronas_Towers_at_night_from_Helipad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Petronas_Towers_at_night_from_Helipad.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=148671312",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Petronas Towers at night from Helipad",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Slyronit\" title=\"User:Slyronit\">Slyronit</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "148671311": {
+    "pageid": 148671311,
+    "ns": 6,
+    "title": "File:Petronas Towers at night from Roofino Sky Dining.jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 698099,
+      "width": 1773,
+      "height": 1773,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Petronas_Towers_at_night_from_Roofino_Sky_Dining.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1600,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Petronas_Towers_at_night_from_Roofino_Sky_Dining.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1600
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Petronas_Towers_at_night_from_Roofino_Sky_Dining.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Petronas_Towers_at_night_from_Roofino_Sky_Dining.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=148671311",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Petronas Towers at night from Roofino Sky Dining",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Slyronit\" title=\"User:Slyronit\">Slyronit</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "181762125": {
+    "pageid": 181762125,
+    "ns": 6,
+    "title": "File:Petronas Towers at night in 2026 (DSCF0796).jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5451818,
+      "width": 5152,
+      "height": 7728,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Petronas_Towers_at_night_in_2026_%28DSCF0796%29.jpg/1920px-Petronas_Towers_at_night_in_2026_%28DSCF0796%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2400,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Petronas_Towers_at_night_in_2026_%28DSCF0796%29.jpg/3840px-Petronas_Towers_at_night_in_2026_%28DSCF0796%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Petronas_Towers_at_night_in_2026_%28DSCF0796%29.jpg/1920px-Petronas_Towers_at_night_in_2026_%28DSCF0796%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2400,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Petronas_Towers_at_night_in_2026_%28DSCF0796%29.jpg/3840px-Petronas_Towers_at_night_in_2026_%28DSCF0796%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Petronas_Towers_at_night_in_2026_%28DSCF0796%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Petronas_Towers_at_night_in_2026_(DSCF0796).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=181762125",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Petronas Towers, Malaysia at night on 10 January 2026.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Pangalau\" title=\"User:Pangalau\">Yu Chu Chin</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "181762124": {
+    "pageid": 181762124,
+    "ns": 6,
+    "title": "File:Petronas Towers at night in 2026 (DSCF0797).jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 7564573,
+      "width": 5152,
+      "height": 7728,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Petronas_Towers_at_night_in_2026_%28DSCF0797%29.jpg/1920px-Petronas_Towers_at_night_in_2026_%28DSCF0797%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2400,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Petronas_Towers_at_night_in_2026_%28DSCF0797%29.jpg/3840px-Petronas_Towers_at_night_in_2026_%28DSCF0797%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Petronas_Towers_at_night_in_2026_%28DSCF0797%29.jpg/1920px-Petronas_Towers_at_night_in_2026_%28DSCF0797%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2400,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Petronas_Towers_at_night_in_2026_%28DSCF0797%29.jpg/3840px-Petronas_Towers_at_night_in_2026_%28DSCF0797%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Petronas_Towers_at_night_in_2026_%28DSCF0797%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Petronas_Towers_at_night_in_2026_(DSCF0797).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=181762124",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Petronas Towers, Malaysia at night on 10 January 2026.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Pangalau\" title=\"User:Pangalau\">Yu Chu Chin</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "124807596": {
+    "pageid": 124807596,
+    "ns": 6,
+    "title": "File:Petronas twin towers at night.jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1858975,
+      "width": 2560,
+      "height": 1707,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Petronas_twin_towers_at_night.jpg/1920px-Petronas_twin_towers_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Petronas_twin_towers_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Petronas_twin_towers_at_night.jpg/1920px-Petronas_twin_towers_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Petronas_twin_towers_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Petronas_twin_towers_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Petronas_twin_towers_at_night.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=124807596",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Petronas twin towers at night, August 2022",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Bpoon2k2&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Bpoon2k2 (page does not exist)\">Bruce Poon</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,375 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 8,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "4596112": {
+    "pageid": 4596112,
+    "ns": 6,
+    "title": "File:Burj Dubai Under Construction on 16 May 2008.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 215058,
+      "width": 922,
+      "height": 1142,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Burj_Dubai_Under_Construction_on_16_May_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1982,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/3/36/Burj_Dubai_Under_Construction_on_16_May_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1982
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Burj_Dubai_Under_Construction_on_16_May_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Burj_Dubai_Under_Construction_on_16_May_2008.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4596112",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "This is a photo showing the top of the <a href=\"//commons.wikimedia.org/wiki/Burj_Khalifa\" title=\"Burj Khalifa\">Burj Khalifa</a>, located in <a href=\"//commons.wikimedia.org/wiki/Dubai\" class=\"mw-redirect\" title=\"Dubai\">Dubai</a>, <a href=\"//commons.wikimedia.org/wiki/United_Arab_Emirates\" class=\"mw-redirect\" title=\"United Arab Emirates\">United Arab Emirates</a>, during construction on 16 May 2008.  The concrete section can be seen at the bottom of the image, just below where the steel section begins.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/Category:Images_by_Imre_Solt\" title=\"Category:Images by Imre Solt\">Imre Solt</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "2145161": {
+    "pageid": 2145161,
+    "ns": 6,
+    "title": "File:Burjdubaimay07.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 279887,
+      "width": 432,
+      "height": 1024,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Burjdubaimay07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 3793,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/Burjdubaimay07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 3793
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Burjdubaimay07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Burjdubaimay07.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=2145161",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Burj Dubai taken May 8, 2007",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<p>The original uploader was <a href=\"https://en.wikipedia.org/wiki/User:Chee_Man\" class=\"extiw\" title=\"wikipedia:User:Chee Man\">Chee Man</a> at <a href=\"https://en.wikipedia.org/wiki/\" class=\"extiw\" title=\"wikipedia:\">English Wikipedia</a>.\n</p>\nLater versions were uploaded by <a href=\"https://en.wikipedia.org/wiki/User:-Majestic-\" class=\"extiw\" title=\"en:User:-Majestic-\">-Majestic-</a> at <a class=\"external text\" data-mw-original-href=\"http://en.wikipedia.org\" href=\"https://en.wikipedia.org\">en.wikipedia</a>.",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "54269931": {
+    "pageid": 54269931,
+    "ns": 6,
+    "title": "File:CN Tower, Toronto, Canada (21652010340).jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3293674,
+      "width": 3000,
+      "height": 4000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/CN_Tower%2C_Toronto%2C_Canada_%2821652010340%29.jpg/1920px-CN_Tower%2C_Toronto%2C_Canada_%2821652010340%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2133,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/6/66/CN_Tower%2C_Toronto%2C_Canada_%2821652010340%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/CN_Tower%2C_Toronto%2C_Canada_%2821652010340%29.jpg/1920px-CN_Tower%2C_Toronto%2C_Canada_%2821652010340%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2133,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/6/66/CN_Tower%2C_Toronto%2C_Canada_%2821652010340%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/CN_Tower%2C_Toronto%2C_Canada_%2821652010340%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:CN_Tower,_Toronto,_Canada_(21652010340).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=54269931",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<p>The CN Tower (French: Tour CN) is a 553.33 m-high (1,815.4 ft) concrete communications and observation tower in downtown Toronto, Ontario, Canada. Built on the former Railway Lands, it was completed in 1976, becoming the world's tallest free-standing structure and world's tallest tower at the time. It held both records for 34 years until the completion of Burj Khalifa and Canton Tower in 2010. Since then, it became the 3rd tallest tower in the world and remains the tallest free-standing structure in the Western Hemisphere, a signature icon of Toronto's skyline, and a symbol of Canada, attracting more than two million international visitors annually.\n</p><p>Its name \"CN\" originally referred to Canadian National, the railway company that built the tower. Following the railway's decision to divest non-core freight railway assets, prior to the company's privatization in 1995, it transferred the tower to the Canada Lands Company, a federal Crown corporation responsible for real estate development. Since the name CN Tower became common in daily usage, the abbreviation was eventually expanded to Canadian National Tower or Canada's National Tower. However, neither of these names is commonly used.\n</p><p>In 1995, the CN Tower was declared one of the modern Seven Wonders of the World by the American Society of Civil Engineers. It also belongs to the World Federation of Great Towers, where it holds second-place ranking.\n</p><p><a class=\"external text\" href=\"https://en.wikipedia.org/wiki/CN_Tower\">en.wikipedia.org/wiki/CN_Tower</a>\n</p>\n<a class=\"external text\" href=\"https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License\">en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_...</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/75683070@N00\">Ken Lund</a> from Reno, Nevada, USA",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "54270216": {
+    "pageid": 54270216,
+    "ns": 6,
+    "title": "File:CN Tower, Toronto, Ontario (21814239646).jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2935397,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/CN_Tower%2C_Toronto%2C_Ontario_%2821814239646%29.jpg/1920px-CN_Tower%2C_Toronto%2C_Ontario_%2821814239646%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/CN_Tower%2C_Toronto%2C_Ontario_%2821814239646%29.jpg/3840px-CN_Tower%2C_Toronto%2C_Ontario_%2821814239646%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/CN_Tower%2C_Toronto%2C_Ontario_%2821814239646%29.jpg/1920px-CN_Tower%2C_Toronto%2C_Ontario_%2821814239646%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/CN_Tower%2C_Toronto%2C_Ontario_%2821814239646%29.jpg/3840px-CN_Tower%2C_Toronto%2C_Ontario_%2821814239646%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/CN_Tower%2C_Toronto%2C_Ontario_%2821814239646%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:CN_Tower,_Toronto,_Ontario_(21814239646).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=54270216",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<p>The CN Tower (French: Tour CN) is a 553.33 m-high (1,815.4 ft) concrete communications and observation tower in downtown Toronto, Ontario, Canada. Built on the former Railway Lands, it was completed in 1976, becoming the world's tallest free-standing structure and world's tallest tower at the time. It held both records for 34 years until the completion of Burj Khalifa and Canton Tower in 2010. Since then, it became the 3rd tallest tower in the world and remains the tallest free-standing structure in the Western Hemisphere, a signature icon of Toronto's skyline, and a symbol of Canada, attracting more than two million international visitors annually.\n</p><p>Its name \"CN\" originally referred to Canadian National, the railway company that built the tower. Following the railway's decision to divest non-core freight railway assets, prior to the company's privatization in 1995, it transferred the tower to the Canada Lands Company, a federal Crown corporation responsible for real estate development. Since the name CN Tower became common in daily usage, the abbreviation was eventually expanded to Canadian National Tower or Canada's National Tower. However, neither of these names is commonly used.\n</p><p>In 1995, the CN Tower was declared one of the modern Seven Wonders of the World by the American Society of Civil Engineers. It also belongs to the World Federation of Great Towers, where it holds second-place ranking.\n</p><p><a class=\"external text\" href=\"https://en.wikipedia.org/wiki/CN_Tower\">en.wikipedia.org/wiki/CN_Tower</a>\n</p>\n<a class=\"external text\" href=\"https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License\">en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_...</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/75683070@N00\">Ken Lund</a> from Reno, Nevada, USA",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "159590625": {
+    "pageid": 159590625,
+    "ns": 6,
+    "title": "File:Sears Tower from LaSalle Street, Chicago, IL.jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3009877,
+      "width": 2820,
+      "height": 3761,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL.jpg/1920px-Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2134,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL.jpg/1920px-Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2134,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sears_Tower_from_LaSalle_Street,_Chicago,_IL.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=159590625",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Built in 1970-1974, this Modern International-style skyscraper was designed by Skidmore, Owings and Merrill and Fazlur Rahman Khan for Sears, Roebuck and Company, replacing their earlier headquarters in Chicago’s North Lawndale neighborhood where the company had been since 1905.  The Sears, Roebuck and Company headquarters remained in the building until 1994, when they moved to a new suburban office park in Hoffman Estates, Illinois.  The Sears Tower stands 108 stories and 1,451 feet (442 meters) tall, becoming the tallest building in Chicago in 1972, surpassing the Aon Center, which had held the title for only a month, and surpassing the height of the Empire State Building in New York City in early 1973.  The building surpassed the Twin Towers of the World Trade Center in New York City when it topped out on May 3, 1973, and was the world’s tallest building from 1973 until 1998, when the spires of the Petronas Towers were completed in Kuala Lumpur, Malaysia.  The building, however, did not hold the title of the world’s tallest structure, being surpassed by several communication towers, and did not hold the designation as the tallest structure in North America, as the CN Tower in Toronto, Ontario, Canada stood 350 feet taller, but as the CN Tower does not have habitable floors for much of its height, it is not defined as a building.  The building also did not hold the designation of having the world’s tallest pinnacle height until 2000, with the 1,500-foot antennas atop the older John Hancock Building to the northeast being taller than the building upon its completion, and the 1,727-foot high antenna atop One World Trade Center holding the designation for decades.  The land for the building was acquired by Sears in 1970, and involved the closure of one block of Quincy Street, as well as the acquisition and demolition of two blocks full of buildings.  The construction process was fraught with difficulties as bad weather and labor strikes delayed the project, with five workers dying during construction.   The building also faced controversy over the tower blocking television signals being broadcast from other towers in the Chicago Loop, which was the subject of lawsuits during construction that ultimately led to the building receiving broadcast antennas atop the roof, resulting in its eventual distinctive silhouette and height of 1,729 feet from the ground to the top of the western antenna after it was extended in 2000.  The building was also the first structure in the Chicago Loop to feature blinking FAA beacons to warn air traffic atop the roof, due to its height.  The building was not fully leased for over a decade due to its immense size and a massive wave of office construction around the time it was built, leading to a 50% vacancy rate during the 1970s and much of the 1980s.\n<p>The building was designed as a clustered series of nine 75-foot square tubes of varying heights within the structural grid of the building’s 225-foot square footprint, with the full site being occupied by the building on the lower floors, gradually tapering as various tubes terminate on the upper floors, eventually leaving only two tubes at the top that rise from the base of the site.  Two tubes, at the southeast and northwest corners, rise 50 floors, with the tubes at the southwest and northeast corners rising 66 floors, the tubes in the middle of the south, north, and east sides of the building rising 90 floors, and the central tube and the tube in the middle of the west side of the building rising the full 108 floors of the building’s overall height.  This system of construction and method of design was highly economical, and has been repeated by subsequent supertall skyscrapers, including the Burj Khalifa.  The exterior of the building is clad in anodized aluminum, which has been painted black, with columns evenly spaced 15 feet apart on the exterior, with bronze-tinted ribbon windows, and bands of louvers at the mechanical floors.  The building was renovated in 1984, with a shopping center being added to the first four floors of the building, and a visitor center was added for the building’s skydeck observation deck.  The building has two lobbies, one on the north side of the building, utilized by office tenants, and one on the south side of the building, utilized for visitors, with the entrances being located on the first floor and ground floor of the building, respectively, due to the grade change and sloping of the site from north to south.  The lobbies contain artworks by Jacob Hashimoto and Olafur Eliasson, a sculpture honoring Fazlur Rahman Khan, and from 1974 until 2017, the building’s lobby housed a notable sculpture by Alexander Calder, which was removed during the building’s renovations.  The 103rd floor of the building houses the skydeck observation deck, which features several boxes made entirely of glass that extend outside of the building’s exterior walls and allow visitors a 180-degree viewing experience of the city outside, outwards, above, and below their feet, with the glass floors of the boxes allowing visitors to see the streets below.\n</p>\nThe building today is the third-tallest in the western hemisphere, being surpassed by the new One World Trade Center in 2014 and Central Park Tower in 2020, both in New York City, and the twenty-third tallest building in the world, with the list now being dominated by towers in Asia.  However, despite its reduced status on the world stage, the building remains the tallest in Chicago.  In 2009, the building’s naming rights were sold to Willis Group, which renamed the building the Willis Tower, with Sears having sold the tower in 1994 and the naming rights in 2003.  The tower’s original namesake, a far cry from the robust and successful company it was a half-century ago, is now bankrupt and on the verge of going defunct.  In 2017-2022, the building underwent a substantial renovation that involved the addition of a three-story podium, which wraps the base of the tower, and replacing building's original plaza and entrances.  The new podium contains a food hall, two lobbies, and an atrium with a glass roof, with the exterior matching the appearance of the original building, with the exception of a dynamic sculptural facade on the exterior of the previously existing mechanical ventilation shaft along Jackson Boulevard.  The building houses multiple office tenants with retail space in the base, and attracts many visitors annually who mostly visit to ascend to the skydeck and view the city from the building’s impressive height.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "w_lemay",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "159590634": {
+    "pageid": 159590634,
+    "ns": 6,
+    "title": "File:Sears Tower from LaSalle Street, Chicago, IL - 52901647698.jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4646319,
+      "width": 3024,
+      "height": 4032,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL_-_52901647698.jpg/1920px-Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL_-_52901647698.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2133,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/6/60/Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL_-_52901647698.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL_-_52901647698.jpg/1920px-Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL_-_52901647698.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2133,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/6/60/Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL_-_52901647698.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Sears_Tower_from_LaSalle_Street%2C_Chicago%2C_IL_-_52901647698.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sears_Tower_from_LaSalle_Street,_Chicago,_IL_-_52901647698.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=159590634",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Built in 1970-1974, this Modern International-style skyscraper was designed by Skidmore, Owings and Merrill and Fazlur Rahman Khan for Sears, Roebuck and Company, replacing their earlier headquarters in Chicago’s North Lawndale neighborhood where the company had been since 1905.  The Sears, Roebuck and Company headquarters remained in the building until 1994, when they moved to a new suburban office park in Hoffman Estates, Illinois.  The Sears Tower stands 108 stories and 1,451 feet (442 meters) tall, becoming the tallest building in Chicago in 1972, surpassing the Aon Center, which had held the title for only a month, and surpassing the height of the Empire State Building in New York City in early 1973.  The building surpassed the Twin Towers of the World Trade Center in New York City when it topped out on May 3, 1973, and was the world’s tallest building from 1973 until 1998, when the spires of the Petronas Towers were completed in Kuala Lumpur, Malaysia.  The building, however, did not hold the title of the world’s tallest structure, being surpassed by several communication towers, and did not hold the designation as the tallest structure in North America, as the CN Tower in Toronto, Ontario, Canada stood 350 feet taller, but as the CN Tower does not have habitable floors for much of its height, it is not defined as a building.  The building also did not hold the designation of having the world’s tallest pinnacle height until 2000, with the 1,500-foot antennas atop the older John Hancock Building to the northeast being taller than the building upon its completion, and the 1,727-foot high antenna atop One World Trade Center holding the designation for decades.  The land for the building was acquired by Sears in 1970, and involved the closure of one block of Quincy Street, as well as the acquisition and demolition of two blocks full of buildings.  The construction process was fraught with difficulties as bad weather and labor strikes delayed the project, with five workers dying during construction.   The building also faced controversy over the tower blocking television signals being broadcast from other towers in the Chicago Loop, which was the subject of lawsuits during construction that ultimately led to the building receiving broadcast antennas atop the roof, resulting in its eventual distinctive silhouette and height of 1,729 feet from the ground to the top of the western antenna after it was extended in 2000.  The building was also the first structure in the Chicago Loop to feature blinking FAA beacons to warn air traffic atop the roof, due to its height.  The building was not fully leased for over a decade due to its immense size and a massive wave of office construction around the time it was built, leading to a 50% vacancy rate during the 1970s and much of the 1980s.\n<p>The building was designed as a clustered series of nine 75-foot square tubes of varying heights within the structural grid of the building’s 225-foot square footprint, with the full site being occupied by the building on the lower floors, gradually tapering as various tubes terminate on the upper floors, eventually leaving only two tubes at the top that rise from the base of the site.  Two tubes, at the southeast and northwest corners, rise 50 floors, with the tubes at the southwest and northeast corners rising 66 floors, the tubes in the middle of the south, north, and east sides of the building rising 90 floors, and the central tube and the tube in the middle of the west side of the building rising the full 108 floors of the building’s overall height.  This system of construction and method of design was highly economical, and has been repeated by subsequent supertall skyscrapers, including the Burj Khalifa.  The exterior of the building is clad in anodized aluminum, which has been painted black, with columns evenly spaced 15 feet apart on the exterior, with bronze-tinted ribbon windows, and bands of louvers at the mechanical floors.  The building was renovated in 1984, with a shopping center being added to the first four floors of the building, and a visitor center was added for the building’s skydeck observation deck.  The building has two lobbies, one on the north side of the building, utilized by office tenants, and one on the south side of the building, utilized for visitors, with the entrances being located on the first floor and ground floor of the building, respectively, due to the grade change and sloping of the site from north to south.  The lobbies contain artworks by Jacob Hashimoto and Olafur Eliasson, a sculpture honoring Fazlur Rahman Khan, and from 1974 until 2017, the building’s lobby housed a notable sculpture by Alexander Calder, which was removed during the building’s renovations.  The 103rd floor of the building houses the skydeck observation deck, which features several boxes made entirely of glass that extend outside of the building’s exterior walls and allow visitors a 180-degree viewing experience of the city outside, outwards, above, and below their feet, with the glass floors of the boxes allowing visitors to see the streets below.\n</p>\nThe building today is the third-tallest in the western hemisphere, being surpassed by the new One World Trade Center in 2014 and Central Park Tower in 2020, both in New York City, and the twenty-third tallest building in the world, with the list now being dominated by towers in Asia.  However, despite its reduced status on the world stage, the building remains the tallest in Chicago.  In 2009, the building’s naming rights were sold to Willis Group, which renamed the building the Willis Tower, with Sears having sold the tower in 1994 and the naming rights in 2003.  The tower’s original namesake, a far cry from the robust and successful company it was a half-century ago, is now bankrupt and on the verge of going defunct.  In 2017-2022, the building underwent a substantial renovation that involved the addition of a three-story podium, which wraps the base of the tower, and replacing building's original plaza and entrances.  The new podium contains a food hall, two lobbies, and an atrium with a glass roof, with the exterior matching the appearance of the original building, with the exception of a dynamic sculptural facade on the exterior of the previously existing mechanical ventilation shaft along Jackson Boulevard.  The building houses multiple office tenants with retail space in the base, and attracts many visitors annually who mostly visit to ascend to the skydeck and view the city from the building’s impressive height.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "w_lemay",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "159590642": {
+    "pageid": 159590642,
+    "ns": 6,
+    "title": "File:Sears Tower from the Chicago River, Chicago, IL.jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1463359,
+      "width": 2446,
+      "height": 2772,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Sears_Tower_from_the_Chicago_River%2C_Chicago%2C_IL.jpg/1920px-Sears_Tower_from_the_Chicago_River%2C_Chicago%2C_IL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1813,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sears_Tower_from_the_Chicago_River%2C_Chicago%2C_IL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Sears_Tower_from_the_Chicago_River%2C_Chicago%2C_IL.jpg/1920px-Sears_Tower_from_the_Chicago_River%2C_Chicago%2C_IL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1813,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sears_Tower_from_the_Chicago_River%2C_Chicago%2C_IL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sears_Tower_from_the_Chicago_River%2C_Chicago%2C_IL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sears_Tower_from_the_Chicago_River,_Chicago,_IL.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=159590642",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Built in 1970-1974, this Modern International-style skyscraper was designed by Skidmore, Owings and Merrill and Fazlur Rahman Khan for Sears, Roebuck and Company, replacing their earlier headquarters in Chicago’s North Lawndale neighborhood where the company had been since 1905.  The Sears, Roebuck and Company headquarters remained in the building until 1994, when they moved to a new suburban office park in Hoffman Estates, Illinois.  The Sears Tower stands 108 stories and 1,451 feet (442 meters) tall, becoming the tallest building in Chicago in 1972, surpassing the Aon Center, which had held the title for only a month, and surpassing the height of the Empire State Building in New York City in early 1973.  The building surpassed the Twin Towers of the World Trade Center in New York City when it topped out on May 3, 1973, and was the world’s tallest building from 1973 until 1998, when the spires of the Petronas Towers were completed in Kuala Lumpur, Malaysia.  The building, however, did not hold the title of the world’s tallest structure, being surpassed by several communication towers, and did not hold the designation as the tallest structure in North America, as the CN Tower in Toronto, Ontario, Canada stood 350 feet taller, but as the CN Tower does not have habitable floors for much of its height, it is not defined as a building.  The building also did not hold the designation of having the world’s tallest pinnacle height until 2000, with the 1,500-foot antennas atop the older John Hancock Building to the northeast being taller than the building upon its completion, and the 1,727-foot high antenna atop One World Trade Center holding the designation for decades.  The land for the building was acquired by Sears in 1970, and involved the closure of one block of Quincy Street, as well as the acquisition and demolition of two blocks full of buildings.  The construction process was fraught with difficulties as bad weather and labor strikes delayed the project, with five workers dying during construction.   The building also faced controversy over the tower blocking television signals being broadcast from other towers in the Chicago Loop, which was the subject of lawsuits during construction that ultimately led to the building receiving broadcast antennas atop the roof, resulting in its eventual distinctive silhouette and height of 1,729 feet from the ground to the top of the western antenna after it was extended in 2000.  The building was also the first structure in the Chicago Loop to feature blinking FAA beacons to warn air traffic atop the roof, due to its height.  The building was not fully leased for over a decade due to its immense size and a massive wave of office construction around the time it was built, leading to a 50% vacancy rate during the 1970s and much of the 1980s.\n<p>The building was designed as a clustered series of nine 75-foot square tubes of varying heights within the structural grid of the building’s 225-foot square footprint, with the full site being occupied by the building on the lower floors, gradually tapering as various tubes terminate on the upper floors, eventually leaving only two tubes at the top that rise from the base of the site.  Two tubes, at the southeast and northwest corners, rise 50 floors, with the tubes at the southwest and northeast corners rising 66 floors, the tubes in the middle of the south, north, and east sides of the building rising 90 floors, and the central tube and the tube in the middle of the west side of the building rising the full 108 floors of the building’s overall height.  This system of construction and method of design was highly economical, and has been repeated by subsequent supertall skyscrapers, including the Burj Khalifa.  The exterior of the building is clad in anodized aluminum, which has been painted black, with columns evenly spaced 15 feet apart on the exterior, with bronze-tinted ribbon windows, and bands of louvers at the mechanical floors.  The building was renovated in 1984, with a shopping center being added to the first four floors of the building, and a visitor center was added for the building’s skydeck observation deck.  The building has two lobbies, one on the north side of the building, utilized by office tenants, and one on the south side of the building, utilized for visitors, with the entrances being located on the first floor and ground floor of the building, respectively, due to the grade change and sloping of the site from north to south.  The lobbies contain artworks by Jacob Hashimoto and Olafur Eliasson, a sculpture honoring Fazlur Rahman Khan, and from 1974 until 2017, the building’s lobby housed a notable sculpture by Alexander Calder, which was removed during the building’s renovations.  The 103rd floor of the building houses the skydeck observation deck, which features several boxes made entirely of glass that extend outside of the building’s exterior walls and allow visitors a 180-degree viewing experience of the city outside, outwards, above, and below their feet, with the glass floors of the boxes allowing visitors to see the streets below.\n</p>\nThe building today is the third-tallest in the western hemisphere, being surpassed by the new One World Trade Center in 2014 and Central Park Tower in 2020, both in New York City, and the twenty-third tallest building in the world, with the list now being dominated by towers in Asia.  However, despite its reduced status on the world stage, the building remains the tallest in Chicago.  In 2009, the building’s naming rights were sold to Willis Group, which renamed the building the Willis Tower, with Sears having sold the tower in 1994 and the naming rights in 2003.  The tower’s original namesake, a far cry from the robust and successful company it was a half-century ago, is now bankrupt and on the verge of going defunct.  In 2017-2022, the building underwent a substantial renovation that involved the addition of a three-story podium, which wraps the base of the tower, and replacing building's original plaza and entrances.  The new podium contains a food hall, two lobbies, and an atrium with a glass roof, with the exterior matching the appearance of the original building, with the exception of a dynamic sculptural facade on the exterior of the previously existing mechanical ventilation shaft along Jackson Boulevard.  The building houses multiple office tenants with retail space in the base, and attracts many visitors annually who mostly visit to ascend to the skydeck and view the city from the building’s impressive height.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "w_lemay",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "78885330": {
+    "pageid": 78885330,
+    "ns": 6,
+    "title": "File:View from the top of the Burj Khalifa Sky Lounge, floor 148 (visible below is the Financial Center) (36694040754).jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1784953,
+      "width": 1440,
+      "height": 2560,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/9/93/View_from_the_top_of_the_Burj_Khalifa_Sky_Lounge%2C_floor_148_%28visible_below_is_the_Financial_Center%29_%2836694040754%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 2844,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/View_from_the_top_of_the_Burj_Khalifa_Sky_Lounge%2C_floor_148_%28visible_below_is_the_Financial_Center%29_%2836694040754%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2844
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/View_from_the_top_of_the_Burj_Khalifa_Sky_Lounge%2C_floor_148_%28visible_below_is_the_Financial_Center%29_%2836694040754%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:View_from_the_top_of_the_Burj_Khalifa_Sky_Lounge,_floor_148_(visible_below_is_the_Financial_Center)_(36694040754).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=78885330",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "2017",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/48889080879@N01\">Arun Katiyar</a> from Bangalore, India",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

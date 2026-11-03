@@ -1,0 +1,343 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 8,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "4326664": {
+    "pageid": 4326664,
+    "ns": 6,
+    "title": "File:Portait of Koxinga, Nasu Toyoyoshi copy.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 114897,
+      "width": 462,
+      "height": 900,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Portait_of_Koxinga%2C_Nasu_Toyoyoshi_copy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 3117,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Portait_of_Koxinga%2C_Nasu_Toyoyoshi_copy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 3117
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Portait_of_Koxinga%2C_Nasu_Toyoyoshi_copy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Portait_of_Koxinga,_Nasu_Toyoyoshi_copy.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4326664",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\nNasu Hokei <small>(English)</small><br>那須豊慶 <small>(Chinese)</small><br>那須豐慶 <small>(Japanese)</small></div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "22646278": {
+    "pageid": 22646278,
+    "ns": 6,
+    "title": "File:Portrait of Zheng Chenggong.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1178575,
+      "width": 782,
+      "height": 1579,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Portrait_of_Zheng_Chenggong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 3231,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Portrait_of_Zheng_Chenggong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 3231
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Portrait_of_Zheng_Chenggong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Portrait_of_Zheng_Chenggong.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=22646278",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "This is a portrait of <a href=\"https://en.wikipedia.org/wiki/Zheng_Chenggong\" class=\"extiw\" title=\"en:Zheng Chenggong\">Zheng Chenggong</a> 鄭成功 (1624–1662), who is known in many western sources as \"Koxinga.\" It carries a \"One-hundred character eulogy\" (百字贊) by Wang Zhongxiao 王忠孝, a high official who served in Zheng's government. Ming Dynasty. The original painting on silk measures 130.5 cm x 65 cm.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Huang Zi 黃梓 (17th century)",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "22661617": {
+    "pageid": 22661617,
+    "ns": 6,
+    "title": "File:Portrait of Zheng Chenggong (detail).jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 313554,
+      "width": 717,
+      "height": 454,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Portrait_of_Zheng_Chenggong_%28detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1013,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Portrait_of_Zheng_Chenggong_%28detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1013
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Portrait_of_Zheng_Chenggong_%28detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Portrait_of_Zheng_Chenggong_(detail).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=22661617",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Detail of a portrait of <a href=\"https://en.wikipedia.org/wiki/Zheng_Chenggong\" class=\"extiw\" title=\"en:Zheng Chenggong\">Zheng Chenggong</a> 鄭成功 (1624–1662), who is known in many western sources as \"Koxinga.\" He is the one dressed in a blue robe.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Huang Zi 黃梓 (fl. 17th century)",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "34824174": {
+    "pageid": 34824174,
+    "ns": 6,
+    "title": "File:The Portrait of Koxinga.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 144912,
+      "width": 537,
+      "height": 900,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/0/09/The_Portrait_of_Koxinga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 2682,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/The_Portrait_of_Koxinga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2682
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/The_Portrait_of_Koxinga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_Portrait_of_Koxinga.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=34824174",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\n<span lang=\"en\">Anonymous</span><span style=\"display:none\">Unknown author</span></div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "145975854": {
+    "pageid": 145975854,
+    "ns": 6,
+    "title": "File:臺南市立博物館展示文物02.jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 148174,
+      "width": 1335,
+      "height": 2048,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/%E8%87%BA%E5%8D%97%E5%B8%82%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E5%B1%95%E7%A4%BA%E6%96%87%E7%89%A902.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 2455,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e0/%E8%87%BA%E5%8D%97%E5%B8%82%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E5%B1%95%E7%A4%BA%E6%96%87%E7%89%A902.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2455
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/%E8%87%BA%E5%8D%97%E5%B8%82%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E5%B1%95%E7%A4%BA%E6%96%87%E7%89%A902.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:%E8%87%BA%E5%8D%97%E5%B8%82%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E5%B1%95%E7%A4%BA%E6%96%87%E7%89%A902.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=145975854",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "​臺南市立博物館（簡稱南市博）是臺南市政府文化局轄下二級機關，成立於2022年10月1日，本館（行政中心）設於原延平郡王祠的鄭成功文物館。",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Mrmarkertw\" title=\"User:Mrmarkertw\">Mrmarkertw</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "5283657": {
+    "pageid": 5283657,
+    "ns": 6,
+    "title": "File:鄭成功畫像.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 246887,
+      "width": 600,
+      "height": 1013,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/%E9%84%AD%E6%88%90%E5%8A%9F%E7%95%AB%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 2701,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/%E9%84%AD%E6%88%90%E5%8A%9F%E7%95%AB%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2701
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/%E9%84%AD%E6%88%90%E5%8A%9F%E7%95%AB%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E6%88%90%E5%8A%9F%E7%95%AB%E5%83%8F.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=5283657",
+      "extmetadata": {
+       "Artist": {
+        "value": "<div class=\"fn value\">\n<span lang=\"en\">Anonymous</span><span style=\"display:none\">Unknown author</span></div>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "31908916": {
+    "pageid": 31908916,
+    "ns": 6,
+    "title": "File:鄭成功畫像2.jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 149607,
+      "width": 537,
+      "height": 900,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E9%84%AD%E6%88%90%E5%8A%9F%E7%95%AB%E5%83%8F2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 2682,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E9%84%AD%E6%88%90%E5%8A%9F%E7%95%AB%E5%83%8F2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2682
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E9%84%AD%E6%88%90%E5%8A%9F%E7%95%AB%E5%83%8F2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E6%88%90%E5%8A%9F%E7%95%AB%E5%83%8F2.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=31908916",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "​明代寫實容像",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "135856277": {
+    "pageid": 135856277,
+    "ns": 6,
+    "title": "File:鄭成功記念館鄭成功肖像.jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 446497,
+      "width": 1080,
+      "height": 1616,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/%E9%84%AD%E6%88%90%E5%8A%9F%E8%A8%98%E5%BF%B5%E9%A4%A8%E9%84%AD%E6%88%90%E5%8A%9F%E8%82%96%E5%83%8F.jpg/960px-%E9%84%AD%E6%88%90%E5%8A%9F%E8%A8%98%E5%BF%B5%E9%A4%A8%E9%84%AD%E6%88%90%E5%8A%9F%E8%82%96%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2394,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/%E9%84%AD%E6%88%90%E5%8A%9F%E8%A8%98%E5%BF%B5%E9%A4%A8%E9%84%AD%E6%88%90%E5%8A%9F%E8%82%96%E5%83%8F.jpg/960px-%E9%84%AD%E6%88%90%E5%8A%9F%E8%A8%98%E5%BF%B5%E9%A4%A8%E9%84%AD%E6%88%90%E5%8A%9F%E8%82%96%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2394
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/%E9%84%AD%E6%88%90%E5%8A%9F%E8%A8%98%E5%BF%B5%E9%A4%A8%E9%84%AD%E6%88%90%E5%8A%9F%E8%82%96%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:%E9%84%AD%E6%88%90%E5%8A%9F%E8%A8%98%E5%BF%B5%E9%A4%A8%E9%84%AD%E6%88%90%E5%8A%9F%E8%82%96%E5%83%8F.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=135856277",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "鄭成功記念館に展示されている鄭成功肖像",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:%E3%81%A8%E3%82%8B%E3%81%A6%E3%81%83\" class=\"mw-redirect\" title=\"User:とるてぃ\">とるてぃ</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}
