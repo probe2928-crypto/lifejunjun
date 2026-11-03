@@ -1,0 +1,148 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:BH;src:url(../../fonts/BlackHanSans-Regular.ttf)}
+@font-face{font-family:PB;src:url(../../fonts/Pretendard-Black.otf)}
+@font-face{font-family:PS;src:url(../../fonts/Pretendard-SemiBold.otf)}
+:root{--lime:#c8ff2e;--ink:#0b0d0a;--w:#f6f7f1;--red:#ff3b30}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transparent}
+#stage{position:absolute;inset:0;overflow:hidden;perspective:1400px}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.2) 40%,rgba(0,0,0,.35) 70%,rgba(0,0,0,.75) 100%)}
+.grid{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 120px),repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 120px)}
+#dark{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,#182010,#0b0d0a 65%)}
+.grain{position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+.abs{position:absolute;left:0;right:0;text-align:center;white-space:nowrap;transform-origin:50% 50%}
+.mono{font-family:PS;font-size:44px;letter-spacing:3px;color:rgba(246,247,241,.9);text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.big{font-family:BH;color:var(--w);line-height:1.05;text-shadow:0 6px 30px rgba(0,0,0,.75)}
+.pb{font-family:PB;color:var(--w);line-height:1.15;text-shadow:0 4px 24px rgba(0,0,0,.8)}
+.lime{color:var(--lime);text-shadow:0 0 40px rgba(200,255,46,.45),0 6px 24px rgba(0,0,0,.6)}
+.box{display:inline-block;background:var(--lime);color:var(--ink);padding:12px 28px 4px;text-shadow:none}
+.rbox{display:inline-block;background:var(--red);color:#fff;padding:8px 22px 2px;text-shadow:none}
+.tag{position:absolute;left:44px;top:1190px;font-family:PS;font-size:30px;color:rgba(255,255,255,.8);background:rgba(0,0,0,.45);padding:6px 14px;border-radius:6px}
+.bar{position:absolute;bottom:770px;width:190px;transform-origin:50% 100%;border-radius:10px 10px 0 0}
+.bar.l{background:linear-gradient(180deg,var(--lime),#7fae12);box-shadow:0 0 40px rgba(200,255,46,.35)}
+.bar.g{background:linear-gradient(180deg,#d7dbd0,#7d8277)}
+.bv{position:absolute;width:260px;text-align:center;font-family:BH;font-size:66px;color:var(--w);text-shadow:0 4px 18px rgba(0,0,0,.8)}
+.bn{position:absolute;top:1162px;width:260px;text-align:center;font-family:PB;font-size:36px;color:var(--w);line-height:1.1}
+.base{position:absolute;left:60px;right:60px;top:1150px;height:4px;background:rgba(246,247,241,.6)}
+.brk{position:absolute;border:4px solid var(--red);border-left:none;border-radius:0 8px 8px 0}
+.card{position:absolute;left:90px;width:900px;border-left:12px solid var(--lime);background:rgba(11,13,10,.78);padding:22px 30px;font-family:PB;font-size:58px;color:var(--w);text-align:left}
+.card small{display:block;font-family:PS;font-size:34px;color:rgba(246,247,241,.75);margin-top:4px}
+.streak{position:absolute;width:2600px;height:12px;left:-760px;top:940px;background:linear-gradient(90deg,transparent,var(--lime) 44%,#fff 50%,var(--lime) 56%,transparent);box-shadow:0 0 50px var(--lime)}
+.flash{position:absolute;inset:0;background:#fff}
+</style></head>
+<body><div id="stage">
+<div class="shade"></div><div class="grid"></div>
+<div id="dark"></div>
+
+<!-- A hook 0–5.8 (complete on frame 0) -->
+<div class="abs mono" id="a0" style="top:380px">쿠알라룸푸르 · 메르데카 118</div>
+<div class="abs big" id="a1" style="top:460px;font-size:130px">세계 1위, 2위 빌딩</div>
+<div class="abs big" id="a2" style="top:640px;font-size:112px"><span class="box">둘 다 한국이 지었어요</span></div>
+
+<!-- chart (B, D, E) -->
+<div class="base" id="cbase"></div>
+<div class="bar l" id="bBurj" style="left:110px;height:700px"></div>
+<div class="bar l" id="bMer" style="left:445px;height:574px"></div>
+<div class="bar g" id="bLot" style="left:780px;height:469px"></div>
+<div class="bv" id="vBurj" style="left:75px;top:365px">828m</div>
+<div class="bv" id="vMer" style="left:410px;top:490px">678.9m</div>
+<div class="bv" id="vLot" style="left:745px;top:595px">554.5m</div>
+<div class="bn" id="nBurj" style="left:75px">부르즈 할리파<br><span style="font-family:PS;font-size:28px">두바이</span></div>
+<div class="bn" id="nMer" style="left:410px">메르데카 118<br><span style="font-family:PS;font-size:28px">쿠알라룸푸르</span></div>
+<div class="bn" id="nLot" style="left:745px">롯데월드타워<br><span style="font-family:PS;font-size:28px">서울</span></div>
+<div class="brk" id="brk" style="left:975px;top:576px;width:40px;height:105px"></div>
+<div class="abs big" id="dDiff" style="top:470px;left:auto;right:0px;width:260px;font-size:76px;color:#fff"><span class="rbox">+124m</span></div>
+<div class="abs pb" id="bH" style="top:285px;font-size:64px">1위 <span class="lime">부르즈 할리파</span></div>
+<div class="abs big" id="eT" style="top:272px;font-size:84px">시공 <span class="lime">삼성물산</span></div>
+<div class="abs mono" id="eS" style="top:385px">해외 회사들과 합작</div>
+<div class="abs pb" id="dT" style="top:285px;font-size:66px">롯데월드타워보다</div>
+
+<!-- C footage -->
+<div class="abs pb" id="c1" style="top:400px;font-size:76px">2위 <span class="lime">메르데카 118</span></div>
+<div class="abs big" id="c2" style="top:510px;font-size:200px">678.9m</div>
+
+<!-- F/G/H Petronas -->
+<div class="abs big" id="f1" style="top:420px;font-size:110px">그런데 <span class="lime">처음이 아니에요</span></div>
+<div class="abs pb" id="f2" style="top:580px;font-size:72px"><span class="box">1998</span> 페트로나스 트윈타워</div>
+<div class="card" id="g1" style="top:480px">타워 1 · <span style="color:var(--lime)">일본</span> 회사<small>하자마 컨소시엄</small></div>
+<div class="card" id="g2" style="top:690px">타워 2 · <span style="color:var(--lime)">한국</span> 회사<small>삼성물산 컨소시엄 (극동건설 포함)</small></div>
+<div class="abs big lime" id="h1" style="top:420px;font-size:210px">452m</div>
+<div class="abs pb" id="h2" style="top:680px;font-size:64px">타이베이 101 전까지<br><span class="lime">세계에서 제일 높았던</span> 빌딩</div>
+
+<!-- I CTA -->
+<div class="abs mono" id="i0" style="top:400px">쿠알라룸푸르 가면</div>
+<div class="abs big" id="i1" style="top:480px;font-size:120px"><span class="lime">두 빌딩</span> 같이 보기</div>
+<div class="abs big" id="i2" style="top:660px;font-size:96px"><span class="box">아는 친구한테 보내주세요</span></div>
+
+<div class="tag" id="tag1">실제 촬영 · 쿠알라룸푸르</div>
+<div class="tag" id="tag2">자료 사진 · Wikimedia Commons</div>
+<div class="streak" id="sk"></div>
+<div class="flash" id="fl"></div>
+<div class="grain"></div>
+</div>
+<script src="../../mg/mg.js"></script>
+<script>
+const {T,set}=MG;
+const OUT=(els,t,d=0.2)=>T(els,t,d,{opacity:[1,0],scale:[1,1.12],blur:[0,14]},'in');
+const SHOW=(els,t0,t1)=>{set(els,0,{opacity:0});set(els,t0,{opacity:1});set(els,t1,{opacity:0});};
+// dark panel for chart segments
+set('#dark',0,{opacity:0}); set('#dark',5.8,{opacity:1}); set('#dark',10.35,{opacity:0}); set('#dark',16.2,{opacity:1}); set('#dark',24.4,{opacity:0});
+set('#fl',0,{opacity:0}); T('#fl',24.35,0.3,{opacity:[0.7,0]},'out');
+SHOW('#tag1',0,5.8); set('#tag1',10.35,{opacity:1}); set('#tag1',16.2,{opacity:0});
+SHOW('#tag2',24.4,48.6);
+const SK=t=>T('#sk',t,0.4,{x:[-1500,1500],rotate:[-28,-28],opacity:[1,1]},'inOut');
+set('#sk',0,{opacity:0}); [5.65,10.2,16.05,24.25,41.5].forEach(SK);
+
+// A
+set(['#a0','#a1','#a2'],0,{opacity:1,scale:1}); set('#a2',0,{rotate:-2});
+T('#a1',1.6,0.35,{scale:[1.2,1]},'back'); T('#a2',3.8,0.35,{scale:[1.3,1]},'back');
+OUT(['#a0','#a1','#a2'],5.6);
+
+// chart base visibility
+const CH=['#cbase'];
+set(CH,0,{opacity:0}); set(CH,5.8,{opacity:1}); set(CH,10.3,{opacity:0}); set(CH,16.2,{opacity:1}); set(CH,24.3,{opacity:0});
+// B: Burj grows
+set(['#bBurj','#vBurj','#nBurj'],0,{opacity:0});
+set(['#bBurj','#nBurj'],5.85,{opacity:1});
+T('#bBurj',6.2,2.3,{scaleY:[0,1]},'out');
+T('#vBurj',8.45,0.35,{opacity:[0,1],scale:[1.8,1]},'back');
+T('#bH',5.85,0.35,{opacity:[0,1],y:[30,0]},'out5'); set('#bH',10.3,{opacity:0});
+set(['#bBurj','#vBurj','#nBurj'],10.3,{opacity:0});
+// C footage
+T('#c1',10.4,0.35,{opacity:[0,1],x:[-200,0]},'out5');
+T('#c2',13.7,0.45,{opacity:[0,1],scaleY:[2.4,1],blur:[18,0]},'back');
+OUT(['#c1','#c2'],16.0);
+// D: Merdeka vs Lotte
+set(['#bMer','#vMer','#nMer','#bLot','#vLot','#nLot','#brk','#dDiff'],0,{opacity:0});
+set(['#bBurj','#nBurj','#vBurj'],16.2,{opacity:0.35});
+set(['#bMer','#nMer','#vMer'],16.2,{opacity:1}); T('#bMer',16.2,0.5,{scaleY:[0,1]},'out');
+set(['#bLot','#nLot'],16.25,{opacity:1}); T('#bLot',16.25,0.6,{scaleY:[0,1]},'out'); T('#vLot',16.7,0.3,{opacity:[0,1]},'out');
+T('#dT',16.2,0.3,{opacity:[0,1]},'out'); set('#dT',19.5,{opacity:0});
+T('#brk',17.45,0.3,{opacity:[0,1],clipB:[100,0]},'out5');
+T('#dDiff',17.5,0.35,{opacity:[0,1],scale:[2,1]},'back');
+// E: Samsung C&T label, Lotte out
+set(['#bLot','#vLot','#nLot','#brk','#dDiff'],19.55,{opacity:0});
+set(['#bBurj','#nBurj','#vBurj'],19.55,{opacity:1});
+T('#eT',20.85,0.4,{opacity:[0,1],scaleY:[2.2,1]},'back'); T('#eS',21.8,0.3,{opacity:[0,1]},'out');
+set('#eT',0,{opacity:0}); set('#eS',0,{opacity:0});
+set(['#bBurj','#nBurj','#vBurj','#bMer','#nMer','#vMer','#eT','#eS'],24.3,{opacity:0});
+// F
+T('#f1',24.45,0.4,{opacity:[0,1],scale:[1.6,1]},'back');
+T('#f2',26.45,0.35,{opacity:[0,1],y:[40,0]},'out5');
+OUT(['#f1','#f2'],30.45);
+// G
+T('#g1',31.2,0.35,{opacity:[0,1],x:[-300,0]},'out5');
+T('#g2',33.05,0.35,{opacity:[0,1],x:[-300,0]},'out5');
+OUT(['#g1','#g2'],35.25);
+// H
+T('#h1',35.45,0.45,{opacity:[0,1],scaleY:[2.4,1],blur:[16,0]},'back');
+T('#h2',37.15,0.35,{opacity:[0,1],y:[40,0]},'out5');
+OUT(['#h1','#h2'],41.45);
+// I
+T('#i0',41.7,0.3,{opacity:[0,1]},'out');
+T('#i1',42.8,0.4,{opacity:[0,1],scaleY:[2,1]},'back');
+T('#i2',45.5,0.35,{opacity:[0,1],scale:[1.6,1]},'back');
+
+MG.init(); window.__seek=MG.seek; MG.seek(0);
+</script></body></html>
