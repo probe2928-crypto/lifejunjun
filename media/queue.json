@@ -377,6 +377,36 @@
       "created": "2026-11-02",
       "skip": true,
       "note": "tag=uz-non · 모션그래픽 · 검토 6.9→7.3→필수 수정 반영(7.7 예상) · Metricool 예약 2026-11-03 21:30"
+    },
+    {
+      "id": "own-18-kl-samsung",
+      "video": "media/own18-kl-samsung.mp4",
+      "cover": "media/own18-kl-samsung.jpg",
+      "spec": "tools/mg/specs/kl_samsung.html",
+      "link": "https://probe2928-crypto.github.io/yeobaek/go/?r=kl-samsung",
+      "created": "2026-11-03",
+      "skip": true,
+      "note": "tag=kl-samsung · 모션그래픽 48.8초 · 검토 6.9→7.6 · 2026-11-04 12:30 인스타+쇼츠·페북·스레드"
+    },
+    {
+      "id": "own-18b-kl-samsung-trial",
+      "video": "media/own18b-kl-samsung-trial.mp4",
+      "cover": "media/own18b-kl-samsung-trial.jpg",
+      "spec": "tools/mg/specs/kl_samsung_b.html",
+      "link": "https://probe2928-crypto.github.io/yeobaek/go/?r=kl-samsung-b",
+      "created": "2026-11-03",
+      "skip": true,
+      "note": "tag=kl-samsung-b · 체험판 릴스(TRIAL_REEL) 12.4초 질문형 훅 · 검토 5.4→7.1→7.5 · 2026-11-04 18:30 인스타 체험판+쇼츠"
+    },
+    {
+      "id": "own-19-tn-koxinga",
+      "video": "media/own19-tn-koxinga.mp4",
+      "cover": "media/own19-tn-koxinga.jpg",
+      "spec": "tools/mg/specs/tn_koxinga.html",
+      "link": "https://probe2928-crypto.github.io/yeobaek/go/tainan/?r=tn-koxinga",
+      "created": "2026-11-03",
+      "skip": true,
+      "note": "tag=tn-koxinga · 검토 6.1→6.9 미게시 — 첫 장면이 액자 사진(박물관 벽)이라 훅 약함. 새 훅 문장 녹음 후 재검토"
     }
   ]
 }
