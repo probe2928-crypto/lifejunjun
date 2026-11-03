@@ -1,0 +1,481 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 10,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "156099222": {
+    "pageid": 156099222,
+    "ns": 6,
+    "title": "File:Cannons at Fort Zeelandia, Tainan, Dec 2024.jpg",
+    "index": 10,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4869536,
+      "width": 4080,
+      "height": 3072,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Cannons_at_Fort_Zeelandia%2C_Tainan%2C_Dec_2024.jpg/1920px-Cannons_at_Fort_Zeelandia%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1205,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Cannons_at_Fort_Zeelandia%2C_Tainan%2C_Dec_2024.jpg/3840px-Cannons_at_Fort_Zeelandia%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Cannons_at_Fort_Zeelandia%2C_Tainan%2C_Dec_2024.jpg/1920px-Cannons_at_Fort_Zeelandia%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1205,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Cannons_at_Fort_Zeelandia%2C_Tainan%2C_Dec_2024.jpg/3840px-Cannons_at_Fort_Zeelandia%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Cannons_at_Fort_Zeelandia%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cannons_at_Fort_Zeelandia,_Tainan,_Dec_2024.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=156099222",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Cannons at Fort Zeelandia, Tainan, Dec 2024",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ralffralff\" title=\"User:Ralffralff\">Ralff Nestor Nacor</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "156098419": {
+    "pageid": 156098419,
+    "ns": 6,
+    "title": "File:Fort Zeelandia, Tainan, Dec 2024 (2).jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5003437,
+      "width": 4080,
+      "height": 3072,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%282%29.jpg/1920px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1205,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%282%29.jpg/3840px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%282%29.jpg/1920px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1205,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%282%29.jpg/3840px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia,_Tainan,_Dec_2024_(2).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=156098419",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Fort Zeelandia, Tainan, Dec 2024 (2)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ralffralff\" title=\"User:Ralffralff\">Ralff Nestor Nacor</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "156098430": {
+    "pageid": 156098430,
+    "ns": 6,
+    "title": "File:Fort Zeelandia, Tainan, Dec 2024 (3).jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5891105,
+      "width": 4080,
+      "height": 3072,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%283%29.jpg/1920px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1205,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%283%29.jpg/3840px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%283%29.jpg/1920px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1205,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%283%29.jpg/3840px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia,_Tainan,_Dec_2024_(3).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=156098430",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Fort Zeelandia, Tainan, Dec 2024 (3)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ralffralff\" title=\"User:Ralffralff\">Ralff Nestor Nacor</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "156098433": {
+    "pageid": 156098433,
+    "ns": 6,
+    "title": "File:Fort Zeelandia, Tainan, Dec 2024 (4).jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5767124,
+      "width": 4080,
+      "height": 3072,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%284%29.jpg/1920px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1205,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%284%29.jpg/3840px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%284%29.jpg/1920px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1205,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%284%29.jpg/3840px-Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Fort_Zeelandia%2C_Tainan%2C_Dec_2024_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia,_Tainan,_Dec_2024_(4).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=156098433",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Fort Zeelandia, Tainan, Dec 2024 (4)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ralffralff\" title=\"User:Ralffralff\">Ralff Nestor Nacor</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "40459972": {
+    "pageid": 40459972,
+    "ns": 6,
+    "title": "File:Fort Zeelandia, Tainan (Taiwan).jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4826329,
+      "width": 4318,
+      "height": 2961,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg/1920px-Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1097,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg/3840px-Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg/1920px-Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1097,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg/3840px-Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia,_Tainan_(Taiwan).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=40459972",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Wall of Fort Zeelandia,Tainan, Taiwan.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Mk2010\" title=\"User:Mk2010\">Mk2010</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "156105649": {
+    "pageid": 156105649,
+    "ns": 6,
+    "title": "File:Fort Zeelandia Map, Tainan, Dec 2024.jpg",
+    "index": 9,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4364754,
+      "width": 4080,
+      "height": 3072,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Fort_Zeelandia_Map%2C_Tainan%2C_Dec_2024.jpg/1920px-Fort_Zeelandia_Map%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1205,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Fort_Zeelandia_Map%2C_Tainan%2C_Dec_2024.jpg/3840px-Fort_Zeelandia_Map%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Fort_Zeelandia_Map%2C_Tainan%2C_Dec_2024.jpg/1920px-Fort_Zeelandia_Map%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1205,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Fort_Zeelandia_Map%2C_Tainan%2C_Dec_2024.jpg/3840px-Fort_Zeelandia_Map%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Fort_Zeelandia_Map%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia_Map,_Tainan,_Dec_2024.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=156105649",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Fort Zeelandia Map, Tainan, Dec 2024",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ralffralff\" title=\"User:Ralffralff\">Ralff Nestor Nacor</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "46391843": {
+    "pageid": 46391843,
+    "ns": 6,
+    "title": "File:Tainan Taiwan Fort-Zeelandia-01.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 13043640,
+      "width": 5193,
+      "height": 3462,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tainan_Taiwan_Fort-Zeelandia-01.jpg/1920px-Tainan_Taiwan_Fort-Zeelandia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tainan_Taiwan_Fort-Zeelandia-01.jpg/3840px-Tainan_Taiwan_Fort-Zeelandia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tainan_Taiwan_Fort-Zeelandia-01.jpg/1920px-Tainan_Taiwan_Fort-Zeelandia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tainan_Taiwan_Fort-Zeelandia-01.jpg/3840px-Tainan_Taiwan_Fort-Zeelandia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Tainan_Taiwan_Fort-Zeelandia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tainan_Taiwan_Fort-Zeelandia-01.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=46391843",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "An Ping, Tainan, Taiwan: Former Dutch fortification <i>\"Fort Zeelandia\"</i>.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Cccefalon\" title=\"User:Cccefalon\">CEphoto, Uwe Aranas</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "46420148": {
+    "pageid": 46420148,
+    "ns": 6,
+    "title": "File:Tainan Taiwan Fort-Zeelandia-03.jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 9542781,
+      "width": 5283,
+      "height": 2972,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tainan_Taiwan_Fort-Zeelandia-03.jpg/1920px-Tainan_Taiwan_Fort-Zeelandia-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 900,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tainan_Taiwan_Fort-Zeelandia-03.jpg/3840px-Tainan_Taiwan_Fort-Zeelandia-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tainan_Taiwan_Fort-Zeelandia-03.jpg/1920px-Tainan_Taiwan_Fort-Zeelandia-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 900,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tainan_Taiwan_Fort-Zeelandia-03.jpg/3840px-Tainan_Taiwan_Fort-Zeelandia-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Tainan_Taiwan_Fort-Zeelandia-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tainan_Taiwan_Fort-Zeelandia-03.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=46420148",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "An Ping, Tainan, Taiwan: Fort Zeelandia Museum",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Cccefalon\" title=\"User:Cccefalon\">CEphoto, Uwe Aranas</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "156099220": {
+    "pageid": 156099220,
+    "ns": 6,
+    "title": "File:Zeelandia City Museum, Tainan, Dec 2024 (3).jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4198568,
+      "width": 4080,
+      "height": 3072,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Zeelandia_City_Museum%2C_Tainan%2C_Dec_2024_%283%29.jpg/1920px-Zeelandia_City_Museum%2C_Tainan%2C_Dec_2024_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1205,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Zeelandia_City_Museum%2C_Tainan%2C_Dec_2024_%283%29.jpg/3840px-Zeelandia_City_Museum%2C_Tainan%2C_Dec_2024_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Zeelandia_City_Museum%2C_Tainan%2C_Dec_2024_%283%29.jpg/1920px-Zeelandia_City_Museum%2C_Tainan%2C_Dec_2024_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1205,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Zeelandia_City_Museum%2C_Tainan%2C_Dec_2024_%283%29.jpg/3840px-Zeelandia_City_Museum%2C_Tainan%2C_Dec_2024_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Zeelandia_City_Museum%2C_Tainan%2C_Dec_2024_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Zeelandia_City_Museum,_Tainan,_Dec_2024_(3).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=156099220",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Zeelandia City Museum, Tainan, Dec 2024 (3)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ralffralff\" title=\"User:Ralffralff\">Ralff Nestor Nacor</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "156052561": {
+    "pageid": 156052561,
+    "ns": 6,
+    "title": "File:Zeelandia Store, Tainan, Dec 2024.jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 6209842,
+      "width": 2946,
+      "height": 3482,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Zeelandia_Store%2C_Tainan%2C_Dec_2024.jpg/1920px-Zeelandia_Store%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1891,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Zeelandia_Store%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Zeelandia_Store%2C_Tainan%2C_Dec_2024.jpg/1920px-Zeelandia_Store%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1891,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Zeelandia_Store%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Zeelandia_Store%2C_Tainan%2C_Dec_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Zeelandia_Store,_Tainan,_Dec_2024.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=156052561",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Zeelandia Store, Tainan, Dec 2024",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ralffralff\" title=\"User:Ralffralff\">Ralff Nestor Nacor</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

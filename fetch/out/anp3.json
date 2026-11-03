@@ -1,0 +1,473 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "gsroffset": 10,
+  "continue": "gsroffset||"
+ },
+ "query": {
+  "pages": {
+   "62706954": {
+    "pageid": 62706954,
+    "ns": 6,
+    "title": "File:Fort Zeelandia, Anping District, Tainan City (Taiwan).jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4914116,
+      "width": 4605,
+      "height": 2979,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Fort_Zeelandia%2C_Anping_District%2C_Tainan_City_%28Taiwan%29.jpg/1920px-Fort_Zeelandia%2C_Anping_District%2C_Tainan_City_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1035,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Fort_Zeelandia%2C_Anping_District%2C_Tainan_City_%28Taiwan%29.jpg/3840px-Fort_Zeelandia%2C_Anping_District%2C_Tainan_City_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Fort_Zeelandia%2C_Anping_District%2C_Tainan_City_%28Taiwan%29.jpg/1920px-Fort_Zeelandia%2C_Anping_District%2C_Tainan_City_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1035,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Fort_Zeelandia%2C_Anping_District%2C_Tainan_City_%28Taiwan%29.jpg/3840px-Fort_Zeelandia%2C_Anping_District%2C_Tainan_City_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Fort_Zeelandia%2C_Anping_District%2C_Tainan_City_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia,_Anping_District,_Tainan_City_(Taiwan).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=62706954",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "This is a photo of a monument in Taiwan identified by the ID",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "40459972": {
+    "pageid": 40459972,
+    "ns": 6,
+    "title": "File:Fort Zeelandia, Tainan (Taiwan).jpg",
+    "index": 5,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4826329,
+      "width": 4318,
+      "height": 2961,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg/1920px-Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1097,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg/3840px-Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg/1920px-Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1097,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg/3840px-Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Fort_Zeelandia%2C_Tainan_%28Taiwan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia,_Tainan_(Taiwan).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=40459972",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Wall of Fort Zeelandia,Tainan, Taiwan.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Mk2010\" title=\"User:Mk2010\">Mk2010</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "79423249": {
+    "pageid": 79423249,
+    "ns": 6,
+    "title": "File:Fort Zeelandia 05.jpg",
+    "index": 8,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 591276,
+      "width": 1186,
+      "height": 741,
+      "thumburl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Fort_Zeelandia_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "thumbwidth": 1600,
+      "thumbheight": 1000,
+      "thumbattribs": {
+       "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Fort_Zeelandia_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1000
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Fort_Zeelandia_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia_05.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=79423249",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "​日治時期的安平熱蘭遮城",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "台南市",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "92411354": {
+    "pageid": 92411354,
+    "ns": 6,
+    "title": "File:Fort Zeelandia 2014 2.jpg",
+    "index": 10,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3973143,
+      "width": 4288,
+      "height": 3216,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Fort_Zeelandia_2014_2.jpg/1920px-Fort_Zeelandia_2014_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Fort_Zeelandia_2014_2.jpg/3840px-Fort_Zeelandia_2014_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Fort_Zeelandia_2014_2.jpg/1920px-Fort_Zeelandia_2014_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Fort_Zeelandia_2014_2.jpg/3840px-Fort_Zeelandia_2014_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Fort_Zeelandia_2014_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia_2014_2.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=92411354",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Fort Zeelandia in Tainan.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Smiley.toerist\" title=\"User:Smiley.toerist\">Smiley.toerist</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "92411352": {
+    "pageid": 92411352,
+    "ns": 6,
+    "title": "File:Fort Zeelandia 2014 4.jpg",
+    "index": 9,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3976152,
+      "width": 4288,
+      "height": 3216,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Fort_Zeelandia_2014_4.jpg/1920px-Fort_Zeelandia_2014_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Fort_Zeelandia_2014_4.jpg/3840px-Fort_Zeelandia_2014_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Fort_Zeelandia_2014_4.jpg/1920px-Fort_Zeelandia_2014_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Fort_Zeelandia_2014_4.jpg/3840px-Fort_Zeelandia_2014_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Fort_Zeelandia_2014_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia_2014_4.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=92411352",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Fort Zeelandia in Tainan.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Smiley.toerist\" title=\"User:Smiley.toerist\">Smiley.toerist</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "153390431": {
+    "pageid": 153390431,
+    "ns": 6,
+    "title": "File:Fort Zeelandia Gebäude.jpg",
+    "index": 7,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5103927,
+      "width": 3264,
+      "height": 4928,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Fort_Zeelandia_Geb%C3%A4ude.jpg/1920px-Fort_Zeelandia_Geb%C3%A4ude.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2416,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/4/47/Fort_Zeelandia_Geb%C3%A4ude.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Fort_Zeelandia_Geb%C3%A4ude.jpg/1920px-Fort_Zeelandia_Geb%C3%A4ude.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2416,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/4/47/Fort_Zeelandia_Geb%C3%A4ude.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Fort_Zeelandia_Geb%C3%A4ude.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia_Geb%C3%A4ude.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=153390431",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "innerster Verteidigungsring des Fort Zeelandia",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:CEK2004&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:CEK2004 (page does not exist)\">CEK2004</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "55896583": {
+    "pageid": 55896583,
+    "ns": 6,
+    "title": "File:Fort Zeelandia 安平古堡 - panoramio (2).jpg",
+    "index": 6,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5502480,
+      "width": 3880,
+      "height": 2910,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Fort_Zeelandia_%E5%AE%89%E5%B9%B3%E5%8F%A4%E5%A0%A1_-_panoramio_%282%29.jpg/1920px-Fort_Zeelandia_%E5%AE%89%E5%B9%B3%E5%8F%A4%E5%A0%A1_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Fort_Zeelandia_%E5%AE%89%E5%B9%B3%E5%8F%A4%E5%A0%A1_-_panoramio_%282%29.jpg/3840px-Fort_Zeelandia_%E5%AE%89%E5%B9%B3%E5%8F%A4%E5%A0%A1_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Fort_Zeelandia_%E5%AE%89%E5%B9%B3%E5%8F%A4%E5%A0%A1_-_panoramio_%282%29.jpg/1920px-Fort_Zeelandia_%E5%AE%89%E5%B9%B3%E5%8F%A4%E5%A0%A1_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Fort_Zeelandia_%E5%AE%89%E5%B9%B3%E5%8F%A4%E5%A0%A1_-_panoramio_%282%29.jpg/3840px-Fort_Zeelandia_%E5%AE%89%E5%B9%B3%E5%8F%A4%E5%A0%A1_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Fort_Zeelandia_%E5%AE%89%E5%B9%B3%E5%8F%A4%E5%A0%A1_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia_%E5%AE%89%E5%B9%B3%E5%8F%A4%E5%A0%A1_-_panoramio_(2).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=55896583",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "Fort Zeelandia  安平古堡",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161026134829/http://www.panoramio.com/user/6452510?with_photo_id=82695980\">lienyuan lee</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "46391843": {
+    "pageid": 46391843,
+    "ns": 6,
+    "title": "File:Tainan Taiwan Fort-Zeelandia-01.jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 13043640,
+      "width": 5193,
+      "height": 3462,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tainan_Taiwan_Fort-Zeelandia-01.jpg/1920px-Tainan_Taiwan_Fort-Zeelandia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tainan_Taiwan_Fort-Zeelandia-01.jpg/3840px-Tainan_Taiwan_Fort-Zeelandia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tainan_Taiwan_Fort-Zeelandia-01.jpg/1920px-Tainan_Taiwan_Fort-Zeelandia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tainan_Taiwan_Fort-Zeelandia-01.jpg/3840px-Tainan_Taiwan_Fort-Zeelandia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Tainan_Taiwan_Fort-Zeelandia-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tainan_Taiwan_Fort-Zeelandia-01.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=46391843",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "An Ping, Tainan, Taiwan: Former Dutch fortification <i>\"Fort Zeelandia\"</i>.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Cccefalon\" title=\"User:Cccefalon\">CEphoto, Uwe Aranas</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "46412645": {
+    "pageid": 46412645,
+    "ns": 6,
+    "title": "File:Tainan Taiwan Fort-Zeelandia-02.jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 15517909,
+      "width": 5383,
+      "height": 3589,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tainan_Taiwan_Fort-Zeelandia-02.jpg/1920px-Tainan_Taiwan_Fort-Zeelandia-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1067,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tainan_Taiwan_Fort-Zeelandia-02.jpg/3840px-Tainan_Taiwan_Fort-Zeelandia-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tainan_Taiwan_Fort-Zeelandia-02.jpg/1920px-Tainan_Taiwan_Fort-Zeelandia-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1067,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tainan_Taiwan_Fort-Zeelandia-02.jpg/3840px-Tainan_Taiwan_Fort-Zeelandia-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Tainan_Taiwan_Fort-Zeelandia-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tainan_Taiwan_Fort-Zeelandia-02.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=46412645",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "An Ping, Tainan, Taiwan: Statue of military leader Koxinga in the former Dutch fortification <i>\"Fort Zeelandia\"</i>.",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Cccefalon\" title=\"User:Cccefalon\">CEphoto, Uwe Aranas</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "46420148": {
+    "pageid": 46420148,
+    "ns": 6,
+    "title": "File:Tainan Taiwan Fort-Zeelandia-03.jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 9542781,
+      "width": 5283,
+      "height": 2972,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tainan_Taiwan_Fort-Zeelandia-03.jpg/1920px-Tainan_Taiwan_Fort-Zeelandia-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 900,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tainan_Taiwan_Fort-Zeelandia-03.jpg/3840px-Tainan_Taiwan_Fort-Zeelandia-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tainan_Taiwan_Fort-Zeelandia-03.jpg/1920px-Tainan_Taiwan_Fort-Zeelandia-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 900,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tainan_Taiwan_Fort-Zeelandia-03.jpg/3840px-Tainan_Taiwan_Fort-Zeelandia-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Tainan_Taiwan_Fort-Zeelandia-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tainan_Taiwan_Fort-Zeelandia-03.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=46420148",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "An Ping, Tainan, Taiwan: Fort Zeelandia Museum",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Cccefalon\" title=\"User:Cccefalon\">CEphoto, Uwe Aranas</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}
