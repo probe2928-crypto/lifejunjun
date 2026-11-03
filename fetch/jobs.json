@@ -1,4 +1,63 @@
-[{"type":"tts","name":"fix3","texts":["성인 키의 두 배 가까이죠.","사마르칸트 같이 갈 사람은, 첫 댓글 링크를 눌러주세요."],"rate":"+18%"},
- {"type":"commons_search","name":"kr1","q":"Komodo National Park ranger filetype:bitmap","n":10},
- {"type":"commons_search","name":"kr2","q":"Komodo dragon tourists guide stick Loh Liang filetype:bitmap","n":10},
- {"type":"commons_search","name":"kd","q":"Varanus komodoensis Rinca filetype:bitmap","n":12}]
+[
+ {
+  "type": "tts",
+  "name": "kls",
+  "texts": [
+   "세계에서 제일 높은 빌딩 일 위, 이 위. 둘 다 한국 회사가 지었어요.",
+   "일 위, 두바이 부르즈 할리파. 팔백이십팔 미터.",
+   "이 위, 쿠알라룸푸르 메르데카 백십팔. 육백칠십팔 점 구 미터.",
+   "롯데월드타워보다 백이십사 미터 더 높아요.",
+   "두 빌딩 모두, 삼성물산이 해외 회사들과 함께 시공했어요.",
+   "그런데 처음이 아니에요. 천구백구십팔 년, 바로 옆 페트로나스 쌍둥이 빌딩.",
+   "한 쪽은 일본 회사가, 다른 한 쪽은 한국 회사가 나눠 지었어요.",
+   "사백오십이 미터. 타이베이 일공일이 생기기 전까지, 세계에서 제일 높았죠.",
+   "쿠알라룸푸르 가면 두 빌딩, 한 번에 올려다보세요. 이거 아는 친구한테 보내주세요.",
+   "부르즈 할리파랑 메르데카 백십팔, 공통점이 하나 있어요. 둘 다 한국 회사가 지었어요."
+  ],
+  "rate": "+18%"
+ },
+ {
+  "type": "tts",
+  "name": "tnk",
+  "texts": [
+   "대만이 영웅이라 부르는 이 남자, 엄마는 일본인이에요.",
+   "이름은 정성공. 천육백이십사 년, 일본 히라도에서 태어났어요.",
+   "같은 해, 네덜란드가 대만 타이난에 들어와요.",
+   "천육백육십일 년, 정성공이 타이난에 상륙하고, 이듬해 이월 네덜란드가 항복해요.",
+   "네덜란드가 대만에 머문 지 삼십팔 년 만이었죠.",
+   "그 성의 벽이 지금도 타이난 안핑에 남아 있어요.",
+   "타이난 가면 이 벽 앞에서 이 이야기 떠올려 보세요. 같이 갈 사람은 첫 댓글 링크."
+  ],
+  "rate": "+18%"
+ },
+ {
+  "type": "commons_search",
+  "name": "burj",
+  "q": "Burj Khalifa from below filetype:bitmap",
+  "n": 8
+ },
+ {
+  "type": "commons_search",
+  "name": "petro",
+  "q": "Petronas Towers night filetype:bitmap",
+  "n": 8
+ },
+ {
+  "type": "commons_search",
+  "name": "koxinga",
+  "q": "Koxinga portrait filetype:bitmap",
+  "n": 8
+ },
+ {
+  "type": "commons_search",
+  "name": "anping",
+  "q": "Anping Old Fort Zeelandia wall Tainan filetype:bitmap",
+  "n": 10
+ },
+ {
+  "type": "commons_search",
+  "name": "hirado",
+  "q": "Hirado Nagasaki filetype:bitmap",
+  "n": 4
+ }
+]
