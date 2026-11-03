@@ -1,0 +1,191 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "129189181": {
+    "pageid": 129189181,
+    "ns": 6,
+    "title": "File:John Hancock Center, Chicago, Illinois (29563337208).jpg",
+    "index": 4,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4605949,
+      "width": 4030,
+      "height": 1680,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/John_Hancock_Center%2C_Chicago%2C_Illinois_%2829563337208%29.jpg/1920px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2829563337208%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 667,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/John_Hancock_Center%2C_Chicago%2C_Illinois_%2829563337208%29.jpg/3840px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2829563337208%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/John_Hancock_Center%2C_Chicago%2C_Illinois_%2829563337208%29.jpg/1920px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2829563337208%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 667,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/John_Hancock_Center%2C_Chicago%2C_Illinois_%2829563337208%29.jpg/3840px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2829563337208%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/John_Hancock_Center%2C_Chicago%2C_Illinois_%2829563337208%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:John_Hancock_Center,_Chicago,_Illinois_(29563337208).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=129189181",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<p>The John Hancock Center, at 875 North Michigan Avenue in the Streeterville area of Chicago, Illinois, United States, is a 100-story, 1,127-foot(344 m) tall skyscraper, constructed under the supervision of Skidmore, Owings and Merrill, with chief designer Bruce Graham and structural engineer Fazlur Khan. When the building topped out on May 6, 1968, it was the tallest building in the world outside New York City. It is currently the fourth-tallest building in Chicago and the seventh-tallest in the United States, after One World Trade Center, the Willis Tower, the Empire State Building, the Bank of America Tower, the Trump Tower Chicago, and the Aon Center. When measured to the top of its antenna masts, it stands at 1,506 feet (459 m). The building is home to offices and restaurants, as well as about 700 condominiums, and contains the third highest residence (above adjacent ground level) in the world, after the Trump Tower (also in Chicago), and the Burj Khalifa (in Dubai). The building was named for John Hancock Mutual Life Insurance Company, a developer and original tenant of the building, and has the nickname \"Big John\".\n</p><p>The 95th floor has long been home to a restaurant, the latest tenant being \"The Signature Room on the 95th Floor\". Diners can look out at Chicago and Lake Michigan. The Observatory attraction (called \"John Hancock Observatory\") competes with the Willis Tower's Skydeck across town. John Hancock Center is in the heart of Michigan Avenue, a prime tourist hotspot in Chicago, while the Willis Tower is in the financial district. John Hancock Observatory allows a 360° view of the city, up to four states, and a distance of over 80 miles (130 km). The Observatory has Chicago's only open-air SkyWalk and also features a free multimedia tour in six languages, narrated by actor David Schwimmer. From January to March the Observatory offers what is claimed as the world's highest ice skating rink, using a synthetic surface that enables the use of standard ice skates at normal room temperature. The 44th-floor sky lobby features America's highest indoor swimming pool.\n</p><p>&lt;a href=\"<a class=\"external free\" data-mw-original-href=\"http://en.wikipedia.org/wiki/John_Hancock_Center\" href=\"https://en.wikipedia.org/wiki/John_Hancock_Center\">http://en.wikipedia.org/wiki/John_Hancock_Center</a>\" rel=\"noreferrer nofollow\"&gt;en.wikipedia.org/wiki/John_Hancock_Center&lt;/a&gt;\n</p>\n&lt;a href=\"<a class=\"external free\" data-mw-original-href=\"http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License\" href=\"https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License\">http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License</a>\" rel=\"noreferrer nofollow\"&gt;en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_...&lt;/a&gt;",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/75683070@N00\">Ken Lund</a> from Reno, Nevada, USA",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "128784063": {
+    "pageid": 128784063,
+    "ns": 6,
+    "title": "File:John Hancock Center, Chicago, Illinois (41568404450).jpg",
+    "index": 1,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 8742468,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/John_Hancock_Center%2C_Chicago%2C_Illinois_%2841568404450%29.jpg/1920px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2841568404450%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/John_Hancock_Center%2C_Chicago%2C_Illinois_%2841568404450%29.jpg/3840px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2841568404450%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/John_Hancock_Center%2C_Chicago%2C_Illinois_%2841568404450%29.jpg/1920px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2841568404450%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/John_Hancock_Center%2C_Chicago%2C_Illinois_%2841568404450%29.jpg/3840px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2841568404450%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/John_Hancock_Center%2C_Chicago%2C_Illinois_%2841568404450%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:John_Hancock_Center,_Chicago,_Illinois_(41568404450).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=128784063",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<p>The John Hancock Center, at 875 North Michigan Avenue in the Streeterville area of Chicago, Illinois, United States, is a 100-story, 1,127-foot(344 m) tall skyscraper, constructed under the supervision of Skidmore, Owings and Merrill, with chief designer Bruce Graham and structural engineer Fazlur Khan. When the building topped out on May 6, 1968, it was the tallest building in the world outside New York City. It is currently the fourth-tallest building in Chicago and the seventh-tallest in the United States, after One World Trade Center, the Willis Tower, the Empire State Building, the Bank of America Tower, the Trump Tower Chicago, and the Aon Center. When measured to the top of its antenna masts, it stands at 1,506 feet (459 m). The building is home to offices and restaurants, as well as about 700 condominiums, and contains the third highest residence (above adjacent ground level) in the world, after the Trump Tower (also in Chicago), and the Burj Khalifa (in Dubai). The building was named for John Hancock Mutual Life Insurance Company, a developer and original tenant of the building, and has the nickname \"Big John\".\n</p><p>The 95th floor has long been home to a restaurant, the latest tenant being \"The Signature Room on the 95th Floor\". Diners can look out at Chicago and Lake Michigan. The Observatory attraction (called \"John Hancock Observatory\") competes with the Willis Tower's Skydeck across town. John Hancock Center is in the heart of Michigan Avenue, a prime tourist hotspot in Chicago, while the Willis Tower is in the financial district. John Hancock Observatory allows a 360° view of the city, up to four states, and a distance of over 80 miles (130 km). The Observatory has Chicago's only open-air SkyWalk and also features a free multimedia tour in six languages, narrated by actor David Schwimmer. From January to March the Observatory offers what is claimed as the world's highest ice skating rink, using a synthetic surface that enables the use of standard ice skates at normal room temperature. The 44th-floor sky lobby features America's highest indoor swimming pool.\n</p><p>&lt;a href=\"<a class=\"external free\" data-mw-original-href=\"http://en.wikipedia.org/wiki/John_Hancock_Center\" href=\"https://en.wikipedia.org/wiki/John_Hancock_Center\">http://en.wikipedia.org/wiki/John_Hancock_Center</a>\" rel=\"noreferrer nofollow\"&gt;en.wikipedia.org/wiki/John_Hancock_Center&lt;/a&gt;\n</p>\n&lt;a href=\"<a class=\"external free\" data-mw-original-href=\"http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License\" href=\"https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License\">http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License</a>\" rel=\"noreferrer nofollow\"&gt;en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_...&lt;/a&gt;",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/75683070@N00\">Ken Lund</a> from Reno, Nevada, USA",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "128695051": {
+    "pageid": 128695051,
+    "ns": 6,
+    "title": "File:John Hancock Center, Chicago, Illinois (41584168020).jpg",
+    "index": 2,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3535682,
+      "width": 3000,
+      "height": 4000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/John_Hancock_Center%2C_Chicago%2C_Illinois_%2841584168020%29.jpg/1920px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2841584168020%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 2133,
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/John_Hancock_Center%2C_Chicago%2C_Illinois_%2841584168020%29.jpg/1920px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2841584168020%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 2133
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/John_Hancock_Center%2C_Chicago%2C_Illinois_%2841584168020%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:John_Hancock_Center,_Chicago,_Illinois_(41584168020).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=128695051",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<p>The John Hancock Center, at 875 North Michigan Avenue in the Streeterville area of Chicago, Illinois, United States, is a 100-story, 1,127-foot(344 m) tall skyscraper, constructed under the supervision of Skidmore, Owings and Merrill, with chief designer Bruce Graham and structural engineer Fazlur Khan. When the building topped out on May 6, 1968, it was the tallest building in the world outside New York City. It is currently the fourth-tallest building in Chicago and the seventh-tallest in the United States, after One World Trade Center, the Willis Tower, the Empire State Building, the Bank of America Tower, the Trump Tower Chicago, and the Aon Center. When measured to the top of its antenna masts, it stands at 1,506 feet (459 m). The building is home to offices and restaurants, as well as about 700 condominiums, and contains the third highest residence (above adjacent ground level) in the world, after the Trump Tower (also in Chicago), and the Burj Khalifa (in Dubai). The building was named for John Hancock Mutual Life Insurance Company, a developer and original tenant of the building, and has the nickname \"Big John\".\n</p><p>The 95th floor has long been home to a restaurant, the latest tenant being \"The Signature Room on the 95th Floor\". Diners can look out at Chicago and Lake Michigan. The Observatory attraction (called \"John Hancock Observatory\") competes with the Willis Tower's Skydeck across town. John Hancock Center is in the heart of Michigan Avenue, a prime tourist hotspot in Chicago, while the Willis Tower is in the financial district. John Hancock Observatory allows a 360° view of the city, up to four states, and a distance of over 80 miles (130 km). The Observatory has Chicago's only open-air SkyWalk and also features a free multimedia tour in six languages, narrated by actor David Schwimmer. From January to March the Observatory offers what is claimed as the world's highest ice skating rink, using a synthetic surface that enables the use of standard ice skates at normal room temperature. The 44th-floor sky lobby features America's highest indoor swimming pool.\n</p><p>&lt;a href=\"<a class=\"external free\" data-mw-original-href=\"http://en.wikipedia.org/wiki/John_Hancock_Center\" href=\"https://en.wikipedia.org/wiki/John_Hancock_Center\">http://en.wikipedia.org/wiki/John_Hancock_Center</a>\" rel=\"noreferrer nofollow\"&gt;en.wikipedia.org/wiki/John_Hancock_Center&lt;/a&gt;\n</p>\n&lt;a href=\"<a class=\"external free\" data-mw-original-href=\"http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License\" href=\"https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License\">http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License</a>\" rel=\"noreferrer nofollow\"&gt;en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_...&lt;/a&gt;",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/75683070@N00\">Ken Lund</a> from Reno, Nevada, USA",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   },
+   "128900746": {
+    "pageid": 128900746,
+    "ns": 6,
+    "title": "File:John Hancock Center, Chicago, Illinois (43376680361).jpg",
+    "index": 3,
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 3409226,
+      "width": 4000,
+      "height": 3000,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/John_Hancock_Center%2C_Chicago%2C_Illinois_%2843376680361%29.jpg/1920px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2843376680361%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1600,
+      "thumbheight": 1200,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/John_Hancock_Center%2C_Chicago%2C_Illinois_%2843376680361%29.jpg/3840px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2843376680361%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/John_Hancock_Center%2C_Chicago%2C_Illinois_%2843376680361%29.jpg/1920px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2843376680361%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 1600,
+       "height": 1200,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/John_Hancock_Center%2C_Chicago%2C_Illinois_%2843376680361%29.jpg/3840px-John_Hancock_Center%2C_Chicago%2C_Illinois_%2843376680361%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/John_Hancock_Center%2C_Chicago%2C_Illinois_%2843376680361%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:John_Hancock_Center,_Chicago,_Illinois_(43376680361).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=128900746",
+      "extmetadata": {
+       "ImageDescription": {
+        "value": "<p>The John Hancock Center, at 875 North Michigan Avenue in the Streeterville area of Chicago, Illinois, United States, is a 100-story, 1,127-foot(344 m) tall skyscraper, constructed under the supervision of Skidmore, Owings and Merrill, with chief designer Bruce Graham and structural engineer Fazlur Khan. When the building topped out on May 6, 1968, it was the tallest building in the world outside New York City. It is currently the fourth-tallest building in Chicago and the seventh-tallest in the United States, after One World Trade Center, the Willis Tower, the Empire State Building, the Bank of America Tower, the Trump Tower Chicago, and the Aon Center. When measured to the top of its antenna masts, it stands at 1,506 feet (459 m). The building is home to offices and restaurants, as well as about 700 condominiums, and contains the third highest residence (above adjacent ground level) in the world, after the Trump Tower (also in Chicago), and the Burj Khalifa (in Dubai). The building was named for John Hancock Mutual Life Insurance Company, a developer and original tenant of the building, and has the nickname \"Big John\".\n</p><p>The 95th floor has long been home to a restaurant, the latest tenant being \"The Signature Room on the 95th Floor\". Diners can look out at Chicago and Lake Michigan. The Observatory attraction (called \"John Hancock Observatory\") competes with the Willis Tower's Skydeck across town. John Hancock Center is in the heart of Michigan Avenue, a prime tourist hotspot in Chicago, while the Willis Tower is in the financial district. John Hancock Observatory allows a 360° view of the city, up to four states, and a distance of over 80 miles (130 km). The Observatory has Chicago's only open-air SkyWalk and also features a free multimedia tour in six languages, narrated by actor David Schwimmer. From January to March the Observatory offers what is claimed as the world's highest ice skating rink, using a synthetic surface that enables the use of standard ice skates at normal room temperature. The 44th-floor sky lobby features America's highest indoor swimming pool.\n</p><p>&lt;a href=\"<a class=\"external free\" data-mw-original-href=\"http://en.wikipedia.org/wiki/John_Hancock_Center\" href=\"https://en.wikipedia.org/wiki/John_Hancock_Center\">http://en.wikipedia.org/wiki/John_Hancock_Center</a>\" rel=\"noreferrer nofollow\"&gt;en.wikipedia.org/wiki/John_Hancock_Center&lt;/a&gt;\n</p>\n&lt;a href=\"<a class=\"external free\" data-mw-original-href=\"http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License\" href=\"https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License\">http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License</a>\" rel=\"noreferrer nofollow\"&gt;en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_...&lt;/a&gt;",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/75683070@N00\">Ken Lund</a> from Reno, Nevada, USA",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

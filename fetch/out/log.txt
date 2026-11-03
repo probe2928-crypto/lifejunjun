@@ -1,7 +1,3 @@
-tts kls 10
-tts tnk 7
-commons burj ok
-commons petro ok
-commons koxinga ok
-commons anping ok
-commons hirado ok
+commons burj2 ok
+commons anp2 ok
+commons zeel ok
