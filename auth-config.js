@@ -12,6 +12,7 @@
     "site": "lifejunjun",
     "lang": "ko",
     "providers": [
+      "google",
       "email"
     ],
     // 구글·카카오·애플: Supabase 공급자 설정이 끝나면 아래 목록에서 providers 로 옮기면 버튼이 켜진다 (2026-11-03 이메일만 우선 공개)
