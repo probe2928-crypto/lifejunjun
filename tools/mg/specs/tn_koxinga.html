@@ -47,7 +47,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transpa
 
 <div class="abs big" id="d1" style="top:380px;font-size:200px">1661</div>
 <div class="abs pb" id="d2" style="top:600px;font-size:72px">정성공, 타이난 <span class="lime">상륙</span></div>
-<div class="abs big lime" id="d3" style="top:760px;font-size:150px">1662.2</div>
+<div class="abs big lime" id="d3" style="top:760px;font-size:130px">1662년 2월</div>
 <div class="abs big" id="d4" style="top:930px;font-size:96px"><span class="rbox">네덜란드 항복</span></div>
 <div class="abs pb" id="e1" style="top:420px;font-size:64px">네덜란드가 대만에 머문 시간</div>
 <div class="abs big lime" id="e2" style="top:520px;font-size:330px">38년</div>
@@ -56,7 +56,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transpa
 <div class="abs big" id="f1" style="top:420px;font-size:110px">지금도 남은 <span class="lime">벽</span></div>
 <div class="abs pb" id="f2" style="top:570px;font-size:64px">타이난 안핑 · 네덜란드 시대 성벽</div>
 
-<div class="abs mono" id="g0" style="top:400px">타이난 · 안핑 고성 (지금 모습)</div>
+<div class="abs mono" id="g0" style="top:400px">타이난 안핑 · 네덜란드 시대 성벽</div>
 <div class="abs big" id="g1" style="top:480px;font-size:88px">이 벽 앞에서 <span class="lime">이 이야기</span></div>
 <div class="abs big" id="g2" style="top:640px;font-size:74px">같이 갈 사람 → <span class="box">첫 댓글 링크</span></div>
 
@@ -69,8 +69,8 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transpa
 <script>
 const {T,set}=MG;
 const OUT=(els,t,d=0.2)=>T(els,t,d,{opacity:[1,0],scale:[1,1.12],blur:[0,14]},'in');
-set('#dark',0,{opacity:0}); set('#dark',13.55,{opacity:1}); set('#dark',23.5,{opacity:0});
-set('#tagA',0,{opacity:1}); set('#tagA',13.55,{opacity:0}); set('#tagA',23.5,{opacity:1});
+set('#dark',0,{opacity:0}); set('#dark',13.55,{opacity:0.5}); set('#dark',23.5,{opacity:0});
+set('#tagA',0,{opacity:1});
 set('#fl',0,{opacity:0}); T('#fl',17.6,0.3,{opacity:[0.6,0]},'out');
 const SK=t=>T('#sk',t,0.4,{x:[-1500,1500],rotate:[-28,-28],opacity:[1,1]},'inOut');
 set('#sk',0,{opacity:0}); [3.9,9.6,13.4,23.35,27.0].forEach(SK);

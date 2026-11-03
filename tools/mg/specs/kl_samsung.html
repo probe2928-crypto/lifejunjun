@@ -38,7 +38,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transpa
 <!-- A hook 0–5.8 (complete on frame 0) -->
 <div class="abs mono" id="a0" style="top:380px">쿠알라룸푸르 · 메르데카 118</div>
 <div class="abs big" id="a1" style="top:460px;font-size:130px">세계 1위, 2위 빌딩</div>
-<div class="abs big" id="a2" style="top:640px;font-size:112px"><span class="box">둘 다 한국이 지었어요</span></div>
+<div class="abs big" id="a2" style="top:640px;font-size:96px"><span class="box">둘 다 한국 회사가 지었어요</span></div>
 
 <!-- chart (B, D, E) -->
 <div class="base" id="cbase"></div>
@@ -52,7 +52,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transpa
 <div class="bn" id="nMer" style="left:410px">메르데카 118<br><span style="font-family:PS;font-size:28px">쿠알라룸푸르</span></div>
 <div class="bn" id="nLot" style="left:745px">롯데월드타워<br><span style="font-family:PS;font-size:28px">서울</span></div>
 <div class="brk" id="brk" style="left:975px;top:576px;width:40px;height:105px"></div>
-<div class="abs big" id="dDiff" style="top:470px;left:auto;right:0px;width:260px;font-size:76px;color:#fff"><span class="rbox">+124m</span></div>
+<div class="abs big" id="dDiff" style="top:470px;left:auto;right:0px;width:260px;font-size:56px;color:#fff"><span class="rbox">+124m</span></div>
 <div class="abs pb" id="bH" style="top:285px;font-size:64px">1위 <span class="lime">부르즈 할리파</span></div>
 <div class="abs big" id="eT" style="top:272px;font-size:84px">시공 <span class="lime">삼성물산</span></div>
 <div class="abs mono" id="eS" style="top:385px">해외 회사들과 합작</div>
@@ -64,7 +64,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transpa
 
 <!-- F/G/H Petronas -->
 <div class="abs big" id="f1" style="top:420px;font-size:110px">그런데 <span class="lime">처음이 아니에요</span></div>
-<div class="abs pb" id="f2" style="top:580px;font-size:72px"><span class="box">1998</span> 페트로나스 트윈타워</div>
+<div class="abs pb" id="f2" style="top:580px;font-size:66px"><span class="box">1998</span> 같은 도시 페트로나스 트윈타워</div>
 <div class="card" id="g1" style="top:480px">타워 1 · <span style="color:var(--lime)">일본</span> 회사<small>하자마 컨소시엄</small></div>
 <div class="card" id="g2" style="top:690px">타워 2 · <span style="color:var(--lime)">한국</span> 회사<small>삼성물산 컨소시엄 (극동건설 포함)</small></div>
 <div class="abs big lime" id="h1" style="top:420px;font-size:210px">452m</div>
@@ -72,7 +72,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transpa
 
 <!-- I CTA -->
 <div class="abs mono" id="i0" style="top:400px">쿠알라룸푸르 가면</div>
-<div class="abs big" id="i1" style="top:480px;font-size:120px"><span class="lime">두 빌딩</span> 같이 보기</div>
+<div class="abs big" id="i1" style="top:480px;font-size:100px"><span class="lime">이 빌딩들</span> 꼭 올려다보기</div>
 <div class="abs big" id="i2" style="top:660px;font-size:96px"><span class="box">아는 친구한테 보내주세요</span></div>
 
 <div class="tag" id="tag1">실제 촬영 · 쿠알라룸푸르</div>
@@ -90,9 +90,9 @@ const SHOW=(els,t0,t1)=>{set(els,0,{opacity:0});set(els,t0,{opacity:1});set(els,
 set('#dark',0,{opacity:0}); set('#dark',5.8,{opacity:1}); set('#dark',10.35,{opacity:0}); set('#dark',16.2,{opacity:1}); set('#dark',24.4,{opacity:0});
 set('#fl',0,{opacity:0}); T('#fl',24.35,0.3,{opacity:[0.7,0]},'out');
 SHOW('#tag1',0,5.8); set('#tag1',10.35,{opacity:1}); set('#tag1',16.2,{opacity:0});
-SHOW('#tag2',24.4,48.6);
+SHOW('#tag2',24.4,48.8);
 const SK=t=>T('#sk',t,0.4,{x:[-1500,1500],rotate:[-28,-28],opacity:[1,1]},'inOut');
-set('#sk',0,{opacity:0}); [5.65,10.2,16.05,24.25,41.5].forEach(SK);
+set('#sk',0,{opacity:0}); [5.65,10.2,16.05,24.25,41.75].forEach(SK);
 
 // A
 set(['#a0','#a1','#a2'],0,{opacity:1,scale:1}); set('#a2',0,{rotate:-2});
@@ -130,19 +130,19 @@ set(['#bBurj','#nBurj','#vBurj','#bMer','#nMer','#vMer','#eT','#eS'],24.3,{opaci
 // F
 T('#f1',24.45,0.4,{opacity:[0,1],scale:[1.6,1]},'back');
 T('#f2',26.45,0.35,{opacity:[0,1],y:[40,0]},'out5');
-OUT(['#f1','#f2'],30.45);
+OUT(['#f1','#f2'],30.7);
 // G
-T('#g1',31.2,0.35,{opacity:[0,1],x:[-300,0]},'out5');
-T('#g2',33.05,0.35,{opacity:[0,1],x:[-300,0]},'out5');
-OUT(['#g1','#g2'],35.25);
+T('#g1',31.45,0.35,{opacity:[0,1],x:[-300,0]},'out5');
+T('#g2',33.3,0.35,{opacity:[0,1],x:[-300,0]},'out5');
+OUT(['#g1','#g2'],35.5);
 // H
-T('#h1',35.45,0.45,{opacity:[0,1],scaleY:[2.4,1],blur:[16,0]},'back');
-T('#h2',37.15,0.35,{opacity:[0,1],y:[40,0]},'out5');
-OUT(['#h1','#h2'],41.45);
+T('#h1',35.7,0.45,{opacity:[0,1],scaleY:[2.4,1],blur:[16,0]},'back');
+T('#h2',37.4,0.35,{opacity:[0,1],y:[40,0]},'out5');
+OUT(['#h1','#h2'],41.7);
 // I
-T('#i0',41.7,0.3,{opacity:[0,1]},'out');
-T('#i1',42.8,0.4,{opacity:[0,1],scaleY:[2,1]},'back');
-T('#i2',45.5,0.35,{opacity:[0,1],scale:[1.6,1]},'back');
+T('#i0',41.95,0.3,{opacity:[0,1]},'out');
+T('#i1',43.05,0.4,{opacity:[0,1],scaleY:[2,1]},'back');
+T('#i2',45.75,0.35,{opacity:[0,1],scale:[1.6,1]},'back');
 
 MG.init(); window.__seek=MG.seek; MG.seek(0);
 </script></body></html>
