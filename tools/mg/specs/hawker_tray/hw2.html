@@ -35,12 +35,18 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transpa
 .station .t{font-family:BH;font-size:50px;white-space:nowrap;color:#1a1a1a;margin-top:22px;letter-spacing:1px}
 .station .slot{position:absolute;left:50px;right:50px;top:118px;height:170px;border-radius:16px;background:#2b2b2b;box-shadow:inset 0 10px 24px rgba(0,0,0,.6)}
 /* tracker */
-#trk{position:absolute;left:560px;top:340px;width:494px;height:720px;padding-top:20px}
-#trk .rail{position:absolute;left:435px;top:60px;width:8px;height:600px;border-radius:4px;background:rgba(255,255,255,.22)}
-#trk .fill{position:absolute;left:435px;top:60px;width:8px;height:600px;border-radius:4px;background:linear-gradient(180deg,var(--lime),var(--yel) 40%,var(--red) 70%,var(--pink));transform-origin:50% 0}
-.nd{position:absolute;left:398px;margin-top:20px;width:82px;height:82px;border-radius:50%;background:rgba(20,22,20,.85);border:5px solid rgba(255,255,255,.35);box-sizing:border-box;text-align:center;font-size:42px;line-height:72px}
-.ng{position:absolute;left:390px;margin-top:20px;width:98px;height:98px;border-radius:50%;opacity:.95}
-.ndl{position:absolute;right:120px;margin-top:20px;font-family:PB;font-size:34px;color:#111;padding:8px 16px 4px;border-radius:999px;white-space:nowrap;transform-origin:100% 50%}
+#trk{position:absolute;left:560px;top:330px;width:520px;height:780px}
+:root{--a1:#00f5d4;--a2:#00bbf9;--a3:#9b5de5;--a4:#f15bb5;--a5:#fee440}
+#trk .cap{position:absolute;left:375px;top:0;width:128px;height:760px;border-radius:64px;background:linear-gradient(180deg,rgba(0,245,212,.20),rgba(0,187,249,.14) 35%,rgba(155,93,229,.18) 65%,rgba(241,91,181,.22));border:2px solid rgba(255,255,255,.28);box-shadow:inset 0 0 30px rgba(255,255,255,.08),0 0 40px rgba(155,93,229,.35)}
+#trk .rail{position:absolute;left:434px;top:80px;width:10px;height:600px;border-radius:5px;background:rgba(255,255,255,.16)}
+#trk .fglow{position:absolute;left:414px;top:80px;width:50px;height:600px;transform-origin:50% 0;background:linear-gradient(180deg,rgba(0,245,212,.55),rgba(0,187,249,.5) 33%,rgba(155,93,229,.55) 66%,rgba(241,91,181,.6));-webkit-mask-image:linear-gradient(90deg,transparent,#000 50%,transparent);mask-image:linear-gradient(90deg,transparent,#000 50%,transparent)}
+#trk .fill{position:absolute;left:434px;top:80px;width:10px;height:600px;border-radius:5px;background:linear-gradient(180deg,var(--a1),var(--a2) 33%,var(--a3) 66%,var(--a4));transform-origin:50% 0}
+#trk .shim{position:absolute;left:428px;top:80px;width:22px;height:70px;border-radius:11px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.95),transparent)}
+.halo{position:absolute;left:349px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(0,245,212,.55),rgba(155,93,229,.35) 42%,rgba(241,91,181,.12) 58%,transparent 70%)}
+.ng{position:absolute;left:386px;width:106px;height:106px;border-radius:50%;background:conic-gradient(var(--a1),var(--a2),var(--a3),var(--a4),var(--a5),var(--a1))}
+.nd{position:absolute;left:398px;width:82px;height:82px;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(60,70,120,.95),rgba(14,16,38,.95) 70%);border:3px solid rgba(255,255,255,.45);box-sizing:border-box;text-align:center;font-size:42px;line-height:76px}
+.spk{position:absolute;font-family:PB;color:#fff;font-size:34px;line-height:1;text-shadow:0 0 12px rgba(0,245,212,.9)}
+.ndl{position:absolute;right:140px;font-family:PB;font-size:34px;color:#fff;padding:9px 20px 5px;border-radius:999px;white-space:nowrap;transform-origin:100% 50%;background:linear-gradient(90deg,var(--a1),var(--a2) 35%,var(--a3) 70%,var(--a4));border:2px solid rgba(255,255,255,.5);text-shadow:0 2px 8px rgba(40,0,80,.6)}
 </style></head>
 <body><div id="stage">
 <div class="shade"></div>
@@ -98,16 +104,17 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transpa
 
 <!-- side tracker -->
 <div id="trk">
-  <div class="rail"></div><div class="fill" id="tf"></div>
-  <div class="ng" id="g1" style="top:-8px;background:var(--lime)"></div><div class="ng" id="g2" style="top:192px;background:var(--yel)"></div><div class="ng" id="g3" style="top:392px;background:var(--red)"></div><div class="ng" id="g4" style="top:592px;background:var(--pink)"></div>
-  <div class="nd" id="n1" style="top:0">🍽️</div>
-  <div class="nd" id="n2" style="top:200px">⚠️</div>
-  <div class="nd" id="n3" style="top:400px">💸</div>
-  <div class="nd" id="n4" style="top:600px">🧻</div>
-  <div class="ndl" id="l1" style="top:16px;background:var(--lime)">직접 반납</div>
-  <div class="ndl" id="l2" style="top:216px;background:var(--yel)">1번 경고</div>
-  <div class="ndl" id="l3" style="top:416px;background:var(--red);color:#fff">2번 S$300</div>
-  <div class="ndl" id="l4" style="top:616px;background:var(--pink);color:#fff">자리 맡기</div>
+  <div class="cap"></div><div class="rail"></div><div class="fglow" id="tg"></div><div class="fill" id="tf"></div><div class="shim" id="sh"></div>
+  <div class="halo" id="h1" style="top:-9px"></div><div class="ng" id="g1" style="top:28px"></div><div class="nd" id="n1" style="top:40px">🍽️</div>
+  <div class="spk" id="sa1" style="left:470px;top:26px">✦</div><div class="spk" id="sb1" style="left:372px;top:110px;font-size:24px">✦</div>
+  <div class="halo" id="h2" style="top:191px"></div><div class="ng" id="g2" style="top:228px"></div><div class="nd" id="n2" style="top:240px">⚠️</div>
+  <div class="spk" id="sa2" style="left:470px;top:226px">✦</div><div class="spk" id="sb2" style="left:372px;top:310px;font-size:24px">✦</div>
+  <div class="halo" id="h3" style="top:391px"></div><div class="ng" id="g3" style="top:428px"></div><div class="nd" id="n3" style="top:440px">💸</div>
+  <div class="spk" id="sa3" style="left:470px;top:426px">✦</div><div class="spk" id="sb3" style="left:372px;top:510px;font-size:24px">✦</div>
+  <div class="halo" id="h4" style="top:591px"></div><div class="ng" id="g4" style="top:628px"></div><div class="nd" id="n4" style="top:640px">🧻</div>
+  <div class="spk" id="sa4" style="left:470px;top:626px">✦</div><div class="spk" id="sb4" style="left:372px;top:710px;font-size:24px">✦</div>
+  <div class="ndl" id="l1" style="top:58px">직접 반납</div>
+  <div class="ndl" id="l4" style="top:658px">자리 맡기</div>
 </div>
 
 <div class="tag" id="tag">싱가포르 호커센터 2탄</div>
@@ -136,13 +143,23 @@ OUT(['#a0','#a1','#a2','#a3','#ring','#ringT','#sA1','#sA2'],3.62);
 // tracker on (3.7)
 T('#dimB',3.7,0.3,{opacity:[0,0.62]},'out');
 T('#trk',3.75,0.35,{opacity:[0,1],x:[140,0]},'out');
-set('#tf',0,{scaleY:0});
-const ACT=(n,l,t,c)=>{T(n.replace('n','g'),t,0.35,{opacity:[0,1],scale:[0.3,1]},'back');T(n,t,0.35,{scale:[0.6,1.25]},'back'); T(n,t+0.35,0.25,{scale:[1.25,1.08]},'out'); if(l){T(l,t+0.05,0.3,{opacity:[0,1],scale:[0.3,1]},'back'); T(l,t+1.6,0.25,{opacity:[1,0],x:[0,20]},'in');}};
-set(['#l1','#l2','#l3','#l4','#g1','#g2','#g3','#g4'],0,{opacity:0}); set(['#n1','#n2','#n3','#n4'],0,{scale:0.8});
-ACT('#n1','#l1',3.9); T('#tf',3.9,0.4,{scaleY:[0,0.02]},'out');
-ACT('#n2',null,9.5); T('#tf',9.3,0.5,{scaleY:[0.02,0.34]},'out');
-ACT('#n3',null,12.2); T('#tf',12.0,0.5,{scaleY:[0.34,0.67]},'out');
-ACT('#n4','#l4',14.85); T('#tf',14.7,0.5,{scaleY:[0.67,1]},'out');
+set(['#tf','#tg'],0,{scaleY:0});
+set(['#l1','#l4','#g1','#g2','#g3','#g4','#h1','#h2','#h3','#h4','#sa1','#sa2','#sa3','#sa4','#sb1','#sb2','#sb3','#sb4','#sh'],0,{opacity:0});
+set(['#n1','#n2','#n3','#n4'],0,{scale:0.8});
+const ACT=(i,t,l)=>{
+  T('#g'+i,t,0.4,{opacity:[0,1],scale:[0.3,1]},'back'); T('#g'+i,t,7,{rotate:[0,900]},'lin');
+  T('#h'+i,t,0.45,{opacity:[0,1],scale:[0.4,1.15]},'out');
+  for(let k=0,u=t+0.45;u<17.4;u+=0.8,k++) T('#h'+i,u,0.8,{scale:k%2?[0.95,1.15]:[1.15,0.95]},'inOut');
+  T('#n'+i,t,0.35,{scale:[0.8,1.25]},'back'); T('#n'+i,t+0.35,0.25,{scale:[1.25,1.08]},'out');
+  T(['#sa'+i,'#sb'+i],t+0.1,0.3,{opacity:[0,1],scale:[0,1.4],rotate:[0,90]},'back',0.08);
+  T(['#sa'+i,'#sb'+i],t+0.5,0.5,{opacity:[1,0],scale:[1.4,0.6],rotate:[90,180],y:[0,-20]},'in',0.08);
+  if(l){T(l,t+0.05,0.35,{opacity:[0,1],scale:[0.3,1],x:[40,0]},'back'); T(l,t+1.7,0.25,{opacity:[1,0],x:[0,20]},'in');}
+};
+const FILL=(t,a,b)=>{T(['#tf','#tg'],t,0.55,{scaleY:[a,b]},'out'); T('#sh',t,0.55,{opacity:[0,1],y:[a*600-35,b*600-35]},'out'); T('#sh',t+0.55,0.3,{opacity:[1,0]},'in');};
+ACT(1,3.9,'#l1'); FILL(3.9,0,0.03);
+ACT(2,9.5); FILL(9.3,0.03,0.34);
+ACT(3,12.2); FILL(12.0,0.34,0.67);
+ACT(4,14.85,'#l4'); FILL(14.7,0.67,1);
 OUT('#trk',17.5,0.3);
 // B1 date (3.75-5.7)
 T('#fl1',3.72,0.18,{opacity:[0.55,0]},'out');
