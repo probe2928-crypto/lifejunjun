@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="color-scheme" content="dark">
+<title>인생준준</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">✈</span><span>인생준준</span><small>AIR</small></div>
+    <div class="top-title" id="topTitle">탑승</div>
+  </header>
+  <main id="view" tabindex="-1"></main>
+  <nav class="tabs" aria-label="메뉴">
+    <button class="tab" data-tab="home" aria-label="탑승">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h13A2.5 2.5 0 0 1 21 8.5V10a2 2 0 0 0 0 4v1.5a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 15.5V14a2 2 0 0 0 0-4Z"/><path d="M15 6v12" stroke-dasharray="2 2"/></svg><span>탑승</span></button>
+    <button class="tab" data-tab="cards" aria-label="여행 카드">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3.5" width="13" height="17" rx="2.5"/><path d="M17 7.5l2.6.9a1.5 1.5 0 0 1 .9 1.9l-3.5 10"/><path d="M8 9h5M8 12.5h5"/></svg><span>여행 카드</span></button>
+    <button class="tab" data-tab="passport" aria-label="내 여권">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2"/><circle cx="12" cy="10.5" r="3.5"/><path d="M8.5 10.5h7M12 7c1 1 1.3 2.2 1.3 3.5S13 13 12 14M12 7c-1 1-1.3 2.2-1.3 3.5S11 13 12 14M9 17.5h6"/></svg><span>내 여권</span></button>
+    <button class="tab" data-tab="lounge" aria-label="라운지">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 18v-5.5A3.5 3.5 0 0 1 8.5 9h7a3.5 3.5 0 0 1 3.5 3.5V18"/><path d="M3.5 13.5h3V18h11v-4.5h3"/><path d="M7 18v2.5M17 18v2.5M9 9V6.5a3 3 0 0 1 6 0V9"/></svg><span>라운지</span></button>
+  </nav>
+  <div id="sheet" class="sheet" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
