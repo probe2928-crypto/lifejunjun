@@ -2,7 +2,7 @@
    · 2026-11-03 키 입력 → 로그인 켜짐(이메일). url·anonKey 를 비우면 다시 아무것도 표시하지 않는다(화면 변화 0).
    · 켜는 법: Supabase → Project Settings → API 의 Project URL 과 anon(또는 publishable) 키를 아래 두 칸에 넣고 저장.
      서비스 롤(service_role / secret) 키는 절대 넣지 않는다.
-   · 공용 로그인 모듈: https://probe2928-crypto.github.io/chainbrief/auth/auth.js (chainbrief 저장소 public/auth/auth.js)
+   · 공용 로그인 모듈: https://chainbrief.app/auth/auth.js (chainbrief 저장소 public/auth/auth.js)
    · 설명서: chainbrief 저장소 ops/auth/SETUP_GUIDE.md
    · 여행 모집 관심 신청자·가입자. 여행업 등록 전 — 결제·예약 확정 기능 없음. */
 (function () {
@@ -50,7 +50,7 @@
   };
   if (!c.url || !c.anonKey) return;
   var s = document.createElement("script");
-  s.src = "https://probe2928-crypto.github.io/chainbrief/auth/auth.js";
+  s.src = "https://chainbrief.app/auth/auth.js";
   s.defer = true;
   document.head.appendChild(s);
 })();
