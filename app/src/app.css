@@ -196,5 +196,28 @@ main{padding:6px calc(16px + var(--sr)) calc(var(--tab-h) + var(--sb) + 28px) ca
 .link .arr{color:var(--muted);font-size:18px}
 .fine{font-size:12px;color:var(--muted);line-height:1.7;margin-top:22px}
 .toast{position:fixed;left:50%;bottom:calc(var(--tab-h) + var(--sb) + 18px);transform:translateX(-50%);z-index:60;padding:11px 18px;border-radius:999px;background:var(--deep);color:#fff;font-weight:800;font-size:14px;box-shadow:0 10px 30px rgba(47,111,85,.35);white-space:nowrap}
-@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+/* 모션 */
+.banner{margin:6px -2px 2px;border-radius:24px;overflow:hidden;border:3px solid #fff;box-shadow:var(--shadow);background:#fff}
+.banner img{display:block;width:100%;height:150px;object-fit:cover}
+.flyline{margin:14px -6px -10px;height:62px}
+.flyline img{display:block;width:100%;height:62px}
+.route i::after{animation:fly 3.2s ease-in-out infinite}
+@keyframes fly{0%{left:4%;opacity:0}12%{opacity:1}85%{opacity:1}100%{left:96%;opacity:0}}
+.pass-img .dday{animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-3px)}}
+.d-hero .clouds{animation:drift 9s ease-in-out infinite alternate}
+.d-hero .clouds.c2{opacity:.6;bottom:6px;transform:scaleX(-1);animation:drift2 12s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-4%) scaleX(1.12)}to{transform:translateX(4%) scaleX(1.12)}}
+@keyframes drift2{from{transform:scaleX(-1.15) translateX(-5%)}to{transform:scaleX(-1.15) translateX(5%)}}
+.brand-mark{animation:spin 6s ease-in-out infinite}
+@keyframes spin{0%,70%{transform:rotate(0)}85%{transform:rotate(-20deg) translateY(-2px)}100%{transform:rotate(0)}}
+main.enter{animation:fadein .35s ease-out}
+@keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.rv{opacity:0;transform:translateY(16px)}
+.rv.in{opacity:1;transform:none;transition:opacity .5s ease var(--d,0ms),transform .5s cubic-bezier(.2,.8,.3,1) var(--d,0ms)}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:6;overflow:hidden}
+.confetti i{position:absolute;top:-12px;width:9px;height:14px;border-radius:3px;animation:fall 2.4s cubic-bezier(.2,.6,.4,1) forwards}
+@keyframes fall{0%{transform:translate(0,0) rotate(0)}100%{transform:translate(var(--dx),105vh) rotate(var(--rot));opacity:.9}}
+.tab.on svg{animation:pop .3s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 @media (min-width:700px){main{max-width:720px;margin:0 auto}.passes{grid-template-columns:1fr 1fr}}

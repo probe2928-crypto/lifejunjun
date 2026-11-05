@@ -56,12 +56,15 @@
     $("#topTitle").textContent = TITLES[t];
     render(); window.scrollTo(0, 0);
   }
-  function render() {
+  function render(quiet) {
     var v = $("#view");
     if (state.tab === "home") v.innerHTML = viewHome();
     else if (state.tab === "cards") v.innerHTML = viewCards();
     else if (state.tab === "passport") v.innerHTML = viewPassport();
     else v.innerHTML = viewLounge();
+    if (quiet) return;
+    v.classList.remove("enter"); void v.offsetWidth; v.classList.add("enter");
+    reveal(v);
   }
 
   function dday(start) {
@@ -77,6 +80,7 @@
       '<h1>혼자 가긴 무섭고,<br>단체 패키지는 싫다면</h1>' +
       '<p>먼저 공부해 온 길동무와 3~10명이 함께 걷는 작은 여행이에요. 유적은 깊게, 박물관은 천천히, 밥은 현지 사람들이 줄 서는 곳에서.</p>' +
       '<div class="row"><span class="chip">🧭 3명 모이면 출발</span><span class="chip">🙋 혼자 와도 돼요</span><span class="chip">✍️ 관심 신청은 결제 아니에요</span></div></div></section>' +
+      '<div class="flyline" aria-hidden="true"><img src="img/fly.svg" alt=""></div>' +
       '<div class="sec-t">탑승 대기 중인 여행 <small>' + t.length + '편</small></div>' +
       '<div class="passes">' + t.map(function (x) {
         return '<button class="pass" data-trip="' + esc(x.id) + '" style="--g1:' + x.grad[0] + ';--g2:' + x.grad[1] + '" aria-label="' + esc(x.country + " 여행 자세히 보기") + '">' +
@@ -98,7 +102,7 @@
     var s = $("#sheet");
     s.style.setProperty("--g1", x.grad[0]); s.style.setProperty("--g2", x.grad[1]);
     s.innerHTML = '<button class="close" data-close aria-label="닫기">✕</button>' +
-      '<div class="d-hero" style="background-image:url(' + esc(x.img) + ')"><img class="clouds" src="img/cloudband.svg" alt=""></div>' +
+      '<div class="d-hero" style="background-image:url(' + esc(x.img) + ')"><img class="clouds c2" src="img/cloudband.svg" alt=""><img class="clouds" src="img/cloudband.svg" alt=""></div>' +
       '<div class="d-body"><div class="d-title"><div class="eyebrow">' + x.flag + ' ' + esc(x.country) + ' · ' + esc(x.city) + '</div><h2>' + esc(x.en) + '</h2><div><span class="chip">' + dday(x.start) + '</span></div></div>' +
       '<div class="meta"><div><div class="k">출발 후보일</div><div class="v">' + esc(x.dates) + '</div></div><div><div class="k">기간</div><div class="v">' + esc(x.nights) + '</div></div><div><div class="k">인원</div><div class="v">' + esc(x.group) + '</div></div></div>' +
       '<div class="d-lead">' + esc(x.lead) + '</div>' +
@@ -113,6 +117,7 @@
       '<div class="credit">사진 · ' + esc(x.credit) + ' — 여행지를 이해하기 위한 자료 사진이에요.</div></div>' +
       '<div class="cta-bar"><button class="btn" data-apply="' + esc(x.id) + '">✈ ' + esc(x.country) + ' 관심 신청하기</button><small>결제 아님 · 이름과 연락처만 · 30초</small></div>';
     s.hidden = false; s.scrollTop = 0; document.body.style.overflow = "hidden";
+    reveal(s);
     try { history.pushState({ sheet: id }, ""); } catch (e) {}
   }
   function faq(q, a) { return '<details><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>'; }
@@ -155,7 +160,7 @@
     if (ok) {
       haptic("ok");
       var applied = store.get("applied", []); if (applied.indexOf(x.id) < 0) applied.push(x.id); store.set("applied", applied);
-      s.innerHTML = '<button class="close" data-close aria-label="닫기">✕</button><div class="d-body done" style="padding-top:calc(var(--st) + 60px)"><div class="big-stamp">신청<br>완료</div>' +
+      s.innerHTML = '<div class="confetti" aria-hidden="true">' + confetti() + '</div><button class="close" data-close aria-label="닫기">✕</button><div class="d-body done" style="padding-top:calc(var(--st) + 60px)"><div class="big-stamp">신청<br>완료</div>' +
         '<h2 class="h1">' + esc(x.country) + ' 탑승 대기 명단에 올렸어요</h2><p class="lede">24시간 안에 남겨주신 연락처로 연락드릴게요. 새 여행 소식은 카카오톡 공지방에서 먼저 받아보세요.</p>' +
         '<div class="alt"><button class="btn" data-url="' + KAKAO + '">💬 카카오톡 공지방</button><button class="btn ghost" data-close>확인</button></div></div>';
     } else {
@@ -168,12 +173,25 @@
     s.scrollTop = 0;
   }
 
+  function confetti() {
+    var c = ["#ff8a6b", "#ffd46a", "#9fd67f", "#5fb3e6", "#b7a6f2", "#f58eaa"], out = "";
+    for (var i = 0; i < 36; i++) out += '<i style="left:' + ((i * 37) % 100) + '%;background:' + c[i % c.length] + ';animation-delay:' + ((i % 9) * 0.08).toFixed(2) + 's;--dx:' + (((i * 53) % 60) - 30) + 'px;--rot:' + ((i * 97) % 360) + 'deg"></i>';
+    return out;
+  }
+
+  /* 화면에 들어올 때 살짝 떠오르기 */
+  var io = window.IntersectionObserver ? new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }); }, { rootMargin: "0px 0px -8% 0px" }) : null;
+  function reveal(root) {
+    if (!io) return;
+    Array.prototype.forEach.call((root || document).querySelectorAll(".pass,.tcard,.see>div,.flow li,.link,.about"), function (el, i) { el.classList.add("rv"); el.style.setProperty("--d", (Math.min(i, 8) * 40) + "ms"); io.observe(el); });
+  }
+
   /* ── 여행 카드 ── */
   function viewCards() {
     var cards = DATA.cards || [], saved = store.get("saved", []);
     var places = ["전체", "저장"].concat(cards.map(function (c) { return c.place; }).filter(function (p, i, a) { return a.indexOf(p) === i; }));
     var list = cards.filter(function (c) { return state.cardFilter === "전체" || (state.cardFilter === "저장" ? saved.indexOf(c.id) > -1 : c.place === state.cardFilter); });
-    return '<h1 class="h1">가기 전에 알면<br>덜 당황하는 것들</h1><p class="lede">나라별 매너·벌금·꿀팁 카드예요. 인터넷이 없어도 열려요. ♥ 를 누르면 저장돼요.</p>' +
+    return '<div class="banner"><img src="img/cards.svg" alt=""></div><h1 class="h1">가기 전에 알면<br>덜 당황하는 것들</h1><p class="lede">나라별 매너·벌금·꿀팁 카드예요. 인터넷이 없어도 열려요. ♥ 를 누르면 저장돼요.</p>' +
       '<div class="filters" role="tablist">' + places.map(function (p) { return '<button role="tab" data-filter="' + esc(p) + '" class="' + (p === state.cardFilter ? "on" : "") + '">' + (p === "저장" ? "♥ 저장 " + saved.length : esc(p)) + '</button>'; }).join("") + '</div>' +
       (list.length ? '<div class="tcards">' + list.map(function (c) {
         var on = saved.indexOf(c.id) > -1;
@@ -189,7 +207,7 @@
     var visited = store.get("visited", {}), wish = store.get("wish", []);
     var codes = Object.keys(visited).filter(function (k) { return CTY[k]; }).sort(function (a, b) { return visited[a] < visited[b] ? -1 : 1; });
     var regions = codes.map(function (k) { return CTY[k].region; }).filter(function (r, i, a) { return a.indexOf(r) === i; });
-    return '<section class="pp-cover"><div class="t">PASSPORT · 여권</div><h2>나의 여행 여권</h2><div style="font-size:13px;color:#e7d9aa">다녀온 나라를 눌러 도장을 찍어요</div><div class="emb" aria-hidden="true">🧭</div>' +
+    return '<div class="banner"><img src="img/passport.svg" alt=""></div><section class="pp-cover"><div class="t">PASSPORT · 여권</div><h2>나의 여행 여권</h2><div style="font-size:13px;color:#e7d9aa">다녀온 나라를 눌러 도장을 찍어요</div><div class="emb" aria-hidden="true">🧭</div>' +
       '<div class="stats"><div><b>' + codes.length + '</b><span>다녀온 나라</span></div><div><b>' + regions.length + '</b><span>지역</span></div><div><b>' + wish.length + '</b><span>가고 싶은 곳</span></div></div></section>' +
       '<div class="page"><h4>VISAS · 도장</h4><div class="stamps">' + (codes.length ? codes.map(function (k, i) {
         var c = CTY[k], d = visited[k];
@@ -217,13 +235,13 @@
       if (i > -1) wish.splice(i, 1); else { wish.push(code); haptic(); toast("♥ " + c.name + " 가고 싶은 곳에 담았어요"); }
       store.set("wish", wish);
     }
-    var y = window.scrollY; render(); window.scrollTo(0, y);
+    var y = window.scrollY; render(true); window.scrollTo(0, y);
   }
 
   /* ── 라운지 ── */
   function viewLounge() {
     function L(icon, bg, t, s, url) { return '<button class="link" data-url="' + url + '"><span class="ic" style="--bg:' + bg + '">' + icon + '</span><span><b>' + t + '</b><small>' + s + '</small></span><span class="arr">↗</span></button>'; }
-    return '<h1 class="h1">라운지</h1><p class="lede">새 여행 소식과 여행 이야기는 여기서 먼저 만나요.</p>' +
+    return '<div class="banner"><img src="img/lounge.svg" alt=""></div><h1 class="h1">라운지</h1><p class="lede">새 여행 소식과 여행 이야기는 여기서 먼저 만나요.</p>' +
       '<div class="links">' +
       L("💬", "linear-gradient(135deg,#fee500,#f5b400)", "카카오톡 공지방", "새 여행·출발 소식을 먼저 받아요", KAKAO) +
       L("📸", "linear-gradient(135deg,#f58529,#dd2a7b,#8134af)", "인스타그램 @lifejunjun", "매일 올라오는 여행 릴스", INSTA) +
@@ -239,7 +257,7 @@
   document.addEventListener("click", function (e) {
     var t = e.target.closest("[data-tab],[data-trip],[data-apply],[data-close],[data-url],[data-filter],[data-save],[data-mode],[data-cty]");
     if (!t) return;
-    if (t.dataset.tab) return setTab(t.dataset.tab);
+    if (t.dataset.tab) { if (t.dataset.tab !== state.tab) haptic(); return setTab(t.dataset.tab); }
     if (t.dataset.trip) { haptic(); return openTrip(t.dataset.trip); }
     if (t.dataset.apply) return openApply(t.dataset.apply);
     if (t.hasAttribute("data-close")) { e.preventDefault(); return closeSheet(); }
@@ -252,9 +270,9 @@
     if (t.dataset.save) {
       var saved = store.get("saved", []), i = saved.indexOf(t.dataset.save);
       if (i > -1) saved.splice(i, 1); else { saved.push(t.dataset.save); haptic(); toast("♥ 카드를 저장했어요"); }
-      store.set("saved", saved); var y = window.scrollY; render(); window.scrollTo(0, y); return;
+      store.set("saved", saved); var y = window.scrollY; render(true); window.scrollTo(0, y); return;
     }
-    if (t.dataset.mode) { state.mode = t.dataset.mode; var y2 = window.scrollY; render(); window.scrollTo(0, y2); return; }
+    if (t.dataset.mode) { state.mode = t.dataset.mode; var y2 = window.scrollY; render(true); window.scrollTo(0, y2); return; }
     if (t.dataset.cty) return toggleCountry(t.dataset.cty);
   });
   window.addEventListener("popstate", function () { if (!$("#sheet").hidden) closeSheet(); });

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 70" preserveAspectRatio="xMidYMid meet">
+<path id="p" d="M-20 50 C60 50 80 14 130 18 C175 22 170 56 140 52 C110 48 130 20 200 22 C270 24 300 46 420 30" fill="none"/>
+<path d="M-20 50 C60 50 80 14 130 18 C175 22 170 56 140 52 C110 48 130 20 200 22 C270 24 300 46 420 30" fill="none" stroke="#9fd67f" stroke-width="2.5" stroke-dasharray="4 8" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="0;-48" dur="1.6s" repeatCount="indefinite"/></path>
+<g><path d="M-10 0 L10 -6 L4 0 L10 6 Z" fill="#fff" stroke="#ff8a6b" stroke-width="2" stroke-linejoin="round"/><path d="M4 0 L-10 0" stroke="#ff8a6b" stroke-width="1.5"/>
+<animateMotion dur="6s" repeatCount="indefinite" rotate="auto"><mpath href="#p"/></animateMotion></g>
+</svg>

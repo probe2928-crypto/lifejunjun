@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9dc"/><stop offset="1" stop-color="#fff6e8"/></linearGradient></defs>
+<rect width="400" height="170" fill="url(#bg)"/>
+<g fill="#fff"><circle cx="60" cy="40" r="14"/><circle cx="80" cy="34" r="18"/><circle cx="100" cy="42" r="12"/><rect x="48" y="40" width="62" height="12" rx="6"/>
+<animateTransform attributeName="transform" type="translate" values="0 0;18 0;0 0" dur="10s" repeatCount="indefinite"/></g>
+<ellipse cx="200" cy="152" rx="70" ry="8" fill="#e9d7c2"><animate attributeName="rx" values="70;58;70" dur="1.6s" repeatCount="indefinite"/></ellipse>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -10;0 0" dur="1.6s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1"/>
+ <rect x="150" y="62" width="100" height="80" rx="14" fill="#ff8a6b"/>
+ <rect x="150" y="62" width="100" height="80" rx="14" fill="none" stroke="#e5634f" stroke-width="3"/>
+ <path d="M182 62 v-12 a6 6 0 0 1 6 -6 h24 a6 6 0 0 1 6 6 v12" fill="none" stroke="#8b5e3c" stroke-width="6" stroke-linecap="round"/>
+ <rect x="170" y="62" width="8" height="80" fill="#ffd46a"/><rect x="222" y="62" width="8" height="80" fill="#ffd46a"/>
+ <circle cx="196" cy="94" r="11" fill="#fff"/><circle cx="196" cy="94" r="7" fill="#e5634f"/>
+ <rect x="203" y="108" width="20" height="14" rx="3" fill="#5fb3e6" transform="rotate(-10 213 115)"/>
+ <circle cx="166" cy="128" r="6" fill="#9fd67f"/>
+ <circle cx="166" cy="146" r="6" fill="#5d6b7a"/><circle cx="234" cy="146" r="6" fill="#5d6b7a"/>
+</g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="3s" repeatCount="indefinite"/>
+ <g transform="translate(86 92) rotate(-12)"><rect x="-22" y="-28" width="44" height="56" rx="8" fill="#fff" stroke="#5fb3e6" stroke-width="3"/><rect x="-14" y="-18" width="28" height="5" rx="2" fill="#5fb3e6"/><rect x="-14" y="-8" width="22" height="4" rx="2" fill="#cfe6f5"/><rect x="-14" y="0" width="26" height="4" rx="2" fill="#cfe6f5"/><animateTransform attributeName="transform" type="rotate" values="-12;-4;-12" dur="3s" repeatCount="indefinite" additive="sum"/></g>
+</g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 8;0 0" dur="3.4s" repeatCount="indefinite"/>
+ <g transform="translate(316 86) rotate(10)"><rect x="-22" y="-28" width="44" height="56" rx="8" fill="#fff" stroke="#9fd67f" stroke-width="3"/><circle cx="0" cy="-10" r="8" fill="#ffd46a"/><rect x="-14" y="4" width="28" height="4" rx="2" fill="#d9efcb"/><rect x="-14" y="12" width="20" height="4" rx="2" fill="#d9efcb"/><animateTransform attributeName="transform" type="rotate" values="10;2;10" dur="3.4s" repeatCount="indefinite" additive="sum"/></g>
+</g>
+<g fill="#ffd46a">
+ <path d="M130 40 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"><animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/></path>
+ <path d="M274 34 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"><animate attributeName="opacity" values="1;0;1" dur="2.4s" repeatCount="indefinite"/></path>
+ <path d="M352 140 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#ff8a6b"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin=".6s" repeatCount="indefinite"/></path>
+</g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3f4dc"/><stop offset="1" stop-color="#fbfdf3"/></linearGradient></defs>
+<rect width="400" height="170" fill="url(#bg)"/>
+<ellipse cx="200" cy="156" rx="110" ry="8" fill="#d7e6cf"/>
+<g transform="translate(200 104)">
+ <path d="M-104 -46 Q-52 -60 0 -46 L0 50 Q-52 36 -104 50 Z" fill="#fffdf4" stroke="#e7dcc0" stroke-width="2"/>
+ <path d="M104 -46 Q52 -60 0 -46 L0 50 Q52 36 104 50 Z" fill="#fffdf4" stroke="#e7dcc0" stroke-width="2"/>
+ <path d="M-104 50 Q-52 36 0 50 Q52 36 104 50 L104 56 Q52 42 0 56 Q-52 42 -104 56 Z" fill="#3f8f6f"/>
+ <g stroke="#cfe3ef" stroke-width="2"><path d="M-90 -28 h70"/><path d="M-90 -14 h70"/><path d="M-90 0 h55"/><path d="M-90 14 h62"/><path d="M-90 28 h40"/></g>
+ <g transform="translate(-52 6) rotate(-14)" fill="none" stroke="#ff8a6b" stroke-width="3"><circle r="22"/><circle r="15" stroke-dasharray="3 3" stroke-width="2"/></g>
+ <g transform="translate(54 4)">
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.42;.48;.92;1" dur="2.6s" repeatCount="indefinite"/>
+   <g transform="rotate(10)" fill="none" stroke="#5fb3e6" stroke-width="3"><circle r="24"/><circle r="16" stroke-dasharray="3 3" stroke-width="2"/></g>
+   <path d="M-8 -2 l6 6 10 -12" fill="none" stroke="#5fb3e6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+ </g>
+</g>
+<g><animateTransform attributeName="transform" type="translate" values="254 2;254 2;254 64;254 64;254 2" keyTimes="0;.3;.45;.55;1" dur="2.6s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.6 0 1 1;0 0 1 1;.4 0 .6 1"/>
+ <rect x="-10" y="0" width="20" height="30" rx="8" fill="#8b5e3c"/>
+ <rect x="-22" y="28" width="44" height="12" rx="4" fill="#e5634f"/>
+ <rect x="-24" y="40" width="48" height="6" rx="2" fill="#5fb3e6"/>
+</g>
+<g fill="#ffd46a"><path d="M300 70 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"><animate attributeName="opacity" values="0;0;1;0" keyTimes="0;.46;.52;.8" dur="2.6s" repeatCount="indefinite"/></path>
+<path d="M226 64 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"><animate attributeName="opacity" values="0;0;1;0" keyTimes="0;.46;.55;.85" dur="2.6s" repeatCount="indefinite"/></path></g>
+</svg>
