@@ -72,15 +72,16 @@
   /* ── 탑승 (홈) ── */
   function viewHome() {
     var t = DATA.trips || [];
-    return '<section class="hero"><div class="eyebrow">INSAENG JUNJUN AIR · 함께 가는 역사 여행</div>' +
+    return '<section class="hero"><img class="scene" src="img/scene.svg" alt="">' +
+      '<div class="txt"><div class="eyebrow">함께 가는 역사 여행</div>' +
       '<h1>혼자 가긴 무섭고,<br>단체 패키지는 싫다면</h1>' +
       '<p>먼저 공부해 온 길동무와 3~10명이 함께 걷는 작은 여행이에요. 유적은 깊게, 박물관은 천천히, 밥은 현지 사람들이 줄 서는 곳에서.</p>' +
-      '<div class="row"><span class="chip">🧭 3명 모이면 출발</span><span class="chip">🙋 혼자 와도 돼요</span><span class="chip">✍️ 관심 신청은 결제 아니에요</span></div></section>' +
+      '<div class="row"><span class="chip">🧭 3명 모이면 출발</span><span class="chip">🙋 혼자 와도 돼요</span><span class="chip">✍️ 관심 신청은 결제 아니에요</span></div></div></section>' +
       '<div class="sec-t">탑승 대기 중인 여행 <small>' + t.length + '편</small></div>' +
       '<div class="passes">' + t.map(function (x) {
         return '<button class="pass" data-trip="' + esc(x.id) + '" style="--g1:' + x.grad[0] + ';--g2:' + x.grad[1] + '" aria-label="' + esc(x.country + " 여행 자세히 보기") + '">' +
-          '<div class="pass-img" style="background-image:url(' + esc(x.img) + ')"><span class="flag">' + x.flag + '</span><span class="dday">' + dday(x.start) + '</span>' +
-          '<div class="route"><span>ICN</span><i></i><span>' + esc(x.code) + '</span></div></div>' +
+          '<div class="pass-img" style="background-image:url(' + esc(x.img) + ')"><span class="flag">' + x.flag + '</span><span class="dday">' + dday(x.start) + '</span></div>' +
+          '<div class="route"><span>ICN</span><i></i><span>' + esc(x.code) + '</span></div>' +
           '<div class="pass-body"><div class="city">' + esc(x.country) + ' · ' + esc(x.city) + '</div>' +
           '<div><div class="k">출발 후보일</div><div class="v">' + esc(x.dates) + '</div></div>' +
           '<div style="text-align:right"><div class="k">기간</div><div class="v">' + esc(x.nights.split(" · ")[0]) + '</div></div>' +
@@ -97,8 +98,8 @@
     var s = $("#sheet");
     s.style.setProperty("--g1", x.grad[0]); s.style.setProperty("--g2", x.grad[1]);
     s.innerHTML = '<button class="close" data-close aria-label="닫기">✕</button>' +
-      '<div class="d-hero" style="background-image:url(' + esc(x.img) + ')"><div class="in"><div class="eyebrow">' + x.flag + ' ' + esc(x.country.toUpperCase()) + ' · ' + esc(x.city) + '</div><h2>' + esc(x.en) + '</h2><span class="chip">' + dday(x.start) + '</span></div></div>' +
-      '<div class="d-body">' +
+      '<div class="d-hero" style="background-image:url(' + esc(x.img) + ')"><img class="clouds" src="img/cloudband.svg" alt=""></div>' +
+      '<div class="d-body"><div class="d-title"><div class="eyebrow">' + x.flag + ' ' + esc(x.country) + ' · ' + esc(x.city) + '</div><h2>' + esc(x.en) + '</h2><div><span class="chip">' + dday(x.start) + '</span></div></div>' +
       '<div class="meta"><div><div class="k">출발 후보일</div><div class="v">' + esc(x.dates) + '</div></div><div><div class="k">기간</div><div class="v">' + esc(x.nights) + '</div></div><div><div class="k">인원</div><div class="v">' + esc(x.group) + '</div></div></div>' +
       '<div class="d-lead">' + esc(x.lead) + '</div>' +
       '<div class="sec-t">왜 ' + esc(x.country) + '일까</div>' + x.why.map(function (p) { return '<p class="d-p">' + esc(p) + '</p>'; }).join("") +

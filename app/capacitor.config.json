@@ -2,12 +2,12 @@
   "appId": "kr.lifejunjun.app",
   "appName": "인생준준",
   "webDir": "www",
-  "backgroundColor": "#0b1030",
+  "backgroundColor": "#fffaf0",
   "plugins": {
-    "SplashScreen": { "launchShowDuration": 1500, "launchAutoHide": false, "backgroundColor": "#0b1030", "showSpinner": false },
-    "StatusBar": { "style": "DARK", "backgroundColor": "#0b1030" },
+    "SplashScreen": { "launchShowDuration": 1500, "launchAutoHide": false, "backgroundColor": "#fffaf0", "showSpinner": false },
+    "StatusBar": { "style": "LIGHT", "backgroundColor": "#fffaf0" },
     "SystemBars": { "insetsHandling": "css" }
   },
-  "ios": { "contentInset": "never", "backgroundColor": "#0b1030", "scrollEnabled": true },
+  "ios": { "contentInset": "never", "backgroundColor": "#fffaf0", "scrollEnabled": true },
   "server": { "iosScheme": "capacitor" }
 }
