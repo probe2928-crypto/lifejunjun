@@ -11,6 +11,8 @@
   var VERSION = "1.0.0";
 
   var P = (window.Capacitor && window.Capacitor.Plugins) || {};
+
+  var OS = (function () { try { return (window.Capacitor && window.Capacitor.getPlatform && window.Capacitor.getPlatform()) || "web"; } catch (e) { return "web"; } })();
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
   var store = {
@@ -145,7 +147,7 @@
     if (!$("#fConsent").checked) { err.textContent = "연락을 위한 동의에 체크해 주세요."; return; }
     err.textContent = ""; store.set("me", { name: name, contact: contact });
     var btn = $("#fSend"); btn.disabled = true; btn.textContent = "보내는 중…";
-    var data = { _subject: "[인생준준 앱 관심 신청] " + x.country + " · " + name, _template: "box", _captcha: "false", 브랜드: "인생준준 iOS 앱", 관심여행: x.country + " (" + x.dates + ")", 이름: name, 연락처: contact, 유입: "ios-app", 동의: "예 (연락 목적)" };
+    var data = { _subject: "[인생준준 앱 관심 신청] " + x.country + " · " + name, _template: "box", _captcha: "false", 브랜드: "인생준준 " + (OS === "android" ? "안드로이드" : "iOS") + " 앱", 관심여행: x.country + " (" + x.dates + ")", 이름: name, 연락처: contact, 유입: OS + "-app", 동의: "예 (연락 목적)" };
     if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)) data._replyto = contact;
     var done = false;
     var timer = setTimeout(function () { if (!done) { done = true; result(x, false, name, contact); } }, 15000);
