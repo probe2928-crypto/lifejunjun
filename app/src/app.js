@@ -276,7 +276,11 @@
     if (t.dataset.cty) return toggleCountry(t.dataset.cty);
   });
   window.addEventListener("popstate", function () { if (!$("#sheet").hidden) closeSheet(); });
-  try { if (P.App) P.App.addListener("backButton", function () { if (!$("#sheet").hidden) closeSheet(); }); } catch (e) {}
+  try { if (P.App) P.App.addListener("backButton", function () {
+    if (!$("#sheet").hidden) return closeSheet();
+    if (state.tab !== "home") return setTab("home");
+    P.App.exitApp();
+  }); } catch (e) {}
 
   Promise.all([load("trips"), load("cards")]).then(function (r) {
     DATA.trips = r[0] || []; DATA.cards = r[1] || [];
