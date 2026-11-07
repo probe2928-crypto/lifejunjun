@@ -2,13 +2,14 @@
   "name": "lifejunjun-app",
   "private": true,
   "version": "1.0.0",
-  "description": "인생준준 iOS 앱 (Capacitor) — 탑승(여행)·여행 카드·내 여권·라운지. 화면은 src/, 빌드는 chainbrief 저장소 '스토어 앱' Actions",
+  "description": "인생준준 앱 (Capacitor, iOS·안드로이드) — 탑승(여행)·여행 카드·내 여권·라운지. 화면은 src/, 빌드는 chainbrief 저장소 '스토어 앱' Actions",
   "scripts": {
     "www": "node build-www.mjs",
     "sync": "node build-www.mjs && cap sync",
     "assets": "capacitor-assets generate --assetPath resources --iconBackgroundColor '#bfe5ff' --iconBackgroundColorDark '#bfe5ff' --splashBackgroundColor '#fffaf0' --splashBackgroundColorDark '#fffaf0'"
   },
   "dependencies": {
+    "@capacitor/android": "^8.0.0",
     "@capacitor/app": "^8.0.0",
     "@capacitor/browser": "^8.0.0",
     "@capacitor/core": "^8.0.0",
