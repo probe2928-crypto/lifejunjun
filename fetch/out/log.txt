@@ -1,4 +1,3 @@
-tts bkk_s1 7
-tts bkk_s2 8
-tts bkk_s3 8
-tts bkk_v 15
+tts bkk_s2b 8
+tts bkk_vb 15
+tts bkk_s1b 7
