@@ -18,3 +18,6 @@
 ## 올리기
 - 웹용 재인코딩(crf 22, 50MB 이하) → main `media/ownNN-*.mp4` + 커버 jpg + media/queue.json 항목(skip:true, note에 tag) → push → Pages 배포 확인(gh run list).
 - Metricool brand 7580610: IG·FB 릴스·Threads 한 게시물 + YouTube 쇼츠 따로. 첫 댓글 링크 https://probe2928-crypto.github.io/yeobaek/go/?r=<tag>. 캡션 끝에 '영상: 인생준준 직접 촬영 · 음악 자체 제작 · 내레이션 AI 음성'. 기존 예약과 시간 겹치지 않게(getScheduledPosts).
+
+## 개선 기록
+- 2026-11-09 이한결: 하단 노란 진행 바(spec progress, 기본 켬) + vo_span(멘트 하나를 여러 컷에 걸쳐 깔아 한 컷을 길게 끌지 않음) + 컷별 minspeed(정지 피사체 슬로모)·cap_y(자막 높이). 예시 example_prague.py. 검수용 1초 프레임 시트는 /home/claude/reel/fsheet.py 방식(영상 경로, 출력 jpg).
