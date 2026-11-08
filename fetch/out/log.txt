@@ -1,1 +1,2 @@
-stats ok
+tts cz_a 7
+tts cz_b 7
