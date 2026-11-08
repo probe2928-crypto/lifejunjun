@@ -1,2 +1,2 @@
-tts cz_a 7
-tts cz_b 7
+tts cz_a2 7
+tts cz_b2 7
