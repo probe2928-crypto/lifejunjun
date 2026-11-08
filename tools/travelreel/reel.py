@@ -97,7 +97,7 @@ def render_shot(spec, s, i, nframes, wd):
         base = (f"split[a][b];[a]scale={SW}:{SH}:force_original_aspect_ratio=increase,crop={SW}:{SH},boxblur=40:4,eq=brightness=-0.12[bg];"
                 f"[b]scale=-2:{SH}[fg];[bg][fg]overlay=(W-w)/2:0")
     avail = s.get("max") or max(0.3, m["duration"] - s["ss"] - 0.05)
-    speed = 1.0 if dur <= avail else max(0.5, avail / dur)
+    speed = 1.0 if dur <= avail else max(s.get("minspeed", 0.5), avail / dur)
     tin = min(avail, dur * speed) + 0.15
     pre = ""
     if s.get("stab", True):
@@ -124,7 +124,7 @@ def render_shot(spec, s, i, nframes, wd):
         ovs.append((p, y, 0.0, "pop"))
     if s.get("cap"):
         p = f"{wd}/t{i}_cap.png"; text_png(p, [s["cap"]] if isinstance(s["cap"], str) else s["cap"], int(W * (0.074 if H > W else 0.042)), font=F_BLACK, W=W, stroke=6)
-        y = int(H * 0.60) if H > W else int(H * 0.74)
+        y = int(H * s.get("cap_y", 0.60)) if H > W else int(H * 0.74)
         ovs.append((p, y, 0.12, "up"))
     if s.get("chip") or s.get("count"):
         p = f"{wd}/t{i}_chip.png"; cw, ch = chip_png(p, s.get("chip", ""), size=int(W * (0.054 if H > W else 0.024)), count=s.get("count"))
@@ -171,20 +171,48 @@ def build(spec):
     wd = f"{spec['out_dir']}/work_{spec['name']}"; os.makedirs(wd, exist_ok=True)
     spb = 60 / spec["bpm"]; cum = 0; prev = 0; parts = []
     vo = spec.get("vo")
-    for i, s in enumerate(spec["shots"]):
+    span = spec.get("vo_span", False)  # 2026-11-09: 멘트 하나가 여러 컷에 걸쳐 흐름(한 컷 길게 끄는 문제 해결)
+    def vlen(p): return float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p]))
+    shots = spec["shots"]
+    if vo and span:
+        idx = [i for i, s in enumerate(shots) if s.get("vo_i") is not None]
+        for j, i in enumerate(idx):
+            grp = list(range(i, idx[j + 1] if j + 1 < len(idx) else len(shots)))
+            need = math.ceil((vlen(f"{vo}_{shots[i]['vo_i']:02d}.mp3") + 0.35) / spb)
+            have = sum(shots[k]["beats"] for k in grp)
+            if have < need: shots[grp[0]]["beats"] += need - have
+    vo_marks = []
+    for i, s in enumerate(shots):
         if vo and s.get("vo_i") is not None:
-            p = f"{vo}_{s['vo_i']:02d}.mp3"; s["vo"] = p
-            L = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p]))
-            s["beats"] = max(s["beats"], math.ceil((L + 0.35) / spb))
+            p = f"{vo}_{s['vo_i']:02d}.mp3"
+            if span: vo_marks.append((prev / FPS, p))
+            else:
+                s["vo"] = p; s["beats"] = max(s["beats"], math.ceil((vlen(p) + 0.35) / spb))
         cum += s["beats"]; end = round(cum * spb * FPS); n = end - prev; prev = end
         parts.append(render_shot(spec, s, i, n, wd)); print(spec["name"], i, s["key"], n, flush=True)
     total = prev / FPS
     open(f"{wd}/list.txt", "w").write("".join(f"file '{p}'\n" for p in parts))
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", f"{wd}/list.txt", "-c", "copy", f"{wd}/joined.mp4"], check=True)
+    if vo_marks:
+        cmd = ["ffmpeg", "-y", "-v", "error", "-i", f"{wd}/joined.mp4"]
+        fc = ""
+        for k, (t0, p) in enumerate(vo_marks, start=1):
+            cmd += ["-i", p]; ms = int(t0 * 1000) + 120
+            fc += f"[{k}:a]aresample=48000,aformat=channel_layouts=stereo,adelay={ms}|{ms},volume=1.6[v{k}];"
+        fc += "[0:a]" + "".join(f"[v{k}]" for k in range(1, len(vo_marks) + 1)) + f"amix=inputs={len(vo_marks)+1}:duration=first:normalize=0[a]"
+        subprocess.run(cmd + ["-filter_complex", fc, "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", f"{wd}/joined_vo.mp4"], check=True)
+        os.replace(f"{wd}/joined_vo.mp4", f"{wd}/joined.mp4")
     mp = f"{wd}/beat.wav"
     subprocess.run(["python3", "/home/claude/reel/beat.py", str(total + 1), mp, str(spec["bpm"]), str(spec["seed"]), str(spec.get("root", 45))], check=True)
     outp = f"{spec['out_dir']}/{spec['name']}.mp4"
+    # 하단 진행 바(2026-11-09): 끝까지 보게 만드는 얇은 노란 바. spec progress=False 로 끔.
+    vmap = ["-map", "0:v", "-c:v", "copy"]; vf_pb = ""
+    if spec.get("progress", True):
+        bh = max(8, spec["H"] // 200)
+        vf_pb = (f"[0:v]drawbox=x=0:y=ih-{bh}:w=iw:h={bh}:color=black@0.35:t=fill,"
+                 f"drawbox=x=0:y=ih-{bh}:w='iw*t/{total:.3f}':h={bh}:color=0xFFE240@0.95:t=fill[pv];")
+        vmap = ["-map", "[pv]", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p"]
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", f"{wd}/joined.mp4", "-i", mp, "-filter_complex",
-                    f"[1:a]atrim=0:{total},afade=t=out:st={total-1.2}:d=1.2,volume=0.75[m0];[0:a]asplit[o][k];[m0][k]sidechaincompress=threshold=0.04:ratio=6:attack=15:release=350[m];[o][m]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.92[a]",
-                    "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", outp], check=True)
+                    vf_pb + f"[1:a]atrim=0:{total},afade=t=out:st={total-1.2}:d=1.2,volume=0.75[m0];[0:a]asplit[o][k];[m0][k]sidechaincompress=threshold=0.04:ratio=6:attack=15:release=350[m];[o][m]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.92[a]",
+                    ] + vmap + ["-map", "[a]", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", outp], check=True)
     print("DONE", outp, round(total, 2))
