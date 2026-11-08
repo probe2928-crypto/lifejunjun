@@ -1,3 +1,1 @@
-tts bkk_s2b 8
-tts bkk_vb 15
-tts bkk_s1b 7
+stats ok
