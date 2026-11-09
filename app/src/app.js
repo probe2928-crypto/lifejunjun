@@ -118,17 +118,55 @@
       faq("누가 같이 가요?", "인생준준 세준이 함께 가요. 유적 앞에서 같이 읽고, 같이 걷고, 같이 먹는 여행을 만들어요.") + '</div>' +
       '<div class="credit">사진 · ' + esc(x.credit) + ' — 여행지를 이해하기 위한 자료 사진이에요.</div></div>' +
       '<div class="cta-bar"><button class="btn" data-apply="' + esc(x.id) + '">✈ ' + esc(x.country) + ' 관심 신청하기</button><small>결제 아님 · 이름과 연락처만 · 30초</small></div>';
-    s.hidden = false; s.scrollTop = 0; document.body.style.overflow = "hidden";
+    s.dataset.trip = x.id; s.hidden = false; s.scrollTop = 0; document.body.style.overflow = "hidden";
     reveal(s);
     try { history.pushState({ sheet: id }, ""); } catch (e) {}
   }
+  /* 탑승권 사진이 그대로 커져 상세 화면 머리 사진이 되는 전환. 움직임 줄이기 설정이면 건너뜀 */
+  var calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var EASE = "cubic-bezier(.2,.9,.25,1)";
+  function ghost(img, r, radius) {
+    var g = document.createElement("div"); g.className = "morph-ghost"; g.setAttribute("aria-hidden", "true");
+    g.style.cssText = "left:" + r.left + "px;top:" + r.top + "px;width:" + r.width + "px;height:" + r.height + "px;border-radius:" + radius + ";background-image:" + img;
+    document.body.appendChild(g); return g;
+  }
+  function morphIn(fromEl) {
+    var s = $("#sheet"), hero = $(".d-hero", s);
+    if (calm || !fromEl || !hero || !s.animate) return;
+    var a = fromEl.getBoundingClientRect(), b = hero.getBoundingClientRect();
+    if (!a.width || a.bottom < 0 || a.top > innerHeight) return;
+    s.classList.add("morphing");
+    var g = ghost(getComputedStyle(fromEl).backgroundImage, a, "18px");
+    s.animate([{ backgroundColor: "rgba(255,250,240,0)" }, { backgroundColor: "rgba(255,250,240,1)" }], { duration: 300, easing: "ease-out" });
+    g.animate([
+      { left: a.left + "px", top: a.top + "px", width: a.width + "px", height: a.height + "px", borderRadius: "18px" },
+      { left: b.left + "px", top: b.top + "px", width: b.width + "px", height: b.height + "px", borderRadius: "0 0 32px 32px" }
+    ], { duration: 460, easing: EASE, fill: "forwards" }).onfinish = function () { s.classList.remove("morphing"); g.remove(); };
+  }
+  function morphOut(done) {
+    var s = $("#sheet"), hero = $(".d-hero", s), id = s.dataset.trip;
+    var to = id && $('.pass[data-trip="' + id + '"] .pass-img');
+    if (calm || !hero || !to || !s.animate || s.scrollTop > 40) return done();
+    var a = hero.getBoundingClientRect(), b = to.getBoundingClientRect();
+    if (b.bottom < 0 || b.top > innerHeight) return done();
+    var g = ghost(getComputedStyle(hero).backgroundImage, a, "0 0 32px 32px");
+    s.classList.add("morphing"); done();
+    g.animate([
+      { left: a.left + "px", top: a.top + "px", width: a.width + "px", height: a.height + "px", borderRadius: "0 0 32px 32px" },
+      { left: b.left + "px", top: b.top + "px", width: b.width + "px", height: b.height + "px", borderRadius: "18px" }
+    ], { duration: 380, easing: EASE, fill: "forwards" }).onfinish = function () { g.remove(); };
+  }
   function faq(q, a) { return '<details><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>'; }
-  function closeSheet() { var s = $("#sheet"); s.hidden = true; s.innerHTML = ""; document.body.style.overflow = ""; }
+  function closeSheet() {
+    var s = $("#sheet");
+    morphOut(function () { s.hidden = true; s.innerHTML = ""; s.classList.remove("morphing"); delete s.dataset.trip; document.body.style.overflow = ""; });
+  }
 
   function openApply(id) {
     var x = (DATA.trips || []).filter(function (t) { return t.id === id; })[0]; if (!x) return;
     var s = $("#sheet"); var saved = store.get("me", {});
-    s.innerHTML = '<button class="close" data-close aria-label="닫기">✕</button><div class="d-body" style="padding-top:calc(var(--st) + 64px)">' +
+    delete s.dataset.trip;
+    s.innerHTML = '<button class="close" data-close aria-label="닫기">✕</button><div class="d-body" style="padding-top:calc(var(--st) + 58px)">' + GATE +
       '<div class="eyebrow chip">' + x.flag + ' ' + esc(x.country) + ' · ' + esc(x.dates) + '</div>' +
       '<h2 class="h1">' + esc(x.country) + ', 같이 갈래요?</h2><p class="lede">이름과 연락처만 남겨주세요. 3명이 모이면 일정과 예상 경비를 먼저 보내드려요.</p>' +
       '<form class="form" id="applyForm" novalidate>' +
@@ -147,6 +185,7 @@
     if (!$("#fConsent").checked) { err.textContent = "연락을 위한 동의에 체크해 주세요."; return; }
     err.textContent = ""; store.set("me", { name: name, contact: contact });
     var btn = $("#fSend"); btn.disabled = true; btn.textContent = "보내는 중…";
+    var gate = $(".gate"); if (gate) gate.classList.add("go");
     var data = { _subject: "[인생준준 앱 관심 신청] " + x.country + " · " + name, _template: "box", _captcha: "false", 브랜드: "인생준준 " + (OS === "android" ? "안드로이드" : "iOS") + " 앱", 관심여행: x.country + " (" + x.dates + ")", 이름: name, 연락처: contact, 유입: OS + "-app", 동의: "예 (연락 목적)" };
     if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)) data._replyto = contact;
     var done = false;
@@ -158,6 +197,7 @@
   }
   function result(x, ok, name, contact) {
     var s = $("#sheet");
+    if (!ok) { var gate = $(".gate"); if (gate) gate.classList.remove("go"); }
     var text = "[인생준준 · " + x.country + " 관심 신청]\n이름: " + name + "\n연락처: " + contact;
     if (ok) {
       haptic("ok");
@@ -174,6 +214,27 @@
     }
     s.scrollTop = 0;
   }
+
+  /* 신청 화면 위 손그림: 언덕 위 활주로에서 기다리는 작은 비행기, 펄럭이는 바람자루, 흘러가는 구름 */
+  var GATE = '<div class="gate" aria-hidden="true"><svg viewBox="0 0 400 120" preserveAspectRatio="xMidYMid slice">' +
+    '<defs><linearGradient id="gSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fd6fb"/><stop offset="1" stop-color="#e6f6ff"/></linearGradient>' +
+    '<linearGradient id="gHill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b6e48a"/><stop offset="1" stop-color="#86cc6c"/></linearGradient></defs>' +
+    '<rect width="400" height="120" fill="url(#gSky)"/>' +
+    '<g class="g-sun"><circle cx="338" cy="30" r="26" fill="#ffe28a" opacity=".45"/><circle cx="338" cy="30" r="12" fill="#fff4b8"/></g>' +
+    '<g class="g-cloud c1" fill="#fff"><circle cx="70" cy="32" r="11"/><circle cx="85" cy="26" r="14"/><circle cx="101" cy="32" r="10"/><rect x="62" y="31" width="46" height="10" rx="5"/></g>' +
+    '<g class="g-cloud c2" fill="#fff" opacity=".85"><circle cx="230" cy="22" r="8"/><circle cx="241" cy="17" r="10"/><circle cx="253" cy="23" r="7"/><rect x="224" y="22" width="34" height="7" rx="3.5"/></g>' +
+    '<path d="M0 78 C50 60 100 70 150 64 C210 56 260 72 310 62 C350 55 380 60 400 64 V120 H0Z" fill="#8fd27a"/>' +
+    '<g fill="#4f9f63"><circle cx="30" cy="70" r="7"/><circle cx="40" cy="66" r="9"/><circle cx="50" cy="71" r="6"/></g>' +
+    '<path d="M0 96 C80 84 170 90 240 86 C310 82 360 90 400 88 V120 H0Z" fill="url(#gHill)"/>' +
+    '<path d="M60 104 C150 98 250 96 360 90" fill="none" stroke="#f3e2b8" stroke-width="9" stroke-linecap="round"/>' +
+    '<path d="M60 104 C150 98 250 96 360 90" fill="none" stroke="#fff" stroke-width="1.6" stroke-dasharray="6 8" stroke-linecap="round" opacity=".9"/>' +
+    '<g transform="translate(322 66)"><rect x="-1" y="0" width="2" height="24" fill="#8b5e3c"/><path class="g-sock" d="M1 1 L19 3.5 L19 7.5 L1 9Z" fill="#ff8a6b"/><path d="M7 1.8 V8.2 M13 2.7 V7.8" stroke="#fff" stroke-width="2"/></g>' +
+    '<g transform="translate(352 72)"><rect x="-8" y="0" width="16" height="13" fill="#fff8ec"/><path d="M-11 2 L0 -8 L11 2Z" fill="#e5634f"/><rect x="-3" y="6" width="5" height="7" fill="#8b5e3c"/></g>' +
+    '<g class="g-plane"><g class="g-bob"><path d="M-17 0 C-17 -4 -12 -5 -6 -5 L12 -4.5 C17 -4.3 20 -2 20 0 C20 2 17 3.6 12 3.8 L-6 4 C-12 4 -17 3 -17 0Z" fill="#fff" stroke="#2f6f55" stroke-width="1.4"/>' +
+    '<path d="M-2 0 L-9 -12 L-4 -12 L6 -1Z" fill="#ff8a6b" stroke="#2f6f55" stroke-width="1.2" stroke-linejoin="round"/><path d="M-15 -2 L-19 -11 L-15 -11 L-10 -3Z" fill="#ff8a6b" stroke="#2f6f55" stroke-width="1.2" stroke-linejoin="round"/>' +
+    '<g fill="#5fb3e6"><circle cx="2" cy="-1" r="1.4"/><circle cx="6.5" cy="-1" r="1.4"/><circle cx="11" cy="-1" r="1.4"/></g><path d="M15.5 -3 C18 -2.5 19 -1.4 19 -.5 L15.5 -.6Z" fill="#5fb3e6"/>' +
+    '<g fill="#2f6f55"><circle cx="-6" cy="6.5" r="1.8"/><circle cx="10" cy="6.5" r="1.8"/></g></g></g>' +
+    '</svg></div>';
 
   function confetti() {
     var c = ["#ff8a6b", "#ffd46a", "#9fd67f", "#5fb3e6", "#b7a6f2", "#f58eaa"], out = "";
@@ -260,7 +321,7 @@
     var t = e.target.closest("[data-tab],[data-trip],[data-apply],[data-close],[data-url],[data-filter],[data-save],[data-mode],[data-cty]");
     if (!t) return;
     if (t.dataset.tab) { if (t.dataset.tab !== state.tab) haptic(); return setTab(t.dataset.tab); }
-    if (t.dataset.trip) { haptic(); return openTrip(t.dataset.trip); }
+    if (t.dataset.trip) { haptic(); openTrip(t.dataset.trip); return morphIn(t.querySelector(".pass-img")); }
     if (t.dataset.apply) return openApply(t.dataset.apply);
     if (t.hasAttribute("data-close")) { e.preventDefault(); return closeSheet(); }
     if (t.dataset.url) {
