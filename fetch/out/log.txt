@@ -1,2 +1,1 @@
-tts be_a 7
-tts cz_c 5
+tts be_a2 7
