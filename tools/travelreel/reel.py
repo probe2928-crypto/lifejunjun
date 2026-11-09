@@ -114,6 +114,11 @@ def render_shot(spec, s, i, nframes, wd):
     vf = (f"{base},fps={FPS},tpad=stop_mode=clone:stop_duration=4,zoompan=z='{zexp}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},"
           f"eq=contrast=1.08:saturation=1.2:brightness=0.005,colorbalance=rs=0.03:bs=-0.03:rh=0.02:bh=-0.02,"
           f"vignette=PI/5.5,noise=alls=3:allf=t,format=yuv420p")
+    # 휩 전환(2026-11-09 2회차): 컷 경계 앞뒤 2~3프레임에 가로 방향 모션 블러 → 하드컷보다 매끄럽게
+    if s.get("_whip_in"):
+        vf += f",dblur=angle=0:radius=70:enable='lt(n,2)',dblur=angle=0:radius=28:enable='between(n,2,3)'"
+    if s.get("_whip_out"):
+        vf += f",dblur=angle=0:radius=28:enable='between(n,{nframes-4},{nframes-3})',dblur=angle=0:radius=70:enable='gte(n,{nframes-2})'"
     if s.get("flash"): vf += ",fade=t=in:st=0:d=0.13:color=white"
     if s.get("fade_out"): vf += f",fade=t=out:st={dur-0.5:.3f}:d=0.5"
     # overlays
@@ -182,6 +187,9 @@ def build(spec):
             have = sum(shots[k]["beats"] for k in grp)
             if have < need: shots[grp[0]]["beats"] += need - have
     vo_marks = []
+    for i, s in enumerate(shots):  # whip: 플래시 없는 컷 전환은 기본 휩(spec whip=False 로 끔, 컷별 whip=False)
+        if i > 0 and spec.get("whip", True) and not s.get("flash") and s.get("whip", True) and not shots[i-1].get("fade_out"):
+            s["_whip_in"] = True; shots[i-1]["_whip_out"] = True
     for i, s in enumerate(shots):
         if vo and s.get("vo_i") is not None:
             p = f"{vo}_{s['vo_i']:02d}.mp3"

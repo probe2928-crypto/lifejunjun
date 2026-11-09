@@ -21,3 +21,4 @@
 
 ## 개선 기록
 - 2026-11-09 이한결: 하단 노란 진행 바(spec progress, 기본 켬) + vo_span(멘트 하나를 여러 컷에 걸쳐 깔아 한 컷을 길게 끌지 않음) + 컷별 minspeed(정지 피사체 슬로모)·cap_y(자막 높이). 예시 example_prague.py. 검수용 1초 프레임 시트는 /home/claude/reel/fsheet.py 방식(영상 경로, 출력 jpg).
+- 2026-11-09 2회차 이한결: 휩 전환(컷 경계 앞뒤 2~3프레임 가로 모션 블러 dblur, 플래시 없는 컷에 기본 적용, spec/컷 whip=False로 끔). 예시 example_berlin.py. 성우가 길면 로컬 atempo 1.12로 30초 안에 맞춤(vo/be_a3).
