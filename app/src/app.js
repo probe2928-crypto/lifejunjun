@@ -105,12 +105,12 @@
     s.style.setProperty("--g1", x.grad[0]); s.style.setProperty("--g2", x.grad[1]);
     s.innerHTML = '<button class="close" data-close aria-label="닫기">✕</button>' +
       '<div class="d-hero" style="background-image:url(' + esc(x.img) + ')"><img class="clouds c2" src="img/cloudband.svg" alt=""><img class="clouds" src="img/cloudband.svg" alt=""></div>' +
-      '<div class="d-body"><div class="d-title"><div class="eyebrow">' + x.flag + ' ' + esc(x.country) + ' · ' + esc(x.city) + '</div><h2>' + esc(x.en) + '</h2><div><span class="chip">' + dday(x.start) + '</span></div></div>' +
-      '<div class="meta"><div><div class="k">출발 후보일</div><div class="v">' + esc(x.dates) + '</div></div><div><div class="k">기간</div><div class="v">' + esc(x.nights) + '</div></div><div><div class="k">인원</div><div class="v">' + esc(x.group) + '</div></div></div>' +
+      '<div class="d-body"><div class="d-title"><div class="eyebrow">' + x.flag + ' ' + esc(x.country) + ' · ' + esc(x.city) + '</div><h2>' + esc(x.en) + '</h2></div>' + stub(x) +
       '<div class="d-lead">' + esc(x.lead) + '</div>' +
       '<div class="sec-t">왜 ' + esc(x.country) + '일까</div>' + x.why.map(function (p) { return '<p class="d-p">' + esc(p) + '</p>'; }).join("") +
-      '<div class="sec-t">이 여행에서 만나는 것</div><div class="see">' + x.see.map(function (p, i) { return '<div data-n="0' + (i + 1) + '">' + esc(p) + '</div>'; }).join("") + '</div>' +
-      '<div class="sec-t">하루 흐름 예시 <small>인원·날씨·항공편에 따라 함께 조정해요</small></div><ol class="flow">' + x.flow.map(function (f) { return '<li><span class="day">' + esc(f[0]) + '</span><span class="what">' + esc(f[1]) + '</span></li>'; }).join("") + '</ol>' +
+      (x.img2 ? '<figure class="pause" aria-hidden="true" style="background-image:url(' + esc(x.img2) + ')"></figure>' : '') +
+      '<div class="sec-t">이 여행에서 만나는 것 <small>' + x.see.length + '곳</small></div><ol class="see">' + x.see.map(function (p, i) { var m = /^(.*?)\s*\((.+)\)$/.exec(p); return '<li><span class="n">' + (i + 1) + '</span><span><b>' + esc(m ? m[1] : p) + '</b>' + (m ? '<small>' + esc(m[2]) + '</small>' : '') + '</span></li>'; }).join("") + '</ol>' +
+      '<div class="sec-t">하루 흐름 예시</div><p class="sec-hint">인원·날씨·항공편에 따라 함께 조정해요</p><ol class="flow">' + x.flow.map(function (f) { return '<li><span class="day">' + esc(f[0]) + '</span><span class="what">' + esc(f[1]) + '</span></li>'; }).join("") + '</ol>' +
       '<div class="sec-t">자주 묻는 질문</div><div class="faq">' +
       faq("혼자 신청해도 돼요?", "네, 대부분 혼자 신청해요. 3명이 모이면 출발하는 소규모 여행이라 처음 만나도 금방 편해져요.") +
       faq("신청하면 결제해야 하나요?", "아니요. 관심 신청은 결제나 예약 확정이 아니에요. 3명이 모이면 일정과 예상 경비를 먼저 안내드리고, 그때 정하시면 돼요.") +
@@ -155,6 +155,14 @@
       { left: a.left + "px", top: a.top + "px", width: a.width + "px", height: a.height + "px", borderRadius: "0 0 32px 32px" },
       { left: b.left + "px", top: b.top + "px", width: b.width + "px", height: b.height + "px", borderRadius: "18px" }
     ], { duration: 380, easing: EASE, fill: "forwards" }).onfinish = function () { g.remove(); };
+  }
+  /* 상세 머리 요약: 날짜를 한 줄로 크게, 기간·인원은 아래 두 칸. 긴 글자가 어색하게 꺾이지 않게 '·' 앞뒤를 나눠 보여 줌 */
+  function stub(x) {
+    var n = String(x.nights).split(" · "), g = String(x.group).split(" · ");
+    var d = String(x.dates).split(" — ");
+    return '<div class="stub"><div class="stub-top"><div><div class="k">출발 후보일</div><div class="date">' + esc(d[0]) + (d[1] ? '<i aria-hidden="true">→</i><span class="sr">부터 </span>' + esc(d[1]) : '') + '</div></div><span class="dd">' + dday(x.start) + '</span></div>' +
+      '<div class="stub-row"><div><div class="k">기간</div><div class="v">' + esc(n[0]) + '</div>' + (n[1] ? '<small>' + esc(n.slice(1).join(" · ")) + '</small>' : '') + '</div>' +
+      '<div><div class="k">인원</div><div class="v">' + esc(g[0]) + '</div>' + (g[1] ? '<small>' + esc(g.slice(1).join(" · ")) + '</small>' : '') + '</div></div></div>';
   }
   function faq(q, a) { return '<details><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>'; }
   function closeSheet() {
@@ -246,7 +254,7 @@
   var io = window.IntersectionObserver ? new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }); }, { rootMargin: "0px 0px -8% 0px" }) : null;
   function reveal(root) {
     if (!io) return;
-    Array.prototype.forEach.call((root || document).querySelectorAll(".pass,.tcard,.see>div,.flow li,.link,.about"), function (el, i) { el.classList.add("rv"); el.style.setProperty("--d", (Math.min(i, 8) * 40) + "ms"); io.observe(el); });
+    Array.prototype.forEach.call((root || document).querySelectorAll(".pass,.tcard,.see>li,.flow li,.link,.about,.pause"), function (el, i) { el.classList.add("rv"); el.style.setProperty("--d", (Math.min(i, 8) * 40) + "ms"); io.observe(el); });
   }
 
   /* ── 여행 카드 ── */

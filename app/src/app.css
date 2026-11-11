@@ -98,9 +98,29 @@ main{padding:6px calc(16px + var(--sr)) calc(var(--tab-h) + var(--sb) + 28px) ca
 .meta .v{font-size:13.5px;font-weight:800;margin-top:4px;line-height:1.35}
 .d-lead{font-family:"DH";font-size:23px;line-height:1.45;margin:6px 0 14px;color:var(--ink)}
 .d-p{color:#43505f;font-size:15px;line-height:1.8;margin:0 0 12px}
-.see{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.see div{position:relative;border-radius:18px;padding:14px 12px 12px;min-height:84px;font-size:14px;font-weight:700;line-height:1.4;background:#fff;border:1px solid var(--line)}
-.see div::before{content:attr(data-n);display:block;font-family:"DH";font-size:22px;color:var(--g1);margin-bottom:4px}
+/* 만나는 것: 이름은 굵게, 괄호 속 설명은 아랫줄 작게 — 한 줄씩 읽히는 목록 */
+.see{list-style:none;margin:0;padding:4px 14px;border-radius:22px;background:#fff;border:1px solid var(--line);box-shadow:0 3px 0 color-mix(in srgb,var(--g1) 30%,#eee)}
+.see li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:center;padding:13px 0;border-bottom:1px dashed var(--line)}
+.see li:last-child{border-bottom:0}
+.see .n{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-family:"DH";font-size:19px;color:#fff;background:var(--g1);box-shadow:inset 0 -3px 0 rgba(0,0,0,.1)}
+.see b{display:block;font-size:15.5px;font-weight:800;line-height:1.4;color:var(--ink);word-break:keep-all}
+.see small{display:block;margin-top:2px;font-size:12.5px;color:var(--muted);line-height:1.45;word-break:keep-all}
+.pause{margin:26px -18px 0;height:190px;border-radius:0;background:#cde center/cover no-repeat;position:relative}
+.pause::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--cream),rgba(255,250,240,0) 22%,rgba(255,250,240,0) 78%,var(--cream))}
+.sec-hint{margin:-6px 2px 10px;font-size:12.5px;color:var(--muted)}
+/* 상세 머리 요약(탑승권 꼬리표) */
+.stub{margin:14px 0 20px;border-radius:22px;background:#fff;border:1px solid var(--line);box-shadow:0 4px 0 color-mix(in srgb,var(--g1) 35%,#eee);overflow:hidden}
+.stub .k{font-size:10.5px;letter-spacing:.1em;color:var(--muted);font-weight:800}
+.stub-top{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;padding:14px 16px 13px;background:color-mix(in srgb,var(--g1) 12%,#fff)}
+.stub .date{font-family:"DH";font-size:24px;line-height:1.15;color:var(--deep);margin-top:4px;white-space:nowrap}
+.stub .date i{font-style:normal;color:var(--g1);margin:0 6px;font-size:19px}
+.stub .dd{flex:none;font-weight:900;font-size:12.5px;padding:6px 11px;border-radius:999px;background:var(--sun);color:#5a3c00;box-shadow:0 3px 0 #e2b23f}
+.stub-row{display:grid;grid-template-columns:1fr 1fr;border-top:2px dashed var(--line)}
+.stub-row>div{padding:12px 16px 14px}
+.stub-row>div+div{border-left:1px solid var(--line)}
+.stub .v{font-size:16px;font-weight:800;margin-top:4px}
+.stub small{display:block;font-size:12px;color:var(--muted);margin-top:2px;line-height:1.4}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .flow{list-style:none;margin:0;padding:0;display:grid}
 .flow li{position:relative;display:grid;grid-template-columns:64px 1fr;gap:10px;padding:10px 0}
 .flow li::before{content:"";position:absolute;left:30px;top:30px;bottom:-10px;width:2px;background:repeating-linear-gradient(180deg,var(--g1) 0 4px,transparent 4px 8px)}
@@ -243,3 +263,6 @@ main.enter{animation:fadein .35s ease-out}
 .gate.go .g-plane{animation:takeoff 2.4s cubic-bezier(.5,0,.6,1) forwards}
 @keyframes takeoff{0%{transform:translate(118px,95px) rotate(-3deg)}45%{transform:translate(262px,90px) rotate(-5deg)}100%{transform:translate(470px,-14px) rotate(-22deg)}}
 .gate.go .g-bob{animation:none}
+/* 한국어 읽기: 낱말 중간에서 줄이 꺾이지 않게 */
+.d-lead,.d-p,.lede,.hero p,.pass-body .lead,.faq p,.faq summary,.tcard li,.tcard-top h3,.about p,.flow .what{word-break:keep-all;overflow-wrap:anywhere}
+.d-lead{text-wrap:pretty}
