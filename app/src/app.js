@@ -19,7 +19,7 @@
     get: function (k, d) { try { var v = localStorage.getItem("lj_" + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
     set: function (k, v) { try { localStorage.setItem("lj_" + k, JSON.stringify(v)); } catch (e) {} }
   };
-  function haptic(kind) { try { if (P.Haptics) { if (kind === "ok") P.Haptics.notification({ type: "SUCCESS" }); else P.Haptics.impact({ style: kind === "heavy" ? "HEAVY" : "MEDIUM" }); } } catch (e) {} }
+  function haptic(kind) { try { if (P.Haptics) { if (kind === "ok") P.Haptics.notification({ type: "SUCCESS" }); else if (kind === "warn") P.Haptics.notification({ type: "WARNING" }); else if (kind === "light") P.Haptics.impact({ style: "LIGHT" }); else P.Haptics.impact({ style: kind === "heavy" ? "HEAVY" : "MEDIUM" }); } } catch (e) {} }
   function openUrl(url) { try { if (P.Browser && /^https:/.test(url)) return P.Browser.open({ url: url, presentationStyle: "popover" }); } catch (e) {} window.open(url, "_blank"); }
   function toast(msg) { var t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast._t); toast._t = setTimeout(function () { t.hidden = true; }, 1800); }
 
@@ -178,22 +178,49 @@
       '<div class="eyebrow chip">' + x.flag + ' ' + esc(x.country) + ' · ' + esc(x.dates) + '</div>' +
       '<h2 class="h1">' + esc(x.country) + ', 같이 갈래요?</h2><p class="lede">이름과 연락처만 남겨주세요. 3명이 모이면 일정과 예상 경비를 먼저 보내드려요.</p>' +
       '<form class="form" id="applyForm" novalidate>' +
-      '<div class="field"><label for="fName">이름 또는 닉네임</label><input id="fName" autocomplete="name" maxlength="40" value="' + esc(saved.name || "") + '"></div>' +
-      '<div class="field"><label for="fContact">연락처 (이메일 또는 카카오톡 ID)</label><input id="fContact" autocomplete="email" maxlength="80" inputmode="email" value="' + esc(saved.contact || "") + '"></div>' +
-      '<label class="consent"><input type="checkbox" id="fConsent"><span>연락을 위해 이름·연락처를 인생준준 운영자 메일로 받는 데 동의해요. 여행 안내 외에는 쓰지 않아요. <a href="#" data-url="' + PRIVACY + '">개인정보 처리 안내</a></span></label>' +
+      '<div class="field" id="wName"><label for="fName">이름 또는 닉네임</label><input id="fName" autocomplete="name" maxlength="40" enterkeyhint="next" aria-describedby="hName" value="' + esc(saved.name || "") + '"><div class="hint" id="hName" aria-live="polite"></div></div>' +
+      '<div class="field" id="wContact"><label for="fContact">연락처 (이메일 또는 카카오톡 ID)</label><input id="fContact" autocomplete="email" maxlength="80" inputmode="email" enterkeyhint="done" aria-describedby="hContact" value="' + esc(saved.contact || "") + '"><div class="hint" id="hContact" aria-live="polite"></div></div>' +
+      '<label class="consent" id="wConsent"><input type="checkbox" id="fConsent"><span>연락을 위해 이름·연락처를 인생준준 운영자 메일로 받는 데 동의해요. 여행 안내 외에는 쓰지 않아요. <a href="#" data-url="' + PRIVACY + '">개인정보 처리 안내</a></span></label>' +
       '<div class="err" id="fErr" role="alert"></div>' +
-      '<button class="btn" id="fSend" type="submit">관심 신청 보내기</button></form></div>';
+      '<button class="btn" id="fSend" type="submit"><span class="lbl">관심 신청 보내기</span></button></form></div>';
     s.hidden = false; s.scrollTop = 0;
     $("#applyForm").addEventListener("submit", function (e) { e.preventDefault(); send(x); });
+    wireForm();
+  }
+  /* 신청 폼 손맛: 칸별 안내(입력하면 바로 사라짐), 연락 방법 미리 알려 주기, 키보드 '다음'으로 이어 쓰기 */
+  var EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  function contactHint(v) {
+    v = v.trim(); if (v.length < 3) return "";
+    if (EMAIL.test(v)) return "✉️ 이 메일로 답장드려요";
+    if (v.indexOf("@") > -1) return "메일 주소가 조금 덜 적힌 것 같아요";
+    return "💬 카카오톡 ID로 연락드려요";
+  }
+  function fieldOk(id) { var w = $("#" + id); if (w) w.classList.remove("bad"); }
+  function fieldBad(id, msg, focusEl) {
+    var w = $("#" + id), err = $("#fErr"); err.textContent = msg; haptic("warn");
+    if (w) { w.classList.remove("bad"); void w.offsetWidth; w.classList.add("bad"); }
+    if (focusEl) focusEl.focus();
+  }
+  function wireForm() {
+    var n = $("#fName"), c = $("#fContact"), k = $("#fConsent"), hc = $("#hContact");
+    function upd() { hc.textContent = contactHint(c.value); hc.classList.toggle("ok", EMAIL.test(c.value.trim()) || (c.value.trim().length > 2 && c.value.indexOf("@") < 0)); }
+    n.addEventListener("input", function () { if (n.value.trim()) { fieldOk("wName"); $("#fErr").textContent = ""; } });
+    c.addEventListener("input", function () { upd(); if (c.value.trim().length > 2) { fieldOk("wContact"); $("#fErr").textContent = ""; } });
+    k.addEventListener("change", function () { if (k.checked) { haptic("light"); fieldOk("wConsent"); $("#fErr").textContent = ""; } });
+    n.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); c.focus(); } });
+    c.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); c.blur(); if (!k.checked) $("#wConsent").scrollIntoView({ block: "center", behavior: "smooth" }); } });
+    upd();
   }
   function send(x) {
     var name = $("#fName").value.trim(), contact = $("#fContact").value.trim(), err = $("#fErr");
-    if (!name) { err.textContent = "이름이나 닉네임을 적어주세요."; $("#fName").focus(); return; }
-    if (contact.length < 3) { err.textContent = "답장 받을 이메일이나 카카오톡 ID를 적어주세요."; $("#fContact").focus(); return; }
-    if (!$("#fConsent").checked) { err.textContent = "연락을 위한 동의에 체크해 주세요."; return; }
+    if (!name) return fieldBad("wName", "이름이나 닉네임을 적어주세요.", $("#fName"));
+    if (contact.length < 3) return fieldBad("wContact", "답장 받을 이메일이나 카카오톡 ID를 적어주세요.", $("#fContact"));
+    if (!$("#fConsent").checked) return fieldBad("wConsent", "연락을 위한 동의에 체크해 주세요.");
     err.textContent = ""; store.set("me", { name: name, contact: contact });
-    var btn = $("#fSend"); btn.disabled = true; btn.textContent = "보내는 중…";
+    var btn = $("#fSend"); btn.disabled = true; btn.classList.add("sending"); btn.setAttribute("aria-busy", "true"); btn.querySelector(".lbl").textContent = "이륙 중…"; haptic();
     var gate = $(".gate"); if (gate) gate.classList.add("go");
+    try { document.activeElement.blur(); $("#sheet").scrollTo({ top: 0, behavior: "smooth" }); } catch (e) {}
+    send.t0 = Date.now();
     var data = { _subject: "[인생준준 앱 관심 신청] " + x.country + " · " + name, _template: "box", _captcha: "false", 브랜드: "인생준준 " + (OS === "android" ? "안드로이드" : "iOS") + " 앱", 관심여행: x.country + " (" + x.dates + ")", 이름: name, 연락처: contact, 유입: OS + "-app", 동의: "예 (연락 목적)" };
     if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)) data._replyto = contact;
     var done = false;
@@ -204,13 +231,23 @@
       .catch(function () { if (done) return; done = true; clearTimeout(timer); result(x, false, name, contact); });
   }
   function result(x, ok, name, contact) {
+    /* 성공이면 비행기가 활주로를 떠나 화면 밖으로 사라진 뒤에 도장 화면으로(빠른 응답이어도 이륙은 끝까지 보여 줌) */
+    var calm0 = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (ok) { var applied = store.get("applied", []); if (applied.indexOf(x.id) < 0) applied.push(x.id); store.set("applied", applied); }
+    var wait = ok && !calm0 && $(".gate.go") ? Math.max(0, 1900 - (Date.now() - (send.t0 || 0))) : 0;
+    if (wait) return setTimeout(function () { if ($(".gate.go")) showResult(x, ok, name, contact); }, wait);
+    showResult(x, ok, name, contact);
+  }
+  function showResult(x, ok, name, contact) {
     var s = $("#sheet");
     if (!ok) { var gate = $(".gate"); if (gate) gate.classList.remove("go"); }
     var text = "[인생준준 · " + x.country + " 관심 신청]\n이름: " + name + "\n연락처: " + contact;
     if (ok) {
-      haptic("ok");
-      var applied = store.get("applied", []); if (applied.indexOf(x.id) < 0) applied.push(x.id); store.set("applied", applied);
-      s.innerHTML = '<div class="confetti" aria-hidden="true">' + confetti() + '</div><button class="close" data-close aria-label="닫기">✕</button><div class="d-body done" style="padding-top:calc(var(--st) + 60px)"><div class="big-stamp">신청<br>완료</div>' +
+      var calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+      /* 도장이 종이에 닿는 순간(애니메이션 62%)에 '쿵', 잉크가 번질 때 성공 알림 */
+      if (calm) haptic("ok"); else { setTimeout(function () { haptic("heavy"); }, 340); setTimeout(function () { haptic("ok"); }, 620); }
+      var today = new Date(Date.now() + 324e5).toISOString().slice(0, 10).replace(/-/g, ".");
+      s.innerHTML = '<div class="confetti" aria-hidden="true">' + confetti() + '</div><button class="close" data-close aria-label="닫기">✕</button><div class="d-body done" style="padding-top:calc(var(--st) + 60px)"><div class="stamp-pad" aria-hidden="true"><div class="big-stamp"><span class="bs-f">' + x.flag + '</span><span class="bs-t">탑승 대기</span><span class="bs-d">' + today + '</span></div><i class="ink"></i></div><p class="sr">신청 완료</p>' +
         '<h2 class="h1">' + esc(x.country) + ' 탑승 대기 명단에 올렸어요</h2><p class="lede">24시간 안에 남겨주신 연락처로 연락드릴게요. 새 여행 소식은 카카오톡 공지방에서 먼저 받아보세요.</p>' +
         '<div class="alt"><button class="btn" data-url="' + KAKAO + '">💬 카카오톡 공지방</button><button class="btn ghost" data-close>확인</button></div></div>';
     } else {
