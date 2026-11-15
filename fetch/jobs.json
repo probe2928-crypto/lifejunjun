@@ -1,11 +1,1 @@
-[
- {
-  "type": "tts",
-  "name": "cz_d",
-  "voice": "ko-KR-HyunsuMultilingualNeural",
-  "rate": "+18%",
-  "texts": [
-   "프라하 하루 마무리는, 이 세 개면 완벽해요."
-  ]
- }
-]
+[{"type":"stats","days":8,"reels":["hw-tray","kl-118","kl-samsung","sg-gum","kom-alone","uz-non","om-visa","tr905m","cz-years","cz-castle4","cz-evening3","de-berlin5","bkfood","bkbiz","ljj-home"]}]
