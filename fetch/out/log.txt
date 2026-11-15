@@ -1,1 +1,1 @@
-tts cz_d 1
+stats ok
