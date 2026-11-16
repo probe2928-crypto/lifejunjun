@@ -1,1 +1,2 @@
-stats ok
+tts ice_a 5
+tts ice_b 5
