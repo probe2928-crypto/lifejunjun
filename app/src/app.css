@@ -259,6 +259,22 @@ main{padding:6px calc(16px + var(--sr)) calc(var(--tab-h) + var(--sb) + 28px) ca
 .brand-mark{animation:spin 6s ease-in-out infinite}
 @keyframes spin{0%,70%{transform:rotate(0)}85%{transform:rotate(-20deg) translateY(-2px)}100%{transform:rotate(0)}}
 main.enter{animation:fadein .35s ease-out}
+main.enter.from-r{animation:slidein-r .32s cubic-bezier(.2,.8,.3,1)}
+main.enter.from-l{animation:slidein-l .32s cubic-bezier(.2,.8,.3,1)}
+@keyframes slidein-r{from{opacity:0;transform:translateX(22px)}to{opacity:1;transform:none}}
+@keyframes slidein-l{from{opacity:0;transform:translateX(-22px)}to{opacity:1;transform:none}}
+/* 계절 한 겹(낙엽·눈·꽃잎·홀씨) — 그림 위로만, 누르기 방해 없음 */
+.banner{position:relative}
+.season{position:absolute;left:0;right:0;top:0;height:var(--sh,150px);pointer-events:none;overflow:hidden;z-index:1}
+.hero .season{--sh:230px}
+.season i{position:absolute;left:var(--x);top:-24px;width:var(--sz);height:var(--sz);animation:sfall var(--dur) linear var(--del) infinite;will-change:transform}
+.season i svg{display:block;width:100%;height:100%;animation:ssway calc(var(--dur) / 3) ease-in-out var(--del) infinite alternate;filter:drop-shadow(0 2px 1px rgba(47,111,85,.18))}
+.season.s-summer i{top:auto;bottom:-24px;animation-name:srise}
+.season.s-winter i svg{animation-name:ssway-soft;filter:drop-shadow(0 1px 1px rgba(80,130,170,.3))}
+@keyframes sfall{0%{transform:translateY(0);opacity:0}8%{opacity:.95}88%{opacity:.95}100%{transform:translateY(calc(var(--sh,150px) + 30px));opacity:0}}
+@keyframes srise{0%{transform:translateY(0);opacity:0}10%{opacity:.9}85%{opacity:.9}100%{transform:translateY(calc(-1 * var(--sh,150px) - 30px));opacity:0}}
+@keyframes ssway{from{transform:translateX(calc(-1 * var(--sw))) rotate(-35deg)}to{transform:translateX(var(--sw)) rotate(40deg)}}
+@keyframes ssway-soft{from{transform:translateX(calc(-.5 * var(--sw)))}to{transform:translateX(calc(.5 * var(--sw)))}}
 @keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .rv{opacity:0;transform:translateY(16px)}
 .rv.in{opacity:1;transform:none;transition:opacity .5s ease var(--d,0ms),transform .5s cubic-bezier(.2,.8,.3,1) var(--d,0ms)}
@@ -266,7 +282,7 @@ main.enter{animation:fadein .35s ease-out}
 .confetti i{position:absolute;top:-12px;width:9px;height:14px;border-radius:3px;animation:fall 2.4s cubic-bezier(.2,.6,.4,1) forwards}
 @keyframes fall{0%{transform:translate(0,0) rotate(0)}100%{transform:translate(var(--dx),105vh) rotate(var(--rot));opacity:.9}}
 .tab.on svg{animation:pop .3s}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.season{display:none}}
 @media (min-width:700px){main{max-width:720px;margin:0 auto}.passes{grid-template-columns:1fr 1fr}}
 /* 탑승권 → 상세 전환: 사진이 커지는 동안 상세 머리 사진은 숨김, 본문은 뒤따라 올라옴 */
 .morph-ghost{position:fixed;z-index:56;pointer-events:none;background:#cde center/cover no-repeat;box-shadow:0 20px 40px -24px rgba(47,111,85,.6)}

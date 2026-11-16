@@ -52,7 +52,10 @@
   /* ── 라우팅: 탭 4개 + 여행 상세 시트 ── */
   var state = { tab: store.get("tab", "home"), cardFilter: "전체", mode: "visit", fresh: null };
   var TITLES = { home: "탑승", cards: "여행 카드", passport: "내 여권", lounge: "라운지" };
+  var ORDER = ["home", "cards", "passport", "lounge"];
   function setTab(t) {
+    var from = ORDER.indexOf(state.tab), to = ORDER.indexOf(t);
+    state.dir = from < 0 || to < 0 || from === to ? "" : to > from ? "r" : "l";
     state.tab = t; store.set("tab", t);
     Array.prototype.forEach.call(document.querySelectorAll(".tab"), function (b) { b.classList.toggle("on", b.dataset.tab === t); b.setAttribute("aria-current", b.dataset.tab === t ? "page" : "false"); });
     $("#topTitle").textContent = TITLES[t];
@@ -65,7 +68,8 @@
     else if (state.tab === "passport") v.innerHTML = viewPassport();
     else v.innerHTML = viewLounge();
     if (quiet) return;
-    v.classList.remove("enter"); void v.offsetWidth; v.classList.add("enter");
+    v.classList.remove("enter", "from-r", "from-l"); void v.offsetWidth; v.classList.add("enter");
+    if (state.dir) { v.classList.add("from-" + state.dir); state.dir = ""; }
     reveal(v);
   }
 
@@ -74,10 +78,30 @@
     return d > 0 ? "D-" + d : d === 0 ? "D-DAY" : "다음 일정 준비 중";
   }
 
+  /* ── 계절 손그림 한 겹: 한국 날짜 기준 가을 낙엽·겨울 눈·봄 꽃잎·여름 홀씨 ── */
+  var LEAF = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1c2 3 6 3 8 6-2 1-3 3-2 5-2 0-4 1-5 3l-1 4-1-4c-1-2-3-3-5-3 1-2 0-4-2-5 2-3 6-3 8-6z" fill="currentColor"/><path d="M10 4v15" stroke="rgba(0,0,0,.18)" stroke-width="1" fill="none"/></svg>';
+  var PETAL = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2c5 4 6 10 0 16C4 12 5 6 10 2z" fill="currentColor"/><path d="M10 2l-1 3 1-1 1 1z" fill="#fff" opacity=".7"/></svg>';
+  var SNOW = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="#fff"/><circle cx="8" cy="8" r="2.4" fill="#eaf6ff"/></svg>';
+  var SEED = '<svg viewBox="0 0 20 20" aria-hidden="true"><g stroke="#fff" stroke-width="1.3" stroke-linecap="round"><path d="M10 11V3M10 11 4 5M10 11l6-6M10 11 3 9M10 11l7-2"/></g><path d="M10 11v7" stroke="#c9b98a" stroke-width="1.2"/><circle cx="10" cy="18" r="1.4" fill="#b08a4c"/></svg>';
+  function seasonNow() {
+    var m = new Date(Date.now() + 9 * 36e5).getUTCMonth() + 1;
+    return m >= 9 && m <= 11 ? "fall" : m === 12 || m <= 2 ? "winter" : m <= 5 ? "spring" : "summer";
+  }
+  function season(n) {
+    var k = seasonNow(), art = { fall: LEAF, winter: SNOW, spring: PETAL, summer: SEED }[k];
+    var tint = { fall: ["#ff8a6b", "#ffd46a", "#e9a23b", "#d9693f"], winter: ["#fff"], spring: ["#ffc4d0", "#ffd9e1", "#ffb3c4"], summer: ["#fff"] }[k];
+    var h = "";
+    for (var i = 0; i < n; i++) {
+      var x = (i * 37 + 11) % 92 + 2, dur = 9 + (i * 5) % 7, sz = (k === "winter" ? 8 : 15) + (i * 7) % 7;
+      h += '<i style="--x:' + x + '%;--dur:' + dur + 's;--del:-' + ((i * 2.3) % dur).toFixed(1) + 's;--sz:' + sz + 'px;--sw:' + (i % 2 ? 14 : -14) + 'px;color:' + tint[i % tint.length] + '">' + art + '</i>';
+    }
+    return '<div class="season s-' + k + '" aria-hidden="true">' + h + '</div>';
+  }
+
   /* ── 탑승 (홈) ── */
   function viewHome() {
     var t = DATA.trips || [];
-    return '<section class="hero"><img class="scene" src="img/scene.svg" alt="">' +
+    return '<section class="hero"><img class="scene" src="img/scene.svg" alt="">' + season(7) +
       '<div class="txt"><div class="eyebrow">함께 가는 역사 여행</div>' +
       '<h1>혼자 가긴 무섭고,<br>단체 패키지는 싫다면</h1>' +
       '<p>먼저 공부해 온 길동무와 3~10명이 함께 걷는 작은 여행이에요. 유적은 깊게, 박물관은 천천히, 밥은 현지 사람들이 줄 서는 곳에서.</p>' +
@@ -299,7 +323,7 @@
     var cards = DATA.cards || [], saved = store.get("saved", []);
     var places = ["전체", "저장"].concat(cards.map(function (c) { return c.place; }).filter(function (p, i, a) { return a.indexOf(p) === i; }));
     var list = cards.filter(function (c) { return state.cardFilter === "전체" || (state.cardFilter === "저장" ? saved.indexOf(c.id) > -1 : c.place === state.cardFilter); });
-    return '<div class="banner"><img src="img/cards.svg" alt=""></div><h1 class="h1">가기 전에 알면<br>덜 당황하는 것들</h1><p class="lede">나라별 매너·벌금·꿀팁 카드예요. 인터넷이 없어도 열려요. ♥ 를 누르면 저장돼요.</p>' +
+    return '<div class="banner"><img src="img/cards.svg" alt="">' + season(4) + '</div><h1 class="h1">가기 전에 알면<br>덜 당황하는 것들</h1><p class="lede">나라별 매너·벌금·꿀팁 카드예요. 인터넷이 없어도 열려요. ♥ 를 누르면 저장돼요.</p>' +
       '<div class="filters" role="tablist">' + places.map(function (p) { return '<button role="tab" data-filter="' + esc(p) + '" class="' + (p === state.cardFilter ? "on" : "") + '">' + (p === "저장" ? "♥ 저장 " + saved.length : esc(p)) + '</button>'; }).join("") + '</div>' +
       (list.length ? '<div class="tcards">' + list.map(function (c) {
         var on = saved.indexOf(c.id) > -1;
@@ -315,7 +339,7 @@
     var visited = store.get("visited", {}), wish = store.get("wish", []);
     var codes = Object.keys(visited).filter(function (k) { return CTY[k]; }).sort(function (a, b) { return visited[a] < visited[b] ? -1 : 1; });
     var regions = codes.map(function (k) { return CTY[k].region; }).filter(function (r, i, a) { return a.indexOf(r) === i; });
-    return '<div class="banner"><img src="img/passport.svg" alt=""></div><section class="pp-cover"><div class="t">PASSPORT · 여권</div><h2>나의 여행 여권</h2><div style="font-size:13px;color:#e7d9aa">다녀온 나라를 눌러 도장을 찍어요</div><div class="emb" aria-hidden="true">🧭</div>' +
+    return '<div class="banner"><img src="img/passport.svg" alt="">' + season(4) + '</div><section class="pp-cover"><div class="t">PASSPORT · 여권</div><h2>나의 여행 여권</h2><div style="font-size:13px;color:#e7d9aa">다녀온 나라를 눌러 도장을 찍어요</div><div class="emb" aria-hidden="true">🧭</div>' +
       '<div class="stats"><div><b>' + codes.length + '</b><span>다녀온 나라</span></div><div><b>' + regions.length + '</b><span>지역</span></div><div><b>' + wish.length + '</b><span>가고 싶은 곳</span></div></div></section>' +
       '<div class="page"><h4>VISAS · 도장</h4><div class="stamps">' + (codes.length ? codes.map(function (k, i) {
         var c = CTY[k], d = visited[k];
@@ -349,7 +373,7 @@
   /* ── 라운지 ── */
   function viewLounge() {
     function L(icon, bg, t, s, url) { return '<button class="link" data-url="' + url + '"><span class="ic" style="--bg:' + bg + '">' + icon + '</span><span><b>' + t + '</b><small>' + s + '</small></span><span class="arr">↗</span></button>'; }
-    return '<div class="banner"><img src="img/lounge.svg" alt=""></div><h1 class="h1">라운지</h1><p class="lede">새 여행 소식과 여행 이야기는 여기서 먼저 만나요.</p>' +
+    return '<div class="banner"><img src="img/lounge.svg" alt="">' + season(4) + '</div><h1 class="h1">라운지</h1><p class="lede">새 여행 소식과 여행 이야기는 여기서 먼저 만나요.</p>' +
       '<div class="links">' +
       L("💬", "linear-gradient(135deg,#fee500,#f5b400)", "카카오톡 공지방", "새 여행·출발 소식을 먼저 받아요", KAKAO) +
       L("📸", "linear-gradient(135deg,#f58529,#dd2a7b,#8134af)", "인스타그램 @lifejunjun", "매일 올라오는 여행 릴스", INSTA) +
