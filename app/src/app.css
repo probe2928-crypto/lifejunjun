@@ -49,12 +49,12 @@ main{padding:6px calc(16px + var(--sr)) calc(var(--tab-h) + var(--sb) + 28px) ca
 /* 손그림 풍경 */
 .scene{display:block;width:100%;height:auto}
 .hero{position:relative;overflow:hidden;border-radius:28px;margin-top:6px;background:var(--sky);box-shadow:0 18px 40px -22px rgba(47,111,85,.6);border:3px solid #fff}
-.hero .scene{height:230px;object-fit:cover}
-.hero .txt{position:relative;padding:4px 20px 20px;background:linear-gradient(180deg,#e9f5d9,#f6fbe9)}
+.hero .scene{height:158px;object-fit:cover}
+.hero .txt{position:relative;padding:4px 20px 16px;background:linear-gradient(180deg,#e9f5d9,#f6fbe9)}
 .hero .eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;color:var(--leaf)}
-.hero h1{font-family:"DH";font-weight:400;font-size:31px;line-height:1.18;margin:6px 0 8px;color:var(--deep)}
+.hero h1{font-family:"DH";font-weight:400;font-size:29px;line-height:1.2;margin:4px 0 6px;color:var(--deep);letter-spacing:-.01em}
 .hero p{margin:0;font-size:14.5px;line-height:1.65;color:#4c5a68}
-.hero .row{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.hero .row{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 
 /* 탑승권 */
 .passes{display:grid;gap:18px}
@@ -246,8 +246,8 @@ main{padding:6px calc(16px + var(--sr)) calc(var(--tab-h) + var(--sb) + 28px) ca
 /* 모션 */
 .banner{margin:6px -2px 2px;border-radius:24px;overflow:hidden;border:3px solid #fff;box-shadow:var(--shadow);background:#fff}
 .banner img{display:block;width:100%;height:150px;object-fit:cover}
-.flyline{margin:14px -6px -10px;height:62px}
-.flyline img{display:block;width:100%;height:62px}
+.flyline{margin:8px -6px -14px;height:46px}
+.flyline img{display:block;width:100%;height:46px}
 .route i::after{animation:fly 3.2s ease-in-out infinite}
 @keyframes fly{0%{left:4%;opacity:0}12%{opacity:1}85%{opacity:1}100%{left:96%;opacity:0}}
 .pass-img .dday{animation:bob 2.4s ease-in-out infinite}
@@ -266,7 +266,7 @@ main.enter.from-l{animation:slidein-l .32s cubic-bezier(.2,.8,.3,1)}
 /* 계절 한 겹(낙엽·눈·꽃잎·홀씨) — 그림 위로만, 누르기 방해 없음 */
 .banner{position:relative}
 .season{position:absolute;left:0;right:0;top:0;height:var(--sh,150px);pointer-events:none;overflow:hidden;z-index:1}
-.hero .season{--sh:230px}
+.hero .season{--sh:158px}
 .season i{position:absolute;left:var(--x);top:-24px;width:var(--sz);height:var(--sz);animation:sfall var(--dur) linear var(--del) infinite;will-change:transform}
 .season i svg{display:block;width:100%;height:100%;animation:ssway calc(var(--dur) / 3) ease-in-out var(--del) infinite alternate;filter:drop-shadow(0 2px 1px rgba(47,111,85,.18))}
 .season.s-summer i{top:auto;bottom:-24px;animation-name:srise}
@@ -309,3 +309,21 @@ main.enter.from-l{animation:slidein-l .32s cubic-bezier(.2,.8,.3,1)}
 /* 한국어 읽기: 낱말 중간에서 줄이 꺾이지 않게 */
 .d-lead,.d-p,.lede,.hero p,.pass-body .lead,.faq p,.faq summary,.tcard li,.tcard-top h3,.about p,.flow .what{word-break:keep-all;overflow-wrap:anywhere}
 .d-lead{text-wrap:pretty}
+
+/* 출발 안내판(홈 첫 화면에서 모든 여행 한눈에) — 공항 출발 전광판을 종이 위에 손으로 쓴 느낌 */
+.board{margin-top:14px;padding:12px 12px 6px;border-radius:22px;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow)}
+.board-h{display:flex;align-items:baseline;justify-content:space-between;padding:0 4px 8px;border-bottom:1.5px dashed var(--line)}
+.board-h b{font-family:"DH";font-weight:400;font-size:18px;color:var(--deep)}
+.board-h span{font-size:10.5px;font-weight:800;letter-spacing:.14em;color:var(--muted)}
+.board-row{display:grid;grid-template-columns:44px 40px 1fr auto 12px;align-items:center;gap:10px;width:100%;min-height:58px;padding:8px 4px;text-align:left;border-bottom:1px solid var(--line);border-radius:12px;transition:background-color .15s}
+.board-row:last-child{border-bottom:0}
+.board-row:active{background:#f3f8e8}
+.b-thumb{position:relative;width:44px;height:44px;border-radius:13px;background:#cde center/cover no-repeat}
+.b-thumb i{position:absolute;right:-4px;bottom:-4px;font-style:normal;font-size:13px;width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(47,111,85,.25)}
+.b-code{font-family:"DH";font-size:19px;color:var(--deep);letter-spacing:.02em}
+.b-city{min-width:0}
+.b-city b{display:block;font-size:15px;font-weight:800;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.b-city small{display:block;font-size:12px;color:var(--muted);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.b-dd{font-weight:900;font-size:12px;padding:4px 9px;border-radius:999px;background:var(--sun);color:#5a3c00;white-space:nowrap}
+.b-arr{color:var(--muted);font-size:18px;line-height:1}
+@media (max-width:360px){.board-row{grid-template-columns:44px 1fr auto 12px;gap:9px}.b-code{display:none}}

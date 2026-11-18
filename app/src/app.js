@@ -104,10 +104,19 @@
     return '<section class="hero"><img class="scene" src="img/scene.svg" alt="">' + season(7) +
       '<div class="txt"><div class="eyebrow">함께 가는 역사 여행</div>' +
       '<h1>혼자 가긴 무섭고,<br>단체 패키지는 싫다면</h1>' +
-      '<p>먼저 공부해 온 길동무와 3~10명이 함께 걷는 작은 여행이에요. 유적은 깊게, 박물관은 천천히, 밥은 현지 사람들이 줄 서는 곳에서.</p>' +
-      '<div class="row"><span class="chip">🧭 3명 모이면 출발</span><span class="chip">🙋 혼자 와도 돼요</span><span class="chip">✍️ 관심 신청은 결제 아니에요</span></div></div></section>' +
+      '<p>먼저 공부해 온 길동무와 3~10명이 함께 걷는 작은 여행이에요.</p>' +
+      '<div class="row"><span class="chip">🧭 3명 모이면 출발</span><span class="chip">🙋 혼자 와도 돼요</span></div></div></section>' +
+      /* 출발 안내판 — 첫 화면에서 모든 여행을 한눈에, 누르면 바로 상세 */
+      '<section class="board" aria-label="출발 안내판"><div class="board-h"><b>출발 안내판</b><span>DEPARTURES · ICN</span></div>' +
+      t.map(function (x) {
+        return '<button class="board-row" data-trip="' + esc(x.id) + '" aria-label="' + esc(x.country + " " + x.city + " 여행 자세히 보기, " + dday(x.start)) + '">' +
+          '<span class="b-thumb" aria-hidden="true" style="background-image:url(' + esc(x.img) + ')"><i>' + x.flag + '</i></span><span class="b-code">' + esc(x.code) + '</span>' +
+          '<span class="b-city"><b>' + esc(x.city.split(" · ")[0]) + '</b><small>' + esc(x.dates.split(" — ")[0].slice(5)) + ' 출발 · ' + esc(x.nights.split(" · ")[0]) + '</small></span>' +
+          '<span class="b-dd">' + dday(x.start) + '</span><span class="b-arr" aria-hidden="true">›</span></button>';
+      }).join("") + '</section>' +
       '<div class="flyline" aria-hidden="true"><img src="img/fly.svg" alt=""></div>' +
       '<div class="sec-t">탑승 대기 중인 여행 <small>' + t.length + '편</small></div>' +
+      '<p class="sec-hint">✍️ 관심 신청은 결제가 아니에요 — 3명이 모이면 일정부터 안내드려요</p>' +
       '<div class="passes">' + t.map(function (x) {
         return '<button class="pass" data-trip="' + esc(x.id) + '" style="--g1:' + x.grad[0] + ';--g2:' + x.grad[1] + '" aria-label="' + esc(x.country + " 여행 자세히 보기") + '">' +
           '<div class="pass-img" style="background-image:url(' + esc(x.img) + ')"><span class="flag">' + x.flag + '</span><span class="dday">' + dday(x.start) + '</span></div>' +
@@ -390,7 +399,7 @@
     var t = e.target.closest("[data-tab],[data-trip],[data-apply],[data-close],[data-url],[data-filter],[data-save],[data-mode],[data-cty]");
     if (!t) return;
     if (t.dataset.tab) { if (t.dataset.tab !== state.tab) haptic(); return setTab(t.dataset.tab); }
-    if (t.dataset.trip) { haptic(); openTrip(t.dataset.trip); return morphIn(t.querySelector(".pass-img")); }
+    if (t.dataset.trip) { haptic(); openTrip(t.dataset.trip); return morphIn(t.querySelector(".pass-img") || t.querySelector(".b-thumb")); }
     if (t.dataset.apply) return openApply(t.dataset.apply);
     if (t.hasAttribute("data-close")) { e.preventDefault(); return closeSheet(); }
     if (t.dataset.url) {
