@@ -1,5 +1,6 @@
 # 운영팀 업무일지 (최신이 위)
 
+2026-11-19 13:00 | 실무이사 | 릴스 게시 | 프라하 저녁 3개(own24) vidIQ로 인스타 게시 https://www.instagram.com/reel/Df6K2TrDt_g/ (세준 '그냥 올려') | 남은 재고: 방콕 먹방·방콕 출장 — 다음 편 제작 필요(호커 3탄 코피 음성 있음)
 2026-11-19 12:46 | 실무이사 | 릴스 게시 | 프라하 성 4곳(own22) vidIQ로 인스타 게시 https://www.instagram.com/reel/Df6I_d1ju3C/ (세준 'ㄱ', 베를린 편 10분 뒤) | 남은 재고: 프라하 저녁(own24)·방콕 먹방·방콕 출장
 2026-11-19 12:36 | 실무이사 | 릴스 게시 | 베를린 5곳(own23) vidIQ로 인스타 게시 https://www.instagram.com/reel/Df6H7X1DJJ5/ (세준 'ㄱ') | 다음: 프라하 성(own22)
 2026-11-18 15:00 | 실무이사 | 게시 재개(Metricool 한도 우회) | vidIQ에 @lifejunjun 인스타 연결(세준 승인, 트롯스테이지도 함께 연결됨) → 프라하 연도(own21) 릴스 게시 https://www.instagram.com/reel/Df3zWCcCbqr/ (캡션 '첫 댓글 링크'→'프로필 링크', vidIQ는 댓글 불가) · 11/9 이후 9일 공백 끝 | 다음: 하루 1편 베를린 5곳→프라하 성→프라하 저녁(세준 OK 후 vidIQ 게시), 유튜브·페북·스레드는 Metricool 한도 풀리면
