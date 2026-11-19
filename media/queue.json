@@ -2,6 +2,17 @@
   "note": "인생준준 릴스 게시 대기열 — 사용자 PC의 'Lifejunjun Reels' 작업(월·수·금 10:00)이 아직 안 올린 항목을 위에서부터 하나씩 게시",
   "items": [
     {
+      "id": "own-25-hawker-kopi",
+      "video": "media/own25-hawker-kopi.mp4",
+      "cover": "media/own25-hawker-kopi.jpg",
+      "spec": "tools/mg/specs/hawker_kopi/hw3.html",
+      "caption": "싱가포르에서 '아아' 마시려면 이렇게 주문하세요 🧊\n\n호커센터에서 그냥 '코피(Kopi)' = 연유 듬뿍 달달한 커피\n☕ 코피 오(Kopi O) — 우유 빼고 설탕만\n🥛 코피 씨(Kopi C) — 연유 대신 덜 단 우유\n🚫 코송(Kosong) — 뒤에 붙이면 설탕 빼기\n🧊 펭(Peng) — 얼음\n\n그러니까 아이스 아메리카노 = 코피 오 코송 펭 (Kopi O Kosong Peng)\n\n싱가포르 가는 친구한테 보내주세요 ✈️ 저장해 두면 주문할 때 편해요 📌\n호커센터 1·2탄(휴지 자리 맡기·쟁반 반납)도 프로필에 있어요\n같이 가는 역사 여행 → 프로필 링크\n\n출처: Honeycombers Singapore\n영상: 인생준준 직접 촬영(싱가포르) · 자료 영상 Mixkit\n음악: raspberrymusic - Lofi Hip Hop Upbeat (CC BY 4.0) · 내레이션: 인생준준 직접 녹음\n\n#싱가포르여행 #싱가포르 #호커센터 #싱가포르커피 #코피 #해외여행꿀팁 #인생준준",
+      "link": "https://probe2928-crypto.github.io/yeobaek/go/?r=hw-kopi",
+      "created": "2026-11-19",
+      "skip": true,
+      "note": "tag=hw-kopi · 호커 3탄(코피 주문법) 20.3초 · 세준 직접 녹음 목소리 · 오로라 트래커(O→C→코송→펭)+컵 모션그래픽 · 검토 6.2→7.4→7.6(통과) · 다음 촬영 때 커피 스톨 실사 3~5초 필요"
+    },
+    {
       "id": "own-24-prague-evening3",
       "video": "media/own24-prague-evening3.mp4",
       "cover": "media/own24-prague-evening3.jpg",
