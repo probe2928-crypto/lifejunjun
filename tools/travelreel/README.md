@@ -4,6 +4,8 @@
 피드백 누적: 흔들림 싫음(손떨림 보정 필수), AI 남자 성우 멘트 넣기, '코인' 단어 금지(비즈니스·투자·AI 행사로), 촌스러운 글씨·싼 티 금지, 잘 나가는 여행 릴스 수준.
 
 ## 원본
+- **원본 위치(맥, 2026-11-21~)**: 아직 미확정. 맥 `scotts-macbook-air-local`에 연결 폴더 없음. 접근 없이 보이는 이름만: ~/Movies 안엔 `TV`만, ~/Pictures 안엔 `Photos Library.photoslibrary`(아이폰 동기화면 원본은 여기 originals/ 안일 가능성). ~/Desktop·~/Documents·~/Downloads는 승인 전엔 목록 안 보임. 11/21 회차에 Desktop·Documents·Movies·Pictures 접근 요청 → 승인되면 이후 회차는 바로 device_list_dir 가능. 위치 확정되면 이 줄을 실제 경로로 바꿀 것.
+- (예전) 윈도우 PC 경로는 더 이상 안 씀:
 - PC `C:\Users\bluec\Videos\TripDownloads\<YYYY-MM_Place>\` (여행별 폴더, 아이폰 원본). 2025-11 아이슬란드, 2026-04 유럽(644개), 05 방콕(폴더 안 대부분은 한국 가족 영상 — 방콕은 5/19~20뿐, 아이 나오는 가족 영상 쓰지 말 것), 06 체코·베를린, 07 오키나와, 08 터키, 09 발리, 10 싱가포르·말레이시아.
 - 가져오기: mcp__remote-devices__device_list_dir → device_stage_files(50개·500MB/회, 400MB 넘는 파일 불가) → /mnt/user-data/uploads/Videos/TripDownloads/<폴더>/
 - proc.py / ov.py: 메타(meta.jsonl)·컨택트 시트·개요 이미지 → 장면 고르기(다른 여행·아이·사적인 장면 제외).
