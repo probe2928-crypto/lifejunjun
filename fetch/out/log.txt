@@ -1,2 +1,1 @@
-tts ice_c 5
-tts ice_d 5
+tts ice_v 15
