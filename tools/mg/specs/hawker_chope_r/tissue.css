@@ -1,0 +1,8 @@
+.tp{position:absolute;transform-style:preserve-3d}
+.tp .sh{position:absolute;left:-3%;right:-3%;top:8%;bottom:-14%;border-radius:22%/40%;background:radial-gradient(closest-side,rgba(30,22,15,.6),rgba(30,22,15,.25) 70%,rgba(30,22,15,0));filter:blur(8px)}
+.tp .pk{position:absolute;inset:0;border-radius:16%/30%;background:linear-gradient(170deg,#ffffff 0%,#f3f6fa 45%,#dfe6ee 100%);box-shadow:inset 0 -6px 10px rgba(120,130,150,.35),inset 0 4px 8px rgba(255,255,255,.9);overflow:hidden}
+.tp .band{position:absolute;left:0;right:0;top:0;height:34%;background:linear-gradient(90deg,#ff9fb8,#ffc6a8 50%,#ff9fb8);opacity:.9}
+.tp .band2{position:absolute;left:0;right:0;bottom:0;height:22%;background:linear-gradient(90deg,#ff9fb8,#ffc6a8 50%,#ff9fb8);opacity:.85}
+.tp .slit{position:absolute;left:24%;right:24%;top:40%;height:26%;border-radius:50%;background:radial-gradient(ellipse at 50% 40%,#ffffff 0%,#f7f7f7 55%,#d8dde3 100%);box-shadow:0 2px 4px rgba(0,0,0,.18),inset 0 -3px 5px rgba(150,150,160,.4)}
+.tp .shine{position:absolute;left:8%;top:12%;width:40%;height:14%;border-radius:50%;background:rgba(255,255,255,.75);filter:blur(3px)}
+.tp .txt{position:absolute;left:0;right:0;top:9%;text-align:center;font-family:PB;color:#fff;letter-spacing:.06em;text-shadow:0 1px 2px rgba(180,60,80,.6)}

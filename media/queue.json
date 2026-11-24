@@ -2,6 +2,16 @@
   "note": "인생준준 릴스 게시 대기열 — 사용자 PC의 'Lifejunjun Reels' 작업(월·수·금 10:00)이 아직 안 올린 항목을 위에서부터 하나씩 게시",
   "items": [
     {
+      "id": "own-27-hawker-chope-r",
+      "video": "media/own27-hawker-chope-r.mp4",
+      "cover": "media/own27-hawker-chope-r.jpg",
+      "spec": "tools/mg/specs/hawker_chope_r/hw1r.html",
+      "caption": "싱가포르 호커센터, 이 휴지 있는 자리엔 앉지 마세요 🧻\n\n휴지 한 팩 = '여기 자리 있어요' (현지 말로 촙, chope)\n자리 맡아 두고 음식 사러 간 거예요. 점심시간엔 자리 잡기가 전쟁이라 특히 흔해요.\n\n📌 같이 알아두면 좋은 것\n· 다 먹은 쟁반은 직접 반납 — 2021년 9월부터 단속 (호커 2탄)\n· 아이스 아메리카노는 '코피 오 코송 펭' (호커 3탄)\n\n싱가포르 가는 친구한테 보내주세요 ✈️ 저장해 두면 현지에서 바로 써먹어요\n같이 가는 역사 여행 → 프로필 링크\n\n출처: NEA(싱가포르 환경청)\n영상: 인생준준 직접 촬영(싱가포르) · 휴지는 연출, 편집함 · 음악: raspberrymusic - Lofi Hip Hop Upbeat (CC BY 4.0) · 내레이션 AI 음성\n\n#싱가포르여행 #싱가포르 #호커센터 #해외여행꿀팁 #여행꿀팁 #인생준준",
+      "link": "https://probe2928-crypto.github.io/yeobaek/go/?r=hw-chope2",
+      "created": "2026-11-24",
+      "note": "tag=hw-chope2 · 호커 1탄(휴지·촙) 다시 만들기 17.2초 — BRIEF 11/23 지시(검증 소재 첫 프레임부터 새로) · 첫 프레임: 실사+한 줄 '누가 두고 간 휴지 같죠? 🤔' · 기존 AI 내레이션 재편집(질문으로 시작) · 휴지팩 다시 그림(연출 고지 화면·캡션) · 검토 6.0→7.2→7.6 · 세준 'ㄱ' 대기"
+    },
+    {
       "id": "own-26-kk-sapi",
       "video": "media/own26-kk-sapi.mp4",
       "cover": "media/own26-kk-sapi.jpg",
