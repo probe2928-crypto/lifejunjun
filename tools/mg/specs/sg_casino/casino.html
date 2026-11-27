@@ -1,0 +1,108 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:PB;src:url(../../fonts/Pretendard-Black.otf)}
+@font-face{font-family:PS;src:url(../../fonts/Pretendard-SemiBold.otf)}
+@font-face{font-family:BH;src:url(../../fonts/BlackHanSans-Regular.ttf)}
+:root{--y:#ffd60a;--w:#f6f7f1;--g:#7dff8a;--r:#ff5a4f;--ink:#0b0d0a}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transparent}
+#stage{position:absolute;inset:0;overflow:hidden}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 50%,rgba(0,0,0,.42) 100%)}
+.dim{position:absolute;inset:0;background:rgba(5,6,12,.55)}
+.c{position:absolute;left:0;right:0;text-align:center;white-space:nowrap;transform-origin:50% 50%}
+.bx{display:inline-block;background:rgba(10,10,10,.84);color:#fff;font-family:PB;line-height:1.25;padding:18px 34px 14px;border-radius:8px}
+.bx b{color:var(--y)} .bx i{font-style:normal;color:var(--g)} .bx u{text-decoration:none;color:var(--r)}
+.f62{font-size:64px}.f56{font-size:56px}.f46{font-size:46px}
+.big{font-family:BH;color:var(--w);text-shadow:0 6px 30px rgba(0,0,0,.85);line-height:1.05}
+.ybox{display:inline-block;background:var(--y);color:var(--ink);padding:14px 34px 6px;border-radius:10px;text-shadow:none}
+.card{position:absolute;left:80px;width:880px;box-sizing:border-box;background:rgba(10,10,10,.86);border-left:14px solid var(--g);border-radius:0 14px 14px 0;padding:22px 30px 18px;font-family:PB;color:var(--w);white-space:nowrap}
+.card .h{font-size:44px;color:rgba(246,247,241,.8)}
+.card .v{font-family:BH;font-size:92px;line-height:1.1;margin-top:6px}
+.card.r{border-left-color:var(--r)}
+.row{position:absolute;left:80px;width:880px;font-family:PB;font-size:58px;color:var(--w);white-space:nowrap;background:rgba(10,10,10,.72);border-radius:14px;padding:22px 30px 18px;box-sizing:border-box}
+.row .k{display:inline-block;width:200px;color:rgba(246,247,241,.75)}
+.row s{color:rgba(246,247,241,.5);text-decoration-thickness:5px}
+.row b{color:var(--y)}
+.badge{display:inline-block;background:var(--r);color:#fff;font-family:BH;font-size:84px;padding:14px 34px 4px;border-radius:12px;transform-origin:50% 50%}
+.src{position:absolute;left:0;right:0;text-align:center;font-family:PS;font-size:42px;color:rgba(246,247,241,.9);text-shadow:0 2px 12px rgba(0,0,0,.9)}
+.tag{position:absolute;left:44px;top:250px;font-family:PS;font-size:32px;color:#fff;background:rgba(0,0,0,.55);padding:8px 16px 6px;border-radius:6px}
+.flash{position:absolute;inset:0;background:#fff;opacity:0}
+.grain{position:absolute;inset:0;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+</style></head><body><div id="stage">
+<div class="vig"></div>
+<div class="dim" id="dimB"></div>
+<div class="dim" id="dimD"></div>
+<div class="dim" id="dimC" style="background:rgba(5,6,12,.35)"></div>
+<div class="tag" id="tag">🇸🇬 마리나베이샌즈 카지노 입구</div>
+
+<!-- A frame0 -->
+<div class="c" id="a1" style="top:1100px"><span class="bx f62">싱가포르 사람은</span></div>
+<div class="c" id="a2" style="top:1205px"><span class="bx f62">이 문 들어가려면 <b>돈 내요</b> 💸</span></div>
+
+<!-- B -->
+<div class="card" id="b1" style="top:420px"><div class="h">🛂 외국인 (관광객)</div><div class="v">여권만 → <span style="color:var(--g)">무료</span></div></div>
+<div class="card r" id="b2" style="top:700px"><div class="h">🇸🇬 싱가포르 국민 · 영주권자</div><div class="v"><span id="b2v" style="display:inline-block">하루 <span style="color:var(--y)">S$150</span></span>&nbsp;</div></div>
+
+<!-- C -->
+<div class="c big" id="c0" style="top:600px;font-size:72px">자국민 입장료</div>
+<div class="row" id="c1" style="top:740px"><span class="k">하루</span><s>S$100</s> → <b>S$150</b></div>
+<div class="row" id="c2" style="top:880px"><span class="k">1년</span><s>S$2,000</s> → <b>S$3,000</b></div>
+<div class="c" id="c3" style="top:1060px"><span class="badge">2019년 +50% ↑</span></div>
+<div class="src" id="c4" style="top:1215px">싱가포르 정부 카지노 입장세 · 2019년 4월 인상</div>
+
+<!-- D -->
+<div class="c" id="d1" style="top:420px"><span class="bx f56">왜? 👉 <b>자국민 도박 문제</b> 막으려고</span></div>
+<div class="c" id="d2" style="top:1060px"><span class="bx f62">입장은 <b>만 21세 이상</b>만</span></div>
+<div class="c" id="d3" style="top:1170px"><span class="bx f62">외국인도 <b>여권 필수</b> 🛂</span></div>
+
+<!-- E -->
+<div class="c big" id="e1" style="top:560px;font-size:80px"><span class="ybox">싱가포르 가는 친구한테</span></div>
+<div class="c big" id="e2" style="top:690px;font-size:80px"><span class="ybox">보내주세요 ✈️</span></div>
+<div class="c" id="e3" style="top:1120px"><span class="bx f46">동남아 소도시 같이 갈 사람 👉 <b>프로필 링크</b></span></div>
+
+<div class="flash" id="fl"></div>
+<div class="grain"></div>
+</div>
+<script src="../../mg/mg.js"></script>
+<script>
+const {T,set}=MG;
+const OUT=(els,t,d=0.2)=>T(els,t,d,{opacity:[1,0],scale:[1,1.06],blur:[0,10]},'in');
+const IN=(els,t,d=0.3,st=0)=>T(els,t,d,{opacity:[0,1],y:[36,0]},'out',st);
+const POP=(els,t,d=0.35)=>T(els,t,d,{opacity:[0,1],scale:[0.4,1]},'back');
+const FL=t=>T('#fl',t,0.16,{opacity:[0.35,0]},'out');
+// A: frame 0 caption already on screen
+set(['#a1','#a2','#tag'],0,{opacity:1});
+T('#a2',2.5,0.18,{scale:[1,1.08]},'out'); T('#a2',2.68,0.25,{scale:[1.08,1]},'inOut');
+OUT(['#a1','#a2','#tag'],3.62);
+// B 3.85-10.75
+FL(3.85); T('#dimB',3.85,0.3,{opacity:[0,1]},'out');
+T('#b1',4.0,0.35,{opacity:[0,1],x:[-260,0]},'out');
+T('#b1',5.5,0.2,{scale:[1,1.04]},'out'); T('#b1',5.7,0.25,{scale:[1.04,1]},'inOut');
+T('#b2',7.25,0.35,{opacity:[0,1],x:[-260,0]},'out');
+T('#b2v',8.45,0.35,{opacity:[0,1],scale:[1.5,1]},'back');
+OUT(['#b1','#b2'],10.55);
+T('#dimB',10.6,0.2,{opacity:[1,0]},'in');
+// C 10.75-15.95 (dark)
+FL(10.75);
+IN('#c0',10.85);
+T('#c1',11.0,0.3,{opacity:[0,1],x:[-200,0]},'out');
+T('#c2',11.8,0.3,{opacity:[0,1],x:[-200,0]},'out');
+POP('#c3',13.0);
+T('#c3',14.0,0.18,{scale:[1,1.12]},'out'); T('#c3',14.18,0.3,{scale:[1.12,1]},'inOut');
+T('#c4',13.3,0.3,{opacity:[0,1]},'out');
+OUT(['#c0','#c1','#c2','#c3','#c4'],15.75);
+T('#dimC',10.75,0.2,{opacity:[0,1]},'out');T('#dimC',15.8,0.15,{opacity:[1,0]},'in');
+// D 15.95-23.15
+T('#dimD',15.95,0.3,{opacity:[0,0.35]},'out');
+IN('#d1',16.05);
+IN('#d2',18.7);
+IN('#d3',21.3);
+T('#d3',21.85,0.18,{scale:[1,1.07]},'out'); T('#d3',22.03,0.25,{scale:[1.07,1]},'inOut');
+OUT(['#d1','#d2','#d3'],23.0);
+T('#dimD',23.0,0.2,{opacity:[0.35,0]},'in');
+// E 23.15-
+FL(23.15);
+T('#e1',23.5,0.4,{opacity:[0,1],scale:[1.4,1]},'back');
+T('#e2',25.05,0.4,{opacity:[0,1],scale:[1.4,1]},'back');
+IN('#e3',24.3);
+T('#e2',26.2,1.8,{scale:[1,1.04]},'lin');
+MG.init(); window.__seek=MG.seek; MG.seek(0);
+</script></body></html>
