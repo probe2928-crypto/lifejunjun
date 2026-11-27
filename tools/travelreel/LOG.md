@@ -1,5 +1,6 @@
 # 여행 영상 PD 기록 (최신이 위)
 형식: `YYYY-MM-DD HH:MM | 여행 영상 PD | 여행·편 제목 | 예약 시각 | 점수 | 개선점`
+2026-11-27 11:50 | 실무이사(한장면 대행) · 여행 숏츠 | 11/25 회차 누락분 — 코타키나발루 2탄 '제일 비싼 건 공짜였다'(15초, 노을 훅·맹그로브 보트·노을·CTA 27.02.25–02.28) media/own28 | IG 일반 릴스 게시 https://www.instagram.com/reel/DgOnA1Difba/ | - | 주의: vidIQ Trial Reels(SS_PERFORMANCE)는 Meta 'Application does not have permission'(code 10, sub 2207081)로 거부됨 → 앞으로 trialParams 빼고 일반 릴스로 올릴 것 | 맥 내보내기: 유럽 242개·발리 13개는 사진 앱에서 계속 실패(재시도 6차까지), 나머지 완료
 2026-11-24 12:35 | 실무이사(한장면 대행) · 여행 숏츠 | 코타키나발루 '섬 내리자마자 마중 나온 친구'(18초, 사피섬 도마뱀 훅·바다·야시장 랍스터·맹그로브·노을, own26) | 11/24 21:30 IG·FB·Threads 1건 + YouTube 쇼츠 1건 (tag kk-sapi) | 세준 미리보기 OK | 한장면 폴더 권한 대기 중이라 맥 원본(~/Downloads/여행영상/2026-10_싱가포르말레이시아)으로 직접 제작 — 성우 없이 자막+자체 비트, 폰트 Noto(다음엔 Pretendard)
 
 ## 이미 쓴 여행·장면 (반복 금지)

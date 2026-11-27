@@ -18,6 +18,7 @@
 - example_bangkok.py: 숏츠(먹방 리스트형·출장형·밤 분위기) + 가로 브이로그 예시.
 
 ## 올리기
+- **2026-11-27~: 인스타는 vidIQ 일반 릴스로 (Trial Reels는 Meta 권한 거부 code 10). Metricool은 한도 초과로 안 씀.**
 - 웹용 재인코딩(crf 22, 50MB 이하) → main `media/ownNN-*.mp4` + 커버 jpg + media/queue.json 항목(skip:true, note에 tag) → push → Pages 배포 확인(gh run list).
 - Metricool brand 7580610: IG·FB 릴스·Threads 한 게시물 + YouTube 쇼츠 따로. 첫 댓글 링크 https://probe2928-crypto.github.io/yeobaek/go/?r=<tag>. 캡션 끝에 '영상: 인생준준 직접 촬영 · 음악 자체 제작 · 내레이션 AI 음성'. 기존 예약과 시간 겹치지 않게(getScheduledPosts).
 
