@@ -1,0 +1,91 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:PB;src:url(../fonts/Pretendard-Black.otf)}
+@font-face{font-family:PS;src:url(../fonts/Pretendard-SemiBold.otf)}
+@font-face{font-family:BH;src:url(../fonts/BlackHanSans-Regular.ttf)}
+:root{--y:#ffd60a;--w:#f6f7f1;--g:#7dff8a;--r:#ff5a4f;--ink:#0b0d0a}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:transparent}
+#stage{position:absolute;inset:0;overflow:hidden}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 50%,rgba(0,0,0,.42) 100%)}
+.dim{position:absolute;inset:0;background:rgba(5,6,12,.55)}
+.c{position:absolute;left:0;right:0;text-align:center;white-space:nowrap;transform-origin:50% 50%}
+.bx{display:inline-block;background:rgba(10,10,10,.84);color:#fff;font-family:PB;line-height:1.25;padding:18px 34px 14px;border-radius:8px}
+.bx b{color:var(--y)} .bx i{font-style:normal;color:var(--g)} .bx u{text-decoration:none;color:var(--r)}
+.f62{font-size:64px}.f56{font-size:56px}.f46{font-size:46px}
+.big{font-family:BH;color:var(--w);text-shadow:0 6px 30px rgba(0,0,0,.85);line-height:1.05}
+.ybox{display:inline-block;background:var(--y);color:var(--ink);padding:14px 34px 6px;border-radius:10px;text-shadow:none}
+.card{position:absolute;left:80px;width:880px;box-sizing:border-box;background:rgba(10,10,10,.86);border-left:14px solid var(--g);border-radius:0 14px 14px 0;padding:22px 30px 18px;font-family:PB;color:var(--w);white-space:nowrap}
+.card .h{font-size:44px;color:rgba(246,247,241,.8)}
+.card .v{font-family:BH;font-size:92px;line-height:1.1;margin-top:6px}
+.card.r{border-left-color:var(--r)}
+.row{position:absolute;left:80px;width:880px;font-family:PB;font-size:58px;color:var(--w);white-space:nowrap;background:rgba(10,10,10,.72);border-radius:14px;padding:22px 30px 18px;box-sizing:border-box}
+.row .k{display:inline-block;width:200px;color:rgba(246,247,241,.75)}
+.row s{color:rgba(246,247,241,.5);text-decoration-thickness:5px}
+.row b{color:var(--y)}
+.badge{display:inline-block;background:var(--r);color:#fff;font-family:BH;font-size:84px;padding:14px 34px 4px;border-radius:12px;transform-origin:50% 50%}
+.src{position:absolute;left:0;right:0;text-align:center;font-family:PS;font-size:42px;color:rgba(246,247,241,.95)}
+.src span{display:inline-block;background:rgba(10,10,10,.8);padding:10px 22px 8px;border-radius:8px}
+.tag{position:absolute;left:44px;top:250px;font-family:PS;font-size:42px;color:#fff;background:rgba(0,0,0,.55);padding:8px 16px 6px;border-radius:6px}
+.flash{position:absolute;inset:0;background:#fff;opacity:0}
+.grain{position:absolute;inset:0;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+</style></head><body><div id="stage">
+<div class="vig"></div>
+<div class="dim" id="dimC" style="background:rgba(5,6,12,.2)"></div>
+<div class="dim" id="dimD" style="background:rgba(5,6,12,.12)"></div>
+<div class="tag" id="tag">🇸🇬 싱가포르 공유자전거</div>
+
+<div class="c" id="a1" style="top:1100px"><span class="bx f62">싱가포르 공유자전거</span></div>
+<div class="c" id="a2" style="top:1205px"><span class="bx f62" style="font-size:60px">아무 데나 세우면 <u>정지</u>될 수도 🚫</span></div>
+
+<div class="c" id="b1" style="top:1060px"><span class="bx f62">반납은 <b>지정 주차 구역</b>에서만 🅿️</span></div>
+<div class="c" id="b2" style="top:1170px"><span class="bx f62">+ <b>QR 스캔</b>해야 끝 📱</span></div>
+
+<div class="card r" id="c1" style="top:470px"><div class="h">❌ 구역 밖에 세우면</div><div class="v"><span id="c1v" style="display:inline-block">추가 요금 💸</span>&nbsp;</div></div>
+<div class="card r" id="c2" style="top:750px"><div class="h">📅 1년에 3번 이상 → 모든 공유자전거</div><div class="v"><span id="c2v" style="display:inline-block"><span style="color:var(--y)">1개월</span> 이용 정지 ⛔</span>&nbsp;</div></div>
+<div class="src" id="c3" style="top:1040px;font-size:44px"><span>2번째 3개월 · 3번째 6개월 · 4번째부터 1년</span></div>
+<div class="src" id="c4" style="top:1135px;font-size:46px;color:rgba(246,247,241,.88)"><span>출처: 싱가포르 육상교통청(LTA)</span></div>
+
+<div class="card" id="d1" style="top:470px"><div class="h">💰 요금 (Anywheel 기준)</div><div class="v"><span id="d1v" style="display:inline-block">30분 <span style="color:var(--y)">S$1</span></span>&nbsp;</div></div>
+<div class="c" id="d2" style="top:1080px"><span class="bx f56">타기 전에 <b>앱 지도</b>에서</span></div>
+<div class="c" id="d3" style="top:1180px"><span class="bx f56"><b>주차 구역</b>부터 확인 🗺️</span></div>
+<div class="src" id="d4" style="top:770px;font-size:48px;color:rgba(246,247,241,.9)"><span>2026년 요금 · 바뀔 수 있어요</span></div>
+
+<div class="c big" id="e1" style="top:560px;font-size:80px"><span class="ybox">싱가포르 가는 친구한테</span></div>
+<div class="c big" id="e2" style="top:690px;font-size:80px"><span class="ybox">보내주세요 ✈️</span></div>
+<div class="c" id="e3" style="top:1120px"><span class="bx f56" style="font-size:50px">싱가포르 꿀팁 👉 <b>프로필 링크</b></span></div>
+
+<div class="flash" id="fl"></div>
+<div class="grain"></div>
+</div>
+<script src="../mg/mg.js"></script>
+<script>
+const {T,set}=MG;
+const OUT=(els,t,d=0.2)=>T(els,t,d,{opacity:[1,0],scale:[1,1.06],blur:[0,10]},'in');
+const IN=(els,t,d=0.3,st=0)=>T(els,t,d,{opacity:[0,1],y:[36,0]},'out',st);
+const POP=(el,t)=>T(el,t,0.35,{opacity:[0,1],scale:[1.5,1]},'back');
+const FL=t=>T('#fl',t,0.16,{opacity:[0.3,0]},'out');
+set(['#a1','#a2','#tag'],0,{opacity:1});
+T('#a2',3.3,0.18,{scale:[1,1.08]},'out'); T('#a2',3.48,0.25,{scale:[1.08,1]},'inOut');
+OUT(['#a1','#a2','#tag'],5.1);
+IN('#b1',5.4); IN('#b2',7.55);
+OUT(['#b1','#b2'],9.4);
+T('#dimC',9.6,0.3,{opacity:[0,1]},'out');
+T('#c1',10.1,0.35,{opacity:[0,1],x:[-260,0]},'out'); 
+T('#c2',12.6,0.35,{opacity:[0,1],x:[-260,0]},'out');
+T('#c2v',14.15,0.18,{scale:[1,1.08]},'out'); T('#c2v',14.33,0.25,{scale:[1.08,1]},'inOut');
+IN('#c3',14.75); T('#c4',14.3,0.3,{opacity:[0,1]},'out');
+OUT(['#c1','#c2','#c3','#c4'],15.85);
+T('#dimC',15.9,0.2,{opacity:[1,0]},'in');
+T('#dimD',16.05,0.3,{opacity:[0,1]},'out');
+T('#d1',16.3,0.35,{opacity:[0,1],x:[-260,0]},'out');
+T('#d4',18.4,0.3,{opacity:[0,1]},'out');
+IN('#d2',19.75); IN('#d3',20.9);
+T('#d3',21.95,0.18,{scale:[1,1.07]},'out'); T('#d3',22.13,0.25,{scale:[1.07,1]},'inOut');
+OUT(['#d1','#d2','#d3','#d4'],23.2);
+T('#dimD',23.2,0.2,{opacity:[1,0]},'in');
+FL(23.4);
+T('#e1',23.6,0.4,{opacity:[0,1],scale:[1.4,1]},'back');
+T('#e2',25.15,0.4,{opacity:[0,1],scale:[1.4,1]},'back');
+IN('#e3',24.4);
+T('#e2',26.3,1.6,{scale:[1,1.04]},'lin');
+MG.init(); window.__seek=MG.seek; MG.seek(0);
+</script></body></html>

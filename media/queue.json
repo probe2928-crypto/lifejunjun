@@ -2,6 +2,16 @@
   "note": "인생준준 릴스 게시 대기열 — 사용자 PC의 'Lifejunjun Reels' 작업(월·수·금 10:00)이 아직 안 올린 항목을 위에서부터 하나씩 게시",
   "items": [
     {
+      "id": "own-30-sg-bike-parking",
+      "video": "media/own30-sg-bike-parking.mp4",
+      "cover": "media/own30-sg-bike-parking.jpg",
+      "spec": "tools/mg/specs/sg_bike/bike.html",
+      "caption": "싱가포르 공유자전거, 아무 데나 세우면 정지당해요 🚲🚫\n\n반납은 바닥에 노란 선 그어진 '지정 주차 구역'에서만\n세운 뒤 거기 붙은 QR을 스캔해야 반납이 끝나요.\n\n❌ 구역 밖에 세우면 → 추가 요금\n📅 1년에 3번 이상 → 모든 공유자전거 1개월 이용 정지\n(2번째 3개월 · 3번째 6개월 · 4번째부터 1년)\n\n💰 Anywheel 기준 30분 S$1 (2026년 요금, 바뀔 수 있어요)\n📌 타기 전에 앱 지도에서 주차 구역부터 확인하세요\n\n싱가포르 가는 친구한테 보내주세요 ✈️\n싱가포르 꿀팁 더 보기 → 프로필 링크\n\n출처: 싱가포르 육상교통청(LTA) QR코드 주차 제도(2019.1~)\n영상: 인생준준 직접 촬영(싱가포르) · 마지막 장면 Mixkit · 내레이션 AI 음성\n\n#싱가포르여행 #싱가포르 #공유자전거 #해외여행꿀팁 #여행꿀팁 #인생준준",
+      "link": "https://probe2928-crypto.github.io/yeobaek/go/?r=sg-bike",
+      "created": "2026-11-27",
+      "note": "tag=sg-bike · 28.0초 · 첫 프레임: 직접 찍은 Anywheel QR 클로즈업+두 줄 '싱가포르 공유자전거 / 아무 데나 세우면 정지될 수도' · 사실 확인: LTA QR 주차제(2019.1.14~, 연 3회 이상 1개월 정지, 2021 LTA 재확인), Anywheel S$1/30분(2026.4) · 검토 6.2→7.5→추가 수정 · 세준 'ㄱ' 대기"
+    },
+    {
       "id": "own-29-sg-casino-levy",
       "video": "media/own29-sg-casino-levy.mp4",
       "cover": "media/own29-sg-casino-levy.jpg",
